@@ -10,7 +10,7 @@ script: ./gradlew build
 before_deploy:
   - git config --local user.name "arthurbambou"
   - git config --local user.email "arthur.koalas@free.fr"
-  - git tag -a %TRAVIS_COMMIT% -m "%TRAVIS_COMMIT%"
+  - git tag -a $TRAVIS_COMMIT -m "%TRAVIS_COMMIT%"
 deploy:
 - provider: releases
   api_key: $GH_TOKEN
