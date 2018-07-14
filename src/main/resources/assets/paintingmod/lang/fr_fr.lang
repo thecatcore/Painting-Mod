@@ -1,5 +1,7 @@
-//0.1-alpha
-item.paintbrush.name=Pinceau
 
-//0.1.2-alpha
+//Items
+item.paintbrush.name=Pinceau
 item.earth_mortar.name=Mortier de Terre
+
+//Blocks
+tile.soggy_clay.name=Argile Détrempé

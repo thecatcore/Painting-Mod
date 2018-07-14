@@ -1,5 +1,7 @@
-//0.1-alpha
-item.paintbrush.name=Paintbrush
 
-//0.1.2-alpha
+//Items
+item.paintbrush.name=Paintbrush
 item.earth_mortar.name=Earth Mortar
+
+//Blocks
+tile.soggy_clay.name=Soggy Clay
