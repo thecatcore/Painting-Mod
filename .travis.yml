@@ -8,25 +8,24 @@ install: ./gradlew setupCiWorkspace
 script: ./gradlew build
 
 before_deploy:
-      # Set up git user name and tag this commit
-      - git config --local user.name "arthurbambou"
-      - git config --local user.email "arthur.koalas@free.fr"
-      - git tag "v0.3.0-alpha"
-    deploy:
-      provider: releases
-      api_key: $GH_TOKEN
-      file_glob: true
-      file: build/libs/*
-      skip_cleanup: true
-      prerelease: true
-      on:
-        branch:prerelease
-      
-      provider: releases
-      api_key: $GH_TOKEN
-      file_glob: true
-      file: build/libs/*
-      skip_cleanup: true
-      prerelease: false
-      on:
-        branch:release
+  - git config --local user.name "arthurbambou"
+  - git config --local user.email "arthur.koalas@free.fr"
+  - git tag "v0.3.0-alpha"
+deploy:
+  provider: releases
+  api_key: $GH_TOKEN
+  file_glob: true
+  file: build/libs/*
+  skip_cleanup: true
+  prerelease: true
+  on:
+    branch: prerelease
+  
+  provider: releases
+  api_key: $GH_TOKEN
+  file_glob: true
+  file: build/libs/*
+  skip_cleanup: true
+  prerelease: false
+  on:
+    branch: release
