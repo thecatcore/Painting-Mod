@@ -14,9 +14,6 @@ public class ItemBase extends Item implements IHasModel{
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(CreativeTabs.MATERIALS);
-		//setMaxDamage(damages);
-		//setMaxStackSize(stack);
-		//setNoRepair();
 		
 		ModItems.ITEMS.add(this);
 	}
