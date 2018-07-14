@@ -12,6 +12,6 @@ public class ModItems
 	
 	public static final List<Item> ITEMS = new ArrayList<Item>();
 	
-	public static final Item PAINTBRUSH = new ItemBase("paintbrush", 100, 1);
-	public static final Item EARTH_MORTAR = new ItemBase("earth_mortar", 0, 64);
+	//public static final Item PAINTBRUSH = new ItemBase("paintbrush", 100, 1);
+	public static final Item EARTH_MORTAR = new ItemBase("earth_mortar");
 }

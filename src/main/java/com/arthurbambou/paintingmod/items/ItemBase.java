@@ -9,14 +9,14 @@ import net.minecraft.item.Item;
 
 public class ItemBase extends Item implements IHasModel{
 	
-	public ItemBase(String name, int damages, int stack)
+	public ItemBase(String name)
 	{
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(CreativeTabs.MATERIALS);
-		setMaxDamage(damages);
-		setMaxStackSize(stack);
-		setNoRepair();
+		//setMaxDamage(damages);
+		//setMaxStackSize(stack);
+		//setNoRepair();
 		
 		ModItems.ITEMS.add(this);
 	}
