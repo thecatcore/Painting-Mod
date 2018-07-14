@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "SSS",
+        "PPP",
+        " T "
+    ],
+    
+    "key":
+    {
+        "T":
+        {
+            "item": "minecraft:stick"
+        },
+        "P":
+        {
+            "item": "minecraft:planks",
+            "data": 2
+        },
+        "S":
+        {
+            "item": "minecraft:string"
+        }
+    },
+    
+    "result":
+    {
+        "item": "paintingmod:paintbrush",
+        "count": 1,
+        "data": 1
+    }
+}
