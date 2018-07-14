@@ -1,1 +1,6 @@
-Painting Mod [![Build Status branch: dev](https://travis-ci.org/arthurbambou/Painting-Mod.svg?branch=dev)](https://travis-ci.org/arthurbambou/Painting-Mod) [![Build Status branch: release](https://travis-ci.org/arthurbambou/Painting-Mod.svg?branch=release)](https://travis-ci.org/arthurbambou/Painting-Mod)
+Painting Mod
+
+| Branchs    | build status                                                                                                                           |
+|------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| release    | [![Build Status](https://travis-ci.org/arthurbambou/Painting-Mod.svg?branch=release)](https://travis-ci.org/arthurbambou/Painting-Mod) |
+| prerelease |                                                                                                                                        |
