@@ -1,1 +1,1 @@
-My first Minecraft Mod
+Painting Mod
