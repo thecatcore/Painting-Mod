@@ -1,4 +1,4 @@
-package com.arthurbambou.myfirstminecraftmod.util;
+package com.arthurbambou.paintingmod.util;
 
 public interface IHasModel
 {

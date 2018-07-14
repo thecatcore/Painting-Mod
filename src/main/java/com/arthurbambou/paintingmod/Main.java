@@ -1,7 +1,7 @@
-package com.arthurbambou.myfirstminecraftmod;
+package com.arthurbambou.paintingmod;
 
-import com.arthurbambou.myfirstminecraftmod.proxy.CommonProxy;
-import com.arthurbambou.myfirstminecraftmod.util.Reference;
+import com.arthurbambou.paintingmod.proxy.CommonProxy;
+import com.arthurbambou.paintingmod.util.Reference;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;

@@ -1,4 +1,4 @@
-package com.arthurbambou.myfirstminecraftmod.proxy;
+package com.arthurbambou.paintingmod.proxy;
 
 import net.minecraft.item.Item;
 

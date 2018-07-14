@@ -1,7 +1,7 @@
-package com.arthurbambou.myfirstminecraftmod.util.handlers;
+package com.arthurbambou.paintingmod.util.handlers;
 
-import com.arthurbambou.myfirstminecraftmod.init.ModItems;
-import com.arthurbambou.myfirstminecraftmod.util.IHasModel;
+import com.arthurbambou.paintingmod.init.ModItems;
+import com.arthurbambou.paintingmod.util.IHasModel;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;

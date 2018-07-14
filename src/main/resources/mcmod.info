@@ -1,14 +1,14 @@
 [
 {
-  "modid": "mfmm",
-  "name": "My First Minecraft Mod",
-  "description": "Description.",
+  "modid": "paintingmod",
+  "name": "Painting Mod",
+  "description": "A Minecraft mod that add the possiblity to paint any bloc in any color !",
   "version": "0.1-alpha",
   "mcversion": "1.12.2",
   "url": "",
   "updateUrl": "",
   "authorList": ["arthurbambou"],
-  "credits": "arthurbambou, for making this simple mod",
+  "credits": "arthurbambou, for making this mod",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
