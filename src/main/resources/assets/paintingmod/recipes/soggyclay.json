@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "RRR",
+        "RWR",
+        "RRR"
+    ],
+    
+    "key":
+    {
+        "R":
+        {
+            "item": "minecraft:clay_ball"
+        },
+        "W":
+        {
+            "item": "minecraft:water_bucket"
+        }
+    },
+    
+    "result":
+    {
+        "item": "paintingmod:soggy_clay",
+        "count": 1
+    }
+}
