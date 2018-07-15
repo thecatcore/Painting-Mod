@@ -2,6 +2,8 @@
 //Items
 item.paintbrush.name=Pinceau
 item.earth_mortar.name=Mortier de Terre
+item.water_vial.name=Fiole d'eau
+item.double_water_vial.name=Double Fiole d'eau
 
 //Tools
 item.hammer.name=Marteau

@@ -2,6 +2,8 @@
 //Items
 item.paintbrush.name=Paintbrush
 item.earth_mortar.name=Earth Mortar
+item.water_vial.name=Water Vial
+item.double_water_vial.name=Double Water Vial
 
 //Tools
 item.hammer.name=Hammer
