@@ -1,0 +1,22 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+
+    "ingredients": 
+    [
+
+    {
+      "item": "paintingmod:water_vial"
+    },
+
+    {
+      "item": "paintingmod:water_vial"
+    }
+    
+    ],
+
+    "result": 
+    {
+        "item": "paintingmod:double_water_vial",
+        "count": 1
+    }
+}

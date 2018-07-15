@@ -1,0 +1,34 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+
+    "ingredients": 
+    [
+
+    {
+      "item": "minecraft:bucket"
+    },
+
+    {
+      "item": "paintingmod:double_water_vial"
+    },
+
+    {
+      "item": "paintingmod:double_water_vial"
+    },
+
+    {
+      "item": "paintingmod:double_water_vial"
+    },
+
+    {
+      "item": "paintingmod:double_water_vial"
+    }
+    
+    ],
+
+    "result": 
+    {
+        "item": "minecraft:water_bucket",
+        "count": 1
+    }
+}
