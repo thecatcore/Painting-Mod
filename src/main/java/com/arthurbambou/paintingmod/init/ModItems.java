@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.arthurbambou.paintingmod.items.ItemBase;
 import com.arthurbambou.paintingmod.items.Paintbrush;
+import com.arthurbambou.paintingmod.items.WaterVial;
 import com.arthurbambou.paintingmod.items.tools.ToolPickaxe;
 
 import net.minecraft.item.Item;
@@ -23,6 +24,8 @@ public class ModItems
 	//Items
 	public static final Item PAINTBRUSH = new Paintbrush("paintbrush");
 	public static final Item EARTH_MORTAR = new ItemBase("earth_mortar");
+	public static final Item WATER_VIAL = new WaterVial("water_vial", 12, 64);
+	public static final Item DOUBLE_WATER_VIAL = new WaterVial("double_water_vial", 24, 32);
 	
 	//Tools
 	public static final ItemPickaxe HAMMER = new ToolPickaxe("hammer", MATERIAL_HAMMER);

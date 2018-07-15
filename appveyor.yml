@@ -23,5 +23,5 @@ shallow_clone: true
 clone_depth: 1
 test_script:
   - cd Painting-Mod
-  - git tag -a %APPVEYOR_REPO_COMMIT_MESSAGE% -m "%APPVEYOR_REPO_COMMIT_MESSAGE%_EXTENDED"
+  - git tag -a %APPVEYOR_REPO_COMMIT_MESSAGE% -m "Changelog\nAdded\nItems\n-Water Vial\n-Double Water Vial\n\nChange\n-Now the paintbrush has full durability when we craft it"
   - git push origin --tags
