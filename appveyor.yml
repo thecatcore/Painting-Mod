@@ -2,6 +2,11 @@ environment:
   nodejs_version: "8"
   access_token:
     secure: Qf0Y9jtlkPWx+6+bm7U+3mfvn/eLdAxhbr1Ew96E5munVWYjLMzve6oNBW0QAeQp
+skip_tags: true
+branches:
+  only:
+    - release
+    - pre-release
 version: '{build}'
 init:
   - git config --global credential.helper store
