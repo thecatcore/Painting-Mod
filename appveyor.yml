@@ -10,7 +10,7 @@ init:
   - git config --global user.name "arthurbambou"
 
 install:
-  - git clone https://github.com/arthurbambou/Paintin-Mod.git --branch=%APPVEYOR_REPO_BRANCH%
+  - git clone https://github.com/arthurbambou/Painting-Mod.git --branch=%APPVEYOR_REPO_BRANCH%
 matrix:
   fast_finish: true
 build: off
