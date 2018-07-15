@@ -1,0 +1,27 @@
+environment:
+  nodejs_version: "8"
+  access_token:
+    secure: Qf0Y9jtlkPWx+6+bm7U+3mfvn/eLdAxhbr1Ew96E5munVWYjLMzve6oNBW0QAeQp
+skip_tags: true
+branches:
+  only:
+    - release
+    - pre-release
+version: '{build}'
+init:
+  - git config --global credential.helper store
+  - ps: Add-Content "$HOME\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
+  - git config --global user.email "arthur.koalas@free.fr"
+  - git config --global user.name "arthurbambou"
+
+install:
+  - git clone https://github.com/arthurbambou/Painting-Mod.git --branch=%APPVEYOR_REPO_BRANCH%
+matrix:
+  fast_finish: true
+build: off
+shallow_clone: true
+clone_depth: 1
+test_script:
+  - cd Painting-Mod
+  - git tag -a %APPVEYOR_REPO_COMMIT_MESSAGE% -m "%APPVEYOR_REPO_COMMIT_MESSAGE%"
+  - git push origin --tags

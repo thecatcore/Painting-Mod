@@ -3,5 +3,8 @@
 item.paintbrush.name=Paintbrush
 item.earth_mortar.name=Earth Mortar
 
+//Tools
+item.hammer.name=Hammer
+
 //Blocks
 tile.soggy_clay.name=Soggy Clay

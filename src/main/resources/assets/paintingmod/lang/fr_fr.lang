@@ -3,5 +3,8 @@
 item.paintbrush.name=Pinceau
 item.earth_mortar.name=Mortier de Terre
 
+//Tools
+item.hammer.name=Marteau
+
 //Blocks
 tile.soggy_clay.name=Argile Détrempé
