@@ -10,9 +10,11 @@ script: ./gradlew build
 before_deploy:
   - git config --local user.name "arthurbambou"
   - git config --local user.email "arthur.koalas@free.fr"
-  - git tag $(TRAVIS_COMMIT)
+  - echo $TRAVIS_COMMIT_MESSAGE
+  #- git tag -a $TRAVIS_COMMIT_MESSAGE -m "%TRAVIS_COMMIT%"
+  - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
 deploy:
-  provider: releases
+- provider: releases
   api_key: $GH_TOKEN
   file_glob: true
   file: build/libs/*
@@ -23,7 +25,7 @@ deploy:
   on:
     branch: pre-release
   
-  provider: releases
+- provider: releases
   #name: $TRAVIS_COMMIT
   #body: `${TRAVIS_COMMIT_MESSAGE} \n Commit List \n ${TRAVIS_COMMIT_RANGE}`
   api_key: $GH_TOKEN
