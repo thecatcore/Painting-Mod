@@ -17,6 +17,6 @@ build: off
 shallow_clone: true
 clone_depth: 1
 test_script:
-  - cd FR-Texture-Pack
+  - cd Painting-Mod
   - git tag -a %APPVEYOR_REPO_COMMIT_MESSAGE% -m "%APPVEYOR_REPO_COMMIT_MESSAGE%"
   - git push origin --tags
