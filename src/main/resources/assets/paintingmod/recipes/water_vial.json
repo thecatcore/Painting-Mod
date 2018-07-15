@@ -1,0 +1,50 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+
+    "ingredients": 
+    [
+
+    {
+      "item": "minecraft:water_bucket"
+    },
+
+    {
+      "item": "minecraft:glass_bottle"
+    },
+
+    {
+      "item": "minecraft:glass_bottle"
+    },
+
+    {
+      "item": "minecraft:glass_bottle"
+    },
+
+    {
+      "item": "minecraft:glass_bottle"
+    },
+
+    {
+      "item": "minecraft:glass_bottle"
+    },
+
+    {
+      "item": "minecraft:glass_bottle"
+    },
+
+    {
+      "item": "minecraft:glass_bottle"
+    },
+
+    {
+      "item": "minecraft:glass_bottle"
+    }
+    
+    ],
+
+    "result": 
+    {
+        "item": "paintingmod:water_vial",
+        "count": 8
+    }
+}
