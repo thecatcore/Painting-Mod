@@ -4,7 +4,6 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 
 public class WaterVial extends ItemBase {
-	int stack = 1;
 	public WaterVial(String name, int damage, int stack, CreativeTabs materials) {
 		super(name, materials);
 		
