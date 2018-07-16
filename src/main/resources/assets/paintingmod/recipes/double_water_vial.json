@@ -5,11 +5,13 @@
     [
 
     {
-      "item": "paintingmod:water_vial"
+      "item": "paintingmod:water_vial",
+      "data": 0
     },
 
     {
-      "item": "paintingmod:water_vial"
+      "item": "paintingmod:water_vial",
+      "data": 0
     }
     
     ],
@@ -17,6 +19,7 @@
     "result": 
     {
         "item": "paintingmod:double_water_vial",
-        "count": 1
+        "count": 1,
+        "data": 0
     }
 }

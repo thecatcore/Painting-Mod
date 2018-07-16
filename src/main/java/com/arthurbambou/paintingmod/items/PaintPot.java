@@ -5,13 +5,13 @@ import com.arthurbambou.paintingmod.init.ModItems;
 
 import net.minecraft.creativetab.CreativeTabs;
 
-public class Paintbrush extends ItemBase
+public class PaintPot extends ItemBase
 {
 
-	public Paintbrush(String name, CreativeTabs materials) {
-		super(name, materials);
+	public PaintPot(String name, CreativeTabs tab) {
+		super(name, tab);
 		
-		setMaxDamage(100);
+		setMaxDamage(5);
 		setMaxStackSize(1);
 		setNoRepair();
 	}

@@ -5,6 +5,9 @@ item.earth_mortar.name=Mortier de Terre
 item.water_vial.name=Fiole d'eau
 item.double_water_vial.name=Double Fiole d'eau
 
+//Tabs
+itemGroup.paint_pot_tab=PaintingMod : Pots de peinture
+
 //Tools
 item.hammer.name=Marteau
 
