@@ -23,7 +23,7 @@ item.orange_paint_pot.name=Orange Paint Pot
 item.white_paint_pot.name=White Paint Pot
 
 //GUI
-itemGroup.tutorialtab=Space
+itemGroup.paint_pot_tab=PaintingMod : Paint Pots
 
 //Tools
 item.hammer.name=Hammer
