@@ -9,7 +9,7 @@ import net.minecraft.item.ItemStack;
 public class PaintPotTab extends CreativeTabs
 {
 	public PaintPotTab(String label) {
-		super("tutorialtab");
+		super(label);
 		this.setBackgroundImageName("tutorial.png");
 	}
 
