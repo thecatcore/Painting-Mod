@@ -22,6 +22,10 @@ item.magenta_paint_pot.name=Magenta Paint Pot
 item.orange_paint_pot.name=Orange Paint Pot
 item.white_paint_pot.name=White Paint Pot
 
+//Advancements
+advancements.paintingmod.root.title=PaintingMod
+advancements.paintingmod.root.description=The only painting mod the creator know !!!
+
 //GUI
 itemGroup.paint_pot_tab=PaintingMod : Paint Pots
 
