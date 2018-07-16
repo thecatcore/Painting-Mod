@@ -8,8 +8,8 @@ import net.minecraft.creativetab.CreativeTabs;
 public class Paintbrush extends ItemBase
 {
 
-	public Paintbrush(String name) {
-		super(name);
+	public Paintbrush(String name, CreativeTabs materials) {
+		super(name, materials);
 		
 		setMaxDamage(100);
 		setMaxStackSize(1);

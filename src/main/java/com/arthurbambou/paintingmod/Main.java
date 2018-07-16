@@ -1,8 +1,10 @@
 package com.arthurbambou.paintingmod;
 
 import com.arthurbambou.paintingmod.proxy.CommonProxy;
+import com.arthurbambou.paintingmod.tabs.PaintPotTab;
 import com.arthurbambou.paintingmod.util.Reference;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -13,6 +15,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION)
 public class Main {
+	
+	public static final CreativeTabs PAINT_POT = new PaintPotTab("paint_pot_tab");
 	
 	@Instance
 	public static Main instance;

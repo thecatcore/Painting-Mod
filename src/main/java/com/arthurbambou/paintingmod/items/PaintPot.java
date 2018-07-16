@@ -8,8 +8,8 @@ import net.minecraft.creativetab.CreativeTabs;
 public class PaintPot extends ItemBase
 {
 
-	public PaintPot(String name) {
-		super(name);
+	public PaintPot(String name, CreativeTabs tab) {
+		super(name, tab);
 		
 		setMaxDamage(5);
 		setMaxStackSize(1);
