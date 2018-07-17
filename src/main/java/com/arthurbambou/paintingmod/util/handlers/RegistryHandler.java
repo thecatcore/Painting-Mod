@@ -3,6 +3,7 @@ package com.arthurbambou.paintingmod.util.handlers;
 import com.arthurbambou.paintingmod.init.ModBlocks;
 import com.arthurbambou.paintingmod.init.ModItems;
 import com.arthurbambou.paintingmod.util.IHasModel;
+import com.arthurbambou.paintingmod.util.compat.OreDictionaryCompat;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -10,6 +11,7 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.oredict.OreDictionary;
 
 @EventBusSubscriber
 public class RegistryHandler
@@ -44,5 +46,9 @@ public class RegistryHandler
 				((IHasModel)block).registerModels();
 			}
 		}
+	}
+	
+	public static void initRegistries() {
+		OreDictionaryCompat.registerOres();
 	}
 }
