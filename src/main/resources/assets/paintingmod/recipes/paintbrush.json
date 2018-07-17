@@ -1,5 +1,5 @@
 {
-    "type": "forge:shaped",
+    "type": "forge:ore_shaped",
     
     "pattern":
     [
@@ -18,7 +18,7 @@
         "P":
         {
             "type":"forge:ore_dict",
-            "ore": "planks"
+            "ore": "plankWood"
         },
         "S":
         {
