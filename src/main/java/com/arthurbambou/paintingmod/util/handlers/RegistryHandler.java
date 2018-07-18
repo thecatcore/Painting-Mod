@@ -3,7 +3,6 @@ package com.arthurbambou.paintingmod.util.handlers;
 import com.arthurbambou.paintingmod.init.ModBlocks;
 import com.arthurbambou.paintingmod.init.ModItems;
 import com.arthurbambou.paintingmod.util.IHasModel;
-import com.arthurbambou.paintingmod.util.compat.OreDictionaryCompat;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -46,9 +45,5 @@ public class RegistryHandler
 				((IHasModel)block).registerModels();
 			}
 		}
-	}
-	
-	public static void initRegistries() {
-		OreDictionaryCompat.registerOres();
 	}
 }
