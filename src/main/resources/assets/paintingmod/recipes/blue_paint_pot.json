@@ -5,7 +5,8 @@
     [
 
     {
-      "item": "paintingmod:water_vial"
+      "item": "paintingmod:water_vial",
+      "data": 32767    
     },
 
     {
@@ -24,7 +25,7 @@
     ],
 
     "result": 
-    {
+     {
         "item": "paintingmod:blue_paint_pot",
         "count": 1
     }
