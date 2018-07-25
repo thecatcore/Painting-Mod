@@ -9,6 +9,7 @@ public class WaterVial extends ItemBase {
 		
 		setMaxDamage(damage);
 		setMaxStackSize(stack);
+		setNoRepair();
 	}
 	
 	@Override
@@ -18,6 +19,7 @@ public class WaterVial extends ItemBase {
 
     @Override
     public ItemStack getContainerItem(ItemStack itemStack) {
-        return new ItemStack(this, 1, 1);
+    	int dam = itemStack.getItemDamage() + 1;
+        return new ItemStack(this, 1, dam);
     }
 }

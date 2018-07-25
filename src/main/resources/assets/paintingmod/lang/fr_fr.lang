@@ -5,6 +5,23 @@ item.earth_mortar.name=Mortier de Terre
 item.water_vial.name=Fiole d'eau
 item.double_water_vial.name=Double Fiole d'eau
 
+item.black_paint_pot.name=Pot de peinture noire
+item.red_paint_pot.name=Pot de peinture rouge
+item.green_paint_pot.name=Pot de peinture verte
+item.brown_paint_pot.name=Pot de peinture marron
+item.blue_paint_pot.name=Pot de peinture bleue
+item.purple_paint_pot.name=Pot de peinture violette
+item.cyan_paint_pot.name=Pot de peinture cyan
+item.light_gray_paint_pot.name=Pot de peinture gris clair
+item.gray_paint_pot.name=Pot de peinture grise
+item.pink_paint_pot.name=Pot de peinture rose
+item.lime_paint_pot.name=Pot de peinture vert clair
+item.yellow_paint_pot.name=Pot de peinture jaune
+item.light_blue_paint_pot.name=Pot de peinture bleu clair
+item.magenta_paint_pot.name=Pot de peinture magenta
+item.orange_paint_pot.name=Pot de peinture orange
+item.white_paint_pot.name=Pot de peinture blanc
+
 //Tabs
 itemGroup.paint_pot_tab=PaintingMod : Pots de peinture
 

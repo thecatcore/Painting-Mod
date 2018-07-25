@@ -5,7 +5,8 @@
     [
 
     {
-      "item": "paintingmod:water_vial"
+      "item": "paintingmod:water_vial",
+      "data": 32767
     },
 
     {
