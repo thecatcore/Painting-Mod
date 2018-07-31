@@ -70,7 +70,7 @@ public class SoggyClay extends BlockBase
         	worldIn.setBlockToAir(pos);
         	playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.EARTH_MORTAR, 4));
         }
-        return true;
+        return false;
     }
 
 }
