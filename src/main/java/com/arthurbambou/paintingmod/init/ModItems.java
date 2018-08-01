@@ -7,6 +7,7 @@ import com.arthurbambou.paintingmod.Main;
 import com.arthurbambou.paintingmod.items.ItemBase;
 import com.arthurbambou.paintingmod.items.PaintPot;
 import com.arthurbambou.paintingmod.items.Paintbrush;
+import com.arthurbambou.paintingmod.items.PaintbrushColored;
 import com.arthurbambou.paintingmod.items.WaterVial;
 import com.arthurbambou.paintingmod.items.tools.ToolPickaxe;
 
@@ -26,6 +27,7 @@ public class ModItems
 	
 	//Items
 	public static final Item PAINTBRUSH = new Paintbrush("paintbrush", CreativeTabs.MATERIALS);
+	public static final Item PAINTBRUSH_COLORED = new PaintbrushColored("paintbrush_colored", CreativeTabs.MATERIALS);
 	
 	public static final Item EARTH_MORTAR = new ItemBase("earth_mortar", CreativeTabs.MATERIALS);
 	
