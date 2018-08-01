@@ -33,7 +33,7 @@ public class PaintbrushColored extends ItemBase
 	public String getUnlocalizedName(ItemStack stack) {
 		int metadata = stack.getMetadata();
 		
-		return super.getUnlocalizedName() + "." + EnumDyeColor.byDyeDamage(metadata);
+		return super.getUnlocalizedName() + "_" + EnumDyeColor.byDyeDamage(metadata);
 	}
 
 }
