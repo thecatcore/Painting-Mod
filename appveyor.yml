@@ -7,6 +7,7 @@ branches:
   only:
     - release
     - pre-release
+    - appveyortest
 version: '{build}'
 init:
   - git config --global credential.helper store
@@ -23,5 +24,6 @@ shallow_clone: true
 clone_depth: 1
 test_script:
   - cd Painting-Mod
-  - git tag -a %APPVEYOR_REPO_COMMIT_MESSAGE% -m "%APPVEYOR_REPO_COMMIT_MESSAGE_EXTENDED%"
+  - ./version
+  - git tag -a %TAG_VERSION%%APPVEYOR_BUILD_NUMBER% -m "%APPVEYOR_REPO_COMMIT_MESSAGE_EXTENDED%"
   - git push origin --tags
