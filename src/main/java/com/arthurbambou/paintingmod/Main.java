@@ -13,7 +13,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION)
+@Mod(modid = Reference.MOD_ID, name = Reference.NAME)
 public class Main {
 	
 	public static final CreativeTabs PAINT_POT = new PaintPotTab("paint_pot_tab");
