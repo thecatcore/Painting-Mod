@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    
+    "ingredients":
+    [
+        {
+            "item": "paintingmod:water_vial",
+            "data": 32767
+        },
+        {
+            "item":"paintingmod:light_blue_paint_pot",
+            "data": 32767
+        },
+        {
+            "item":"paintingmod:normal_paintbrush"
+        }
+    ],
+    
+    "result":
+    {
+        "item": "paintingmod:light_blue_paintbrush",
+        "count": 1
+    }
+}

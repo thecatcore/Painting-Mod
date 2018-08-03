@@ -1,6 +1,6 @@
 {  
     "parent":"item/generated",
     "textures":{  
-       "layer0":"paintingmod:items/paintbrush"
+       "layer0":"paintingmod:items/black_paintbrush"
     }
 }
