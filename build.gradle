@@ -106,21 +106,12 @@ processResources {
     }
 }
 
-// Create API jar with sources and compiled files
-task apiJar(type: Jar) {
-    from sourceSets.main.allSource
-    from sourceSets.main.output
-	include 'com/arthurbambou/paintingmod/**'
-    classifier = 'api'
-}
-
 publishing {
     tasks.publish.dependsOn 'build'
     publications {
         mavenJava(MavenPublication) {
             artifact jar
             artifact sourceJar
-            artifact apiJar
         }
     }
 
@@ -178,6 +169,5 @@ curseforge {
         mainArtifact(jar) {
             displayName = "PaintingMod - ${version}"
         }
-        addArtifact(apiJar)
     }
 }

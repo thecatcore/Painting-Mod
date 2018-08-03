@@ -6,7 +6,6 @@ before_install:
  - rm forge-1.12.2-14.23.4.2705-mdk.zip
  - rm -r src/main/java/com/example
 install: 
- - ./gradlew wrapper --gradle-version 4.2.1
  - ./gradlew setupCiWorkspace
 script: ./gradlew build
 
