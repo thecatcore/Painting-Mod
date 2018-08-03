@@ -1,6 +1,6 @@
 
 //Items
-item.paintbrush.name=Paintbrush
+item.normal_paintbrush.name=Paintbrush
 item.earth_mortar.name=Earth Mortar
 item.water_vial.name=Water Vial
 item.double_water_vial.name=Double Water Vial
@@ -22,25 +22,25 @@ item.magenta_paint_pot.name=Magenta Paint Pot
 item.orange_paint_pot.name=Orange Paint Pot
 item.white_paint_pot.name=White Paint Pot
 
-item.paintbrush_colored_black.name=Paintbrush with black paint
-item.paintbrush_colored_red.name=Paintbrush with red paint
-item.paintbrush_colored_green.name=Paintbrush with green paint
-item.paintbrush_colored_brown.name=Paintbrush with brown paint
-item.paintbrush_colored_blue.name=Paintbrush with blue paint
-item.paintbrush_colored_purple.name=Paintbrush with purple paint
-item.paintbrush_colored_cyan.name=Paintbrush with cyan paint
-item.paintbrush_colored_silver.name=Paintbrush with light gray paint
-item.paintbrush_colored_gray.name=Paintbrush with gray paint
-item.paintbrush_colored_pink.name=Paintbrush with pink paint
-item.paintbrush_colored_lime.name=Paintbrush with lime paint
-item.paintbrush_colored_yellow.name=Paintbrush with yellow paint
-item.paintbrush_colored_lightBlue.name=Paintbrush with light blue paint
-item.paintbrush_colored_magenta.name=Paintbrush with magenta paint
-item.paintbrush_colored_orange.name=Paintbrush with orange paint
-item.paintbrush_colored_white.name=Paintbrush with white paint
+item.black_paintbrush.name=Paintbrush with black paint
+item.red_paintbrush.name=Paintbrush with red paint
+item.green_paintbrush.name=Paintbrush with green paint
+item.brown_paintbrush.name=Paintbrush with brown paint
+item.blue_paintbrush.name=Paintbrush with blue paint
+item.purple_paintbrush.name=Paintbrush with purple paint
+item.cyan_paintbrush.name=Paintbrush with cyan paint
+item.light_gray_paintbrush.name=Paintbrush with light gray paint
+item.gray_paintbrush.name=Paintbrush with gray paint
+item.pink_paintbrush.name=Paintbrush with pink paint
+item.lime_paintbrush.name=Paintbrush with lime paint
+item.yellow_paintbrush.name=Paintbrush with yellow paint
+item.lightBlue_paintbrush.name=Paintbrush with light blue paint
+item.magenta_paintbrush.name=Paintbrush with magenta paint
+item.orange_paintbrush.name=Paintbrush with orange paint
+item.white_paintbrush.name=Paintbrush with white paint
 
 //GUI
-itemGroup.paint_pot_tab=PaintingMod : Paint Pots
+itemGroup.paintingmod_tab=PaintingMod
 
 //Tools
 item.hammer.name=Hammer
