@@ -25,7 +25,7 @@ apply plugin: 'maven-publish'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 project.buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
 //version = "${minecraft_version}-" + System.getenv( 'TRAVIS_TAG' ) + "-beta"
-versionn = System.getenv( 'TRAVIS_TAG' )
+project.versionn = System.getenv( 'TRAVIS_TAG' )
 version = "${minecraft_version}-${versionn}.${buildnumber}-beta"
 group = "com.arthurbambou.paintingmod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "PaintingMod"
