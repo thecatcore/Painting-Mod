@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "paintingmod:paintbrush"
+        },
+        "title": {
+            "translate": "advancements.paintingmod.root.title"
+        },
+        "description": {
+            "translate": "advancements.paintingmod.root.description"
+        },
+        "show_toast": false,
+        "announce_to_chat": true
+    },
+    "criteria": {
+        "furnace": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "paintingmod:soggy_clay"
+                    }
+                ]
+            }
+        }
+    }
+}

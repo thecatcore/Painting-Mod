@@ -39,6 +39,10 @@ item.magenta_paintbrush.name=Paintbrush with magenta paint
 item.orange_paintbrush.name=Paintbrush with orange paint
 item.white_paintbrush.name=Paintbrush with white paint
 
+//Advancements
+advancements.paintingmod.root.title=PaintingMod
+advancements.paintingmod.root.description=The only painting mod the creator know !!!
+
 //GUI
 itemGroup.paintingmod_tab=PaintingMod
 
