@@ -1,0 +1,17 @@
+0.6.3-beta:
+Fix:
+-Soggy Clay Block
+
+0.6.2-beta:
+New:
+-update french translation
+
+0.6.1.2-beta:
+Fix:
+-all paint pot
+
+0.6.1-beta:
+Fix:
+-Paintbrush
+Change:
+-Water Vials are no longer repearable
