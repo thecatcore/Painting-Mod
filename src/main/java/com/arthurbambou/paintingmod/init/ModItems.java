@@ -50,6 +50,23 @@ public class ModItems
 	public static final Item MAGENTA_POT = new PaintPot("magenta_paint_pot", Main.PAINT_POT);
 	public static final Item ORANGE_POT = new PaintPot("orange_paint_pot", Main.PAINT_POT);
 	public static final Item WHITE_POT = new PaintPot("white_paint_pot", Main.PAINT_POT);
+	//Paintbrush
+	public static final Item BLACK_PAINTBRUSH = new Paintbrush("black_paintbrush", Main.PAINTING_MOD);
+	public static final Item RED_PAINTBRUSH = new Paintbrush("red_paintbrush", Main.PAINTING_MOD);
+	public static final Item GREEN_PAINTBRUSH = new Paintbrush("green_paintbrush", Main.PAINTING_MOD);
+	public static final Item BROWN_PAINTBRUSH = new Paintbrush("brown_paintbrush", Main.PAINTING_MOD);
+	public static final Item BLUE_PAINTBRUSH = new Paintbrush("blue_paintbrush", Main.PAINTING_MOD);
+	public static final Item PURPLE_PAINTBRUSH = new Paintbrush("purple_paintbrush", Main.PAINTING_MOD);
+	public static final Item CYAN_PAINTBRUSH = new Paintbrush("cyan_paintbrush", Main.PAINTING_MOD);
+	public static final Item LIGHT_GRAY_PAINTBRUSH = new Paintbrush("light_gray_paintbrush", Main.PAINTING_MOD);
+	public static final Item GRAY_PAINTBRUSH = new Paintbrush("gray_paintbrush", Main.PAINTING_MOD);
+	public static final Item PINK_PAINTBRUSH = new Paintbrush("pink_paintbrush", Main.PAINTING_MOD);
+	public static final Item LIME_PAINTBRUSH = new Paintbrush("lime_paintbrush", Main.PAINTING_MOD);
+	public static final Item YELLOW_PAINTBRUSH = new Paintbrush("yellow_paintbrush", Main.PAINTING_MOD);
+	public static final Item LIGHT_BLUE_PAINTBRUSH = new Paintbrush("light_blue_paintbrush", Main.PAINTING_MOD);
+	public static final Item MAGENTA_PAINTBRUSH = new Paintbrush("magenta_paintbrush", Main.PAINTING_MOD);
+	public static final Item ORANGE_PAINTBRUSH = new Paintbrush("orange_paintbrush", Main.PAINTING_MOD);
+	public static final Item WHITE_PAINTBRUSH = new Paintbrush("white_paintbrush", Main.PAINTING_MOD);
 	
 	
 	//Tools
