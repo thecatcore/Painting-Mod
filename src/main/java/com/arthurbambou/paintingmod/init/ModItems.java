@@ -51,6 +51,7 @@ public class ModItems
 	public static final Item ORANGE_POT = new PaintPot("orange_paint_pot", Main.PAINT_POT);
 	public static final Item WHITE_POT = new PaintPot("white_paint_pot", Main.PAINT_POT);
 	//Paintbrush
+	public static final Item NORMAL_PAINTBRUSH = new Paintbrush("normal_paintbrush", Main.PAINTING_MOD);
 	public static final Item BLACK_PAINTBRUSH = new Paintbrush("black_paintbrush", Main.PAINTING_MOD);
 	public static final Item RED_PAINTBRUSH = new Paintbrush("red_paintbrush", Main.PAINTING_MOD);
 	public static final Item GREEN_PAINTBRUSH = new Paintbrush("green_paintbrush", Main.PAINTING_MOD);
