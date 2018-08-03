@@ -110,7 +110,7 @@ processResources {
 task apiJar(type: Jar) {
     from sourceSets.main.allSource
     from sourceSets.main.output
-	include 'com/arthurbambou/paintingmod/api/**/*'
+	include 'com/arthurbambou/paintingmod/**'
     classifier = 'api'
 }
 
