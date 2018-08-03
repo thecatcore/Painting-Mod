@@ -16,7 +16,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION)
 public class Main {
 	
-	public static final CreativeTabs PAINT_POT = new PaintPotTab("paint_pot_tab");
+	public static final CreativeTabs PAINTING_MOD = new PaintPotTab("paintingmod_tab");
+	//public static final CreativeTabs PAINTBRUSH = new PaintPotTab("paintbrush_tab", ModItems.PAINTBRUSH);
 	
 	@Instance
 	public static Main instance;
