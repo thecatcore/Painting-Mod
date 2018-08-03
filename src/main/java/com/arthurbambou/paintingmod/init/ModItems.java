@@ -7,11 +7,9 @@ import com.arthurbambou.paintingmod.Main;
 import com.arthurbambou.paintingmod.items.ItemBase;
 import com.arthurbambou.paintingmod.items.PaintPot;
 import com.arthurbambou.paintingmod.items.Paintbrush;
-import com.arthurbambou.paintingmod.items.PaintbrushColored;
 import com.arthurbambou.paintingmod.items.WaterVial;
 import com.arthurbambou.paintingmod.items.tools.ToolPickaxe;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemPickaxe;

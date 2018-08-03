@@ -3,11 +3,10 @@ package com.arthurbambou.paintingmod.init;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.arthurbambou.paintingmod.blocks.BlockBase;
+import com.arthurbambou.paintingmod.Main;
 import com.arthurbambou.paintingmod.blocks.SoggyClay;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 
 public class ModBlocks {
