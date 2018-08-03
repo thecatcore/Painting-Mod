@@ -25,9 +25,9 @@ import net.minecraftforge.oredict.OreDictionary;
 public class SoggyClay extends BlockBase
 {
 
-	public SoggyClay(String name, Material material)
+	public SoggyClay(String name, Material material, CreativeTabs tab)
 	{
-		super(name, material);
+		super(name, material, tab);
 		setSoundType(SoundType.SAND);
 		setHardness(0.6F);
 		setResistance(3.0F);
@@ -67,7 +67,7 @@ public class SoggyClay extends BlockBase
         ItemStack item = playerIn.getHeldItemMainhand();
         Item itemm = item.getItem();
         if(itemm == ModItems.HAMMER) {
-        	worldIn.setBlockToAir(pos);
+            worldIn.setBlockToAir(pos);
         	playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.EARTH_MORTAR, 4));
         }
         return false;
