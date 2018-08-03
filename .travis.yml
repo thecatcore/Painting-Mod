@@ -5,7 +5,8 @@ before_install:
  - unzip -n forge-1.12.2-14.23.4.2705-mdk.zip
  - rm forge-1.12.2-14.23.4.2705-mdk.zip
  - rm -r src/main/java/com/example
-install: ./gradlew setupCiWorkspace
+install: 
+ - ./gradlew setupCiWorkspace
 script: ./gradlew build
 
 deploy:
