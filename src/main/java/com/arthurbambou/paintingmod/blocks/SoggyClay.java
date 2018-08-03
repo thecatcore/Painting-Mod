@@ -2,16 +2,12 @@ package com.arthurbambou.paintingmod.blocks;
 
 import java.util.Random;
 
-import javax.annotation.Nullable;
-
-import com.arthurbambou.paintingmod.init.ModBlocks;
 import com.arthurbambou.paintingmod.init.ModItems;
 
-import net.minecraft.block.BlockAnvil;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.item.EntityItem;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -20,14 +16,13 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.minecraftforge.oredict.OreDictionary;
 
 public class SoggyClay extends BlockBase
 {
 
-	public SoggyClay(String name, Material material)
+	public SoggyClay(String name, Material material, CreativeTabs tab)
 	{
-		super(name, material);
+		super(name, material, tab);
 		setSoundType(SoundType.SAND);
 		setHardness(0.6F);
 		setResistance(3.0F);
@@ -67,7 +62,7 @@ public class SoggyClay extends BlockBase
         ItemStack item = playerIn.getHeldItemMainhand();
         Item itemm = item.getItem();
         if(itemm == ModItems.HAMMER) {
-        	worldIn.setBlockToAir(pos);
+            worldIn.setBlockToAir(pos);
         	playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.EARTH_MORTAR, 4));
         }
         return false;
