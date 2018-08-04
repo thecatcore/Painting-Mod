@@ -8,11 +8,13 @@ before_install:
 install: 
  - ./gradlew setupCiWorkspace
 script: ./gradlew build
+before_deploy:
+  - "export CHANGELOG_BODY=`cat CHANGELOG.md | ./extract_relevant_changelog_entry_body`"
 
 deploy:
 - provider: releases
   api_key: $GH_TOKEN
-  body: changelog.txt
+  body: ${CHANGELOG_BODY}
   file_glob: true
   file: build/libs/*
   skip_cleanup: true
@@ -23,7 +25,7 @@ deploy:
   
 - provider: releases
   api_key: $GH_TOKEN
-  body: changelog.txt
+  body: ${CHANGELOG_BODY}
   file_glob: true
   file: build/libs/*
   skip_cleanup: true
