@@ -26,7 +26,7 @@ apply plugin: 'maven-publish'
 project.buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
 //version = "${minecraft_version}-" + System.getenv( 'TRAVIS_TAG' ) + "-beta"
 project.versionn = System.getenv( 'TRAVIS_TAG' )
-version = "${minecraft_version}-${versionn}.${buildnumber}-beta"
+version = "MC${minecraft_version}-${versionn}.${buildnumber}-beta"
 group = "com.arthurbambou.paintingmod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "PaintingMod"
 
