@@ -27,17 +27,10 @@ public class PinkBlock extends BlockBase
 
 	public PinkBlock(String name, Material material, SoundType sound, float hardness, float resistance, String harvestTool, int harvestLevel)
 	{
-		super(material, Main.PAINTING_MOD);
+		super("pink_" + name, material, Main.PAINTING_MOD);
 		setSoundType(sound);
 		setHardness(hardness);
 		setResistance(resistance);
 		setHarvestLevel(harvestTool, harvestLevel);
-		setRegistryName("pink_" + name);
-	}
-	
-	@Override
-	public Block setUnlocalizedName(String name) {
-		// TODO Auto-generated method stub
-		return this.setUnlocalizedName("pink_" + name);
 	}
 }

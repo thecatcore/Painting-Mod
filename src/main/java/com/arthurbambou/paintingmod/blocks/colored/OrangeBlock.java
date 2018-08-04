@@ -27,17 +27,10 @@ public class OrangeBlock extends BlockBase
 
 	public OrangeBlock(String name, Material material, SoundType sound, float hardness, float resistance, String harvestTool, int harvestLevel)
 	{
-		super(material, Main.PAINTING_MOD);
+		super("orange_" + name, material, Main.PAINTING_MOD);
 		setSoundType(sound);
 		setHardness(hardness);
 		setResistance(resistance);
 		setHarvestLevel(harvestTool, harvestLevel);
-		setRegistryName("orange_" + name);
-	}
-	
-	@Override
-	public Block setUnlocalizedName(String name) {
-		// TODO Auto-generated method stub
-		return this.setUnlocalizedName("orange_" + name);
 	}
 }
