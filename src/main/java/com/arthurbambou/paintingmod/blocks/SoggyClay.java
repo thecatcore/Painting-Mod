@@ -22,13 +22,11 @@ public class SoggyClay extends BlockBase
 
 	public SoggyClay(String name, Material material, CreativeTabs tab)
 	{
-		super(material, tab);
+		super(name, material, tab);
 		setSoundType(SoundType.SAND);
 		setHardness(0.6F);
 		setResistance(3.0F);
 		setHarvestLevel("pickaxe", 1);
-		setRegistryName(name);
-		setUnlocalizedName(name);
 	}
     @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune){

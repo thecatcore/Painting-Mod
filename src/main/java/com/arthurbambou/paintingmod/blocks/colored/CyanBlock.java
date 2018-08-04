@@ -27,17 +27,10 @@ public class CyanBlock extends BlockBase
 
 	public CyanBlock(String name, Material material, SoundType sound, float hardness, float resistance, String harvestTool, int harvestLevel)
 	{
-		super(material, Main.PAINTING_MOD);
+		super("cyan_" + name, material, Main.PAINTING_MOD);
 		setSoundType(sound);
 		setHardness(hardness);
 		setResistance(resistance);
 		setHarvestLevel(harvestTool, harvestLevel);
-		setRegistryName("cyan_" + name);
-	}
-	
-	@Override
-	public Block setUnlocalizedName(String name) {
-		// TODO Auto-generated method stub
-		return this.setUnlocalizedName("cyan_" + name);
 	}
 }

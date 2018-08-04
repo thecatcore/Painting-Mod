@@ -27,17 +27,10 @@ public class BrownBlock extends BlockBase
 
 	public BrownBlock(String name, Material material, SoundType sound, float hardness, float resistance, String harvestTool, int harvestLevel)
 	{
-		super(material, Main.PAINTING_MOD);
+		super("brown_" + name, material, Main.PAINTING_MOD);
 		setSoundType(sound);
 		setHardness(hardness);
 		setResistance(resistance);
 		setHarvestLevel(harvestTool, harvestLevel);
-		setRegistryName("brown_" + name);
-	}
-	
-	@Override
-	public Block setUnlocalizedName(String name) {
-		// TODO Auto-generated method stub
-		return this.setUnlocalizedName("brown_" + name);
 	}
 }
