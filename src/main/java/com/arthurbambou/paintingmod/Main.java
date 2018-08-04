@@ -1,5 +1,8 @@
 package com.arthurbambou.paintingmod;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.arthurbambou.paintingmod.proxy.CommonProxy;
 import com.arthurbambou.paintingmod.tabs.PaintPotTab;
 import com.arthurbambou.paintingmod.util.Reference;
@@ -18,6 +21,7 @@ public class Main {
 	
 	public static final CreativeTabs PAINTING_MOD = new PaintPotTab("paintingmod_tab");
 	//public static final CreativeTabs PAINTBRUSH = new PaintPotTab("paintbrush_tab", ModItems.PAINTBRUSH);
+	public static final Logger logger = LogManager.getLogger(Reference.MOD_ID);
 	
 	@Instance
 	public static Main instance;
