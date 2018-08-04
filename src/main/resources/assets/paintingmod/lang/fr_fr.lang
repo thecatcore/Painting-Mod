@@ -23,21 +23,21 @@ item.orange_paint_pot.name=Pot de peinture orange
 item.white_paint_pot.name=Pot de peinture blanc
 
 item.black_paintbrush.name=Pinceau avec de la peinture noire
-item.red_paintbrush.name=Paintbrush with red paint Pinceau avec de la peinture rouge
-item.green_paintbrush.name=Paintbrush with green paint Pinceau avec de la peinture verte
-item.brown_paintbrush.name=Paintbrush with brown paint Pinceau avec de la peinture marron
-item.blue_paintbrush.name=Paintbrush with blue paint Pinceau avec de la peinture bleue
-item.purple_paintbrush.name=Paintbrush with purple paint Pinceau avec de la peinture violette
-item.cyan_paintbrush.name=Paintbrush with cyan paint Pinceau avec de la peinture cyan
-item.light_gray_paintbrush.name=Paintbrush with light gray paint Pinceau avec de la peinture gris clair
-item.gray_paintbrush.name=Paintbrush with gray paint Pinceau avec de la peinture grise
-item.pink_paintbrush.name=Paintbrush with pink paint Pinceau avec de la peinture rose
-item.lime_paintbrush.name=Paintbrush with lime paint Pinceau avec de la peinture vert clair
-item.yellow_paintbrush.name=Paintbrush with yellow paint Pinceau avec de la peinture jaune
-item.lightBlue_paintbrush.name=Paintbrush with light blue paint Pinceau avec de la peinture bleu clair
-item.magenta_paintbrush.name=Paintbrush with magenta paint Pinceau avec de la peinture magenta
-item.orange_paintbrush.name=Paintbrush with orange paint Pinceau avec de la peinture orange
-item.white_paintbrush.name=Paintbrush with white paint Pinceau avec de la peinture blanche
+item.red_paintbrush.name=Pinceau avec de la peinture rouge
+item.green_paintbrush.name=Pinceau avec de la peinture verte
+item.brown_paintbrush.name=Pinceau avec de la peinture marron
+item.blue_paintbrush.name=Pinceau avec de la peinture bleue
+item.purple_paintbrush.name=Pinceau avec de la peinture violette
+item.cyan_paintbrush.name=Pinceau avec de la peinture cyan
+item.light_gray_paintbrush.name=Pinceau avec de la peinture gris clair
+item.gray_paintbrush.name=Pinceau avec de la peinture grise
+item.pink_paintbrush.name=Pinceau avec de la peinture rose
+item.lime_paintbrush.name=Pinceau avec de la peinture vert clair
+item.yellow_paintbrush.name=Pinceau avec de la peinture jaune
+item.light_blue_paintbrush.name=Pinceau avec de la peinture bleu clair
+item.magenta_paintbrush.name=Pinceau avec de la peinture magenta
+item.orange_paintbrush.name=Pinceau avec de la peinture orange
+item.white_paintbrush.name=Pinceau avec de la peinture blanche
 
 //GUI
 itemGroup.paintingmod_tab=PaintingMod
@@ -47,3 +47,20 @@ item.hammer.name=Marteau
 
 //Blocks
 tile.soggy_clay.name=Argile Détrempé
+
+tile.black_plank.name=Planche noire
+tile.red_plank.name=Planche rouge
+tile.green_plank.name=Planche verte
+tile.brown_plank.name=Planche marron
+tile.blue_plank.name=Planche bleue
+tile.purple_plank.name=Planche violette
+tile.cyan_plank.name=Planche cyan
+tile.light_gray_plank.name=Planche gris clair
+tile.gray_plank.name=Planche grise
+tile.pink_plank.name=Planche rose
+tile.lime_plank.name=Planche vert clair
+tile.yellow_plank.name=Planche jaune
+tile.light_blue_plank.name=Planche bleu clair
+tile.magenta_plank.name=Planche magenta
+tile.orange_plank.name=Planche orange
+tile.white_plank.name=Planche blanche

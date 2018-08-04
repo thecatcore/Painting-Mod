@@ -1,3 +1,11 @@
+0.8.0-beta:
+Added:
+-First Block to can be paint the wood planks
+-But the painted block haven't already there texture
+Fix:
+-localization text for the Paintbrush with light blue paint
+-french localization (paintbrushes)
+
 0.7.0-beta:
 Add:
 -Colored Paintbrush
