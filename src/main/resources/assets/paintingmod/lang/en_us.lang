@@ -34,7 +34,7 @@ item.gray_paintbrush.name=Paintbrush with gray paint
 item.pink_paintbrush.name=Paintbrush with pink paint
 item.lime_paintbrush.name=Paintbrush with lime paint
 item.yellow_paintbrush.name=Paintbrush with yellow paint
-item.lightBlue_paintbrush.name=Paintbrush with light blue paint
+item.light_blue_paintbrush.name=Paintbrush with light blue paint
 item.magenta_paintbrush.name=Paintbrush with magenta paint
 item.orange_paintbrush.name=Paintbrush with orange paint
 item.white_paintbrush.name=Paintbrush with white paint
@@ -47,3 +47,20 @@ item.hammer.name=Hammer
 
 //Blocks
 tile.soggy_clay.name=Soggy Clay
+
+tile.black_plank.name=Black Plank
+tile.red_plank.name=Red Plank
+tile.green_plank.name=Green Plank
+tile.brown_plank.name=Brown Plank
+tile.blue_plank.name=Blue Plank
+tile.purple_plank.name=Purple Plank
+tile.cyan_plank.name=Cyan Plank
+tile.light_gray_plank.name=Light Gray Plank
+tile.gray_plank.name=Gray Plank
+tile.pink_plank.name=Pink Plank
+tile.lime_plank.name=Lime Plank
+tile.yellow_plank.name=Yellow Plank
+tile.light_blue_plank.name=Light Blue Plank
+tile.magenta_plank.name=Magenta Plank
+tile.orange_plank.name=Orange Plank
+tile.white_plank.name=White Plank
