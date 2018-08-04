@@ -47,3 +47,20 @@ item.hammer.name=Marteau
 
 //Blocks
 tile.soggy_clay.name=Argile Détrempé
+
+tile.black_plank.name=Planche noire
+tile.red_plank.name=Planche rouge
+tile.green_plank.name=Planche verte
+tile.brown_plank.name=Planche marron
+tile.blue_plank.name=Planche bleue
+tile.purple_plank.name=Planche violette
+tile.cyan_plank.name=Planche cyan
+tile.light_gray_plank.name=Planche gris clair
+tile.gray_plank.name=Planche grise
+tile.pink_plank.name=Planche rose
+tile.lime_plank.name=Planche vert clair
+tile.yellow_plank.name=Planche jaune
+tile.light_blue_plank.name=Planche bleu clair
+tile.magenta_plank.name=Planche magenta
+tile.orange_plank.name=Planche orange
+tile.white_plank.name=Planche blanche
