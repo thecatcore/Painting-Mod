@@ -1,3 +1,9 @@
+##0.8.1-beta:
+#Added:
+-Colored Planks now have textures
+#Changes:
+-Colored Planks are now Flammable
+
 ##0.8.0-beta:
 #Added:
 -First Block to can be paint the wood planks
