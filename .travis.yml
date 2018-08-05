@@ -12,7 +12,6 @@ script: ./gradlew build
 deploy:
 - provider: releases
   api_key: $GH_TOKEN
-  body: changelog.txt
   file_glob: true
   file: build/libs/*
   skip_cleanup: true
@@ -23,7 +22,6 @@ deploy:
   
 - provider: releases
   api_key: $GH_TOKEN
-  body: changelog.txt
   file_glob: true
   file: build/libs/*
   skip_cleanup: true
