@@ -26,9 +26,9 @@ apply plugin: 'maven-publish'
 project.buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
 //version = "${minecraft_version}-" + System.getenv( 'TRAVIS_TAG' ) + "-beta"
 project.versionn = System.getenv( 'TRAVIS_TAG' )
-version = "MC${minecraft_version}-${versionn}.${buildnumber}-beta"
+version = "${versionn}"
 group = "com.arthurbambou.paintingmod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "PaintingMod"
+archivesBaseName = "PaintingMod-MC${minecraft_version}"
 
 sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 compileJava {
@@ -48,7 +48,7 @@ minecraft {
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 
     replaceIn "Reference.java"
-    replace "@VERSION@", project.version
+    replace "@VERSION@", System.getenv( 'TRAVIS_TAG' )
 }
 
 dependencies {
