@@ -1,5 +1,6 @@
 package com.arthurbambou.paintingmod.items;
 
+import com.arthurbambou.paintingmod.Main;
 import com.arthurbambou.paintingmod.init.ModBlocks;
 import com.arthurbambou.paintingmod.init.ModItems;
 
@@ -29,6 +30,11 @@ public class Paintbrush extends ItemBase {
 				ModBlocks.PURPLE_PLANK, ModBlocks.CYAN_PLANK, ModBlocks.LIGHT_GRAY_PLANK, ModBlocks.GRAY_PLANK, 
 				ModBlocks.PINK_PLANK, ModBlocks.LIME_PLANK, ModBlocks.YELLOW_PLANK, ModBlocks.LIGHT_BLUE_PLANK,
 				ModBlocks.MAGENTA_PLANK, ModBlocks.ORANGE_PLANK, ModBlocks.WHITE_PLANK);
+		newbloctopaint(player, worldIn, pos, Blocks.STONE, ModBlocks.BLACK_STONE, 
+				ModBlocks.RED_STONE, ModBlocks.GREEN_STONE, ModBlocks.BROWN_STONE, ModBlocks.BLUE_STONE,
+				ModBlocks.PURPLE_STONE, ModBlocks.CYAN_STONE, ModBlocks.LIGHT_GRAY_STONE, ModBlocks.GRAY_STONE, 
+				ModBlocks.PINK_STONE, ModBlocks.LIME_STONE, ModBlocks.YELLOW_STONE, ModBlocks.LIGHT_BLUE_STONE,
+				ModBlocks.MAGENTA_STONE, ModBlocks.ORANGE_STONE, ModBlocks.WHITE_STONE, 0);
 		return EnumActionResult.SUCCESS;
 	}
 	
@@ -36,6 +42,8 @@ public class Paintbrush extends ItemBase {
 			Block topaint, Block black, Block red, Block green, Block brown, Block blue,
 			Block purple, Block cyan, Block lightgray, Block gray, Block pink,
 			Block lime, Block yellow, Block lightblue, Block magenta, Block orange, Block white) {
+		Main.logger.warn("BlockState : " + worldIn.getBlockState(pos).getBlock().getMetaFromState(worldIn.getBlockState(pos)));
+		worldIn.getBlockState(pos).getBlock().getMetaFromState(Blocks.STONE.getDefaultState());
 		if (worldIn.getBlockState(pos).getBlock() == topaint) {
 			black(player, worldIn, pos, black);
 			red(player, worldIn, pos, red);
@@ -55,6 +63,31 @@ public class Paintbrush extends ItemBase {
 			white(player, worldIn, pos, white);
 		}
 		
+	}
+	
+	public void newbloctopaint(EntityPlayer player, World worldIn, BlockPos pos,
+			Block topaint, Block black, Block red, Block green, Block brown, Block blue,
+			Block purple, Block cyan, Block lightgray, Block gray, Block pink,
+			Block lime, Block yellow, Block lightblue, Block magenta, Block orange, Block white, int meta) {
+		Main.logger.warn("BlockState : " + worldIn.getBlockState(pos).getBlock().getMetaFromState(worldIn.getBlockState(pos)));
+		if (worldIn.getBlockState(pos).getBlock() == topaint && worldIn.getBlockState(pos).getBlock().getMetaFromState(worldIn.getBlockState(pos)) == meta) {
+			black(player, worldIn, pos, black);
+			red(player, worldIn, pos, red);
+			green(player, worldIn, pos, green);
+			brown(player, worldIn, pos, brown);
+			blue(player, worldIn, pos, blue);
+			purple(player, worldIn, pos, purple);
+			cyan(player, worldIn, pos, cyan);
+			lightGray(player, worldIn, pos, lightgray);
+			gray(player, worldIn, pos, gray);
+			pink(player, worldIn, pos, pink);
+			lime(player, worldIn, pos, lime);
+			yellow(player, worldIn, pos, yellow);
+			lightBlue(player, worldIn, pos, lightblue);
+			magenta(player, worldIn, pos, magenta);
+			orange(player, worldIn, pos, orange);
+			white(player, worldIn, pos, white);
+		}
 	}
 	
 	public void usedpaintbrush (EntityPlayer player) {
