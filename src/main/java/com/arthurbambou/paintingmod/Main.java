@@ -18,7 +18,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION)
+@Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, updateJSON = "https://gist.githubusercontent.com/arthurbambou/2c316e790e623363385bd26a59ab8847/raw/versions.json")
 public class Main {
 	
 	public static final CreativeTabs PAINTING_MOD = new PaintPotTab("paintingmod_tab");
