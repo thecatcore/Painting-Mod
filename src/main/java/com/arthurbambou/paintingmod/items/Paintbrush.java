@@ -35,6 +35,11 @@ public class Paintbrush extends ItemBase {
 				ModBlocks.PURPLE_STONE, ModBlocks.CYAN_STONE, ModBlocks.LIGHT_GRAY_STONE, ModBlocks.GRAY_STONE, 
 				ModBlocks.PINK_STONE, ModBlocks.LIME_STONE, ModBlocks.YELLOW_STONE, ModBlocks.LIGHT_BLUE_STONE,
 				ModBlocks.MAGENTA_STONE, ModBlocks.ORANGE_STONE, ModBlocks.WHITE_STONE, 0);
+		newbloctopaint(player, worldIn, pos, Blocks.STONE, ModBlocks.BLACK_GRANITE, 
+				ModBlocks.RED_GRANITE, ModBlocks.GREEN_GRANITE, ModBlocks.BROWN_GRANITE, ModBlocks.BLUE_GRANITE,
+				ModBlocks.PURPLE_GRANITE, ModBlocks.CYAN_GRANITE, ModBlocks.LIGHT_GRAY_GRANITE, ModBlocks.GRAY_GRANITE, 
+				ModBlocks.PINK_GRANITE, ModBlocks.LIME_GRANITE, ModBlocks.YELLOW_GRANITE, ModBlocks.LIGHT_BLUE_GRANITE,
+				ModBlocks.MAGENTA_GRANITE, ModBlocks.ORANGE_GRANITE, ModBlocks.WHITE_GRANITE, 1);
 		return EnumActionResult.SUCCESS;
 	}
 	
