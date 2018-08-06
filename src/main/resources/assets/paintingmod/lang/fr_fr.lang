@@ -83,3 +83,21 @@ tile.light_blue_stone.name=Roche bleu clair
 tile.magenta_stone.name=Roche magenta
 tile.orange_stone.name=Roche orange
 tile.white_stone.name=Roche blanche
+
+//Granite
+tile.black_granite.name=Granite noir
+tile.red_granite.name=Granite rouge
+tile.green_granite.name=Granite vert
+tile.brown_granite.name=Granite marron
+tile.blue_granite.name=Granite bleu
+tile.purple_granite.name=Granite violet
+tile.cyan_granite.name=Granite cyan
+tile.light_gray_granite.name=Granite gris clair
+tile.gray_granite.name=Granite gris
+tile.pink_granite.name=Granite rose
+tile.lime_granite.name=Granite vert clair
+tile.yellow_granite.name=Granite jaune
+tile.light_blue_granite.name=Granite bleu clair
+tile.magenta_granite.name=Granite magenta
+tile.orange_granite.name=Granite orange
+tile.white_granite.name=Granite blanc

@@ -83,3 +83,21 @@ tile.light_blue_stone.name=Light Blue Stone
 tile.magenta_stone.name=Magenta Stone
 tile.orange_stone.name=Orange Stone
 tile.white_stone.name=White Stone
+
+//Granite
+tile.black_granite.name=Black Granite
+tile.red_granite.name=Red Granite
+tile.green_granite.name=Green Granite
+tile.brown_granite.name=Brown Granite
+tile.blue_granite.name=Blue Granite
+tile.purple_granite.name=Purple Granite
+tile.cyan_granite.name=Cyan Granite
+tile.light_gray_granite.name=Light Gray Granite
+tile.gray_granite.name=Gray Granite
+tile.pink_granite.name=Pink Granite
+tile.lime_granite.name=Lime Granite
+tile.yellow_granite.name=Yellow Granite
+tile.light_blue_granite.name=Light Blue Granite
+tile.magenta_granite.name=Magenta Granite
+tile.orange_granite.name=Orange Granite
+tile.white_granite.name=White Granite
