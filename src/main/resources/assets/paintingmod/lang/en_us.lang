@@ -48,6 +48,7 @@ item.hammer.name=Hammer
 //Blocks
 tile.soggy_clay.name=Soggy Clay
 
+//Planks
 tile.black_plank.name=Black Plank
 tile.red_plank.name=Red Plank
 tile.green_plank.name=Green Plank
@@ -64,3 +65,21 @@ tile.light_blue_plank.name=Light Blue Plank
 tile.magenta_plank.name=Magenta Plank
 tile.orange_plank.name=Orange Plank
 tile.white_plank.name=White Plank
+
+//Stone
+tile.black_stone.name=Black Stone
+tile.red_stone.name=Red Stone
+tile.green_stone.name=Green Stone
+tile.brown_stone.name=Brown Stone
+tile.blue_stone.name=Blue Stone
+tile.purple_stone.name=Purple Stone
+tile.cyan_stone.name=Cyan Stone
+tile.light_gray_stone.name=Light Gray Stone
+tile.gray_stone.name=Gray Stone
+tile.pink_stone.name=Pink Stone
+tile.lime_stone.name=Lime Stone
+tile.yellow_stone.name=Yellow Stone
+tile.light_blue_stone.name=Light Blue Stone
+tile.magenta_stone.name=Magenta Stone
+tile.orange_stone.name=Orange Stone
+tile.white_stone.name=White Stone

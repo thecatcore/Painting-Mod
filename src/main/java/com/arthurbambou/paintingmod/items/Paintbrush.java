@@ -42,8 +42,9 @@ public class Paintbrush extends ItemBase {
 			Block topaint, Block black, Block red, Block green, Block brown, Block blue,
 			Block purple, Block cyan, Block lightgray, Block gray, Block pink,
 			Block lime, Block yellow, Block lightblue, Block magenta, Block orange, Block white) {
-		Main.logger.warn("BlockState : " + worldIn.getBlockState(pos).getBlock().getMetaFromState(worldIn.getBlockState(pos)));
-		worldIn.getBlockState(pos).getBlock().getMetaFromState(Blocks.STONE.getDefaultState());
+		if (player.getHeldItemMainhand().getItem() == ModItems.NORMAL_PAINTBRUSH) {
+			
+		} else {
 		if (worldIn.getBlockState(pos).getBlock() == topaint) {
 			black(player, worldIn, pos, black);
 			red(player, worldIn, pos, red);
@@ -62,6 +63,7 @@ public class Paintbrush extends ItemBase {
 			orange(player, worldIn, pos, orange);
 			white(player, worldIn, pos, white);
 		}
+		}
 		
 	}
 	
@@ -69,7 +71,9 @@ public class Paintbrush extends ItemBase {
 			Block topaint, Block black, Block red, Block green, Block brown, Block blue,
 			Block purple, Block cyan, Block lightgray, Block gray, Block pink,
 			Block lime, Block yellow, Block lightblue, Block magenta, Block orange, Block white, int meta) {
-		Main.logger.warn("BlockState : " + worldIn.getBlockState(pos).getBlock().getMetaFromState(worldIn.getBlockState(pos)));
+		if (player.getHeldItemMainhand().getItem() == ModItems.NORMAL_PAINTBRUSH) {
+			
+		} else {
 		if (worldIn.getBlockState(pos).getBlock() == topaint && worldIn.getBlockState(pos).getBlock().getMetaFromState(worldIn.getBlockState(pos)) == meta) {
 			black(player, worldIn, pos, black);
 			red(player, worldIn, pos, red);
@@ -87,6 +91,7 @@ public class Paintbrush extends ItemBase {
 			magenta(player, worldIn, pos, magenta);
 			orange(player, worldIn, pos, orange);
 			white(player, worldIn, pos, white);
+		}
 		}
 	}
 	
