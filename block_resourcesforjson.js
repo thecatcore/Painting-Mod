@@ -1,5 +1,5 @@
 var fs = require("fs");
-var blockname = ""
+var blockname = "polished_granite"
 var color = [
     "black",
     "blue",

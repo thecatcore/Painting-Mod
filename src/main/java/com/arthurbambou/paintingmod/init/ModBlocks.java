@@ -71,4 +71,22 @@ public class ModBlocks {
 	public static final Block MAGENTA_GRANITE = new MagentaBlock("granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1);
 	public static final Block ORANGE_GRANITE = new OrangeBlock("granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1);
 	public static final Block WHITE_GRANITE = new WhiteBlock("granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1);
+
+	//Polished Granite Blocks
+	public static final Block BLACK_POLISHED_GRANITE = new BlackBlock("polished_granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1);
+	public static final Block RED_POLISHED_GRANITE = new RedBlock("polished_granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1);
+	public static final Block GREEN_POLISHED_GRANITE = new GreenBlock("polished_granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1);
+	public static final Block BROWN_POLISHED_GRANITE = new BrownBlock("polished_granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1);
+	public static final Block BLUE_POLISHED_GRANITE = new BlueBlock("polished_granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1);
+	public static final Block PURPLE_POLISHED_GRANITE = new PurpleBlock("polished_granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1);
+	public static final Block CYAN_POLISHED_GRANITE = new CyanBlock("polished_granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1);
+	public static final Block LIGHT_GRAY_POLISHED_GRANITE = new LightGrayBlock("polished_granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1);
+	public static final Block GRAY_POLISHED_GRANITE = new GrayBlock("polished_granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1);
+	public static final Block PINK_POLISHED_GRANITE = new PinkBlock("polished_granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1);
+	public static final Block LIME_POLISHED_GRANITE = new LimeBlock("polished_granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1);
+	public static final Block YELLOW_POLISHED_GRANITE = new YellowBlock("polished_granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1);
+	public static final Block LIGHT_BLUE_POLISHED_GRANITE = new LightBlueBlock("polished_granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1);
+	public static final Block MAGENTA_POLISHED_GRANITE = new MagentaBlock("polished_granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1);
+	public static final Block ORANGE_POLISHED_GRANITE = new OrangeBlock("polished_granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1);
+	public static final Block WHITE_POLISHED_GRANITE = new WhiteBlock("polished_granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1);
 }
