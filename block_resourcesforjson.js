@@ -1,5 +1,5 @@
 var fs = require("fs");
-var blockname = "stone"
+var blockname = ""
 var color = [
     "black",
     "blue",
@@ -20,8 +20,12 @@ var color = [
 ]
 for (var i=0; i<color.length;i++) {
 blockstate(i)
+console.log("")
 blockmodel(i)
+console.log("")
 itemblockmodel(i)
+console.log("")
+console.log("")
 }
 
 function blockstate (i) {
@@ -38,8 +42,9 @@ function blockstate (i) {
     }
     fs.writeFile(path, JSON.stringify(json), (err) => {
         if (err) throw err;
-        console.log('Le fichier a été sauvegardé!');
+        //console.log('Le fichier a été sauvegardé!');
     });
+    console.log('Le fichier a été sauvegardé!');
 }
 
 function blockmodel (i) {
@@ -55,8 +60,9 @@ function blockmodel (i) {
     }
     fs.writeFile(path, JSON.stringify(json), (err) => {
         if (err) throw err;
-        console.log('Le fichier a été sauvegardé!');
+        //console.log('Le fichier a été sauvegardé!');
     });
+    console.log('Le fichier a été sauvegardé!');
 }
 function itemblockmodel (i) {
     var path = `./src/main/resources/assets/paintingmod/models/item/${color[i]}_${blockname}.json`
@@ -68,6 +74,7 @@ function itemblockmodel (i) {
     }
     fs.writeFile(path, JSON.stringify(json), (err) => {
         if (err) throw err;
-        console.log('Le fichier a été sauvegardé!');
+        //console.log('Le fichier a été sauvegardé!');
     });
+    console.log('Le fichier a été sauvegardé!');
 }
