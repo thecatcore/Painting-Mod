@@ -101,3 +101,21 @@ tile.light_blue_granite.name=Granite bleu clair
 tile.magenta_granite.name=Granite magenta
 tile.orange_granite.name=Granite orange
 tile.white_granite.name=Granite blanc
+
+//Polished Granite
+tile.black_polished_granite.name=Granite poli noir
+tile.red_polished_granite.name=Granite poli rouge
+tile.green_polished_granite.name=Granite poli vert
+tile.brown_polished_granite.name=Granite poli marron
+tile.blue_polished_granite.name=Granite poli bleu
+tile.purple_polished_granite.name=Granite poli violet
+tile.cyan_polished_granite.name=Granite poli cyan
+tile.light_gray_polished_granite.name=Granite poli gris clair
+tile.gray_polished_granite.name=Granite poli gris
+tile.pink_polished_granite.name=Granite poli rose
+tile.lime_polished_granite.name=Granite poli vert clair
+tile.yellow_polished_granite.name=Granite poli jaune
+tile.light_blue_polished_granite.name=Granite poli bleu clair
+tile.magenta_polished_granite.name=Granite poli magenta
+tile.orange_polished_granite.name=Granite poli orange
+tile.white_polished_granite.name=Granite poli blanc

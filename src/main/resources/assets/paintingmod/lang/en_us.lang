@@ -101,3 +101,93 @@ tile.light_blue_granite.name=Light Blue Granite
 tile.magenta_granite.name=Magenta Granite
 tile.orange_granite.name=Orange Granite
 tile.white_granite.name=White Granite
+
+//Polished Granite
+tile.black_polished_granite.name=Black Polished Granite
+tile.red_polished_granite.name=Red Polished Granite
+tile.green_polished_granite.name=Green Polished Granite
+tile.brown_polished_granite.name=Brown Polished Granite
+tile.blue_polished_granite.name=Blue Polished Granite
+tile.purple_polished_granite.name=Purple Polished Granite
+tile.cyan_polished_granite.name=Cyan Polished Granite
+tile.light_gray_polished_granite.name=Light Gray Polished Granite
+tile.gray_polished_granite.name=Gray Polished Granite
+tile.pink_polished_granite.name=Pink Polished Granite
+tile.lime_polished_granite.name=Lime Polished Granite
+tile.yellow_polished_granite.name=Yellow Polished Granite
+tile.light_blue_polished_granite.name=Light Blue Polished Granite
+tile.magenta_polished_granite.name=Magenta Polished Granite
+tile.orange_polished_granite.name=Orange Polished Granite
+tile.white_polished_granite.name=White Polished Granite
+
+//Diorite
+tile.black_diorite.name=Black Diorite
+tile.red_diorite.name=Red Diorite
+tile.green_diorite.name=Green Diorite
+tile.brown_diorite.name=Brown Diorite
+tile.blue_diorite.name=Blue Diorite
+tile.purple_diorite.name=Purple Diorite
+tile.cyan_diorite.name=Cyan Diorite
+tile.light_gray_diorite.name=Light Gray Diorite
+tile.gray_diorite.name=Gray Diorite
+tile.pink_diorite.name=Pink Diorite
+tile.lime_diorite.name=Lime Diorite
+tile.yellow_diorite.name=Yellow Diorite
+tile.light_blue_diorite.name=Light Blue Diorite
+tile.magenta_diorite.name=Magenta Diorite
+tile.orange_diorite.name=Orange Diorite
+tile.white_diorite.name=White Diorite
+
+//Polished Diorite
+tile.black_polished_diorite.name=Black Polished Diorite
+tile.red_polished_diorite.name=Red Polished Diorite
+tile.green_polished_diorite.name=Green Polished Diorite
+tile.brown_polished_diorite.name=Brown Polished Diorite
+tile.blue_polished_diorite.name=Blue Polished Diorite
+tile.purple_polished_diorite.name=Purple Polished Diorite
+tile.cyan_polished_diorite.name=Cyan Polished Diorite
+tile.light_gray_polished_diorite.name=Light Gray Polished Diorite
+tile.gray_polished_diorite.name=Gray Polished Diorite
+tile.pink_polished_diorite.name=Pink Polished Diorite
+tile.lime_polished_diorite.name=Lime Polished Diorite
+tile.yellow_polished_diorite.name=Yellow Polished Diorite
+tile.light_blue_polished_diorite.name=Light Blue Polished Diorite
+tile.magenta_polished_diorite.name=Magenta Polished Diorite
+tile.orange_polished_diorite.name=Orange Polished Diorite
+tile.white_polished_diorite.name=White Polished Diorite
+
+//Andesite
+tile.black_andesite.name=Black Andesite
+tile.red_andesite.name=Red Andesite
+tile.green_andesite.name=Green Andesite
+tile.brown_andesite.name=Brown Andesite
+tile.blue_andesite.name=Blue Andesite
+tile.purple_andesite.name=Purple Andesite
+tile.cyan_andesite.name=Cyan Andesite
+tile.light_gray_andesite.name=Light Gray Andesite
+tile.gray_andesite.name=Gray Andesite
+tile.pink_andesite.name=Pink Andesite
+tile.lime_andesite.name=Lime Andesite
+tile.yellow_andesite.name=Yellow Andesite
+tile.light_blue_andesite.name=Light Blue Andesite
+tile.magenta_andesite.name=Magenta Andesite
+tile.orange_andesite.name=Orange Andesite
+tile.white_andesite.name=White Andesite
+
+//Polished Andesite
+tile.black_polished_andesite.name=Black Polished Andesite
+tile.red_polished_andesite.name=Red Polished Andesite
+tile.green_polished_andesite.name=Green Polished Andesite
+tile.brown_polished_andesite.name=Brown Polished Andesite
+tile.blue_polished_andesite.name=Blue Polished Andesite
+tile.purple_polished_andesite.name=Purple Polished Andesite
+tile.cyan_polished_andesite.name=Cyan Polished Andesite
+tile.light_gray_polished_andesite.name=Light Gray Polished Andesite
+tile.gray_polished_andesite.name=Gray Polished Andesite
+tile.pink_polished_andesite.name=Pink Polished Andesite
+tile.lime_polished_andesite.name=Lime Polished Andesite
+tile.yellow_polished_andesite.name=Yellow Polished Andesite
+tile.light_blue_polished_andesite.name=Light Blue Polished Andesite
+tile.magenta_polished_andesite.name=Magenta Polished Andesite
+tile.orange_polished_andesite.name=Orange Polished Andesite
+tile.white_polished_andesite.name=White Polished Andesite
