@@ -1,42 +1,54 @@
 var fs = require("fs");
 var blocks = [
     {
-        id: "dirt",
-        name: "Dirt",
-        origine: "Blocks.DIRT",
+        id: "sand",
+        name: "Sand",
+        origine: "Blocks.SAND",
+        usemeta: false,
+        hardness: "0.5F",
+        resistance: "2.5F",
+        harvestTool: "shovel",
+        harvestLevel: 0,
+        material: "SAND",
+        sound: "SAND"
+    },
+    {
+        id: "gravel",
+        name: "Gravel",
+        origine: "Blocks.GRAVEL",
+        usemeta: false,
+        hardness: "0.6F",
+        resistance: "3.0F",
+        harvestTool: "shovel",
+        harvestLevel: 0,
+        material: "GRAVEL",
+        sound: "GRAVEL"
+    },
+    {
+        id: "sponge",
+        name: "Sponge",
+        origine: "Blocks.SPONGE",
         usemeta: true,
         meta: 0,
-        hardness: "0.5F",
-        resistance: "2.5F",
-        harvestTool: "shovel",
+        hardness: "0.6F",
+        resistance: "3.0F",
+        harvestTool: null,
         harvestLevel: 0,
-        material: "GROUND",
-        sound: "DIRT"
+        material: "SPONGE",
+        sound: "SPONGE"
     },
     {
-        id: "coarse_dirt",
-        name: "Coarse Dirt",
-        origine: "Blocks.DIRT",
+        id: "wet_sponge",
+        name: "Wet Sponge",
+        origine: "Blocks.SPONGE",
         usemeta: true,
         meta: 1,
-        hardness: "0.5F",
-        resistance: "2.5F",
-        harvestTool: "shovel",
+        hardness: "0.6F",
+        resistance: "3.0F",
+        harvestTool: null,
         harvestLevel: 0,
-        material: "GROUND",
-        sound: "DIRT"
-    },
-    {
-        id: "cobblestone",
-        name: "Cobblestone",
-        origine: "Blocks.COBBLESTONE",
-        usemeta: false,
-        hardness: "2.0F",
-        resistance: "30.0F",
-        harvestTool: "pickaxe",
-        harvestLevel: 1,
-        material: "ROCK",
-        sound: "STONE"
+        material: "SPONGE",
+        sound: "SPONGE"
     }
 ]
 var color = [
@@ -79,13 +91,14 @@ var modblocks = fs.readFileSync("./ModBlocks.txt", {encoding:"utf-8", flag:"r"})
 var modblocksresult = modblocks;
 var paintbrush = fs.readFileSync("./Paintbrush.txt", {encoding:"utf-8", flag:"r"});
 var paintbrushresult = paintbrush;
-for (var a = 0; a < blocks.length; a++) {
-console.log("\n//" + blocks[a].name);
-var pathh = `./langfile.txt`;
+var pathh = `./src/main/resources/assets/paintingmod/lang/en_us.lang`;
 var langfile = fs.readFileSync(pathh, {encoding:"utf-8", flag:"r"}, (err) => {
    if (err) throw err;
 });
-var test = langfile + "\n\n//" + blocks[a].name;
+var test = langfile
+for (var a = 0; a < blocks.length; a++) {
+console.log("\n//" + blocks[a].name);
+test = test + "\n\n//" + blocks[a].name;
 fs.writeFile(pathh, test, (err) => {
    if (err) throw err;
 });
