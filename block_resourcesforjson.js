@@ -1,8 +1,8 @@
 var fs = require("fs");
 var blocks = [
     {
-        id: "sand",
-        name: "Sand",
+        id: "lapis_lazuli",
+        name: "Lapis Lazuli",
         origine: "Blocks.SAND",
         usemeta: false,
         hardness: "0.5F",
