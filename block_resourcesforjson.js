@@ -84,8 +84,13 @@ for (var i=0; i<color.length;i++) {
 // })
 // console.log("La ligne : " + "\ntile." + color[i] + "_" + blocks[a].id + ".name=" + Color[i] + " " + blocks[a].name + "\na été ajoutée avec succès au fichier de langue")
 var staticname = color[i].toUpperCase() + "_" + blocks[a].id.toUpperCase()
-console.log(staticname)
+if (i === 7) {
+    modblocksresult = modblocksresult + "\npublic static final Block " + staticname + "= new LightGrayBlock(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel});`;
+} else if (i === 12) {
+    modblocksresult = modblocksresult + "\npublic static final Block " + staticname + "= new LightBlueBlock(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel});`;
+} else {
 modblocksresult = modblocksresult + "\npublic static final Block " + staticname + "= new " + Color[i] + "Block(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel});`;
+}
 fs.writeFile("./ModBlocks.txt", modblocksresult, (err) => {
     if (err) throw err;
  })
