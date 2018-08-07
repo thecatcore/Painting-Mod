@@ -1,54 +1,55 @@
 var fs = require("fs");
 var blocks = [
     {
-        id: "lapis_lazuli",
-        name: "Lapis Lazuli",
-        origine: "Blocks.LAPIS_LAZULI",
+        id: "lapis_lazuli_block",
+        name: "Lapis Lazuli Block",
+        origine: "Blocks.LAPIS_BLOCK",
         usemeta: false,
-        hardness: "0.5F",
-        resistance: "2.5F",
-        harvestTool: "shovel",
-        harvestLevel: 0,
-        material: "SAND",
-        sound: "SAND"
+        hardness: "3.0F",
+        resistance: "15.0F",
+        harvestTool: "pickaxe",
+        harvestLevel: 2,
+        material: "METAL",
+        sound: "IRON"
     },
     {
-        id: "gravel",
-        name: "Gravel",
-        origine: "Blocks.GRAVEL",
-        usemeta: false,
-        hardness: "0.6F",
-        resistance: "3.0F",
-        harvestTool: "shovel",
-        harvestLevel: 0,
-        material: "GRAVEL",
-        sound: "GRAVEL"
-    },
-    {
-        id: "sponge",
-        name: "Sponge",
-        origine: "Blocks.SPONGE",
-        usemeta: true,
-        meta: 0,
-        hardness: "0.6F",
-        resistance: "3.0F",
-        harvestTool: null,
-        harvestLevel: 0,
-        material: "SPONGE",
-        sound: "SPONGE"
-    },
-    {
-        id: "wet_sponge",
-        name: "Wet Sponge",
-        origine: "Blocks.SPONGE",
+        id: "sandstone",
+        name: "Sandstone",
+        origine: "Blocks.SANDSTONE",
         usemeta: true,
         meta: 1,
-        hardness: "0.6F",
-        resistance: "3.0F",
-        harvestTool: null,
-        harvestLevel: 0,
-        material: "SPONGE",
-        sound: "SPONGE"
+        hardness: "0.8F",
+        resistance: "4.0F",
+        harvestTool: "pickaxe",
+        harvestLevel: 1,
+        material: "STONE",
+        sound: "STONE"
+    },
+    {
+        id: "chiseled_sandstone",
+        name: "Chiseled Sandstone",
+        origine: "Blocks.SANDSTONE",
+        usemeta: true,
+        meta: 1,
+        hardness: "0.8F",
+        resistance: "4.0F",
+        harvestTool: "pickaxe",
+        harvestLevel: 1,
+        material: "STONE",
+        sound: "STONE"
+    },
+    {
+        id: "smooth_sandstone",
+        name: "Smooth Sandstone",
+        origine: "Blocks.SANDSTONE",
+        usemeta: true,
+        meta: 2,
+        hardness: "0.8F",
+        resistance: "4.0F",
+        harvestTool: "pickaxe",
+        harvestLevel: 1,
+        material: "STONE",
+        sound: "STONE"
     }
 ]
 var color = [

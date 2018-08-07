@@ -318,3 +318,75 @@ tile.light_blue_wet_sponge.name=Light Blue Wet Sponge
 tile.magenta_wet_sponge.name=Magenta Wet Sponge
 tile.orange_wet_sponge.name=Orange Wet Sponge
 tile.white_wet_sponge.name=White Wet Sponge
+
+//Lapis Lazuli Block
+tile.black_lapis_lazuli_block.name=Black Lapis Lazuli Block
+tile.red_lapis_lazuli_block.name=Red Lapis Lazuli Block
+tile.green_lapis_lazuli_block.name=Green Lapis Lazuli Block
+tile.brown_lapis_lazuli_block.name=Brown Lapis Lazuli Block
+tile.blue_lapis_lazuli_block.name=Blue Lapis Lazuli Block
+tile.purple_lapis_lazuli_block.name=Purple Lapis Lazuli Block
+tile.cyan_lapis_lazuli_block.name=Cyan Lapis Lazuli Block
+tile.light_gray_lapis_lazuli_block.name=Light Gray Lapis Lazuli Block
+tile.gray_lapis_lazuli_block.name=Gray Lapis Lazuli Block
+tile.pink_lapis_lazuli_block.name=Pink Lapis Lazuli Block
+tile.lime_lapis_lazuli_block.name=Lime Lapis Lazuli Block
+tile.yellow_lapis_lazuli_block.name=Yellow Lapis Lazuli Block
+tile.light_blue_lapis_lazuli_block.name=Light Blue Lapis Lazuli Block
+tile.magenta_lapis_lazuli_block.name=Magenta Lapis Lazuli Block
+tile.orange_lapis_lazuli_block.name=Orange Lapis Lazuli Block
+tile.white_lapis_lazuli_block.name=White Lapis Lazuli Block
+
+//Sandstone
+tile.black_sandstone.name=Black Sandstone
+tile.red_sandstone.name=Red Sandstone
+tile.green_sandstone.name=Green Sandstone
+tile.brown_sandstone.name=Brown Sandstone
+tile.blue_sandstone.name=Blue Sandstone
+tile.purple_sandstone.name=Purple Sandstone
+tile.cyan_sandstone.name=Cyan Sandstone
+tile.light_gray_sandstone.name=Light Gray Sandstone
+tile.gray_sandstone.name=Gray Sandstone
+tile.pink_sandstone.name=Pink Sandstone
+tile.lime_sandstone.name=Lime Sandstone
+tile.yellow_sandstone.name=Yellow Sandstone
+tile.light_blue_sandstone.name=Light Blue Sandstone
+tile.magenta_sandstone.name=Magenta Sandstone
+tile.orange_sandstone.name=Orange Sandstone
+tile.white_sandstone.name=White Sandstone
+
+//Chiseled Sandstone
+tile.black_chiseled_sandstone.name=Black Chiseled Sandstone
+tile.red_chiseled_sandstone.name=Red Chiseled Sandstone
+tile.green_chiseled_sandstone.name=Green Chiseled Sandstone
+tile.brown_chiseled_sandstone.name=Brown Chiseled Sandstone
+tile.blue_chiseled_sandstone.name=Blue Chiseled Sandstone
+tile.purple_chiseled_sandstone.name=Purple Chiseled Sandstone
+tile.cyan_chiseled_sandstone.name=Cyan Chiseled Sandstone
+tile.light_gray_chiseled_sandstone.name=Light Gray Chiseled Sandstone
+tile.gray_chiseled_sandstone.name=Gray Chiseled Sandstone
+tile.pink_chiseled_sandstone.name=Pink Chiseled Sandstone
+tile.lime_chiseled_sandstone.name=Lime Chiseled Sandstone
+tile.yellow_chiseled_sandstone.name=Yellow Chiseled Sandstone
+tile.light_blue_chiseled_sandstone.name=Light Blue Chiseled Sandstone
+tile.magenta_chiseled_sandstone.name=Magenta Chiseled Sandstone
+tile.orange_chiseled_sandstone.name=Orange Chiseled Sandstone
+tile.white_chiseled_sandstone.name=White Chiseled Sandstone
+
+//Smooth Sandstone
+tile.black_smooth_sandstone.name=Black Smooth Sandstone
+tile.red_smooth_sandstone.name=Red Smooth Sandstone
+tile.green_smooth_sandstone.name=Green Smooth Sandstone
+tile.brown_smooth_sandstone.name=Brown Smooth Sandstone
+tile.blue_smooth_sandstone.name=Blue Smooth Sandstone
+tile.purple_smooth_sandstone.name=Purple Smooth Sandstone
+tile.cyan_smooth_sandstone.name=Cyan Smooth Sandstone
+tile.light_gray_smooth_sandstone.name=Light Gray Smooth Sandstone
+tile.gray_smooth_sandstone.name=Gray Smooth Sandstone
+tile.pink_smooth_sandstone.name=Pink Smooth Sandstone
+tile.lime_smooth_sandstone.name=Lime Smooth Sandstone
+tile.yellow_smooth_sandstone.name=Yellow Smooth Sandstone
+tile.light_blue_smooth_sandstone.name=Light Blue Smooth Sandstone
+tile.magenta_smooth_sandstone.name=Magenta Smooth Sandstone
+tile.orange_smooth_sandstone.name=Orange Smooth Sandstone
+tile.white_smooth_sandstone.name=White Smooth Sandstone
