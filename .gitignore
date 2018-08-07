@@ -39,3 +39,7 @@ Painting-Mod_Client\.launch
 Painting-Mod_Server\.launch
 
 block_resourcesforjson\.js
+
+ModBlocks\.txt
+
+Paintbrush\.txt
