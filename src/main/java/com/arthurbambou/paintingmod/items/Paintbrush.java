@@ -30,11 +30,11 @@ public class Paintbrush extends ItemBase {
 				ModBlocks.PURPLE_PLANK, ModBlocks.CYAN_PLANK, ModBlocks.LIGHT_GRAY_PLANK, ModBlocks.GRAY_PLANK, 
 				ModBlocks.PINK_PLANK, ModBlocks.LIME_PLANK, ModBlocks.YELLOW_PLANK, ModBlocks.LIGHT_BLUE_PLANK,
 				ModBlocks.MAGENTA_PLANK, ModBlocks.ORANGE_PLANK, ModBlocks.WHITE_PLANK);
-		newbloctopaint(player, worldIn, pos, Blocks.STONE, ModBlocks.BLACK_STONE, 
-				ModBlocks.RED_STONE, ModBlocks.GREEN_STONE, ModBlocks.BROWN_STONE, ModBlocks.BLUE_STONE,
-				ModBlocks.PURPLE_STONE, ModBlocks.CYAN_STONE, ModBlocks.LIGHT_GRAY_STONE, ModBlocks.GRAY_STONE, 
-				ModBlocks.PINK_STONE, ModBlocks.LIME_STONE, ModBlocks.YELLOW_STONE, ModBlocks.LIGHT_BLUE_STONE,
-				ModBlocks.MAGENTA_STONE, ModBlocks.ORANGE_STONE, ModBlocks.WHITE_STONE, 0);
+		// newbloctopaint(player, worldIn, pos, Blocks.STONE, ModBlocks.BLACK_STONE, 
+		// 		ModBlocks.RED_STONE, ModBlocks.GREEN_STONE, ModBlocks.BROWN_STONE, ModBlocks.BLUE_STONE,
+		// 		ModBlocks.PURPLE_STONE, ModBlocks.CYAN_STONE, ModBlocks.LIGHT_GRAY_STONE, ModBlocks.GRAY_STONE, 
+		// 		ModBlocks.PINK_STONE, ModBlocks.LIME_STONE, ModBlocks.YELLOW_STONE, ModBlocks.LIGHT_BLUE_STONE,
+		// 		ModBlocks.MAGENTA_STONE, ModBlocks.ORANGE_STONE, ModBlocks.WHITE_STONE, 0);
 		return EnumActionResult.SUCCESS;
 	}
 	
