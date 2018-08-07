@@ -143,6 +143,60 @@ public class ModBlocks {
 	public static final Block MAGENTA_POLISHED_ANDESITE= new MagentaBlock("polished_andesite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1);
 	public static final Block ORANGE_POLISHED_ANDESITE= new OrangeBlock("polished_andesite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1);
 	public static final Block WHITE_POLISHED_ANDESITE= new WhiteBlock("polished_andesite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1);
+	
+	//Dirt
+	public static final Block BLACK_DIRT= new BlackBlock("dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block RED_DIRT= new RedBlock("dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block GREEN_DIRT= new GreenBlock("dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block BROWN_DIRT= new BrownBlock("dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block BLUE_DIRT= new BlueBlock("dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block PURPLE_DIRT= new PurpleBlock("dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block CYAN_DIRT= new CyanBlock("dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block LIGHT_GRAY_DIRT= new LightGrayBlock("dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block GRAY_DIRT= new GrayBlock("dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block PINK_DIRT= new PinkBlock("dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block LIME_DIRT= new LimeBlock("dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block YELLOW_DIRT= new YellowBlock("dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block LIGHT_BLUE_DIRT= new LightBlueBlock("dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block MAGENTA_DIRT= new MagentaBlock("dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block ORANGE_DIRT= new OrangeBlock("dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block WHITE_DIRT= new WhiteBlock("dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+
+	//Coarse Dirt
+	public static final Block BLACK_COARSE_DIRT= new BlackBlock("coarse_dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block RED_COARSE_DIRT= new RedBlock("coarse_dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block GREEN_COARSE_DIRT= new GreenBlock("coarse_dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block BROWN_COARSE_DIRT= new BrownBlock("coarse_dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block BLUE_COARSE_DIRT= new BlueBlock("coarse_dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block PURPLE_COARSE_DIRT= new PurpleBlock("coarse_dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block CYAN_COARSE_DIRT= new CyanBlock("coarse_dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block LIGHT_GRAY_COARSE_DIRT= new LightGrayBlock("coarse_dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block GRAY_COARSE_DIRT= new GrayBlock("coarse_dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block PINK_COARSE_DIRT= new PinkBlock("coarse_dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block LIME_COARSE_DIRT= new LimeBlock("coarse_dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block YELLOW_COARSE_DIRT= new YellowBlock("coarse_dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block LIGHT_BLUE_COARSE_DIRT= new LightBlueBlock("coarse_dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block MAGENTA_COARSE_DIRT= new MagentaBlock("coarse_dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block ORANGE_COARSE_DIRT= new OrangeBlock("coarse_dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block WHITE_COARSE_DIRT= new WhiteBlock("coarse_dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0);
+
+	//Cobblestone
+	public static final Block BLACK_COBBLESTONE= new BlackBlock("cobblestone", Material.ROCK, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block RED_COBBLESTONE= new RedBlock("cobblestone", Material.ROCK, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block GREEN_COBBLESTONE= new GreenBlock("cobblestone", Material.ROCK, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block BROWN_COBBLESTONE= new BrownBlock("cobblestone", Material.ROCK, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block BLUE_COBBLESTONE= new BlueBlock("cobblestone", Material.ROCK, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block PURPLE_COBBLESTONE= new PurpleBlock("cobblestone", Material.ROCK, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block CYAN_COBBLESTONE= new CyanBlock("cobblestone", Material.ROCK, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block LIGHT_GRAY_COBBLESTONE= new LightGrayBlock("cobblestone", Material.ROCK, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block GRAY_COBBLESTONE= new GrayBlock("cobblestone", Material.ROCK, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block PINK_COBBLESTONE= new PinkBlock("cobblestone", Material.ROCK, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block LIME_COBBLESTONE= new LimeBlock("cobblestone", Material.ROCK, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block YELLOW_COBBLESTONE= new YellowBlock("cobblestone", Material.ROCK, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block LIGHT_BLUE_COBBLESTONE= new LightBlueBlock("cobblestone", Material.ROCK, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block MAGENTA_COBBLESTONE= new MagentaBlock("cobblestone", Material.ROCK, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block ORANGE_COBBLESTONE= new OrangeBlock("cobblestone", Material.ROCK, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block WHITE_COBBLESTONE= new WhiteBlock("cobblestone", Material.ROCK, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
 
 	//Planks Blocks
 	public static final Block BLACK_PLANK = new BlackBlock("plank", Material.WOOD, SoundType.WOOD, 2.0F, 15.0F, "axe", 0);
