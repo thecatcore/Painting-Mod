@@ -3,7 +3,7 @@ var blocks = [
     {
         id: "lapis_lazuli",
         name: "Lapis Lazuli",
-        origine: "Blocks.SAND",
+        origine: "Blocks.LAPIS_LAZULI",
         usemeta: false,
         hardness: "0.5F",
         resistance: "2.5F",
