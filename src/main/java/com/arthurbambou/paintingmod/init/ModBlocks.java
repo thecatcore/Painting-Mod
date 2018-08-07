@@ -215,4 +215,76 @@ public class ModBlocks {
 	public static final Block MAGENTA_PLANK = new MagentaBlock("plank", Material.WOOD, SoundType.WOOD, 2.0F, 15.0F, "axe", 0);
 	public static final Block ORANGE_PLANK = new OrangeBlock("plank", Material.WOOD, SoundType.WOOD, 2.0F, 15.0F, "axe", 0);
 	public static final Block WHITE_PLANK = new WhiteBlock("plank", Material.WOOD, SoundType.WOOD, 2.0F, 15.0F, "axe", 0);
+	
+	//Sand
+	public static final Block BLACK_SAND= new BlackBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block RED_SAND= new RedBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block GREEN_SAND= new GreenBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block BROWN_SAND= new BrownBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block BLUE_SAND= new BlueBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block PURPLE_SAND= new PurpleBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block CYAN_SAND= new CyanBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block LIGHT_GRAY_SAND= new LightGrayBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block GRAY_SAND= new GrayBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block PINK_SAND= new PinkBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block LIME_SAND= new LimeBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block YELLOW_SAND= new YellowBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block LIGHT_BLUE_SAND= new LightBlueBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block MAGENTA_SAND= new MagentaBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block ORANGE_SAND= new OrangeBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block WHITE_SAND= new WhiteBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+
+	//Gravel
+	public static final Block BLACK_GRAVEL= new BlackBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block RED_GRAVEL= new RedBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block GREEN_GRAVEL= new GreenBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block BROWN_GRAVEL= new BrownBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block BLUE_GRAVEL= new BlueBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block PURPLE_GRAVEL= new PurpleBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block CYAN_GRAVEL= new CyanBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block LIGHT_GRAY_GRAVEL= new LightGrayBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block GRAY_GRAVEL= new GrayBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block PINK_GRAVEL= new PinkBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block LIME_GRAVEL= new LimeBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block YELLOW_GRAVEL= new YellowBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block LIGHT_BLUE_GRAVEL= new LightBlueBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block MAGENTA_GRAVEL= new MagentaBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block ORANGE_GRAVEL= new OrangeBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block WHITE_GRAVEL= new WhiteBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+
+	//Sponge
+	public static final Block BLACK_SPONGE= new BlackBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block RED_SPONGE= new RedBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block GREEN_SPONGE= new GreenBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block BROWN_SPONGE= new BrownBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block BLUE_SPONGE= new BlueBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block PURPLE_SPONGE= new PurpleBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block CYAN_SPONGE= new CyanBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block LIGHT_GRAY_SPONGE= new LightGrayBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block GRAY_SPONGE= new GrayBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block PINK_SPONGE= new PinkBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block LIME_SPONGE= new LimeBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block YELLOW_SPONGE= new YellowBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block LIGHT_BLUE_SPONGE= new LightBlueBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block MAGENTA_SPONGE= new MagentaBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block ORANGE_SPONGE= new OrangeBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block WHITE_SPONGE= new WhiteBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+
+	//Wet Sponge
+	public static final Block BLACK_WET_SPONGE= new BlackBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block RED_WET_SPONGE= new RedBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block GREEN_WET_SPONGE= new GreenBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block BROWN_WET_SPONGE= new BrownBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block BLUE_WET_SPONGE= new BlueBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block PURPLE_WET_SPONGE= new PurpleBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block CYAN_WET_SPONGE= new CyanBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block LIGHT_GRAY_WET_SPONGE= new LightGrayBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block GRAY_WET_SPONGE= new GrayBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block PINK_WET_SPONGE= new PinkBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block LIME_WET_SPONGE= new LimeBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block YELLOW_WET_SPONGE= new YellowBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block LIGHT_BLUE_WET_SPONGE= new LightBlueBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block MAGENTA_WET_SPONGE= new MagentaBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block ORANGE_WET_SPONGE= new OrangeBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block WHITE_WET_SPONGE= new WhiteBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
 }

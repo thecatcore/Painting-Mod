@@ -246,3 +246,75 @@ tile.light_blue_plank.name=Light Blue Plank
 tile.magenta_plank.name=Magenta Plank
 tile.orange_plank.name=Orange Plank
 tile.white_plank.name=White Plank
+
+//Sand
+tile.black_sand.name=Black Sand
+tile.red_sand.name=Red Sand
+tile.green_sand.name=Green Sand
+tile.brown_sand.name=Brown Sand
+tile.blue_sand.name=Blue Sand
+tile.purple_sand.name=Purple Sand
+tile.cyan_sand.name=Cyan Sand
+tile.light_gray_sand.name=Light Gray Sand
+tile.gray_sand.name=Gray Sand
+tile.pink_sand.name=Pink Sand
+tile.lime_sand.name=Lime Sand
+tile.yellow_sand.name=Yellow Sand
+tile.light_blue_sand.name=Light Blue Sand
+tile.magenta_sand.name=Magenta Sand
+tile.orange_sand.name=Orange Sand
+tile.white_sand.name=White Sand
+
+//Gravel
+tile.black_gravel.name=Black Gravel
+tile.red_gravel.name=Red Gravel
+tile.green_gravel.name=Green Gravel
+tile.brown_gravel.name=Brown Gravel
+tile.blue_gravel.name=Blue Gravel
+tile.purple_gravel.name=Purple Gravel
+tile.cyan_gravel.name=Cyan Gravel
+tile.light_gray_gravel.name=Light Gray Gravel
+tile.gray_gravel.name=Gray Gravel
+tile.pink_gravel.name=Pink Gravel
+tile.lime_gravel.name=Lime Gravel
+tile.yellow_gravel.name=Yellow Gravel
+tile.light_blue_gravel.name=Light Blue Gravel
+tile.magenta_gravel.name=Magenta Gravel
+tile.orange_gravel.name=Orange Gravel
+tile.white_gravel.name=White Gravel
+
+//Sponge
+tile.black_sponge.name=Black Sponge
+tile.red_sponge.name=Red Sponge
+tile.green_sponge.name=Green Sponge
+tile.brown_sponge.name=Brown Sponge
+tile.blue_sponge.name=Blue Sponge
+tile.purple_sponge.name=Purple Sponge
+tile.cyan_sponge.name=Cyan Sponge
+tile.light_gray_sponge.name=Light Gray Sponge
+tile.gray_sponge.name=Gray Sponge
+tile.pink_sponge.name=Pink Sponge
+tile.lime_sponge.name=Lime Sponge
+tile.yellow_sponge.name=Yellow Sponge
+tile.light_blue_sponge.name=Light Blue Sponge
+tile.magenta_sponge.name=Magenta Sponge
+tile.orange_sponge.name=Orange Sponge
+tile.white_sponge.name=White Sponge
+
+//Wet Sponge
+tile.black_wet_sponge.name=Black Wet Sponge
+tile.red_wet_sponge.name=Red Wet Sponge
+tile.green_wet_sponge.name=Green Wet Sponge
+tile.brown_wet_sponge.name=Brown Wet Sponge
+tile.blue_wet_sponge.name=Blue Wet Sponge
+tile.purple_wet_sponge.name=Purple Wet Sponge
+tile.cyan_wet_sponge.name=Cyan Wet Sponge
+tile.light_gray_wet_sponge.name=Light Gray Wet Sponge
+tile.gray_wet_sponge.name=Gray Wet Sponge
+tile.pink_wet_sponge.name=Pink Wet Sponge
+tile.lime_wet_sponge.name=Lime Wet Sponge
+tile.yellow_wet_sponge.name=Yellow Wet Sponge
+tile.light_blue_wet_sponge.name=Light Blue Wet Sponge
+tile.magenta_wet_sponge.name=Magenta Wet Sponge
+tile.orange_wet_sponge.name=Orange Wet Sponge
+tile.white_wet_sponge.name=White Wet Sponge
