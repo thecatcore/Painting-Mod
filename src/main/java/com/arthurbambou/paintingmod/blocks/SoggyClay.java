@@ -8,6 +8,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -58,12 +59,13 @@ public class SoggyClay extends BlockBase
     {
         if (!worldIn.isRemote)
         {
-        }
-        ItemStack item = playerIn.getHeldItemMainhand();
-        Item itemm = item.getItem();
-        if(itemm == ModItems.HAMMER) {
-            worldIn.setBlockToAir(pos);
-        	playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.EARTH_MORTAR, 4));
+            ItemStack item = playerIn.getHeldItemMainhand();
+            Item itemm = item.getItem();
+            if(itemm == ModItems.HAMMER) {
+                worldIn.setBlockToAir(pos);
+                EntityItem iitem = new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.EARTH_MORTAR, 4, 0));
+                worldIn.spawnEntity(iitem);
+            }
         }
         return false;
     }

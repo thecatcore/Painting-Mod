@@ -48,6 +48,7 @@ item.hammer.name=Marteau
 //Blocks
 tile.soggy_clay.name=Argile Détrempé
 
+//Planks
 tile.black_plank.name=Planche noire
 tile.red_plank.name=Planche rouge
 tile.green_plank.name=Planche verte
@@ -64,3 +65,21 @@ tile.light_blue_plank.name=Planche bleu clair
 tile.magenta_plank.name=Planche magenta
 tile.orange_plank.name=Planche orange
 tile.white_plank.name=Planche blanche
+
+//Stone
+tile.black_stone.name=Roche noire
+tile.red_stone.name=Roche rouge
+tile.green_stone.name=Roche verte
+tile.brown_stone.name=Roche marron
+tile.blue_stone.name=Roche bleue
+tile.purple_stone.name=Roche violette
+tile.cyan_stone.name=Roche cyan
+tile.light_gray_stone.name=Roche gris clair
+tile.gray_stone.name=Roche grise
+tile.pink_stone.name=Roche rose
+tile.lime_stone.name=Roche vert clair
+tile.yellow_stone.name=Roche jaune
+tile.light_blue_stone.name=Roche bleu clair
+tile.magenta_stone.name=Roche magenta
+tile.orange_stone.name=Roche orange
+tile.white_stone.name=Roche blanche
