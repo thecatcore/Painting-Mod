@@ -81,7 +81,7 @@ var paintbrush = fs.readFileSync("./Paintbrush.txt", {encoding:"utf-8", flag:"r"
 var paintbrushresult = paintbrush;
 for (var a = 0; a < blocks.length; a++) {
 console.log("\n//" + blocks[a].name);
-var pathh = `./src/main/resources/assets/paintingmod/lang/en_us.lang`;
+var pathh = `./langfile.txt`;
 var langfile = fs.readFileSync(pathh, {encoding:"utf-8", flag:"r"}, (err) => {
    if (err) throw err;
 });
