@@ -1,6 +1,5 @@
 package com.arthurbambou.paintingmod.items;
 
-import com.arthurbambou.paintingmod.Main;
 import com.arthurbambou.paintingmod.init.ModBlocks;
 import com.arthurbambou.paintingmod.init.ModItems;
 
