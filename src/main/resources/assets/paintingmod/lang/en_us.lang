@@ -390,3 +390,75 @@ tile.light_blue_smooth_sandstone.name=Light Blue Smooth Sandstone
 tile.magenta_smooth_sandstone.name=Magenta Smooth Sandstone
 tile.orange_smooth_sandstone.name=Orange Smooth Sandstone
 tile.white_smooth_sandstone.name=White Smooth Sandstone
+
+//Gold Block
+tile.black_gold_block.name=Black Gold Block
+tile.red_gold_block.name=Red Gold Block
+tile.green_gold_block.name=Green Gold Block
+tile.brown_gold_block.name=Brown Gold Block
+tile.blue_gold_block.name=Blue Gold Block
+tile.purple_gold_block.name=Purple Gold Block
+tile.cyan_gold_block.name=Cyan Gold Block
+tile.light_gray_gold_block.name=Light Gray Gold Block
+tile.gray_gold_block.name=Gray Gold Block
+tile.pink_gold_block.name=Pink Gold Block
+tile.lime_gold_block.name=Lime Gold Block
+tile.yellow_gold_block.name=Yellow Gold Block
+tile.light_blue_gold_block.name=Light Blue Gold Block
+tile.magenta_gold_block.name=Magenta Gold Block
+tile.orange_gold_block.name=Orange Gold Block
+tile.white_gold_block.name=White Gold Block
+
+//Iron Block
+tile.black_iron_block.name=Black Iron Block
+tile.red_iron_block.name=Red Iron Block
+tile.green_iron_block.name=Green Iron Block
+tile.brown_iron_block.name=Brown Iron Block
+tile.blue_iron_block.name=Blue Iron Block
+tile.purple_iron_block.name=Purple Iron Block
+tile.cyan_iron_block.name=Cyan Iron Block
+tile.light_gray_iron_block.name=Light Gray Iron Block
+tile.gray_iron_block.name=Gray Iron Block
+tile.pink_iron_block.name=Pink Iron Block
+tile.lime_iron_block.name=Lime Iron Block
+tile.yellow_iron_block.name=Yellow Iron Block
+tile.light_blue_iron_block.name=Light Blue Iron Block
+tile.magenta_iron_block.name=Magenta Iron Block
+tile.orange_iron_block.name=Orange Iron Block
+tile.white_iron_block.name=White Iron Block
+
+//Brick
+tile.black_brick.name=Black Brick
+tile.red_brick.name=Red Brick
+tile.green_brick.name=Green Brick
+tile.brown_brick.name=Brown Brick
+tile.blue_brick.name=Blue Brick
+tile.purple_brick.name=Purple Brick
+tile.cyan_brick.name=Cyan Brick
+tile.light_gray_brick.name=Light Gray Brick
+tile.gray_brick.name=Gray Brick
+tile.pink_brick.name=Pink Brick
+tile.lime_brick.name=Lime Brick
+tile.yellow_brick.name=Yellow Brick
+tile.light_blue_brick.name=Light Blue Brick
+tile.magenta_brick.name=Magenta Brick
+tile.orange_brick.name=Orange Brick
+tile.white_brick.name=White Brick
+
+//Moss Stone
+tile.black_moss_stone.name=Black Moss Stone
+tile.red_moss_stone.name=Red Moss Stone
+tile.green_moss_stone.name=Green Moss Stone
+tile.brown_moss_stone.name=Brown Moss Stone
+tile.blue_moss_stone.name=Blue Moss Stone
+tile.purple_moss_stone.name=Purple Moss Stone
+tile.cyan_moss_stone.name=Cyan Moss Stone
+tile.light_gray_moss_stone.name=Light Gray Moss Stone
+tile.gray_moss_stone.name=Gray Moss Stone
+tile.pink_moss_stone.name=Pink Moss Stone
+tile.lime_moss_stone.name=Lime Moss Stone
+tile.yellow_moss_stone.name=Yellow Moss Stone
+tile.light_blue_moss_stone.name=Light Blue Moss Stone
+tile.magenta_moss_stone.name=Magenta Moss Stone
+tile.orange_moss_stone.name=Orange Moss Stone
+tile.white_moss_stone.name=White Moss Stone

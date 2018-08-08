@@ -1,55 +1,52 @@
 var fs = require("fs");
 var blocks = [
     {
-        id: "lapis_lazuli_block",
-        name: "Lapis Lazuli Block",
-        origine: "Blocks.LAPIS_BLOCK",
+        id: "gold_block",
+        name: "Gold Block",
+        origine: "Blocks.GOLD_BLOCK",
         usemeta: false,
         hardness: "3.0F",
-        resistance: "15.0F",
+        resistance: "30.0F",
+        harvestTool: "pickaxe",
+        harvestLevel: 3,
+        material: "IRON",
+        sound: "METAL"
+    },
+    {
+        id: "iron_block",
+        name: "Iron Block",
+        origine: "Blocks.IRON_BLOCK",
+        usemeta: false,
+        hardness: "5.0F",
+        resistance: "30.0F",
         harvestTool: "pickaxe",
         harvestLevel: 2,
-        material: "METAL",
-        sound: "IRON"
+        material: "IRON",
+        sound: "METAL"
     },
     {
-        id: "sandstone",
-        name: "Sandstone",
-        origine: "Blocks.SANDSTONE",
-        usemeta: true,
-        meta: 1,
-        hardness: "0.8F",
-        resistance: "4.0F",
+        id: "brick",
+        name: "Brick",
+        origine: "Blocks.BRICK",
+        usemeta: false,
+        hardness: "2.0F",
+        resistance: "30.0F",
         harvestTool: "pickaxe",
         harvestLevel: 1,
         material: "STONE",
-        sound: "STONE"
+        sound: "GROUND"
     },
     {
-        id: "chiseled_sandstone",
-        name: "Chiseled Sandstone",
-        origine: "Blocks.SANDSTONE",
-        usemeta: true,
-        meta: 1,
-        hardness: "0.8F",
-        resistance: "4.0F",
+        id: "moss_stone",
+        name: "Moss Stone",
+        origine: "Blocks.MOSS_STONE",
+        usemeta: false,
+        hardness: "2.0F",
+        resistance: "30.0F",
         harvestTool: "pickaxe",
         harvestLevel: 1,
         material: "STONE",
-        sound: "STONE"
-    },
-    {
-        id: "smooth_sandstone",
-        name: "Smooth Sandstone",
-        origine: "Blocks.SANDSTONE",
-        usemeta: true,
-        meta: 2,
-        hardness: "0.8F",
-        resistance: "4.0F",
-        harvestTool: "pickaxe",
-        harvestLevel: 1,
-        material: "STONE",
-        sound: "STONE"
+        sound: "GROUND"
     }
 ]
 var color = [
