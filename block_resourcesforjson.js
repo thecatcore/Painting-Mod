@@ -1,42 +1,52 @@
 var fs = require("fs");
 var blocks = [
     {
-        id: "dirt",
-        name: "Dirt",
-        origine: "Blocks.DIRT",
-        usemeta: true,
-        meta: 0,
-        hardness: "0.5F",
-        resistance: "2.5F",
-        harvestTool: "shovel",
-        harvestLevel: 0,
-        material: "GROUND",
-        sound: "DIRT"
+        id: "gold_block",
+        name: "Gold Block",
+        origine: "Blocks.GOLD_BLOCK",
+        usemeta: false,
+        hardness: "3.0F",
+        resistance: "30.0F",
+        harvestTool: "pickaxe",
+        harvestLevel: 3,
+        material: "IRON",
+        sound: "METAL"
     },
     {
-        id: "coarse_dirt",
-        name: "Coarse Dirt",
-        origine: "Blocks.DIRT",
-        usemeta: true,
-        meta: 1,
-        hardness: "0.5F",
-        resistance: "2.5F",
-        harvestTool: "shovel",
-        harvestLevel: 0,
-        material: "GROUND",
-        sound: "DIRT"
+        id: "iron_block",
+        name: "Iron Block",
+        origine: "Blocks.IRON_BLOCK",
+        usemeta: false,
+        hardness: "5.0F",
+        resistance: "30.0F",
+        harvestTool: "pickaxe",
+        harvestLevel: 2,
+        material: "IRON",
+        sound: "METAL"
     },
     {
-        id: "cobblestone",
-        name: "Cobblestone",
-        origine: "Blocks.COBBLESTONE",
+        id: "brick",
+        name: "Brick",
+        origine: "Blocks.BRICK",
         usemeta: false,
         hardness: "2.0F",
         resistance: "30.0F",
         harvestTool: "pickaxe",
         harvestLevel: 1,
-        material: "ROCK",
-        sound: "STONE"
+        material: "STONE",
+        sound: "GROUND"
+    },
+    {
+        id: "moss_stone",
+        name: "Moss Stone",
+        origine: "Blocks.MOSS_STONE",
+        usemeta: false,
+        hardness: "2.0F",
+        resistance: "30.0F",
+        harvestTool: "pickaxe",
+        harvestLevel: 1,
+        material: "STONE",
+        sound: "GROUND"
     }
 ]
 var color = [
@@ -79,13 +89,14 @@ var modblocks = fs.readFileSync("./ModBlocks.txt", {encoding:"utf-8", flag:"r"})
 var modblocksresult = modblocks;
 var paintbrush = fs.readFileSync("./Paintbrush.txt", {encoding:"utf-8", flag:"r"});
 var paintbrushresult = paintbrush;
-for (var a = 0; a < blocks.length; a++) {
-console.log("\n//" + blocks[a].name);
 var pathh = `./src/main/resources/assets/paintingmod/lang/en_us.lang`;
 var langfile = fs.readFileSync(pathh, {encoding:"utf-8", flag:"r"}, (err) => {
    if (err) throw err;
 });
-var test = langfile + "\n\n//" + blocks[a].name;
+var test = langfile;
+for (var a = 0; a < blocks.length; a++) {
+console.log("\n//" + blocks[a].name);
+test = test + "\n\n//" + blocks[a].name;
 fs.writeFile(pathh, test, (err) => {
    if (err) throw err;
 });
