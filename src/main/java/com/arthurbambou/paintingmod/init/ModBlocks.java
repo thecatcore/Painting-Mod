@@ -215,4 +215,220 @@ public class ModBlocks {
 	public static final Block MAGENTA_PLANK = new MagentaBlock("plank", Material.WOOD, SoundType.WOOD, 2.0F, 15.0F, "axe", 0);
 	public static final Block ORANGE_PLANK = new OrangeBlock("plank", Material.WOOD, SoundType.WOOD, 2.0F, 15.0F, "axe", 0);
 	public static final Block WHITE_PLANK = new WhiteBlock("plank", Material.WOOD, SoundType.WOOD, 2.0F, 15.0F, "axe", 0);
+	
+	//Sand
+	public static final Block BLACK_SAND= new BlackBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block RED_SAND= new RedBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block GREEN_SAND= new GreenBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block BROWN_SAND= new BrownBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block BLUE_SAND= new BlueBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block PURPLE_SAND= new PurpleBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block CYAN_SAND= new CyanBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block LIGHT_GRAY_SAND= new LightGrayBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block GRAY_SAND= new GrayBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block PINK_SAND= new PinkBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block LIME_SAND= new LimeBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block YELLOW_SAND= new YellowBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block LIGHT_BLUE_SAND= new LightBlueBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block MAGENTA_SAND= new MagentaBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block ORANGE_SAND= new OrangeBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+	public static final Block WHITE_SAND= new WhiteBlock("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0);
+
+	//Gravel
+	public static final Block BLACK_GRAVEL= new BlackBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block RED_GRAVEL= new RedBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block GREEN_GRAVEL= new GreenBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block BROWN_GRAVEL= new BrownBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block BLUE_GRAVEL= new BlueBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block PURPLE_GRAVEL= new PurpleBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block CYAN_GRAVEL= new CyanBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block LIGHT_GRAY_GRAVEL= new LightGrayBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block GRAY_GRAVEL= new GrayBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block PINK_GRAVEL= new PinkBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block LIME_GRAVEL= new LimeBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block YELLOW_GRAVEL= new YellowBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block LIGHT_BLUE_GRAVEL= new LightBlueBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block MAGENTA_GRAVEL= new MagentaBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block ORANGE_GRAVEL= new OrangeBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+	public static final Block WHITE_GRAVEL= new WhiteBlock("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0);
+
+	//Sponge
+	public static final Block BLACK_SPONGE= new BlackBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block RED_SPONGE= new RedBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block GREEN_SPONGE= new GreenBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block BROWN_SPONGE= new BrownBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block BLUE_SPONGE= new BlueBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block PURPLE_SPONGE= new PurpleBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block CYAN_SPONGE= new CyanBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block LIGHT_GRAY_SPONGE= new LightGrayBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block GRAY_SPONGE= new GrayBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block PINK_SPONGE= new PinkBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block LIME_SPONGE= new LimeBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block YELLOW_SPONGE= new YellowBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block LIGHT_BLUE_SPONGE= new LightBlueBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block MAGENTA_SPONGE= new MagentaBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block ORANGE_SPONGE= new OrangeBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block WHITE_SPONGE= new WhiteBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+
+	//Wet Sponge
+	public static final Block BLACK_WET_SPONGE= new BlackBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block RED_WET_SPONGE= new RedBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block GREEN_WET_SPONGE= new GreenBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block BROWN_WET_SPONGE= new BrownBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block BLUE_WET_SPONGE= new BlueBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block PURPLE_WET_SPONGE= new PurpleBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block CYAN_WET_SPONGE= new CyanBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block LIGHT_GRAY_WET_SPONGE= new LightGrayBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block GRAY_WET_SPONGE= new GrayBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block PINK_WET_SPONGE= new PinkBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block LIME_WET_SPONGE= new LimeBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block YELLOW_WET_SPONGE= new YellowBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block LIGHT_BLUE_WET_SPONGE= new LightBlueBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block MAGENTA_WET_SPONGE= new MagentaBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block ORANGE_WET_SPONGE= new OrangeBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+	public static final Block WHITE_WET_SPONGE= new WhiteBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0);
+
+	//Lapis Lazuli Block
+	public static final Block BLACK_LAPIS_LAZULI_BLOCK= new BlackBlock("lapis_lazuli_block", Material.IRON, SoundType.METAL, 3.0F, 15.0F, "pickaxe", 2);
+	public static final Block RED_LAPIS_LAZULI_BLOCK= new RedBlock("lapis_lazuli_block", Material.IRON, SoundType.METAL, 3.0F, 15.0F, "pickaxe", 2);
+	public static final Block GREEN_LAPIS_LAZULI_BLOCK= new GreenBlock("lapis_lazuli_block", Material.IRON, SoundType.METAL, 3.0F, 15.0F, "pickaxe", 2);
+	public static final Block BROWN_LAPIS_LAZULI_BLOCK= new BrownBlock("lapis_lazuli_block", Material.IRON, SoundType.METAL, 3.0F, 15.0F, "pickaxe", 2);
+	public static final Block BLUE_LAPIS_LAZULI_BLOCK= new BlueBlock("lapis_lazuli_block", Material.IRON, SoundType.METAL, 3.0F, 15.0F, "pickaxe", 2);
+	public static final Block PURPLE_LAPIS_LAZULI_BLOCK= new PurpleBlock("lapis_lazuli_block", Material.IRON, SoundType.METAL, 3.0F, 15.0F, "pickaxe", 2);
+	public static final Block CYAN_LAPIS_LAZULI_BLOCK= new CyanBlock("lapis_lazuli_block", Material.IRON, SoundType.METAL, 3.0F, 15.0F, "pickaxe", 2);
+	public static final Block LIGHT_GRAY_LAPIS_LAZULI_BLOCK= new LightGrayBlock("lapis_lazuli_block", Material.IRON, SoundType.METAL, 3.0F, 15.0F, "pickaxe", 2);
+	public static final Block GRAY_LAPIS_LAZULI_BLOCK= new GrayBlock("lapis_lazuli_block", Material.IRON, SoundType.METAL, 3.0F, 15.0F, "pickaxe", 2);
+	public static final Block PINK_LAPIS_LAZULI_BLOCK= new PinkBlock("lapis_lazuli_block", Material.IRON, SoundType.METAL, 3.0F, 15.0F, "pickaxe", 2);
+	public static final Block LIME_LAPIS_LAZULI_BLOCK= new LimeBlock("lapis_lazuli_block", Material.IRON, SoundType.METAL, 3.0F, 15.0F, "pickaxe", 2);
+	public static final Block YELLOW_LAPIS_LAZULI_BLOCK= new YellowBlock("lapis_lazuli_block", Material.IRON, SoundType.METAL, 3.0F, 15.0F, "pickaxe", 2);
+	public static final Block LIGHT_BLUE_LAPIS_LAZULI_BLOCK= new LightBlueBlock("lapis_lazuli_block", Material.IRON, SoundType.METAL, 3.0F, 15.0F, "pickaxe", 2);
+	public static final Block MAGENTA_LAPIS_LAZULI_BLOCK= new MagentaBlock("lapis_lazuli_block", Material.IRON, SoundType.METAL, 3.0F, 15.0F, "pickaxe", 2);
+	public static final Block ORANGE_LAPIS_LAZULI_BLOCK= new OrangeBlock("lapis_lazuli_block", Material.IRON, SoundType.METAL, 3.0F, 15.0F, "pickaxe", 2);
+	public static final Block WHITE_LAPIS_LAZULI_BLOCK= new WhiteBlock("lapis_lazuli_block", Material.IRON, SoundType.METAL, 3.0F, 15.0F, "pickaxe", 2);
+
+	//Sandstone
+	public static final Block BLACK_SANDSTONE= new BlackBlock("sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block RED_SANDSTONE= new RedBlock("sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block GREEN_SANDSTONE= new GreenBlock("sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block BROWN_SANDSTONE= new BrownBlock("sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block BLUE_SANDSTONE= new BlueBlock("sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block PURPLE_SANDSTONE= new PurpleBlock("sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block CYAN_SANDSTONE= new CyanBlock("sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block LIGHT_GRAY_SANDSTONE= new LightGrayBlock("sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block GRAY_SANDSTONE= new GrayBlock("sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block PINK_SANDSTONE= new PinkBlock("sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block LIME_SANDSTONE= new LimeBlock("sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block YELLOW_SANDSTONE= new YellowBlock("sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block LIGHT_BLUE_SANDSTONE= new LightBlueBlock("sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block MAGENTA_SANDSTONE= new MagentaBlock("sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block ORANGE_SANDSTONE= new OrangeBlock("sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block WHITE_SANDSTONE= new WhiteBlock("sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+
+	//Chiseled Sandstone
+	public static final Block BLACK_CHISELED_SANDSTONE= new BlackBlock("chiseled_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block RED_CHISELED_SANDSTONE= new RedBlock("chiseled_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block GREEN_CHISELED_SANDSTONE= new GreenBlock("chiseled_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block BROWN_CHISELED_SANDSTONE= new BrownBlock("chiseled_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block BLUE_CHISELED_SANDSTONE= new BlueBlock("chiseled_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block PURPLE_CHISELED_SANDSTONE= new PurpleBlock("chiseled_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block CYAN_CHISELED_SANDSTONE= new CyanBlock("chiseled_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block LIGHT_GRAY_CHISELED_SANDSTONE= new LightGrayBlock("chiseled_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block GRAY_CHISELED_SANDSTONE= new GrayBlock("chiseled_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block PINK_CHISELED_SANDSTONE= new PinkBlock("chiseled_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block LIME_CHISELED_SANDSTONE= new LimeBlock("chiseled_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block YELLOW_CHISELED_SANDSTONE= new YellowBlock("chiseled_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block LIGHT_BLUE_CHISELED_SANDSTONE= new LightBlueBlock("chiseled_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block MAGENTA_CHISELED_SANDSTONE= new MagentaBlock("chiseled_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block ORANGE_CHISELED_SANDSTONE= new OrangeBlock("chiseled_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block WHITE_CHISELED_SANDSTONE= new WhiteBlock("chiseled_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+
+	//Smooth Sandstone
+	public static final Block BLACK_SMOOTH_SANDSTONE= new BlackBlock("smooth_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block RED_SMOOTH_SANDSTONE= new RedBlock("smooth_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block GREEN_SMOOTH_SANDSTONE= new GreenBlock("smooth_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block BROWN_SMOOTH_SANDSTONE= new BrownBlock("smooth_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block BLUE_SMOOTH_SANDSTONE= new BlueBlock("smooth_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block PURPLE_SMOOTH_SANDSTONE= new PurpleBlock("smooth_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block CYAN_SMOOTH_SANDSTONE= new CyanBlock("smooth_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block LIGHT_GRAY_SMOOTH_SANDSTONE= new LightGrayBlock("smooth_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block GRAY_SMOOTH_SANDSTONE= new GrayBlock("smooth_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block PINK_SMOOTH_SANDSTONE= new PinkBlock("smooth_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block LIME_SMOOTH_SANDSTONE= new LimeBlock("smooth_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block YELLOW_SMOOTH_SANDSTONE= new YellowBlock("smooth_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block LIGHT_BLUE_SMOOTH_SANDSTONE= new LightBlueBlock("smooth_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block MAGENTA_SMOOTH_SANDSTONE= new MagentaBlock("smooth_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block ORANGE_SMOOTH_SANDSTONE= new OrangeBlock("smooth_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	public static final Block WHITE_SMOOTH_SANDSTONE= new WhiteBlock("smooth_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
+	
+	//Gold Block
+	public static final Block BLACK_GOLD_BLOCK= new BlackBlock("gold_block", Material.IRON, SoundType.METAL, 3.0F, 30.0F, "pickaxe", 3);
+	public static final Block RED_GOLD_BLOCK= new RedBlock("gold_block", Material.IRON, SoundType.METAL, 3.0F, 30.0F, "pickaxe", 3);
+	public static final Block GREEN_GOLD_BLOCK= new GreenBlock("gold_block", Material.IRON, SoundType.METAL, 3.0F, 30.0F, "pickaxe", 3);
+	public static final Block BROWN_GOLD_BLOCK= new BrownBlock("gold_block", Material.IRON, SoundType.METAL, 3.0F, 30.0F, "pickaxe", 3);
+	public static final Block BLUE_GOLD_BLOCK= new BlueBlock("gold_block", Material.IRON, SoundType.METAL, 3.0F, 30.0F, "pickaxe", 3);
+	public static final Block PURPLE_GOLD_BLOCK= new PurpleBlock("gold_block", Material.IRON, SoundType.METAL, 3.0F, 30.0F, "pickaxe", 3);
+	public static final Block CYAN_GOLD_BLOCK= new CyanBlock("gold_block", Material.IRON, SoundType.METAL, 3.0F, 30.0F, "pickaxe", 3);
+	public static final Block LIGHT_GRAY_GOLD_BLOCK= new LightGrayBlock("gold_block", Material.IRON, SoundType.METAL, 3.0F, 30.0F, "pickaxe", 3);
+	public static final Block GRAY_GOLD_BLOCK= new GrayBlock("gold_block", Material.IRON, SoundType.METAL, 3.0F, 30.0F, "pickaxe", 3);
+	public static final Block PINK_GOLD_BLOCK= new PinkBlock("gold_block", Material.IRON, SoundType.METAL, 3.0F, 30.0F, "pickaxe", 3);
+	public static final Block LIME_GOLD_BLOCK= new LimeBlock("gold_block", Material.IRON, SoundType.METAL, 3.0F, 30.0F, "pickaxe", 3);
+	public static final Block YELLOW_GOLD_BLOCK= new YellowBlock("gold_block", Material.IRON, SoundType.METAL, 3.0F, 30.0F, "pickaxe", 3);
+	public static final Block LIGHT_BLUE_GOLD_BLOCK= new LightBlueBlock("gold_block", Material.IRON, SoundType.METAL, 3.0F, 30.0F, "pickaxe", 3);
+	public static final Block MAGENTA_GOLD_BLOCK= new MagentaBlock("gold_block", Material.IRON, SoundType.METAL, 3.0F, 30.0F, "pickaxe", 3);
+	public static final Block ORANGE_GOLD_BLOCK= new OrangeBlock("gold_block", Material.IRON, SoundType.METAL, 3.0F, 30.0F, "pickaxe", 3);
+	public static final Block WHITE_GOLD_BLOCK= new WhiteBlock("gold_block", Material.IRON, SoundType.METAL, 3.0F, 30.0F, "pickaxe", 3);
+
+	//Iron Block
+	public static final Block BLACK_IRON_BLOCK= new BlackBlock("iron_block", Material.IRON, SoundType.METAL, 5.0F, 30.0F, "pickaxe", 2);
+	public static final Block RED_IRON_BLOCK= new RedBlock("iron_block", Material.IRON, SoundType.METAL, 5.0F, 30.0F, "pickaxe", 2);
+	public static final Block GREEN_IRON_BLOCK= new GreenBlock("iron_block", Material.IRON, SoundType.METAL, 5.0F, 30.0F, "pickaxe", 2);
+	public static final Block BROWN_IRON_BLOCK= new BrownBlock("iron_block", Material.IRON, SoundType.METAL, 5.0F, 30.0F, "pickaxe", 2);
+	public static final Block BLUE_IRON_BLOCK= new BlueBlock("iron_block", Material.IRON, SoundType.METAL, 5.0F, 30.0F, "pickaxe", 2);
+	public static final Block PURPLE_IRON_BLOCK= new PurpleBlock("iron_block", Material.IRON, SoundType.METAL, 5.0F, 30.0F, "pickaxe", 2);
+	public static final Block CYAN_IRON_BLOCK= new CyanBlock("iron_block", Material.IRON, SoundType.METAL, 5.0F, 30.0F, "pickaxe", 2);
+	public static final Block LIGHT_GRAY_IRON_BLOCK= new LightGrayBlock("iron_block", Material.IRON, SoundType.METAL, 5.0F, 30.0F, "pickaxe", 2);
+	public static final Block GRAY_IRON_BLOCK= new GrayBlock("iron_block", Material.IRON, SoundType.METAL, 5.0F, 30.0F, "pickaxe", 2);
+	public static final Block PINK_IRON_BLOCK= new PinkBlock("iron_block", Material.IRON, SoundType.METAL, 5.0F, 30.0F, "pickaxe", 2);
+	public static final Block LIME_IRON_BLOCK= new LimeBlock("iron_block", Material.IRON, SoundType.METAL, 5.0F, 30.0F, "pickaxe", 2);
+	public static final Block YELLOW_IRON_BLOCK= new YellowBlock("iron_block", Material.IRON, SoundType.METAL, 5.0F, 30.0F, "pickaxe", 2);
+	public static final Block LIGHT_BLUE_IRON_BLOCK= new LightBlueBlock("iron_block", Material.IRON, SoundType.METAL, 5.0F, 30.0F, "pickaxe", 2);
+	public static final Block MAGENTA_IRON_BLOCK= new MagentaBlock("iron_block", Material.IRON, SoundType.METAL, 5.0F, 30.0F, "pickaxe", 2);
+	public static final Block ORANGE_IRON_BLOCK= new OrangeBlock("iron_block", Material.IRON, SoundType.METAL, 5.0F, 30.0F, "pickaxe", 2);
+	public static final Block WHITE_IRON_BLOCK= new WhiteBlock("iron_block", Material.IRON, SoundType.METAL, 5.0F, 30.0F, "pickaxe", 2);
+
+	//Brick
+	public static final Block BLACK_BRICK= new BlackBlock("brick", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block RED_BRICK= new RedBlock("brick", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block GREEN_BRICK= new GreenBlock("brick", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block BROWN_BRICK= new BrownBlock("brick", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block BLUE_BRICK= new BlueBlock("brick", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block PURPLE_BRICK= new PurpleBlock("brick", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block CYAN_BRICK= new CyanBlock("brick", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block LIGHT_GRAY_BRICK= new LightGrayBlock("brick", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block GRAY_BRICK= new GrayBlock("brick", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block PINK_BRICK= new PinkBlock("brick", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block LIME_BRICK= new LimeBlock("brick", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block YELLOW_BRICK= new YellowBlock("brick", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block LIGHT_BLUE_BRICK= new LightBlueBlock("brick", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block MAGENTA_BRICK= new MagentaBlock("brick", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block ORANGE_BRICK= new OrangeBlock("brick", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block WHITE_BRICK= new WhiteBlock("brick", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+
+	//Moss Stone
+	public static final Block BLACK_MOSS_STONE= new BlackBlock("moss_stone", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block RED_MOSS_STONE= new RedBlock("moss_stone", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block GREEN_MOSS_STONE= new GreenBlock("moss_stone", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block BROWN_MOSS_STONE= new BrownBlock("moss_stone", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block BLUE_MOSS_STONE= new BlueBlock("moss_stone", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block PURPLE_MOSS_STONE= new PurpleBlock("moss_stone", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block CYAN_MOSS_STONE= new CyanBlock("moss_stone", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block LIGHT_GRAY_MOSS_STONE= new LightGrayBlock("moss_stone", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block GRAY_MOSS_STONE= new GrayBlock("moss_stone", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block PINK_MOSS_STONE= new PinkBlock("moss_stone", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block LIME_MOSS_STONE= new LimeBlock("moss_stone", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block YELLOW_MOSS_STONE= new YellowBlock("moss_stone", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block LIGHT_BLUE_MOSS_STONE= new LightBlueBlock("moss_stone", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block MAGENTA_MOSS_STONE= new MagentaBlock("moss_stone", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block ORANGE_MOSS_STONE= new OrangeBlock("moss_stone", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block WHITE_MOSS_STONE= new WhiteBlock("moss_stone", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1);
 }
