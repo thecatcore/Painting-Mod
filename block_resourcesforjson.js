@@ -93,7 +93,7 @@ var pathh = `./src/main/resources/assets/paintingmod/lang/en_us.lang`;
 var langfile = fs.readFileSync(pathh, {encoding:"utf-8", flag:"r"}, (err) => {
    if (err) throw err;
 });
-var test = langfile
+var test = langfile;
 for (var a = 0; a < blocks.length; a++) {
 console.log("\n//" + blocks[a].name);
 test = test + "\n\n//" + blocks[a].name;
