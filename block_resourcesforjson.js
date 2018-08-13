@@ -1,11 +1,23 @@
 var fs = require("fs");
 var blocks = [
     {
-        id: "gold_block",
-        name: "Gold Block",
-        origine: "Blocks.GOLD_BLOCK",
+        id: "obsidian",
+        name: "Obsidian",
+        origine: "Blocks.OBSIDIAN",
         usemeta: false,
-        hardness: "3.0F",
+        hardness: "50.0F",
+        resistance: "6000.0F",
+        harvestTool: "pickaxe",
+        harvestLevel: 4,
+        material: "STONE",
+        sound: "STONE"
+    },
+    {
+        id: "diamond_block",
+        name: "Diamond Block",
+        origine: "Blocks.DIAMOND_BLOCK",
+        usemeta: false,
+        hardness: "5.0F",
         resistance: "30.0F",
         harvestTool: "pickaxe",
         harvestLevel: 3,
@@ -13,39 +25,27 @@ var blocks = [
         sound: "METAL"
     },
     {
-        id: "iron_block",
-        name: "Iron Block",
-        origine: "Blocks.IRON_BLOCK",
+        id: "ice",
+        name: "Ice",
+        origine: "Blocks.ICE",
         usemeta: false,
-        hardness: "5.0F",
-        resistance: "30.0F",
-        harvestTool: "pickaxe",
-        harvestLevel: 2,
-        material: "IRON",
-        sound: "METAL"
-    },
-    {
-        id: "brick",
-        name: "Brick",
-        origine: "Blocks.BRICK",
-        usemeta: false,
-        hardness: "2.0F",
-        resistance: "30.0F",
-        harvestTool: "pickaxe",
-        harvestLevel: 1,
-        material: "STONE",
+        hardness: "0.5F",
+        resistance: "2.5F",
+        harvestTool: "null",
+        harvestLevel: 0,
+        material: "GLASS",
         sound: "GROUND"
     },
     {
-        id: "moss_stone",
-        name: "Moss Stone",
-        origine: "Blocks.MOSS_STONE",
+        id: "clay_block",
+        name: "Clay Block",
+        origine: "Blocks.CLAY_BLOCK",
         usemeta: false,
         hardness: "2.0F",
         resistance: "30.0F",
-        harvestTool: "pickaxe",
-        harvestLevel: 1,
-        material: "STONE",
+        harvestTool: "shovel",
+        harvestLevel: 0,
+        material: "DIRT",
         sound: "GROUND"
     }
 ]
