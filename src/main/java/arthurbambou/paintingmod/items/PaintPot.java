@@ -1,4 +1,4 @@
-package com.arthurbambou.paintingmod.items;
+package arthurbambou.paintingmod.items;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;

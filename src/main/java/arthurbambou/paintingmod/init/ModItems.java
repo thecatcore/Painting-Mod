@@ -1,15 +1,14 @@
-package com.arthurbambou.paintingmod.init;
+package arthurbambou.paintingmod.init;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.arthurbambou.paintingmod.Main;
-import com.arthurbambou.paintingmod.items.ItemBase;
-import com.arthurbambou.paintingmod.items.PaintPot;
-import com.arthurbambou.paintingmod.items.Paintbrush;
-import com.arthurbambou.paintingmod.items.WaterVial;
-import com.arthurbambou.paintingmod.items.tools.ToolPickaxe;
-
+import arthurbambou.paintingmod.Main;
+import arthurbambou.paintingmod.items.ItemBase;
+import arthurbambou.paintingmod.items.PaintPot;
+import arthurbambou.paintingmod.items.Paintbrush;
+import arthurbambou.paintingmod.items.WaterVial;
+import arthurbambou.paintingmod.items.tools.ToolPickaxe;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemPickaxe;

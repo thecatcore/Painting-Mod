@@ -1,9 +1,8 @@
-package com.arthurbambou.paintingmod.items;
+package arthurbambou.paintingmod.items;
 
-import com.arthurbambou.paintingmod.Main;
-import com.arthurbambou.paintingmod.init.ModItems;
-import com.arthurbambou.paintingmod.util.IHasModel;
-
+import arthurbambou.paintingmod.Main;
+import arthurbambou.paintingmod.init.ModItems;
+import arthurbambou.paintingmod.util.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 

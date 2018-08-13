@@ -1,9 +1,8 @@
-package com.arthurbambou.paintingmod.blocks;
+package arthurbambou.paintingmod.blocks;
 
 import java.util.Random;
 
-import com.arthurbambou.paintingmod.init.ModItems;
-
+import arthurbambou.paintingmod.init.ModItems;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;

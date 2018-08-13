@@ -1,9 +1,8 @@
-package com.arthurbambou.paintingmod.util.handlers;
+package arthurbambou.paintingmod.util.handlers;
 
-import com.arthurbambou.paintingmod.init.ModBlocks;
-import com.arthurbambou.paintingmod.init.ModItems;
-import com.arthurbambou.paintingmod.util.IHasModel;
-
+import arthurbambou.paintingmod.init.ModBlocks;
+import arthurbambou.paintingmod.init.ModItems;
+import arthurbambou.paintingmod.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;

@@ -1,12 +1,11 @@
-package com.arthurbambou.paintingmod.init;
+package arthurbambou.paintingmod.init;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.arthurbambou.paintingmod.Main;
-import com.arthurbambou.paintingmod.blocks.SoggyClay;
-import com.arthurbambou.paintingmod.blocks.colored.*;
-
+import arthurbambou.paintingmod.Main;
+import arthurbambou.paintingmod.blocks.SoggyClay;
+import arthurbambou.paintingmod.blocks.colored.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;

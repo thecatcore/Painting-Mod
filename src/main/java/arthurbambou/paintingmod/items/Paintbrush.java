@@ -1,8 +1,7 @@
-package com.arthurbambou.paintingmod.items;
+package arthurbambou.paintingmod.items;
 
-import com.arthurbambou.paintingmod.init.ModBlocks;
-import com.arthurbambou.paintingmod.init.ModItems;
-
+import arthurbambou.paintingmod.init.ModBlocks;
+import arthurbambou.paintingmod.init.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;

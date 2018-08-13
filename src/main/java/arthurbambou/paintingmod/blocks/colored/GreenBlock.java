@@ -1,8 +1,7 @@
-package com.arthurbambou.paintingmod.blocks.colored;
+package arthurbambou.paintingmod.blocks.colored;
 
-import com.arthurbambou.paintingmod.Main;
-import com.arthurbambou.paintingmod.blocks.BlockBase;
-
+import arthurbambou.paintingmod.Main;
+import arthurbambou.paintingmod.blocks.BlockBase;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 
