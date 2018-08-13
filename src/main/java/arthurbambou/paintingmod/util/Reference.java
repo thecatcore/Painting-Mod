@@ -1,4 +1,4 @@
-package com.arthurbambou.paintingmod.util;
+package arthurbambou.paintingmod.util;
 
 public class Reference {
 	public static final String MOD_ID= "paintingmod";

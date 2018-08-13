@@ -1,7 +1,6 @@
-package com.arthurbambou.paintingmod.tabs;
+package arthurbambou.paintingmod.tabs;
 
-import com.arthurbambou.paintingmod.init.ModItems;
-
+import arthurbambou.paintingmod.init.ModItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 

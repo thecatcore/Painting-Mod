@@ -1,13 +1,12 @@
-package com.arthurbambou.paintingmod;
+package arthurbambou.paintingmod;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.arthurbambou.paintingmod.init.ModBlocks;
-import com.arthurbambou.paintingmod.proxy.CommonProxy;
-import com.arthurbambou.paintingmod.tabs.PaintPotTab;
-import com.arthurbambou.paintingmod.util.Reference;
-
+import arthurbambou.paintingmod.init.ModBlocks;
+import arthurbambou.paintingmod.proxy.CommonProxy;
+import arthurbambou.paintingmod.tabs.PaintPotTab;
+import arthurbambou.paintingmod.util.Reference;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;

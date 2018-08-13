@@ -1,4 +1,4 @@
-package com.arthurbambou.paintingmod.proxy;
+package arthurbambou.paintingmod.proxy;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;

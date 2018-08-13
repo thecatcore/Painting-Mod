@@ -1,4 +1,4 @@
-package com.arthurbambou.paintingmod.util;
+package arthurbambou.paintingmod.util;
 
 public interface IHasModel
 {
