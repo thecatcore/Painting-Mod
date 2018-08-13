@@ -462,3 +462,75 @@ tile.light_blue_moss_stone.name=Light Blue Moss Stone
 tile.magenta_moss_stone.name=Magenta Moss Stone
 tile.orange_moss_stone.name=Orange Moss Stone
 tile.white_moss_stone.name=White Moss Stone
+
+//Obsidian
+tile.black_obsidian.name=Black Obsidian
+tile.red_obsidian.name=Red Obsidian
+tile.green_obsidian.name=Green Obsidian
+tile.brown_obsidian.name=Brown Obsidian
+tile.blue_obsidian.name=Blue Obsidian
+tile.purple_obsidian.name=Purple Obsidian
+tile.cyan_obsidian.name=Cyan Obsidian
+tile.light_gray_obsidian.name=Light Gray Obsidian
+tile.gray_obsidian.name=Gray Obsidian
+tile.pink_obsidian.name=Pink Obsidian
+tile.lime_obsidian.name=Lime Obsidian
+tile.yellow_obsidian.name=Yellow Obsidian
+tile.light_blue_obsidian.name=Light Blue Obsidian
+tile.magenta_obsidian.name=Magenta Obsidian
+tile.orange_obsidian.name=Orange Obsidian
+tile.white_obsidian.name=White Obsidian
+
+//Diamond Block
+tile.black_diamond_block.name=Black Diamond Block
+tile.red_diamond_block.name=Red Diamond Block
+tile.green_diamond_block.name=Green Diamond Block
+tile.brown_diamond_block.name=Brown Diamond Block
+tile.blue_diamond_block.name=Blue Diamond Block
+tile.purple_diamond_block.name=Purple Diamond Block
+tile.cyan_diamond_block.name=Cyan Diamond Block
+tile.light_gray_diamond_block.name=Light Gray Diamond Block
+tile.gray_diamond_block.name=Gray Diamond Block
+tile.pink_diamond_block.name=Pink Diamond Block
+tile.lime_diamond_block.name=Lime Diamond Block
+tile.yellow_diamond_block.name=Yellow Diamond Block
+tile.light_blue_diamond_block.name=Light Blue Diamond Block
+tile.magenta_diamond_block.name=Magenta Diamond Block
+tile.orange_diamond_block.name=Orange Diamond Block
+tile.white_diamond_block.name=White Diamond Block
+
+//Ice
+tile.black_ice.name=Black Ice
+tile.red_ice.name=Red Ice
+tile.green_ice.name=Green Ice
+tile.brown_ice.name=Brown Ice
+tile.blue_ice.name=Blue Ice
+tile.purple_ice.name=Purple Ice
+tile.cyan_ice.name=Cyan Ice
+tile.light_gray_ice.name=Light Gray Ice
+tile.gray_ice.name=Gray Ice
+tile.pink_ice.name=Pink Ice
+tile.lime_ice.name=Lime Ice
+tile.yellow_ice.name=Yellow Ice
+tile.light_blue_ice.name=Light Blue Ice
+tile.magenta_ice.name=Magenta Ice
+tile.orange_ice.name=Orange Ice
+tile.white_ice.name=White Ice
+
+//Clay Block
+tile.black_clay_block.name=Black Clay Block
+tile.red_clay_block.name=Red Clay Block
+tile.green_clay_block.name=Green Clay Block
+tile.brown_clay_block.name=Brown Clay Block
+tile.blue_clay_block.name=Blue Clay Block
+tile.purple_clay_block.name=Purple Clay Block
+tile.cyan_clay_block.name=Cyan Clay Block
+tile.light_gray_clay_block.name=Light Gray Clay Block
+tile.gray_clay_block.name=Gray Clay Block
+tile.pink_clay_block.name=Pink Clay Block
+tile.lime_clay_block.name=Lime Clay Block
+tile.yellow_clay_block.name=Yellow Clay Block
+tile.light_blue_clay_block.name=Light Blue Clay Block
+tile.magenta_clay_block.name=Magenta Clay Block
+tile.orange_clay_block.name=Orange Clay Block
+tile.white_clay_block.name=White Clay Block

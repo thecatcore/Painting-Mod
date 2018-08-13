@@ -1,11 +1,23 @@
 var fs = require("fs");
 var blocks = [
     {
-        id: "gold_block",
-        name: "Gold Block",
-        origine: "Blocks.GOLD_BLOCK",
+        id: "obsidian",
+        name: "Obsidian",
+        origine: "Blocks.OBSIDIAN",
         usemeta: false,
-        hardness: "3.0F",
+        hardness: "50.0F",
+        resistance: "6000.0F",
+        harvestTool: "pickaxe",
+        harvestLevel: 4,
+        material: "STONE",
+        sound: "STONE"
+    },
+    {
+        id: "diamond_block",
+        name: "Diamond Block",
+        origine: "Blocks.DIAMOND_BLOCK",
+        usemeta: false,
+        hardness: "5.0F",
         resistance: "30.0F",
         harvestTool: "pickaxe",
         harvestLevel: 3,
@@ -13,39 +25,27 @@ var blocks = [
         sound: "METAL"
     },
     {
-        id: "iron_block",
-        name: "Iron Block",
-        origine: "Blocks.IRON_BLOCK",
+        id: "ice",
+        name: "Ice",
+        origine: "Blocks.ICE",
         usemeta: false,
-        hardness: "5.0F",
-        resistance: "30.0F",
-        harvestTool: "pickaxe",
-        harvestLevel: 2,
-        material: "IRON",
-        sound: "METAL"
-    },
-    {
-        id: "brick",
-        name: "Brick",
-        origine: "Blocks.BRICK",
-        usemeta: false,
-        hardness: "2.0F",
-        resistance: "30.0F",
-        harvestTool: "pickaxe",
-        harvestLevel: 1,
-        material: "STONE",
+        hardness: "0.5F",
+        resistance: "2.5F",
+        harvestTool: "null",
+        harvestLevel: 0,
+        material: "GLASS",
         sound: "GROUND"
     },
     {
-        id: "moss_stone",
-        name: "Moss Stone",
-        origine: "Blocks.MOSS_STONE",
+        id: "clay_block",
+        name: "Clay Block",
+        origine: "Blocks.CLAY_BLOCK",
         usemeta: false,
         hardness: "2.0F",
         resistance: "30.0F",
-        harvestTool: "pickaxe",
-        harvestLevel: 1,
-        material: "STONE",
+        harvestTool: "shovel",
+        harvestLevel: 0,
+        material: "DIRT",
         sound: "GROUND"
     }
 ]
@@ -119,7 +119,7 @@ test = test + "\ntile." + color[i] + "_" + blocks[a].id + ".name=" + Color[i] + 
 fs.writeFile(pathh, test, (err) => {
     if (err) throw err;
 });
-console.log("La ligne : " + "\ntile." + color[i] + "_" + blocks[a].id + ".name=" + Color[i] + " " + blocks[a].name + "\na été ajoutée avec succès au fichier de langue");
+console.log("The line : " + "\ntile." + color[i] + "_" + blocks[a].id + ".name=" + Color[i] + " " + blocks[a].name + "\nhas been added to the localization file");
 console.log("");
 var staticname = color[i].toUpperCase() + "_" + blocks[a].id.toUpperCase();
 if (i === 7) {
@@ -132,7 +132,7 @@ modblocksresult = modblocksresult + "\npublic static final Block " + staticname 
 fs.writeFile("./ModBlocks.txt", modblocksresult, (err) => {
     if (err) throw err;
 });
-console.log("La ligne de code : " + "\npublic static final Block " + staticname + "= new " + Color[i] + "Block(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel});` + "\nÀ été générée avec succès !");
+console.log("The line : " + "\npublic static final Block " + staticname + "= new " + Color[i] + "Block(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel});` + "\nHas been generated with success !");
 console.log("");
 console.log("");
 paintbrushresult = paintbrushresult + ", ModBlocks." + staticname;
@@ -152,7 +152,7 @@ if (blocks[a].usemeta === true) {
     });
 }
 var splited = paintbrushresult.split("\n");
-console.log("La ligne de code : \n" + splited[splited.length] + "\nÀ été générée avec succès !");
+console.log("The line : \n" + splited[splited.length] + "\nHas been generated with success !");
 console.log("");
 console.log("");
 console.log("");
@@ -161,7 +161,7 @@ console.log("");
 
 function blockstate (i) {
     var path = `./src/main/resources/assets/paintingmod/blockstates/${color[i]}_${blocks[a].id}.json`;
-    console.log(`Création en cours du fichier: ${path}`);
+    console.log(`File creation in progress: ${path}`);
     var createStream = fs.createWriteStream(path);
     createStream.end();
     var json = {
@@ -175,12 +175,12 @@ function blockstate (i) {
         if (err) throw err;
         //console.log('Le fichier a été sauvegardé!');
     });
-    console.log('Le fichier a été sauvegardé!');
+    console.log('The file has been saved !');
 }
 
 function blockmodel (i) {
     var path = `./src/main/resources/assets/paintingmod/models/block/${color[i]}_${blocks[a].id}.json`;
-    console.log(`Création en cours du fichier: ${path}`);
+    console.log(`File creation in progress: ${path}`);
     var createStream = fs.createWriteStream(path);
     createStream.end();
     var json = {
@@ -192,11 +192,11 @@ function blockmodel (i) {
     fs.writeFile(path, JSON.stringify(json), (err) => {
         if (err) throw err;
     });
-    console.log('Le fichier a été sauvegardé!');
+    console.log('The file has been saved !');
 }
 function itemblockmodel (i) {
     var path = `./src/main/resources/assets/paintingmod/models/item/${color[i]}_${blocks[a].id}.json`;
-    console.log(`Création en cours du fichier: ${path}`);
+    console.log(`File creation in progress: ${path}`);
     var createStream = fs.createWriteStream(path);
     createStream.end();
     var json = {
@@ -205,5 +205,5 @@ function itemblockmodel (i) {
     fs.writeFile(path, JSON.stringify(json), (err) => {
         if (err) throw err;
     });
-    console.log('Le fichier a été sauvegardé!');
+    console.log('The file has been saved !');
 }
