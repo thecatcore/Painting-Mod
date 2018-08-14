@@ -11,8 +11,9 @@ public class PaintPotTab extends CreativeTabs
 		//this.setBackgroundImageName("tutorial.png");
 	}
 
-	public ItemStack getTabIconItem()
-	{
+	@Override
+	public ItemStack createIcon() {
+		// TODO Auto-generated method stub
 		return new ItemStack(ModItems.NORMAL_PAINTBRUSH);
 	}
 }

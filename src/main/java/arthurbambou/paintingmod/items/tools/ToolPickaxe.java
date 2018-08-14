@@ -10,7 +10,7 @@ public class ToolPickaxe extends ItemPickaxe implements IHasModel {
 	public ToolPickaxe(String name, ToolMaterial material)
 	{
 		super(material);
-		setUnlocalizedName(name);
+		setTranslationKey(name);
 		setRegistryName(name);
 		setCreativeTab(Main.PAINTING_MOD);
 		

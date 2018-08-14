@@ -10,7 +10,7 @@ public class ItemBase extends Item implements IHasModel{
 	
 	public ItemBase(String name, CreativeTabs tab)
 	{
-		setUnlocalizedName(name);
+		setTranslationKey(name);
 		setRegistryName(name);
 		setCreativeTab(tab);
 		
