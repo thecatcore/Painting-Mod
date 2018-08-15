@@ -5,7 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 import arthurbambou.paintingmod.init.PTMBlocks;
 import arthurbambou.paintingmod.proxy.PTMCommonProxy;
-import arthurbambou.paintingmod.tabs.PTM;
+import arthurbambou.paintingmod.tabs.PTMTab;
 import arthurbambou.paintingmod.util.PTMReference;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
@@ -20,8 +20,10 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = PTMReference.MOD_ID, name = PTMReference.NAME, version = PTMReference.VERSION, updateJSON = "https://gist.githubusercontent.com/arthurbambou/2c316e790e623363385bd26a59ab8847/raw/versions.json")
 public class PTMMain {
 	
-	public static final CreativeTabs PAINTING_MOD = new PTM("paintingmod_tab");
-	//public static final CreativeTabs PAINTBRUSH = new PaintPotTab("paintbrush_tab", ModItems.PAINTBRUSH);
+	
+	public static final CreativeTabs PAINTING_MOD = new PTMTab("paintingmod_tab");
+
+	
 	public static final Logger logger = LogManager.getLogger(PTMReference.MOD_ID);
 	
 	@Instance

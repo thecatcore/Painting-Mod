@@ -54,6 +54,12 @@ public class PTMSoggyClay extends PTMBlockBase
         }
     }
     
+    /**
+     * On right click on this block,
+     * if the item in the main hand is the paintingmod hammer then:
+     * the block disappear and 4 paintingmod earth mortar are dropped
+     */
+    @Override
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
     {
         if (!worldIn.isRemote)

@@ -4,9 +4,9 @@ import arthurbambou.paintingmod.init.PTMItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 
-public class PTM extends CreativeTabs
+public class PTMTab extends CreativeTabs
 {
-	public PTM(String label) {
+	public PTMTab(String label) {
 		super(label);
 		//this.setBackgroundImageName("tutorial.png");
 	}
