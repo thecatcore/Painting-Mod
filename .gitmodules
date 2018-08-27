@@ -1,3 +1,6 @@
 [submodule "src/main/resources/assets/paintingmod/lang"]
 	path = src/main/resources/assets/paintingmod/lang
 	url = https://github.com/WIP-name/Painting-Mod-Langs.git
+[submodule "src/main/resources/assets/paintingmod/textures"]
+	path = src/main/resources/assets/paintingmod/textures
+	url = https://github.com/WIP-name/Painting-Mod-Textures.git
