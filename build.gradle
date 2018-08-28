@@ -99,6 +99,6 @@ curseforge {
     project {
         id = '299755'
         changelog = 'Changelog test'
-        releaseType = 'alpha'
+        releaseType = 'beta'
     }
 }
