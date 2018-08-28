@@ -101,6 +101,5 @@ curseforge {
         changelog = 'Changelog test'
         releaseType = 'alpha'
         mainArtifact jar
-        addArtifact sourcesJar
     }
 }
