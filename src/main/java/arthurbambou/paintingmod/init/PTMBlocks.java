@@ -484,6 +484,24 @@ public class PTMBlocks {
 	public static final Block MAGENTA_ICE= new PTMMagentaBlock("ice", Material.GLASS, SoundType.GROUND, 0.5F, 2.5F, "null", 0);
 	public static final Block ORANGE_ICE= new PTMOrangeBlock("ice", Material.GLASS, SoundType.GROUND, 0.5F, 2.5F, "null", 0);
 	public static final Block WHITE_ICE= new PTMWhiteBlock("ice", Material.GLASS, SoundType.GROUND, 0.5F, 2.5F, "null", 0);
+	
+	//Snow Block
+	public static final Block BLACK_SNOW_BLOCK= new PTMBlackBlock("snow_block", Material.SNOW, SoundType.SNOW, 0.2F, 1.0F, "shovel", 1);
+	public static final Block RED_SNOW_BLOCK= new PTMRedBlock("snow_block", Material.SNOW, SoundType.SNOW, 0.2F, 1.0F, "shovel", 1);
+	public static final Block GREEN_SNOW_BLOCK= new PTMGreenBlock("snow_block", Material.SNOW, SoundType.SNOW, 0.2F, 1.0F, "shovel", 1);
+	public static final Block BROWN_SNOW_BLOCK= new PTMBrownBlock("snow_block", Material.SNOW, SoundType.SNOW, 0.2F, 1.0F, "shovel", 1);
+	public static final Block BLUE_SNOW_BLOCK= new PTMBlueBlock("snow_block", Material.SNOW, SoundType.SNOW, 0.2F, 1.0F, "shovel", 1);
+	public static final Block PURPLE_SNOW_BLOCK= new PTMPurpleBlock("snow_block", Material.SNOW, SoundType.SNOW, 0.2F, 1.0F, "shovel", 1);
+	public static final Block CYAN_SNOW_BLOCK= new PTMCyanBlock("snow_block", Material.SNOW, SoundType.SNOW, 0.2F, 1.0F, "shovel", 1);
+	public static final Block LIGHT_GRAY_SNOW_BLOCK= new PTMLightGrayBlock("snow_block", Material.SNOW, SoundType.SNOW, 0.2F, 1.0F, "shovel", 1);
+	public static final Block GRAY_SNOW_BLOCK= new PTMGrayBlock("snow_block", Material.SNOW, SoundType.SNOW, 0.2F, 1.0F, "shovel", 1);
+	public static final Block PINK_SNOW_BLOCK= new PTMPinkBlock("snow_block", Material.SNOW, SoundType.SNOW, 0.2F, 1.0F, "shovel", 1);
+	public static final Block LIME_SNOW_BLOCK= new PTMLimeBlock("snow_block", Material.SNOW, SoundType.SNOW, 0.2F, 1.0F, "shovel", 1);
+	public static final Block YELLOW_SNOW_BLOCK= new PTMYellowBlock("snow_block", Material.SNOW, SoundType.SNOW, 0.2F, 1.0F, "shovel", 1);
+	public static final Block LIGHT_BLUE_SNOW_BLOCK= new PTMLightBlueBlock("snow_block", Material.SNOW, SoundType.SNOW, 0.2F, 1.0F, "shovel", 1);
+	public static final Block MAGENTA_SNOW_BLOCK= new PTMMagentaBlock("snow_block", Material.SNOW, SoundType.SNOW, 0.2F, 1.0F, "shovel", 1);
+	public static final Block ORANGE_SNOW_BLOCK= new PTMOrangeBlock("snow_block", Material.SNOW, SoundType.SNOW, 0.2F, 1.0F, "shovel", 1);
+	public static final Block WHITE_SNOW_BLOCK= new PTMWhiteBlock("snow_block", Material.SNOW, SoundType.SNOW, 0.2F, 1.0F, "shovel", 1);
 
 	//Clay Block
 	public static final Block BLACK_CLAY_BLOCK= new PTMBlackBlock("clay_block", Material.CLAY, SoundType.GROUND, 2.0F, 30.0F, "shovel", 0);

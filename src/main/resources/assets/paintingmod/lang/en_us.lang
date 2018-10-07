@@ -534,3 +534,21 @@ tile.light_blue_clay_block.name=Light Blue Clay Block
 tile.magenta_clay_block.name=Magenta Clay Block
 tile.orange_clay_block.name=Orange Clay Block
 tile.white_clay_block.name=White Clay Block
+
+//Snow Block
+tile.black_snow_block.name=Black Snow Block
+tile.red_snow_block.name=Red Snow Block
+tile.green_snow_block.name=Green Snow Block
+tile.brown_snow_block.name=Brown Snow Block
+tile.blue_snow_block.name=Blue Snow Block
+tile.purple_snow_block.name=Purple Snow Block
+tile.cyan_snow_block.name=Cyan Snow Block
+tile.light_gray_snow_block.name=Light Gray Snow Block
+tile.gray_snow_block.name=Gray Snow Block
+tile.pink_snow_block.name=Pink Snow Block
+tile.lime_snow_block.name=Lime Snow Block
+tile.yellow_snow_block.name=Yellow Snow Block
+tile.light_blue_snow_block.name=Light Blue Snow Block
+tile.magenta_snow_block.name=Magenta Snow Block
+tile.orange_snow_block.name=Orange Snow Block
+tile.white_snow_block.name=White Snow Block
