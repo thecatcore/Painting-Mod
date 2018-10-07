@@ -678,3 +678,57 @@ tile.light_blue_chiseled_stone_brick.name=Light Blue Chiseled Stone Brick
 tile.magenta_chiseled_stone_brick.name=Magenta Chiseled Stone Brick
 tile.orange_chiseled_stone_brick.name=Orange Chiseled Stone Brick
 tile.white_chiseled_stone_brick.name=White Chiseled Stone Brick
+
+//Nether Brick
+tile.black_nether_brick.name=Black Nether Brick
+tile.red_nether_brick.name=Red Nether Brick
+tile.green_nether_brick.name=Green Nether Brick
+tile.brown_nether_brick.name=Brown Nether Brick
+tile.blue_nether_brick.name=Blue Nether Brick
+tile.purple_nether_brick.name=Purple Nether Brick
+tile.cyan_nether_brick.name=Cyan Nether Brick
+tile.light_gray_nether_brick.name=Light Gray Nether Brick
+tile.gray_nether_brick.name=Gray Nether Brick
+tile.pink_nether_brick.name=Pink Nether Brick
+tile.lime_nether_brick.name=Lime Nether Brick
+tile.yellow_nether_brick.name=Yellow Nether Brick
+tile.light_blue_nether_brick.name=Light Blue Nether Brick
+tile.magenta_nether_brick.name=Magenta Nether Brick
+tile.orange_nether_brick.name=Orange Nether Brick
+tile.white_nether_brick.name=White Nether Brick
+
+//End Stone
+tile.black_end_stone.name=Black End Stone
+tile.red_end_stone.name=Red End Stone
+tile.green_end_stone.name=Green End Stone
+tile.brown_end_stone.name=Brown End Stone
+tile.blue_end_stone.name=Blue End Stone
+tile.purple_end_stone.name=Purple End Stone
+tile.cyan_end_stone.name=Cyan End Stone
+tile.light_gray_end_stone.name=Light Gray End Stone
+tile.gray_end_stone.name=Gray End Stone
+tile.pink_end_stone.name=Pink End Stone
+tile.lime_end_stone.name=Lime End Stone
+tile.yellow_end_stone.name=Yellow End Stone
+tile.light_blue_end_stone.name=Light Blue End Stone
+tile.magenta_end_stone.name=Magenta End Stone
+tile.orange_end_stone.name=Orange End Stone
+tile.white_end_stone.name=White End Stone
+
+//Block of Emerald
+tile.black_emerald_block.name=Black Block of Emerald
+tile.red_emerald_block.name=Red Block of Emerald
+tile.green_emerald_block.name=Green Block of Emerald
+tile.brown_emerald_block.name=Brown Block of Emerald
+tile.blue_emerald_block.name=Blue Block of Emerald
+tile.purple_emerald_block.name=Purple Block of Emerald
+tile.cyan_emerald_block.name=Cyan Block of Emerald
+tile.light_gray_emerald_block.name=Light Gray Block of Emerald
+tile.gray_emerald_block.name=Gray Block of Emerald
+tile.pink_emerald_block.name=Pink Block of Emerald
+tile.lime_emerald_block.name=Lime Block of Emerald
+tile.yellow_emerald_block.name=Yellow Block of Emerald
+tile.light_blue_emerald_block.name=Light Blue Block of Emerald
+tile.magenta_emerald_block.name=Magenta Block of Emerald
+tile.orange_emerald_block.name=Orange Block of Emerald
+tile.white_emerald_block.name=White Block of Emerald

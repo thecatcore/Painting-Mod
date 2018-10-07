@@ -646,4 +646,58 @@ public class PTMBlocks {
 	public static final Block MAGENTA_CHISELED_STONE_BRICK= new PTMMagentaBlock("chiseled_stone_brick", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1);
 	public static final Block ORANGE_CHISELED_STONE_BRICK= new PTMOrangeBlock("chiseled_stone_brick", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1);
 	public static final Block WHITE_CHISELED_STONE_BRICK= new PTMWhiteBlock("chiseled_stone_brick", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1);
+
+	//Nether Brick
+	public static final Block BLACK_NETHER_BRICK= new PTMBlackBlock("nether_brick", Material.STONE, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block RED_NETHER_BRICK= new PTMRedBlock("nether_brick", Material.STONE, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block GREEN_NETHER_BRICK= new PTMGreenBlock("nether_brick", Material.STONE, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block BROWN_NETHER_BRICK= new PTMBrownBlock("nether_brick", Material.STONE, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block BLUE_NETHER_BRICK= new PTMBlueBlock("nether_brick", Material.STONE, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block PURPLE_NETHER_BRICK= new PTMPurpleBlock("nether_brick", Material.STONE, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block CYAN_NETHER_BRICK= new PTMCyanBlock("nether_brick", Material.STONE, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block LIGHT_GRAY_NETHER_BRICK= new PTMLightGrayBlock("nether_brick", Material.STONE, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block GRAY_NETHER_BRICK= new PTMGrayBlock("nether_brick", Material.STONE, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block PINK_NETHER_BRICK= new PTMPinkBlock("nether_brick", Material.STONE, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block LIME_NETHER_BRICK= new PTMLimeBlock("nether_brick", Material.STONE, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block YELLOW_NETHER_BRICK= new PTMYellowBlock("nether_brick", Material.STONE, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block LIGHT_BLUE_NETHER_BRICK= new PTMLightBlueBlock("nether_brick", Material.STONE, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block MAGENTA_NETHER_BRICK= new PTMMagentaBlock("nether_brick", Material.STONE, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block ORANGE_NETHER_BRICK= new PTMOrangeBlock("nether_brick", Material.STONE, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+	public static final Block WHITE_NETHER_BRICK= new PTMWhiteBlock("nether_brick", Material.STONE, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1);
+
+	//End Stone
+	public static final Block BLACK_END_STONE= new PTMBlackBlock("end_stone", Material.STONE, SoundType.STONE, 3.0F, 45.0F, "pickaxe", 1);
+	public static final Block RED_END_STONE= new PTMRedBlock("end_stone", Material.STONE, SoundType.STONE, 3.0F, 45.0F, "pickaxe", 1);
+	public static final Block GREEN_END_STONE= new PTMGreenBlock("end_stone", Material.STONE, SoundType.STONE, 3.0F, 45.0F, "pickaxe", 1);
+	public static final Block BROWN_END_STONE= new PTMBrownBlock("end_stone", Material.STONE, SoundType.STONE, 3.0F, 45.0F, "pickaxe", 1);
+	public static final Block BLUE_END_STONE= new PTMBlueBlock("end_stone", Material.STONE, SoundType.STONE, 3.0F, 45.0F, "pickaxe", 1);
+	public static final Block PURPLE_END_STONE= new PTMPurpleBlock("end_stone", Material.STONE, SoundType.STONE, 3.0F, 45.0F, "pickaxe", 1);
+	public static final Block CYAN_END_STONE= new PTMCyanBlock("end_stone", Material.STONE, SoundType.STONE, 3.0F, 45.0F, "pickaxe", 1);
+	public static final Block LIGHT_GRAY_END_STONE= new PTMLightGrayBlock("end_stone", Material.STONE, SoundType.STONE, 3.0F, 45.0F, "pickaxe", 1);
+	public static final Block GRAY_END_STONE= new PTMGrayBlock("end_stone", Material.STONE, SoundType.STONE, 3.0F, 45.0F, "pickaxe", 1);
+	public static final Block PINK_END_STONE= new PTMPinkBlock("end_stone", Material.STONE, SoundType.STONE, 3.0F, 45.0F, "pickaxe", 1);
+	public static final Block LIME_END_STONE= new PTMLimeBlock("end_stone", Material.STONE, SoundType.STONE, 3.0F, 45.0F, "pickaxe", 1);
+	public static final Block YELLOW_END_STONE= new PTMYellowBlock("end_stone", Material.STONE, SoundType.STONE, 3.0F, 45.0F, "pickaxe", 1);
+	public static final Block LIGHT_BLUE_END_STONE= new PTMLightBlueBlock("end_stone", Material.STONE, SoundType.STONE, 3.0F, 45.0F, "pickaxe", 1);
+	public static final Block MAGENTA_END_STONE= new PTMMagentaBlock("end_stone", Material.STONE, SoundType.STONE, 3.0F, 45.0F, "pickaxe", 1);
+	public static final Block ORANGE_END_STONE= new PTMOrangeBlock("end_stone", Material.STONE, SoundType.STONE, 3.0F, 45.0F, "pickaxe", 1);
+	public static final Block WHITE_END_STONE= new PTMWhiteBlock("end_stone", Material.STONE, SoundType.STONE, 3.0F, 45.0F, "pickaxe", 1);
+
+	//Block of Emerald
+	public static final Block BLACK_EMERALD_BLOCK= new PTMBlackBlock("emerald_block", Material.STONE, SoundType.STONE, 5.0F, 30.0F, "pickaxe", 3);
+	public static final Block RED_EMERALD_BLOCK= new PTMRedBlock("emerald_block", Material.STONE, SoundType.STONE, 5.0F, 30.0F, "pickaxe", 3);
+	public static final Block GREEN_EMERALD_BLOCK= new PTMGreenBlock("emerald_block", Material.STONE, SoundType.STONE, 5.0F, 30.0F, "pickaxe", 3);
+	public static final Block BROWN_EMERALD_BLOCK= new PTMBrownBlock("emerald_block", Material.STONE, SoundType.STONE, 5.0F, 30.0F, "pickaxe", 3);
+	public static final Block BLUE_EMERALD_BLOCK= new PTMBlueBlock("emerald_block", Material.STONE, SoundType.STONE, 5.0F, 30.0F, "pickaxe", 3);
+	public static final Block PURPLE_EMERALD_BLOCK= new PTMPurpleBlock("emerald_block", Material.STONE, SoundType.STONE, 5.0F, 30.0F, "pickaxe", 3);
+	public static final Block CYAN_EMERALD_BLOCK= new PTMCyanBlock("emerald_block", Material.STONE, SoundType.STONE, 5.0F, 30.0F, "pickaxe", 3);
+	public static final Block LIGHT_GRAY_EMERALD_BLOCK= new PTMLightGrayBlock("emerald_block", Material.STONE, SoundType.STONE, 5.0F, 30.0F, "pickaxe", 3);
+	public static final Block GRAY_EMERALD_BLOCK= new PTMGrayBlock("emerald_block", Material.STONE, SoundType.STONE, 5.0F, 30.0F, "pickaxe", 3);
+	public static final Block PINK_EMERALD_BLOCK= new PTMPinkBlock("emerald_block", Material.STONE, SoundType.STONE, 5.0F, 30.0F, "pickaxe", 3);
+	public static final Block LIME_EMERALD_BLOCK= new PTMLimeBlock("emerald_block", Material.STONE, SoundType.STONE, 5.0F, 30.0F, "pickaxe", 3);
+	public static final Block YELLOW_EMERALD_BLOCK= new PTMYellowBlock("emerald_block", Material.STONE, SoundType.STONE, 5.0F, 30.0F, "pickaxe", 3);
+	public static final Block LIGHT_BLUE_EMERALD_BLOCK= new PTMLightBlueBlock("emerald_block", Material.STONE, SoundType.STONE, 5.0F, 30.0F, "pickaxe", 3);
+	public static final Block MAGENTA_EMERALD_BLOCK= new PTMMagentaBlock("emerald_block", Material.STONE, SoundType.STONE, 5.0F, 30.0F, "pickaxe", 3);
+	public static final Block ORANGE_EMERALD_BLOCK= new PTMOrangeBlock("emerald_block", Material.STONE, SoundType.STONE, 5.0F, 30.0F, "pickaxe", 3);
+	public static final Block WHITE_EMERALD_BLOCK= new PTMWhiteBlock("emerald_block", Material.STONE, SoundType.STONE, 5.0F, 30.0F, "pickaxe", 3);
 }
