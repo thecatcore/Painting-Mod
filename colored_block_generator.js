@@ -1,52 +1,16 @@
 var fs = require("fs");
 var blocks = [
     {
-        id: "obsidian",
-        name: "Obsidian",
-        origine: "Blocks.OBSIDIAN",
+        id: "snow_block",
+        name: "Snow Block",
+        origine: "Blocks.SNOW_BLOCK",
         usemeta: false,
-        hardness: "50.0F",
-        resistance: "6000.0F",
-        harvestTool: "pickaxe",
-        harvestLevel: 4,
-        material: "STONE",
-        sound: "STONE"
-    },
-    {
-        id: "diamond_block",
-        name: "Diamond Block",
-        origine: "Blocks.DIAMOND_BLOCK",
-        usemeta: false,
-        hardness: "5.0F",
-        resistance: "30.0F",
-        harvestTool: "pickaxe",
-        harvestLevel: 3,
-        material: "IRON",
-        sound: "METAL"
-    },
-    {
-        id: "ice",
-        name: "Ice",
-        origine: "Blocks.ICE",
-        usemeta: false,
-        hardness: "0.5F",
-        resistance: "2.5F",
-        harvestTool: "null",
-        harvestLevel: 0,
-        material: "GLASS",
-        sound: "GROUND"
-    },
-    {
-        id: "clay_block",
-        name: "Clay Block",
-        origine: "Blocks.CLAY_BLOCK",
-        usemeta: false,
-        hardness: "2.0F",
-        resistance: "30.0F",
+        hardness: "0.2F",
+        resistance: "1.0F",
         harvestTool: "shovel",
-        harvestLevel: 0,
-        material: "DIRT",
-        sound: "GROUND"
+        harvestLevel: 1,
+        material: "SNOW",
+        sound: "SNOW"
     }
 ]
 var color = [
@@ -123,19 +87,19 @@ console.log("The line : " + "\ntile." + color[i] + "_" + blocks[a].id + ".name="
 console.log("");
 var staticname = color[i].toUpperCase() + "_" + blocks[a].id.toUpperCase();
 if (i === 7) {
-    modblocksresult = modblocksresult + "\npublic static final Block " + staticname + "= new LightGrayBlock(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel});`;
+    modblocksresult = modblocksresult + "\npublic static final Block " + staticname + "= new PTMLightGrayBlock(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel});`;
 } else if (i === 12) {
-    modblocksresult = modblocksresult + "\npublic static final Block " + staticname + "= new LightBlueBlock(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel});`;
+    modblocksresult = modblocksresult + "\npublic static final Block " + staticname + "= new PTMLightBlueBlock(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel});`;
 } else {
-modblocksresult = modblocksresult + "\npublic static final Block " + staticname + "= new " + Color[i] + "Block(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel});`;
+modblocksresult = modblocksresult + "\npublic static final Block " + staticname + "= new PTM" + Color[i] + "Block(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel});`;
 }
 fs.writeFile("./ModBlocks.txt", modblocksresult, (err) => {
     if (err) throw err;
 });
-console.log("The line : " + "\npublic static final Block " + staticname + "= new " + Color[i] + "Block(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel});` + "\nHas been generated with success !");
+console.log("The line : " + "\npublic static final Block " + staticname + "= new PTM" + Color[i] + "Block(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel});` + "\nHas been generated with success !");
 console.log("");
 console.log("");
-paintbrushresult = paintbrushresult + ", ModBlocks." + staticname;
+paintbrushresult = paintbrushresult + ", PTMBlocks." + staticname;
 fs.writeFile("./Paintbrush.txt", paintbrushresult, (err) => {
     if (err) throw err;
 });
