@@ -552,3 +552,129 @@ tile.light_blue_snow_block.name=Light Blue Snow Block
 tile.magenta_snow_block.name=Magenta Snow Block
 tile.orange_snow_block.name=Orange Snow Block
 tile.white_snow_block.name=White Snow Block
+
+//Netherrack
+tile.black_netherrack.name=Black Netherrack
+tile.red_netherrack.name=Red Netherrack
+tile.green_netherrack.name=Green Netherrack
+tile.brown_netherrack.name=Brown Netherrack
+tile.blue_netherrack.name=Blue Netherrack
+tile.purple_netherrack.name=Purple Netherrack
+tile.cyan_netherrack.name=Cyan Netherrack
+tile.light_gray_netherrack.name=Light Gray Netherrack
+tile.gray_netherrack.name=Gray Netherrack
+tile.pink_netherrack.name=Pink Netherrack
+tile.lime_netherrack.name=Lime Netherrack
+tile.yellow_netherrack.name=Yellow Netherrack
+tile.light_blue_netherrack.name=Light Blue Netherrack
+tile.magenta_netherrack.name=Magenta Netherrack
+tile.orange_netherrack.name=Orange Netherrack
+tile.white_netherrack.name=White Netherrack
+
+//Soul Sand
+tile.black_soul_sand.name=Black Soul Sand
+tile.red_soul_sand.name=Red Soul Sand
+tile.green_soul_sand.name=Green Soul Sand
+tile.brown_soul_sand.name=Brown Soul Sand
+tile.blue_soul_sand.name=Blue Soul Sand
+tile.purple_soul_sand.name=Purple Soul Sand
+tile.cyan_soul_sand.name=Cyan Soul Sand
+tile.light_gray_soul_sand.name=Light Gray Soul Sand
+tile.gray_soul_sand.name=Gray Soul Sand
+tile.pink_soul_sand.name=Pink Soul Sand
+tile.lime_soul_sand.name=Lime Soul Sand
+tile.yellow_soul_sand.name=Yellow Soul Sand
+tile.light_blue_soul_sand.name=Light Blue Soul Sand
+tile.magenta_soul_sand.name=Magenta Soul Sand
+tile.orange_soul_sand.name=Orange Soul Sand
+tile.white_soul_sand.name=White Soul Sand
+
+//Glowstone
+tile.black_glowstone.name=Black Glowstone
+tile.red_glowstone.name=Red Glowstone
+tile.green_glowstone.name=Green Glowstone
+tile.brown_glowstone.name=Brown Glowstone
+tile.blue_glowstone.name=Blue Glowstone
+tile.purple_glowstone.name=Purple Glowstone
+tile.cyan_glowstone.name=Cyan Glowstone
+tile.light_gray_glowstone.name=Light Gray Glowstone
+tile.gray_glowstone.name=Gray Glowstone
+tile.pink_glowstone.name=Pink Glowstone
+tile.lime_glowstone.name=Lime Glowstone
+tile.yellow_glowstone.name=Yellow Glowstone
+tile.light_blue_glowstone.name=Light Blue Glowstone
+tile.magenta_glowstone.name=Magenta Glowstone
+tile.orange_glowstone.name=Orange Glowstone
+tile.white_glowstone.name=White Glowstone
+
+//Stone Brick
+tile.black_stone_brick.name=Black Stone Brick
+tile.red_stone_brick.name=Red Stone Brick
+tile.green_stone_brick.name=Green Stone Brick
+tile.brown_stone_brick.name=Brown Stone Brick
+tile.blue_stone_brick.name=Blue Stone Brick
+tile.purple_stone_brick.name=Purple Stone Brick
+tile.cyan_stone_brick.name=Cyan Stone Brick
+tile.light_gray_stone_brick.name=Light Gray Stone Brick
+tile.gray_stone_brick.name=Gray Stone Brick
+tile.pink_stone_brick.name=Pink Stone Brick
+tile.lime_stone_brick.name=Lime Stone Brick
+tile.yellow_stone_brick.name=Yellow Stone Brick
+tile.light_blue_stone_brick.name=Light Blue Stone Brick
+tile.magenta_stone_brick.name=Magenta Stone Brick
+tile.orange_stone_brick.name=Orange Stone Brick
+tile.white_stone_brick.name=White Stone Brick
+
+//Cracked Stone Brick
+tile.black_cracked_stone_brick.name=Black Cracked Stone Brick
+tile.red_cracked_stone_brick.name=Red Cracked Stone Brick
+tile.green_cracked_stone_brick.name=Green Cracked Stone Brick
+tile.brown_cracked_stone_brick.name=Brown Cracked Stone Brick
+tile.blue_cracked_stone_brick.name=Blue Cracked Stone Brick
+tile.purple_cracked_stone_brick.name=Purple Cracked Stone Brick
+tile.cyan_cracked_stone_brick.name=Cyan Cracked Stone Brick
+tile.light_gray_cracked_stone_brick.name=Light Gray Cracked Stone Brick
+tile.gray_cracked_stone_brick.name=Gray Cracked Stone Brick
+tile.pink_cracked_stone_brick.name=Pink Cracked Stone Brick
+tile.lime_cracked_stone_brick.name=Lime Cracked Stone Brick
+tile.yellow_cracked_stone_brick.name=Yellow Cracked Stone Brick
+tile.light_blue_cracked_stone_brick.name=Light Blue Cracked Stone Brick
+tile.magenta_cracked_stone_brick.name=Magenta Cracked Stone Brick
+tile.orange_cracked_stone_brick.name=Orange Cracked Stone Brick
+tile.white_cracked_stone_brick.name=White Cracked Stone Brick
+
+//Mossy Stone Brick
+tile.black_mossy_stone_brick.name=Black Mossy Stone Brick
+tile.red_mossy_stone_brick.name=Red Mossy Stone Brick
+tile.green_mossy_stone_brick.name=Green Mossy Stone Brick
+tile.brown_mossy_stone_brick.name=Brown Mossy Stone Brick
+tile.blue_mossy_stone_brick.name=Blue Mossy Stone Brick
+tile.purple_mossy_stone_brick.name=Purple Mossy Stone Brick
+tile.cyan_mossy_stone_brick.name=Cyan Mossy Stone Brick
+tile.light_gray_mossy_stone_brick.name=Light Gray Mossy Stone Brick
+tile.gray_mossy_stone_brick.name=Gray Mossy Stone Brick
+tile.pink_mossy_stone_brick.name=Pink Mossy Stone Brick
+tile.lime_mossy_stone_brick.name=Lime Mossy Stone Brick
+tile.yellow_mossy_stone_brick.name=Yellow Mossy Stone Brick
+tile.light_blue_mossy_stone_brick.name=Light Blue Mossy Stone Brick
+tile.magenta_mossy_stone_brick.name=Magenta Mossy Stone Brick
+tile.orange_mossy_stone_brick.name=Orange Mossy Stone Brick
+tile.white_mossy_stone_brick.name=White Mossy Stone Brick
+
+//Chiseled Stone Brick
+tile.black_chiseled_stone_brick.name=Black Chiseled Stone Brick
+tile.red_chiseled_stone_brick.name=Red Chiseled Stone Brick
+tile.green_chiseled_stone_brick.name=Green Chiseled Stone Brick
+tile.brown_chiseled_stone_brick.name=Brown Chiseled Stone Brick
+tile.blue_chiseled_stone_brick.name=Blue Chiseled Stone Brick
+tile.purple_chiseled_stone_brick.name=Purple Chiseled Stone Brick
+tile.cyan_chiseled_stone_brick.name=Cyan Chiseled Stone Brick
+tile.light_gray_chiseled_stone_brick.name=Light Gray Chiseled Stone Brick
+tile.gray_chiseled_stone_brick.name=Gray Chiseled Stone Brick
+tile.pink_chiseled_stone_brick.name=Pink Chiseled Stone Brick
+tile.lime_chiseled_stone_brick.name=Lime Chiseled Stone Brick
+tile.yellow_chiseled_stone_brick.name=Yellow Chiseled Stone Brick
+tile.light_blue_chiseled_stone_brick.name=Light Blue Chiseled Stone Brick
+tile.magenta_chiseled_stone_brick.name=Magenta Chiseled Stone Brick
+tile.orange_chiseled_stone_brick.name=Orange Chiseled Stone Brick
+tile.white_chiseled_stone_brick.name=White Chiseled Stone Brick
