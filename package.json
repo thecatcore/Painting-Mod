@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "block": "node colored_block_generator.js"
+    }
+}
