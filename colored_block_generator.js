@@ -103,7 +103,7 @@ if (blocks[a].usemeta === true) {
     });
 }
 var splited = paintbrushresult.split("\n");
-console.log("The line : \n" + splited[splited.length] + "\nHas been generated with success !");
+console.log("The block : \n" + staticname + "\nHas been generated with success !");
 console.log("");
 console.log("");
 console.log("");
