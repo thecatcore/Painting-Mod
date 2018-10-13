@@ -1,5 +1,7 @@
 package arthurbambou.paintingmod.api;
 
+import javax.annotation.Nullable;
+
 import arthurbambou.paintingmod.blocks.colored.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -29,7 +31,10 @@ public class ColoredBlock {
 	public Block magenta;
 	public Block orange;
 	public Block white;
-	public ColoredBlock(String name, Material material, SoundType soundtype, float hardness, float resistance, String harvesttool, int harvestlevel) {
+	public Block replace;
+	public boolean metab;
+	public int meta;
+	public ColoredBlock(String name, Material material, SoundType soundtype, float hardness, float resistance, String harvesttool, int harvestlevel, Block replace, boolean metab, @Nullable int meta) {
 		this.name = name;
 		this.material = material;
 		this.soundtype = soundtype;
@@ -53,6 +58,37 @@ public class ColoredBlock {
 		this.magenta = new PTMMagentaBlock(this.name, this.material, this.soundtype, this.hardness, this.resistance, this.harvesttool, this.harvestlevel);
 		this.orange = new PTMOrangeBlock(this.name, this.material, this.soundtype, this.hardness, this.resistance, this.harvesttool, this.harvestlevel);
 		this.white = new PTMWhiteBlock(this.name, this.material, this.soundtype, this.hardness, this.resistance, this.harvesttool, this.harvestlevel);
-
+		this.replace = replace;
+		this.metab = metab;
+		this.meta = meta;
+		AddPaintbrush.COLOREDBLOCKS.add(this);
+	}
+	public ColoredBlock(String name, Material material, SoundType soundtype, float hardness, float resistance, String harvesttool, int harvestlevel, Block replace, boolean metab) {
+		this.name = name;
+		this.material = material;
+		this.soundtype = soundtype;
+		this.hardness = hardness;
+		this.resistance = resistance;
+		this.harvesttool = harvesttool;
+		this.harvestlevel = harvestlevel;
+		this.black = new PTMBlackBlock(this.name, this.material, this.soundtype, this.hardness, this.resistance, this.harvesttool, this.harvestlevel);
+		this.red = new PTMRedBlock(this.name, this.material, this.soundtype, this.hardness, this.resistance, this.harvesttool, this.harvestlevel);
+		this.green = new PTMGreenBlock(this.name, this.material, this.soundtype, this.hardness, this.resistance, this.harvesttool, this.harvestlevel);
+		this.brown = new PTMBrownBlock(this.name, this.material, this.soundtype, this.hardness, this.resistance, this.harvesttool, this.harvestlevel);
+		this.blue = new PTMBlueBlock(this.name, this.material, this.soundtype, this.hardness, this.resistance, this.harvesttool, this.harvestlevel);
+		this.purple = new PTMPurpleBlock(this.name, this.material, this.soundtype, this.hardness, this.resistance, this.harvesttool, this.harvestlevel);
+		this.cyan = new PTMCyanBlock(this.name, this.material, this.soundtype, this.hardness, this.resistance, this.harvesttool, this.harvestlevel);
+		this.lightgray = new PTMLightGrayBlock(this.name, this.material, this.soundtype, this.hardness, this.resistance, this.harvesttool, this.harvestlevel);
+		this.gray = new PTMGrayBlock(this.name, this.material, this.soundtype, this.hardness, this.resistance, this.harvesttool, this.harvestlevel);
+		this.pink = new PTMPinkBlock(this.name, this.material, this.soundtype, this.hardness, this.resistance, this.harvesttool, this.harvestlevel);
+		this.lime = new PTMLimeBlock(this.name, this.material, this.soundtype, this.hardness, this.resistance, this.harvesttool, this.harvestlevel);
+		this.yellow = new PTMYellowBlock(this.name, this.material, this.soundtype, this.hardness, this.resistance, this.harvesttool, this.harvestlevel);
+		this.lightblue = new PTMLightBlueBlock(this.name, this.material, this.soundtype, this.hardness, this.resistance, this.harvesttool, this.harvestlevel);
+		this.magenta = new PTMMagentaBlock(this.name, this.material, this.soundtype, this.hardness, this.resistance, this.harvesttool, this.harvestlevel);
+		this.orange = new PTMOrangeBlock(this.name, this.material, this.soundtype, this.hardness, this.resistance, this.harvesttool, this.harvestlevel);
+		this.white = new PTMWhiteBlock(this.name, this.material, this.soundtype, this.hardness, this.resistance, this.harvesttool, this.harvestlevel);
+		this.replace = replace;
+		this.metab = metab;
+		AddPaintbrush.COLOREDBLOCKS.add(this);
 	}
 }
