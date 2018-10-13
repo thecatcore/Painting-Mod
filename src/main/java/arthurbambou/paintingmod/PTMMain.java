@@ -3,6 +3,7 @@ package arthurbambou.paintingmod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import arthurbambou.paintingmod.api.ColoredBlock;
 import arthurbambou.paintingmod.init.PTMBlocks;
 import arthurbambou.paintingmod.proxy.PTMCommonProxy;
 import arthurbambou.paintingmod.tabs.PTMTab;
@@ -41,22 +42,23 @@ public class PTMMain {
 	@EventHandler
 	public static void init(FMLInitializationEvent event)
 	{
-		Blocks.FIRE.setFireInfo(PTMBlocks.BLACK_PLANK, 5, 20);
-		Blocks.FIRE.setFireInfo(PTMBlocks.RED_PLANK, 5, 20);
-		Blocks.FIRE.setFireInfo(PTMBlocks.GREEN_PLANK, 5, 20);
-		Blocks.FIRE.setFireInfo(PTMBlocks.BROWN_PLANK, 5, 20);
-		Blocks.FIRE.setFireInfo(PTMBlocks.BLUE_PLANK, 5, 20);
-		Blocks.FIRE.setFireInfo(PTMBlocks.PURPLE_PLANK, 5, 20);
-		Blocks.FIRE.setFireInfo(PTMBlocks.CYAN_PLANK, 5, 20);
-		Blocks.FIRE.setFireInfo(PTMBlocks.LIGHT_GRAY_PLANK, 5, 20);
-		Blocks.FIRE.setFireInfo(PTMBlocks.GRAY_PLANK, 5, 20);
-		Blocks.FIRE.setFireInfo(PTMBlocks.PINK_PLANK, 5, 20);
-		Blocks.FIRE.setFireInfo(PTMBlocks.LIME_PLANK, 5, 20);
-		Blocks.FIRE.setFireInfo(PTMBlocks.YELLOW_PLANK, 5, 20);
-		Blocks.FIRE.setFireInfo(PTMBlocks.LIGHT_BLUE_PLANK, 5, 20);
-		Blocks.FIRE.setFireInfo(PTMBlocks.MAGENTA_PLANK, 5, 20);
-		Blocks.FIRE.setFireInfo(PTMBlocks.ORANGE_PLANK, 5, 20);
-		Blocks.FIRE.setFireInfo(PTMBlocks.WHITE_PLANK, 5, 20);
+		ColoredBlock plank = PTMBlocks.PLANK;
+		Blocks.FIRE.setFireInfo(plank.black, 5, 20);
+		Blocks.FIRE.setFireInfo(plank.blue, 5, 20);
+		Blocks.FIRE.setFireInfo(plank.brown, 5, 20);
+		Blocks.FIRE.setFireInfo(plank.cyan, 5, 20);
+		Blocks.FIRE.setFireInfo(plank.gray, 5, 20);
+		Blocks.FIRE.setFireInfo(plank.green, 5, 20);
+		Blocks.FIRE.setFireInfo(plank.lightblue, 5, 20);
+		Blocks.FIRE.setFireInfo(plank.lightgray, 5, 20);
+		Blocks.FIRE.setFireInfo(plank.lime, 5, 20);
+		Blocks.FIRE.setFireInfo(plank.magenta, 5, 20);
+		Blocks.FIRE.setFireInfo(plank.orange, 5, 20);
+		Blocks.FIRE.setFireInfo(plank.pink, 5, 20);
+		Blocks.FIRE.setFireInfo(plank.purple, 5, 20);
+		Blocks.FIRE.setFireInfo(plank.red, 5, 20);
+		Blocks.FIRE.setFireInfo(plank.white, 5, 20);
+		Blocks.FIRE.setFireInfo(plank.yellow, 5, 20);
 	}
 	
 	@EventHandler
