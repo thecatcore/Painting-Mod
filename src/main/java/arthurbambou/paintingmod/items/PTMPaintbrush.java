@@ -1,5 +1,6 @@
 package arthurbambou.paintingmod.items;
 
+import arthurbambou.paintingmod.api.AddPaintbrush;
 import arthurbambou.paintingmod.api.ColoredBlock;
 import arthurbambou.paintingmod.init.PTMBlocks;
 import arthurbambou.paintingmod.init.PTMItems;
@@ -24,44 +25,12 @@ public class PTMPaintbrush extends PTMItemBase {
 	
 	@Override
 	public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
-		newbloctopaint(player, worldIn, pos, Blocks.PLANKS, PTMBlocks.PLANK);
-		newbloctopaint(player, worldIn, pos, Blocks.STONE, PTMBlocks.STONE, 0);
-		newbloctopaint(player, worldIn, pos, Blocks.STONE, PTMBlocks.GRANITE, 1);
-		newbloctopaint(player, worldIn, pos, Blocks.STONE, PTMBlocks.POLISHED_GRANITE, 2);
-		newbloctopaint(player, worldIn, pos, Blocks.STONE, PTMBlocks.DIORITE, 3);
-		newbloctopaint(player, worldIn, pos, Blocks.STONE, PTMBlocks.POLISHED_DIORITE, 4);
-		newbloctopaint(player, worldIn, pos, Blocks.STONE, PTMBlocks.ANDESITE, 5);
-		newbloctopaint(player, worldIn, pos, Blocks.STONE, PTMBlocks.POLISHED_ANDESITE, 6);
-		newbloctopaint(player, worldIn, pos, Blocks.DIRT, PTMBlocks.DIRT, 0);
-		newbloctopaint(player, worldIn, pos, Blocks.DIRT, PTMBlocks.COARSE_DIRT, 1);
-		newbloctopaint(player, worldIn, pos, Blocks.COBBLESTONE, PTMBlocks.COBBLESTONE);
-		newbloctopaint(player, worldIn, pos, Blocks.SAND, PTMBlocks.SAND);
-		newbloctopaint(player, worldIn, pos, Blocks.GRAVEL, PTMBlocks.GRAVEL);
-		newbloctopaint(player, worldIn, pos, Blocks.SPONGE, PTMBlocks.SPONGE, 0);
-		newbloctopaint(player, worldIn, pos, Blocks.SPONGE, PTMBlocks.WET_SPONGE, 1);
-		newbloctopaint(player, worldIn, pos, Blocks.LAPIS_BLOCK, PTMBlocks.LAPIS_LAZULI_BLOCK);
-		newbloctopaint(player, worldIn, pos, Blocks.SANDSTONE, PTMBlocks.SANDSTONE, 1);
+		
+		for (ColoredBlock coloredblock: AddPaintbrush.COLOREDBLOCKS) {
+			newbloctopaint(player, worldIn, pos, coloredblock.replace, coloredblock);
+		}
 //		newbloctopaint(player, worldIn, pos, Blocks.SANDSTONE, PTMBlocks.BLACK_CHISELED_SANDSTONE, PTMBlocks.RED_CHISELED_SANDSTONE, PTMBlocks.GREEN_CHISELED_SANDSTONE, PTMBlocks.BROWN_CHISELED_SANDSTONE, PTMBlocks.BLUE_CHISELED_SANDSTONE, PTMBlocks.PURPLE_CHISELED_SANDSTONE, PTMBlocks.CYAN_CHISELED_SANDSTONE, PTMBlocks.LIGHT_GRAY_CHISELED_SANDSTONE, PTMBlocks.GRAY_CHISELED_SANDSTONE, PTMBlocks.PINK_CHISELED_SANDSTONE, PTMBlocks.LIME_CHISELED_SANDSTONE, PTMBlocks.YELLOW_CHISELED_SANDSTONE, PTMBlocks.LIGHT_BLUE_CHISELED_SANDSTONE, PTMBlocks.MAGENTA_CHISELED_SANDSTONE, PTMBlocks.ORANGE_CHISELED_SANDSTONE, PTMBlocks.WHITE_CHISELED_SANDSTONE, 1);
 //		newbloctopaint(player, worldIn, pos, Blocks.SANDSTONE, PTMBlocks.BLACK_SMOOTH_SANDSTONE, PTMBlocks.RED_SMOOTH_SANDSTONE, PTMBlocks.GREEN_SMOOTH_SANDSTONE, PTMBlocks.BROWN_SMOOTH_SANDSTONE, PTMBlocks.BLUE_SMOOTH_SANDSTONE, PTMBlocks.PURPLE_SMOOTH_SANDSTONE, PTMBlocks.CYAN_SMOOTH_SANDSTONE, PTMBlocks.LIGHT_GRAY_SMOOTH_SANDSTONE, PTMBlocks.GRAY_SMOOTH_SANDSTONE, PTMBlocks.PINK_SMOOTH_SANDSTONE, PTMBlocks.LIME_SMOOTH_SANDSTONE, PTMBlocks.YELLOW_SMOOTH_SANDSTONE, PTMBlocks.LIGHT_BLUE_SMOOTH_SANDSTONE, PTMBlocks.MAGENTA_SMOOTH_SANDSTONE, PTMBlocks.ORANGE_SMOOTH_SANDSTONE, PTMBlocks.WHITE_SMOOTH_SANDSTONE, 2);
-		newbloctopaint(player, worldIn, pos, Blocks.GOLD_BLOCK, PTMBlocks.GOLD_BLOCK);
-		newbloctopaint(player, worldIn, pos, Blocks.IRON_BLOCK, PTMBlocks.IRON_BLOCK);
-		newbloctopaint(player, worldIn, pos, Blocks.BRICK_BLOCK, PTMBlocks.BRICK);
-		newbloctopaint(player, worldIn, pos, Blocks.MOSSY_COBBLESTONE, PTMBlocks.MOSS_STONE);
-		newbloctopaint(player, worldIn, pos, Blocks.OBSIDIAN, PTMBlocks.OBSIDIAN);
-		newbloctopaint(player, worldIn, pos, Blocks.DIAMOND_BLOCK, PTMBlocks.DIAMOND_BLOCK);
-		newbloctopaint(player, worldIn, pos, Blocks.ICE, PTMBlocks.ICE);
-		newbloctopaint(player, worldIn, pos, Blocks.CLAY, PTMBlocks.CLAY_BLOCK);
-		newbloctopaint(player, worldIn, pos, Blocks.SNOW, PTMBlocks.SNOW_BLOCK);
-		newbloctopaint(player, worldIn, pos, Blocks.NETHERRACK, PTMBlocks.NETHERRACK);
-		newbloctopaint(player, worldIn, pos, Blocks.SOUL_SAND, PTMBlocks.SOUL_SAND);
-		newbloctopaint(player, worldIn, pos, Blocks.GLOWSTONE, PTMBlocks.GLOWSTONE);
-		newbloctopaint(player, worldIn, pos, Blocks.STONEBRICK, PTMBlocks.STONE_BRICK, 0);
-		newbloctopaint(player, worldIn, pos, Blocks.STONEBRICK, PTMBlocks.CRACKED_STONE_BRICK, 2);
-		newbloctopaint(player, worldIn, pos, Blocks.STONEBRICK, PTMBlocks.MOSSY_STONE_BRICK, 1);
-		newbloctopaint(player, worldIn, pos, Blocks.STONEBRICK, PTMBlocks.CHISELED_STONE_BRICK, 3);
-		newbloctopaint(player, worldIn, pos, Blocks.NETHER_BRICK, PTMBlocks.NETHER_BRICK);
-		newbloctopaint(player, worldIn, pos, Blocks.END_STONE, PTMBlocks.END_STONE);
-		newbloctopaint(player, worldIn, pos, Blocks.EMERALD_BLOCK, PTMBlocks.EMERALD_BLOCK);
 		return EnumActionResult.SUCCESS;
 	}
 	
@@ -70,52 +39,47 @@ public class PTMPaintbrush extends PTMItemBase {
 		if (player.getHeldItemMainhand().getItem() == PTMItems.NORMAL_PAINTBRUSH) {
 			
 		} else {
-		if (worldIn.getBlockState(pos).getBlock() == topaint) {
-			black(player, worldIn, pos, coloredblock.black);
-			red(player, worldIn, pos, coloredblock.red);
-			green(player, worldIn, pos, coloredblock.green);
-			brown(player, worldIn, pos, coloredblock.brown);
-			blue(player, worldIn, pos, coloredblock.blue);
-			purple(player, worldIn, pos, coloredblock.purple);
-			cyan(player, worldIn, pos, coloredblock.cyan);
-			lightGray(player, worldIn, pos, coloredblock.lightgray);
-			gray(player, worldIn, pos, coloredblock.gray);
-			pink(player, worldIn, pos, coloredblock.pink);
-			lime(player, worldIn, pos, coloredblock.lime);
-			yellow(player, worldIn, pos, coloredblock.yellow);
-			lightBlue(player, worldIn, pos, coloredblock.lightblue);
-			magenta(player, worldIn, pos, coloredblock.magenta);
-			orange(player, worldIn, pos, coloredblock.orange);
-			white(player, worldIn, pos, coloredblock.white);
-		}
+			if (coloredblock.metab) {
+				if (worldIn.getBlockState(pos).getBlock() == topaint && worldIn.getBlockState(pos).getBlock().getMetaFromState(worldIn.getBlockState(pos)) == coloredblock.meta) {
+					black(player, worldIn, pos, coloredblock.black);
+					red(player, worldIn, pos, coloredblock.red);
+					green(player, worldIn, pos, coloredblock.green);
+					brown(player, worldIn, pos, coloredblock.brown);
+					blue(player, worldIn, pos, coloredblock.blue);
+					purple(player, worldIn, pos, coloredblock.purple);
+					cyan(player, worldIn, pos, coloredblock.cyan);
+					lightGray(player, worldIn, pos, coloredblock.lightgray);
+					gray(player, worldIn, pos, coloredblock.gray);
+					pink(player, worldIn, pos, coloredblock.pink);
+					lime(player, worldIn, pos, coloredblock.lime);
+					yellow(player, worldIn, pos, coloredblock.yellow);
+					lightBlue(player, worldIn, pos, coloredblock.lightblue);
+					magenta(player, worldIn, pos, coloredblock.magenta);
+					orange(player, worldIn, pos, coloredblock.orange);
+					white(player, worldIn, pos, coloredblock.white);
+				}
+			} else {
+				if (worldIn.getBlockState(pos).getBlock() == topaint) {
+					black(player, worldIn, pos, coloredblock.black);
+					red(player, worldIn, pos, coloredblock.red);
+					green(player, worldIn, pos, coloredblock.green);
+					brown(player, worldIn, pos, coloredblock.brown);
+					blue(player, worldIn, pos, coloredblock.blue);
+					purple(player, worldIn, pos, coloredblock.purple);
+					cyan(player, worldIn, pos, coloredblock.cyan);
+					lightGray(player, worldIn, pos, coloredblock.lightgray);
+					gray(player, worldIn, pos, coloredblock.gray);
+					pink(player, worldIn, pos, coloredblock.pink);
+					lime(player, worldIn, pos, coloredblock.lime);
+					yellow(player, worldIn, pos, coloredblock.yellow);
+					lightBlue(player, worldIn, pos, coloredblock.lightblue);
+					magenta(player, worldIn, pos, coloredblock.magenta);
+					orange(player, worldIn, pos, coloredblock.orange);
+					white(player, worldIn, pos, coloredblock.white);
+				}
+			}
 		}
 		
-	}
-	
-	public void newbloctopaint(EntityPlayer player, World worldIn, BlockPos pos,
-			Block topaint, ColoredBlock coloredblock, int meta) {
-		if (player.getHeldItemMainhand().getItem() == PTMItems.NORMAL_PAINTBRUSH) {
-			
-		} else {
-		if (worldIn.getBlockState(pos).getBlock() == topaint && worldIn.getBlockState(pos).getBlock().getMetaFromState(worldIn.getBlockState(pos)) == meta) {
-			black(player, worldIn, pos, coloredblock.black);
-			red(player, worldIn, pos, coloredblock.red);
-			green(player, worldIn, pos, coloredblock.green);
-			brown(player, worldIn, pos, coloredblock.brown);
-			blue(player, worldIn, pos, coloredblock.blue);
-			purple(player, worldIn, pos, coloredblock.purple);
-			cyan(player, worldIn, pos, coloredblock.cyan);
-			lightGray(player, worldIn, pos, coloredblock.lightgray);
-			gray(player, worldIn, pos, coloredblock.gray);
-			pink(player, worldIn, pos, coloredblock.pink);
-			lime(player, worldIn, pos, coloredblock.lime);
-			yellow(player, worldIn, pos, coloredblock.yellow);
-			lightBlue(player, worldIn, pos, coloredblock.lightblue);
-			magenta(player, worldIn, pos, coloredblock.magenta);
-			orange(player, worldIn, pos, coloredblock.orange);
-			white(player, worldIn, pos, coloredblock.white);
-		}
-		}
 	}
 	
 	public void usedpaintbrush (EntityPlayer player) {
