@@ -38,8 +38,6 @@ var Color = [
 ]
 var modblocks = fs.readFileSync("./ModBlocks.txt", {encoding:"utf-8", flag:"r"});
 var modblocksresult = modblocks;
-var paintbrush = fs.readFileSync("./Paintbrush.txt", {encoding:"utf-8", flag:"r"});
-var paintbrushresult = paintbrush;
 var pathh = `./src/main/resources/assets/paintingmod/lang/en_us.lang`;
 var langfile = fs.readFileSync(pathh, {encoding:"utf-8", flag:"r"}, (err) => {
    if (err) throw err;
@@ -51,13 +49,9 @@ test = test + "\n\n//" + blocks[a].name;
 fs.writeFile(pathh, test, (err) => {
    if (err) throw err;
 });
-modblocksresult = modblocksresult + "\n\n//" + blocks[a].name;
+modblocksresult = modblocksresult;
 fs.writeFile("./ModBlocks.txt", modblocksresult, (err) => {
    if (err) throw err;
-});
-paintbrushresult = paintbrushresult + "\nnewbloctopaint(player, worldIn, pos, " + blocks[a].origine;
-fs.writeFile("./Paintbrush.txt", paintbrushresult, (err) => {
-    if (err) throw err;
 });
 for (var i=0; i<color.length;i++) {
 blockstate(i);
@@ -72,37 +66,16 @@ fs.writeFile(pathh, test, (err) => {
 });
 console.log("The line : " + "\ntile." + color[i] + "_" + blocks[a].id + ".name=" + Color[i] + " " + blocks[a].name + "\nhas been added to the localization file");
 console.log("");
-var staticname = color[i].toUpperCase() + "_" + blocks[a].id.toUpperCase();
-if (i === 7) {
-    modblocksresult = modblocksresult + "\npublic static final Block " + staticname + "= new PTMLightGrayBlock(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel});`;
-} else if (i === 12) {
-    modblocksresult = modblocksresult + "\npublic static final Block " + staticname + "= new PTMLightBlueBlock(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel});`;
+console.log("");
+}
+if (block[a].usemeta) {
+    modblocksresult = modblocksresult + "\npublic static final ColoredBlock " + blocks[a].id.toUpperCase() + "= new ColoredBlock(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel}, ${block[a].origine}, true, ${blocks[a].meta});`;
 } else {
-modblocksresult = modblocksresult + "\npublic static final Block " + staticname + "= new PTM" + Color[i] + "Block(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel});`;
+    modblocksresult = modblocksresult + "\npublic static final ColoredBlock " + blocks[a].id.toUpperCase() + "= new ColoredBlock(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel}, ${block[a].origine}, false);`;
 }
 fs.writeFile("./ModBlocks.txt", modblocksresult, (err) => {
     if (err) throw err;
 });
-console.log("The line : " + "\npublic static final Block " + staticname + "= new PTM" + Color[i] + "Block(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel});` + "\nHas been generated with success !");
-console.log("");
-console.log("");
-paintbrushresult = paintbrushresult + ", PTMBlocks." + staticname;
-fs.writeFile("./Paintbrush.txt", paintbrushresult, (err) => {
-    if (err) throw err;
-});
-}
-if (blocks[a].usemeta === true) {
-    paintbrushresult = paintbrushresult + ", " + blocks[a].meta + ");";
-    fs.writeFile("./Paintbrush.txt", paintbrushresult, (err) => {
-        if (err) throw err;
-    });
-} else {
-    paintbrushresult = paintbrushresult + ");";
-    fs.writeFile("./Paintbrush.txt", paintbrushresult, (err) => {
-        if (err) throw err;
-    });
-}
-var splited = paintbrushresult.split("\n");
 console.log("The block : \n" + staticname + "\nHas been generated with success !");
 console.log("");
 console.log("");
