@@ -1,18 +1,5 @@
 var fs = require("fs");
-var blocks = [
-    {
-        id: "snow_block",
-        name: "Snow Block",
-        origine: "Blocks.SNOW_BLOCK",
-        usemeta: false,
-        hardness: "0.2F",
-        resistance: "1.0F",
-        harvestTool: "shovel",
-        harvestLevel: 1,
-        material: "SNOW",
-        sound: "SNOW"
-    }
-]
+var blocks = JSON.parse(fs.readFileSync('./blocks.json'))
 var color = [
     "black",
     "red",
@@ -116,7 +103,7 @@ if (blocks[a].usemeta === true) {
     });
 }
 var splited = paintbrushresult.split("\n");
-console.log("The line : \n" + splited[splited.length] + "\nHas been generated with success !");
+console.log("The block : \n" + staticname + "\nHas been generated with success !");
 console.log("");
 console.log("");
 console.log("");
