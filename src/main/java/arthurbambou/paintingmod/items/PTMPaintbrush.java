@@ -2,12 +2,10 @@ package arthurbambou.paintingmod.items;
 
 import arthurbambou.paintingmod.api.AddPaintbrush;
 import arthurbambou.paintingmod.api.ColoredBlock;
-import arthurbambou.paintingmod.init.PTMBlocks;
 import arthurbambou.paintingmod.init.PTMItems;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumFacing;
