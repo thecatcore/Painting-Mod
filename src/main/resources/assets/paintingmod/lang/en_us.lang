@@ -804,3 +804,183 @@ tile.light_blue_dark_prismarine.name=Light Blue Dark Prismarine
 tile.magenta_dark_prismarine.name=Magenta Dark Prismarine
 tile.orange_dark_prismarine.name=Orange Dark Prismarine
 tile.white_dark_prismarine.name=White Dark Prismarine
+ 
+//Sea Lantern
+tile.black_sea_lantern.name=Black Sea Lantern
+tile.red_sea_lantern.name=Red Sea Lantern
+tile.green_sea_lantern.name=Green Sea Lantern
+tile.brown_sea_lantern.name=Brown Sea Lantern
+tile.blue_sea_lantern.name=Blue Sea Lantern
+tile.purple_sea_lantern.name=Purple Sea Lantern
+tile.cyan_sea_lantern.name=Cyan Sea Lantern
+tile.light_gray_sea_lantern.name=Light Gray Sea Lantern
+tile.gray_sea_lantern.name=Gray Sea Lantern
+tile.pink_sea_lantern.name=Pink Sea Lantern
+tile.lime_sea_lantern.name=Lime Sea Lantern
+tile.yellow_sea_lantern.name=Yellow Sea Lantern
+tile.light_blue_sea_lantern.name=Light Blue Sea Lantern
+tile.magenta_sea_lantern.name=Magenta Sea Lantern
+tile.orange_sea_lantern.name=Orange Sea Lantern
+tile.white_sea_lantern.name=White Sea Lantern
+ 
+//Block of Coal
+tile.black_coal_block.name=Black Block of Coal
+tile.red_coal_block.name=Red Block of Coal
+tile.green_coal_block.name=Green Block of Coal
+tile.brown_coal_block.name=Brown Block of Coal
+tile.blue_coal_block.name=Blue Block of Coal
+tile.purple_coal_block.name=Purple Block of Coal
+tile.cyan_coal_block.name=Cyan Block of Coal
+tile.light_gray_coal_block.name=Light Gray Block of Coal
+tile.gray_coal_block.name=Gray Block of Coal
+tile.pink_coal_block.name=Pink Block of Coal
+tile.lime_coal_block.name=Lime Block of Coal
+tile.yellow_coal_block.name=Yellow Block of Coal
+tile.light_blue_coal_block.name=Light Blue Block of Coal
+tile.magenta_coal_block.name=Magenta Block of Coal
+tile.orange_coal_block.name=Orange Block of Coal
+tile.white_coal_block.name=White Block of Coal
+ 
+//Packet Ice
+tile.black_packet_ice.name=Black Packet Ice
+tile.red_packet_ice.name=Red Packet Ice
+tile.green_packet_ice.name=Green Packet Ice
+tile.brown_packet_ice.name=Brown Packet Ice
+tile.blue_packet_ice.name=Blue Packet Ice
+tile.purple_packet_ice.name=Purple Packet Ice
+tile.cyan_packet_ice.name=Cyan Packet Ice
+tile.light_gray_packet_ice.name=Light Gray Packet Ice
+tile.gray_packet_ice.name=Gray Packet Ice
+tile.pink_packet_ice.name=Pink Packet Ice
+tile.lime_packet_ice.name=Lime Packet Ice
+tile.yellow_packet_ice.name=Yellow Packet Ice
+tile.light_blue_packet_ice.name=Light Blue Packet Ice
+tile.magenta_packet_ice.name=Magenta Packet Ice
+tile.orange_packet_ice.name=Orange Packet Ice
+tile.white_packet_ice.name=White Packet Ice
+ 
+//Purpur Block
+tile.black_purpur_block.name=Black Purpur Block
+tile.red_purpur_block.name=Red Purpur Block
+tile.green_purpur_block.name=Green Purpur Block
+tile.brown_purpur_block.name=Brown Purpur Block
+tile.blue_purpur_block.name=Blue Purpur Block
+tile.purple_purpur_block.name=Purple Purpur Block
+tile.cyan_purpur_block.name=Cyan Purpur Block
+tile.light_gray_purpur_block.name=Light Gray Purpur Block
+tile.gray_purpur_block.name=Gray Purpur Block
+tile.pink_purpur_block.name=Pink Purpur Block
+tile.lime_purpur_block.name=Lime Purpur Block
+tile.yellow_purpur_block.name=Yellow Purpur Block
+tile.light_blue_purpur_block.name=Light Blue Purpur Block
+tile.magenta_purpur_block.name=Magenta Purpur Block
+tile.orange_purpur_block.name=Orange Purpur Block
+tile.white_purpur_block.name=White Purpur Block
+ 
+//End Stone Brick
+tile.black_end_stone_brick.name=Black End Stone Brick
+tile.red_end_stone_brick.name=Red End Stone Brick
+tile.green_end_stone_brick.name=Green End Stone Brick
+tile.brown_end_stone_brick.name=Brown End Stone Brick
+tile.blue_end_stone_brick.name=Blue End Stone Brick
+tile.purple_end_stone_brick.name=Purple End Stone Brick
+tile.cyan_end_stone_brick.name=Cyan End Stone Brick
+tile.light_gray_end_stone_brick.name=Light Gray End Stone Brick
+tile.gray_end_stone_brick.name=Gray End Stone Brick
+tile.pink_end_stone_brick.name=Pink End Stone Brick
+tile.lime_end_stone_brick.name=Lime End Stone Brick
+tile.yellow_end_stone_brick.name=Yellow End Stone Brick
+tile.light_blue_end_stone_brick.name=Light Blue End Stone Brick
+tile.magenta_end_stone_brick.name=Magenta End Stone Brick
+tile.orange_end_stone_brick.name=Orange End Stone Brick
+tile.white_end_stone_brick.name=White End Stone Brick
+ 
+//Magma Block
+tile.black_magma_block.name=Black Magma Block
+tile.red_magma_block.name=Red Magma Block
+tile.green_magma_block.name=Green Magma Block
+tile.brown_magma_block.name=Brown Magma Block
+tile.blue_magma_block.name=Blue Magma Block
+tile.purple_magma_block.name=Purple Magma Block
+tile.cyan_magma_block.name=Cyan Magma Block
+tile.light_gray_magma_block.name=Light Gray Magma Block
+tile.gray_magma_block.name=Gray Magma Block
+tile.pink_magma_block.name=Pink Magma Block
+tile.lime_magma_block.name=Lime Magma Block
+tile.yellow_magma_block.name=Yellow Magma Block
+tile.light_blue_magma_block.name=Light Blue Magma Block
+tile.magenta_magma_block.name=Magenta Magma Block
+tile.orange_magma_block.name=Orange Magma Block
+tile.white_magma_block.name=White Magma Block
+ 
+//Nether Wart Block
+tile.black_nether_wart_block.name=Black Nether Wart Block
+tile.red_nether_wart_block.name=Red Nether Wart Block
+tile.green_nether_wart_block.name=Green Nether Wart Block
+tile.brown_nether_wart_block.name=Brown Nether Wart Block
+tile.blue_nether_wart_block.name=Blue Nether Wart Block
+tile.purple_nether_wart_block.name=Purple Nether Wart Block
+tile.cyan_nether_wart_block.name=Cyan Nether Wart Block
+tile.light_gray_nether_wart_block.name=Light Gray Nether Wart Block
+tile.gray_nether_wart_block.name=Gray Nether Wart Block
+tile.pink_nether_wart_block.name=Pink Nether Wart Block
+tile.lime_nether_wart_block.name=Lime Nether Wart Block
+tile.yellow_nether_wart_block.name=Yellow Nether Wart Block
+tile.light_blue_nether_wart_block.name=Light Blue Nether Wart Block
+tile.magenta_nether_wart_block.name=Magenta Nether Wart Block
+tile.orange_nether_wart_block.name=Orange Nether Wart Block
+tile.white_nether_wart_block.name=White Nether Wart Block
+ 
+//Spruce Leaves
+tile.black_spruce_leaves.name=Black Spruce Leaves
+tile.red_spruce_leaves.name=Red Spruce Leaves
+tile.green_spruce_leaves.name=Green Spruce Leaves
+tile.brown_spruce_leaves.name=Brown Spruce Leaves
+tile.blue_spruce_leaves.name=Blue Spruce Leaves
+tile.purple_spruce_leaves.name=Purple Spruce Leaves
+tile.cyan_spruce_leaves.name=Cyan Spruce Leaves
+tile.light_gray_spruce_leaves.name=Light Gray Spruce Leaves
+tile.gray_spruce_leaves.name=Gray Spruce Leaves
+tile.pink_spruce_leaves.name=Pink Spruce Leaves
+tile.lime_spruce_leaves.name=Lime Spruce Leaves
+tile.yellow_spruce_leaves.name=Yellow Spruce Leaves
+tile.light_blue_spruce_leaves.name=Light Blue Spruce Leaves
+tile.magenta_spruce_leaves.name=Magenta Spruce Leaves
+tile.orange_spruce_leaves.name=Orange Spruce Leaves
+tile.white_spruce_leaves.name=White Spruce Leaves
+ 
+//Jungle Leaves
+tile.black_jungle_leaves.name=Black Jungle Leaves
+tile.red_jungle_leaves.name=Red Jungle Leaves
+tile.green_jungle_leaves.name=Green Jungle Leaves
+tile.brown_jungle_leaves.name=Brown Jungle Leaves
+tile.blue_jungle_leaves.name=Blue Jungle Leaves
+tile.purple_jungle_leaves.name=Purple Jungle Leaves
+tile.cyan_jungle_leaves.name=Cyan Jungle Leaves
+tile.light_gray_jungle_leaves.name=Light Gray Jungle Leaves
+tile.gray_jungle_leaves.name=Gray Jungle Leaves
+tile.pink_jungle_leaves.name=Pink Jungle Leaves
+tile.lime_jungle_leaves.name=Lime Jungle Leaves
+tile.yellow_jungle_leaves.name=Yellow Jungle Leaves
+tile.light_blue_jungle_leaves.name=Light Blue Jungle Leaves
+tile.magenta_jungle_leaves.name=Magenta Jungle Leaves
+tile.orange_jungle_leaves.name=Orange Jungle Leaves
+tile.white_jungle_leaves.name=White Jungle Leaves
+ 
+//Slime Block
+tile.black_slime_block.name=Black Slime Block
+tile.red_slime_block.name=Red Slime Block
+tile.green_slime_block.name=Green Slime Block
+tile.brown_slime_block.name=Brown Slime Block
+tile.blue_slime_block.name=Blue Slime Block
+tile.purple_slime_block.name=Purple Slime Block
+tile.cyan_slime_block.name=Cyan Slime Block
+tile.light_gray_slime_block.name=Light Gray Slime Block
+tile.gray_slime_block.name=Gray Slime Block
+tile.pink_slime_block.name=Pink Slime Block
+tile.lime_slime_block.name=Lime Slime Block
+tile.yellow_slime_block.name=Yellow Slime Block
+tile.light_blue_slime_block.name=Light Blue Slime Block
+tile.magenta_slime_block.name=Magenta Slime Block
+tile.orange_slime_block.name=Orange Slime Block
+tile.white_slime_block.name=White Slime Block

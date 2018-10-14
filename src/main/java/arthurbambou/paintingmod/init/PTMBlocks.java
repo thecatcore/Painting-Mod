@@ -33,7 +33,7 @@ public class PTMBlocks {
 	public static final ColoredBlock SPONGE = new ColoredBlock("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0, Blocks.SPONGE, true, 0);
 	public static final ColoredBlock WET_SPONGE = new ColoredBlock("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0, Blocks.SPONGE, true, 1);
 	public static final ColoredBlock LAPIS_LAZULI_BLOCK = new ColoredBlock("lapis_lazuli_block", Material.IRON, SoundType.METAL, 3.0F, 15.0F, "pickaxe", 2, Blocks.LAPIS_BLOCK, false);
-	public static final ColoredBlock SANDSTONE = new ColoredBlock("sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1, Blocks.SANDSTONE, true, 0);
+	// public static final ColoredBlock SANDSTONE = new ColoredBlock("sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1, Blocks.SANDSTONE, true, 0);
 	public static final ColoredBlock GOLD_BLOCK = new ColoredBlock("gold_block", Material.IRON, SoundType.METAL, 3.0F, 30.0F, "pickaxe", 3, Blocks.GOLD_BLOCK, false);
 	public static final ColoredBlock IRON_BLOCK = new ColoredBlock("iron_block", Material.IRON, SoundType.METAL, 5.0F, 30.0F, "pickaxe", 2, Blocks.IRON_BLOCK, false);
 	public static final ColoredBlock BRICK = new ColoredBlock("brick", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1, Blocks.BRICK_BLOCK, false);
@@ -57,7 +57,17 @@ public class PTMBlocks {
 	public static final ColoredBlock PRISMARINE= new ColoredBlock("prismarine", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.PRISMARINE, true, 0);
 	public static final ColoredBlock PRISMARINE_BRICK= new ColoredBlock("prismarine_brick", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.PRISMARINE, true, 1);
 	public static final ColoredBlock DARK_PRISMARINE= new ColoredBlock("dark_prismarine", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.PRISMARINE, true, 2);
-
+	public static final ColoredBlock SEA_LANTERN = new ColoredBlock("sea_lantern", Material.GLASS, SoundType.GLASS, 0.3F, 1.5F, "null", 0, Blocks.SEA_LANTERN, false);
+	public static final ColoredBlock COAL_BLOCK = new ColoredBlock("coal_block", Material.ROCK, SoundType.STONE, 5.0F, 30.0F, "pickaxe", 1, Blocks.COAL_BLOCK, false);
+	public static final ColoredBlock PACKET_ICE = new ColoredBlock("packet_ice", Material.GLASS, SoundType.GLASS, 0.5F, 2.5F, "pickaxe", 1, Blocks.FROSTED_ICE, false);
+	public static final ColoredBlock PURPUR_BLOCK = new ColoredBlock("purpur_block", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.PURPUR_BLOCK, true, 0);
+	public static final ColoredBlock END_STONE_BRICK = new ColoredBlock("end_stone_brick", Material.ROCK, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1, Blocks.END_BRICKS, false);
+	public static final ColoredBlock MAGMA_BLOCK = new ColoredBlock("magma_block", Material.ROCK, SoundType.STONE, 0.5F, 2.5F, "pickaxe", 1, Blocks.MAGMA, false);
+	public static final ColoredBlock NETHER_WART_BLOCK = new ColoredBlock("nether_wart_block", Material.GLASS, SoundType.GLASS, 1.0F, 5.0F, "null", 0, Blocks.NETHER_WART_BLOCK, false);
+	public static final ColoredBlock SPRUCE_LEAVES = new ColoredBlock("spruce_leaves", Material.LEAVES, SoundType.PLANT, 0.2F, 1.0F, "shears", 0, Blocks.LEAVES, true, 1);
+	public static final ColoredBlock JUNGLE_LEAVES = new ColoredBlock("jungle_leaves", Material.LEAVES, SoundType.PLANT, 0.2F, 1.0F, "shears", 0, Blocks.LEAVES, true, 3);
+	public static final ColoredBlock SLIME_BLOCK = new ColoredBlock("slime_block", Material.SPONGE, SoundType.SLIME, 0.0F, 0.0F, "null", 0, Blocks.SLIME_BLOCK, false);
+	
 //	//Chiseled Sandstone
 //	public static final Block BLACK_CHISELED_SANDSTONE= new PTMBlackBlock("chiseled_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
 //	public static final Block RED_CHISELED_SANDSTONE= new PTMRedBlock("chiseled_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
