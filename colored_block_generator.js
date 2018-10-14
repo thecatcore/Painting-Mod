@@ -42,13 +42,10 @@ var pathh = `./src/main/resources/assets/paintingmod/lang/en_us.lang`;
 var langfile = fs.readFileSync(pathh, {encoding:"utf-8", flag:"r"}, (err) => {
    if (err) throw err;
 });
-var test = langfile;
+var test;
 for (var a = 0; a < blocks.length; a++) {
 console.log("\n//" + blocks[a].name);
-test = test + "\n\n//" + blocks[a].name;
-fs.writeFile(pathh, test, (err) => {
-   if (err) throw err;
-});
+test = test + "\n \n//" + blocks[a].name;
 modblocksresult = modblocksresult;
 fs.writeFile("./ModBlocks.txt", modblocksresult, (err) => {
    if (err) throw err;
@@ -61,17 +58,14 @@ console.log("");
 itemblockmodel(i);
 console.log("");
 test = test + "\ntile." + color[i] + "_" + blocks[a].id + ".name=" + Color[i] + " " + blocks[a].name;
-fs.writeFile(pathh, test, (err) => {
-    if (err) throw err;
-});
 console.log("The line : " + "\ntile." + color[i] + "_" + blocks[a].id + ".name=" + Color[i] + " " + blocks[a].name + "\nhas been added to the localization file");
 console.log("");
 console.log("");
 }
 if (blocks[a].usemeta) {
-    modblocksresult = modblocksresult + "\npublic static final ColoredBlock " + blocks[a].id.toUpperCase() + "= new ColoredBlock(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel}, Blocks.${blocks[a].origine}, true, ${blocks[a].meta});`;
+    modblocksresult = modblocksresult + "\npublic static final ColoredBlock " + blocks[a].id.toUpperCase() + " = new ColoredBlock(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel}, Blocks.${blocks[a].origine}, true, ${blocks[a].meta});`;
 } else {
-    modblocksresult = modblocksresult + "\npublic static final ColoredBlock " + blocks[a].id.toUpperCase() + "= new ColoredBlock(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel}, Blocks.${blocks[a].origine}, false);`;
+    modblocksresult = modblocksresult + "\npublic static final ColoredBlock " + blocks[a].id.toUpperCase() + " = new ColoredBlock(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel}, Blocks.${blocks[a].origine}, false);`;
 }
 fs.writeFile("./ModBlocks.txt", modblocksresult, (err) => {
     if (err) throw err;
@@ -82,6 +76,10 @@ console.log("");
 console.log("");
 console.log("");
 }
+langfile = langfile + test;
+fs.writeFile(pathh, langfile, (err) => {
+    if (err) throw err;
+})
 
 function blockstate (i) {
     var path = `./src/main/resources/assets/paintingmod/blockstates/${color[i]}_${blocks[a].id}.json`;
