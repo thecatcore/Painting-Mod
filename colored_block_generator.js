@@ -68,15 +68,15 @@ console.log("The line : " + "\ntile." + color[i] + "_" + blocks[a].id + ".name="
 console.log("");
 console.log("");
 }
-if (block[a].usemeta) {
-    modblocksresult = modblocksresult + "\npublic static final ColoredBlock " + blocks[a].id.toUpperCase() + "= new ColoredBlock(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel}, ${block[a].origine}, true, ${blocks[a].meta});`;
+if (blocks[a].usemeta) {
+    modblocksresult = modblocksresult + "\npublic static final ColoredBlock " + blocks[a].id.toUpperCase() + "= new ColoredBlock(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel}, Blocks.${blocks[a].origine}, true, ${blocks[a].meta});`;
 } else {
-    modblocksresult = modblocksresult + "\npublic static final ColoredBlock " + blocks[a].id.toUpperCase() + "= new ColoredBlock(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel}, ${block[a].origine}, false);`;
+    modblocksresult = modblocksresult + "\npublic static final ColoredBlock " + blocks[a].id.toUpperCase() + "= new ColoredBlock(" + `"${blocks[a].id}", Material.${blocks[a].material}, SoundType.${blocks[a].sound}, ${blocks[a].hardness}, ${blocks[a].resistance}, "${blocks[a].harvestTool}", ${blocks[a].harvestLevel}, Blocks.${blocks[a].origine}, false);`;
 }
 fs.writeFile("./ModBlocks.txt", modblocksresult, (err) => {
     if (err) throw err;
 });
-console.log("The block : \n" + staticname + "\nHas been generated with success !");
+console.log("The block : \n" + blocks[a].name + "\nHas been generated with success !");
 console.log("");
 console.log("");
 console.log("");
