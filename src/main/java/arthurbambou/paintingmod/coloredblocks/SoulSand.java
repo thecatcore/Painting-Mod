@@ -14,7 +14,8 @@ public class SoulSand extends ColoredBlock {
 		registerBlocks(name, material, soundtype, hardness, resistance, harvesttool, harvestlevel);
 	}
 	
-	public void registerBlocks() {
+	public void registerBlocks(String name, Material material, SoundType soundtype, float hardness, float resistance,
+			String harvesttool, int harvestlevel) {
 		this.black = new PTMCSoulSand("black_" + name, material, soundtype, hardness, resistance, harvesttool, harvestlevel);
 		this.red = new PTMCSoulSand("red_" + name, material, soundtype, hardness, resistance, harvesttool, harvestlevel);
 		this.green = new PTMCSoulSand("green_" + name, material, soundtype, hardness, resistance, harvesttool, harvestlevel);

@@ -3,7 +3,6 @@ package arthurbambou.paintingmod.api;
 import javax.annotation.Nullable;
 
 import arthurbambou.paintingmod.blocks.PTMColoredBlocks;
-import arthurbambou.paintingmod.blocks.colored.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -38,7 +37,9 @@ public class ColoredBlock {
 	public ColoredBlock(String name, Material material, SoundType soundtype, float hardness, float resistance, String harvesttool, int harvestlevel, Block replace, boolean metab, @Nullable int meta) {
 		this(name, material, soundtype, hardness, resistance, harvesttool, harvestlevel, replace, metab);
 		this.meta = meta;
-		AddPaintbrush.COLOREDBLOCKS.add(this);
+		if (name == "soul_sand") {} else {
+			AddPaintbrush.COLOREDBLOCKS.add(this);
+		}
 	}
 	public ColoredBlock(String name, Material material, SoundType soundtype, float hardness, float resistance, String harvesttool, int harvestlevel, Block replace, boolean metab) {
 		this.name = name;
@@ -48,13 +49,16 @@ public class ColoredBlock {
 		this.resistance = resistance;
 		this.harvesttool = harvesttool;
 		this.harvestlevel = harvestlevel;
-		registerBlocks(name, material, soundtype, hardness, resistance, harvesttool, harvestlevel);
 		this.replace = replace;
 		this.metab = metab;
-		AddPaintbrush.COLOREDBLOCKS.add(this);
+		if (name == "soul_sand") {} else {
+			registerBlocks(name, material, soundtype, hardness, resistance, harvesttool, harvestlevel);
+			AddPaintbrush.COLOREDBLOCKS.add(this);
+		}
 	}
 	
 	public void registerBlocks (String name, Material material, SoundType soundtype, float hardness, float resistance, String harvesttool, int harvestlevel) {
+		
 		this.black = new PTMColoredBlocks("black_" + name, material, soundtype, hardness, resistance, harvesttool, harvestlevel);
 		this.red = new PTMColoredBlocks("red_" + name, material, soundtype, hardness, resistance, harvesttool, harvestlevel);
 		this.green = new PTMColoredBlocks("green_" + name, material, soundtype, hardness, resistance, harvesttool, harvestlevel);
@@ -71,5 +75,6 @@ public class ColoredBlock {
 		this.magenta = new PTMColoredBlocks("magenta_" + name, material, soundtype, hardness, resistance, harvesttool, harvestlevel);
 		this.orange = new PTMColoredBlocks("orange_" + name, material, soundtype, hardness, resistance, harvesttool, harvestlevel);
 		this.white = new PTMColoredBlocks("white_" + name, material, soundtype, hardness, resistance, harvesttool, harvestlevel);
+		
 	}
 }
