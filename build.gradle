@@ -106,16 +106,16 @@ processResources {
 // }
 
 github {
-        owner = 'WIP-name'
-        repo = 'Painting-Mod'
-        token = gittoken
-        tagName = version
-        name = version
-        targetCommitish = buildbranch
-        prerelease = true
-        assets = [
-            "CHANGELOG.html",
-            "build/libs/${archivesBaseName}-${version}-sources.jar",
-            "build/libs/${archivesBaseName}-${version}.jar"
-        ]
+    owner = 'WIP-name'
+    repo = 'Painting-Mod'
+    token = gittoken
+    tagName = version
+    name = version
+    targetCommitish = buildbranch
+    prerelease = true
+    assets = [
+        "CHANGELOG.html",
+        "build/libs/${archivesBaseName}-${version}-sources.jar",
+        "build/libs/${archivesBaseName}-${version}.jar"
+    ]
 }
