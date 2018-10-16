@@ -99,7 +99,7 @@ processResources {
 
 plugins.withType(se.bjurr.gitchangelog.plugin.gradle.GitChangelogGradlePlugin.class) {
     task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-        filePath = "CHANGELOG.html"
+        file = new File("CHANGELOG.md")
         untaggedName = "Current release ${project.version}"
         templateContent = file('changelog.mustache').getText('UTF-8')
     }
