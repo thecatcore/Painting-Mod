@@ -12,7 +12,7 @@ buildscript {
     }
 }
 plugins {
-    id "se.bjurr.gitchangelog.git-changelog-gradle-plugin" version "1.32"
+    id "se.bjurr.gitchangelog.git-changelog-gradle-plugin" version "1.56"
 }
 
 apply plugin: 'net.minecraftforge.gradle.forge'
