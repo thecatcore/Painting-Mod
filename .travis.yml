@@ -8,7 +8,12 @@ before_install:
  - rm -r src/main/java/com/example
 install: 
  - ./gradlew setupCiWorkspace
-script: ./gradlew build
+script: 
+ - ./gradlew build
+ - |
+    if [ "$TRAVIS_BRANCH" == "pre-release" ]; then
+      ./gradlew githubRelease
+    fi
 
 deploy:
 - provider: releases
