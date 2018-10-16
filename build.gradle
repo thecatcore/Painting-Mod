@@ -98,9 +98,10 @@ processResources {
 }
 
 plugins.withType(se.bjurr.gitchangelog.plugin.gradle.GitChangelogGradlePlugin.class) {
-    task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+    task generateGitChangelogTemplateWithGitHubIssues(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
         file = new File("CHANGELOG.md")
-        untaggedName = "Current release ${project.version}"
+        gitHubToken = gittoken;
+        gitHubIssuePattern = "#([0-9]*)";
         templateContent = file('changelog.mustache').getText('UTF-8')
     }
 }
