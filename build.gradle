@@ -24,6 +24,8 @@ project.buildbranch = System.getenv('TRAVIS_BRANCH')
 project.modversion = '1.0.0'
 if (buildbranch === 'pre-release') {
 version = modversion + '-pre-' + buildnumber
+} else {
+    version = modversion
 }
 group = "arthurbambou.paintingmod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "PaintingMod-MC${minecraft_version}"
