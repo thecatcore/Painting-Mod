@@ -5,21 +5,30 @@ buildscript {
             name = "forge"
             url = "http://files.minecraftforge.net/maven" 
         }
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+        classpath 'co.riiid:gradle-github-plugin:0.4.2'
+        classpath "gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.56"
     }
 }
 
+
 apply plugin: 'net.minecraftforge.gradle.forge'
+apply plugin: 'co.riiid.gradle'
+apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin"
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
-project.buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
-//version = "${minecraft_version}-" + System.getenv( 'TRAVIS_TAG' ) + "-beta"
-project.versionn = System.getenv( 'TRAVIS_TAG' )
-if (!versionn) {
-    version = "1.0.0-pre-1"
+def gittoken = System.getenv('GH_TOKEN')
+def buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
+def buildbranch = System.getenv('TRAVIS_BRANCH')
+def modversion = '1.0.0'
+if (buildbranch == 'pre-release') {
+version = modversion + '-pre-' + buildnumber
 } else {
-version = "${versionn}"
+    version = modversion
 }
 group = "arthurbambou.paintingmod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "PaintingMod-MC${minecraft_version}"
@@ -86,4 +95,27 @@ processResources {
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
     }
+}
+
+plugins.withType(se.bjurr.gitchangelog.plugin.gradle.GitChangelogGradlePlugin.class) {
+    task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+        file = new File("CHANGELOG.md")
+        untaggedName = "Current release ${project.version}"
+        templateContent = file('changelog.mustache').getText('UTF-8')
+    }
+}
+
+github {
+    owner = 'WIP-name'
+    repo = 'Painting-Mod'
+    token = gittoken
+    tagName = version
+    name = version
+    targetCommitish = buildbranch
+    prerelease = true
+    assets = [
+        "CHANGELOG.html",
+        "build/libs/${archivesBaseName}-${version}-sources.jar",
+        "build/libs/${archivesBaseName}-${version}.jar"
+    ]
 }

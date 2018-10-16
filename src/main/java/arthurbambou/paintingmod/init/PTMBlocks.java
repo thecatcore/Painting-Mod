@@ -6,6 +6,7 @@ import java.util.List;
 import arthurbambou.paintingmod.PTMMain;
 import arthurbambou.paintingmod.api.ColoredBlock;
 import arthurbambou.paintingmod.blocks.PTMSoggyClay;
+import arthurbambou.paintingmod.coloredblocks.SoulSand;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -44,7 +45,7 @@ public class PTMBlocks {
 	public static final ColoredBlock SNOW_BLOCK = new ColoredBlock("snow_block", Material.SNOW, SoundType.SNOW, 0.2F, 1.0F, "shovel", 1, Blocks.SNOW, false);
 	public static final ColoredBlock CLAY_BLOCK = new ColoredBlock("clay_block", Material.CLAY, SoundType.GROUND, 2.0F, 30.0F, "shovel", 0, Blocks.CLAY, false);
 	public static final ColoredBlock NETHERRACK = new ColoredBlock("netherrack", Material.ROCK, SoundType.STONE, 0.4F, 2.0F, "pickaxe", 1, Blocks.NETHERRACK, false);
-	public static final ColoredBlock SOUL_SAND = new ColoredBlock("soul_sand", Material.ROCK, SoundType.STONE, 0.5F, 2.5F, "shovel", 0, Blocks.SOUL_SAND, false);
+	public static final ColoredBlock SOUL_SAND = new SoulSand("soul_sand", Material.ROCK, SoundType.STONE, 0.5F, 2.5F, "shovel", 0, Blocks.SOUL_SAND, false);
 	public static final ColoredBlock GLOWSTONE = new ColoredBlock("glowstone", Material.GLASS, SoundType.GLASS, 0.3F, 1.5F, "pickaxe", 0, Blocks.GLOWSTONE, false);
 	public static final ColoredBlock STONE_BRICK = new ColoredBlock("stone_brick", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONEBRICK, true, 0);
 	public static final ColoredBlock CRACKED_STONE_BRICK = new ColoredBlock("cracked_stone_brick", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONEBRICK, true, 2);

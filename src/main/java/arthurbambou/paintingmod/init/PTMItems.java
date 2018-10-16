@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import arthurbambou.paintingmod.PTMMain;
+import arthurbambou.paintingmod.items.PTMHeatGun;
 import arthurbambou.paintingmod.items.PTMItemBase;
 import arthurbambou.paintingmod.items.PTMPaintPot;
 import arthurbambou.paintingmod.items.PTMPaintbrush;
@@ -41,6 +42,8 @@ public class PTMItems
 	public static final Item MAGENTA_PAINTBRUSH = new PTMPaintbrush("magenta_paintbrush", PTMMain.PAINTING_MOD);
 	public static final Item ORANGE_PAINTBRUSH = new PTMPaintbrush("orange_paintbrush", PTMMain.PAINTING_MOD);
 	public static final Item WHITE_PAINTBRUSH = new PTMPaintbrush("white_paintbrush", PTMMain.PAINTING_MOD);
+	
+	public static final Item HEAT_GUN = new PTMHeatGun("heat_gun", PTMMain.PAINTING_MOD);
 	
 	
 	//Simple

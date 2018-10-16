@@ -1,5 +1,6 @@
 language: java
 jdk: oraclejdk8
+if: tag IS blank
 before_install:
  - wget https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.12.2-14.23.4.2705/forge-1.12.2-14.23.4.2705-mdk.zip
  - unzip -n forge-1.12.2-14.23.4.2705-mdk.zip
@@ -7,25 +8,30 @@ before_install:
  - rm -r src/main/java/com/example
 install: 
  - ./gradlew setupCiWorkspace
-script: ./gradlew build
+script: 
+ - ./gradlew build
+ - |
+    if [ "$TRAVIS_BRANCH" == "pre-release" ]; then
+      ./gradlew githubRelease
+    fi
 
-deploy:
-- provider: releases
-  api_key: $GH_TOKEN
-  file_glob: true
-  file: build/libs/*
-  skip_cleanup: true
-  prerelease: true
-  on:
-    tags: true
-    branch: pre-release
+# deploy:
+# - provider: releases
+#   api_key: $GH_TOKEN
+#   file_glob: true
+#   file: build/libs/*
+#   skip_cleanup: true
+#   prerelease: true
+#   on:
+#     tags: true
+#     branch: pre-release
   
-- provider: releases
-  api_key: $GH_TOKEN
-  file_glob: true
-  file: build/libs/*
-  skip_cleanup: true
-  prerelease: false
-  on:
-    tags: true
-    branch: release
+# - provider: releases
+#   api_key: $GH_TOKEN
+#   file_glob: true
+#   file: build/libs/*
+#   skip_cleanup: true
+#   prerelease: false
+#   on:
+#     tags: true
+#     branch: release
