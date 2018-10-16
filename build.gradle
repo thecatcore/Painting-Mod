@@ -98,6 +98,7 @@ processResources {
 }
 
 task generateGitChangelogTemplateWithGitHubIssues(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+        toRef = "refs/heads/pre-release"
         file = new File("CHANGELOG.md")
         gitHubToken = gittoken;
         gitHubIssuePattern = "#([0-9]*)";
