@@ -114,7 +114,7 @@ github {
     targetCommitish = buildbranch
     prerelease = true
     assets = [
-        "CHANGELOG.html",
+        "CHANGELOG.md",
         "build/libs/${archivesBaseName}-${version}-sources.jar",
         "build/libs/${archivesBaseName}-${version}.jar"
     ]
