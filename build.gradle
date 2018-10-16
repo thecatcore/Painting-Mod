@@ -21,10 +21,10 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 //apply plugin: 'co.riiid.gradle'
 // apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin"
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
-project.gittoken = System.getenv('GH_TOKEN')
-project.buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
-project.buildbranch = System.getenv('TRAVIS_BRANCH')
-project.modversion = '1.0.0'
+gittoken = System.getenv('GH_TOKEN')
+buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
+buildbranch = System.getenv('TRAVIS_BRANCH')
+modversion = '1.0.0'
 if (buildbranch == 'pre-release') {
 version = modversion + '-pre-' + buildnumber
 } else {
