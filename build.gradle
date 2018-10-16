@@ -13,13 +13,12 @@ buildscript {
 
 apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
+project.gittoken = System.getenv('GH_TOKEN')
 project.buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
-//version = "${minecraft_version}-" + System.getenv( 'TRAVIS_TAG' ) + "-beta"
-project.versionn = System.getenv( 'TRAVIS_TAG' )
-if (!versionn) {
-    version = "1.0.0-pre-1"
-} else {
-version = "${versionn}"
+project.buildbranch = System.getenv('TRAVIS_BRANCH')
+project.modversion = '1.0.0'
+if (buildbranch === 'dev') {
+version = modversion + '-Build-' + buildnumber
 }
 group = "arthurbambou.paintingmod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "PaintingMod-MC${minecraft_version}"
