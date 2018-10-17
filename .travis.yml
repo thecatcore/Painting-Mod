@@ -2,8 +2,8 @@ language: java
 jdk: oraclejdk8
 if: tag IS blank
 before_install:
- - git checkout --track origin/master
- - git checkout --track origin/$TRAVIS_BRANCH
+ - git checkout -b master
+ - git checkout -b $TRAVIS_BRANCH
 install: 
  - ./gradlew setupCiWorkspace
 script: 
