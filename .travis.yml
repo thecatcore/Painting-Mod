@@ -12,7 +12,7 @@ script:
  - ./gradlew build
  - |
     if [ "$TRAVIS_BRANCH" == "pre-release" ]; then
-      ./gradlew generateGitChangelogTemplateWithGitHubIssues
+      ./gradlew generateGitChangelogTemplateWithGitHubIssues --stacktrace
       ./gradlew githubRelease
     fi
 
