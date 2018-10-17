@@ -11,8 +11,8 @@ buildscript {
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
-        classpath 'co.riiid:gradle-github-plugin:0.4.2'
-        classpath "gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.56"
+        classpath 'co.riiid:gradle-github-plugin:+'
+        classpath "gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:+"
     }
 }
 
@@ -98,11 +98,11 @@ processResources {
 }
 
 task generateGitChangelogTemplateWithGitHubIssues(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-        toRef = "refs/heads/pre-release"
-        file = new File("CHANGELOG.md")
+        toRef = "refs/heads/pre-release";
+        file = new File("CHANGELOG.md");
         gitHubToken = gittoken;
         gitHubIssuePattern = "#([0-9]*)";
-        templateContent = file('changelog.mustache').getText('UTF-8')
+        templateContent = file('changelog.mustache').getText('UTF-8');
 }
 
 github {
