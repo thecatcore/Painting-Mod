@@ -98,9 +98,11 @@ processResources {
 }
 
 task generateGitChangelogTemplateWithGitHubIssues(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-        file = new File("CHANGELOG.md")
-        gitHubToken = gittoken;
-        templateContent = file('changelog.mustache').getText('UTF-8')
+    gitHubApi = "https://api.github.com/repos/WIP-name/Painting-Mod";
+    gitHubToken = gittoken;
+    gitHubIssuePattern = "#([0-9]*)";
+    file = new File("CHANGELOG.md");
+    templateContent = file('changelog.mustache').getText('UTF-8');
 }
 
 github {
