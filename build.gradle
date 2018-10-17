@@ -110,7 +110,7 @@ curseforge {
 	apiKey = System.getenv('CURSEKEY')
 	project {
 		id = "299755"
-		changelog = file('changelog.html')
+		changelog = file('CHANGELOG.html')
 		changelogType = 'html'
 		releaseType = 'beta'
 	}
