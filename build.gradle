@@ -16,6 +16,9 @@ buildscript {
     }
 }
 
+plugins {
+id "com.matthewprenger.cursegradle" version "1.1.0"
+}
 
 apply plugin: 'net.minecraftforge.gradle.forge'
 apply plugin: 'co.riiid.gradle'
@@ -97,7 +100,7 @@ processResources {
     }
 }
 task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-	filePath = "CHANGELOG.md"
+	filePath = "CHANGELOG.html"
 	untaggedName = "Current release ${project.version}"
 	fromCommit = "1887474ac7a95336dc74a431fa53d942b3020441"
 	toRef =  "HEAD"
@@ -108,7 +111,15 @@ task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
 //     filePath = "CHANGELOG.md"
 //     templateContent = file('changelog.mustache').getText('UTF-8');
 // }
-
+curseforge {
+	apiKey = System.getenv('CURSEKEY')
+	project {
+		id = "299755"
+		changelog = file('changelog.html')
+		changelogType = 'html'
+		releaseType = 'beta'
+	}
+}
 github {
     owner = 'WIP-name'
     repo = 'Painting-Mod'
@@ -118,7 +129,7 @@ github {
     targetCommitish = buildbranch
     prerelease = true
     assets = [
-        "CHANGELOG.md",
+        "CHANGELOG.html",
         "build/libs/${archivesBaseName}-${version}-sources.jar",
         "build/libs/${archivesBaseName}-${version}.jar"
     ]
