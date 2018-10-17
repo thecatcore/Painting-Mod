@@ -2,8 +2,8 @@ language: java
 jdk: oraclejdk8
 if: tag IS blank
 before_install:
- - git clone --depth=50 --branch=master https://github.com/WIP-name/Painting-Mod.git .
- - git clone --depth=50 --branch=pre-release https://github.com/WIP-name/Painting-Mod.git .
+ - git checkout --track origin/master
+ - git checkout --track origin/$TRAVIS_BRANCH
 install: 
  - ./gradlew setupCiWorkspace
 script: 
