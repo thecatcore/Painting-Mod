@@ -7,11 +7,11 @@ before_install:
 install: 
  - ./gradlew setupCiWorkspace
 script: 
- - ./gradlew build
  - |
     if [ "$TRAVIS_BRANCH" == "pre-release" ]; then
-      ./gradlew makeChangelog --stacktrace
-      ./gradlew githubRelease
+      ./gradlew build makeChangelog curseforge299755 githubRelease
+    else
+      ./gradlew build
     fi
 
 # deploy:
