@@ -96,8 +96,15 @@ processResources {
         exclude 'mcmod.info'
     }
 }
-
+task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+	filePath = "CHANGELOG.md"
+	untaggedName = "Current release ${project.version}"
+	fromCommit = "2fe051cf727adce1be210a46f778aa8fe031331e"
+	toRef =  "HEAD"
+	templateContent = file('changelog.mustache').getText('UTF-8');
+}
 task generateGitChangelogTemplateFromFile(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+    toRef = "HEAD"
     file = new File("CHANGELOG.md");
     templateContent = file('changelog.mustache').getText('UTF-8');
 }
