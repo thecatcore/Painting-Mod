@@ -99,15 +99,15 @@ processResources {
 task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
 	filePath = "CHANGELOG.md"
 	untaggedName = "Current release ${project.version}"
-	fromCommit = "2fe051cf727adce1be210a46f778aa8fe031331e"
+	fromCommit = "1887474ac7a95336dc74a431fa53d942b3020441"
 	toRef =  "HEAD"
 	templateContent = file('changelog.mustache').getText('UTF-8');
 }
-task generateGitChangelogTemplateFromFile(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-    toRef = "HEAD"
-    filePath = "CHANGELOG.md"
-    templateContent = file('changelog.mustache').getText('UTF-8');
-}
+// task generateGitChangelogTemplateFromFile(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+//     toRef = "HEAD"
+//     filePath = "CHANGELOG.md"
+//     templateContent = file('changelog.mustache').getText('UTF-8');
+// }
 
 github {
     owner = 'WIP-name'
