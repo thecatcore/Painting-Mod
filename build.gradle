@@ -106,11 +106,6 @@ task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
 	toRef =  "HEAD"
 	templateContent = file('changelog.mustache').getText('UTF-8');
 }
-// task generateGitChangelogTemplateFromFile(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-//     toRef = "HEAD"
-//     filePath = "CHANGELOG.md"
-//     templateContent = file('changelog.mustache').getText('UTF-8');
-// }
 curseforge {
 	apiKey = System.getenv('CURSEKEY')
 	project {
