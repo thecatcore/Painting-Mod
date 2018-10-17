@@ -1,18 +1,18 @@
 language: java
 jdk: oraclejdk8
 if: tag IS blank
-before_install:
- - wget https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.12.2-14.23.4.2705/forge-1.12.2-14.23.4.2705-mdk.zip
- - unzip -n forge-1.12.2-14.23.4.2705-mdk.zip
- - rm forge-1.12.2-14.23.4.2705-mdk.zip
- - rm -r src/main/java/com/example
+# before_install:
+#  - wget https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.12.2-14.23.4.2705/forge-1.12.2-14.23.4.2705-mdk.zip
+#  - unzip -n forge-1.12.2-14.23.4.2705-mdk.zip
+#  - rm forge-1.12.2-14.23.4.2705-mdk.zip
+#  - rm -r src/main/java/com/example
 install: 
  - ./gradlew setupCiWorkspace
 script: 
  - ./gradlew build
  - |
     if [ "$TRAVIS_BRANCH" == "pre-release" ]; then
-      ./gradlew generateGitChangelogTemplateWithGitHubIssues
+      ./gradlew makeChangelog --stacktrace
       ./gradlew githubRelease
     fi
 

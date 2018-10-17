@@ -12,7 +12,7 @@ buildscript {
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
         classpath 'co.riiid:gradle-github-plugin:+'
-        classpath "gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:+"
+        classpath "gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.32"
     }
 }
 
@@ -96,14 +96,18 @@ processResources {
         exclude 'mcmod.info'
     }
 }
-
-task generateGitChangelogTemplateWithGitHubIssues(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-        toRef = "refs/heads/pre-release";
-        file = new File("CHANGELOG.md");
-        gitHubToken = gittoken;
-        gitHubIssuePattern = "#([0-9]*)";
-        templateContent = file('changelog.mustache').getText('UTF-8');
+task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+	filePath = "CHANGELOG.md"
+	untaggedName = "Current release ${project.version}"
+	fromCommit = "1887474ac7a95336dc74a431fa53d942b3020441"
+	toRef =  "HEAD"
+	templateContent = file('changelog.mustache').getText('UTF-8');
 }
+// task generateGitChangelogTemplateFromFile(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+//     toRef = "HEAD"
+//     filePath = "CHANGELOG.md"
+//     templateContent = file('changelog.mustache').getText('UTF-8');
+// }
 
 github {
     owner = 'WIP-name'
