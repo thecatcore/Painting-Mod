@@ -28,8 +28,10 @@ def gittoken = System.getenv('GH_TOKEN')
 def buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
 def buildbranch = System.getenv('TRAVIS_BRANCH')
 def modversion = '1.0.0'
-if (buildbranch == 'pre-release') {
-version = modversion + '-pre-' + buildnumber
+if (buildbranch == 'dev') {
+version = modversion + '-build-' + buildnumber
+} else if (buildbranch == 'pre-release') {
+    version = modversion + "-pre-2"
 } else {
     version = modversion
 }
