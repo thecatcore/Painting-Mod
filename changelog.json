@@ -1,0 +1,13 @@
+{
+    "githubApi": "https://api.github.com/repos/WIP-name/Painting-Mod",
+    "toRef": "refs/heads/pre-release",
+    "fromCommit": "1887474ac7a95336dc74a431fa53d942b3020441",
+    "gitHubIssuePattern": "#([0-9]*)",
+    "fromRepo": ".",
+    "ignoreCommitsIfMessageMatches": "^\\[maven-release-plugin\\].*|^\\[Gradle Release Plugin\\].*|^Merge.*",
+    "readableTagName": "/([^/]+?)$",
+    "dateFormat": "YYYY-MM-dd HH:mm:ss",
+    "untaggedName": "Next release",
+    "noIssueName": "Other changes",
+    "timeZone": "UTC+2"
+}

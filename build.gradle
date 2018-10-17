@@ -11,11 +11,14 @@ buildscript {
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
-        classpath 'co.riiid:gradle-github-plugin:0.4.2'
-        classpath "gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.56"
+        classpath 'co.riiid:gradle-github-plugin:+'
+        classpath "gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.32"
     }
 }
 
+plugins {
+id "com.matthewprenger.cursegradle" version "1.1.0"
+}
 
 apply plugin: 'net.minecraftforge.gradle.forge'
 apply plugin: 'co.riiid.gradle'
@@ -96,15 +99,26 @@ processResources {
         exclude 'mcmod.info'
     }
 }
-
-plugins.withType(se.bjurr.gitchangelog.plugin.gradle.GitChangelogGradlePlugin.class) {
-    task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-        file = new File("CHANGELOG.md")
-        untaggedName = "Current release ${project.version}"
-        templateContent = file('changelog.mustache').getText('UTF-8')
-    }
+task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+	filePath = "CHANGELOG.html"
+	untaggedName = "Current release ${project.version}"
+	fromCommit = "1887474ac7a95336dc74a431fa53d942b3020441"
+	toRef =  "HEAD"
+	templateContent = file('changelog.mustache').getText('UTF-8');
 }
-
+curseforge {
+	apiKey = System.getenv('CURSEKEY')
+	project {
+		id = "299755"
+		changelog = file('CHANGELOG.html')
+		changelogType = 'html'
+		releaseType = 'beta'
+        addArtifact file("build/libs/${archivesBaseName}-${version}-sources.jar")
+	}
+}
+afterEvaluate {
+	tasks.curseforge299755.dependsOn.add(makeChangelog)
+}
 github {
     owner = 'WIP-name'
     repo = 'Painting-Mod'
