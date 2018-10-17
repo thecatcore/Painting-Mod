@@ -105,7 +105,7 @@ task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
 }
 task generateGitChangelogTemplateFromFile(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
     toRef = "HEAD"
-    file = new File("CHANGELOG.md");
+    filePath = "CHANGELOG.md"
     templateContent = file('changelog.mustache').getText('UTF-8');
 }
 
