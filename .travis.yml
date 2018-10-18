@@ -18,23 +18,5 @@ script:
       fi
     fi
 
-# deploy:
-# - provider: releases
-#   api_key: $GH_TOKEN
-#   file_glob: true
-#   file: build/libs/*
-#   skip_cleanup: true
-#   prerelease: true
-#   on:
-#     tags: true
-#     branch: pre-release
-  
-# - provider: releases
-#   api_key: $GH_TOKEN
-#   file_glob: true
-#   file: build/libs/*
-#   skip_cleanup: true
-#   prerelease: false
-#   on:
-#     tags: true
-#     branch: release
+notifications:
+    slack: wip-name:uZWumWJ6i8idAwHoV0rg1XP2
