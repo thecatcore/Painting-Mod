@@ -31,7 +31,7 @@ def modversion = '1.0.0'
 if (buildbranch == 'dev') {
 version = modversion + '-build-' + buildnumber
 } else if (buildbranch == 'pre-release') {
-    version = modversion + "-pre-2"
+    version = modversion + "-pre-3"
 } else {
     version = modversion
 }
@@ -109,7 +109,7 @@ task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
 	templateContent = file('changelog.mustache').getText('UTF-8');
 }
 curseforge {
-	apiKey = System.getenv('CURSEKEY')
+	apiKey = System.getenv('CURSEKEY') ?: "a key"
 	project {
 		id = "299755"
 		changelog = file('CHANGELOG.html')
@@ -124,7 +124,7 @@ afterEvaluate {
 github {
     owner = 'WIP-name'
     repo = 'Painting-Mod'
-    token = gittoken
+    token = gittoken ?: "a key"
     tagName = version
     name = version
     targetCommitish = buildbranch
