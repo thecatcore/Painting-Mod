@@ -109,7 +109,7 @@ task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
 	templateContent = file('changelog.mustache').getText('UTF-8');
 }
 curseforge {
-	apiKey = System.getenv('CURSEKEY') || "a key"
+	apiKey = System.getenv('CURSEKEY') ?: "a key"
 	project {
 		id = "299755"
 		changelog = file('CHANGELOG.html')
@@ -124,7 +124,7 @@ afterEvaluate {
 github {
     owner = 'WIP-name'
     repo = 'Painting-Mod'
-    token = gittoken || "a key"
+    token = gittoken ?: "a key"
     tagName = version
     name = version
     targetCommitish = buildbranch
