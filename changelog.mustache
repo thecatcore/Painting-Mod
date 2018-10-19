@@ -1,0 +1,28 @@
+{{#tags}}
+<h1>{{name}}</h1>
+ {{#issues}}
+  {{#hasIssue}}
+   {{#hasLink}}
+<h3>{{name}} [{{issue}}]({{link}}) {{title}}</h3>
+   {{/hasLink}}
+   {{^hasLink}}
+<h3>{{name}} {{issue}} {{title}}</h3>
+   {{/hasLink}}
+  {{/hasIssue}}
+  {{^hasIssue}}
+<h3>{{name}}</h3>
+  {{/hasIssue}}
+
+  <h2>Commits :</h2>
+  {{#commits}}
+<a href="https://github.com/WIP-name/Painting-Mod/commit/{{hash}}"><h3>{{{messageTitle}}} by {{authorName}} at {{commitTime}}</h3></a>
+
+<ul>{{#messageBodyItems}}
+ <li>{{.}}</li>
+{{/messageBodyItems}}
+</ul>
+
+  {{/commits}}
+
+ {{/issues}}
+{{/tags}}

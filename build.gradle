@@ -5,21 +5,35 @@ buildscript {
             name = "forge"
             url = "http://files.minecraftforge.net/maven" 
         }
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+        classpath 'co.riiid:gradle-github-plugin:+'
+        classpath "gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.32"
     }
 }
 
+plugins {
+id "com.matthewprenger.cursegradle" version "1.1.0"
+}
+
 apply plugin: 'net.minecraftforge.gradle.forge'
+apply plugin: 'co.riiid.gradle'
+apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin"
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
-project.buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
-//version = "${minecraft_version}-" + System.getenv( 'TRAVIS_TAG' ) + "-beta"
-project.versionn = System.getenv( 'TRAVIS_TAG' )
-if (!versionn) {
-    version = "1.0.0-pre-1"
+def gittoken = System.getenv('GH_TOKEN')
+def buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
+def buildbranch = System.getenv('TRAVIS_BRANCH')
+def modversion = '1.0.0'
+if (buildbranch == 'dev') {
+version = modversion + '-build-' + buildnumber
+} else if (buildbranch == 'pre-release') {
+    version = modversion + "-pre-3"
 } else {
-version = "${versionn}"
+    version = modversion
 }
 group = "arthurbambou.paintingmod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "PaintingMod-MC${minecraft_version}"
@@ -86,4 +100,38 @@ processResources {
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
     }
+}
+task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+	filePath = "CHANGELOG.html"
+	untaggedName = "Current release ${project.version}"
+	fromCommit = "1887474ac7a95336dc74a431fa53d942b3020441"
+	toRef =  "HEAD"
+	templateContent = file('changelog.mustache').getText('UTF-8');
+}
+curseforge {
+	apiKey = System.getenv('CURSEKEY') ?: "a key"
+	project {
+		id = "299755"
+		changelog = file('CHANGELOG.html')
+		changelogType = 'html'
+		releaseType = 'beta'
+        addArtifact file("build/libs/${archivesBaseName}-${version}-sources.jar")
+	}
+}
+afterEvaluate {
+	tasks.curseforge299755.dependsOn.add(makeChangelog)
+}
+github {
+    owner = 'WIP-name'
+    repo = 'Painting-Mod'
+    token = gittoken ?: "a key"
+    tagName = version
+    name = version
+    targetCommitish = buildbranch
+    prerelease = true
+    assets = [
+        "CHANGELOG.html",
+        "build/libs/${archivesBaseName}-${version}-sources.jar",
+        "build/libs/${archivesBaseName}-${version}.jar"
+    ]
 }
