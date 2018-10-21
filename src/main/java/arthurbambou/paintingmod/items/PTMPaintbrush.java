@@ -1,5 +1,6 @@
 package arthurbambou.paintingmod.items;
 
+import arthurbambou.paintingmod.PTMMain;
 import arthurbambou.paintingmod.api.AddPaintbrush;
 import arthurbambou.paintingmod.api.ColoredBlock;
 import arthurbambou.paintingmod.init.PTMItems;
@@ -25,6 +26,7 @@ public class PTMPaintbrush extends PTMItemBase {
 	public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
 		
 		for (ColoredBlock coloredblock: AddPaintbrush.COLOREDBLOCKS) {
+			PTMMain.logger.info("Tested Block : " + coloredblock.name + " /origin : " + coloredblock.replace.getRegistryName() + " /pointé : " + worldIn.getBlockState(pos).getBlock().getRegistryName());
 			newbloctopaint(player, worldIn, pos, coloredblock.replace, coloredblock);
 		}
 //		newbloctopaint(player, worldIn, pos, Blocks.SANDSTONE, PTMBlocks.BLACK_CHISELED_SANDSTONE, PTMBlocks.RED_CHISELED_SANDSTONE, PTMBlocks.GREEN_CHISELED_SANDSTONE, PTMBlocks.BROWN_CHISELED_SANDSTONE, PTMBlocks.BLUE_CHISELED_SANDSTONE, PTMBlocks.PURPLE_CHISELED_SANDSTONE, PTMBlocks.CYAN_CHISELED_SANDSTONE, PTMBlocks.LIGHT_GRAY_CHISELED_SANDSTONE, PTMBlocks.GRAY_CHISELED_SANDSTONE, PTMBlocks.PINK_CHISELED_SANDSTONE, PTMBlocks.LIME_CHISELED_SANDSTONE, PTMBlocks.YELLOW_CHISELED_SANDSTONE, PTMBlocks.LIGHT_BLUE_CHISELED_SANDSTONE, PTMBlocks.MAGENTA_CHISELED_SANDSTONE, PTMBlocks.ORANGE_CHISELED_SANDSTONE, PTMBlocks.WHITE_CHISELED_SANDSTONE, 1);
