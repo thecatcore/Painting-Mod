@@ -4,5 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AddPaintbrush {
-	public static final List<ColoredBlock> COLOREDBLOCKS = new ArrayList<ColoredBlock>();
+	private static final List<ColoredBlock> COLOREDBLOCKS = new ArrayList<ColoredBlock>();
+	
+	public void register(ColoredBlock coloredblock) {
+		
+	     COLOREDBLOCKS.push(coloredblock);
+	}
 }
