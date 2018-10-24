@@ -48,4 +48,13 @@ public class ColoredBlock {
 		this.replace = replace;
 		this.metab = metab;
 	}
+	public void setBlockToReplace(Block blocktoreplace, boolean hasmeta) {
+		this.replace = blocktoreplace
+		this.metab = hasmeta
+	}
+	public void setBlockToReplace(Block blocktoreplace, boolean hasmeta, int meta) {
+		this.replace = blocktoreplace
+		this.metab = hasmeta
+		this.meta = meta
+	}
 }
