@@ -13,8 +13,7 @@ public class BaseMeta extends ColoredBlock {
 			String harvesttool, int harvestlevel, Block replace, boolean metab, int meta) {
 		super(name, material, soundtype, hardness, resistance, harvesttool, harvestlevel, replace, metab, meta);
 		registerBlocks(name, material, soundtype, hardness, resistance, harvesttool, harvestlevel);
-		this.meta = meta;
-		AddPaintbrush.COLOREDBLOCKS.add(this);
+		AddPaintbrush.registerSimpleBlock(this);
 	}
 
 	public void registerBlocks (String name, Material material, SoundType soundtype, float hardness, float resistance, String harvesttool, int harvestlevel) {
