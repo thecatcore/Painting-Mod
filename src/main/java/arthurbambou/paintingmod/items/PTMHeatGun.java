@@ -21,7 +21,7 @@ public class PTMHeatGun extends PTMItemBase {
 	}
 	
 	public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
-		for (ColoredBlock coloredblock: AddPaintbrush.COLOREDBLOCKS) {
+		for (ColoredBlock coloredblock: AddPaintbrush.getSIMPLECOLOREDBLOCKS()) {
 			heatgun(player, worldIn, pos, coloredblock.replace, coloredblock);
 		}
 		return EnumActionResult.SUCCESS;

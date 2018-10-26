@@ -13,7 +13,7 @@ public class SoulSand extends ColoredBlock {
 			String harvesttool, int harvestlevel, Block replace, boolean metab) {
 		super(name, material, soundtype, hardness, resistance, harvesttool, harvestlevel, replace, metab);
 		registerBlocks(name, material, soundtype, hardness, resistance, harvesttool, harvestlevel);
-		AddPaintbrush.COLOREDBLOCKS.add(this);
+		AddPaintbrush.registerSimpleBlock(this);
 	}
 	
 	public void registerBlocks(String name, Material material, SoundType soundtype, float hardness, float resistance,
