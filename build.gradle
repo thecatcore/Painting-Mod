@@ -29,16 +29,16 @@ def buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
 def buildbranch = System.getenv('TRAVIS_BRANCH')
 def modversion = '1.0.0'
 if (buildbranch == 'dev') {
-version = modversion + '-build-' + buildnumber
+version = minecraft_version + "-" + modversion + '-build-' + buildnumber
 } else if (buildbranch == 'pre-release') {
-    version = modversion + "-pre-4"
+    version = minecraft_version + "-" + modversion + "-pre-5"
 } else if (buildbranch == "release/1.12") {
-    version = modversion
+    version = minecraft_version + "-" + modversion
 } else {
     version = "dev"
 }
 group = "arthurbambou.paintingmod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "PaintingMod-MC${minecraft_version}"
+archivesBaseName = "PaintingMod"
 
 sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 compileJava {
@@ -105,7 +105,7 @@ processResources {
 }
 task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
 	filePath = "CHANGELOG.html"
-	untaggedName = "Current release ${project.version}"
+	untaggedName = "Current release MC${project.version}"
 	fromCommit = "1887474ac7a95336dc74a431fa53d942b3020441"
 	toRef =  "HEAD"
 	templateContent = file('changelog.mustache').getText('UTF-8')
@@ -136,8 +136,8 @@ github {
     owner = 'WIP-name'
     repo = 'Painting-Mod'
     token = gittoken ?: "a key"
-    tagName = minecraft_version + "-" + version
-    name = "MC" + minecraft_version + "-" + version
+    tagName = version
+    name = "MC" + version
     targetCommitish = buildbranch
     prerelease = prelease
     assets = [
