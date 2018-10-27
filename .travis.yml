@@ -9,13 +9,17 @@ install:
 script: 
  - |
     if [ "$TRAVIS_PULL_REQUEST" == false ]; then
-      if [ "$TRAVIS_BRANCH" == "pre-release" ]; then
+      if [ "$TRAVIS_BRANCH" == "release/1.12" ]; then
         ./gradlew build makeChangelog curseforge299755 githubRelease
       else
-        if [ "$TRAVIS_BRANCH" == "dev" ]; then
-          ./gradlew build makeChangelog githubRelease
+        if [ "$TRAVIS_BRANCH" == "pre-release" ]; then
+          ./gradlew build makeChangelog curseforge299755 githubRelease
         else
-          ./gradlew build
+          if [ "$TRAVIS_BRANCH" == "dev" ]; then
+            ./gradlew build makeChangelog githubRelease
+          else
+            ./gradlew build
+          fi
         fi
       fi
     else
