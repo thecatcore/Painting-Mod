@@ -31,9 +31,11 @@ def modversion = '1.0.0'
 if (buildbranch == 'dev') {
 version = modversion + '-build-' + buildnumber
 } else if (buildbranch == 'pre-release') {
-    version = modversion + "-pre-3"
-} else {
+    version = modversion + "-pre-4"
+} else if (buildbranch == "release/1.12") {
     version = modversion
+} else {
+    version = "dev"
 }
 group = "arthurbambou.paintingmod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "PaintingMod-MC${minecraft_version}"
@@ -56,7 +58,7 @@ minecraft {
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 
     replaceIn "Reference.java"
-    replace "@VERSION@", System.getenv( 'TRAVIS_TAG' )
+    replace "@VERSION@", project.version
 }
 
 dependencies {
@@ -106,7 +108,16 @@ task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
 	untaggedName = "Current release ${project.version}"
 	fromCommit = "1887474ac7a95336dc74a431fa53d942b3020441"
 	toRef =  "HEAD"
-	templateContent = file('changelog.mustache').getText('UTF-8');
+	templateContent = file('changelog.mustache').getText('UTF-8')
+}
+def rtype = ""
+def prelease = true
+if (buildbranch == 'release/1.12') {
+    rtype = "release"
+    prelease = false
+} else {
+    rtype = "beta"
+    prelease = true
 }
 curseforge {
 	apiKey = System.getenv('CURSEKEY') ?: "a key"
@@ -114,7 +125,7 @@ curseforge {
 		id = "299755"
 		changelog = file('CHANGELOG.html')
 		changelogType = 'html'
-		releaseType = 'beta'
+		releaseType = rtype
         addArtifact file("build/libs/${archivesBaseName}-${version}-sources.jar")
 	}
 }
@@ -125,10 +136,10 @@ github {
     owner = 'WIP-name'
     repo = 'Painting-Mod'
     token = gittoken ?: "a key"
-    tagName = version
-    name = version
+    tagName = minecraft_version + "-" + version
+    name = "MC" + minecraft_version + "-" + version
     targetCommitish = buildbranch
-    prerelease = true
+    prerelease = prelease
     assets = [
         "CHANGELOG.html",
         "build/libs/${archivesBaseName}-${version}-sources.jar",
