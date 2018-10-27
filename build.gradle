@@ -31,7 +31,7 @@ def modversion = '1.0.0'
 if (buildbranch == 'dev') {
 version = modversion + '-build-' + buildnumber
 } else if (buildbranch == 'pre-release') {
-    version = modversion + "-pre-4"
+    version = modversion + "-pre-5"
 } else if (buildbranch == "release/1.12") {
     version = modversion
 } else {
@@ -105,7 +105,7 @@ processResources {
 }
 task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
 	filePath = "CHANGELOG.html"
-	untaggedName = "Current release ${project.version}"
+	untaggedName = "Current release MC${minecraft_version}-${project.version}"
 	fromCommit = "1887474ac7a95336dc74a431fa53d942b3020441"
 	toRef =  "HEAD"
 	templateContent = file('changelog.mustache').getText('UTF-8')

@@ -56,7 +56,7 @@ public class PTMBlocks {
 	public static final ColoredBlock NETHER_BRICK = new Base("nether_brick", Material.ROCK, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1, Blocks.NETHER_BRICK, false);
 	public static final ColoredBlock END_STONE = new Base("end_stone", Material.ROCK, SoundType.STONE, 3.0F, 45.0F, "pickaxe", 1, Blocks.END_STONE, false);
 	public static final ColoredBlock EMERALD_BLOCK = new Base("emerald_block", Material.ROCK, SoundType.STONE, 5.0F, 30.0F, "pickaxe", 3, Blocks.EMERALD_BLOCK, false);
-	public static final ColoredBlock QUARTZ_BLOCK= new BaseMeta("quartz_block", Material.ROCK, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1, Blocks.QUARTZ_BLOCK, true, 0);
+//	public static final ColoredBlock QUARTZ_BLOCK= new BaseMeta("quartz_block", Material.ROCK, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1, Blocks.QUARTZ_BLOCK, true, 0);
 	public static final ColoredBlock PRISMARINE= new BaseMeta("prismarine", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.PRISMARINE, true, 0);
 	public static final ColoredBlock PRISMARINE_BRICK= new BaseMeta("prismarine_brick", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.PRISMARINE, true, 1);
 	public static final ColoredBlock DARK_PRISMARINE= new BaseMeta("dark_prismarine", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.PRISMARINE, true, 2);
