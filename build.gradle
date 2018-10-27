@@ -31,7 +31,7 @@ def modversion = '1.0.0'
 if (buildbranch == 'dev') {
 version = modversion + '-build-' + buildnumber
 } else if (buildbranch == 'pre-release') {
-    version = modversion + "-pre-3"
+    version = modversion + "-pre-4"
 } else if (buildbranch == "release/1.12") {
     version = modversion
 } else {
