@@ -6,9 +6,7 @@ import java.util.List;
 import arthurbambou.paintingmod.PTMMain;
 import arthurbambou.paintingmod.api.ColoredBlock;
 import arthurbambou.paintingmod.blocks.PTMSoggyClay;
-import arthurbambou.paintingmod.coloredblocks.Base;
-import arthurbambou.paintingmod.coloredblocks.BaseMeta;
-import arthurbambou.paintingmod.coloredblocks.SoulSand;
+import arthurbambou.paintingmod.coloredblocks.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -32,7 +30,7 @@ public class PTMBlocks {
 	public static final ColoredBlock COBBLESTONE = new Base("cobblestone", Material.ROCK, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1, Blocks.COBBLESTONE, false);
 	public static final ColoredBlock PLANK = new Base("plank", Material.WOOD, SoundType.WOOD, 2.0F, 15.0F, "axe", 0, Blocks.PLANKS, false);
 	public static final ColoredBlock SAND = new Base("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0, Blocks.SAND, false);
-	public static final ColoredBlock GRAVEL = new Base("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0, Blocks.GRAVEL, false);
+	public static final ColoredBlock GRAVEL = new Gravel("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0, Blocks.GRAVEL, false);
 	public static final ColoredBlock SPONGE = new BaseMeta("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0, Blocks.SPONGE, true, 0);
 	public static final ColoredBlock WET_SPONGE = new BaseMeta("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0, Blocks.SPONGE, true, 1);
 	public static final ColoredBlock LAPIS_LAZULI_BLOCK = new Base("lapis_lazuli_block", Material.IRON, SoundType.METAL, 3.0F, 15.0F, "pickaxe", 2, Blocks.LAPIS_BLOCK, false);
@@ -41,11 +39,11 @@ public class PTMBlocks {
 	public static final ColoredBlock IRON_BLOCK = new Base("iron_block", Material.IRON, SoundType.METAL, 5.0F, 30.0F, "pickaxe", 2, Blocks.IRON_BLOCK, false);
 	public static final ColoredBlock BRICK = new Base("brick", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1, Blocks.BRICK_BLOCK, false);
 	public static final ColoredBlock MOSS_STONE = new Base("moss_stone", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1, Blocks.MOSSY_COBBLESTONE, false);
-	public static final ColoredBlock OBSIDIAN = new Base("obsidian", Material.ROCK, SoundType.STONE, 50.0F, 6000.0F, "pickaxe", 4, Blocks.OBSIDIAN, false);
+	public static final ColoredBlock OBSIDIAN = new Base("obsidian", Material.ROCK, SoundType.STONE, 50.0F, 6000.0F, "pickaxe", 3, Blocks.OBSIDIAN, false);
 	public static final ColoredBlock DIAMOND_BLOCK = new Base("diamond_block", Material.IRON, SoundType.METAL, 5.0F, 30.0F, "pickaxe", 3, Blocks.DIAMOND_BLOCK, false);
 	public static final ColoredBlock ICE = new Base("ice", Material.GLASS, SoundType.GROUND, 0.5F, 2.5F, "null", 0, Blocks.ICE, false);
 	public static final ColoredBlock SNOW_BLOCK = new Base("snow_block", Material.SNOW, SoundType.SNOW, 0.2F, 1.0F, "shovel", 1, Blocks.SNOW, false);
-	public static final ColoredBlock CLAY_BLOCK = new Base("clay_block", Material.CLAY, SoundType.GROUND, 2.0F, 30.0F, "shovel", 0, Blocks.CLAY, false);
+	public static final ColoredBlock CLAY_BLOCK = new Base("clay_block", Material.CLAY, SoundType.GROUND, 2.0F, 3.0F, "shovel", 0, Blocks.CLAY, false);
 	public static final ColoredBlock NETHERRACK = new Base("netherrack", Material.ROCK, SoundType.STONE, 0.4F, 2.0F, "pickaxe", 1, Blocks.NETHERRACK, false);
 	public static final ColoredBlock SOUL_SAND = new SoulSand("soul_sand", Material.ROCK, SoundType.STONE, 0.5F, 2.5F, "shovel", 0, Blocks.SOUL_SAND, false);
 	public static final ColoredBlock GLOWSTONE = new Base("glowstone", Material.GLASS, SoundType.GLASS, 0.3F, 1.5F, "pickaxe", 0, Blocks.GLOWSTONE, false);
@@ -69,7 +67,7 @@ public class PTMBlocks {
 	public static final ColoredBlock NETHER_WART_BLOCK = new Base("nether_wart_block", Material.GLASS, SoundType.GLASS, 1.0F, 5.0F, "null", 0, Blocks.NETHER_WART_BLOCK, false);
 	public static final ColoredBlock SPRUCE_LEAVES = new BaseMeta("spruce_leaves", Material.LEAVES, SoundType.PLANT, 0.2F, 1.0F, "shears", 0, Blocks.LEAVES, true, 1);
 	public static final ColoredBlock JUNGLE_LEAVES = new BaseMeta("jungle_leaves", Material.LEAVES, SoundType.PLANT, 0.2F, 1.0F, "shears", 0, Blocks.LEAVES, true, 3);
-	public static final ColoredBlock SLIME_BLOCK = new Base("slime_block", Material.SPONGE, SoundType.SLIME, 0.0F, 0.0F, "null", 0, Blocks.SLIME_BLOCK, false);
+	public static final ColoredBlock SLIME_BLOCK = new SlimeBlock("slime_block", Material.SPONGE, SoundType.SLIME, 0.0F, 0.0F, "null", 0, Blocks.SLIME_BLOCK, false);
 	
 //	//Chiseled Sandstone
 //	public static final Block BLACK_CHISELED_SANDSTONE= new PTMBlackBlock("chiseled_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);

@@ -49,3 +49,7 @@ langfile\.txt
 blocks\.json
 
 out/
+
+\.idea/
+
+Painting-Mod\.iml

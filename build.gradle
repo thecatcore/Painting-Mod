@@ -27,11 +27,11 @@ apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin"
 def gittoken = System.getenv('GH_TOKEN')
 def buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
 def buildbranch = System.getenv('TRAVIS_BRANCH')
-def modversion = '1.0.0'
+def modversion = '1.0.1'
 if (buildbranch == 'dev') {
 version = modversion + '-build-' + buildnumber
 } else if (buildbranch == 'pre-release') {
-    version = modversion + "-pre-5"
+    version = modversion + "-pre-1"
 } else if (buildbranch == "release/1.12") {
     version = modversion
 } else {
@@ -58,7 +58,7 @@ minecraft {
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 
     replaceIn "Reference.java"
-    replace "@VERSION@", project.version
+    replace "dev", project.version
 }
 
 dependencies {
