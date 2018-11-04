@@ -7,6 +7,9 @@ import arthurbambou.paintingmod.init.PTMItems;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumFacing;
@@ -21,8 +24,6 @@ public class PTMPaintbrush extends PTMItemBase {
 		setMaxDamage(0);
 		setMaxStackSize(1);
 	}
-	
-	@Override
 	public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
 		
 		for (ColoredBlock coloredblock: AddPaintbrush.getSIMPLECOLOREDBLOCKS()) {
@@ -87,7 +88,7 @@ public class PTMPaintbrush extends PTMItemBase {
 	}
 	
 	public void usedpaintbrush (EntityPlayer player) {
-		player.getHeldItemMainhand().shrink(1);
+		player.getHeldItemMainhand().setItem(new ItemBlock(Blocks.AIR));
 		player.inventory.addItemStackToInventory(new ItemStack(PTMItems.NORMAL_PAINTBRUSH));
 	}
 	

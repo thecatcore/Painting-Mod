@@ -40,7 +40,6 @@ public class PTMSoggyClay extends PTMBlockBase
         return amount; 
     }
 
-    @Override
     public int quantityDroppedWithBonus(int fortune, Random random){
         if(fortune > 0 && Item.getItemFromBlock(this) != this.getItemDropped((IBlockState)this.getBlockState().getValidStates().iterator().next(), random, fortune)){
             int i = random.nextInt(fortune + 2) - 1;
@@ -59,7 +58,6 @@ public class PTMSoggyClay extends PTMBlockBase
      * if the item in the main hand is the paintingmod hammer then:
      * the block disappear and 4 paintingmod earth mortar are dropped
      */
-    @Override
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
     {
         if (!worldIn.isRemote)

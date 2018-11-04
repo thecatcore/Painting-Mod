@@ -16,7 +16,7 @@ public class PTMColoredBlocks extends Block implements PTMIHasModel{
 	{
 		super(material);
 		setCreativeTab(PTMMain.PAINTING_MOD);
-		setTranslationKey(name); 
+		setUnlocalizedName(name);
 	    setRegistryName(name);
 		setSoundType(sound);
 		setHardness(hardness);

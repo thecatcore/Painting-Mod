@@ -112,7 +112,7 @@ task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
 }
 def rtype = ""
 def prelease = true
-if (buildbranch == 'release/1.12') {
+if (buildbranch == 'release/1.10.2') {
     rtype = "release"
     prelease = false
 } else {
