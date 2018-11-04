@@ -4,13 +4,14 @@ import arthurbambou.paintingmod.PTMMain;
 import arthurbambou.paintingmod.init.PTMBlocks;
 import arthurbambou.paintingmod.init.PTMItems;
 import arthurbambou.paintingmod.util.PTMIHasModel;
-import net.minecraft.block.BlockGravel;
+import net.minecraft.block.BlockFalling;
+import net.minecraft.block.BlockSand;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 
-public class PTMCGravel extends BlockGravel implements PTMIHasModel {
+public class PTMCGravel extends BlockFalling implements PTMIHasModel {
 
     public PTMCGravel(String string, Material material, SoundType soundtype, float hardness, float resistance,
                       String harvesttool, int harvestlevel) {
