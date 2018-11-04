@@ -54,7 +54,7 @@ minecraft {
     // stable_#            stables are built at the discretion of the MCP team.
     // Use non-default mappings at your own risk. they may not always work.
     // simply re-run your setup task after changing the mappings to update your workspace.
-    mappings = "stable-32"
+    mappings = "stable_32"
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 
     replaceIn "Reference.java"
@@ -112,7 +112,7 @@ task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
 }
 def rtype = ""
 def prelease = true
-if (buildbranch == 'release/1.12') {
+if (buildbranch == 'release/1.11.2') {
     rtype = "release"
     prelease = false
 } else {
