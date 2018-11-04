@@ -11,7 +11,7 @@ public class PTMTab extends CreativeTabs
 	}
 
 	@Override
-	public ItemStack createIcon() {
+	public ItemStack getTabIconItem() {
 		return new ItemStack(PTMItems.NORMAL_PAINTBRUSH);
 	}
 }

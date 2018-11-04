@@ -10,7 +10,7 @@ public class PTMItemBase extends Item implements PTMIHasModel{
 	
 	public PTMItemBase(String name, CreativeTabs tab)
 	{
-		setTranslationKey(name);
+		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(tab);
 		
