@@ -10,7 +10,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT'
         classpath 'co.riiid:gradle-github-plugin:+'
         classpath "gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.32"
     }
@@ -27,12 +27,12 @@ apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin"
 def gittoken = System.getenv('GH_TOKEN')
 def buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
 def buildbranch = System.getenv('TRAVIS_BRANCH')
-def modversion = '1.0.1'
-if (buildbranch == 'dev/1.12.2') {
+def modversion = '1.0.0'
+if (buildbranch == 'dev/1.11.2') {
 version = modversion + '-build-' + buildnumber
-} else if (buildbranch == 'pre-release') {
+} else if (buildbranch == 'pre-release/1.11.2') {
     version = modversion + "-pre-1"
-} else if (buildbranch == "release/1.12") {
+} else if (buildbranch == "release/1.11.2") {
     version = modversion
 } else {
     version = "dev"
@@ -40,9 +40,9 @@ version = modversion + '-build-' + buildnumber
 group = "arthurbambou.paintingmod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "PaintingMod-MC${minecraft_version}"
 
-sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
+sourceCompatibility = targetCompatibility = '1.6' // Need this here so eclipse task generates correctly.
 compileJava {
-    sourceCompatibility = targetCompatibility = '1.8'
+    sourceCompatibility = targetCompatibility = '1.6'
 }
 
 minecraft {
@@ -54,7 +54,7 @@ minecraft {
     // stable_#            stables are built at the discretion of the MCP team.
     // Use non-default mappings at your own risk. they may not always work.
     // simply re-run your setup task after changing the mappings to update your workspace.
-    mappings = "stable_39"
+    mappings = "stable-32"
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 
     replaceIn "Reference.java"
