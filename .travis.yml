@@ -15,7 +15,7 @@ script:
         if [ "$TRAVIS_BRANCH" == "pre-release" ]; then
           ./gradlew build makeChangelog curseforge299755 githubRelease
         else
-          if [ "$TRAVIS_BRANCH" == "dev" ]; then
+          if [ "$TRAVIS_BRANCH" == "dev/1.12.2" ]; then
             ./gradlew build makeChangelog githubRelease
           else
             ./gradlew build
