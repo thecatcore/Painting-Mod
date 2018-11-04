@@ -24,6 +24,7 @@ public class PTMPaintbrush extends PTMItemBase {
 		setMaxDamage(0);
 		setMaxStackSize(1);
 	}
+
 	public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
 		
 		for (ColoredBlock coloredblock: AddPaintbrush.getSIMPLECOLOREDBLOCKS()) {
