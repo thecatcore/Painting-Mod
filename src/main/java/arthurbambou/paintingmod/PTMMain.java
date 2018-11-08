@@ -1,5 +1,6 @@
 package arthurbambou.paintingmod;
 
+import arthurbambou.paintingmod.api.AddPaintbrush;
 import arthurbambou.paintingmod.util.handlers.PTMRecipeHandler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -61,6 +62,9 @@ public class PTMMain {
 		Blocks.FIRE.setFireInfo(plank.white, 5, 20);
 		Blocks.FIRE.setFireInfo(plank.yellow, 5, 20);
 		PTMRecipeHandler.init();
+		for (ColoredBlock cblocks : PTMBlocks.COLORED_BLOCKS) {
+			AddPaintbrush.registerSimpleBlock(cblocks);
+		}
 	}
 	
 	@EventHandler

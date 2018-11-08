@@ -15,6 +15,7 @@ import net.minecraft.init.Blocks;
 public class PTMBlocks {
 	
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
+	public static final List<ColoredBlock> COLORED_BLOCKS = new ArrayList<ColoredBlock>();
 	
 	public static final Block SOGGY_CLAY = new PTMSoggyClay("soggy_clay", Material.IRON, PTMMain.PAINTING_MOD);
 	

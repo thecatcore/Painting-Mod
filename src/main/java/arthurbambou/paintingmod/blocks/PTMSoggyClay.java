@@ -2,6 +2,7 @@ package arthurbambou.paintingmod.blocks;
 
 import java.util.Random;
 
+import arthurbambou.paintingmod.PTMMain;
 import arthurbambou.paintingmod.init.PTMItems;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -16,6 +17,8 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+
+import javax.annotation.Nullable;
 
 public class PTMSoggyClay extends PTMBlockBase
 {
@@ -52,25 +55,31 @@ public class PTMSoggyClay extends PTMBlockBase
             return this.quantityDropped(random);
         }
     }
-    
+
     /**
      * On right click on this block,
      * if the item in the main hand is the paintingmod hammer then:
      * the block disappear and 4 paintingmod earth mortar are dropped
      */
-    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
-    {
-        if (!worldIn.isRemote)
-        {
-            ItemStack item = playerIn.getHeldItemMainhand();
-            Item itemm = item.getItem();
-            if(itemm == PTMItems.HAMMER) {
-                worldIn.setBlockToAir(pos);
-                EntityItem iitem = new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(PTMItems.EARTH_MORTAR, 4, 0));
-                worldIn.spawnEntity(iitem);
-            }
+    @Override
+    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, @Nullable ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ) {
+        if (!worldIn.isRemote) {
+             ItemStack item = playerIn.getHeldItemMainhand();
+             if (item == null) {
+                 return false;
+             } else {
+                 Item itemm = item.getItem();
+                 if (itemm == PTMItems.HAMMER) {
+                     worldIn.setBlockToAir(pos);
+                     EntityItem iitem = new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(PTMItems.EARTH_MORTAR, 4, 0));
+                     worldIn.spawnEntity(iitem);
+                     return true;
+                 }
+                 return false;
+             }
         }
-        return false;
+         //super.onBlockActivated(worldIn, pos, state, playerIn, hand, heldItem, side, hitX, hitY, hitZ);
+        return super.onBlockActivated(worldIn,pos,state,playerIn,hand,heldItem,side,hitX,hitY,hitZ);
     }
 
 }
