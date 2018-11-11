@@ -106,7 +106,7 @@ processResources {
 task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
 	filePath = "CHANGELOG.html"
 	untaggedName = "Current release MC${minecraft_version}-${project.version}"
-	fromCommit = "296bf623ccdc41d856e6547798033a888855dce3"
+	fromCommit = "1c57afeb122b3084c931abac260ad24022dc3b35"
 	toRef =  "HEAD"
 	templateContent = file('changelog.mustache').getText('UTF-8')
 }
