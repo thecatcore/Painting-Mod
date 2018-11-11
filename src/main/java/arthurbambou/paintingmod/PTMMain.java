@@ -1,5 +1,6 @@
 package arthurbambou.paintingmod;
 
+import arthurbambou.paintingmod.api.AddPaintbrush;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -18,7 +19,13 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = PTMReference.MOD_ID, name = PTMReference.NAME, version = PTMReference.VERSION, updateJSON = "https://gist.githubusercontent.com/arthurbambou/2c316e790e623363385bd26a59ab8847/raw/versions.json")
+@Mod(
+        modid = PTMReference.MOD_ID,
+        name = PTMReference.NAME,
+        version = PTMReference.VERSION,
+        updateJSON = "https://gist.githubusercontent.com/arthurbambou/2c316e790e623363385bd26a59ab8847/raw/versions.json",
+        dependencies = "required:forge@[14.23.4.2705,)"
+)
 public class PTMMain {
 	
 	
@@ -64,6 +71,8 @@ public class PTMMain {
 	@EventHandler
 	public static void Postinit(FMLPostInitializationEvent event)
 	{
-		
+		for (ColoredBlock coloredBlock : PTMBlocks.COLORED_BLOCKS) {
+            AddPaintbrush.registerSimpleBlock(coloredBlock);
+		}
 	}
 }
