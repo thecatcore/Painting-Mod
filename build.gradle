@@ -141,8 +141,8 @@ github {
     targetCommitish = buildbranch
     prerelease = prelease
     assets = [
-        "CHANGELOG.html",
-        "build/libs/${archivesBaseName}-${version}-sources.jar",
-        "build/libs/${archivesBaseName}-${version}.jar"
+        "CHANGELOG.html"//,
+        //"build/libs/${archivesBaseName}-${version}-sources.jar",
+        //"build/libs/${archivesBaseName}-${version}.jar"
     ]
 }
