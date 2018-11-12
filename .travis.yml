@@ -16,7 +16,7 @@ script:
           ./gradlew build makeChangelog curseforge299755 githubRelease
         else
           if [ "$TRAVIS_BRANCH" == "dev/1.12.2" ]; then
-            ./gradlew build makeChangelog githubRelease
+            ./gradlew build makeChangelog githubRelease --stacktrace
           else
             ./gradlew build
           fi
@@ -36,8 +36,8 @@ notifications:
 after_success:
 - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
 - chmod +x send.sh
-- ./send.sh success https://discordapp.com/api/webhooks/511602735658041355/HQh7Z9y4AN4MQ1JM6E8prCrGKzBEP2UUoXMgmD9dGL9YBWPkw_iMgq806_nllU0yeeVt
+- ./send.sh success $WEBHOOK_URL
 after_failure:
 - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
 - chmod +x send.sh
-- ./send.sh failure https://discordapp.com/api/webhooks/511602735658041355/HQh7Z9y4AN4MQ1JM6E8prCrGKzBEP2UUoXMgmD9dGL9YBWPkw_iMgq806_nllU0yeeVt
+- ./send.sh failure $WEBHOOK_URL
