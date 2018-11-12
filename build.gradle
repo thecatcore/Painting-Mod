@@ -133,7 +133,7 @@ afterEvaluate {
 	tasks.curseforge299755.dependsOn.add(makeChangelog)
 }
 github {
-    owner = 'WIP-name'
+    owner = 'arthurbambou'
     repo = 'Painting-Mod'
     token = gittoken ?: "a key"
     tagName = minecraft_version + "-" + version
@@ -141,8 +141,8 @@ github {
     targetCommitish = buildbranch
     prerelease = prelease
     assets = [
-        "CHANGELOG.html"//,
-        //"build/libs/${archivesBaseName}-${version}-sources.jar",
-        //"build/libs/${archivesBaseName}-${version}.jar"
+        "CHANGELOG.html",
+        "build/libs/${archivesBaseName}-${version}-sources.jar",
+        "build/libs/${archivesBaseName}-${version}.jar"
     ]
 }
