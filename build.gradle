@@ -107,7 +107,6 @@ task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
 	filePath = "CHANGELOG.html"
 	untaggedName = "Current release MC${minecraft_version}-${project.version}"
 	fromCommit = "a8d1a226fa6e57589e317deb21d52f9feaaa0c11"
-	toRef =  "HEAD"
 	templateContent = file('changelog.mustache').getText('UTF-8')
 }
 def rtype = ""
@@ -133,7 +132,7 @@ afterEvaluate {
 	tasks.curseforge299755.dependsOn.add(makeChangelog)
 }
 github {
-    owner = 'WIP-name'
+    owner = 'arthurbambou'
     repo = 'Painting-Mod'
     token = gittoken ?: "a key"
     tagName = minecraft_version + "-" + version
