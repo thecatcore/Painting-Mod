@@ -1,6 +1,8 @@
 package arthurbambou.paintingmod;
 
 import arthurbambou.paintingmod.api.AddPaintbrush;
+import arthurbambou.paintingmod.api.ColoredBlockMeta;
+import arthurbambou.paintingmod.util.handlers.PTMRegistryHandler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -71,8 +73,10 @@ public class PTMMain {
 	@EventHandler
 	public static void Postinit(FMLPostInitializationEvent event)
 	{
-		for (ColoredBlock coloredBlock : PTMBlocks.COLORED_BLOCKS) {
+		for (ColoredBlock coloredBlock : PTMBlocks.COLORED_BLOCKS_ID) {
             AddPaintbrush.registerSimpleBlock(coloredBlock);
 		}
+
+        PTMRegistryHandler.APIinit();
 	}
 }

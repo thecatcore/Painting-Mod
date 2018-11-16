@@ -5,6 +5,8 @@ import java.util.List;
 
 import arthurbambou.paintingmod.PTMMain;
 import arthurbambou.paintingmod.api.ColoredBlock;
+import arthurbambou.paintingmod.api.ColoredBlockMeta;
+import arthurbambou.paintingmod.blocks.PTMColoredBlockMetaBase;
 import arthurbambou.paintingmod.blocks.PTMSoggyClay;
 import arthurbambou.paintingmod.coloredblocks.*;
 import net.minecraft.block.Block;
@@ -15,11 +17,13 @@ import net.minecraft.init.Blocks;
 public class PTMBlocks {
 	
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
-	public static final List<ColoredBlock> COLORED_BLOCKS = new ArrayList<ColoredBlock>();
+	public static final List<ColoredBlock> COLORED_BLOCKS_ID = new ArrayList<ColoredBlock>();
+	public static final List<ColoredBlockMeta> COLORED_BLOCKS_META = new ArrayList<ColoredBlockMeta>();
 	
 	public static final Block SOGGY_CLAY = new PTMSoggyClay("soggy_clay", Material.IRON, PTMMain.PAINTING_MOD);
-	
-	public static final ColoredBlock STONE = new BaseMeta("stone", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONE, true, 0);
+
+	public static final Block STONE = new PTMColoredBlockMetaBase("stone", Material.ROCK,SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONE, 0);
+	//public static final ColoredBlock STONE = new BaseMeta("stone", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONE, true, 0);
 	public static final ColoredBlock GRANITE = new BaseMeta("granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1,Blocks.STONE, true, 1);
 	public static final ColoredBlock POLISHED_GRANITE = new BaseMeta("polished_granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONE, true, 2);
 	public static final ColoredBlock DIORITE = new BaseMeta("diorite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONE, true, 3);

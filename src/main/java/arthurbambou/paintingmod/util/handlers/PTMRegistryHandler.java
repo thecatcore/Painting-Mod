@@ -1,5 +1,6 @@
 package arthurbambou.paintingmod.util.handlers;
 
+import arthurbambou.paintingmod.api.ColoredBlockMeta;
 import arthurbambou.paintingmod.init.PTMBlocks;
 import arthurbambou.paintingmod.init.PTMItems;
 import arthurbambou.paintingmod.util.PTMIHasModel;
@@ -8,6 +9,7 @@ import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @EventBusSubscriber
@@ -43,5 +45,12 @@ public class PTMRegistryHandler
 				((PTMIHasModel)block).registerModels();
 			}
 		}
+
 	}
+
+	public static void APIinit() {
+	    for (Block block : PTMBlocks.BLOCKS) {
+	        block.getLocalizedName();
+        }
+    }
 }
