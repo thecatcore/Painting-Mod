@@ -15,6 +15,7 @@ public class PTMToolPickaxe extends ItemPickaxe implements PTMIHasModel {
 		setCreativeTab(PTMMain.PAINTING_MOD);
 		
 		PTMItems.ITEMS_ID.add(this);
+		PTMItems.ITEMS_META.add(this);
 	}
 
 	@Override

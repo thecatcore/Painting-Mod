@@ -21,6 +21,8 @@ public class PTMBlockBase extends Block implements PTMIHasModel
 	    setRegistryName(name);
 		PTMBlocks.BLOCKS_ID.add(this);
 		PTMItems.ITEMS_ID.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+		PTMBlocks.BLOCKS_META.add(this);
+		PTMItems.ITEMS_META.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 
 	@Override

@@ -24,8 +24,8 @@ public class PTMBlocks {
 	
 	public static final Block SOGGY_CLAY = new PTMSoggyClay("soggy_clay", Material.IRON, PTMMain.PAINTING_MOD);
 
-	public static final ColoredBlockMeta STONE = new PTMColoredBlockMetaBase("stone", Material.ROCK,SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONE, 0);
-	//public static final ColoredBlock STONE = new BaseMeta("stone", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONE, true, 0);
+	public static final ColoredBlockMeta STONE_META = new PTMColoredBlockMetaBase("stone", Material.ROCK,SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONE, 0);
+	public static final ColoredBlock STONE = new BaseMeta("stone", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONE, true, 0);
 	public static final ColoredBlock GRANITE = new BaseMeta("granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1,Blocks.STONE, true, 1);
 	public static final ColoredBlock POLISHED_GRANITE = new BaseMeta("polished_granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONE, true, 2);
 	public static final ColoredBlock DIORITE = new BaseMeta("diorite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONE, true, 3);

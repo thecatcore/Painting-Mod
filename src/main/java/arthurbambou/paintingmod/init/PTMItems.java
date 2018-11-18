@@ -45,7 +45,7 @@ public class PTMItems
 	
 	
 	//Simple
-	public static final Item EARTH_MORTAR = new PTMItemBase("earth_mortar", PTMMain.PAINTING_MOD);
+	public static final Item EARTH_MORTAR = new PTMEarthMortar("earth_mortar", PTMMain.PAINTING_MOD);
 	public static final Item WATER_VIAL = new PTMWaterVial("water_vial", 12, 64, PTMMain.PAINTING_MOD);
 	public static final Item DOUBLE_WATER_VIAL = new PTMWaterVial("double_water_vial", 24, 32, PTMMain.PAINTING_MOD);
 	

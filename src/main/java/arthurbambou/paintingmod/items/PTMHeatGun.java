@@ -2,6 +2,7 @@ package arthurbambou.paintingmod.items;
 
 import arthurbambou.paintingmod.api.AddPaintbrush;
 import arthurbambou.paintingmod.api.ColoredBlock;
+import arthurbambou.paintingmod.init.PTMItems;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
@@ -18,6 +19,7 @@ public class PTMHeatGun extends PTMItemBase {
 		super(name, tab);
 		setMaxDamage(100);
 		setMaxStackSize(1);
+		PTMItems.ITEMS_META.add(this);
 	}
 	
 	public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
