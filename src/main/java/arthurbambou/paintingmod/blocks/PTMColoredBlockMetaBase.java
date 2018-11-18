@@ -29,9 +29,8 @@ public class PTMColoredBlockMetaBase extends ColoredBlockMeta implements PTMIHas
 //            this.setTranslationKey(color.getTranslationKey() + "_" + name);
 //            this.blockState.getBaseState().withProperty(COLOR, color);
 //        }
-        PTMBlocks.BLOCKS.add(this);
-        PTMItems.ITEMS.add(new PTMItemBlockVariant(this).setRegistryName(this.getRegistryName()));
         PTMBlocks.COLORED_BLOCKS_META.add(this);
+        PTMItems.ITEMS_META.add(new PTMItemBlockVariant(this).setRegistryName(this.getRegistryName()));
     }
 
     public PTMColoredBlockMetaBase(String name, Material materialIn, SoundType sound, float hardness, float resistance, String harvestTool, int harvestLevel, Block replace, int replacemeta) {
@@ -46,8 +45,8 @@ public class PTMColoredBlockMetaBase extends ColoredBlockMeta implements PTMIHas
 //            this.setTranslationKey(color.getTranslationKey() + "_" + name);
 //            this.blockState.getBaseState().withProperty(COLOR, color);
 //        }
-        PTMBlocks.BLOCKS.add(this);
-        PTMItems.ITEMS.add(new PTMItemBlockVariant(this).setRegistryName(this.getRegistryName()));
+        PTMBlocks.COLORED_BLOCKS_META.add(this);
+        PTMItems.ITEMS_META.add(new PTMItemBlockVariant(this).setRegistryName(this.getRegistryName()));
     }
 
     @Override
@@ -60,11 +59,5 @@ public class PTMColoredBlockMetaBase extends ColoredBlockMeta implements PTMIHas
     @Override
     public String getSpecialName(ItemStack stack) {
         return EnumPaintColor.byDyeDamage(stack.getMetadata()).getName();
-    }
-
-    @Override
-    public String getLocalizedName() {
-        AddPaintbrush.registerSimpleBlockwithMeta(this);
-        return super.getLocalizedName();
     }
 }

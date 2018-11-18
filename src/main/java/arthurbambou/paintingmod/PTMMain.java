@@ -73,7 +73,7 @@ public class PTMMain {
 	@EventHandler
 	public static void Postinit(FMLPostInitializationEvent event)
 	{
-		for (ColoredBlock coloredBlock : PTMBlocks.COLORED_BLOCKS_ID) {
+		for (ColoredBlock coloredBlock : PTMBlocks.COLORED_BLOCKS) {
             AddPaintbrush.registerSimpleBlock(coloredBlock);
 		}
 

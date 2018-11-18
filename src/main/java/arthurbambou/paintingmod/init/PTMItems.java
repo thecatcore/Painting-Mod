@@ -4,11 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import arthurbambou.paintingmod.PTMMain;
-import arthurbambou.paintingmod.items.PTMHeatGun;
-import arthurbambou.paintingmod.items.PTMItemBase;
-import arthurbambou.paintingmod.items.PTMPaintPot;
-import arthurbambou.paintingmod.items.PTMPaintbrush;
-import arthurbambou.paintingmod.items.PTMWaterVial;
+import arthurbambou.paintingmod.items.*;
 import arthurbambou.paintingmod.items.tools.PTMToolPickaxe;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
@@ -18,13 +14,15 @@ import net.minecraftforge.common.util.EnumHelper;
 public class PTMItems
 {
 	
-	public static final List<Item> ITEMS = new ArrayList<Item>();
+	public static final List<Item> ITEMS_ID = new ArrayList<Item>();
+	public static final List<Item> ITEMS_META = new ArrayList<Item>();
 	
 	//Materials
 	public static final ToolMaterial MATERIAL_HAMMER = EnumHelper.addToolMaterial("material_hammer", 2, 400, 6.0F, 3.0F, 10);
 	
 	//Items
 	//Paintbrush
+    public static final Item PAINTBRUSHES = new PTMPaintbrushVariant("paintbrush");
 	public static final Item NORMAL_PAINTBRUSH = new PTMPaintbrush("normal_paintbrush", PTMMain.PAINTING_MOD);
 	public static final Item BLACK_PAINTBRUSH = new PTMPaintbrush("black_paintbrush", PTMMain.PAINTING_MOD);
 	public static final Item RED_PAINTBRUSH = new PTMPaintbrush("red_paintbrush", PTMMain.PAINTING_MOD);

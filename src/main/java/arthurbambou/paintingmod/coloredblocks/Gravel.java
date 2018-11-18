@@ -12,7 +12,7 @@ public class Gravel extends ColoredBlock {
     public Gravel(String name, Material material, SoundType soundtype, float hardness, float resistance, String harvesttool, int harvestlevel, Block replace, boolean metab) {
         super(name, material, soundtype, hardness, resistance, harvesttool, harvestlevel, replace, metab);
         registerBlocks(name, material, soundtype, hardness, resistance, harvesttool, harvestlevel);
-        PTMBlocks.COLORED_BLOCKS_ID.add(this);
+        PTMBlocks.COLORED_BLOCKS.add(this);
     }
 
     public void registerBlocks (String name, Material material, SoundType soundtype, float hardness, float resistance, String harvesttool, int harvestlevel) {

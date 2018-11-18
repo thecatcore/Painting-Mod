@@ -13,8 +13,8 @@ import net.minecraft.util.NonNullList;
 
 public class ColoredBlockMeta extends Block {
 
-    private int replacemeta;
-    private Block replace;
+    private int replacemeta = 0 - 1;
+    private Block replace = null;
 
     public static final PropertyEnum<EnumPaintColor> COLOR = PropertyEnum.<EnumPaintColor>create("color", EnumPaintColor.class);
 
@@ -84,5 +84,11 @@ public class ColoredBlockMeta extends Block {
 
     public void registerPaintableBlock() {
         AddPaintbrush.registerSimpleBlockwithMeta(this);
+    }
+
+    @Override
+    public String getLocalizedName() {
+        AddPaintbrush.registerSimpleBlockwithMeta(this);
+        return super.getLocalizedName();
     }
 }

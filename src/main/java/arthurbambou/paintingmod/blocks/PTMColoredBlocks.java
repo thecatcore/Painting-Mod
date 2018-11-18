@@ -22,8 +22,8 @@ public class PTMColoredBlocks extends Block implements PTMIHasModel{
 		setHardness(hardness);
 		setResistance(resistance);
 		setHarvestLevel(harvestTool, harvestLevel);
-		PTMBlocks.BLOCKS.add(this);
-		PTMItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+		PTMBlocks.BLOCKS_ID.add(this);
+		PTMItems.ITEMS_ID.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 
 	@Override

@@ -19,8 +19,8 @@ public class PTMBlockBase extends Block implements PTMIHasModel
 		setCreativeTab(tab);
 		setTranslationKey(name); 
 	    setRegistryName(name);
-		PTMBlocks.BLOCKS.add(this);
-		PTMItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+		PTMBlocks.BLOCKS_ID.add(this);
+		PTMItems.ITEMS_ID.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 
 	@Override

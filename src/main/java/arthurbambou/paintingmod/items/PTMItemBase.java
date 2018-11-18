@@ -14,7 +14,7 @@ public class PTMItemBase extends Item implements PTMIHasModel{
 		setRegistryName(name);
 		setCreativeTab(tab);
 		
-		PTMItems.ITEMS.add(this);
+		PTMItems.ITEMS_ID.add(this);
 	}
 
 	@Override
