@@ -51,23 +51,25 @@ public class PTMMain {
 	@EventHandler
 	public static void init(FMLInitializationEvent event)
 	{
-		ColoredBlock plank = PTMBlocks.PLANK;
-		Blocks.FIRE.setFireInfo(plank.black, 5, 20);
-		Blocks.FIRE.setFireInfo(plank.blue, 5, 20);
-		Blocks.FIRE.setFireInfo(plank.brown, 5, 20);
-		Blocks.FIRE.setFireInfo(plank.cyan, 5, 20);
-		Blocks.FIRE.setFireInfo(plank.gray, 5, 20);
-		Blocks.FIRE.setFireInfo(plank.green, 5, 20);
-		Blocks.FIRE.setFireInfo(plank.lightblue, 5, 20);
-		Blocks.FIRE.setFireInfo(plank.lightgray, 5, 20);
-		Blocks.FIRE.setFireInfo(plank.lime, 5, 20);
-		Blocks.FIRE.setFireInfo(plank.magenta, 5, 20);
-		Blocks.FIRE.setFireInfo(plank.orange, 5, 20);
-		Blocks.FIRE.setFireInfo(plank.pink, 5, 20);
-		Blocks.FIRE.setFireInfo(plank.purple, 5, 20);
-		Blocks.FIRE.setFireInfo(plank.red, 5, 20);
-		Blocks.FIRE.setFireInfo(plank.white, 5, 20);
-		Blocks.FIRE.setFireInfo(plank.yellow, 5, 20);
+		if (PTMReference.getMinecraftVersion() == "[1.13]" || PTMReference.getMinecraftVersion() == "[1.13.1]" || PTMReference.getMinecraftVersion() == "[1.13.2]") {
+			ColoredBlock plank = PTMBlocks.PLANK;
+			Blocks.FIRE.setFireInfo(plank.black, 5, 20);
+			Blocks.FIRE.setFireInfo(plank.blue, 5, 20);
+			Blocks.FIRE.setFireInfo(plank.brown, 5, 20);
+			Blocks.FIRE.setFireInfo(plank.cyan, 5, 20);
+			Blocks.FIRE.setFireInfo(plank.gray, 5, 20);
+			Blocks.FIRE.setFireInfo(plank.green, 5, 20);
+			Blocks.FIRE.setFireInfo(plank.lightblue, 5, 20);
+			Blocks.FIRE.setFireInfo(plank.lightgray, 5, 20);
+			Blocks.FIRE.setFireInfo(plank.lime, 5, 20);
+			Blocks.FIRE.setFireInfo(plank.magenta, 5, 20);
+			Blocks.FIRE.setFireInfo(plank.orange, 5, 20);
+			Blocks.FIRE.setFireInfo(plank.pink, 5, 20);
+			Blocks.FIRE.setFireInfo(plank.purple, 5, 20);
+			Blocks.FIRE.setFireInfo(plank.red, 5, 20);
+			Blocks.FIRE.setFireInfo(plank.white, 5, 20);
+			Blocks.FIRE.setFireInfo(plank.yellow, 5, 20);
+		}
 	}
 	
 	@EventHandler

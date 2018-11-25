@@ -27,7 +27,6 @@ public class PTMPaintbrush extends PTMItemBase {
 	@Override
 	public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
 
-	    if (PTMReference.getMinecraftVersion() == "[1.13]" || PTMReference.getMinecraftVersion() == "[1.13.1]" || PTMReference.getMinecraftVersion() == "[1.13.2]") {
 
             for (ColoredBlock coloredblock : AddPaintbrush.getSIMPLECOLOREDBLOCKS()) {
                 //PTMMain.logger.info("Tested Block : " + coloredblock.name + " /origin : " + coloredblock.replace.getRegistryName() + " /pointé : " + worldIn.getBlockState(pos).getBlock().getRegistryName());
@@ -38,38 +37,20 @@ public class PTMPaintbrush extends PTMItemBase {
 
             }
 
-        } else {
-            for (ColoredBlockMeta block : AddPaintbrush.getSimplecoloredblockmeta()) {
-                newbloctopaintmeta(player, worldIn, pos, block);
-            }
-        }
+
+
+
 //		newbloctopaint(player, worldIn, pos, Blocks.SANDSTONE, PTMBlocks.BLACK_CHISELED_SANDSTONE, PTMBlocks.RED_CHISELED_SANDSTONE, PTMBlocks.GREEN_CHISELED_SANDSTONE, PTMBlocks.BROWN_CHISELED_SANDSTONE, PTMBlocks.BLUE_CHISELED_SANDSTONE, PTMBlocks.PURPLE_CHISELED_SANDSTONE, PTMBlocks.CYAN_CHISELED_SANDSTONE, PTMBlocks.LIGHT_GRAY_CHISELED_SANDSTONE, PTMBlocks.GRAY_CHISELED_SANDSTONE, PTMBlocks.PINK_CHISELED_SANDSTONE, PTMBlocks.LIME_CHISELED_SANDSTONE, PTMBlocks.YELLOW_CHISELED_SANDSTONE, PTMBlocks.LIGHT_BLUE_CHISELED_SANDSTONE, PTMBlocks.MAGENTA_CHISELED_SANDSTONE, PTMBlocks.ORANGE_CHISELED_SANDSTONE, PTMBlocks.WHITE_CHISELED_SANDSTONE, 1);
 //		newbloctopaint(player, worldIn, pos, Blocks.SANDSTONE, PTMBlocks.BLACK_SMOOTH_SANDSTONE, PTMBlocks.RED_SMOOTH_SANDSTONE, PTMBlocks.GREEN_SMOOTH_SANDSTONE, PTMBlocks.BROWN_SMOOTH_SANDSTONE, PTMBlocks.BLUE_SMOOTH_SANDSTONE, PTMBlocks.PURPLE_SMOOTH_SANDSTONE, PTMBlocks.CYAN_SMOOTH_SANDSTONE, PTMBlocks.LIGHT_GRAY_SMOOTH_SANDSTONE, PTMBlocks.GRAY_SMOOTH_SANDSTONE, PTMBlocks.PINK_SMOOTH_SANDSTONE, PTMBlocks.LIME_SMOOTH_SANDSTONE, PTMBlocks.YELLOW_SMOOTH_SANDSTONE, PTMBlocks.LIGHT_BLUE_SMOOTH_SANDSTONE, PTMBlocks.MAGENTA_SMOOTH_SANDSTONE, PTMBlocks.ORANGE_SMOOTH_SANDSTONE, PTMBlocks.WHITE_SMOOTH_SANDSTONE, 2);
 		return EnumActionResult.SUCCESS;
 	}
 
-	private void newbloctopaintmeta(EntityPlayer player, World worldIn, BlockPos pos, ColoredBlockMeta block) {
-        if (player.getHeldItemMainhand().getItem() == PTMItems.NORMAL_PAINTBRUSH) {
-
-        } else {
-        	PTMMain.logger.info("Block to replace : " + block.getReplace().toString());
-        	PTMMain.logger.info("his meta : " + block.getReplacemeta());
-        	int test = 0 - 1;
-        	PTMMain.logger.info(test);
-            if (block.getReplacemeta() == 0-1 && worldIn.getBlockState(pos).getBlock() == block.getReplace()) {
-                transformmeta(player,worldIn,pos,block);
-            } else {
-                transformmeta(player,worldIn,pos,block);
-            }
-        }
-	}
-
-	private void transformmeta (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
-	    if (player.getHeldItemMainhand().getItem() == PTMItems.BLACK_PAINTBRUSH) {
-	        worldIn.setBlockState(pos, item.getStateFromMeta(0));
-	        usedpaintbrush(player);
-        }
-    }
+//	private void transformmeta (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
+//	    if (player.getHeldItemMainhand().getItem() == PTMItems.BLACK_PAINTBRUSH) {
+//	        worldIn.setBlockState(pos, item.getStateFromMeta(0));
+//	        usedpaintbrush(player);
+//        }
+//    }
 
 	private void newbloctopaint(EntityPlayer player, World worldIn, BlockPos pos,
 			Block topaint, ColoredBlock coloredblock) {
