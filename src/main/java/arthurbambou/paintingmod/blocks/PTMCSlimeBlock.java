@@ -4,6 +4,7 @@ import arthurbambou.paintingmod.PTMMain;
 import arthurbambou.paintingmod.init.PTMBlocks;
 import arthurbambou.paintingmod.init.PTMItems;
 import arthurbambou.paintingmod.util.PTMIHasModel;
+import arthurbambou.paintingmod.util.PTMReference;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBreakable;
 import net.minecraft.block.BlockSlime;
@@ -23,15 +24,15 @@ public class PTMCSlimeBlock extends BlockSlime implements PTMIHasModel {
 
     public PTMCSlimeBlock(String string, Material material, SoundType soundtype, float hardness, float resistance,
                           String harvesttool, int harvestlevel) {
-        setCreativeTab(PTMMain.PAINTING_MOD);
-        setUnlocalizedName(string);
+        setCreativeTab(PTMMain.PAINTING_MOD_BLOCKS);
+        setTranslationKey(PTMReference.MOD_ID + "." + string);
         setRegistryName(string);
         setSoundType(soundtype);
         setHardness(hardness);
         setResistance(resistance);
         setHarvestLevel(harvesttool, harvestlevel);
-        PTMBlocks.BLOCKS.add(this);
-        PTMItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+        PTMBlocks.BLOCKS_ID.add(this);
+        PTMItems.ITEMS_ID.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     }
 
     @Override
