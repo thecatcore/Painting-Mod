@@ -15,8 +15,8 @@ script:
         if [ "$TRAVIS_BRANCH" == "pre-release" ]; then
           ./gradlew build makeChangelog curseforge299755 githubRelease
         else
-          if [ "$TRAVIS_BRANCH" == "dev" ]; then
-            ./gradlew build makeChangelog githubRelease
+          if [ "$TRAVIS_BRANCH" == "dev/1.12.2" ]; then
+            ./gradlew build makeChangelog githubRelease --stacktrace
           else
             ./gradlew build
           fi
@@ -26,5 +26,18 @@ script:
       ./gradlew build
     fi
 
+cache:
+    directories:
+      -/home/travis/.gradle/
+
 notifications:
     slack: wip-name:uZWumWJ6i8idAwHoV0rg1XP2
+
+after_success:
+- wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
+- chmod +x send.sh
+- ./send.sh success $WEBHOOK_URL
+after_failure:
+- wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
+- chmod +x send.sh
+- ./send.sh failure $WEBHOOK_URL
