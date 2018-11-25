@@ -4,6 +4,7 @@ import arthurbambou.paintingmod.PTMMain;
 import arthurbambou.paintingmod.init.PTMBlocks;
 import arthurbambou.paintingmod.init.PTMItems;
 import arthurbambou.paintingmod.util.PTMIHasModel;
+import arthurbambou.paintingmod.util.PTMReference;
 import net.minecraft.block.BlockFalling;
 import net.minecraft.block.BlockSand;
 import net.minecraft.block.SoundType;
@@ -15,15 +16,15 @@ public class PTMCGravel extends BlockFalling implements PTMIHasModel {
 
     public PTMCGravel(String string, Material material, SoundType soundtype, float hardness, float resistance,
                       String harvesttool, int harvestlevel) {
-        setCreativeTab(PTMMain.PAINTING_MOD);
-        setTranslationKey(string);
+        setCreativeTab(PTMMain.PAINTING_MOD_BLOCKS);
+        setTranslationKey(PTMReference.MOD_ID + "." + string);
         setRegistryName(string);
         setSoundType(soundtype);
         setHardness(hardness);
         setResistance(resistance);
         setHarvestLevel(harvesttool, harvestlevel);
-        PTMBlocks.BLOCKS.add(this);
-        PTMItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+        PTMBlocks.BLOCKS_ID.add(this);
+        PTMItems.ITEMS_ID.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     }
 
     @Override
