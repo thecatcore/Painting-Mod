@@ -2,6 +2,7 @@ package arthurbambou.paintingmod.items;
 
 import arthurbambou.paintingmod.PTMMain;
 import arthurbambou.paintingmod.util.PTMIMetaName;
+import arthurbambou.paintingmod.util.PTMReference;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -14,7 +15,7 @@ public class PTMItemVariantTemplate2 extends Item {
     {
         this.setHasSubtypes(true);
         this.setMaxDamage(0);
-        this.setCreativeTab(PTMMain.PAINTING_MOD);
+        this.setCreativeTab(PTMMain.PAINTING_MOD_ITEMS);
     }
 
     /**
@@ -22,7 +23,7 @@ public class PTMItemVariantTemplate2 extends Item {
      * different names based on their damage or NBT.
      */
     public String getUnlocalizedNameInefficiently(ItemStack stack) {
-        return "item." + ((PTMIMetaName) this).getSpecialName(stack) + "_" + super.getUnlocalizedNameInefficiently(stack).substring(5);
+        return "item." + PTMReference.MOD_ID + "." + ((PTMIMetaName) this).getSpecialName(stack) + "_" + super.getUnlocalizedNameInefficiently(stack).substring(5);
     }
 
     /**

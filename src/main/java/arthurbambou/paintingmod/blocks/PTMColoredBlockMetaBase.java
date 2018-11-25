@@ -9,6 +9,7 @@ import arthurbambou.paintingmod.api.EnumPaintColor;
 import arthurbambou.paintingmod.util.PTMIHasModel;
 import arthurbambou.paintingmod.util.PTMIMetaName;
 import arthurbambou.paintingmod.util.PTMItemBlockVariant;
+import arthurbambou.paintingmod.util.PTMReference;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -25,6 +26,7 @@ public class PTMColoredBlockMetaBase extends ColoredBlockMeta implements PTMIHas
         setHardness(hardness);
         setResistance(resistance);
         setHarvestLevel(harvestTool,harvestLevel);
+        setCreativeTab(PTMMain.PAINTING_MOD_BLOCKS);
 //        for (EnumPaintColor color : EnumPaintColor.values()) {
 //            this.setTranslationKey(color.getTranslationKey() + "_" + name);
 //            this.blockState.getBaseState().withProperty(COLOR, color);
@@ -41,6 +43,7 @@ public class PTMColoredBlockMetaBase extends ColoredBlockMeta implements PTMIHas
         setHardness(hardness);
         setResistance(resistance);
         setHarvestLevel(harvestTool,harvestLevel);
+        setCreativeTab(PTMMain.PAINTING_MOD_BLOCKS);
 //        for (EnumPaintColor color : EnumPaintColor.values()) {
 //            this.setTranslationKey(color.getTranslationKey() + "_" + name);
 //            this.blockState.getBaseState().withProperty(COLOR, color);

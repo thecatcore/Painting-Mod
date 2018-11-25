@@ -3,6 +3,7 @@ package arthurbambou.paintingmod.items;
 import arthurbambou.paintingmod.PTMMain;
 import arthurbambou.paintingmod.api.EnumPaintColor;
 import arthurbambou.paintingmod.util.PTMIMetaName;
+import arthurbambou.paintingmod.util.PTMReference;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -23,12 +24,12 @@ public class PTMItemVariantTemplate extends Item {
     {
         this.setHasSubtypes(true);
         this.setMaxDamage(0);
-        this.setCreativeTab(PTMMain.PAINTING_MOD);
+        this.setCreativeTab(PTMMain.PAINTING_MOD_ITEMS);
     }
 
     @Override
     public String getUnlocalizedNameInefficiently(ItemStack stack) {
-        return "item." + ((PTMIMetaName) this).getSpecialName(stack) + "_" + super.getUnlocalizedNameInefficiently(stack).substring(5);
+        return "item." + PTMReference.MOD_ID + "." + ((PTMIMetaName) this).getSpecialName(stack) + "_" + super.getUnlocalizedNameInefficiently(stack).substring(5);
     }
 
     /**

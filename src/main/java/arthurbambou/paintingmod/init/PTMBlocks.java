@@ -21,7 +21,7 @@ public class PTMBlocks {
 	public static final List<Block> BLOCKS_META = new ArrayList<Block>();
 	public static final List<ColoredBlockMeta> COLORED_BLOCKS_META = new ArrayList<ColoredBlockMeta>();
 	
-	public static final Block SOGGY_CLAY = new PTMSoggyClay("soggy_clay", Material.IRON, PTMMain.PAINTING_MOD);
+	public static final Block SOGGY_CLAY = new PTMSoggyClay("soggy_clay", Material.IRON, PTMMain.PAINTING_MOD_BLOCKS);
 
 	public static final ColoredBlockMeta STONE_META = new PTMColoredBlockMetaBase("stone", Material.ROCK,SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONE, 0);
 	public static final ColoredBlockMeta GRANITE_META = new PTMColoredBlockMetaBase("granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1,Blocks.STONE,  1);

@@ -23,14 +23,12 @@ public class ColoredBlockMeta extends Block {
         this.replace = replace;
         this.replacemeta = replacemeta;
         this.setDefaultState(this.blockState.getBaseState().withProperty(COLOR, EnumPaintColor.WHITE));
-        this.setCreativeTab(PTMMain.PAINTING_MOD);
     }
 
     public ColoredBlockMeta(Material materialIn, Block replace) {
         super(materialIn);
         this.replace = replace;
         this.setDefaultState(this.blockState.getBaseState().withProperty(COLOR, EnumPaintColor.WHITE));
-        this.setCreativeTab(PTMMain.PAINTING_MOD);
     }
 
     public int damageDropped(IBlockState state)

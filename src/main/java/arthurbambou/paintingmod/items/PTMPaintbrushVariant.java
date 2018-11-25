@@ -7,6 +7,7 @@ import arthurbambou.paintingmod.init.PTMItems;
 import arthurbambou.paintingmod.util.PTMEnumPaintbrush;
 import arthurbambou.paintingmod.util.PTMIHasModel;
 import arthurbambou.paintingmod.util.PTMIMetaName;
+import arthurbambou.paintingmod.util.PTMReference;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -20,6 +21,7 @@ public class PTMPaintbrushVariant extends PTMItemVariantTemplate2 implements PTM
     public PTMPaintbrushVariant(String name) {
         setTranslationKey(name);
         setRegistryName(name);
+        setMaxStackSize(1);
         PTMItems.ITEMS_META.add(this);
     }
 

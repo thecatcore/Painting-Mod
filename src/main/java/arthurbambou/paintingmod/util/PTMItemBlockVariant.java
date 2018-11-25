@@ -13,7 +13,7 @@ public class PTMItemBlockVariant extends ItemBlock {
 
     @Override
     public String getUnlocalizedNameInefficiently(ItemStack stack) {
-        return "tile." + ((PTMIMetaName)this.block).getSpecialName(stack) + "_" + super.getUnlocalizedNameInefficiently(stack).substring(5);
+        return "tile." + PTMReference.MOD_ID + "." +  ((PTMIMetaName)this.block).getSpecialName(stack) + "_" + super.getUnlocalizedNameInefficiently(stack).substring(5);
     }
 
     @Override

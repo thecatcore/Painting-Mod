@@ -4,6 +4,7 @@ import arthurbambou.paintingmod.PTMMain;
 import arthurbambou.paintingmod.init.PTMBlocks;
 import arthurbambou.paintingmod.init.PTMItems;
 import arthurbambou.paintingmod.util.PTMIHasModel;
+import arthurbambou.paintingmod.util.PTMReference;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -15,8 +16,8 @@ public class PTMColoredBlocks extends Block implements PTMIHasModel{
 	public PTMColoredBlocks(String name, Material material, SoundType sound, float hardness, float resistance, String harvestTool, int harvestLevel)
 	{
 		super(material);
-		setCreativeTab(PTMMain.PAINTING_MOD);
-		setTranslationKey(name); 
+		setCreativeTab(PTMMain.PAINTING_MOD_BLOCKS);
+		setTranslationKey(PTMReference.MOD_ID + "." + name);
 	    setRegistryName(name);
 		setSoundType(sound);
 		setHardness(hardness);

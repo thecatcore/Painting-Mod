@@ -1,15 +1,15 @@
 package arthurbambou.paintingmod;
 
 import arthurbambou.paintingmod.api.AddPaintbrush;
-import arthurbambou.paintingmod.api.ColoredBlockMeta;
+import arthurbambou.paintingmod.init.PTMItems;
 import arthurbambou.paintingmod.util.handlers.PTMRegistryHandler;
+import net.minecraft.item.ItemStack;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import arthurbambou.paintingmod.api.ColoredBlock;
 import arthurbambou.paintingmod.init.PTMBlocks;
 import arthurbambou.paintingmod.proxy.PTMCommonProxy;
-import arthurbambou.paintingmod.tabs.PTMTab;
 import arthurbambou.paintingmod.util.PTMReference;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
@@ -31,7 +31,35 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class PTMMain {
 	
 	
-	public static final CreativeTabs PAINTING_MOD = new PTMTab("paintingmod_tab");
+	public static final CreativeTabs PAINTING_MOD_ITEMS = new CreativeTabs(PTMReference.MOD_ID + "." + "paintingmod_tab_items") {
+        @Override
+        public ItemStack createIcon() {
+            if (    PTMReference.getMinecraftVersion() == "[1.13]"
+                    ||
+                    PTMReference.getMinecraftVersion() == "[1.13.1]"
+                    ||
+                    PTMReference.getMinecraftVersion() == "[1.13.2]") {
+                return new ItemStack(PTMItems.NORMAL_PAINTBRUSH);
+            } else {
+                return new ItemStack(PTMItems.PAINTBRUSHES);
+            }
+        }
+    };
+
+    public static final CreativeTabs PAINTING_MOD_BLOCKS = new CreativeTabs(PTMReference.MOD_ID + "." + "paintingmod_tab_blocks") {
+        @Override
+        public ItemStack createIcon() {
+            if (    PTMReference.getMinecraftVersion() == "[1.13]"
+                    ||
+                    PTMReference.getMinecraftVersion() == "[1.13.1]"
+                    ||
+                    PTMReference.getMinecraftVersion() == "[1.13.2]") {
+                return new ItemStack(PTMBlocks.STONE.blue);
+            } else {
+                return new ItemStack(PTMBlocks.STONE_META, 1, 4);
+            }
+        }
+    };
 
 	
 	public static final Logger logger = LogManager.getLogger(PTMReference.MOD_ID);
@@ -69,16 +97,20 @@ public class PTMMain {
 			Blocks.FIRE.setFireInfo(plank.red, 5, 20);
 			Blocks.FIRE.setFireInfo(plank.white, 5, 20);
 			Blocks.FIRE.setFireInfo(plank.yellow, 5, 20);
+		} else {
+			Blocks.FIRE.setFireInfo(PTMBlocks.PLANK_META, 5, 20);
 		}
 	}
 	
 	@EventHandler
 	public static void Postinit(FMLPostInitializationEvent event)
 	{
-		for (ColoredBlock coloredBlock : PTMBlocks.COLORED_BLOCKS) {
-            AddPaintbrush.registerSimpleBlock(coloredBlock);
-		}
-
-        PTMRegistryHandler.APIinit();
+        if (PTMReference.getMinecraftVersion() == "[1.13]" || PTMReference.getMinecraftVersion() == "[1.13.1]" || PTMReference.getMinecraftVersion() == "[1.13.2]") {
+            for (ColoredBlock coloredBlock : PTMBlocks.COLORED_BLOCKS) {
+                AddPaintbrush.registerSimpleBlock(coloredBlock);
+            }
+        } else {
+            PTMRegistryHandler.APIinit();
+        }
 	}
 }

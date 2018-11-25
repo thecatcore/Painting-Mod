@@ -6,6 +6,7 @@ import arthurbambou.paintingmod.PTMMain;
 import arthurbambou.paintingmod.init.PTMBlocks;
 import arthurbambou.paintingmod.init.PTMItems;
 import arthurbambou.paintingmod.util.PTMIHasModel;
+import arthurbambou.paintingmod.util.PTMReference;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSoulSand;
 import net.minecraft.block.SoundType;
@@ -25,8 +26,8 @@ public class PTMCSoulSand extends Block implements PTMIHasModel{
 	public PTMCSoulSand(String string, Material material, SoundType soundtype, float hardness, float resistance,
 			String harvesttool, int harvestlevel) {
 		super(material);
-		setCreativeTab(PTMMain.PAINTING_MOD);
-		setTranslationKey(string); 
+		setCreativeTab(PTMMain.PAINTING_MOD_BLOCKS);
+		setTranslationKey(PTMReference.MOD_ID + "." + string);
 	    setRegistryName(string);
 		setSoundType(soundtype);
 		setHardness(hardness);
