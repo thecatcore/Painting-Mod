@@ -12,13 +12,15 @@
             "data": 32767
         },
         {
-            "item":"paintingmod:normal_paintbrush"
+            "item":"paintingmod:paintbrush",
+            "data": 0
         }
     ],
     
     "result":
     {
-        "item": "paintingmod:purple_paintbrush",
+        "item": "paintingmod:paintbrush",
+        "data": 6,
         "count": 1
     }
 }
