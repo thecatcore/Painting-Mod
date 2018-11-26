@@ -1,6 +1,7 @@
 package arthurbambou.paintingmod.util.handlers;
 
 import arthurbambou.paintingmod.api.ColoredBlockMeta;
+import arthurbambou.paintingmod.api.ColoredFallingBlockMeta;
 import arthurbambou.paintingmod.init.PTMBlocks;
 import arthurbambou.paintingmod.init.PTMItems;
 import arthurbambou.paintingmod.util.PTMIHasModel;
@@ -35,6 +36,10 @@ public class PTMRegistryHandler
             event.getRegistry().registerAll(PTMBlocks.BLOCKS_META.toArray(new Block[0]));
 
             event.getRegistry().registerAll(PTMBlocks.COLORED_BLOCKS_META.toArray(new Block[0]));
+
+            event.getRegistry().registerAll(PTMBlocks.COLORED_FALLING_BLOCK_METAS.toArray(new Block[0]));
+
+            event.getRegistry().register(PTMBlocks.SLIME_BLOCK_META);
 		}
 	}
 	
@@ -70,6 +75,12 @@ public class PTMRegistryHandler
                 ((PTMIHasModel) block).registerModels();
             }
         }
+            for (Block block : PTMBlocks.COLORED_FALLING_BLOCK_METAS) {
+                if (block instanceof PTMIHasModel) {
+                    ((PTMIHasModel) block).registerModels();
+                }
+            }
+            ((PTMIHasModel) PTMBlocks.SLIME_BLOCK_META).registerModels();
         }
 
 	}
@@ -78,5 +89,9 @@ public class PTMRegistryHandler
 	    for (ColoredBlockMeta block : PTMBlocks.COLORED_BLOCKS_META) {
 	        block.getLocalizedName();
         }
+        for (ColoredFallingBlockMeta blockMeta : PTMBlocks.COLORED_FALLING_BLOCK_METAS) {
+            blockMeta.getLocalizedName();
+        }
+        PTMBlocks.SLIME_BLOCK_META.getLocalizedName();
     }
 }
