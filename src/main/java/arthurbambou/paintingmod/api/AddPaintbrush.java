@@ -4,8 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import arthurbambou.paintingmod.PTMMain;
-import arthurbambou.paintingmod.util.PTMReference;
-import net.minecraft.block.Block;
+import arthurbambou.paintingmod.blocks.ColoredBlockMetaSlime;
 
 public class AddPaintbrush {
 	// Like the Stone, the Sandstone and the Crafting Table
@@ -14,7 +13,9 @@ public class AddPaintbrush {
 	// Like the Oak Log, the Furnace and the Dispenser
 	private static final List<ColoredBlock> COMPLEXCOLOREDBLOCKS = new ArrayList<ColoredBlock>();
 	private static final List<ColoredBlockMeta> COMPLEXCOLOREDBLOCKMETA = new ArrayList<ColoredBlockMeta>();
-	
+	private static final List<ColoredFallingBlockMeta> SIMPLECOLOREDFALLINGBLOCKMETA = new ArrayList<ColoredFallingBlockMeta>();
+	private static final List<ColoredBlockMetaSlime> COLORED_BLOCK_META_SLIMES = new ArrayList<ColoredBlockMetaSlime>();
+
 	public static void registerSimpleBlock(ColoredBlock coloredblock) {
 		PTMMain.logger.info("[API]: Add paintable simple block => " + coloredblock.name);
 		SIMPLECOLOREDBLOCKS.add(coloredblock);
@@ -49,5 +50,23 @@ public class AddPaintbrush {
 
     public static List<ColoredBlockMeta> getComplexcoloredblockmeta() {
 	    return COMPLEXCOLOREDBLOCKMETA;
+    }
+
+    public static void registerSimpleBlockwithMeta(ColoredFallingBlockMeta coloredFallingBlockMeta) {
+		PTMMain.logger.info("[API]: Add paintable simple block => " + coloredFallingBlockMeta.getRegistryName());
+		SIMPLECOLOREDFALLINGBLOCKMETA.add(coloredFallingBlockMeta);
+    }
+
+	public static List<ColoredFallingBlockMeta> getSIMPLECOLOREDFALLINGBLOCKMETA() {
+		return SIMPLECOLOREDFALLINGBLOCKMETA;
+	}
+
+    public static List<ColoredBlockMetaSlime> getColoredBlockMetaSlimes() {
+        return COLORED_BLOCK_META_SLIMES;
+    }
+
+    public static void registerSimpleBlockwithMeta(ColoredBlockMetaSlime coloredFallingBlockMeta) {
+        PTMMain.logger.info("[API]: Add paintable simple block => " + coloredFallingBlockMeta.getRegistryName());
+        COLORED_BLOCK_META_SLIMES.add(coloredFallingBlockMeta);
     }
 }

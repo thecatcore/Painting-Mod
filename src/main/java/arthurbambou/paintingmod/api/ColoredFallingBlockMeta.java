@@ -1,6 +1,7 @@
 package arthurbambou.paintingmod.api;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockFalling;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyEnum;
@@ -10,21 +11,21 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 
-public class ColoredBlockMeta extends Block {
+public class ColoredFallingBlockMeta extends BlockFalling {
 
     private int replacemeta = 0 - 1;
     private Block replace = null;
 
     public static final PropertyEnum<EnumPaintColor> COLOR = PropertyEnum.<EnumPaintColor>create("color", EnumPaintColor.class);
 
-    public ColoredBlockMeta(Material materialIn, Block replace, int replacemeta) {
+    public ColoredFallingBlockMeta(Material materialIn, Block replace, int replacemeta) {
         super(materialIn);
         this.replace = replace;
         this.replacemeta = replacemeta;
         this.setDefaultState(this.blockState.getBaseState().withProperty(COLOR, EnumPaintColor.WHITE));
     }
 
-    public ColoredBlockMeta(Material materialIn, Block replace) {
+    public ColoredFallingBlockMeta(Material materialIn, Block replace) {
         super(materialIn);
         this.replace = replace;
         this.setDefaultState(this.blockState.getBaseState().withProperty(COLOR, EnumPaintColor.WHITE));

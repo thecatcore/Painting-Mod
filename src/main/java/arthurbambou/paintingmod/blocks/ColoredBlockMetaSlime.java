@@ -1,6 +1,9 @@
-package arthurbambou.paintingmod.api;
+package arthurbambou.paintingmod.blocks;
 
+import arthurbambou.paintingmod.api.AddPaintbrush;
+import arthurbambou.paintingmod.api.EnumPaintColor;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockSlime;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyEnum;
@@ -10,22 +13,22 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 
-public class ColoredBlockMeta extends Block {
+public class ColoredBlockMetaSlime extends BlockSlime {
 
     private int replacemeta = 0 - 1;
     private Block replace = null;
 
     public static final PropertyEnum<EnumPaintColor> COLOR = PropertyEnum.<EnumPaintColor>create("color", EnumPaintColor.class);
 
-    public ColoredBlockMeta(Material materialIn, Block replace, int replacemeta) {
-        super(materialIn);
+    public ColoredBlockMetaSlime(Material materialIn, Block replace, int replacemeta) {
+        super();
         this.replace = replace;
         this.replacemeta = replacemeta;
         this.setDefaultState(this.blockState.getBaseState().withProperty(COLOR, EnumPaintColor.WHITE));
     }
 
-    public ColoredBlockMeta(Material materialIn, Block replace) {
-        super(materialIn);
+    public ColoredBlockMetaSlime(Material materialIn, Block replace) {
+        super();
         this.replace = replace;
         this.setDefaultState(this.blockState.getBaseState().withProperty(COLOR, EnumPaintColor.WHITE));
     }
