@@ -6,7 +6,8 @@ import java.util.List;
 import arthurbambou.paintingmod.PTMMain;
 import arthurbambou.paintingmod.api.ColoredBlock;
 import arthurbambou.paintingmod.api.ColoredBlockMeta;
-import arthurbambou.paintingmod.blocks.PTMColoredBlockMetaBase;
+import arthurbambou.paintingmod.api.ColoredFallingBlockMeta;
+import arthurbambou.paintingmod.blocks.*;
 import arthurbambou.paintingmod.blocks.PTMSoggyClay;
 import arthurbambou.paintingmod.coloredblocks.*;
 import net.minecraft.block.Block;
@@ -20,6 +21,7 @@ public class PTMBlocks {
 	public static final List<ColoredBlock> COLORED_BLOCKS = new ArrayList<ColoredBlock>();
 	public static final List<Block> BLOCKS_META = new ArrayList<Block>();
 	public static final List<ColoredBlockMeta> COLORED_BLOCKS_META = new ArrayList<ColoredBlockMeta>();
+	public static final List<ColoredFallingBlockMeta> COLORED_FALLING_BLOCK_METAS = new ArrayList<ColoredFallingBlockMeta>();
 	
 	public static final Block SOGGY_CLAY = new PTMSoggyClay("soggy_clay", Material.IRON, PTMMain.PAINTING_MOD_BLOCKS);
 
@@ -34,8 +36,8 @@ public class PTMBlocks {
 	public static final ColoredBlockMeta COARSE_DIRT_META = new PTMColoredBlockMetaBase("coarse_dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0, Blocks.DIRT,  1);
 	public static final ColoredBlockMeta COBBLESTONE_META = new PTMColoredBlockMetaBase("cobblestone", Material.ROCK, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1, Blocks.COBBLESTONE);
 	public static final ColoredBlockMeta PLANK_META = new PTMColoredBlockMetaBase("plank", Material.WOOD, SoundType.WOOD, 2.0F, 15.0F, "axe", 0, Blocks.PLANKS);
-	public static final ColoredBlockMeta SAND_META = new PTMColoredBlockMetaBase("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0, Blocks.SAND);
-	public static final ColoredBlockMeta GRAVEL_META = new PTMColoredBlockMetaBase("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0, Blocks.GRAVEL);
+	public static final ColoredFallingBlockMeta SAND_META = new PTMColoredFallingBlockMeta("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0, Blocks.SAND);
+	public static final ColoredFallingBlockMeta GRAVEL_META = new PTMColoredFallingBlockMeta("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0, Blocks.GRAVEL);
 	public static final ColoredBlockMeta SPONGE_META = new PTMColoredBlockMetaBase("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0, Blocks.SPONGE,  0);
 	public static final ColoredBlockMeta WET_SPONGE_META = new PTMColoredBlockMetaBase("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0, Blocks.SPONGE,  1);
 	public static final ColoredBlockMeta LAPIS_LAZULI_BLOCK_META = new PTMColoredBlockMetaBase("lapis_lazuli_block", Material.IRON, SoundType.METAL, 3.0F, 15.0F, "pickaxe", 2, Blocks.LAPIS_BLOCK);
@@ -50,7 +52,7 @@ public class PTMBlocks {
 	public static final ColoredBlockMeta SNOW_BLOCK_META = new PTMColoredBlockMetaBase("snow_block", Material.SNOW, SoundType.SNOW, 0.2F, 1.0F, "shovel", 1, Blocks.SNOW);
 	public static final ColoredBlockMeta CLAY_BLOCK_META = new PTMColoredBlockMetaBase("clay_block", Material.CLAY, SoundType.GROUND, 2.0F, 3.0F, "shovel", 0, Blocks.CLAY);
 	public static final ColoredBlockMeta NETHERRACK_META = new PTMColoredBlockMetaBase("netherrack", Material.ROCK, SoundType.STONE, 0.4F, 2.0F, "pickaxe", 1, Blocks.NETHERRACK);
-	public static final ColoredBlockMeta SOUL_SAND_META = new PTMColoredBlockMetaBase("soul_sand", Material.ROCK, SoundType.STONE, 0.5F, 2.5F, "shovel", 0, Blocks.SOUL_SAND);
+	public static final ColoredBlockMeta SOUL_SAND_META = new PTMColoredBlockMetaSoulSand("soul_sand", Material.ROCK, SoundType.STONE, 0.5F, 2.5F, "shovel", 0, Blocks.SOUL_SAND);
 	public static final ColoredBlockMeta GLOWSTONE_META = new PTMColoredBlockMetaBase("glowstone", Material.GLASS, SoundType.GLASS, 0.3F, 1.5F, "pickaxe", 0, Blocks.GLOWSTONE);
 	public static final ColoredBlockMeta STONE_BRICK_META = new PTMColoredBlockMetaBase("stone_brick", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONEBRICK,  0);
 	public static final ColoredBlockMeta CRACKED_STONE_BRICK_META = new PTMColoredBlockMetaBase("cracked_stone_brick", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONEBRICK,  2);
@@ -72,7 +74,7 @@ public class PTMBlocks {
 	public static final ColoredBlockMeta NETHER_WART_BLOCK_META = new PTMColoredBlockMetaBase("nether_wart_block", Material.GLASS, SoundType.GLASS, 1.0F, 5.0F, "null", 0, Blocks.NETHER_WART_BLOCK);
 	public static final ColoredBlockMeta SPRUCE_LEAVES_META = new PTMColoredBlockMetaBase("spruce_leaves", Material.LEAVES, SoundType.PLANT, 0.2F, 1.0F, "shears", 0, Blocks.LEAVES,  1);
 	public static final ColoredBlockMeta JUNGLE_LEAVES_META = new PTMColoredBlockMetaBase("jungle_leaves", Material.LEAVES, SoundType.PLANT, 0.2F, 1.0F, "shears", 0, Blocks.LEAVES,  3);
-	public static final ColoredBlockMeta SLIME_BLOCK_META = new PTMColoredBlockMetaBase("slime_block", Material.SPONGE, SoundType.SLIME, 0.0F, 0.0F, "null", 0, Blocks.SLIME_BLOCK);
+	public static final ColoredBlockMetaSlime SLIME_BLOCK_META = new PTMColoredBlockMetaSlime("slime_block", Material.SPONGE, SoundType.SLIME, 0.0F, 0.0F, "null", 0, Blocks.SLIME_BLOCK);
 
 
 
