@@ -27,7 +27,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
         name = PTMReference.NAME,
         version = PTMReference.VERSION,
         updateJSON = "https://gist.githubusercontent.com/arthurbambou/2c316e790e623363385bd26a59ab8847/raw/versions.json",
-        dependencies = "required:forge@[14.23.4.2705,)"
+        dependencies = "required:forge@[13.20.1.2386,)"
 )
 public class PTMMain {
 	
