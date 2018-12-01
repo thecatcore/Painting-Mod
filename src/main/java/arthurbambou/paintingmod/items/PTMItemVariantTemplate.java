@@ -37,16 +37,13 @@ public class PTMItemVariantTemplate extends Item {
      * different names based on their damage or NBT.
      */
 
-    /**
-     * returns a list of items with the same ID, but different meta (eg: dye returns 16 items)
-     */
-    public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> items)
-    {
+    @Override
+    public void getSubItems(Item itemIn, CreativeTabs tab, NonNullList<ItemStack> subItems) {
         if (this.getCreativeTab() == tab)
         {
             for (int i = 0; i < 16; ++i)
             {
-                items.add(new ItemStack(this, 1, i));
+                subItems.add(new ItemStack(this, 1, i));
             }
         }
     }

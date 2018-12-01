@@ -10,6 +10,7 @@ import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 
@@ -38,11 +39,11 @@ public class ColoredBlockMetaSlime extends BlockSlime {
         return ((EnumPaintColor)state.getValue(COLOR)).getDyeDamage();
     }
 
-    public void getSubBlocks(CreativeTabs itemIn, NonNullList<ItemStack> items)
-    {
+    @Override
+    public void getSubBlocks(Item itemIn, CreativeTabs tab, NonNullList<ItemStack> list) {
         for (EnumPaintColor enumdyecolor : EnumPaintColor.values())
         {
-            items.add(new ItemStack(this, 1, enumdyecolor.getDyeDamage()));
+            list.add(new ItemStack(this, 1, enumdyecolor.getDyeDamage()));
         }
     }
 

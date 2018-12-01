@@ -66,8 +66,8 @@ public class PTMColoredBlockMetaSoulSand extends ColoredBlockMeta implements PTM
         return SOUL_SAND_AABB;
     }
 
-    public void onEntityCollision(World worldIn, BlockPos pos, IBlockState state, Entity entityIn)
-    {
+    @Override
+    public void onEntityCollidedWithBlock(World worldIn, BlockPos pos, IBlockState state, Entity entityIn) {
         entityIn.motionX *= 0.4D;
         entityIn.motionZ *= 0.4D;
     }
