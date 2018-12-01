@@ -34,7 +34,7 @@ public class PTMMain {
 	
 	public static final CreativeTabs PAINTING_MOD_ITEMS = new CreativeTabs(PTMReference.MOD_ID + "." + "paintingmod_tab_items") {
         @Override
-        public ItemStack createIcon() {
+        public ItemStack getTabIconItem() {
             if (    PTMReference.getMinecraftVersion() == "[1.13]"
                     ||
                     PTMReference.getMinecraftVersion() == "[1.13.1]"
@@ -49,7 +49,7 @@ public class PTMMain {
 
     public static final CreativeTabs PAINTING_MOD_BLOCKS = new CreativeTabs(PTMReference.MOD_ID + "." + "paintingmod_tab_blocks") {
         @Override
-        public ItemStack createIcon() {
+        public ItemStack getTabIconItem() {
             if (    PTMReference.getMinecraftVersion() == "[1.13]"
                     ||
                     PTMReference.getMinecraftVersion() == "[1.13.1]"

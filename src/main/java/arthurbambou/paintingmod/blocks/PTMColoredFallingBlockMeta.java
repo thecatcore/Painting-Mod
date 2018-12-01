@@ -20,7 +20,7 @@ public class PTMColoredFallingBlockMeta extends ColoredFallingBlockMeta implemen
     public PTMColoredFallingBlockMeta(String name, Material materialIn, SoundType sound, float hardness, float resistance, String harvestTool, int harvestLevel, Block replace) {
         super(materialIn, replace);
         setRegistryName(name);
-        setTranslationKey(name);
+        setUnlocalizedName(name);
         setSoundType(sound);
         setHardness(hardness);
         setResistance(resistance);
@@ -37,7 +37,7 @@ public class PTMColoredFallingBlockMeta extends ColoredFallingBlockMeta implemen
     public PTMColoredFallingBlockMeta(String name, Material materialIn, SoundType sound, float hardness, float resistance, String harvestTool, int harvestLevel, Block replace, int replacemeta) {
         super(materialIn, replace, replacemeta);
         setRegistryName(name);
-        setTranslationKey(name);
+        setUnlocalizedName(name);
         setSoundType(sound);
         setHardness(hardness);
         setResistance(resistance);

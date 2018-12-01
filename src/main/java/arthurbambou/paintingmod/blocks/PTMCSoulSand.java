@@ -27,7 +27,7 @@ public class PTMCSoulSand extends Block implements PTMIHasModel{
 			String harvesttool, int harvestlevel) {
 		super(material);
 		setCreativeTab(PTMMain.PAINTING_MOD_BLOCKS);
-		setTranslationKey(PTMReference.MOD_ID + "." + string);
+		setUnlocalizedName(PTMReference.MOD_ID + "." + string);
 	    setRegistryName(string);
 		setSoundType(soundtype);
 		setHardness(hardness);

@@ -21,7 +21,7 @@ import net.minecraft.world.World;
 
 public class PTMPaintbrushVariant extends PTMItemVariantTemplate2 implements PTMIHasModel, PTMIMetaName {
     public PTMPaintbrushVariant(String name) {
-        setTranslationKey(name);
+        setUnlocalizedName(name);
         setRegistryName(name);
         setMaxStackSize(1);
         PTMItems.ITEMS_META.add(this);

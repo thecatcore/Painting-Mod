@@ -11,7 +11,7 @@ public class PTMToolPickaxe extends ItemPickaxe implements PTMIHasModel {
 	public PTMToolPickaxe(String name, ToolMaterial material)
 	{
 		super(material);
-		setTranslationKey(PTMReference.MOD_ID + "." + name);
+		setUnlocalizedName(PTMReference.MOD_ID + "." + name);
 		setRegistryName(name);
 		setCreativeTab(PTMMain.PAINTING_MOD_ITEMS);
 		

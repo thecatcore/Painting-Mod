@@ -18,7 +18,7 @@ public class PTMBlockBase extends Block implements PTMIHasModel
 	{
 		super(material);
 		setCreativeTab(tab);
-		setTranslationKey(PTMReference.MOD_ID + "." + name);
+		setUnlocalizedName(PTMReference.MOD_ID + "." + name);
 	    setRegistryName(name);
 		PTMBlocks.BLOCKS_ID.add(this);
 		PTMItems.ITEMS_ID.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

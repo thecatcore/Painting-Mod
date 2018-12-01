@@ -11,7 +11,7 @@ public class PTMItemBase extends Item implements PTMIHasModel{
 	
 	public PTMItemBase(String name, CreativeTabs tab)
 	{
-		setTranslationKey(PTMReference.MOD_ID + "." + name);
+		setUnlocalizedName(PTMReference.MOD_ID + "." + name);
 		setRegistryName(name);
 		setCreativeTab(tab);
 		

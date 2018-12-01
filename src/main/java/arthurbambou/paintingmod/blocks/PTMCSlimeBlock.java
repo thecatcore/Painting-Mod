@@ -25,7 +25,7 @@ public class PTMCSlimeBlock extends BlockSlime implements PTMIHasModel {
     public PTMCSlimeBlock(String string, Material material, SoundType soundtype, float hardness, float resistance,
                           String harvesttool, int harvestlevel) {
         setCreativeTab(PTMMain.PAINTING_MOD_BLOCKS);
-        setTranslationKey(PTMReference.MOD_ID + "." + string);
+        setUnlocalizedName(PTMReference.MOD_ID + "." + string);
         setRegistryName(string);
         setSoundType(soundtype);
         setHardness(hardness);

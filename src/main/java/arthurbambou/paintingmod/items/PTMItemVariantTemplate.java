@@ -42,7 +42,7 @@ public class PTMItemVariantTemplate extends Item {
      */
     public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> items)
     {
-        if (this.isInCreativeTab(tab))
+        if (this.getCreativeTab() == tab)
         {
             for (int i = 0; i < 16; ++i)
             {
