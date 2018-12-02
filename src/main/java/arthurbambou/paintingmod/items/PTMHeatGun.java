@@ -9,6 +9,7 @@ import arthurbambou.paintingmod.init.PTMItems;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
@@ -30,13 +31,13 @@ public class PTMHeatGun extends PTMItemBase {
 			heatgun(playerIn, worldIn, pos, coloredblock.replace, coloredblock);
 		}
 		for (ColoredBlockMeta coloredBlockMeta : AddPaintbrush.getSimplecoloredblockmeta()) {
-		    heatgunmeta(player,worldIn,pos,coloredBlockMeta);
+		    heatgunmeta(playerIn,worldIn,pos,coloredBlockMeta);
         }
         for (ColoredFallingBlockMeta blockMeta : AddPaintbrush.getSIMPLECOLOREDFALLINGBLOCKMETA()) {
-        	heatgunmeta(player,worldIn,pos,blockMeta);
+        	heatgunmeta(playerIn,worldIn,pos,blockMeta);
 		}
 		for (ColoredBlockMetaSlime blockMetaSlime : AddPaintbrush.getColoredBlockMetaSlimes()) {
-			heatgunmeta(player,worldIn,pos,blockMetaSlime);
+			heatgunmeta(playerIn,worldIn,pos,blockMetaSlime);
 		}
 		return EnumActionResult.SUCCESS;
 	}

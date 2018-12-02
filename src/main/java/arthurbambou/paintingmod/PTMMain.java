@@ -4,7 +4,8 @@ import arthurbambou.paintingmod.util.handlers.PTMRecipeHandler;
 import arthurbambou.paintingmod.api.AddPaintbrush;
 import arthurbambou.paintingmod.init.PTMItems;
 import arthurbambou.paintingmod.util.handlers.PTMRegistryHandler;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -33,30 +34,32 @@ public class PTMMain {
 	
 	public static final CreativeTabs PAINTING_MOD_ITEMS = new CreativeTabs(PTMReference.MOD_ID + "." + "paintingmod_tab_items") {
         @Override
-        public ItemStack getTabIconItem() {
+        public Item getTabIconItem() {
             if (    PTMReference.getMinecraftVersion() == "[1.13]"
                     ||
                     PTMReference.getMinecraftVersion() == "[1.13.1]"
                     ||
                     PTMReference.getMinecraftVersion() == "[1.13.2]") {
-                return new ItemStack(PTMItems.NORMAL_PAINTBRUSH);
+                return PTMItems.NORMAL_PAINTBRUSH;
             } else {
-                return new ItemStack(PTMItems.PAINTBRUSHES);
+                return PTMItems.PAINTBRUSHES;
             }
         }
     };
 
     public static final CreativeTabs PAINTING_MOD_BLOCKS = new CreativeTabs(PTMReference.MOD_ID + "." + "paintingmod_tab_blocks") {
-        @Override
-        public ItemStack getTabIconItem() {
+
+
+		@Override
+        public Item getTabIconItem() {
             if (    PTMReference.getMinecraftVersion() == "[1.13]"
                     ||
                     PTMReference.getMinecraftVersion() == "[1.13.1]"
                     ||
                     PTMReference.getMinecraftVersion() == "[1.13.2]") {
-                return new ItemStack(PTMBlocks.STONE.blue);
+                return new ItemBlock(PTMBlocks.STONE.blue);
             } else {
-                return new ItemStack(PTMBlocks.STONE_META, 1, 4);
+                return new ItemBlock(PTMBlocks.SOGGY_CLAY);
             }
         }
     };

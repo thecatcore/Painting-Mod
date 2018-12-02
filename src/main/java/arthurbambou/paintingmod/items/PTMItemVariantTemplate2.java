@@ -6,7 +6,8 @@ import arthurbambou.paintingmod.util.PTMReference;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.NonNullList;
+
+import java.util.List;
 
 public class PTMItemVariantTemplate2 extends Item {
     public static final int[] DYE_COLORS = new int[] {1973019, 11743532, 3887386, 5320730, 2437522, 8073150, 2651799, 11250603, 4408131, 14188952, 4312372, 14602026, 6719955, 12801229, 15435844, 15790320};
@@ -30,7 +31,7 @@ public class PTMItemVariantTemplate2 extends Item {
      * returns a list of items with the same ID, but different meta (eg: dye returns 16 items)
      */
     @Override
-    public void getSubItems(Item itemIn, CreativeTabs tab, NonNullList<ItemStack> subItems) {
+    public void getSubItems(Item itemIn, CreativeTabs tab, List<ItemStack> subItems) {
         if (this.getCreativeTab() == tab)
         {
             for (int i = 0; i < 16; ++i)

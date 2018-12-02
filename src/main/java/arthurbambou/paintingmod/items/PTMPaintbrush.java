@@ -30,7 +30,7 @@ public class PTMPaintbrush extends PTMItemBase {
 
             for (ColoredBlock coloredblock : AddPaintbrush.getSIMPLECOLOREDBLOCKS()) {
                 //PTMMain.logger.info("Tested Block : " + coloredblock.name + " /origin : " + coloredblock.replace.getRegistryName() + " /pointé : " + worldIn.getBlockState(pos).getBlock().getRegistryName());
-                newbloctopaint(player, worldIn, pos, coloredblock.replace, coloredblock);
+                newbloctopaint(playerIn, worldIn, pos, coloredblock.replace, coloredblock);
             }
 
             for (ColoredBlock coloredBlock : AddPaintbrush.getCOMPLEXCOLOREDBLOCKS()) {

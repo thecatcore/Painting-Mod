@@ -40,17 +40,17 @@ public class PTMPaintbrushVariant extends PTMItemVariantTemplate2 implements PTM
     }
 
     @Override
-    public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+    public EnumActionResult onItemUse(ItemStack stack, EntityPlayer playerIn, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
         for (ColoredBlockMeta block : AddPaintbrush.getSimplecoloredblockmeta()) {
-            newbloctopaintmeta(player, worldIn, pos, block);
+            newbloctopaintmeta(playerIn, worldIn, pos, block);
         }
         for (ColoredBlockMetaSlime block : AddPaintbrush.getColoredBlockMetaSlimes()) {
-            newbloctopaintmeta(player, worldIn, pos, block);
+            newbloctopaintmeta(playerIn, worldIn, pos, block);
         }
         for (ColoredFallingBlockMeta block : AddPaintbrush.getSIMPLECOLOREDFALLINGBLOCKMETA()) {
-            newbloctopaintmeta(player, worldIn, pos, block);
+            newbloctopaintmeta(playerIn, worldIn, pos, block);
         }
-        return super.onItemUse(player, worldIn, pos, hand, facing, hitX, hitY, hitZ);
+        return EnumActionResult.SUCCESS;
     }
 
     private void newbloctopaintmeta(EntityPlayer player, World worldIn, BlockPos pos, ColoredBlockMeta block) {
@@ -61,7 +61,7 @@ public class PTMPaintbrushVariant extends PTMItemVariantTemplate2 implements PTM
                 for (int i = 0; i < 16; i++) {
                     if (player.getHeldItemMainhand().getMetadata() == i + 1) {
                         worldIn.setBlockState(pos, block.getStateFromMeta(i));
-                        player.getHeldItemMainhand().shrink(1);
+                        player.getHeldItemMainhand().splitStack(1);
                         player.inventory.addItemStackToInventory(new ItemStack(PTMItems.PAINTBRUSHES, 1, 0));
                     }
                 }
@@ -70,7 +70,7 @@ public class PTMPaintbrushVariant extends PTMItemVariantTemplate2 implements PTM
                 for (int i = 0; i < 16; i++) {
                     if (player.getHeldItemMainhand().getMetadata() == i + 1) {
                         worldIn.setBlockState(pos, block.getStateFromMeta(i));
-                        player.getHeldItemMainhand().shrink(1);
+                        player.getHeldItemMainhand().splitStack(1);
                         player.inventory.addItemStackToInventory(new ItemStack(PTMItems.PAINTBRUSHES, 1, 0));
                     }
                 }
@@ -85,7 +85,7 @@ public class PTMPaintbrushVariant extends PTMItemVariantTemplate2 implements PTM
                 for (int i = 0; i < 16; i++) {
                     if (player.getHeldItemMainhand().getMetadata() == i + 1) {
                         worldIn.setBlockState(pos, block.getStateFromMeta(i));
-                        player.getHeldItemMainhand().shrink(1);
+                        player.getHeldItemMainhand().splitStack(1);
                         player.inventory.addItemStackToInventory(new ItemStack(PTMItems.PAINTBRUSHES, 1, 0));
                     }
                 }
@@ -94,7 +94,7 @@ public class PTMPaintbrushVariant extends PTMItemVariantTemplate2 implements PTM
                 for (int i = 0; i < 16; i++) {
                     if (player.getHeldItemMainhand().getMetadata() == i + 1) {
                         worldIn.setBlockState(pos, block.getStateFromMeta(i));
-                        player.getHeldItemMainhand().shrink(1);
+                        player.getHeldItemMainhand().splitStack(1);
                         player.inventory.addItemStackToInventory(new ItemStack(PTMItems.PAINTBRUSHES, 1, 0));
                     }
                 }
@@ -109,7 +109,7 @@ public class PTMPaintbrushVariant extends PTMItemVariantTemplate2 implements PTM
                 for (int i = 0; i < 16; i++) {
                     if (player.getHeldItemMainhand().getMetadata() == i + 1) {
                         worldIn.setBlockState(pos, block.getStateFromMeta(i));
-                        player.getHeldItemMainhand().shrink(1);
+                        player.getHeldItemMainhand().splitStack(1);
                         player.inventory.addItemStackToInventory(new ItemStack(PTMItems.PAINTBRUSHES, 1, 0));
                     }
                 }
@@ -118,7 +118,7 @@ public class PTMPaintbrushVariant extends PTMItemVariantTemplate2 implements PTM
                 for (int i = 0; i < 16; i++) {
                     if (player.getHeldItemMainhand().getMetadata() == i + 1) {
                         worldIn.setBlockState(pos, block.getStateFromMeta(i));
-                        player.getHeldItemMainhand().shrink(1);
+                        player.getHeldItemMainhand().splitStack(1);
                         player.inventory.addItemStackToInventory(new ItemStack(PTMItems.PAINTBRUSHES, 1, 0));
                     }
                 }
