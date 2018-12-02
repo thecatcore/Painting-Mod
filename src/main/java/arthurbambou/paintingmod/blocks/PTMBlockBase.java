@@ -4,6 +4,7 @@ import arthurbambou.paintingmod.PTMMain;
 import arthurbambou.paintingmod.init.PTMBlocks;
 import arthurbambou.paintingmod.init.PTMItems;
 import arthurbambou.paintingmod.util.PTMIHasModel;
+import arthurbambou.paintingmod.util.PTMReference;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -17,10 +18,12 @@ public class PTMBlockBase extends Block implements PTMIHasModel
 	{
 		super(material);
 		setCreativeTab(tab);
-		setUnlocalizedName(name);
+		setUnlocalizedName(PTMReference.MOD_ID + "." + name);
 	    setRegistryName(name);
-		PTMBlocks.BLOCKS.add(this);
-		PTMItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+		PTMBlocks.BLOCKS_ID.add(this);
+		PTMItems.ITEMS_ID.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+		PTMBlocks.BLOCKS_META.add(this);
+		PTMItems.ITEMS_META.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 
 	@Override

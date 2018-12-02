@@ -5,6 +5,9 @@ import java.util.List;
 
 import arthurbambou.paintingmod.PTMMain;
 import arthurbambou.paintingmod.api.ColoredBlock;
+import arthurbambou.paintingmod.api.ColoredBlockMeta;
+import arthurbambou.paintingmod.api.ColoredFallingBlockMeta;
+import arthurbambou.paintingmod.blocks.*;
 import arthurbambou.paintingmod.blocks.PTMSoggyClay;
 import arthurbambou.paintingmod.coloredblocks.*;
 import net.minecraft.block.Block;
@@ -14,11 +17,67 @@ import net.minecraft.init.Blocks;
 
 public class PTMBlocks {
 	
-	public static final List<Block> BLOCKS = new ArrayList<Block>();
+	public static final List<Block> BLOCKS_ID = new ArrayList<Block>();
 	public static final List<ColoredBlock> COLORED_BLOCKS = new ArrayList<ColoredBlock>();
+	public static final List<Block> BLOCKS_META = new ArrayList<Block>();
+	public static final List<ColoredBlockMeta> COLORED_BLOCKS_META = new ArrayList<ColoredBlockMeta>();
+	public static final List<ColoredFallingBlockMeta> COLORED_FALLING_BLOCK_METAS = new ArrayList<ColoredFallingBlockMeta>();
 	
-	public static final Block SOGGY_CLAY = new PTMSoggyClay("soggy_clay", Material.IRON, PTMMain.PAINTING_MOD);
-	
+	public static final Block SOGGY_CLAY = new PTMSoggyClay("soggy_clay", Material.IRON, PTMMain.PAINTING_MOD_BLOCKS);
+
+	public static final ColoredBlockMeta STONE_META = new PTMColoredBlockMetaBase("stone", Material.ROCK,SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONE, 0);
+	public static final ColoredBlockMeta GRANITE_META = new PTMColoredBlockMetaBase("granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1,Blocks.STONE,  1);
+	public static final ColoredBlockMeta POLISHED_GRANITE_META = new PTMColoredBlockMetaBase("polished_granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONE,  2);
+	public static final ColoredBlockMeta DIORITE_META = new PTMColoredBlockMetaBase("diorite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONE, 3);
+	public static final ColoredBlockMeta POLISHED_DIORITE_META = new PTMColoredBlockMetaBase("polished_diorite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONE,  4);
+	public static final ColoredBlockMeta ANDESITE_META = new PTMColoredBlockMetaBase("andesite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONE,  5);
+	public static final ColoredBlockMeta POLISHED_ANDESITE_META = new PTMColoredBlockMetaBase("polished_andesite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONE,  6);
+	public static final ColoredBlockMeta DIRT_META = new PTMColoredBlockMetaBase("dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0, Blocks.DIRT,  0);
+	public static final ColoredBlockMeta COARSE_DIRT_META = new PTMColoredBlockMetaBase("coarse_dirt", Material.GROUND, SoundType.GROUND, 0.5F, 2.5F, "shovel", 0, Blocks.DIRT,  1);
+	public static final ColoredBlockMeta COBBLESTONE_META = new PTMColoredBlockMetaBase("cobblestone", Material.ROCK, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1, Blocks.COBBLESTONE);
+	public static final ColoredBlockMeta PLANK_META = new PTMColoredBlockMetaBase("plank", Material.WOOD, SoundType.WOOD, 2.0F, 15.0F, "axe", 0, Blocks.PLANKS);
+	public static final ColoredFallingBlockMeta SAND_META = new PTMColoredFallingBlockMeta("sand", Material.SAND, SoundType.SAND, 0.5F, 2.5F, "shovel", 0, Blocks.SAND);
+	public static final ColoredFallingBlockMeta GRAVEL_META = new PTMColoredFallingBlockMeta("gravel", Material.GROUND, SoundType.GROUND, 0.6F, 3.0F, "shovel", 0, Blocks.GRAVEL);
+	public static final ColoredBlockMeta SPONGE_META = new PTMColoredBlockMetaBase("sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0, Blocks.SPONGE,  0);
+	public static final ColoredBlockMeta WET_SPONGE_META = new PTMColoredBlockMetaBase("wet_sponge", Material.SPONGE, SoundType.SLIME, 0.6F, 3.0F, "null", 0, Blocks.SPONGE,  1);
+	public static final ColoredBlockMeta LAPIS_LAZULI_BLOCK_META = new PTMColoredBlockMetaBase("lapis_lazuli_block", Material.IRON, SoundType.METAL, 3.0F, 15.0F, "pickaxe", 2, Blocks.LAPIS_BLOCK);
+	// public static final ColoredBlock SANDSTONE_META = new PTMColoredBlockMetaBase("sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1, Blocks.SANDSTONE, 0);
+	public static final ColoredBlockMeta GOLD_BLOCK_META = new PTMColoredBlockMetaBase("gold_block", Material.IRON, SoundType.METAL, 3.0F, 30.0F, "pickaxe", 3, Blocks.GOLD_BLOCK);
+	public static final ColoredBlockMeta IRON_BLOCK_META = new PTMColoredBlockMetaBase("iron_block", Material.IRON, SoundType.METAL, 5.0F, 30.0F, "pickaxe", 2, Blocks.IRON_BLOCK);
+	public static final ColoredBlockMeta BRICK_META = new PTMColoredBlockMetaBase("brick", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1, Blocks.BRICK_BLOCK);
+	public static final ColoredBlockMeta MOSS_STONE_META = new PTMColoredBlockMetaBase("moss_stone", Material.ROCK, SoundType.GROUND, 2.0F, 30.0F, "pickaxe", 1, Blocks.MOSSY_COBBLESTONE);
+	public static final ColoredBlockMeta OBSIDIAN_META = new PTMColoredBlockMetaBase("obsidian", Material.ROCK, SoundType.STONE, 50.0F, 6000.0F, "pickaxe", 3, Blocks.OBSIDIAN);
+	public static final ColoredBlockMeta DIAMOND_BLOCK_META = new PTMColoredBlockMetaBase("diamond_block", Material.IRON, SoundType.METAL, 5.0F, 30.0F, "pickaxe", 3, Blocks.DIAMOND_BLOCK);
+	public static final ColoredBlockMeta ICE_META = new PTMColoredBlockMetaBase("ice", Material.GLASS, SoundType.GROUND, 0.5F, 2.5F, "null", 0, Blocks.ICE);
+	public static final ColoredBlockMeta SNOW_BLOCK_META = new PTMColoredBlockMetaBase("snow_block", Material.SNOW, SoundType.SNOW, 0.2F, 1.0F, "shovel", 1, Blocks.SNOW);
+	public static final ColoredBlockMeta CLAY_BLOCK_META = new PTMColoredBlockMetaBase("clay_block", Material.CLAY, SoundType.GROUND, 2.0F, 3.0F, "shovel", 0, Blocks.CLAY);
+	public static final ColoredBlockMeta NETHERRACK_META = new PTMColoredBlockMetaBase("netherrack", Material.ROCK, SoundType.STONE, 0.4F, 2.0F, "pickaxe", 1, Blocks.NETHERRACK);
+	public static final ColoredBlockMeta SOUL_SAND_META = new PTMColoredBlockMetaSoulSand("soul_sand", Material.ROCK, SoundType.STONE, 0.5F, 2.5F, "shovel", 0, Blocks.SOUL_SAND);
+	public static final ColoredBlockMeta GLOWSTONE_META = new PTMColoredBlockMetaBase("glowstone", Material.GLASS, SoundType.GLASS, 0.3F, 1.5F, "pickaxe", 0, Blocks.GLOWSTONE);
+	public static final ColoredBlockMeta STONE_BRICK_META = new PTMColoredBlockMetaBase("stone_brick", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONEBRICK,  0);
+	public static final ColoredBlockMeta CRACKED_STONE_BRICK_META = new PTMColoredBlockMetaBase("cracked_stone_brick", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONEBRICK,  2);
+	public static final ColoredBlockMeta MOSSY_STONE_BRICK_META = new PTMColoredBlockMetaBase("mossy_stone_brick", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONEBRICK,  1);
+	public static final ColoredBlockMeta CHISELED_STONE_BRICK_META = new PTMColoredBlockMetaBase("chiseled_stone_brick", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONEBRICK,  3);
+	public static final ColoredBlockMeta NETHER_BRICK_META = new PTMColoredBlockMetaBase("nether_brick", Material.ROCK, SoundType.STONE, 2.0F, 30.0F, "pickaxe", 1, Blocks.NETHER_BRICK);
+	public static final ColoredBlockMeta END_STONE_META = new PTMColoredBlockMetaBase("end_stone", Material.ROCK, SoundType.STONE, 3.0F, 45.0F, "pickaxe", 1, Blocks.END_STONE);
+	public static final ColoredBlockMeta EMERALD_BLOCK_META = new PTMColoredBlockMetaBase("emerald_block", Material.ROCK, SoundType.STONE, 5.0F, 30.0F, "pickaxe", 3, Blocks.EMERALD_BLOCK);
+	//	public static final ColoredBlockMeta QUARTZ_BLOCK_META = new PTMColoredBlockMetaBase("quartz_block", Material.ROCK, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1, Blocks.QUARTZ_BLOCK, true, 0);
+	public static final ColoredBlockMeta PRISMARINE_META = new PTMColoredBlockMetaBase("prismarine", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.PRISMARINE,  0);
+	public static final ColoredBlockMeta PRISMARINE_BRICK_META = new PTMColoredBlockMetaBase("prismarine_brick", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.PRISMARINE, 1);
+	public static final ColoredBlockMeta DARK_PRISMARINE_META = new PTMColoredBlockMetaBase("dark_prismarine", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.PRISMARINE,  2);
+	public static final ColoredBlockMeta SEA_LANTERN_META = new PTMColoredBlockMetaBase("sea_lantern", Material.GLASS, SoundType.GLASS, 0.3F, 1.5F, "null", 0, Blocks.SEA_LANTERN);
+	public static final ColoredBlockMeta COAL_BLOCK_META = new PTMColoredBlockMetaBase("coal_block", Material.ROCK, SoundType.STONE, 5.0F, 30.0F, "pickaxe", 1, Blocks.COAL_BLOCK);
+	public static final ColoredBlockMeta PACKET_ICE_META = new PTMColoredBlockMetaBase("packet_ice", Material.GLASS, SoundType.GLASS, 0.5F, 2.5F, "pickaxe", 1, Blocks.FROSTED_ICE);
+	public static final ColoredBlockMeta PURPUR_BLOCK_META = new PTMColoredBlockMetaBase("purpur_block", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.PURPUR_BLOCK,  0);
+	public static final ColoredBlockMeta END_STONE_BRICK_META = new PTMColoredBlockMetaBase("end_stone_brick", Material.ROCK, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1, Blocks.END_BRICKS);
+	public static final ColoredBlockMeta MAGMA_BLOCK_META = new PTMColoredBlockMetaBase("magma_block", Material.ROCK, SoundType.STONE, 0.5F, 2.5F, "pickaxe", 1, Blocks.MAGMA);
+	public static final ColoredBlockMeta NETHER_WART_BLOCK_META = new PTMColoredBlockMetaBase("nether_wart_block", Material.GLASS, SoundType.GLASS, 1.0F, 5.0F, "null", 0, Blocks.NETHER_WART_BLOCK);
+	public static final ColoredBlockMeta SPRUCE_LEAVES_META = new PTMColoredBlockMetaBase("spruce_leaves", Material.LEAVES, SoundType.PLANT, 0.2F, 1.0F, "shears", 0, Blocks.LEAVES,  1);
+	public static final ColoredBlockMeta JUNGLE_LEAVES_META = new PTMColoredBlockMetaBase("jungle_leaves", Material.LEAVES, SoundType.PLANT, 0.2F, 1.0F, "shears", 0, Blocks.LEAVES,  3);
+	public static final ColoredBlockMetaSlime SLIME_BLOCK_META = new PTMColoredBlockMetaSlime("slime_block", Material.SPONGE, SoundType.SLIME, 0.0F, 0.0F, "null", 0, Blocks.SLIME_BLOCK);
+
+
+
 	public static final ColoredBlock STONE = new BaseMeta("stone", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONE, true, 0);
 	public static final ColoredBlock GRANITE = new BaseMeta("granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1,Blocks.STONE, true, 1);
 	public static final ColoredBlock POLISHED_GRANITE = new BaseMeta("polished_granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONE, true, 2);
@@ -69,7 +128,7 @@ public class PTMBlocks {
 	public static final ColoredBlock SPRUCE_LEAVES = new BaseMeta("spruce_leaves", Material.LEAVES, SoundType.PLANT, 0.2F, 1.0F, "shears", 0, Blocks.LEAVES, true, 1);
 	public static final ColoredBlock JUNGLE_LEAVES = new BaseMeta("jungle_leaves", Material.LEAVES, SoundType.PLANT, 0.2F, 1.0F, "shears", 0, Blocks.LEAVES, true, 3);
 	public static final ColoredBlock SLIME_BLOCK = new SlimeBlock("slime_block", Material.SPONGE, SoundType.SLIME, 0.0F, 0.0F, "null", 0, Blocks.SLIME_BLOCK, false);
-	
+
 //	//Chiseled Sandstone
 //	public static final Block BLACK_CHISELED_SANDSTONE= new PTMBlackBlock("chiseled_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);
 //	public static final Block RED_CHISELED_SANDSTONE= new PTMRedBlock("chiseled_sandstone", Material.GROUND, SoundType.STONE, 0.8F, 4.0F, "pickaxe", 1);

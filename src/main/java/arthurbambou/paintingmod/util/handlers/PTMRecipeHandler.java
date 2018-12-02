@@ -154,104 +154,104 @@ public class PTMRecipeHandler {
                 new ItemStack(Items.DYE, 1, 11)
         });
 
-        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.BLACK_PAINTBRUSH, 1), new Object[] {
+        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.PAINTBRUSHES, 1, 1), new Object[] {
                 new ItemStack(PTMItems.WATER_VIAL, 1, OreDictionary.WILDCARD_VALUE),
                 new ItemStack(PTMItems.BLACK_POT, 1, OreDictionary.WILDCARD_VALUE),
-                new ItemStack(PTMItems.NORMAL_PAINTBRUSH)
+                new ItemStack(PTMItems.PAINTBRUSHES, 1, 0)
         });
 
-        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.RED_PAINTBRUSH, 1), new Object[] {
+        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.PAINTBRUSHES, 1, 2), new Object[] {
                 new ItemStack(PTMItems.WATER_VIAL, 1, OreDictionary.WILDCARD_VALUE),
                 new ItemStack(PTMItems.RED_POT, 1, OreDictionary.WILDCARD_VALUE),
-                new ItemStack(PTMItems.NORMAL_PAINTBRUSH)
+                new ItemStack(PTMItems.PAINTBRUSHES, 1, 0)
         });
 
-        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.GREEN_PAINTBRUSH, 1), new Object[] {
+        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.PAINTBRUSHES, 1, 3), new Object[] {
                 new ItemStack(PTMItems.WATER_VIAL, 1, OreDictionary.WILDCARD_VALUE),
                 new ItemStack(PTMItems.GREEN_POT, 1, OreDictionary.WILDCARD_VALUE),
-                new ItemStack(PTMItems.NORMAL_PAINTBRUSH)
+                new ItemStack(PTMItems.PAINTBRUSHES, 1, 0)
         });
 
-        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.BROWN_PAINTBRUSH, 1), new Object[] {
+        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.PAINTBRUSHES, 1, 4), new Object[] {
                 new ItemStack(PTMItems.WATER_VIAL, 1, OreDictionary.WILDCARD_VALUE),
                 new ItemStack(PTMItems.BROWN_POT, 1, OreDictionary.WILDCARD_VALUE),
-                new ItemStack(PTMItems.NORMAL_PAINTBRUSH)
+                new ItemStack(PTMItems.PAINTBRUSHES, 1, 0)
         });
 
-        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.BLUE_PAINTBRUSH, 1), new Object[] {
+        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.PAINTBRUSHES, 1, 5), new Object[] {
                 new ItemStack(PTMItems.WATER_VIAL, 1, OreDictionary.WILDCARD_VALUE),
                 new ItemStack(PTMItems.BLUE_POT, 1, OreDictionary.WILDCARD_VALUE),
-                new ItemStack(PTMItems.NORMAL_PAINTBRUSH)
+                new ItemStack(PTMItems.PAINTBRUSHES, 1, 0)
         });
 
-        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.PURPLE_PAINTBRUSH, 1), new Object[] {
+        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.PAINTBRUSHES, 1, 6), new Object[] {
                 new ItemStack(PTMItems.WATER_VIAL, 1, OreDictionary.WILDCARD_VALUE),
                 new ItemStack(PTMItems.PURPLE_POT, 1, OreDictionary.WILDCARD_VALUE),
-                new ItemStack(PTMItems.NORMAL_PAINTBRUSH)
+                new ItemStack(PTMItems.PAINTBRUSHES, 1, 0)
         });
 
-        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.CYAN_PAINTBRUSH, 1), new Object[] {
+        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.PAINTBRUSHES, 1, 7), new Object[] {
                 new ItemStack(PTMItems.WATER_VIAL, 1, OreDictionary.WILDCARD_VALUE),
                 new ItemStack(PTMItems.CYAN_POT, 1, OreDictionary.WILDCARD_VALUE),
-                new ItemStack(PTMItems.NORMAL_PAINTBRUSH)
+                new ItemStack(PTMItems.PAINTBRUSHES, 1, 0)
         });
 
-        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.LIGHT_GRAY_PAINTBRUSH, 1), new Object[] {
+        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.PAINTBRUSHES, 1, 8), new Object[] {
                 new ItemStack(PTMItems.WATER_VIAL, 1, OreDictionary.WILDCARD_VALUE),
                 new ItemStack(PTMItems.LIGHT_GRAY_POT, 1, OreDictionary.WILDCARD_VALUE),
-                new ItemStack(PTMItems.NORMAL_PAINTBRUSH)
+                new ItemStack(PTMItems.PAINTBRUSHES, 1, 0)
         });
 
-        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.GRAY_PAINTBRUSH, 1), new Object[] {
+        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.PAINTBRUSHES, 1, 9), new Object[] {
                 new ItemStack(PTMItems.WATER_VIAL, 1, OreDictionary.WILDCARD_VALUE),
                 new ItemStack(PTMItems.GRAY_POT, 1, OreDictionary.WILDCARD_VALUE),
-                new ItemStack(PTMItems.NORMAL_PAINTBRUSH)
+                new ItemStack(PTMItems.PAINTBRUSHES, 1, 0)
         });
 
-        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.PINK_PAINTBRUSH, 1), new Object[] {
+        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.PAINTBRUSHES, 1, 10), new Object[] {
                 new ItemStack(PTMItems.WATER_VIAL, 1, OreDictionary.WILDCARD_VALUE),
                 new ItemStack(PTMItems.PINK_POT, 1, OreDictionary.WILDCARD_VALUE),
-                new ItemStack(PTMItems.NORMAL_PAINTBRUSH)
+                new ItemStack(PTMItems.PAINTBRUSHES, 1, 0)
         });
 
-        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.LIME_PAINTBRUSH, 1), new Object[] {
+        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.PAINTBRUSHES, 1, 11), new Object[] {
                 new ItemStack(PTMItems.WATER_VIAL, 1, OreDictionary.WILDCARD_VALUE),
                 new ItemStack(PTMItems.LIME_POT, 1, OreDictionary.WILDCARD_VALUE),
-                new ItemStack(PTMItems.NORMAL_PAINTBRUSH)
+                new ItemStack(PTMItems.PAINTBRUSHES, 1, 0)
         });
 
-        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.YELLOW_PAINTBRUSH, 1), new Object[] {
+        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.PAINTBRUSHES, 1, 12), new Object[] {
                 new ItemStack(PTMItems.WATER_VIAL, 1, OreDictionary.WILDCARD_VALUE),
                 new ItemStack(PTMItems.YELLOW_POT, 1, OreDictionary.WILDCARD_VALUE),
-                new ItemStack(PTMItems.NORMAL_PAINTBRUSH)
+                new ItemStack(PTMItems.PAINTBRUSHES, 1, 0)
         });
 
-        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.LIGHT_BLUE_PAINTBRUSH, 1), new Object[] {
+        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.PAINTBRUSHES, 1, 13), new Object[] {
                 new ItemStack(PTMItems.WATER_VIAL, 1, OreDictionary.WILDCARD_VALUE),
                 new ItemStack(PTMItems.LIGHT_BLUE_POT, 1, OreDictionary.WILDCARD_VALUE),
-                new ItemStack(PTMItems.NORMAL_PAINTBRUSH)
+                new ItemStack(PTMItems.PAINTBRUSHES, 1, 0)
         });
 
-        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.MAGENTA_PAINTBRUSH, 1), new Object[] {
+        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.PAINTBRUSHES, 1, 14), new Object[] {
                 new ItemStack(PTMItems.WATER_VIAL, 1, OreDictionary.WILDCARD_VALUE),
                 new ItemStack(PTMItems.MAGENTA_POT, 1, OreDictionary.WILDCARD_VALUE),
-                new ItemStack(PTMItems.NORMAL_PAINTBRUSH)
+                new ItemStack(PTMItems.PAINTBRUSHES, 1, 0)
         });
 
-        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.ORANGE_PAINTBRUSH, 1), new Object[] {
+        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.PAINTBRUSHES, 1, 15), new Object[] {
                 new ItemStack(PTMItems.WATER_VIAL, 1, OreDictionary.WILDCARD_VALUE),
                 new ItemStack(PTMItems.ORANGE_POT, 1, OreDictionary.WILDCARD_VALUE),
-                new ItemStack(PTMItems.NORMAL_PAINTBRUSH)
+                new ItemStack(PTMItems.PAINTBRUSHES, 1, 0)
         });
 
-        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.WHITE_PAINTBRUSH, 1), new Object[] {
+        GameRegistry.addShapelessRecipe(new ItemStack(PTMItems.PAINTBRUSHES, 1, 16), new Object[] {
                 new ItemStack(PTMItems.WATER_VIAL, 1, OreDictionary.WILDCARD_VALUE),
                 new ItemStack(PTMItems.WHITE_POT, 1, OreDictionary.WILDCARD_VALUE),
-                new ItemStack(PTMItems.NORMAL_PAINTBRUSH)
+                new ItemStack(PTMItems.PAINTBRUSHES, 1, 0)
         });
     }
 
-    private static void Shaped() {
+    public static void Shaped() {
         GameRegistry.addShapedRecipe(new ItemStack(PTMItems.HAMMER, 1),
                 "RRR",
                 "RWR",
@@ -267,7 +267,7 @@ public class PTMRecipeHandler {
                 'L', Items.LAVA_BUCKET,
                 'C', new ItemBlock(Blocks.COAL_BLOCK));
 
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PTMItems.NORMAL_PAINTBRUSH, 1), new Object[] {
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PTMItems.PAINTBRUSHES, 1, 0), new Object[] {
                 "SSS",
                 "PPP",
                 " T ",
