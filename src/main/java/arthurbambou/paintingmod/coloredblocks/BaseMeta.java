@@ -3,6 +3,7 @@ package arthurbambou.paintingmod.coloredblocks;
 import arthurbambou.paintingmod.api.AddPaintbrush;
 import arthurbambou.paintingmod.api.ColoredBlock;
 import arthurbambou.paintingmod.blocks.PTMColoredBlocks;
+import arthurbambou.paintingmod.init.PTMBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -13,7 +14,7 @@ public class BaseMeta extends ColoredBlock {
 			String harvesttool, int harvestlevel, Block replace, boolean metab, int meta) {
 		super(name, material, soundtype, hardness, resistance, harvesttool, harvestlevel, replace, metab, meta);
 		registerBlocks(name, material, soundtype, hardness, resistance, harvesttool, harvestlevel);
-		AddPaintbrush.registerSimpleBlock(this);
+		PTMBlocks.COLORED_BLOCKS.add(this);
 	}
 
 	public void registerBlocks (String name, Material material, SoundType soundtype, float hardness, float resistance, String harvesttool, int harvestlevel) {

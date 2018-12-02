@@ -1,5 +1,6 @@
 package arthurbambou.paintingmod.items;
 
+import arthurbambou.paintingmod.init.PTMItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 
@@ -10,6 +11,7 @@ public class PTMWaterVial extends PTMItemBase {
 		setMaxDamage(damage);
 		setMaxStackSize(stack);
 		setNoRepair();
+		PTMItems.ITEMS_META.add(this);
 	}
 	
 	@Override
