@@ -100,6 +100,7 @@ public class PTMMain {
 		} else {
 			Blocks.FIRE.setFireInfo(PTMBlocks.PLANK_META, 5, 20);
 		}
+		PTMRecipeHandler.init();
 	}
 	
 	@EventHandler
