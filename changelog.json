@@ -1,7 +1,7 @@
 {
     "githubApi": "https://api.github.com/repos/WIP-name/Painting-Mod",
-    "toRef": "refs/heads/pre-release",
-    "fromCommit": "1887474ac7a95336dc74a431fa53d942b3020441",
+    "toRef": "refs/heads/release/1.11.2",
+    "fromCommit": "8ab415c5023150ad80c86794afe075c44f8a1734",
     "gitHubIssuePattern": "#([0-9]*)",
     "fromRepo": ".",
     "ignoreCommitsIfMessageMatches": "^\\[maven-release-plugin\\].*|^\\[Gradle Release Plugin\\].*|^Merge.*",
