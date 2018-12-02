@@ -1,6 +1,5 @@
 package arthurbambou.paintingmod.items;
 
-import arthurbambou.paintingmod.PTMMain;
 import arthurbambou.paintingmod.api.AddPaintbrush;
 import arthurbambou.paintingmod.api.ColoredBlock;
 import arthurbambou.paintingmod.init.PTMItems;
@@ -27,20 +26,33 @@ public class PTMPaintbrush extends PTMItemBase {
 
 	@Override
 	public EnumActionResult onItemUse(ItemStack stack, EntityPlayer playerIn, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
-		for (ColoredBlock coloredblock: AddPaintbrush.getSIMPLECOLOREDBLOCKS()) {
-			//PTMMain.logger.info("Tested Block : " + coloredblock.name + " /origin : " + coloredblock.replace.getRegistryName() + " /pointé : " + worldIn.getBlockState(pos).getBlock().getRegistryName());
-			newbloctopaint(playerIn, worldIn, pos, coloredblock.replace, coloredblock);
-		}
 
-		for (ColoredBlock coloredBlock: AddPaintbrush.getCOMPLEXCOLOREDBLOCKS()) {
 
-		}
+            for (ColoredBlock coloredblock : AddPaintbrush.getSIMPLECOLOREDBLOCKS()) {
+                //PTMMain.logger.info("Tested Block : " + coloredblock.name + " /origin : " + coloredblock.replace.getRegistryName() + " /pointé : " + worldIn.getBlockState(pos).getBlock().getRegistryName());
+                newbloctopaint(player, worldIn, pos, coloredblock.replace, coloredblock);
+            }
+
+            for (ColoredBlock coloredBlock : AddPaintbrush.getCOMPLEXCOLOREDBLOCKS()) {
+
+            }
+
+
+
+
 //		newbloctopaint(player, worldIn, pos, Blocks.SANDSTONE, PTMBlocks.BLACK_CHISELED_SANDSTONE, PTMBlocks.RED_CHISELED_SANDSTONE, PTMBlocks.GREEN_CHISELED_SANDSTONE, PTMBlocks.BROWN_CHISELED_SANDSTONE, PTMBlocks.BLUE_CHISELED_SANDSTONE, PTMBlocks.PURPLE_CHISELED_SANDSTONE, PTMBlocks.CYAN_CHISELED_SANDSTONE, PTMBlocks.LIGHT_GRAY_CHISELED_SANDSTONE, PTMBlocks.GRAY_CHISELED_SANDSTONE, PTMBlocks.PINK_CHISELED_SANDSTONE, PTMBlocks.LIME_CHISELED_SANDSTONE, PTMBlocks.YELLOW_CHISELED_SANDSTONE, PTMBlocks.LIGHT_BLUE_CHISELED_SANDSTONE, PTMBlocks.MAGENTA_CHISELED_SANDSTONE, PTMBlocks.ORANGE_CHISELED_SANDSTONE, PTMBlocks.WHITE_CHISELED_SANDSTONE, 1);
 //		newbloctopaint(player, worldIn, pos, Blocks.SANDSTONE, PTMBlocks.BLACK_SMOOTH_SANDSTONE, PTMBlocks.RED_SMOOTH_SANDSTONE, PTMBlocks.GREEN_SMOOTH_SANDSTONE, PTMBlocks.BROWN_SMOOTH_SANDSTONE, PTMBlocks.BLUE_SMOOTH_SANDSTONE, PTMBlocks.PURPLE_SMOOTH_SANDSTONE, PTMBlocks.CYAN_SMOOTH_SANDSTONE, PTMBlocks.LIGHT_GRAY_SMOOTH_SANDSTONE, PTMBlocks.GRAY_SMOOTH_SANDSTONE, PTMBlocks.PINK_SMOOTH_SANDSTONE, PTMBlocks.LIME_SMOOTH_SANDSTONE, PTMBlocks.YELLOW_SMOOTH_SANDSTONE, PTMBlocks.LIGHT_BLUE_SMOOTH_SANDSTONE, PTMBlocks.MAGENTA_SMOOTH_SANDSTONE, PTMBlocks.ORANGE_SMOOTH_SANDSTONE, PTMBlocks.WHITE_SMOOTH_SANDSTONE, 2);
 		return super.onItemUse(stack, playerIn, worldIn, pos, hand, facing, hitX, hitY, hitZ);
 	}
-	
-	public void newbloctopaint(EntityPlayer player, World worldIn, BlockPos pos,
+
+//	private void transformmeta (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
+//	    if (player.getHeldItemMainhand().getItem() == PTMItems.BLACK_PAINTBRUSH) {
+//	        worldIn.setBlockState(pos, item.getStateFromMeta(0));
+//	        usedpaintbrush(player);
+//        }
+//    }
+
+	private void newbloctopaint(EntityPlayer player, World worldIn, BlockPos pos,
 			Block topaint, ColoredBlock coloredblock) {
 		if (player.getHeldItemMainhand().getItem() == PTMItems.NORMAL_PAINTBRUSH) {
 			
@@ -95,113 +107,113 @@ public class PTMPaintbrush extends PTMItemBase {
 			player.inventory.addItemStackToInventory(new ItemStack(PTMItems.NORMAL_PAINTBRUSH));
 		}
 	}
-	
-	public void black (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
+
+	private void black (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
 		if (player.getHeldItemMainhand().getItem() == PTMItems.BLACK_PAINTBRUSH) {
 			worldIn.setBlockState(pos, item.getDefaultState());
 			usedpaintbrush(player);
 		}
 	}
-	
-	public void red (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
+
+	private void red (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
 		if (player.getHeldItemMainhand().getItem() == PTMItems.RED_PAINTBRUSH) {
 			worldIn.setBlockState(pos, item.getDefaultState());
 			usedpaintbrush(player);
 		}
 	}
-	
-	public void green (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
+
+	private void green (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
 		if (player.getHeldItemMainhand().getItem() == PTMItems.GREEN_PAINTBRUSH) {
 			worldIn.setBlockState(pos, item.getDefaultState());
 			usedpaintbrush(player);
 		}
 	}
-	
-	public void brown (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
+
+	private void brown (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
 		if (player.getHeldItemMainhand().getItem() == PTMItems.BROWN_PAINTBRUSH) {
 			worldIn.setBlockState(pos, item.getDefaultState());
 			usedpaintbrush(player);
 		}
 	}
-	
-	public void blue (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
+
+	private void blue (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
 		if (player.getHeldItemMainhand().getItem() == PTMItems.BLUE_PAINTBRUSH) {
 			worldIn.setBlockState(pos, item.getDefaultState());
 			usedpaintbrush(player);
 		}
 	}
-	
-	public void purple (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
+
+	private void purple (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
 		if (player.getHeldItemMainhand().getItem() == PTMItems.PURPLE_PAINTBRUSH) {
 			worldIn.setBlockState(pos, item.getDefaultState());
 			usedpaintbrush(player);
 		}
 	}
-	
-	public void cyan (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
+
+	private void cyan (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
 		if (player.getHeldItemMainhand().getItem() == PTMItems.CYAN_PAINTBRUSH) {
 			worldIn.setBlockState(pos, item.getDefaultState());
 			usedpaintbrush(player);
 		}
 	}
-	
-	public void lightGray (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
+
+	private void lightGray (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
 		if (player.getHeldItemMainhand().getItem() == PTMItems.LIGHT_GRAY_PAINTBRUSH) {
 			worldIn.setBlockState(pos, item.getDefaultState());
 			usedpaintbrush(player);
 		}
 	}
-	
-	public void gray (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
+
+	private void gray (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
 		if (player.getHeldItemMainhand().getItem() == PTMItems.GRAY_PAINTBRUSH) {
 			worldIn.setBlockState(pos, item.getDefaultState());
 			usedpaintbrush(player);
 		}
 	}
-	
-	public void pink (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
+
+	private void pink (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
 		if (player.getHeldItemMainhand().getItem() == PTMItems.PINK_PAINTBRUSH) {
 			worldIn.setBlockState(pos, item.getDefaultState());
 			usedpaintbrush(player);
 		}
 	}
-	
-	public void lime (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
+
+	private void lime (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
 		if (player.getHeldItemMainhand().getItem() == PTMItems.LIME_PAINTBRUSH) {
 			worldIn.setBlockState(pos, item.getDefaultState());
 			usedpaintbrush(player);
 		}
 	}
-	
-	public void yellow (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
+
+	private void yellow (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
 		if (player.getHeldItemMainhand().getItem() == PTMItems.YELLOW_PAINTBRUSH) {
 			worldIn.setBlockState(pos, item.getDefaultState());
 			usedpaintbrush(player);
 		}
 	}
-	
-	public void lightBlue (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
+
+	private void lightBlue (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
 		if (player.getHeldItemMainhand().getItem() == PTMItems.LIGHT_BLUE_PAINTBRUSH) {
 			worldIn.setBlockState(pos, item.getDefaultState());
 			usedpaintbrush(player);
 		}
 	}
-	
-	public void magenta (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
+
+	private void magenta (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
 		if (player.getHeldItemMainhand().getItem() == PTMItems.MAGENTA_PAINTBRUSH) {
 			worldIn.setBlockState(pos, item.getDefaultState());
 			usedpaintbrush(player);
 		}
 	}
-	
-	public void orange (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
+
+	private void orange (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
 		if (player.getHeldItemMainhand().getItem() == PTMItems.ORANGE_PAINTBRUSH) {
 			worldIn.setBlockState(pos, item.getDefaultState());
 			usedpaintbrush(player);
 		}
 	}
-	
-	public void white (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
+
+	private void white (EntityPlayer player, World worldIn, BlockPos pos, Block item) {
 		if (player.getHeldItemMainhand().getItem() == PTMItems.WHITE_PAINTBRUSH) {
 			worldIn.setBlockState(pos, item.getDefaultState());
 			usedpaintbrush(player);
