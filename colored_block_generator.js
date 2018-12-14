@@ -69,8 +69,8 @@ blockmodel(i);
 console.log("");
 itemblockmodel(i);
 console.log("");
-test = test + "\ntile." + color[i] + "_" + blocks[a].id + ".name=" + Color[i] + " " + blocks[a].name;
-console.log("The line : " + "\ntile." + color[i] + "_" + blocks[a].id + ".name=" + Color[i] + " " + blocks[a].name + "\nhas been added to the localization file");
+test = test + "\ntile.paintingmod." + color[i] + "_" + blocks[a].id + ".name=" + Color[i] + " " + blocks[a].name;
+console.log("The line : " + "\ntile.paintingmod." + color[i] + "_" + blocks[a].id + ".name=" + Color[i] + " " + blocks[a].name + "\nhas been added to the localization file");
 console.log("");
 console.log("");
 }
@@ -125,7 +125,7 @@ function blockmodel (i) {
         parent: "block/cube_all",
         textures: {
             all: `paintingmod:blocks/${color[i]}_${blocks[a].id}`
-            // all: `paintingmod:blocks/${color[i]}_default_leaves`
+//             all: `paintingmod:blocks/${color[i]}_default_leaves`
         }
     }
     fs.writeFile(path, JSON.stringify(json), (err) => {
@@ -140,7 +140,7 @@ function itemblockmodel (i) {
     createStream.end();
     var json = {
         parent: `paintingmod:block/${color[i]}_${blocks[a].id}`
-        // parent: `paintingmod:blocks/${color[i]}_default_leaves`
+//         parent: `paintingmod:block/${color[i]}_default_leaves`
     }
     fs.writeFile(path, JSON.stringify(json), (err) => {
         if (err) throw err;
