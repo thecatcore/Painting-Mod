@@ -76,7 +76,7 @@ public class PTMBlocks {
 	public static final ColoredBlockMeta JUNGLE_LEAVES_META = new PTMColoredBlockMetaBase("jungle_leaves", Material.LEAVES, SoundType.PLANT, 0.2F, 1.0F, "shears", 0, Blocks.LEAVES,  3);
 	public static final ColoredBlockMetaSlime SLIME_BLOCK_META = new PTMColoredBlockMetaSlime("slime_block", Material.SPONGE, SoundType.SLIME, 0.0F, 0.0F, "null", 0, Blocks.SLIME_BLOCK);
 	public static final ColoredBlockMeta OAK_LEAVES_META = new PTMColoredBlockMetaBase("oak_leaves", Material.LEAVES, SoundType.PLANT, 0.2F, 1.0F, "shears", 0, Blocks.LEAVES,  0);
-	public static final ColoredBlockMeta BIRCH_LEAVES_META = new PTMColoredBlockMetaBase("birch_leaves", Material.LEAVES, SoundType.PLANT, 0.2F, 1.0F, "shears", 0, Blocks.LEAVES,  1);
+	public static final ColoredBlockMeta BIRCH_LEAVES_META = new PTMColoredBlockMetaBase("birch_leaves", Material.LEAVES, SoundType.PLANT, 0.2F, 1.0F, "shears", 0, Blocks.LEAVES,  2);
 	public static final ColoredBlockMeta ACACIA_LEAVES_META = new PTMColoredBlockMetaBase("acacia_leaves", Material.LEAVES, SoundType.PLANT, 0.2F, 1.0F, "shears", 0, Blocks.LEAVES2,  0);
 	public static final ColoredBlockMeta DARK_OAK_LEAVES_META = new PTMColoredBlockMetaBase("dark_oak_leaves", Material.LEAVES, SoundType.PLANT, 0.2F, 1.0F, "shears", 0, Blocks.LEAVES2,  1);
 

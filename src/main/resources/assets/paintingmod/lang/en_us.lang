@@ -986,75 +986,149 @@ tile.paintingmod.light_blue_slime_block.name=Light Blue Slime Block
 tile.paintingmod.magenta_slime_block.name=Magenta Slime Block
 tile.paintingmod.orange_slime_block.name=Orange Slime Block
 tile.paintingmod.white_slime_block.name=White Slime Block
+
  
-#Oak Leaves
-tile.black_oak_leaves.name=Black Oak Leaves
-tile.red_oak_leaves.name=Red Oak Leaves
-tile.green_oak_leaves.name=Green Oak Leaves
-tile.brown_oak_leaves.name=Brown Oak Leaves
-tile.blue_oak_leaves.name=Blue Oak Leaves
-tile.purple_oak_leaves.name=Purple Oak Leaves
-tile.cyan_oak_leaves.name=Cyan Oak Leaves
-tile.light_gray_oak_leaves.name=Light Gray Oak Leaves
-tile.gray_oak_leaves.name=Gray Oak Leaves
-tile.pink_oak_leaves.name=Pink Oak Leaves
-tile.lime_oak_leaves.name=Lime Oak Leaves
-tile.yellow_oak_leaves.name=Yellow Oak Leaves
-tile.light_blue_oak_leaves.name=Light Blue Oak Leaves
-tile.magenta_oak_leaves.name=Magenta Oak Leaves
-tile.orange_oak_leaves.name=Orange Oak Leaves
-tile.white_oak_leaves.name=White Oak Leaves
+##Oak Leaves
+tile.paintingmod.black_oak_leaves.name=Black Oak Leaves
+tile.paintingmod.red_oak_leaves.name=Red Oak Leaves
+tile.paintingmod.green_oak_leaves.name=Green Oak Leaves
+tile.paintingmod.brown_oak_leaves.name=Brown Oak Leaves
+tile.paintingmod.blue_oak_leaves.name=Blue Oak Leaves
+tile.paintingmod.purple_oak_leaves.name=Purple Oak Leaves
+tile.paintingmod.cyan_oak_leaves.name=Cyan Oak Leaves
+tile.paintingmod.light_gray_oak_leaves.name=Light Gray Oak Leaves
+tile.paintingmod.gray_oak_leaves.name=Gray Oak Leaves
+tile.paintingmod.pink_oak_leaves.name=Pink Oak Leaves
+tile.paintingmod.lime_oak_leaves.name=Lime Oak Leaves
+tile.paintingmod.yellow_oak_leaves.name=Yellow Oak Leaves
+tile.paintingmod.light_blue_oak_leaves.name=Light Blue Oak Leaves
+tile.paintingmod.magenta_oak_leaves.name=Magenta Oak Leaves
+tile.paintingmod.orange_oak_leaves.name=Orange Oak Leaves
+tile.paintingmod.white_oak_leaves.name=White Oak Leaves
  
-#Birch Leaves
-tile.black_birch_leaves.name=Black Birch Leaves
-tile.red_birch_leaves.name=Red Birch Leaves
-tile.green_birch_leaves.name=Green Birch Leaves
-tile.brown_birch_leaves.name=Brown Birch Leaves
-tile.blue_birch_leaves.name=Blue Birch Leaves
-tile.purple_birch_leaves.name=Purple Birch Leaves
-tile.cyan_birch_leaves.name=Cyan Birch Leaves
-tile.light_gray_birch_leaves.name=Light Gray Birch Leaves
-tile.gray_birch_leaves.name=Gray Birch Leaves
-tile.pink_birch_leaves.name=Pink Birch Leaves
-tile.lime_birch_leaves.name=Lime Birch Leaves
-tile.yellow_birch_leaves.name=Yellow Birch Leaves
-tile.light_blue_birch_leaves.name=Light Blue Birch Leaves
-tile.magenta_birch_leaves.name=Magenta Birch Leaves
-tile.orange_birch_leaves.name=Orange Birch Leaves
-tile.white_birch_leaves.name=White Birch Leaves
+##Birch Leaves
+tile.paintingmod.black_birch_leaves.name=Black Birch Leaves
+tile.paintingmod.red_birch_leaves.name=Red Birch Leaves
+tile.paintingmod.green_birch_leaves.name=Green Birch Leaves
+tile.paintingmod.brown_birch_leaves.name=Brown Birch Leaves
+tile.paintingmod.blue_birch_leaves.name=Blue Birch Leaves
+tile.paintingmod.purple_birch_leaves.name=Purple Birch Leaves
+tile.paintingmod.cyan_birch_leaves.name=Cyan Birch Leaves
+tile.paintingmod.light_gray_birch_leaves.name=Light Gray Birch Leaves
+tile.paintingmod.gray_birch_leaves.name=Gray Birch Leaves
+tile.paintingmod.pink_birch_leaves.name=Pink Birch Leaves
+tile.paintingmod.lime_birch_leaves.name=Lime Birch Leaves
+tile.paintingmod.yellow_birch_leaves.name=Yellow Birch Leaves
+tile.paintingmod.light_blue_birch_leaves.name=Light Blue Birch Leaves
+tile.paintingmod.magenta_birch_leaves.name=Magenta Birch Leaves
+tile.paintingmod.orange_birch_leaves.name=Orange Birch Leaves
+tile.paintingmod.white_birch_leaves.name=White Birch Leaves
  
-#Acacia Leaves
-tile.black_acacia_leaves.name=Black Acacia Leaves
-tile.red_acacia_leaves.name=Red Acacia Leaves
-tile.green_acacia_leaves.name=Green Acacia Leaves
-tile.brown_acacia_leaves.name=Brown Acacia Leaves
-tile.blue_acacia_leaves.name=Blue Acacia Leaves
-tile.purple_acacia_leaves.name=Purple Acacia Leaves
-tile.cyan_acacia_leaves.name=Cyan Acacia Leaves
-tile.light_gray_acacia_leaves.name=Light Gray Acacia Leaves
-tile.gray_acacia_leaves.name=Gray Acacia Leaves
-tile.pink_acacia_leaves.name=Pink Acacia Leaves
-tile.lime_acacia_leaves.name=Lime Acacia Leaves
-tile.yellow_acacia_leaves.name=Yellow Acacia Leaves
-tile.light_blue_acacia_leaves.name=Light Blue Acacia Leaves
-tile.magenta_acacia_leaves.name=Magenta Acacia Leaves
-tile.orange_acacia_leaves.name=Orange Acacia Leaves
-tile.white_acacia_leaves.name=White Acacia Leaves
+##Acacia Leaves
+tile.paintingmod.black_acacia_leaves.name=Black Acacia Leaves
+tile.paintingmod.red_acacia_leaves.name=Red Acacia Leaves
+tile.paintingmod.green_acacia_leaves.name=Green Acacia Leaves
+tile.paintingmod.brown_acacia_leaves.name=Brown Acacia Leaves
+tile.paintingmod.blue_acacia_leaves.name=Blue Acacia Leaves
+tile.paintingmod.purple_acacia_leaves.name=Purple Acacia Leaves
+tile.paintingmod.cyan_acacia_leaves.name=Cyan Acacia Leaves
+tile.paintingmod.light_gray_acacia_leaves.name=Light Gray Acacia Leaves
+tile.paintingmod.gray_acacia_leaves.name=Gray Acacia Leaves
+tile.paintingmod.pink_acacia_leaves.name=Pink Acacia Leaves
+tile.paintingmod.lime_acacia_leaves.name=Lime Acacia Leaves
+tile.paintingmod.yellow_acacia_leaves.name=Yellow Acacia Leaves
+tile.paintingmod.light_blue_acacia_leaves.name=Light Blue Acacia Leaves
+tile.paintingmod.magenta_acacia_leaves.name=Magenta Acacia Leaves
+tile.paintingmod.orange_acacia_leaves.name=Orange Acacia Leaves
+tile.paintingmod.white_acacia_leaves.name=White Acacia Leaves
  
-#Dark Oak Leaves
-tile.black_dark_oak_leaves.name=Black Dark Oak Leaves
-tile.red_dark_oak_leaves.name=Red Dark Oak Leaves
-tile.green_dark_oak_leaves.name=Green Dark Oak Leaves
-tile.brown_dark_oak_leaves.name=Brown Dark Oak Leaves
-tile.blue_dark_oak_leaves.name=Blue Dark Oak Leaves
-tile.purple_dark_oak_leaves.name=Purple Dark Oak Leaves
-tile.cyan_dark_oak_leaves.name=Cyan Dark Oak Leaves
-tile.light_gray_dark_oak_leaves.name=Light Gray Dark Oak Leaves
-tile.gray_dark_oak_leaves.name=Gray Dark Oak Leaves
-tile.pink_dark_oak_leaves.name=Pink Dark Oak Leaves
-tile.lime_dark_oak_leaves.name=Lime Dark Oak Leaves
-tile.yellow_dark_oak_leaves.name=Yellow Dark Oak Leaves
-tile.light_blue_dark_oak_leaves.name=Light Blue Dark Oak Leaves
-tile.magenta_dark_oak_leaves.name=Magenta Dark Oak Leaves
-tile.orange_dark_oak_leaves.name=Orange Dark Oak Leaves
-tile.white_dark_oak_leaves.name=White Dark Oak Leaves
+##Dark Oak Leaves
+tile.paintingmod.black_dark_oak_leaves.name=Black Dark Oak Leaves
+tile.paintingmod.red_dark_oak_leaves.name=Red Dark Oak Leaves
+tile.paintingmod.green_dark_oak_leaves.name=Green Dark Oak Leaves
+tile.paintingmod.brown_dark_oak_leaves.name=Brown Dark Oak Leaves
+tile.paintingmod.blue_dark_oak_leaves.name=Blue Dark Oak Leaves
+tile.paintingmod.purple_dark_oak_leaves.name=Purple Dark Oak Leaves
+tile.paintingmod.cyan_dark_oak_leaves.name=Cyan Dark Oak Leaves
+tile.paintingmod.light_gray_dark_oak_leaves.name=Light Gray Dark Oak Leaves
+tile.paintingmod.gray_dark_oak_leaves.name=Gray Dark Oak Leaves
+tile.paintingmod.pink_dark_oak_leaves.name=Pink Dark Oak Leaves
+tile.paintingmod.lime_dark_oak_leaves.name=Lime Dark Oak Leaves
+tile.paintingmod.yellow_dark_oak_leaves.name=Yellow Dark Oak Leaves
+tile.paintingmod.light_blue_dark_oak_leaves.name=Light Blue Dark Oak Leaves
+tile.paintingmod.magenta_dark_oak_leaves.name=Magenta Dark Oak Leaves
+tile.paintingmod.orange_dark_oak_leaves.name=Orange Dark Oak Leaves
+tile.paintingmod.white_dark_oak_leaves.name=White Dark Oak Leaves
+
+ 
+##Oak Leaves
+tile.paintingmod.black_oak_leaves.name=Black Oak Leaves
+tile.paintingmod.red_oak_leaves.name=Red Oak Leaves
+tile.paintingmod.green_oak_leaves.name=Green Oak Leaves
+tile.paintingmod.brown_oak_leaves.name=Brown Oak Leaves
+tile.paintingmod.blue_oak_leaves.name=Blue Oak Leaves
+tile.paintingmod.purple_oak_leaves.name=Purple Oak Leaves
+tile.paintingmod.cyan_oak_leaves.name=Cyan Oak Leaves
+tile.paintingmod.light_gray_oak_leaves.name=Light Gray Oak Leaves
+tile.paintingmod.gray_oak_leaves.name=Gray Oak Leaves
+tile.paintingmod.pink_oak_leaves.name=Pink Oak Leaves
+tile.paintingmod.lime_oak_leaves.name=Lime Oak Leaves
+tile.paintingmod.yellow_oak_leaves.name=Yellow Oak Leaves
+tile.paintingmod.light_blue_oak_leaves.name=Light Blue Oak Leaves
+tile.paintingmod.magenta_oak_leaves.name=Magenta Oak Leaves
+tile.paintingmod.orange_oak_leaves.name=Orange Oak Leaves
+tile.paintingmod.white_oak_leaves.name=White Oak Leaves
+ 
+##Birch Leaves
+tile.paintingmod.black_birch_leaves.name=Black Birch Leaves
+tile.paintingmod.red_birch_leaves.name=Red Birch Leaves
+tile.paintingmod.green_birch_leaves.name=Green Birch Leaves
+tile.paintingmod.brown_birch_leaves.name=Brown Birch Leaves
+tile.paintingmod.blue_birch_leaves.name=Blue Birch Leaves
+tile.paintingmod.purple_birch_leaves.name=Purple Birch Leaves
+tile.paintingmod.cyan_birch_leaves.name=Cyan Birch Leaves
+tile.paintingmod.light_gray_birch_leaves.name=Light Gray Birch Leaves
+tile.paintingmod.gray_birch_leaves.name=Gray Birch Leaves
+tile.paintingmod.pink_birch_leaves.name=Pink Birch Leaves
+tile.paintingmod.lime_birch_leaves.name=Lime Birch Leaves
+tile.paintingmod.yellow_birch_leaves.name=Yellow Birch Leaves
+tile.paintingmod.light_blue_birch_leaves.name=Light Blue Birch Leaves
+tile.paintingmod.magenta_birch_leaves.name=Magenta Birch Leaves
+tile.paintingmod.orange_birch_leaves.name=Orange Birch Leaves
+tile.paintingmod.white_birch_leaves.name=White Birch Leaves
+ 
+##Acacia Leaves
+tile.paintingmod.black_acacia_leaves.name=Black Acacia Leaves
+tile.paintingmod.red_acacia_leaves.name=Red Acacia Leaves
+tile.paintingmod.green_acacia_leaves.name=Green Acacia Leaves
+tile.paintingmod.brown_acacia_leaves.name=Brown Acacia Leaves
+tile.paintingmod.blue_acacia_leaves.name=Blue Acacia Leaves
+tile.paintingmod.purple_acacia_leaves.name=Purple Acacia Leaves
+tile.paintingmod.cyan_acacia_leaves.name=Cyan Acacia Leaves
+tile.paintingmod.light_gray_acacia_leaves.name=Light Gray Acacia Leaves
+tile.paintingmod.gray_acacia_leaves.name=Gray Acacia Leaves
+tile.paintingmod.pink_acacia_leaves.name=Pink Acacia Leaves
+tile.paintingmod.lime_acacia_leaves.name=Lime Acacia Leaves
+tile.paintingmod.yellow_acacia_leaves.name=Yellow Acacia Leaves
+tile.paintingmod.light_blue_acacia_leaves.name=Light Blue Acacia Leaves
+tile.paintingmod.magenta_acacia_leaves.name=Magenta Acacia Leaves
+tile.paintingmod.orange_acacia_leaves.name=Orange Acacia Leaves
+tile.paintingmod.white_acacia_leaves.name=White Acacia Leaves
+ 
+##Dark Oak Leaves
+tile.paintingmod.black_dark_oak_leaves.name=Black Dark Oak Leaves
+tile.paintingmod.red_dark_oak_leaves.name=Red Dark Oak Leaves
+tile.paintingmod.green_dark_oak_leaves.name=Green Dark Oak Leaves
+tile.paintingmod.brown_dark_oak_leaves.name=Brown Dark Oak Leaves
+tile.paintingmod.blue_dark_oak_leaves.name=Blue Dark Oak Leaves
+tile.paintingmod.purple_dark_oak_leaves.name=Purple Dark Oak Leaves
+tile.paintingmod.cyan_dark_oak_leaves.name=Cyan Dark Oak Leaves
+tile.paintingmod.light_gray_dark_oak_leaves.name=Light Gray Dark Oak Leaves
+tile.paintingmod.gray_dark_oak_leaves.name=Gray Dark Oak Leaves
+tile.paintingmod.pink_dark_oak_leaves.name=Pink Dark Oak Leaves
+tile.paintingmod.lime_dark_oak_leaves.name=Lime Dark Oak Leaves
+tile.paintingmod.yellow_dark_oak_leaves.name=Yellow Dark Oak Leaves
+tile.paintingmod.light_blue_dark_oak_leaves.name=Light Blue Dark Oak Leaves
+tile.paintingmod.magenta_dark_oak_leaves.name=Magenta Dark Oak Leaves
+tile.paintingmod.orange_dark_oak_leaves.name=Orange Dark Oak Leaves
+tile.paintingmod.white_dark_oak_leaves.name=White Dark Oak Leaves
