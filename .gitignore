@@ -1,57 +1,23 @@
-/bin/
+# gradle
 
-\.gradle/
+.gradle/
+build/
+out/
+
+# idea
+
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# fabric
+
+run/
+bin/
 
 \.settings/
 
-build/
-
-eclipse/
-
-run/
-
 \.classpath
 
-\.DS_Store
-
 \.project
-
-CREDITS-fml\.txt
-
-forge-1\.12\.2-14\.23\.4\.2705-changelog\.txt
-
-LICENSE-new\.txt
-
-MinecraftForge-Credits\.txt
-
-My-first-Minecraft-Mod_Client\.launch
-
-My-first-Minecraft-Mod_Server\.launch
-
-Paulscode IBXM Library License\.txt
-
-Paulscode SoundSystem CodecIBXM License\.txt
-
-README\.txt
-
-Painting-Mod_Client\.launch
-
-Painting-Mod_Server\.launch
-
-Paintbrush\.txt
-
-ModBlocks\.txt
-
-src/main/resources/assets/paintingmod/lang/en_us\.1\.lang
-
-langfile\.txt
-
-blocks\.json
-
-out/
-
-\.idea/
-
-Painting-Mod\.iml
-
-CHANGELOG\.html

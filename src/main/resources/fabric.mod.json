@@ -1,0 +1,15 @@
+{
+  "id": "paintingmod",
+  "name": "Painting Mod",
+  "description": "A Minecraft mod that add the possiblity to paint any bloc in any Vanilla dye color !",
+  "version": "${version}",
+  "side": "universal",
+  "initializer": "arthurbambou.paintingmod.ExampleMod",
+  "requires": {
+    "fabric": "*"
+  },
+  "mixins": {
+    "client": "paintingmod.client.json",
+    "common": "paintingmod.common.json"
+  }
+}

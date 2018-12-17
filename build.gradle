@@ -1,148 +1,175 @@
-buildscript {
-    repositories {
-        mavenCentral()
-        maven { 
-            name = "forge"
-            url = "http://files.minecraftforge.net/maven" 
-        }
-        maven {
-            url "https://plugins.gradle.org/m2/"
-        }
-    }
-    dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
-        classpath 'co.riiid:gradle-github-plugin:+'
-        classpath "gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.32"
-    }
-}
-
 plugins {
-id "com.matthewprenger.cursegradle" version "1.1.0"
+	id 'fabric-loom' version '0.1.0-SNAPSHOT'
 }
 
-apply plugin: 'net.minecraftforge.gradle.forge'
-apply plugin: 'co.riiid.gradle'
-apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin"
-//Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
-def gittoken = System.getenv('GH_TOKEN')
-def buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
-def buildbranch = System.getenv('TRAVIS_BRANCH')
-def modversion = '2.0.1'
-if (buildbranch == 'dev/1.12.2') {
-version = modversion + '-build-' + buildnumber
-} else if (buildbranch == 'pre-release/1.12.2') {
-    version = modversion + "-pre-1"
-} else if (buildbranch == "release/1.12") {
-    version = modversion
-} else {
-    version = "dev"
-}
-group = "arthurbambou.paintingmod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "PaintingMod-MC${minecraft_version}"
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
-sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
-compileJava {
-    sourceCompatibility = targetCompatibility = '1.8'
-}
+archivesBaseName = "PaintingMod-Fabric-${minecraft_version}"
+version = "3.0.0"
 
 minecraft {
-    version = "${minecraft_version}-${forge_version}"
-    runDir = "run"
-    
-    // the mappings can be changed at any time, and must be in the following format.
-    // snapshot_YYYYMMDD   snapshot are built nightly.
-    // stable_#            stables are built at the discretion of the MCP team.
-    // Use non-default mappings at your own risk. they may not always work.
-    // simply re-run your setup task after changing the mappings to update your workspace.
-    mappings = "stable_39"
-    // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
-
-    replaceIn "Reference.java"
-    replace "dev", project.version
 }
 
 dependencies {
-    // you may put jars on which you depend on in ./libs
-    // or you may define them like so..
-    //compile "some.group:artifact:version:classifier"
-    //compile "some.group:artifact:version"
+	minecraft "com.mojang:minecraft:${minecraft_version}"
+	mappings "net.fabricmc:yarn:${minecraft_version}.+"
+	modCompile "net.fabricmc:fabric-loader:${fabric_loader}"
+
+	// Fabric API. This is technically optional, but you probably want it anyway.
+	modCompile "net.fabricmc:fabric:${fabric_api}"
+}
+
+
+
+
+
+
+// buildscript {
+//     repositories {
+//         mavenCentral()
+//         maven { 
+//             name = "forge"
+//             url = "http://files.minecraftforge.net/maven" 
+//         }
+//         maven {
+//             url "https://plugins.gradle.org/m2/"
+//         }
+//     }
+//     dependencies {
+//         classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+//         classpath 'co.riiid:gradle-github-plugin:+'
+//         classpath "gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.32"
+//     }
+// }
+
+// plugins {
+// id "com.matthewprenger.cursegradle" version "1.1.0"
+// }
+
+// apply plugin: 'net.minecraftforge.gradle.forge'
+// apply plugin: 'co.riiid.gradle'
+// apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin"
+// //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
+// def gittoken = System.getenv('GH_TOKEN')
+// def buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
+// def buildbranch = System.getenv('TRAVIS_BRANCH')
+// def modversion = '2.0.1'
+// if (buildbranch == 'dev/1.12.2') {
+// version = modversion + '-build-' + buildnumber
+// } else if (buildbranch == 'pre-release/1.12.2') {
+//     version = modversion + "-pre-1"
+// } else if (buildbranch == "release/1.12") {
+//     version = modversion
+// } else {
+//     version = "dev"
+// }
+// group = "arthurbambou.paintingmod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+// archivesBaseName = "PaintingMod-MC${minecraft_version}"
+
+// sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
+// compileJava {
+//     sourceCompatibility = targetCompatibility = '1.8'
+// }
+
+// minecraft {
+//     version = "${minecraft_version}-${forge_version}"
+//     runDir = "run"
+    
+//     // the mappings can be changed at any time, and must be in the following format.
+//     // snapshot_YYYYMMDD   snapshot are built nightly.
+//     // stable_#            stables are built at the discretion of the MCP team.
+//     // Use non-default mappings at your own risk. they may not always work.
+//     // simply re-run your setup task after changing the mappings to update your workspace.
+//     mappings = "stable_39"
+//     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
+
+//     replaceIn "Reference.java"
+//     replace "dev", project.version
+// }
+
+// dependencies {
+//     // you may put jars on which you depend on in ./libs
+//     // or you may define them like so..
+//     //compile "some.group:artifact:version:classifier"
+//     //compile "some.group:artifact:version"
       
-    // real examples
-    //compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env
-    //compile 'com.googlecode.efficient-java-matrix-library:ejml:0.24' // adds ejml to the dev env
+//     // real examples
+//     //compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env
+//     //compile 'com.googlecode.efficient-java-matrix-library:ejml:0.24' // adds ejml to the dev env
 
-    // the 'provided' configuration is for optional dependencies that exist at compile-time but might not at runtime.
-    //provided 'com.mod-buildcraft:buildcraft:6.0.8:dev'
+//     // the 'provided' configuration is for optional dependencies that exist at compile-time but might not at runtime.
+//     //provided 'com.mod-buildcraft:buildcraft:6.0.8:dev'
 
-    // the deobf configurations:  'deobfCompile' and 'deobfProvided' are the same as the normal compile and provided,
-    // except that these dependencies get remapped to your current MCP mappings
-    //deobfCompile 'com.mod-buildcraft:buildcraft:6.0.8:dev'
-    //deobfProvided 'com.mod-buildcraft:buildcraft:6.0.8:dev'
+//     // the deobf configurations:  'deobfCompile' and 'deobfProvided' are the same as the normal compile and provided,
+//     // except that these dependencies get remapped to your current MCP mappings
+//     //deobfCompile 'com.mod-buildcraft:buildcraft:6.0.8:dev'
+//     //deobfProvided 'com.mod-buildcraft:buildcraft:6.0.8:dev'
 
-    // for more info...
-    // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
-    // http://www.gradle.org/docs/current/userguide/dependency_management.html
+//     // for more info...
+//     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
+//     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
-}
+// }
 
-processResources {
-    // this will ensure that this task is redone when the versions change.
-    inputs.property "version", project.version
-    inputs.property "mcversion", project.minecraft.version
+// processResources {
+//     // this will ensure that this task is redone when the versions change.
+//     inputs.property "version", project.version
+//     inputs.property "mcversion", project.minecraft.version
 
-    // replace stuff in mcmod.info, nothing else
-    from(sourceSets.main.resources.srcDirs) {
-        include 'mcmod.info'
+//     // replace stuff in mcmod.info, nothing else
+//     from(sourceSets.main.resources.srcDirs) {
+//         include 'mcmod.info'
                 
-        // replace version and mcversion
-        expand 'version':project.version, 'mcversion':project.minecraft.version
-    }
+//         // replace version and mcversion
+//         expand 'version':project.version, 'mcversion':project.minecraft.version
+//     }
         
-    // copy everything else except the mcmod.info
-    from(sourceSets.main.resources.srcDirs) {
-        exclude 'mcmod.info'
-    }
-}
-task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-	filePath = "CHANGELOG.html"
-	untaggedName = "Current release MC${minecraft_version}-${project.version}"
-	fromCommit = "afcd7bf2af88e997e7367de1825ca1720785fd15"
-	toRef =  "HEAD"
-	templateContent = file('changelog.mustache').getText('UTF-8')
-}
-def rtype = ""
-def prelease = true
-if (buildbranch == 'release/1.12') {
-    rtype = "release"
-    prelease = false
-} else {
-    rtype = "beta"
-    prelease = true
-}
-curseforge {
-	apiKey = System.getenv('CURSEKEY') ?: "a key"
-	project {
-		id = "299755"
-		changelog = file('CHANGELOG.html')
-		changelogType = 'html'
-		releaseType = rtype
-        addArtifact file("build/libs/${archivesBaseName}-${version}-sources.jar")
-	}
-}
-afterEvaluate {
-	tasks.curseforge299755.dependsOn.add(makeChangelog)
-}
-github {
-    owner = 'arthurbambou'
-    repo = 'Painting-Mod'
-    token = gittoken ?: "a key"
-    tagName = minecraft_version + "-" + version
-    name = "MC" + minecraft_version + "-" + version
-    targetCommitish = buildbranch
-    prerelease = prelease
-    assets = [
-        "CHANGELOG.html",
-        "build/libs/${archivesBaseName}-${version}-sources.jar",
-        "build/libs/${archivesBaseName}-${version}.jar"
-    ]
-}
+//     // copy everything else except the mcmod.info
+//     from(sourceSets.main.resources.srcDirs) {
+//         exclude 'mcmod.info'
+//     }
+// }
+// task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+// 	filePath = "CHANGELOG.html"
+// 	untaggedName = "Current release MC${minecraft_version}-${project.version}"
+// 	fromCommit = "afcd7bf2af88e997e7367de1825ca1720785fd15"
+// 	toRef =  "HEAD"
+// 	templateContent = file('changelog.mustache').getText('UTF-8')
+// }
+// def rtype = ""
+// def prelease = true
+// if (buildbranch == 'release/1.12') {
+//     rtype = "release"
+//     prelease = false
+// } else {
+//     rtype = "beta"
+//     prelease = true
+// }
+// curseforge {
+// 	apiKey = System.getenv('CURSEKEY') ?: "a key"
+// 	project {
+// 		id = "299755"
+// 		changelog = file('CHANGELOG.html')
+// 		changelogType = 'html'
+// 		releaseType = rtype
+//         addArtifact file("build/libs/${archivesBaseName}-${version}-sources.jar")
+// 	}
+// }
+// afterEvaluate {
+// 	tasks.curseforge299755.dependsOn.add(makeChangelog)
+// }
+// github {
+//     owner = 'arthurbambou'
+//     repo = 'Painting-Mod'
+//     token = gittoken ?: "a key"
+//     tagName = minecraft_version + "-" + version
+//     name = "MC" + minecraft_version + "-" + version
+//     targetCommitish = buildbranch
+//     prerelease = prelease
+//     assets = [
+//         "CHANGELOG.html",
+//         "build/libs/${archivesBaseName}-${version}-sources.jar",
+//         "build/libs/${archivesBaseName}-${version}.jar"
+//     ]
+// }
