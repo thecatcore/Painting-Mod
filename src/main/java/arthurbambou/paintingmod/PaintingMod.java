@@ -1,5 +1,6 @@
 package arthurbambou.paintingmod;
 
+import arthurbambou.paintingmod.registery.ModBlocks;
 import arthurbambou.paintingmod.registery.ModItems;
 import arthurbambou.paintingmod.registery.ModTabs;
 import net.fabricmc.api.ModInitializer;
@@ -9,6 +10,7 @@ public class PaintingMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModBlocks.init();
 		ModItems.init();
 		ModTabs.init();
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
