@@ -61,11 +61,11 @@ public class ColoredBlock {
         this.magenta = new ColoredBlockBlock("magenta_" + this.name, this.settings);
         this.orange = new ColoredBlockBlock("orange_" + this.name, this.settings);
         this.white = new ColoredBlockBlock("white_" + this.name, this.settings);
-        ModBlocks.COLORED_BLOCK_LIST.add(this);
+        Registry.registerCommonBlocks(this);
     }
 
     private void getSettings() {
-        this.settings = FabricBlockSettings.of(this.material).strength(this.hardness, this.resistance).sounds(this.blockSoundGroup).build();;
+        this.settings = FabricBlockSettings.of(this.material).hardness(this.hardness).resistance(this.resistance).sounds(this.blockSoundGroup).build();
     }
 
     public String getName() {
