@@ -1,7 +1,1 @@
-{  
-   "variants":{  
-      "normal":{  
-         "model":"paintingmod:soggy_clay"
-      }
-   }
-}
+{"variants":{"":{"model":"paintingmod:soggy_clay"}}}

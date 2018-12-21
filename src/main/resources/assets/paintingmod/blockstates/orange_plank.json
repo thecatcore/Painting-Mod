@@ -1,7 +1,1 @@
-{  
-   "variants":{  
-      "normal":{  
-         "model":"paintingmod:orange_plank"
-      }
-   }
-}
+{"variants":{"":{"model":"paintingmod:orange_plank"}}}

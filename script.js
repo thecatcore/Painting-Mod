@@ -10,6 +10,13 @@ for(var i = 0; i < files.length; i++) {
     datat.variants = {}
     datat.variants[""] = modelvalue
     console.log(datat)
+    if (datat.variants[""] != undefined) {
+        fs.writeFile(path + "/" + files[i], JSON.stringify(datat), (err) => {
+            if (err) {
+                console.log(err)
+            }
+        })
+    }
     // fs.writeFile(path + "/" + files[i], JSON.stringify(datat), (err) => {
     //     if (err) {
     //         console.log(err)
