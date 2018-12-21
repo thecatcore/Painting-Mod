@@ -1,3 +1,15 @@
+buildscript {
+ repositories {
+	 mavenCentral()
+	 maven {
+		 url "https://plugins.gradle.org/m2/"
+	 }
+ }
+ dependencies {
+	 classpath 'co.riiid:gradle-github-plugin:+'
+ }
+}
+
 plugins {
 	id 'fabric-loom' version '0.1.0-SNAPSHOT'
 }
@@ -5,8 +17,21 @@ plugins {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-archivesBaseName = "PaintingMod-Fabric-${minecraft_version}"
-version = "3.0.0"
+archivesBaseName = "PaintingMod-MC${minecraft_version}-Fabric-${fabric_loader}"
+
+def baseversion = "0.1.0"
+def buildbranch = System.getenv('TRAVIS_BRANCH')
+def buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
+def gittoken = System.getenv('GH_TOKEN')
+def prelease
+
+if (buildbranch == "dev/fabric") {
+	version = baseversion + "." + buildnumber
+	prelease = true
+} else {
+	version = baseversion
+	prelease = false
+}
 
 minecraft {
 }
@@ -20,7 +45,19 @@ dependencies {
 	modCompile "net.fabricmc:fabric:${fabric_api}"
 }
 
-
+github {
+ owner = 'arthurbambou'
+ repo = 'Ci-Builds'
+ token = gittoken ?: "a key"
+ tagName = minecraft_version + "-" + fabric_loader + "-" + version
+ name = "MC" + minecraft_version + "-Fabric-" + fabric_loader + "-" + version
+ targetCommitish = "master"
+ prerelease = prelease
+ assets = [
+	 "build/libs/${archivesBaseName}-${version}-dev.jar",
+	 "build/libs/${archivesBaseName}-${version}.jar"
+ ]
+}
 
 
 
