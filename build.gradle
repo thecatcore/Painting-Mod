@@ -36,7 +36,7 @@ dependencies {
 
 github {
  owner = 'arthurbambou'
- repo = 'Ci-Builds'
+ repo = 'PaintingMod-Builds-Fabric'
  token = gittoken ?: "a key"
  tagName = version + "-" + minecraft_version + "-" + fabric_loader
  name = version + "-" + "MC" + minecraft_version + "-Fabric-" + fabric_loader
