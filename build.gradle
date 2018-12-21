@@ -6,7 +6,7 @@ plugins {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-archivesBaseName = "PaintingMod-MC${minecraft_version}-Fabric-${fabric_loader}"
+archivesBaseName = "PaintingMod-MC${minecraft_version}-Fabric-${fabric_loader}-v"
 
 def baseversion = "0.1.0"
 def buildbranch = System.getenv('TRAVIS_BRANCH')
@@ -38,8 +38,8 @@ github {
  owner = 'arthurbambou'
  repo = 'Ci-Builds'
  token = gittoken ?: "a key"
- tagName = minecraft_version + "-" + fabric_loader + "-" + version
- name = "MC" + minecraft_version + "-Fabric-" + fabric_loader + "-" + version
+ tagName = version + "-" + minecraft_version + "-" + fabric_loader
+ name = version + "-" + "MC" + minecraft_version + "-Fabric-" + fabric_loader
  targetCommitish = "master"
  prerelease = prelease
  assets = [
