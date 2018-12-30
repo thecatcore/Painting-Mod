@@ -26,7 +26,6 @@ public class Paintbrush extends ItemBase {
         BlockPos blockPos = var1.getPos();
         for (ColoredBlock coloredBlock : Registry.getCommonBlocks()) {
             newbloctopaint(playerEntity, world, blockPos, coloredBlock);
-            System.out.println(coloredBlock.getName());
         }
         return super.useOnBlock(var1);
     }
