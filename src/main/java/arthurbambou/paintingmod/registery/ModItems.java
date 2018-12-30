@@ -76,22 +76,22 @@ public class ModItems {
 
         NORMAL_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "normal_paintbrush");
 
-        BLACK_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "black_paintbrush");
-        RED_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "red_paintbrush");
-        GREEN_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "green_paintbrush");
-        BROWN_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "brown_paintbrush");
-        BLUE_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "blue_paintbrush");
-        PURPLE_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "purple_paintbrush");
-        CYAN_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "cyan_paintbrush");
-        LIGHT_GRAY_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "light_gray_paintbrush");
-        GRAY_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "gray_paintbrush");
-        PINK_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "pink_paintbrush");
-        LIME_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "lime_paintbrush");
-        YELLOW_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "yellow_paintbrush");
-        LIGHT_BLUE_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "light_blue_paintbrush");
-        MAGENTA_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "magenta_paintbrush");
-        ORANGE_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "orange_paintbrush");
-        WHITE_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "white_paintbrush");
+        BLACK_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "black_paintbrush");
+        RED_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "red_paintbrush");
+        GREEN_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "green_paintbrush");
+        BROWN_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "brown_paintbrush");
+        BLUE_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "blue_paintbrush");
+        PURPLE_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "purple_paintbrush");
+        CYAN_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "cyan_paintbrush");
+        LIGHT_GRAY_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "light_gray_paintbrush");
+        GRAY_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "gray_paintbrush");
+        PINK_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "pink_paintbrush");
+        LIME_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "lime_paintbrush");
+        YELLOW_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "yellow_paintbrush");
+        LIGHT_BLUE_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "light_blue_paintbrush");
+        MAGENTA_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "magenta_paintbrush");
+        ORANGE_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "orange_paintbrush");
+        WHITE_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "white_paintbrush");
 
         HEAT_GUN = new HeatGun(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durabilityIfNotSet(100).durability(100));
     }
