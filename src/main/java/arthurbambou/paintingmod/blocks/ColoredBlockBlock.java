@@ -13,6 +13,6 @@ public class ColoredBlockBlock extends Block {
     public ColoredBlockBlock(String name, Settings block$Settings_1) {
         super(block$Settings_1);
         Registry.BLOCK.register(new Identifier(PaintingMod.MODID, name), this);
-        Registry.ITEM.register(new Identifier(PaintingMod.MODID, name), new BlockItem(this, new Item.Settings().itemGroup(ItemGroup.DECORATIONS)));
+        Registry.ITEM.register(new Identifier(PaintingMod.MODID, name), new BlockItem(this, new Item.Settings().itemGroup(PaintingMod.MOD_BLOCKS)));
     }
 }

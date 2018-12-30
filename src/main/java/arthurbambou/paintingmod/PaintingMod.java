@@ -2,21 +2,21 @@ package arthurbambou.paintingmod;
 
 import arthurbambou.paintingmod.registery.ModBlocks;
 import arthurbambou.paintingmod.registery.ModItems;
-import arthurbambou.paintingmod.registery.ModTabs;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.Identifier;
 
 public class PaintingMod implements ModInitializer {
 	public static final String MODID = "paintingmod";
+
+	public static final ItemGroup MOD_BLOCKS = FabricItemGroupBuilder.build(new Identifier("paintingmod:mod_blocks"), () -> new ItemStack(ModBlocks.STONE.blue));
+	public static final ItemGroup MOD_ITEMS = FabricItemGroupBuilder.build(new Identifier("paintingmod:mod_items"), () -> new ItemStack(ModItems.NORMAL_PAINTBRUSH));
 
 	@Override
 	public void onInitialize() {
 		ModBlocks.init();
 		ModItems.init();
-		ModTabs.init();
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
-
-//		System.out.println("Hello Fabric world!");
 	}
 }
