@@ -43,8 +43,8 @@
   "item.paintingmod.white_paintbrush": "Paintbrush with white paint",
 
   "_comment": "GUI",
-  "itemGroup.paintingmod.paintingmod_tab_items": "PaintingMod Items",
-  "itemGroup.paintingmod.paintingmod_tab_blocks": "PaintingMod Blocks",
+  "itemGroup.paintingmod.mod_items": "PaintingMod Items",
+  "itemGroup.paintingmod.mod_blocks": "PaintingMod Blocks",
 
   "_comment": "Tools",
   "item.paintingmod.hammer": "Hammer",

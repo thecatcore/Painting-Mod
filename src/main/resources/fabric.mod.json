@@ -5,4 +5,7 @@
   "version": "0.1.0",
   "side": "universal",
   "initializer": "arthurbambou.paintingmod.PaintingMod",
+  "requires": {
+    "fabric": "0.1.3"
+  }
 }
