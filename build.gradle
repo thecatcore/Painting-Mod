@@ -34,7 +34,7 @@ dependencies {
 	modCompile "net.fabricmc:fabric-loader:${fabric_loader}.+"
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
-	modCompile "net.fabricmc:fabric:${fabric_api}.+"
+//	modCompile "net.fabricmc:fabric:${fabric_api}.+"
 }
 
 github {
