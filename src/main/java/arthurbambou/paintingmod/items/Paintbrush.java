@@ -26,6 +26,7 @@ public class Paintbrush extends ItemBase {
         BlockPos blockPos = var1.getPos();
         for (ColoredBlock coloredBlock : Registry.getCommonBlocks()) {
             newbloctopaint(playerEntity, world, blockPos, coloredBlock);
+            System.out.println(coloredBlock.getName());
         }
         return super.useOnBlock(var1);
     }
@@ -35,24 +36,23 @@ public class Paintbrush extends ItemBase {
         if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.NORMAL_PAINTBRUSH) {
 
         } else {
-
-                if (worldIn.getBlockState(pos).getBlock() == coloredblock.replace) {
-                    black(player, worldIn, pos, coloredblock.black);
-                    red(player, worldIn, pos, coloredblock.red);
-                    green(player, worldIn, pos, coloredblock.green);
-                    brown(player, worldIn, pos, coloredblock.brown);
-                    blue(player, worldIn, pos, coloredblock.blue);
-                    purple(player, worldIn, pos, coloredblock.purple);
-                    cyan(player, worldIn, pos, coloredblock.cyan);
-                    lightGray(player, worldIn, pos, coloredblock.lightgray);
-                    gray(player, worldIn, pos, coloredblock.gray);
-                    pink(player, worldIn, pos, coloredblock.pink);
-                    lime(player, worldIn, pos, coloredblock.lime);
-                    yellow(player, worldIn, pos, coloredblock.yellow);
-                    lightBlue(player, worldIn, pos, coloredblock.lightblue);
-                    magenta(player, worldIn, pos, coloredblock.magenta);
-                    orange(player, worldIn, pos, coloredblock.orange);
-                    white(player, worldIn, pos, coloredblock.white);
+            if (worldIn.getBlockState(pos).getBlock() == coloredblock.replace) {
+                black(player, worldIn, pos, coloredblock.black);
+                red(player, worldIn, pos, coloredblock.red);
+                green(player, worldIn, pos, coloredblock.green);
+                brown(player, worldIn, pos, coloredblock.brown);
+                blue(player, worldIn, pos, coloredblock.blue);
+                purple(player, worldIn, pos, coloredblock.purple);
+                cyan(player, worldIn, pos, coloredblock.cyan);
+                lightGray(player, worldIn, pos, coloredblock.lightgray);
+                gray(player, worldIn, pos, coloredblock.gray);
+                pink(player, worldIn, pos, coloredblock.pink);
+                lime(player, worldIn, pos, coloredblock.lime);
+                yellow(player, worldIn, pos, coloredblock.yellow);
+                lightBlue(player, worldIn, pos, coloredblock.lightblue);
+                magenta(player, worldIn, pos, coloredblock.magenta);
+                orange(player, worldIn, pos, coloredblock.orange);
+                white(player, worldIn, pos, coloredblock.white);
             }
         }
 

@@ -22,7 +22,7 @@ if (buildbranch == "dev/fabric") {
 archivesBaseName = "PaintingMod-${minecraft_version}"
 
 minecraft {
-	
+
 }
 
 dependencies {
