@@ -1,7 +1,10 @@
 package arthurbambou.paintingmod.registery;
 
 import arthurbambou.paintingmod.api.ColoredBlock;
+import arthurbambou.paintingmod.blocks.SoggyClay;
+import net.fabricmc.fabric.block.FabricBlockSettings;
 import net.fabricmc.fabric.tags.TagRegistry;
+import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
 import net.minecraft.item.Item;
@@ -15,6 +18,8 @@ import java.util.List;
 
 public class ModBlocks {
     public static final List<ColoredBlock> COLORED_BLOCKS = new ArrayList<ColoredBlock>();
+
+    public static Block SOGGY_CLAY;
 
     public static ColoredBlock STONE;
     public static ColoredBlock GRANITE;
@@ -68,6 +73,8 @@ public class ModBlocks {
     public static ColoredBlock SLIME_BLOCK;
 
     public static void init() {
+        SOGGY_CLAY = new SoggyClay(FabricBlockSettings.of(Material.SAND).sounds(BlockSoundGroup.SAND).build(), "soggy_clay");
+
         STONE = new ColoredBlock("stone", Blocks.STONE).setMaterial(Material.STONE).setBlockSoundGroup(BlockSoundGroup.STONE).setHardness(1.5F).setResistance(30.0F);
         GRANITE = new ColoredBlock("granite", Blocks.GRANITE).setMaterial(Material.STONE).setBlockSoundGroup(BlockSoundGroup.STONE).setHardness(1.5F).setResistance(30.0F);
         POLISHED_GRANITE = new ColoredBlock("polished_granite", Blocks.POLISHED_GRANITE).setMaterial(Material.STONE).setBlockSoundGroup(BlockSoundGroup.STONE).setHardness(1.5F).setResistance(30.0F);

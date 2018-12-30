@@ -1,9 +1,13 @@
 package arthurbambou.paintingmod.registery;
 
 import arthurbambou.paintingmod.PaintingMod;
+import arthurbambou.paintingmod.items.Hammer;
+import arthurbambou.paintingmod.items.HeatGun;
 import arthurbambou.paintingmod.items.ItemBase;
+import arthurbambou.paintingmod.items.Paintbrush;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.util.registry.Registry;
 
 public class ModItems {
     public static Item EARTH_MORTAR;
@@ -27,6 +31,22 @@ public class ModItems {
     public static Item WATER_VIALS;
     public static Item DOUBLE_WATER_VIALS;
     public static Item NORMAL_PAINTBRUSH;
+    public static Item BLACK_PAINTBRUSH;
+    public static Item RED_PAINTBRUSH;
+    public static Item GREEN_PAINTBRUSH;
+    public static Item BROWN_PAINTBRUSH;
+    public static Item BLUE_PAINTBRUSH;
+    public static Item PURPLE_PAINTBRUSH;
+    public static Item CYAN_PAINTBRUSH;
+    public static Item LIGHT_GRAY_PAINTBRUSH;
+    public static Item GRAY_PAINTBRUSH;
+    public static Item PINK_PAINTBRUSH;
+    public static Item LIME_PAINTBRUSH;
+    public static Item YELLOW_PAINTBRUSH;
+    public static Item LIGHT_BLUE_PAINTBRUSH;
+    public static Item MAGENTA_PAINTBRUSH;
+    public static Item ORANGE_PAINTBRUSH;
+    public static Item WHITE_PAINTBRUSH;
     public static Item HEAT_GUN;
 
     public static void init() {
@@ -49,11 +69,30 @@ public class ModItems {
         ORANGE_PAINT_POT = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durabilityIfNotSet(5).durability(5), "orange_paint_pot");
         WHITE_PAINT_POT = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durabilityIfNotSet(5).durability(5), "white_paint_pot");
 
-        HAMMER = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durabilityIfNotSet(100).durability(100), "hammer");
+        HAMMER = new Hammer(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durabilityIfNotSet(100).durability(100), "hammer");
 
         WATER_VIALS = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(64).durability(12).durabilityIfNotSet(12), "water_vial");
         DOUBLE_WATER_VIALS = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(32).durability(24).durabilityIfNotSet(24), "double_water_vial");
 
-        HEAT_GUN = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durabilityIfNotSet(100).durability(100), "heat_gun");
+        NORMAL_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "normal_paintbrush");
+
+        BLACK_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "black_paintbrush");
+        RED_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "red_paintbrush");
+        GREEN_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "green_paintbrush");
+        BROWN_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "brown_paintbrush");
+        BLUE_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "blue_paintbrush");
+        PURPLE_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "purple_paintbrush");
+        CYAN_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "cyan_paintbrush");
+        LIGHT_GRAY_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "light_gray_paintbrush");
+        GRAY_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "gray_paintbrush");
+        PINK_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "pink_paintbrush");
+        LIME_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "lime_paintbrush");
+        YELLOW_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "yellow_paintbrush");
+        LIGHT_BLUE_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "light_blue_paintbrush");
+        MAGENTA_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "magenta_paintbrush");
+        ORANGE_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "orange_paintbrush");
+        WHITE_PAINTBRUSH = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "white_paintbrush");
+
+        HEAT_GUN = new HeatGun(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durabilityIfNotSet(100).durability(100));
     }
 }
