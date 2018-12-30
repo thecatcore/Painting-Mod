@@ -20,10 +20,10 @@ if (buildbranch == "dev/fabric") {
 } else {
 	version = baseversion
 	prelease = false
-	releasetype = "release"
+	releasetype = ""
 }
 
-archivesBaseName = "PaintingMod-MC${minecraft_version}-Fabric-${fabric_loader}-${releasetype}"
+archivesBaseName = "PaintingMod-${minecraft_version}-${releasetype}"
 
 minecraft {
 }
