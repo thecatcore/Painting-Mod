@@ -1,5 +1,5 @@
 {
-    "type": "forge:ore_shaped",
+    "type": "crafting_shaped",
     
     "pattern":
     [
@@ -12,25 +12,21 @@
     {
         "T":
         {
-            "type":"forge:ore_dict",
-            "ore": "stickWood"
+            "item": "minecraft:stick"
         },
         "P":
         {
-            "type":"forge:ore_dict",
-            "ore": "plankWood"
+            "tag": ""
         },
         "S":
         {
-            "type":"forge:ore_dict",
-            "ore": "string"
+            "tag": ""
         }
     },
     
     "result":
     {
-        "item": "paintingmod:paintbrush",
-        "data": 0,
+        "item": "paintingmod:normal_paintbrush",
         "count": 1
     }
 }
