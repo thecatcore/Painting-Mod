@@ -1,5 +1,5 @@
 {
-    "type": "minecraft:crafting_shapeless",
+    "type": "crafting_shapeless",
     
     "ingredients":
     [
@@ -19,8 +19,7 @@
     
     "result":
     {
-        "item": "paintingmod:paintbrush",
-        "data": 13,
+        "item": "paintingmod:light_blue_paintbrush",
         "count": 1
     }
 }

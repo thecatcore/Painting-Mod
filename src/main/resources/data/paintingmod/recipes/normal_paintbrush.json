@@ -16,11 +16,11 @@
         },
         "P":
         {
-            "tag": ""
+            "tag": "minecraft:planks"
         },
         "S":
         {
-            "tag": ""
+            "item": "minecraft:string"
         }
     },
     
