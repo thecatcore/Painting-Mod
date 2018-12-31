@@ -3,15 +3,10 @@ package arthurbambou.paintingmod.registery;
 import arthurbambou.paintingmod.api.ColoredBlock;
 import arthurbambou.paintingmod.blocks.SoggyClay;
 import net.fabricmc.fabric.block.FabricBlockSettings;
-import net.fabricmc.fabric.tags.TagRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
-import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.tag.ItemTags;
-import net.minecraft.tag.Tag;
-import net.minecraft.util.Identifier;
 
 import java.util.ArrayList;
 import java.util.List;
