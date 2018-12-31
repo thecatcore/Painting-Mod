@@ -91,20 +91,20 @@ public class ModBlocks {
         DIRT = new ColoredBlock("dirt", Blocks.DIRT);
         COARSE_DIRT = new ColoredBlock("coarse_dirt", Blocks.COARSE_DIRT);
         COBBLESTONE = new ColoredBlock("cobblestone", Blocks.COBBLESTONE);
-        OAK_PLANK = new ColoredBlock("oak_plank", Blocks.OAK_PLANKS);
-        SPRUCE_PLANK = new ColoredBlock("spruce_plank", Blocks.SPRUCE_PLANKS);
-        BIRCH_PLANK = new ColoredBlock("birch_plank", Blocks.BIRCH_PLANKS);
-        JUNGLE_PLANK = new ColoredBlock("jungle_plank", Blocks.JUNGLE_PLANKS);
-        ACACIA_PLANK = new ColoredBlock("acacia_plank", Blocks.ACACIA_PLANKS);
-        DARK_OAK_PLANK = new ColoredBlock("dark_oak_plank", Blocks.DARK_OAK_PLANKS);
-//        SAND = new ColoredBlock("sand", Blocks.SAND);
-        RED_SAND = new ColoredBlock("red_sand", Blocks.RED_SAND);
+//        OAK_PLANK = new ColoredBlock("oak_plank", Blocks.OAK_PLANKS);
+//        SPRUCE_PLANK = new ColoredBlock("spruce_plank", Blocks.SPRUCE_PLANKS);
+//        BIRCH_PLANK = new ColoredBlock("birch_plank", Blocks.BIRCH_PLANKS);
+//        JUNGLE_PLANK = new ColoredBlock("jungle_plank", Blocks.JUNGLE_PLANKS);
+//        ACACIA_PLANK = new ColoredBlock("acacia_plank", Blocks.ACACIA_PLANKS);
+//        DARK_OAK_PLANK = new ColoredBlock("dark_oak_plank", Blocks.DARK_OAK_PLANKS);
+        SAND = new ColoredBlock("sand", Blocks.SAND);
+//        RED_SAND = new ColoredBlock("red_sand", Blocks.RED_SAND);
         GRAVEL = new ColoredBlock("gravel", Blocks.GRAVEL);
         SPONGE = new ColoredBlock("sponge", Blocks.SPONGE);
         WET_SPONGE = new ColoredBlock("wet_sponge", Blocks.SPONGE);
         LAPIS_LAZULI_BLOCK = new ColoredBlock("lapis_lazuli_block", Blocks.LAPIS_BLOCK);
-        SANDSTONE = new ColoredBlock("sandstone", Blocks.SANDSTONE);
-        RED_SANDSTONE = new ColoredBlock("red_sandstone", Blocks.RED_SANDSTONE);
+//        SANDSTONE = new ColoredBlock("sandstone", Blocks.SANDSTONE);
+//        RED_SANDSTONE = new ColoredBlock("red_sandstone", Blocks.RED_SANDSTONE);
         GOLD_BLOCK = new ColoredBlock("gold_block", Blocks.GOLD_BLOCK);
         IRON_BLOCK = new ColoredBlock("iron_block", Blocks.IRON_BLOCK);
         BRICK = new ColoredBlock("brick", Blocks.BRICKS);
@@ -124,7 +124,7 @@ public class ModBlocks {
         NETHER_BRICK = new ColoredBlock("nether_brick", Blocks.NETHER_BRICKS);
         END_STONE = new ColoredBlock("end_stone", Blocks.END_STONE);
         EMERALD_BLOCK = new ColoredBlock("emerald_block", Blocks.EMERALD_BLOCK);
-        QUARTZ_BLOCK = new ColoredBlock("quartz_block", Blocks.QUARTZ_BLOCK);
+//        QUARTZ_BLOCK = new ColoredBlock("quartz_block", Blocks.QUARTZ_BLOCK);
         PRISMARINE = new ColoredBlock("prismarine", Blocks.PRISMARINE);
         PRISMARINE_BRICK = new ColoredBlock("prismarine_brick", Blocks.PRISMARINE_BRICKS);
         DARK_PRISMARINE = new ColoredBlock("dark_prismarine", Blocks.DARK_PRISMARINE);
@@ -135,12 +135,12 @@ public class ModBlocks {
         END_STONE_BRICK = new ColoredBlock("end_stone_brick", Blocks.END_STONE_BRICKS);
         MAGMA_BLOCK = new ColoredBlock("magma_block", Blocks.MAGMA_BLOCK);
         NETHER_WART_BLOCK = new ColoredBlock("nether_wart_block", Blocks.NETHER_WART_BLOCK);
-        OAK_LEAVES = new ColoredBlock("oak_leaves", Blocks.OAK_LEAVES);
+//        OAK_LEAVES = new ColoredBlock("oak_leaves", Blocks.OAK_LEAVES);
         SPRUCE_LEAVES = new ColoredBlock("spruce_leaves", Blocks.SPRUCE_LEAVES);
-        BIRCH_LEAVES = new ColoredBlock("birch_leaves", Blocks.BIRCH_LEAVES);
+//        BIRCH_LEAVES = new ColoredBlock("birch_leaves", Blocks.BIRCH_LEAVES);
         JUNGLE_LEAVES = new ColoredBlock("jungle_leaves", Blocks.JUNGLE_LEAVES);
-        ACACIA_LEAVES = new ColoredBlock("acacia_leaves", Blocks.ACACIA_LEAVES);
-        DARK_OAK_LEAVES = new ColoredBlock("dark_oak_leaves", Blocks.DARK_OAK_LEAVES);
+//        ACACIA_LEAVES = new ColoredBlock("acacia_leaves", Blocks.ACACIA_LEAVES);
+//        DARK_OAK_LEAVES = new ColoredBlock("dark_oak_leaves", Blocks.DARK_OAK_LEAVES);
         SLIME_BLOCK = new ColoredBlock("slime_block", Blocks.SLIME_BLOCK);
 
         for (ColoredBlock coloredBlock : COLORED_BLOCKS) {
