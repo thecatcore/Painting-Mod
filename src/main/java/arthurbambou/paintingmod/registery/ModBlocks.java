@@ -97,7 +97,7 @@ public class ModBlocks {
         JUNGLE_PLANK = new ColoredBlock("jungle_plank", Blocks.JUNGLE_PLANKS);
         ACACIA_PLANK = new ColoredBlock("acacia_plank", Blocks.ACACIA_PLANKS);
         DARK_OAK_PLANK = new ColoredBlock("dark_oak_plank", Blocks.DARK_OAK_PLANKS);
-        SAND = new ColoredBlock("sand", Blocks.SAND);
+//        SAND = new ColoredBlock("sand", Blocks.SAND);
         RED_SAND = new ColoredBlock("red_sand", Blocks.RED_SAND);
         GRAVEL = new ColoredBlock("gravel", Blocks.GRAVEL);
         SPONGE = new ColoredBlock("sponge", Blocks.SPONGE);
