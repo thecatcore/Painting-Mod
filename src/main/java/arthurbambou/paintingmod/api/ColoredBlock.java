@@ -1,5 +1,6 @@
 package arthurbambou.paintingmod.api;
 
+import arthurbambou.paintingmod.PaintingMod;
 import arthurbambou.paintingmod.blocks.ColoredBlockBlock;
 import arthurbambou.paintingmod.registery.ModBlocks;
 import net.fabricmc.fabric.block.FabricBlockSettings;
@@ -36,15 +37,23 @@ public class ColoredBlock {
     public Block white;
     public Block replace;
     private Block.Settings settings;
+    private String modid;
 
     public ColoredBlock(String name, Block replace) {
         this.name = name;
         this.replace = replace;
+        this.modid = PaintingMod.MODID;
         ModBlocks.COLORED_BLOCKS.add(this);
     }
 
+    public ColoredBlock(String name, Block replace, String modid) {
+        this.name = name;
+        this.replace = replace;
+        this.modid = modid;
+    }
+
     public void createBlocks() {
-        getSettings();
+        copySettings(this.replace);
         this.black = new ColoredBlockBlock("black_" + this.name, this.settings);
         this.red = new ColoredBlockBlock("red_" + this.name, this.settings);
         this.green = new ColoredBlockBlock("green_" + this.name, this.settings);
@@ -66,6 +75,10 @@ public class ColoredBlock {
 
     private void getSettings() {
         this.settings = FabricBlockSettings.of(this.material).hardness(this.hardness).resistance(this.resistance).sounds(this.blockSoundGroup).build();
+    }
+
+    public void copySettings(Block block) {
+        this.settings = FabricBlockSettings.copy(block).build();
     }
 
     public String getName() {
@@ -108,7 +121,11 @@ public class ColoredBlock {
         return this;
     }
 
-//    public Tag<Item> getHarvestTool() {
+    public String getModid() {
+        return modid;
+    }
+
+    //    public Tag<Item> getHarvestTool() {
 //        return harvestTool;
 //    }
 //

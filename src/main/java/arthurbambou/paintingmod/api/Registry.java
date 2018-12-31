@@ -12,6 +12,6 @@ public class Registry {
 
     public static void registerCommonBlocks(ColoredBlock coloredBlock) {
         COMMON_BLOCKS.add(coloredBlock);
-        System.out.println("[PaintingMod API] registered colored block : " + coloredBlock.getName());
+        System.out.println("[PaintingMod API] registered colored block : " + coloredBlock.getModid() + ":" +coloredBlock.getName());
     }
 }
