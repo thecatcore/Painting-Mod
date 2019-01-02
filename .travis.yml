@@ -6,18 +6,9 @@ if: tag IS blank
 # - git checkout $TRAVIS_BRANCH
 install: 
  - ./gradlew
-script: 
- - |
-    if [ "$TRAVIS_PULL_REQUEST" == false ]; then
-          if [ "$TRAVIS_BRANCH" == "dev/fabric" ]; then
-            ./gradlew build githubRelease
-          else
-            ./gradlew build githubRelease curseforge299755
-          fi
-    else
-      ./gradlew build
-    fi
- - node test.js
+script:
+ - node buildscript.js
+ - ./buildscriptcmd.bash
 cache:
     directories:
       -/home/travis/.gradle/
