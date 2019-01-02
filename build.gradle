@@ -56,7 +56,7 @@ curseforge {
  		releaseType = "beta"
         gameVersionStrings.clear()
         gameVersionStrings.add("1.14-Snapshot")
-        addArtifact file("build/libs/${archivesBaseName}-${version}-sources.jar")
+        addArtifact file("build/libs/${archivesBaseName}-${version}-dev.jar")
  	}
  }
 
