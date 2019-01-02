@@ -1,7 +1,7 @@
 const fs = require("fs")
 const consts = {
     travis_pull_request: process.env.TRAVIS_PULL_REQUEST,
-    travis_branch: TRAVIS_BRANCH
+    travis_branch: process.env.TRAVIS_BRANCH
 }
 
 fs.writeFile("./buildscriptcmd.bash", texttowrite(), (err) => {
