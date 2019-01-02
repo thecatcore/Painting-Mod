@@ -1,9 +1,8 @@
 language: java
 jdk: oraclejdk8
 if: tag IS blank
-#before_install:
-# - git checkout -b master
-# - git checkout $TRAVIS_BRANCH
+before_install:
+- chmod +x buildscriptcmd.bash
 install: 
  - ./gradlew
 script:
