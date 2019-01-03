@@ -1,8 +1,8 @@
 package arthurbambou.paintingmod;
 
 import arthurbambou.paintingmod.registery.ModBlocks;
-import arthurbambou.paintingmod.registery.ModEntities;
 import arthurbambou.paintingmod.registery.ModItems;
+import arthurbambou.paintingmod.registery.ModVillagers;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
@@ -19,6 +19,6 @@ public class PaintingMod implements ModInitializer {
 	public void onInitialize() {
 		ModBlocks.init();
 		ModItems.init();
-		ModEntities.init();
+		ModVillagers.init();
 	}
 }
