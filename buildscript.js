@@ -19,7 +19,7 @@ function texttowrite() {
         } else if (consts.travis_branch.startWith("release/")) {
             return "./gradlew build githubRelease curseforge299755"
         } else {
-            return "./gradlew build"
+            return "./gradlew build githubRelease"
         }
     }
 }

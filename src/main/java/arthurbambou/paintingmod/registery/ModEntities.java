@@ -16,12 +16,12 @@ public class ModEntities {
 
     public static void init() {
         PAINTER = VillagerProfession.register("painter");
-//        PLAINS_PAINTER = new VillagerData(VillagerType.PLAINS, PAINTER, 1);
-//        DESERT_PAINTER = new VillagerData(VillagerType.DESERT, PAINTER, 1);
-//        JUNGLE_PAINTER = new VillagerData(VillagerType.JUNGLE, PAINTER, 1);
-//        SAVANNA_PAINTER = new VillagerData(VillagerType.SAVANNA, PAINTER, 1);
-//        SNOW_PAINTER = new VillagerData(VillagerType.SNOW, PAINTER, 1);
-//        SWAMP_PAINTER = new VillagerData(VillagerType.SWAMP, PAINTER, 1);
-//        TAIGA_PAINTER = new VillagerData(VillagerType.TAIGA, PAINTER, 1);
+        PLAINS_PAINTER = new VillagerData(VillagerType.PLAINS, PAINTER, 1);
+        DESERT_PAINTER = new VillagerData(VillagerType.DESERT, PAINTER, 1);
+        JUNGLE_PAINTER = new VillagerData(VillagerType.JUNGLE, PAINTER, 1);
+        SAVANNA_PAINTER = new VillagerData(VillagerType.SAVANNA, PAINTER, 1);
+        SNOW_PAINTER = new VillagerData(VillagerType.SNOW, PAINTER, 1);
+        SWAMP_PAINTER = new VillagerData(VillagerType.SWAMP, PAINTER, 1);
+        TAIGA_PAINTER = new VillagerData(VillagerType.TAIGA, PAINTER, 1);
     }
 }
