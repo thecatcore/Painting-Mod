@@ -1,4 +1,6 @@
 {
+  "entity.minecraft.villager.painter": "Painter",
+
   "_comment": "Items",
   "item.paintingmod.normal_paintbrush": "Paintbrush",
   "item.paintingmod.earth_mortar": "Earth Mortar",

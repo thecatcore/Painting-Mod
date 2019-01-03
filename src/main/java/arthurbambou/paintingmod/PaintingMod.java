@@ -1,6 +1,7 @@
 package arthurbambou.paintingmod;
 
 import arthurbambou.paintingmod.registery.ModBlocks;
+import arthurbambou.paintingmod.registery.ModEntities;
 import arthurbambou.paintingmod.registery.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
@@ -18,5 +19,6 @@ public class PaintingMod implements ModInitializer {
 	public void onInitialize() {
 		ModBlocks.init();
 		ModItems.init();
+		ModEntities.init();
 	}
 }
