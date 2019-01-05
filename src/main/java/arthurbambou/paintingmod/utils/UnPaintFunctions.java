@@ -52,7 +52,7 @@ public class UnPaintFunctions {
                 worldIn.getBlockState(pos).getBlock() == coloredStairs.yellow) {
 
             BlockState blockState = worldIn.getBlockState(pos);
-            worldIn.setBlockState(pos, coloredStairs.replace.getStateFactory().getDefaultState().with(StairsBlock.field_11572, blockState.get(StairsBlock.field_11572)).with(StairsBlock.FACING, blockState.get(StairsBlock.FACING)).with(StairsBlock.field_11573, blockState.get(StairsBlock.field_11573)));
+            worldIn.setBlockState(pos, coloredStairs.replace.getStateFactory().getDefaultState().with(StairsBlock.field_11572, blockState.get(StairsBlock.field_11572)).with(StairsBlock.FACING, blockState.get(StairsBlock.FACING)).with(StairsBlock.field_11573, blockState.get(StairsBlock.field_11573)).with(StairsBlock.field_11565, blockState.get(StairsBlock.field_11565)));
             itemStack.setDamage(itemStack.getDamage());
         }
     }
