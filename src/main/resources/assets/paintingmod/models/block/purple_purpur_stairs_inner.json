@@ -1,1 +1,1 @@
-{"parent":"minecraft:block/inner_stairs","textures":{"bottom":"paintingmod:blocks/purple_purpur","top":"paintingmod:blocks/purple_purpur","side":"paintingmod:blocks/purple_purpur"}}
+{"parent":"minecraft:block/inner_stairs","textures":{"bottom":"paintingmod:blocks/purple_purpur_block","top":"paintingmod:blocks/purple_purpur_block","side":"paintingmod:blocks/purple_purpur_block"}}

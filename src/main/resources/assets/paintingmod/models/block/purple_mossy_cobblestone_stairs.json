@@ -1,1 +1,1 @@
-{"parent":"minecraft:block/stairs","textures":{"bottom":"paintingmod:blocks/purple_mossy_cobblestone","top":"paintingmod:blocks/purple_mossy_cobblestone","side":"paintingmod:blocks/purple_mossy_cobblestone"}}
+{"parent":"minecraft:block/stairs","textures":{"bottom":"paintingmod:blocks/purple_moss_stone","top":"paintingmod:blocks/purple_moss_stone","side":"paintingmod:blocks/purple_moss_stone"}}
