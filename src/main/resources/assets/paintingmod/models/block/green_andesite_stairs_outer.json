@@ -1,1 +1,1 @@
-{"parent":"minecraft:block/outer_stairs","textures":{"bottom":"paintingmod:block/green_andesite","top":"paintingmod:block/green_andesite","side":"paintingmod:block/green_andesite"}}
+{"parent":"minecraft:block/outer_stairs","textures":{"bottom":"paintingmod:blocks/green_andesite","top":"paintingmod:blocks/green_andesite","side":"paintingmod:blocks/green_andesite"}}

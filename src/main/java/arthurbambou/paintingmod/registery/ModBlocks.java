@@ -236,7 +236,7 @@ public class ModBlocks {
 //        ACACIA_PLANKS_STAIRS = new ColoredStairs("acacia_planks_stairs", Blocks.ACACIA_STAIRS);
 //        DARK_OAK_PLANKS_STAIRS = new ColoredStairs("dark_oak_planks_stairs", Blocks.DARK_OAK_STAIRS);
         PRISMARINE_STAIRS = new ColoredStairs("prismarine_stairs", Blocks.PRISMARINE_STAIRS);
-        PRISMARINE_BRICK_STAIRS = new ColoredStairs("primsarine_brick_stairs", Blocks.PRISMARINE_BRICK_STAIRS);
+        PRISMARINE_BRICK_STAIRS = new ColoredStairs("prismarine_brick_stairs", Blocks.PRISMARINE_BRICK_STAIRS);
         DARK_PRISMARINE_STAIRS = new ColoredStairs("dark_prismarine_stairs", Blocks.DARK_PRISMARINE_STAIRS);
 //        RED_SANDSTONE_STAIRS = new ColoredStairs("red_sandstone_stairs", Blocks.RED_SANDSTONE_STAIRS);
         POLISHED_GRANITE_STAIRS = new ColoredStairs("polished_granite_stairs", Blocks.POLISHED_GRANITE_STAIRS);

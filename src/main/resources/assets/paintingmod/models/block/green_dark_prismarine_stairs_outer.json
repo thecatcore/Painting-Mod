@@ -1,1 +1,1 @@
-{"parent":"minecraft:block/outer_stairs","textures":{"bottom":"paintingmod:block/green_dark_prismarine","top":"paintingmod:block/green_dark_prismarine","side":"paintingmod:block/green_dark_prismarine"}}
+{"parent":"minecraft:block/outer_stairs","textures":{"bottom":"paintingmod:blocks/green_dark_prismarine","top":"paintingmod:blocks/green_dark_prismarine","side":"paintingmod:blocks/green_dark_prismarine"}}

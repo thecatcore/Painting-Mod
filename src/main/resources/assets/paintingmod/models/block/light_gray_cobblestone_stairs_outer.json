@@ -1,1 +1,1 @@
-{"parent":"minecraft:block/outer_stairs","textures":{"bottom":"paintingmod:block/light_gray_cobblestone","top":"paintingmod:block/light_gray_cobblestone","side":"paintingmod:block/light_gray_cobblestone"}}
+{"parent":"minecraft:block/outer_stairs","textures":{"bottom":"paintingmod:blocks/light_gray_cobblestone","top":"paintingmod:blocks/light_gray_cobblestone","side":"paintingmod:blocks/light_gray_cobblestone"}}

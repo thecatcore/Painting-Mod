@@ -1,1 +1,1 @@
-{"parent":"minecraft:block/stairs","textures":{"bottom":"paintingmod:block/orange_prismarine_brick","top":"paintingmod:block/orange_prismarine_brick","side":"paintingmod:block/orange_prismarine_brick"}}
+{"parent":"minecraft:block/stairs","textures":{"bottom":"paintingmod:blocks/orange_prismarine_brick","top":"paintingmod:blocks/orange_prismarine_brick","side":"paintingmod:blocks/orange_prismarine_brick"}}

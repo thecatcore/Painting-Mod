@@ -1,1 +1,1 @@
-{"parent":"minecraft:block/stairs","textures":{"bottom":"paintingmod:block/brown_polished_diorite","top":"paintingmod:block/brown_polished_diorite","side":"paintingmod:block/brown_polished_diorite"}}
+{"parent":"minecraft:block/stairs","textures":{"bottom":"paintingmod:blocks/brown_polished_diorite","top":"paintingmod:blocks/brown_polished_diorite","side":"paintingmod:blocks/brown_polished_diorite"}}

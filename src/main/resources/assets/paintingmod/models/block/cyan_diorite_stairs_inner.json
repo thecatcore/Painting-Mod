@@ -1,1 +1,1 @@
-{"parent":"minecraft:block/inner_stairs","textures":{"bottom":"paintingmod:block/cyan_diorite","top":"paintingmod:block/cyan_diorite","side":"paintingmod:block/cyan_diorite"}}
+{"parent":"minecraft:block/inner_stairs","textures":{"bottom":"paintingmod:blocks/cyan_diorite","top":"paintingmod:blocks/cyan_diorite","side":"paintingmod:blocks/cyan_diorite"}}

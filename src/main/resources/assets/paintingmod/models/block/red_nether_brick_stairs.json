@@ -1,1 +1,1 @@
-{"parent":"minecraft:block/stairs","textures":{"bottom":"paintingmod:block/red_nether_brick","top":"paintingmod:block/red_nether_brick","side":"paintingmod:block/red_nether_brick"}}
+{"parent":"minecraft:block/stairs","textures":{"bottom":"paintingmod:blocks/red_nether_brick","top":"paintingmod:blocks/red_nether_brick","side":"paintingmod:blocks/red_nether_brick"}}

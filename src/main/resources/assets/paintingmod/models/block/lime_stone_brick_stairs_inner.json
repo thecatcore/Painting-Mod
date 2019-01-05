@@ -1,1 +1,1 @@
-{"parent":"minecraft:block/inner_stairs","textures":{"bottom":"paintingmod:block/lime_stone_brick","top":"paintingmod:block/lime_stone_brick","side":"paintingmod:block/lime_stone_brick"}}
+{"parent":"minecraft:block/inner_stairs","textures":{"bottom":"paintingmod:blocks/lime_stone_brick","top":"paintingmod:blocks/lime_stone_brick","side":"paintingmod:blocks/lime_stone_brick"}}

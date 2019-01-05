@@ -1,1 +1,1 @@
-{"parent":"minecraft:block/stairs","textures":{"bottom":"paintingmod:block/brown_andesite","top":"paintingmod:block/brown_andesite","side":"paintingmod:block/brown_andesite"}}
+{"parent":"minecraft:block/stairs","textures":{"bottom":"paintingmod:blocks/brown_andesite","top":"paintingmod:blocks/brown_andesite","side":"paintingmod:blocks/brown_andesite"}}

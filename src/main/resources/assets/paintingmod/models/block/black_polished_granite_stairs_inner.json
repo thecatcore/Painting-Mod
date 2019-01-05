@@ -1,1 +1,1 @@
-{"parent":"minecraft:block/inner_stairs","textures":{"bottom":"paintingmod:block/black_polished_granite","top":"paintingmod:block/black_polished_granite","side":"paintingmod:block/black_polished_granite"}}
+{"parent":"minecraft:block/inner_stairs","textures":{"bottom":"paintingmod:blocks/black_polished_granite","top":"paintingmod:blocks/black_polished_granite","side":"paintingmod:blocks/black_polished_granite"}}

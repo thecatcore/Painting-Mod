@@ -70,9 +70,9 @@ for (var i = 0; blocks.length > i; i++) {
         var blockmodel = {
             parent: "minecraft:block/stairs",
             textures: {
-                bottom: "paintingmod:block/" + colors[a] + "_" + blocks[i],
-                top: "paintingmod:block/" + colors[a] + "_" + blocks[i],
-                side: "paintingmod:block/" + colors[a] + "_" + blocks[i]
+                bottom: "paintingmod:blocks/" + colors[a] + "_" + blocks[i],
+                top: "paintingmod:blocks/" + colors[a] + "_" + blocks[i],
+                side: "paintingmod:blocks/" + colors[a] + "_" + blocks[i]
             }
         }
         fs.writeFile(path.join(blockmodelpath, colors[a] + "_" + blocks[i] + "_stairs.json"), JSON.stringify(blockmodel), (err) => {

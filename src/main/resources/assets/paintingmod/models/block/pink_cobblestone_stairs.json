@@ -1,1 +1,1 @@
-{"parent":"minecraft:block/stairs","textures":{"bottom":"paintingmod:block/pink_cobblestone","top":"paintingmod:block/pink_cobblestone","side":"paintingmod:block/pink_cobblestone"}}
+{"parent":"minecraft:block/stairs","textures":{"bottom":"paintingmod:blocks/pink_cobblestone","top":"paintingmod:blocks/pink_cobblestone","side":"paintingmod:blocks/pink_cobblestone"}}

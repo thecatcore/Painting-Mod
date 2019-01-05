@@ -1,1 +1,1 @@
-{"parent":"minecraft:block/inner_stairs","textures":{"bottom":"paintingmod:block/yellow_mossy_cobblestone","top":"paintingmod:block/yellow_mossy_cobblestone","side":"paintingmod:block/yellow_mossy_cobblestone"}}
+{"parent":"minecraft:block/inner_stairs","textures":{"bottom":"paintingmod:blocks/yellow_mossy_cobblestone","top":"paintingmod:blocks/yellow_mossy_cobblestone","side":"paintingmod:blocks/yellow_mossy_cobblestone"}}

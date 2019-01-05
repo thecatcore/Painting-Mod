@@ -1,1 +1,1 @@
-{"parent":"minecraft:block/outer_stairs","textures":{"bottom":"paintingmod:block/blue_diorite","top":"paintingmod:block/blue_diorite","side":"paintingmod:block/blue_diorite"}}
+{"parent":"minecraft:block/outer_stairs","textures":{"bottom":"paintingmod:blocks/blue_diorite","top":"paintingmod:blocks/blue_diorite","side":"paintingmod:blocks/blue_diorite"}}

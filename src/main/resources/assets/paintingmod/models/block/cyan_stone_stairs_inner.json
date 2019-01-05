@@ -1,1 +1,1 @@
-{"parent":"minecraft:block/inner_stairs","textures":{"bottom":"paintingmod:block/cyan_stone","top":"paintingmod:block/cyan_stone","side":"paintingmod:block/cyan_stone"}}
+{"parent":"minecraft:block/inner_stairs","textures":{"bottom":"paintingmod:blocks/cyan_stone","top":"paintingmod:blocks/cyan_stone","side":"paintingmod:blocks/cyan_stone"}}

@@ -1,1 +1,1 @@
-{"parent":"minecraft:block/outer_stairs","textures":{"bottom":"paintingmod:block/pink_purpur","top":"paintingmod:block/pink_purpur","side":"paintingmod:block/pink_purpur"}}
+{"parent":"minecraft:block/outer_stairs","textures":{"bottom":"paintingmod:blocks/pink_purpur","top":"paintingmod:blocks/pink_purpur","side":"paintingmod:blocks/pink_purpur"}}

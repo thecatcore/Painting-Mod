@@ -1,1 +1,1 @@
-{"parent":"minecraft:block/stairs","textures":{"bottom":"paintingmod:block/white_brick","top":"paintingmod:block/white_brick","side":"paintingmod:block/white_brick"}}
+{"parent":"minecraft:block/stairs","textures":{"bottom":"paintingmod:blocks/white_brick","top":"paintingmod:blocks/white_brick","side":"paintingmod:blocks/white_brick"}}

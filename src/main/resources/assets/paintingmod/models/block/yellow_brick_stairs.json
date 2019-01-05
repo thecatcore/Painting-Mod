@@ -1,1 +1,1 @@
-{"parent":"minecraft:block/stairs","textures":{"bottom":"paintingmod:block/yellow_brick","top":"paintingmod:block/yellow_brick","side":"paintingmod:block/yellow_brick"}}
+{"parent":"minecraft:block/stairs","textures":{"bottom":"paintingmod:blocks/yellow_brick","top":"paintingmod:blocks/yellow_brick","side":"paintingmod:blocks/yellow_brick"}}

@@ -1,1 +1,1 @@
-{"parent":"minecraft:block/outer_stairs","textures":{"bottom":"paintingmod:block/purple_mossy_stone_brick","top":"paintingmod:block/purple_mossy_stone_brick","side":"paintingmod:block/purple_mossy_stone_brick"}}
+{"parent":"minecraft:block/outer_stairs","textures":{"bottom":"paintingmod:blocks/purple_mossy_stone_brick","top":"paintingmod:blocks/purple_mossy_stone_brick","side":"paintingmod:blocks/purple_mossy_stone_brick"}}

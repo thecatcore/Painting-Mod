@@ -1,1 +1,1 @@
-{"parent":"minecraft:block/inner_stairs","textures":{"bottom":"paintingmod:block/lime_polished_diorite","top":"paintingmod:block/lime_polished_diorite","side":"paintingmod:block/lime_polished_diorite"}}
+{"parent":"minecraft:block/inner_stairs","textures":{"bottom":"paintingmod:blocks/lime_polished_diorite","top":"paintingmod:blocks/lime_polished_diorite","side":"paintingmod:blocks/lime_polished_diorite"}}

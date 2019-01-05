@@ -1,1 +1,1 @@
-{"parent":"minecraft:block/inner_stairs","textures":{"bottom":"paintingmod:block/magenta_diorite","top":"paintingmod:block/magenta_diorite","side":"paintingmod:block/magenta_diorite"}}
+{"parent":"minecraft:block/inner_stairs","textures":{"bottom":"paintingmod:blocks/magenta_diorite","top":"paintingmod:blocks/magenta_diorite","side":"paintingmod:blocks/magenta_diorite"}}

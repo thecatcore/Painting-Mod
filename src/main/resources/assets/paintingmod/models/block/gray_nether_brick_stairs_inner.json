@@ -1,1 +1,1 @@
-{"parent":"minecraft:block/inner_stairs","textures":{"bottom":"paintingmod:block/gray_nether_brick","top":"paintingmod:block/gray_nether_brick","side":"paintingmod:block/gray_nether_brick"}}
+{"parent":"minecraft:block/inner_stairs","textures":{"bottom":"paintingmod:blocks/gray_nether_brick","top":"paintingmod:blocks/gray_nether_brick","side":"paintingmod:blocks/gray_nether_brick"}}
