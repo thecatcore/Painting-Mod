@@ -18,7 +18,7 @@ public class TradeBuilder {
     private static final Logger LOGGER = LogManager.getLogger();
     public static void createRecipes() {
         VillagerTrades.PROFESSION_TO_LEVELED_TRADE.put(PAINTER, copyToFastUtilMap(ImmutableMap.of(1, new VillagerTrades.Factory[] {
-                new BuyItemFactory(Items.WHEAT, new PriceRange(18, 22))
+                new BuyItemFactory(ModItems.HEAT_GUN, new PriceRange(6, 8))
         })));
     }
 
@@ -54,8 +54,7 @@ public class TradeBuilder {
         }
 
         public VillagerRecipe create(Villager villager_1, Random random_1) {
-            ItemStack itemStack_1 = new ItemStack(this.bought, this.range == null ? 1 : this.range.getPrice(random_1));
-            return new VillagerRecipe(itemStack_1, new ItemStack(Items.EMERALD));
+            return new VillagerRecipe(new ItemStack(Items.EMERALD, this.range == null ? 1 : this.range.getPrice(random_1)), new ItemStack(this.bought));
         }
     }
 }

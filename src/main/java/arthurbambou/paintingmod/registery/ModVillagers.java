@@ -7,7 +7,7 @@ public class ModVillagers implements VillagerProfession {
     public static VillagerProfession PAINTER;
 
     public static void init() {
-//        PAINTER = arthurbambou.paintingmod.villagers.VillagerProfession.register("painter");
-//        TradeBuilder.createRecipes();
+       PAINTER = arthurbambou.paintingmod.villagers.VillagerProfession.register("painter");
+       TradeBuilder.createRecipes();
     }
 }

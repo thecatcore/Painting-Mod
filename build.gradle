@@ -55,7 +55,7 @@ github {
  name = gitversion + "-" + "MC" + minecraft_version
  targetCommitish = "master"
  prerelease = prelease
- body = 
+ body = changlogbody
  assets = [
 	 "build/libs/${archivesBaseName}-${version}-dev.jar",
 	 "build/libs/${archivesBaseName}-${version}.jar"
