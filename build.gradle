@@ -13,6 +13,7 @@ def buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
 def gittoken = System.getenv('GH_TOKEN')
 def prelease
 def gitversion
+def commitname = System.getenv('TRAVIS_COMMIT')
 def commitlist = System.getenv('TRAVIS_COMMIT_RANGE')
 def commitbody = System.getenv('TRAVIS_COMMIT_MESSAGE')
 def changelogbody
@@ -20,7 +21,7 @@ if (buildbranch == "dev/fabric") {
 	version = baseversion + "." + buildnumber
     gitversion = version
 	prelease = true
-	changelogbody = """Version ${gitversion}
+	changelogbody = """Version ${commitname} (${gitversion})
 	${commitlist}
 
 	${commitbody}
