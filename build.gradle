@@ -13,14 +13,23 @@ def buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
 def gittoken = System.getenv('GH_TOKEN')
 def prelease
 def gitversion
+def commitlist = System.getenv('TRAVIS_COMMIT_RANGE')
+def commitbody = System.getenv('TRAVIS_COMMIT_MESSAGE')
+def changelogbody
 if (buildbranch == "dev/fabric") {
 	version = baseversion + "." + buildnumber
     gitversion = version
 	prelease = true
+	changelogbody = """Version ${gitversion}
+	${commitlist}
+
+	${commitbody}
+ """
 } else {
 	version = baseversion
     gitversion = version + "." + buildnumber
 	prelease = false
+	changelogbody = file("CHANGELOG.txt")
 }
 
 archivesBaseName = "PaintingMod-${minecraft_version}"
@@ -46,6 +55,7 @@ github {
  name = gitversion + "-" + "MC" + minecraft_version
  targetCommitish = "master"
  prerelease = prelease
+ body = 
  assets = [
 	 "build/libs/${archivesBaseName}-${version}-dev.jar",
 	 "build/libs/${archivesBaseName}-${version}.jar"
@@ -57,7 +67,7 @@ curseforge {
  	project {
  		id = "299755"
  		releaseType = "beta"
-
+		changelog = file("CHANGELOG.txt")
         gameVersionStrings.clear()
         gameVersionStrings.add("1.14-Snapshot")
         mainArtifact(jar) {
