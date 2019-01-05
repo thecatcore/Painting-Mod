@@ -1,0 +1,4 @@
+Version 0.2.0 Fabric 15w50a
+
+The most of Vanilla Stairs are now paintable, they are in a new Creative Tab called "PaintingMod Stairs"
+There is a secret new feature...

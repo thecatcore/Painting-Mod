@@ -1,29 +1,16 @@
 language: java
 jdk: oraclejdk8
 if: tag IS blank
-#before_install:
-# - git checkout -b master
-# - git checkout $TRAVIS_BRANCH
+before_install:
+- chmod +x buildscriptcmd.bash
 install: 
  - ./gradlew
-script: 
- - |
-    if [ "$TRAVIS_PULL_REQUEST" == false ]; then
-          if [ "$TRAVIS_BRANCH" == "dev/fabric" ]; then
-            ./gradlew build githubRelease
-          else
-            ./gradlew build githubRelease curseforge299755
-          fi
-    else
-      ./gradlew build
-    fi
-
+script:
+ - node buildscript.js
+ - ./buildscriptcmd.bash
 cache:
     directories:
       -/home/travis/.gradle/
-
-notifications:
-    slack: wip-name:uZWumWJ6i8idAwHoV0rg1XP2
 
 after_success:
 - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
