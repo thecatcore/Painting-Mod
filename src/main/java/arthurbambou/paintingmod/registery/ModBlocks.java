@@ -228,7 +228,7 @@ public class ModBlocks {
         BRICK_STAIRS = new ColoredStairs("brick_stairs", Blocks.BRICK_STAIRS);
         STONE_BRICK_STAIRS = new ColoredStairs("stone_brick_stairs", Blocks.STONE_BRICK_STAIRS);
         NETHER_BRICK_STAIRS = new ColoredStairs("nether_brick_stairs", Blocks.NETHER_BRICK_STAIRS);
-        SANDSTONE_STAIRS = new ColoredStairs("sandstone_stairs", Blocks.SANDSTONE_STAIRS);
+        // SANDSTONE_STAIRS = new ColoredStairs("sandstone_stairs", Blocks.SANDSTONE_STAIRS);
 //        SPRUCE_PLANKS_STAIRS = new ColoredStairs("spruce_planks_stairs", Blocks.SPRUCE_STAIRS);
 //        BIRCH_PLANKS_STAIRS = new ColoredStairs("birch_planks_stairs", Blocks.BIRCH_STAIRS);
 //        JUNGLE_PLANKS_STAIRS = new ColoredStairs("jungle_planks_stairs", Blocks.JUNGLE_STAIRS);

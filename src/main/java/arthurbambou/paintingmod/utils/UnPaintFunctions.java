@@ -7,7 +7,6 @@ import net.minecraft.block.StairsBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import sun.jvm.hotspot.opto.Block;
 
 public class UnPaintFunctions {
 
