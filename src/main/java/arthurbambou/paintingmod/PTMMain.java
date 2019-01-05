@@ -1,6 +1,7 @@
 package arthurbambou.paintingmod;
 
 import arthurbambou.paintingmod.api.AddPaintbrush;
+import arthurbambou.paintingmod.api.ColoredStairs;
 import arthurbambou.paintingmod.init.PTMItems;
 import arthurbambou.paintingmod.util.handlers.PTMRegistryHandler;
 import net.minecraft.item.ItemStack;
@@ -61,6 +62,13 @@ public class PTMMain {
         }
     };
 
+    public static final CreativeTabs PAINTING_MOD_STAIRS = new CreativeTabs(PTMReference.MOD_ID + "." + "paintingmod_tab_stairs") {
+		@Override
+		public ItemStack createIcon() {
+			return new ItemStack(PTMBlocks.OAK_PLANK_STAIRS.blue);
+		}
+	};
+
 	
 	public static final Logger logger = LogManager.getLogger(PTMReference.MOD_ID);
 	
@@ -109,8 +117,14 @@ public class PTMMain {
             for (ColoredBlock coloredBlock : PTMBlocks.COLORED_BLOCKS) {
                 AddPaintbrush.registerSimpleBlock(coloredBlock);
             }
+            for (ColoredStairs coloredStairs : PTMBlocks.COLORED_STAIRS_META_LIST) {
+            	AddPaintbrush.registerColoredStairsMeta(coloredStairs);
+			}
         } else {
             PTMRegistryHandler.APIinit();
+			for (ColoredStairs coloredStairs : PTMBlocks.COLORED_STAIRS_META_LIST) {
+				AddPaintbrush.registerColoredStairsMeta(coloredStairs);
+			}
         }
 	}
 }

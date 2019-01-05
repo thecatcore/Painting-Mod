@@ -44,6 +44,7 @@ item.paintingmod.white_paintbrush.name=Paintbrush with white paint
 #GUI
 itemGroup.paintingmod.paintingmod_tab_items=PaintingMod Items
 itemGroup.paintingmod.paintingmod_tab_blocks=PaintingMod Blocks
+itemGroup.paintingmod.paintingmod_tab_stairs=PaintingMod Stairs
 
 #Tools
 item.paintingmod.hammer.name=Hammer

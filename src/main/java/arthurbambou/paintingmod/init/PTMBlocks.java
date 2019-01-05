@@ -7,10 +7,12 @@ import arthurbambou.paintingmod.PTMMain;
 import arthurbambou.paintingmod.api.ColoredBlock;
 import arthurbambou.paintingmod.api.ColoredBlockMeta;
 import arthurbambou.paintingmod.api.ColoredFallingBlockMeta;
+import arthurbambou.paintingmod.api.ColoredStairs;
 import arthurbambou.paintingmod.blocks.*;
 import arthurbambou.paintingmod.blocks.PTMSoggyClay;
 import arthurbambou.paintingmod.coloredblocks.*;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockStairs;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
@@ -22,6 +24,8 @@ public class PTMBlocks {
 	public static final List<Block> BLOCKS_META = new ArrayList<Block>();
 	public static final List<ColoredBlockMeta> COLORED_BLOCKS_META = new ArrayList<ColoredBlockMeta>();
 	public static final List<ColoredFallingBlockMeta> COLORED_FALLING_BLOCK_METAS = new ArrayList<ColoredFallingBlockMeta>();
+	public static final List<ColoredStairs> COLORED_STAIRS_META_LIST = new ArrayList<ColoredStairs>();
+	public static final List<BlockStairs> BLOCK_STAIRS_LIST = new ArrayList<BlockStairs>();
 	
 	public static final Block SOGGY_CLAY = new PTMSoggyClay("soggy_clay", Material.IRON, PTMMain.PAINTING_MOD_BLOCKS);
 
@@ -79,6 +83,24 @@ public class PTMBlocks {
 	public static final ColoredBlockMeta BIRCH_LEAVES_META = new PTMColoredBlockMetaBase("birch_leaves",  0.2F, 1.0F,  Blocks.LEAVES,  2);
 	public static final ColoredBlockMeta ACACIA_LEAVES_META = new PTMColoredBlockMetaBase("acacia_leaves",  0.2F, 1.0F,  Blocks.LEAVES2,  0);
 	public static final ColoredBlockMeta DARK_OAK_LEAVES_META = new PTMColoredBlockMetaBase("dark_oak_leaves",  0.2F, 1.0F,  Blocks.LEAVES2,  1);
+
+
+    public static final ColoredStairs OAK_PLANK_STAIRS = new BaseStairs("oak_plank_stairs", Blocks.OAK_STAIRS);
+    public static final ColoredStairs SPRUCE_PLANK_STAIRS = new BaseStairs("spruce_plank_stairs", Blocks.SPRUCE_STAIRS);
+    public static final ColoredStairs BIRCH_PLANK_STAIRS = new BaseStairs("birch_plank_stairs", Blocks.BIRCH_STAIRS);
+    public static final ColoredStairs JUNGLE_PLANK_STAIRS = new BaseStairs("jungle_plank_stairs", Blocks.JUNGLE_STAIRS);
+    public static final ColoredStairs ACACIA_PLANK_STAIRS = new BaseStairs("acacia_plank_stairs", Blocks.ACACIA_STAIRS);
+    public static final ColoredStairs DARK_OAK_PLANK_STAIRS = new BaseStairs("dark_oak_plank_stairs", Blocks.DARK_OAK_STAIRS);
+    public static final ColoredStairs COBBLESTONE_STAIRS = new BaseStairs("cobblestone_stairs", Blocks.STONE_STAIRS);
+    public static final ColoredStairs BRICK_STAIRS = new BaseStairs("brick_stairs", Blocks.BRICK_STAIRS);
+    public static final ColoredStairs STONE_BRICK_STAIRS = new BaseStairs("stone_brick_stairs", Blocks.STONE_BRICK_STAIRS);
+    public static final ColoredStairs NETHER_BRICK_STAIRS = new BaseStairs("nether_brick_stairs", Blocks.NETHER_BRICK_STAIRS);
+//    public static final ColoredStairs SANDSTONE_STAIRS = new BaseStairs("sandstone_stairs", Blocks.SANDSTONE_STAIRS);
+//    public static final ColoredStairs QUARTZ_STAIRS = new BaseStairs("quartz_stairs", Blocks.QUARTZ_STAIRS);
+    public static final ColoredStairs PURPUR_STAIRS = new BaseStairs("purpur_stairs", Blocks.PURPUR_STAIRS);
+//    public static final ColoredStairs RED_SANDSTONE_STAIRS = new BaseStairs("red_sandstone_stairs", Blocks.RED_SANDSTONE_STAIRS);
+
+
 
 
 

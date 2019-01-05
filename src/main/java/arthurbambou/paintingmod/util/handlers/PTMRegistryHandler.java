@@ -7,6 +7,7 @@ import arthurbambou.paintingmod.init.PTMItems;
 import arthurbambou.paintingmod.util.PTMIHasModel;
 import arthurbambou.paintingmod.util.PTMReference;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockStairs;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
@@ -32,6 +33,7 @@ public class PTMRegistryHandler
 	{
 		if (PTMReference.getMinecraftVersion() == "[1.13]" || PTMReference.getMinecraftVersion() == "[1.13.1]" || PTMReference.getMinecraftVersion() == "[1.13.2]") {
 			event.getRegistry().registerAll(PTMBlocks.BLOCKS_ID.toArray(new Block[0]));
+			event.getRegistry().registerAll(PTMBlocks.BLOCK_STAIRS_LIST.toArray(new Block[0]));
 		} else {
             event.getRegistry().registerAll(PTMBlocks.BLOCKS_META.toArray(new Block[0]));
 
@@ -40,47 +42,61 @@ public class PTMRegistryHandler
             event.getRegistry().registerAll(PTMBlocks.COLORED_FALLING_BLOCK_METAS.toArray(new Block[0]));
 
             event.getRegistry().register(PTMBlocks.SLIME_BLOCK_META);
+            event.getRegistry().registerAll(PTMBlocks.BLOCK_STAIRS_LIST.toArray(new Block[0]));
 		}
 	}
 	
 	@SubscribeEvent
 	public static void onModelRegister(ModelRegistryEvent event) {
         if (PTMReference.getMinecraftVersion() == "[1.13]" || PTMReference.getMinecraftVersion() == "[1.13.1]" || PTMReference.getMinecraftVersion() == "[1.13.2]") {
-        for (Item item : PTMItems.ITEMS_ID) {
-            if (item instanceof PTMIHasModel) {
-                ((PTMIHasModel) item).registerModels();
+            for (Item item : PTMItems.ITEMS_ID) {
+                if (item instanceof PTMIHasModel) {
+                    ((PTMIHasModel) item).registerModels();
+                }
             }
-        }
 
-        for (Block block : PTMBlocks.BLOCKS_ID) {
-            if (block instanceof PTMIHasModel) {
-                ((PTMIHasModel) block).registerModels();
+            for (BlockStairs blockStairs : PTMBlocks.BLOCK_STAIRS_LIST) {
+                if (blockStairs instanceof PTMIHasModel) {
+                    ((PTMIHasModel) blockStairs).registerModels();
+                }
             }
-        }
+
+            for (Block block : PTMBlocks.BLOCKS_ID) {
+                if (block instanceof PTMIHasModel) {
+                    ((PTMIHasModel) block).registerModels();
+                }
+            }
         } else {
-        for (Block block : PTMBlocks.BLOCKS_META) {
-            if (block instanceof PTMIHasModel) {
-                ((PTMIHasModel) block).registerModels();
+            for (Block block : PTMBlocks.BLOCKS_META) {
+                if (block instanceof PTMIHasModel) {
+                    ((PTMIHasModel) block).registerModels();
+                }
             }
-        }
 
-        for (Item item : PTMItems.ITEMS_META) {
-            if (item instanceof PTMIHasModel) {
-                ((PTMIHasModel) item).registerModels();
+            for (Item item : PTMItems.ITEMS_META) {
+                if (item instanceof PTMIHasModel) {
+                    ((PTMIHasModel) item).registerModels();
+                }
             }
-        }
 
-        for (Block block : PTMBlocks.COLORED_BLOCKS_META) {
-            if (block instanceof PTMIHasModel) {
-                ((PTMIHasModel) block).registerModels();
+            for (Block block : PTMBlocks.COLORED_BLOCKS_META) {
+                if (block instanceof PTMIHasModel) {
+                    ((PTMIHasModel) block).registerModels();
+                }
             }
-        }
             for (Block block : PTMBlocks.COLORED_FALLING_BLOCK_METAS) {
                 if (block instanceof PTMIHasModel) {
                     ((PTMIHasModel) block).registerModels();
                 }
             }
             ((PTMIHasModel) PTMBlocks.SLIME_BLOCK_META).registerModels();
+
+            for (BlockStairs blockStairs : PTMBlocks.BLOCK_STAIRS_LIST) {
+                if (blockStairs instanceof PTMIHasModel) {
+                    ((PTMIHasModel) blockStairs).registerModels();
+                }
+            }
+
         }
 
 	}

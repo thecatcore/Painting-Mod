@@ -1,12 +1,11 @@
 package arthurbambou.paintingmod.items;
 
-import arthurbambou.paintingmod.api.AddPaintbrush;
-import arthurbambou.paintingmod.api.ColoredBlock;
-import arthurbambou.paintingmod.api.ColoredBlockMeta;
-import arthurbambou.paintingmod.api.ColoredFallingBlockMeta;
+import arthurbambou.paintingmod.api.*;
 import arthurbambou.paintingmod.blocks.ColoredBlockMetaSlime;
 import arthurbambou.paintingmod.init.PTMItems;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockStairs;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.EnumActionResult;
@@ -37,7 +36,36 @@ public class PTMHeatGun extends PTMItemBase {
 		for (ColoredBlockMetaSlime blockMetaSlime : AddPaintbrush.getColoredBlockMetaSlimes()) {
 			heatgunmeta(player,worldIn,pos,blockMetaSlime);
 		}
+		for (ColoredStairs coloredStairs : AddPaintbrush.getColoredStairsMetaList()) {
+			heatgunstairs(player,worldIn,pos,coloredStairs);
+		}
 		return EnumActionResult.SUCCESS;
+	}
+
+	private void heatgunstairs(EntityPlayer player, World world, BlockPos pos, ColoredStairs coloredStairs) {
+		if (world.getBlockState(pos).getBlock() == coloredStairs.black ||
+				world.getBlockState(pos).getBlock() == coloredStairs.blue ||
+				world.getBlockState(pos).getBlock() == coloredStairs.brown ||
+				world.getBlockState(pos).getBlock() == coloredStairs.cyan ||
+				world.getBlockState(pos).getBlock() == coloredStairs.gray ||
+				world.getBlockState(pos).getBlock() == coloredStairs.green ||
+				world.getBlockState(pos).getBlock() == coloredStairs.lightblue ||
+				world.getBlockState(pos).getBlock() == coloredStairs.lightgray ||
+				world.getBlockState(pos).getBlock() == coloredStairs.lime ||
+				world.getBlockState(pos).getBlock() == coloredStairs.magenta ||
+				world.getBlockState(pos).getBlock() == coloredStairs.orange ||
+				world.getBlockState(pos).getBlock() == coloredStairs.pink ||
+				world.getBlockState(pos).getBlock() == coloredStairs.purple ||
+				world.getBlockState(pos).getBlock() == coloredStairs.red ||
+				world.getBlockState(pos).getBlock() == coloredStairs.white ||
+				world.getBlockState(pos).getBlock() == coloredStairs.yellow) {
+
+			IBlockState blockState = world.getBlockState(pos);
+			world.setBlockState(pos, coloredStairs.replace.getBlockState().getBaseState()
+					.withProperty(BlockStairs.FACING, blockState.getValue(BlockStairs.FACING))
+					.withProperty(BlockStairs.HALF, blockState.getValue(BlockStairs.HALF))
+					.withProperty(BlockStairs.SHAPE, blockState.getValue(BlockStairs.SHAPE)));
+		}
 	}
 
 	private void heatgunmeta(EntityPlayer player, World worldIn, BlockPos pos, ColoredBlockMeta coloredBlockMeta) {
