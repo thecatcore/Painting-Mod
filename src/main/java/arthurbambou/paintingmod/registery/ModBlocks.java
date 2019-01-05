@@ -1,6 +1,7 @@
 package arthurbambou.paintingmod.registery;
 
 import arthurbambou.paintingmod.api.ColoredBlock;
+import arthurbambou.paintingmod.api.ColoredStairs;
 import arthurbambou.paintingmod.blocks.SoggyClay;
 import net.fabricmc.fabric.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -13,6 +14,7 @@ import java.util.List;
 
 public class ModBlocks {
     public static final List<ColoredBlock> COLORED_BLOCKS = new ArrayList<ColoredBlock>();
+    public static final List<ColoredStairs> COLORED_STAIRS = new ArrayList<ColoredStairs>();
 
     public static Block SOGGY_CLAY;
 
@@ -78,15 +80,29 @@ public class ModBlocks {
     public static ColoredBlock DARK_OAK_LEAVES;
     public static ColoredBlock SLIME_BLOCK;
 
+    public static ColoredStairs OAK_PLANKS_STAIRS;
+    public static ColoredStairs SPRUCE_PLANKS_STAIRS;
+    public static ColoredStairs BIRCH_PLANKS_STAIRS;
+    public static ColoredStairs JUNGLE_PLANKS_STAIRS;
+    public static ColoredStairs ACACIA_PLANKS_STAIRS;
+    public static ColoredStairs DARK_OAK_PLANKS_STAIRS;
+    public static ColoredStairs COBBLESTONE_STAIRS;
+    public static ColoredStairs BRICK_STAIRS;
+    public static ColoredStairs STONE_BRICK_STAIRS;
+    public static ColoredStairs SANDSTONE_STAIRS;
+    public static ColoredStairs NETHER_BRICK_STAIRS;
+    public static ColoredStairs QUARTZ_STAIRS;
+    public static ColoredStairs PURPUR_STAIRS;
+
     public static void init() {
         SOGGY_CLAY = new SoggyClay(FabricBlockSettings.of(Material.SAND).sounds(BlockSoundGroup.SAND).build(), "soggy_clay");
 
         STONE = new ColoredBlock("stone", Blocks.STONE);
         GRANITE = new ColoredBlock("granite", Blocks.GRANITE);
         POLISHED_GRANITE = new ColoredBlock("polished_granite", Blocks.POLISHED_GRANITE);
-        DIORITE = new ColoredBlock("diorite", Blocks.DIORITE).setMaterial(Material.STONE);
+        DIORITE = new ColoredBlock("diorite", Blocks.DIORITE);
         POLISHED_DIORITE = new ColoredBlock("polished_diorite", Blocks.POLISHED_DIORITE);
-        ANDESITE = new ColoredBlock("andesite", Blocks.ANDESITE).setMaterial(Material.STONE);
+        ANDESITE = new ColoredBlock("andesite", Blocks.ANDESITE);
         POLISHED_ANDESITE = new ColoredBlock("polished_andesite", Blocks.POLISHED_ANDESITE);
         DIRT = new ColoredBlock("dirt", Blocks.DIRT);
         COARSE_DIRT = new ColoredBlock("coarse_dirt", Blocks.COARSE_DIRT);
@@ -143,8 +159,26 @@ public class ModBlocks {
 //        DARK_OAK_LEAVES = new ColoredBlock("dark_oak_leaves", Blocks.DARK_OAK_LEAVES);
         SLIME_BLOCK = new ColoredBlock("slime_block", Blocks.SLIME_BLOCK);
 
+//        OAK_PLANKS_STAIRS = new ColoredStairs("oak_planks_stairs", Blocks.OAK_STAIRS);
+//        SPRUCE_PLANKS_STAIRS = new ColoredStairs("spruce_planks_stairs", Blocks.SPRUCE_STAIRS);
+//        BIRCH_PLANKS_STAIRS = new ColoredStairs("birch_planks_stairs", Blocks.BIRCH_STAIRS);
+//        JUNGLE_PLANKS_STAIRS = new ColoredStairs("jungle_planks_stairs", Blocks.JUNGLE_STAIRS);
+//        ACACIA_PLANKS_STAIRS = new ColoredStairs("acacia_planks_stairs", Blocks.ACACIA_STAIRS);
+//        DARK_OAK_PLANKS_STAIRS = new ColoredStairs("dark_oak_planks_stairs", Blocks.DARK_OAK_STAIRS);
+        COBBLESTONE_STAIRS = new ColoredStairs("cobblestone_stairs", Blocks.COBBLESTONE_STAIRS);
+        BRICK_STAIRS = new ColoredStairs("brick_stairs", Blocks.BRICK_STAIRS);
+        STONE_BRICK_STAIRS = new ColoredStairs("stone_brick_stairs", Blocks.STONE_BRICK_STAIRS);
+        SANDSTONE_STAIRS = new ColoredStairs("sandstone_stairs", Blocks.SANDSTONE_STAIRS);
+        NETHER_BRICK_STAIRS = new ColoredStairs("nether_brick_stairs", Blocks.NETHER_BRICK_STAIRS);
+        QUARTZ_STAIRS = new ColoredStairs("quartz_stairs", Blocks.QUARTZ_STAIRS);
+        PURPUR_STAIRS = new ColoredStairs("purpur_stairs", Blocks.PURPUR_STAIRS);
+
         for (ColoredBlock coloredBlock : COLORED_BLOCKS) {
             coloredBlock.createBlocks();
+        }
+
+        for (ColoredStairs coloredStairs : COLORED_STAIRS) {
+            coloredStairs.createBlocks();
         }
     }
 }
