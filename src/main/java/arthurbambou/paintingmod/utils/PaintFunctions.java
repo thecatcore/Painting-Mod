@@ -4,6 +4,7 @@ import arthurbambou.paintingmod.api.ColoredBlock;
 import arthurbambou.paintingmod.api.ColoredStairs;
 import arthurbambou.paintingmod.registery.ModItems;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.state.property.Property;
@@ -98,74 +99,69 @@ public class PaintFunctions {
         } else {
             if (worldIn.getBlockState(pos).getBlock() == coloredStairs.replace) {
                 BlockState blockState = worldIn.getBlockState(pos);
-                System.out.println(blockState.toString());
-                Collection<Property<?>> propertyCollection = blockState.getProperties();
-
-                for (Object object : propertyCollection.toArray()) {
-                    System.out.println(object.toString());
-                }
+                int blockstateid = StairsBlock.STATE_IDS.getId(blockState);
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.BLACK_PAINTBRUSH) {
-//                    worldIn.setBlockState(pos, coloredStairs.black.getDefaultState());
+                    worldIn.setBlockState(pos, coloredStairs.black.STATE_IDS.getInt(blockstateid));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.RED_PAINTBRUSH) {
-//                    worldIn.setBlockState(pos, coloredStairs.red.getDefaultState());
+                    worldIn.setBlockState(pos, coloredStairs.red.STATE_IDS.getInt(blockstateid));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.GREEN_PAINTBRUSH) {
-//                    worldIn.setBlockState(pos, coloredStairs.green.getDefaultState());
+                    worldIn.setBlockState(pos, coloredStairs.green.STATE_IDS.getInt(blockstateid));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.BROWN_PAINTBRUSH) {
-//                    worldIn.setBlockState(pos, coloredStairs.brown.getDefaultState());
+                    worldIn.setBlockState(pos, coloredStairs.brown.STATE_IDS.getInt(blockstateid));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.BLUE_PAINTBRUSH) {
-//                    worldIn.setBlockState(pos, coloredStairs.blue.getDefaultState());
+                    worldIn.setBlockState(pos, coloredStairs.blue.STATE_IDS.getInt(blockstateid));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.PURPLE_PAINTBRUSH) {
-//                    worldIn.setBlockState(pos, coloredStairs.purple.getDefaultState());
+                    worldIn.setBlockState(pos, coloredStairs.purple.STATE_IDS.getInt(blockstateid));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.CYAN_PAINTBRUSH) {
-//                    worldIn.setBlockState(pos, coloredStairs.cyan.getDefaultState());
+                    worldIn.setBlockState(pos, coloredStairs.cyan.STATE_IDS.getInt(blockstateid));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.LIGHT_GRAY_PAINTBRUSH) {
-//                    worldIn.setBlockState(pos, coloredStairs.lightgray.getDefaultState());
+                    worldIn.setBlockState(pos, coloredStairs.lightgray.STATE_IDS.getInt(blockstateid));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.GRAY_PAINTBRUSH) {
-//                    worldIn.setBlockState(pos, coloredStairs.gray.getDefaultState());
+                    worldIn.setBlockState(pos, coloredStairs.gray.STATE_IDS.getInt(blockstateid));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.PINK_PAINTBRUSH) {
-//                    worldIn.setBlockState(pos, coloredStairs.pink.getDefaultState());
+                    worldIn.setBlockState(pos, coloredStairs.pink.STATE_IDS.getInt(blockstateid));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.LIME_PAINTBRUSH) {
-//                    worldIn.setBlockState(pos, coloredStairs.lime.getDefaultState());
+                    worldIn.setBlockState(pos, coloredStairs.lime.STATE_IDS.getInt(blockstateid));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.YELLOW_PAINTBRUSH) {
-//                    worldIn.setBlockState(pos, coloredStairs.yellow.getDefaultState());
+                    worldIn.setBlockState(pos, coloredStairs.yellow.STATE_IDS.getInt(blockstateid));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.LIGHT_BLUE_PAINTBRUSH) {
-//                    worldIn.setBlockState(pos, coloredStairs.lightblue.getDefaultState());
+                    worldIn.setBlockState(pos, coloredStairs.lightblue.STATE_IDS.getInt(blockstateid));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.MAGENTA_PAINTBRUSH) {
-//                    worldIn.setBlockState(pos, coloredStairs.magenta.getDefaultState());
+                    worldIn.setBlockState(pos, coloredStairs.magenta.STATE_IDS.getInt(blockstateid));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.ORANGE_PAINTBRUSH) {
-//                    worldIn.setBlockState(pos, coloredStairs.orange.getDefaultState());
+                    worldIn.setBlockState(pos, coloredStairs.orange.STATE_IDS.getInt(blockstateid));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.WHITE_PAINTBRUSH) {
-//                    worldIn.setBlockState(pos, coloredStairs.white.getDefaultState());
+                    worldIn.setBlockState(pos, coloredStairs.white.STATE_IDS.getInt(blockstateid));
                     usedpaintbrush(player);
                 }
             }
