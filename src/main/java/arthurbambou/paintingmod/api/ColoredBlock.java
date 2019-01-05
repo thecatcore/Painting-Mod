@@ -47,32 +47,34 @@ public class ColoredBlock {
      * @param metab
      * @param meta
      */
-	public ColoredBlock(String name, Material material, SoundType soundtype, float hardness, float resistance, String harvesttool, int harvestlevel, Block replace, boolean metab, int meta) {
-		this(name, material, soundtype, hardness, resistance, harvesttool, harvestlevel, replace, metab);
+	public ColoredBlock(String name, float hardness, float resistance, Block replace, int meta) {
+		this.name = name;
+		this.material = replace.getMaterial(replace.getDefaultState());
+		this.soundtype = replace.getSoundType();
+		this.hardness = hardness;
+		this.resistance = resistance;
+		this.harvesttool = replace.getHarvestTool(replace.getDefaultState());
+		this.harvestlevel = replace.getHarvestLevel(replace.getDefaultState());
 		this.meta = meta;
+		this.metab = true;
 	}
 
     /**
      * @param name
-     * @param material
-     * @param soundtype
      * @param hardness
      * @param resistance
-     * @param harvesttool
-     * @param harvestlevel
      * @param replace
-     * @param metab
      */
-	public ColoredBlock(String name, Material material, SoundType soundtype, float hardness, float resistance, String harvesttool, int harvestlevel, Block replace, boolean metab) {
+	public ColoredBlock(String name, float hardness, float resistance, Block replace) {
 		this.name = name;
-		this.material = material;
-		this.soundtype = soundtype;
+		this.material = replace.getMaterial(replace.getDefaultState());
+		this.soundtype = replace.getSoundType();
 		this.hardness = hardness;
 		this.resistance = resistance;
-		this.harvesttool = harvesttool;
-		this.harvestlevel = harvestlevel;
+		this.harvesttool = replace.getHarvestTool(replace.getDefaultState());
+		this.harvestlevel = replace.getHarvestLevel(replace.getDefaultState());
 		this.replace = replace;
-		this.metab = metab;
+		this.metab = false;
 	}
 
     /**

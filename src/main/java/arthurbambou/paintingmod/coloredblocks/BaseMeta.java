@@ -12,7 +12,7 @@ public class BaseMeta extends ColoredBlock {
 
 	public BaseMeta(String name, Material material, SoundType soundtype, float hardness, float resistance,
 			String harvesttool, int harvestlevel, Block replace, boolean metab, int meta) {
-		super(name, material, soundtype, hardness, resistance, harvesttool, harvestlevel, replace, metab, meta);
+		super(name, hardness, resistance, replace, meta);
 		registerBlocks(name, material, soundtype, hardness, resistance, harvesttool, harvestlevel);
 		PTMBlocks.COLORED_BLOCKS.add(this);
 	}
