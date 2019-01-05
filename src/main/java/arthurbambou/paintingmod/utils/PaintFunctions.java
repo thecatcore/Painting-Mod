@@ -6,10 +6,13 @@ import arthurbambou.paintingmod.registery.ModItems;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.state.property.Property;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
+
+import java.util.Collection;
 
 public class PaintFunctions {
 
@@ -96,6 +99,11 @@ public class PaintFunctions {
             if (worldIn.getBlockState(pos).getBlock() == coloredStairs.replace) {
                 BlockState blockState = worldIn.getBlockState(pos);
                 System.out.println(blockState.toString());
+                Collection<Property<?>> propertyCollection = blockState.getProperties();
+
+                for (Object object : propertyCollection.toArray()) {
+                    System.out.println(object.toString());
+                }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.BLACK_PAINTBRUSH) {
 //                    worldIn.setBlockState(pos, coloredStairs.black.getDefaultState());
                     usedpaintbrush(player);

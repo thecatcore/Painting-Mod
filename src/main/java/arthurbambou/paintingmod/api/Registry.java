@@ -22,6 +22,6 @@ public class Registry {
 
     public static void registerColoredStairs(ColoredStairs coloredStairs) {
         COLORED_STAIRS_LIST.add(coloredStairs);
-        System.out.println("[PaintingMod API] registered colored stairs : ");
+        System.out.println("[PaintingMod API] registered colored stairs : " + coloredStairs.getModid() + ":" + coloredStairs.getName());
     }
 }
