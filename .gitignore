@@ -25,3 +25,5 @@ bin/
 package-lock\.json
 
 node_modules/
+
+blocks\.json
