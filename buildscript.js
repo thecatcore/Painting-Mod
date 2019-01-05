@@ -9,14 +9,13 @@ fs.writeFile("./buildscriptcmd.bash", texttowrite(), (err) => {
         console.log(err)
     }
 })
-
 function texttowrite() {
     if (consts.travis_pull_request === true) {
         return "./gradlew build"
     } else {
         if (consts.travis_branch === "dev/fabric") {
             return "./gradlew build githubRelease"
-        } else if (consts.travis_branch.startWith("release/")) {
+        } else if (consts.travis_branch.startsWith("release/")) {
             return "./gradlew build githubRelease curseforge299755"
         } else {
             return "./gradlew build githubRelease"
