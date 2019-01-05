@@ -67,12 +67,16 @@ curseforge {
  	apiKey = System.getenv('CURSEKEY') ?: "a key"
  	project {
  		id = "299755"
- 		releaseType = "beta"
-		changelog = file("CHANGELOG.txt")
+ 		releaseType = "release"
+		changelog = file("changelog.txt")
         gameVersionStrings.clear()
         gameVersionStrings.add("1.14-Snapshot")
         mainArtifact(jar) {
             displayName = "[Fabric " + minecraft_version + "] " + version
+			relations {
+				requiredDependency "fabric"
+				optionalDependency "modmenu"
+			}
         }
         addArtifact file("build/libs/${archivesBaseName}-${version}-dev.jar")
  	}
