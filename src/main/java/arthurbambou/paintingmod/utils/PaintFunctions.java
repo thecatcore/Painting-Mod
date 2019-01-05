@@ -99,7 +99,7 @@ public class PaintFunctions {
         } else {
             if (worldIn.getBlockState(pos).getBlock() == coloredStairs.replace) {
                 BlockState blockState = worldIn.getBlockState(pos);
-                int blockstateid = StairsBlock.STATE_IDS.getId(blockState);
+                int blockstateid = coloredStairs.replace.STATE_IDS.getId(blockState);
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.BLACK_PAINTBRUSH) {
                     worldIn.setBlockState(pos, coloredStairs.black.STATE_IDS.getInt(blockstateid));
                     usedpaintbrush(player);
