@@ -18,8 +18,8 @@ for (var i = 0; blocks.length > i; i++) {
     for (var a = 0; colors.length > a; a++) {
         var upcolor = ctouppcase(colors[a])
         var upblock = btouppercase(blocks[i])
-        test = test + "\ntile.paintingmod." + colors[a] + "_" + blocks[i] + "stairs.name=" + upcolor + " " + upblock;
-        console.log("The line : " + "\ntile.paintingmod." + colors[a] + "_" + blocks[i] + "stairs.name=" + upcolor + " " + upblock + "\nhas been added to the localization file");
+        test = test + "\ntile.paintingmod." + colors[a] + "_" + blocks[i] + "_stairs.name=" + upcolor + " " + upblock;
+        console.log("The line : " + "\ntile.paintingmod." + colors[a] + "_" + blocks[i] + "_stairs.name=" + upcolor + " " + upblock + "\nhas been added to the localization file");
         // var blockstate = {
         //     variants: {}
         // }
