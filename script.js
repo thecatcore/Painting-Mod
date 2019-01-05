@@ -7,19 +7,19 @@ var blockmodelpath = "./src/main/resources/assets/paintingmod/models/block"
 
 var blocks = require("./blocks.json")
 var colors = ["black","red","green","brown","blue","purple","cyan","light_gray","gray","pink","lime","yellow","light_blue","magenta","orange","white"]
-// var test = "\n"
+var test = "\n"
 for (var i = 0; blocks.length > i; i++) {
-    // console.log("\n##" + btouppercase(blocks[i]) + " Stairs");
-    // if(!test == "\n") {
-    //     test = test + "\n \n##" + btouppercase(blocks[i]) + " Stairs";
-    // } else {
-    //     test = test + " \n##" + btouppercase(blocks[i]) + " Stairs";
-    // }
+    console.log("\n##" + btouppercase(blocks[i]) + " Stairs");
+    if(!test == "\n") {
+        test = test + "\n \n##" + btouppercase(blocks[i]) + " Stairs";
+    } else {
+        test = test + " \n##" + btouppercase(blocks[i]) + " Stairs";
+    }
     for (var a = 0; colors.length > a; a++) {
-        // var upcolor = ctouppcase(colors[a])
-        // var upblock = btouppercase(blocks[i])
-        // test = test + "\ntile.paintingmod." + colors[a] + "_" + blocks[i] + "_stairs.name=" + upcolor + " " + upblock;
-        // console.log("The line : " + "\ntile.paintingmod." + colors[a] + "_" + blocks[i] + "_stairs.name=" + upcolor + " " + upblock + "\nhas been added to the localization file");
+        var upcolor = ctouppcase(colors[a])
+        var upblock = btouppercase(blocks[i])
+        test = test + "\ntile.paintingmod." + colors[a] + "_" + blocks[i] + "_stairs.name=" + upcolor + " " + upblock + " Stairs";
+        console.log("The line : " + "\ntile.paintingmod." + colors[a] + "_" + blocks[i] + "_stairs.name=" + upcolor + " " + upblock + " Stairs" + "\nhas been added to the localization file");
         // var blockstate = {
         //     variants: {}
         // }
@@ -78,54 +78,55 @@ for (var i = 0; blocks.length > i; i++) {
         //     }
         // })
 
-        var blockmodel = {
-            parent: "minecraft:block/stairs",
-            textures: {
-                bottom: "paintingmod:blocks/" + colors[a] + "_" + blocks[i].replace("mossy_cobblestone","moss_stone").replace("purpur","purpur_block"),
-                top: "paintingmod:blocks/" + colors[a] + "_" + blocks[i].replace("mossy_cobblestone","moss_stone").replace("purpur","purpur_block"),
-                side: "paintingmod:blocks/" + colors[a] + "_" + blocks[i].replace("mossy_cobblestone","moss_stone").replace("purpur","purpur_block")
-            }
-        }
-        fs.writeFile(path.join(blockmodelpath, colors[a] + "_" + blocks[i] + "_stairs.json"), JSON.stringify(blockmodel), (err) => {
-            if (err) {
-                console.log(err)
-            }
-        })
-        var blockmodelinner = {
-            parent: "minecraft:block/inner_stairs",
-            textures: blockmodel.textures
-        }
-        fs.writeFile(path.join(blockmodelpath, colors[a] + "_" + blocks[i] + "_stairs_inner.json"), JSON.stringify(blockmodelinner), (err) => {
-            if (err) {
-                console.log(err)
-            }
-        })
-        var blockmodelouter = {
-            parent: "minecraft:block/outer_stairs",
-            textures: blockmodel.textures
-        }
-        fs.writeFile(path.join(blockmodelpath, colors[a] + "_" + blocks[i] + "_stairs_outer.json"), JSON.stringify(blockmodelouter), (err) => {
-            if (err) {
-                console.log(err)
-            }
-        })
+        // var blockmodel = {
+        //     parent: "minecraft:block/stairs",
+        //     textures: {
+        //         bottom: "paintingmod:blocks/" + colors[a] + "_" + blocks[i],
+        //         top: "paintingmod:blocks/" + colors[a] + "_" + blocks[i],
+        //         side: "paintingmod:blocks/" + colors[a] + "_" + blocks[i]
+        //     }
+        // }
+        // fs.writeFile(path.join(blockmodelpath, colors[a] + "_" + blocks[i] + "_stairs.json"), JSON.stringify(blockmodel), (err) => {
+        //     if (err) {
+        //         console.log(err)
+        //     }
+        // })
+        // var blockmodelinner = {
+        //     parent: "minecraft:block/inner_stairs",
+        //     textures: blockmodel.textures
+        // }
+        // fs.writeFile(path.join(blockmodelpath, colors[a] + "_" + blocks[i] + "_stairs_inner.json"), JSON.stringify(blockmodelinner), (err) => {
+        //     if (err) {
+        //         console.log(err)
+        //     }
+        // })
+        // var blockmodelouter = {
+        //     parent: "minecraft:block/outer_stairs",
+        //     textures: blockmodel.textures
+        // }
+        // fs.writeFile(path.join(blockmodelpath, colors[a] + "_" + blocks[i] + "_stairs_outer.json"), JSON.stringify(blockmodelouter), (err) => {
+        //     if (err) {
+        //         console.log(err)
+        //     }
+        // })
     }
 }
-// var langfile = langfile + test;
-// fs.writeFile("./dev.lang", langfile, (err) => {
-//    if (err) throw err;
-// })
+var langfile = langfile + test;
+fs.writeFile("./dev.lang", langfile, (err) => {
+   if (err) throw err;
+})
 
 function ctouppcase(string) {
-    if(string === "light_gray") {
-        return "Light Gray"
-    } else if(string === "light_blue") {
-        return "Light Blue"
-    } else {
-        var fletter = string.substring(0,1)
-        var rest = string.substr(1)
-        return fletter.toUpperCase() + rest
+    var wordlist = string.split("_")
+    var dddd = ""
+    for (var z = 0; wordlist.length > z; z++) {
+        if (z===0) {
+            dddd = wordtouppercase(wordlist[0])
+        } else {
+            dddd = dddd + " " + wordtouppercase(wordlist[z])
+        }
     }
+    return dddd
 }
 
 function btouppercase(string) {
@@ -135,7 +136,7 @@ function btouppercase(string) {
         if (z===0) {
             dddd = wordtouppercase(wordlist[0])
         } else {
-            dddd = " " + wordtouppercase(wordlist[z])
+            dddd = dddd + " " + wordtouppercase(wordlist[z])
         }
     }
     return dddd
