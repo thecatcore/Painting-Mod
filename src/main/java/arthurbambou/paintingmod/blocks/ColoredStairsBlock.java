@@ -12,6 +12,6 @@ public class ColoredStairsBlock extends StairsBlock {
     public ColoredStairsBlock(String name, Settings block$Settings_1, BlockState blockState_1) {
         super(blockState_1, block$Settings_1);
         Registry.BLOCK.register(new Identifier(PaintingMod.MODID, name), this);
-        Registry.ITEM.register(new Identifier(PaintingMod.MODID, name), new BlockItem(this, new Item.Settings().itemGroup(PaintingMod.MOD_BLOCKS)));
+        Registry.ITEM.register(new Identifier(PaintingMod.MODID, name), new BlockItem(this, new Item.Settings().itemGroup(PaintingMod.MOD_STAIRS)));
     }
 }

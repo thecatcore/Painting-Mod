@@ -47,6 +47,7 @@
     "_comment": "GUI",
     "itemGroup.paintingmod.mod_items": "PaintingMod Items",
     "itemGroup.paintingmod.mod_blocks": "PaintingMod Blocks",
+    "itemGroup.paintingmod.mod_stairs": "PaintingMod Stairs",
 
     "_comment": "Tools",
     "item.paintingmod.hammer": "Hammer",
