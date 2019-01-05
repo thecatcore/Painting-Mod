@@ -1,5 +1,6 @@
 package arthurbambou.paintingmod.villagers;
 
+import arthurbambou.paintingmod.registery.ModItems;
 import com.google.common.collect.ImmutableMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
