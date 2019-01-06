@@ -3,6 +3,7 @@ package arthurbambou.paintingmod.items;
 import arthurbambou.paintingmod.PTMMain;
 import arthurbambou.paintingmod.api.*;
 import arthurbambou.paintingmod.blocks.ColoredBlockMetaSlime;
+import arthurbambou.paintingmod.blocks.PTMColoredWallBase;
 import arthurbambou.paintingmod.init.PTMItems;
 import arthurbambou.paintingmod.util.PTMEnumPaintbrush;
 import arthurbambou.paintingmod.util.PTMIHasModel;
@@ -10,6 +11,7 @@ import arthurbambou.paintingmod.util.PTMIMetaName;
 import arthurbambou.paintingmod.util.PTMReference;
 import net.minecraft.block.BlockFence;
 import net.minecraft.block.BlockStairs;
+import net.minecraft.block.BlockWall;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -57,7 +59,148 @@ public class PTMPaintbrushVariant extends PTMItemVariantTemplate2 implements PTM
         for (ColoredFence coloredFence : AddPaintbrush.getColoredFenceList()) {
             newfencetopaint(player,worldIn,pos,coloredFence);
         }
+        for (ColoredWall coloredWall : AddPaintbrush.getColoredWallList()) {
+            newwalltopaint(player,worldIn,pos,coloredWall);
+        }
         return super.onItemUse(player, worldIn, pos, hand, facing, hitX, hitY, hitZ);
+    }
+
+    private void newwalltopaint(EntityPlayer player, World world, BlockPos pos, ColoredWall coloredStairs) {
+        if (player.getHeldItemMainhand().getMetadata() == 0) {
+
+        } else {
+            if (world.getBlockState(pos).getBlock() == coloredStairs.replace && world.getBlockState(pos).getBlock().getMetaFromState(world.getBlockState(pos)) == coloredStairs.meta) {
+                IBlockState blockState = world.getBlockState(pos);
+                if (player.getHeldItemMainhand().getMetadata() == 1) {
+                    world.setBlockState(pos, coloredStairs.black.getBlockState().getBaseState()
+                            .withProperty(PTMColoredWallBase.NORTH, blockState.getValue(BlockWall.NORTH))
+                            .withProperty(PTMColoredWallBase.EAST, blockState.getValue(BlockWall.EAST))
+                            .withProperty(PTMColoredWallBase.SOUTH, blockState.getValue(BlockWall.SOUTH))
+                            .withProperty(PTMColoredWallBase.WEST, blockState.getValue(BlockWall.WEST))
+                            .withProperty(PTMColoredWallBase.UP, blockState.getValue(BlockWall.UP)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 2) {
+                    world.setBlockState(pos, coloredStairs.red.getBlockState().getBaseState()
+                            .withProperty(PTMColoredWallBase.NORTH, blockState.getValue(BlockWall.NORTH))
+                            .withProperty(PTMColoredWallBase.EAST, blockState.getValue(BlockWall.EAST))
+                            .withProperty(PTMColoredWallBase.SOUTH, blockState.getValue(BlockWall.SOUTH))
+                            .withProperty(PTMColoredWallBase.WEST, blockState.getValue(BlockWall.WEST))
+                            .withProperty(PTMColoredWallBase.UP, blockState.getValue(BlockWall.UP)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 3) {
+                    world.setBlockState(pos, coloredStairs.green.getBlockState().getBaseState()
+                            .withProperty(PTMColoredWallBase.NORTH, blockState.getValue(BlockWall.NORTH))
+                            .withProperty(PTMColoredWallBase.EAST, blockState.getValue(BlockWall.EAST))
+                            .withProperty(PTMColoredWallBase.SOUTH, blockState.getValue(BlockWall.SOUTH))
+                            .withProperty(PTMColoredWallBase.WEST, blockState.getValue(BlockWall.WEST))
+                            .withProperty(PTMColoredWallBase.UP, blockState.getValue(BlockWall.UP)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 4) {
+                    world.setBlockState(pos, coloredStairs.brown.getBlockState().getBaseState()
+                            .withProperty(PTMColoredWallBase.NORTH, blockState.getValue(BlockWall.NORTH))
+                            .withProperty(PTMColoredWallBase.EAST, blockState.getValue(BlockWall.EAST))
+                            .withProperty(PTMColoredWallBase.SOUTH, blockState.getValue(BlockWall.SOUTH))
+                            .withProperty(PTMColoredWallBase.WEST, blockState.getValue(BlockWall.WEST))
+                            .withProperty(PTMColoredWallBase.UP, blockState.getValue(BlockWall.UP)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 5) {
+                    world.setBlockState(pos, coloredStairs.blue.getBlockState().getBaseState()
+                            .withProperty(PTMColoredWallBase.NORTH, blockState.getValue(BlockWall.NORTH))
+                            .withProperty(PTMColoredWallBase.EAST, blockState.getValue(BlockWall.EAST))
+                            .withProperty(PTMColoredWallBase.SOUTH, blockState.getValue(BlockWall.SOUTH))
+                            .withProperty(PTMColoredWallBase.WEST, blockState.getValue(BlockWall.WEST))
+                            .withProperty(PTMColoredWallBase.UP, blockState.getValue(BlockWall.UP)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 6) {
+                    world.setBlockState(pos, coloredStairs.purple.getBlockState().getBaseState()
+                            .withProperty(PTMColoredWallBase.NORTH, blockState.getValue(BlockWall.NORTH))
+                            .withProperty(PTMColoredWallBase.EAST, blockState.getValue(BlockWall.EAST))
+                            .withProperty(PTMColoredWallBase.SOUTH, blockState.getValue(BlockWall.SOUTH))
+                            .withProperty(PTMColoredWallBase.WEST, blockState.getValue(BlockWall.WEST))
+                            .withProperty(PTMColoredWallBase.UP, blockState.getValue(BlockWall.UP)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 7) {
+                    world.setBlockState(pos, coloredStairs.cyan.getBlockState().getBaseState()
+                            .withProperty(PTMColoredWallBase.NORTH, blockState.getValue(BlockWall.NORTH))
+                            .withProperty(PTMColoredWallBase.EAST, blockState.getValue(BlockWall.EAST))
+                            .withProperty(PTMColoredWallBase.SOUTH, blockState.getValue(BlockWall.SOUTH))
+                            .withProperty(PTMColoredWallBase.WEST, blockState.getValue(BlockWall.WEST))
+                            .withProperty(PTMColoredWallBase.UP, blockState.getValue(BlockWall.UP)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 8) {
+                    world.setBlockState(pos, coloredStairs.lightgray.getBlockState().getBaseState()
+                            .withProperty(PTMColoredWallBase.NORTH, blockState.getValue(BlockWall.NORTH))
+                            .withProperty(PTMColoredWallBase.EAST, blockState.getValue(BlockWall.EAST))
+                            .withProperty(PTMColoredWallBase.SOUTH, blockState.getValue(BlockWall.SOUTH))
+                            .withProperty(PTMColoredWallBase.WEST, blockState.getValue(BlockWall.WEST))
+                            .withProperty(PTMColoredWallBase.UP, blockState.getValue(BlockWall.UP)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 9) {
+                    world.setBlockState(pos, coloredStairs.gray.getBlockState().getBaseState()
+                            .withProperty(PTMColoredWallBase.NORTH, blockState.getValue(BlockWall.NORTH))
+                            .withProperty(PTMColoredWallBase.EAST, blockState.getValue(BlockWall.EAST))
+                            .withProperty(PTMColoredWallBase.SOUTH, blockState.getValue(BlockWall.SOUTH))
+                            .withProperty(PTMColoredWallBase.WEST, blockState.getValue(BlockWall.WEST))
+                            .withProperty(PTMColoredWallBase.UP, blockState.getValue(BlockWall.UP)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 10) {
+                    world.setBlockState(pos, coloredStairs.pink.getBlockState().getBaseState()
+                            .withProperty(PTMColoredWallBase.NORTH, blockState.getValue(BlockWall.NORTH))
+                            .withProperty(PTMColoredWallBase.EAST, blockState.getValue(BlockWall.EAST))
+                            .withProperty(PTMColoredWallBase.SOUTH, blockState.getValue(BlockWall.SOUTH))
+                            .withProperty(PTMColoredWallBase.WEST, blockState.getValue(BlockWall.WEST))
+                            .withProperty(PTMColoredWallBase.UP, blockState.getValue(BlockWall.UP)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 11) {
+                    world.setBlockState(pos, coloredStairs.lime.getBlockState().getBaseState()
+                            .withProperty(PTMColoredWallBase.NORTH, blockState.getValue(BlockWall.NORTH))
+                            .withProperty(PTMColoredWallBase.EAST, blockState.getValue(BlockWall.EAST))
+                            .withProperty(PTMColoredWallBase.SOUTH, blockState.getValue(BlockWall.SOUTH))
+                            .withProperty(PTMColoredWallBase.WEST, blockState.getValue(BlockWall.WEST))
+                            .withProperty(PTMColoredWallBase.UP, blockState.getValue(BlockWall.UP)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 12) {
+                    world.setBlockState(pos, coloredStairs.yellow.getBlockState().getBaseState()
+                            .withProperty(PTMColoredWallBase.NORTH, blockState.getValue(BlockWall.NORTH))
+                            .withProperty(PTMColoredWallBase.EAST, blockState.getValue(BlockWall.EAST))
+                            .withProperty(PTMColoredWallBase.SOUTH, blockState.getValue(BlockWall.SOUTH))
+                            .withProperty(PTMColoredWallBase.WEST, blockState.getValue(BlockWall.WEST))
+                            .withProperty(PTMColoredWallBase.UP, blockState.getValue(BlockWall.UP)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 13) {
+                    world.setBlockState(pos, coloredStairs.lightblue.getBlockState().getBaseState()
+                            .withProperty(PTMColoredWallBase.NORTH, blockState.getValue(BlockWall.NORTH))
+                            .withProperty(PTMColoredWallBase.EAST, blockState.getValue(BlockWall.EAST))
+                            .withProperty(PTMColoredWallBase.SOUTH, blockState.getValue(BlockWall.SOUTH))
+                            .withProperty(PTMColoredWallBase.WEST, blockState.getValue(BlockWall.WEST))
+                            .withProperty(PTMColoredWallBase.UP, blockState.getValue(BlockWall.UP)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 14) {
+                    world.setBlockState(pos, coloredStairs.magenta.getBlockState().getBaseState()
+                            .withProperty(PTMColoredWallBase.NORTH, blockState.getValue(BlockWall.NORTH))
+                            .withProperty(PTMColoredWallBase.EAST, blockState.getValue(BlockWall.EAST))
+                            .withProperty(PTMColoredWallBase.SOUTH, blockState.getValue(BlockWall.SOUTH))
+                            .withProperty(PTMColoredWallBase.WEST, blockState.getValue(BlockWall.WEST))
+                            .withProperty(PTMColoredWallBase.UP, blockState.getValue(BlockWall.UP)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 15) {
+                    world.setBlockState(pos, coloredStairs.orange.getBlockState().getBaseState()
+                            .withProperty(PTMColoredWallBase.NORTH, blockState.getValue(BlockWall.NORTH))
+                            .withProperty(PTMColoredWallBase.EAST, blockState.getValue(BlockWall.EAST))
+                            .withProperty(PTMColoredWallBase.SOUTH, blockState.getValue(BlockWall.SOUTH))
+                            .withProperty(PTMColoredWallBase.WEST, blockState.getValue(BlockWall.WEST))
+                            .withProperty(PTMColoredWallBase.UP, blockState.getValue(BlockWall.UP)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 16) {
+                    world.setBlockState(pos, coloredStairs.white.getBlockState().getBaseState()
+                            .withProperty(PTMColoredWallBase.NORTH, blockState.getValue(BlockWall.NORTH))
+                            .withProperty(PTMColoredWallBase.EAST, blockState.getValue(BlockWall.EAST))
+                            .withProperty(PTMColoredWallBase.SOUTH, blockState.getValue(BlockWall.SOUTH))
+                            .withProperty(PTMColoredWallBase.WEST, blockState.getValue(BlockWall.WEST))
+                            .withProperty(PTMColoredWallBase.UP, blockState.getValue(BlockWall.UP)));
+                }
+            }
+        }
     }
 
     private void newstairstopaint(EntityPlayer player, World world, BlockPos pos, ColoredStairs coloredStairs) {

@@ -1,8 +1,6 @@
 package arthurbambou.paintingmod;
 
-import arthurbambou.paintingmod.api.AddPaintbrush;
-import arthurbambou.paintingmod.api.ColoredFence;
-import arthurbambou.paintingmod.api.ColoredStairs;
+import arthurbambou.paintingmod.api.*;
 import arthurbambou.paintingmod.init.PTMItems;
 import arthurbambou.paintingmod.util.PTMIHasModel;
 import arthurbambou.paintingmod.util.handlers.PTMRegistryHandler;
@@ -10,7 +8,6 @@ import net.minecraft.item.ItemStack;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import arthurbambou.paintingmod.api.ColoredBlock;
 import arthurbambou.paintingmod.init.PTMBlocks;
 import arthurbambou.paintingmod.proxy.PTMCommonProxy;
 import arthurbambou.paintingmod.util.PTMReference;
@@ -78,6 +75,13 @@ public class PTMMain {
         }
     };
 
+    public static final CreativeTabs PAINTING_MOD_WALLS = new CreativeTabs(PTMReference.MOD_ID + "." + "paintingmod_tab_walls") {
+		@Override
+		public ItemStack createIcon() {
+			return new ItemStack(PTMBlocks.COBBLESTONE_WALL.blue);
+		}
+	};
+
 	
 	public static final Logger logger = LogManager.getLogger(PTMReference.MOD_ID);
 	
@@ -132,6 +136,9 @@ public class PTMMain {
 			for (ColoredFence coloredFence : PTMBlocks.COLORED_FENCE_LIST) {
 				AddPaintbrush.registerColoredFence(coloredFence);
 			}
+			for (ColoredWall coloredWall : PTMBlocks.COLORED_WALL_LIST) {
+				AddPaintbrush.registerColoredWall(coloredWall);
+			}
         } else {
             PTMRegistryHandler.APIinit();
 			for (ColoredStairs coloredStairs : PTMBlocks.COLORED_STAIRS_META_LIST) {
@@ -139,6 +146,9 @@ public class PTMMain {
 			}
 			for (ColoredFence coloredFence : PTMBlocks.COLORED_FENCE_LIST) {
 				AddPaintbrush.registerColoredFence(coloredFence);
+			}
+			for (ColoredWall coloredWall : PTMBlocks.COLORED_WALL_LIST) {
+				AddPaintbrush.registerColoredWall(coloredWall);
 			}
         }
 	}

@@ -1,5 +1,6 @@
 package arthurbambou.paintingmod.util.handlers;
 
+import arthurbambou.paintingmod.api.BlockWall;
 import arthurbambou.paintingmod.api.ColoredBlockMeta;
 import arthurbambou.paintingmod.api.ColoredFallingBlockMeta;
 import arthurbambou.paintingmod.init.PTMBlocks;
@@ -13,7 +14,6 @@ import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @EventBusSubscriber
@@ -36,6 +36,7 @@ public class PTMRegistryHandler
 			event.getRegistry().registerAll(PTMBlocks.BLOCKS_ID.toArray(new Block[0]));
 			event.getRegistry().registerAll(PTMBlocks.BLOCK_STAIRS_LIST.toArray(new Block[0]));
 			event.getRegistry().registerAll(PTMBlocks.BLOCK_FENCE_LIST.toArray(new Block[0]));
+            event.getRegistry().registerAll(PTMBlocks.BLOCK_WALL_LIST.toArray(new Block[0]));
 		} else {
             event.getRegistry().registerAll(PTMBlocks.BLOCKS_META.toArray(new Block[0]));
 
@@ -46,6 +47,7 @@ public class PTMRegistryHandler
             event.getRegistry().register(PTMBlocks.SLIME_BLOCK_META);
             event.getRegistry().registerAll(PTMBlocks.BLOCK_STAIRS_LIST.toArray(new Block[0]));
             event.getRegistry().registerAll(PTMBlocks.BLOCK_FENCE_LIST.toArray(new Block[0]));
+            event.getRegistry().registerAll(PTMBlocks.BLOCK_WALL_LIST.toArray(new Block[0]));
 		}
 	}
 	
@@ -72,6 +74,11 @@ public class PTMRegistryHandler
             for (BlockFence blockFence : PTMBlocks.BLOCK_FENCE_LIST) {
                 if (blockFence instanceof PTMIHasModel) {
                     ((PTMIHasModel) blockFence).registerModels();
+                }
+            }
+            for (BlockWall blockWall : PTMBlocks.BLOCK_WALL_LIST) {
+                if (blockWall instanceof PTMIHasModel) {
+                    ((PTMIHasModel) blockWall).registerModels();
                 }
             }
         } else {
@@ -107,6 +114,11 @@ public class PTMRegistryHandler
             for (BlockFence blockFence : PTMBlocks.BLOCK_FENCE_LIST) {
                 if (blockFence instanceof PTMIHasModel) {
                     ((PTMIHasModel) blockFence).registerModels();
+                }
+            }
+            for (BlockWall blockWall : PTMBlocks.BLOCK_WALL_LIST) {
+                if (blockWall instanceof PTMIHasModel) {
+                    ((PTMIHasModel) blockWall).registerModels();
                 }
             }
 

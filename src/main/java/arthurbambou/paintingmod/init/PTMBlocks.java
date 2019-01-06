@@ -5,13 +5,11 @@ import java.util.List;
 
 import arthurbambou.paintingmod.PTMMain;
 import arthurbambou.paintingmod.api.*;
+import arthurbambou.paintingmod.api.BlockWall;
 import arthurbambou.paintingmod.blocks.*;
 import arthurbambou.paintingmod.blocks.PTMSoggyClay;
 import arthurbambou.paintingmod.coloredblocks.*;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockFence;
-import net.minecraft.block.BlockStairs;
-import net.minecraft.block.SoundType;
+import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
 
@@ -26,6 +24,8 @@ public class PTMBlocks {
 	public static final List<BlockStairs> BLOCK_STAIRS_LIST = new ArrayList<BlockStairs>();
 	public static final List<ColoredFence> COLORED_FENCE_LIST = new ArrayList<ColoredFence>();
 	public static final List<BlockFence> BLOCK_FENCE_LIST = new ArrayList<BlockFence>();
+	public static final List<ColoredWall> COLORED_WALL_LIST = new ArrayList<ColoredWall>();
+	public static final List<BlockWall> BLOCK_WALL_LIST = new ArrayList<BlockWall>();
 	
 	public static final Block SOGGY_CLAY = new PTMSoggyClay("soggy_clay", Material.IRON, PTMMain.PAINTING_MOD_BLOCKS);
 
@@ -107,6 +107,9 @@ public class PTMBlocks {
 	public static final ColoredFence ACACIA_PLANK_FENCE = new BaseFence("acacia_plank_fence", Blocks.ACACIA_FENCE);
 	public static final ColoredFence DARK_OAK_PLANK_FENCE = new BaseFence("dark_oak_plank_fence", Blocks.DARK_OAK_FENCE);
 	public static final ColoredFence NETHER_BRICK_FENCE = new BaseFence("nether_brick_fence", Blocks.NETHER_BRICK_FENCE);
+
+	public static final ColoredWall COBBLESTONE_WALL = new BaseWall("cobblestone_wall", Blocks.COBBLESTONE_WALL, 0);
+	public static final ColoredWall MOSSY_COBBLESTONE_WALL = new BaseWall("mossy_cobblestone_wall", Blocks.COBBLESTONE_WALL, 1);
 
 
 

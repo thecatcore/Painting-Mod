@@ -6,6 +6,7 @@ import arthurbambou.paintingmod.init.PTMItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFence;
 import net.minecraft.block.BlockStairs;
+import net.minecraft.block.BlockWall;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
@@ -43,7 +44,46 @@ public class PTMHeatGun extends PTMItemBase {
 		for (ColoredFence coloredFence : AddPaintbrush.getColoredFenceList()) {
 			heatgunfence(player,worldIn,pos,coloredFence);
 		}
+		for (ColoredWall coloredWall : AddPaintbrush.getColoredWallList()) {
+			heatgunwall(player,worldIn,pos,coloredWall);
+		}
 		return EnumActionResult.SUCCESS;
+	}
+
+	private void heatgunwall(EntityPlayer player, World worldIn, BlockPos pos, ColoredWall coloredblock) {
+		if (worldIn.getBlockState(pos).getBlock() == coloredblock.black ||
+				worldIn.getBlockState(pos).getBlock() == coloredblock.blue ||
+				worldIn.getBlockState(pos).getBlock() == coloredblock.brown ||
+				worldIn.getBlockState(pos).getBlock() == coloredblock.cyan ||
+				worldIn.getBlockState(pos).getBlock() == coloredblock.gray ||
+				worldIn.getBlockState(pos).getBlock() == coloredblock.green ||
+				worldIn.getBlockState(pos).getBlock() == coloredblock.lightblue ||
+				worldIn.getBlockState(pos).getBlock() == coloredblock.lightgray ||
+				worldIn.getBlockState(pos).getBlock() == coloredblock.lime ||
+				worldIn.getBlockState(pos).getBlock() == coloredblock.magenta ||
+				worldIn.getBlockState(pos).getBlock() == coloredblock.orange ||
+				worldIn.getBlockState(pos).getBlock() == coloredblock.pink ||
+				worldIn.getBlockState(pos).getBlock() == coloredblock.purple ||
+				worldIn.getBlockState(pos).getBlock() == coloredblock.red ||
+				worldIn.getBlockState(pos).getBlock() == coloredblock.white ||
+				worldIn.getBlockState(pos).getBlock() == coloredblock.yellow) {
+			IBlockState blockState = worldIn.getBlockState(pos);
+			if (coloredblock.metab) {
+				worldIn.setBlockState(pos, coloredblock.replace.getStateFromMeta(coloredblock.meta)
+						.withProperty(BlockWall.NORTH, blockState.getValue(BlockWall.NORTH))
+						.withProperty(BlockWall.EAST, blockState.getValue(BlockWall.EAST))
+						.withProperty(BlockWall.SOUTH, blockState.getValue(BlockWall.SOUTH))
+						.withProperty(BlockWall.WEST, blockState.getValue(BlockWall.WEST))
+						.withProperty(BlockWall.UP, blockState.getValue(BlockWall.UP)));
+			} else {
+				worldIn.setBlockState(pos, coloredblock.replace.getDefaultState()
+						.withProperty(BlockWall.NORTH, blockState.getValue(BlockWall.NORTH))
+						.withProperty(BlockWall.EAST, blockState.getValue(BlockWall.EAST))
+						.withProperty(BlockWall.SOUTH, blockState.getValue(BlockWall.SOUTH))
+						.withProperty(BlockWall.WEST, blockState.getValue(BlockWall.WEST))
+						.withProperty(BlockWall.UP, blockState.getValue(BlockWall.UP)));
+			}
+		}
 	}
 
 	private void heatgunfence(EntityPlayer player, World world, BlockPos pos, ColoredFence coloredStairs) {
