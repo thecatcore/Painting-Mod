@@ -4,14 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import arthurbambou.paintingmod.PTMMain;
-import arthurbambou.paintingmod.api.ColoredBlock;
-import arthurbambou.paintingmod.api.ColoredBlockMeta;
-import arthurbambou.paintingmod.api.ColoredFallingBlockMeta;
-import arthurbambou.paintingmod.api.ColoredStairs;
+import arthurbambou.paintingmod.api.*;
 import arthurbambou.paintingmod.blocks.*;
 import arthurbambou.paintingmod.blocks.PTMSoggyClay;
 import arthurbambou.paintingmod.coloredblocks.*;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockFence;
 import net.minecraft.block.BlockStairs;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -26,6 +24,8 @@ public class PTMBlocks {
 	public static final List<ColoredFallingBlockMeta> COLORED_FALLING_BLOCK_METAS = new ArrayList<ColoredFallingBlockMeta>();
 	public static final List<ColoredStairs> COLORED_STAIRS_META_LIST = new ArrayList<ColoredStairs>();
 	public static final List<BlockStairs> BLOCK_STAIRS_LIST = new ArrayList<BlockStairs>();
+	public static final List<ColoredFence> COLORED_FENCE_LIST = new ArrayList<ColoredFence>();
+	public static final List<BlockFence> BLOCK_FENCE_LIST = new ArrayList<BlockFence>();
 	
 	public static final Block SOGGY_CLAY = new PTMSoggyClay("soggy_clay", Material.IRON, PTMMain.PAINTING_MOD_BLOCKS);
 
@@ -100,7 +100,13 @@ public class PTMBlocks {
     public static final ColoredStairs PURPUR_STAIRS = new BaseStairs("purpur_stairs", Blocks.PURPUR_STAIRS);
 //    public static final ColoredStairs RED_SANDSTONE_STAIRS = new BaseStairs("red_sandstone_stairs", Blocks.RED_SANDSTONE_STAIRS);
 
-
+	public static final ColoredFence OAK_PLANK_FENCE = new BaseFence("oak_plank_fence", Blocks.OAK_FENCE);
+	public static final ColoredFence SPRUCE_PLANK_FENCE = new BaseFence("spruce_plank_fence", Blocks.SPRUCE_FENCE);
+	public static final ColoredFence BIRCH_PLANK_FENCE = new BaseFence("birch_plank_fence", Blocks.BIRCH_FENCE);
+	public static final ColoredFence JUNGLE_PLANK_FENCE = new BaseFence("jungle_plank_fence", Blocks.JUNGLE_FENCE);
+	public static final ColoredFence ACACIA_PLANK_FENCE = new BaseFence("acacia_plank_fence", Blocks.ACACIA_FENCE);
+	public static final ColoredFence DARK_OAK_PLANK_FENCE = new BaseFence("dark_oak_plank_fence", Blocks.DARK_OAK_FENCE);
+	public static final ColoredFence NETHER_BRICK_FENCE = new BaseFence("nether_brick_fence", Blocks.NETHER_BRICK_FENCE);
 
 
 

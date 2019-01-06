@@ -7,6 +7,7 @@ import arthurbambou.paintingmod.init.PTMItems;
 import arthurbambou.paintingmod.util.PTMIHasModel;
 import arthurbambou.paintingmod.util.PTMReference;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockFence;
 import net.minecraft.block.BlockStairs;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -34,6 +35,7 @@ public class PTMRegistryHandler
 		if (PTMReference.getMinecraftVersion() == "[1.13]" || PTMReference.getMinecraftVersion() == "[1.13.1]" || PTMReference.getMinecraftVersion() == "[1.13.2]") {
 			event.getRegistry().registerAll(PTMBlocks.BLOCKS_ID.toArray(new Block[0]));
 			event.getRegistry().registerAll(PTMBlocks.BLOCK_STAIRS_LIST.toArray(new Block[0]));
+			event.getRegistry().registerAll(PTMBlocks.BLOCK_FENCE_LIST.toArray(new Block[0]));
 		} else {
             event.getRegistry().registerAll(PTMBlocks.BLOCKS_META.toArray(new Block[0]));
 
@@ -43,6 +45,7 @@ public class PTMRegistryHandler
 
             event.getRegistry().register(PTMBlocks.SLIME_BLOCK_META);
             event.getRegistry().registerAll(PTMBlocks.BLOCK_STAIRS_LIST.toArray(new Block[0]));
+            event.getRegistry().registerAll(PTMBlocks.BLOCK_FENCE_LIST.toArray(new Block[0]));
 		}
 	}
 	
@@ -64,6 +67,11 @@ public class PTMRegistryHandler
             for (Block block : PTMBlocks.BLOCKS_ID) {
                 if (block instanceof PTMIHasModel) {
                     ((PTMIHasModel) block).registerModels();
+                }
+            }
+            for (BlockFence blockFence : PTMBlocks.BLOCK_FENCE_LIST) {
+                if (blockFence instanceof PTMIHasModel) {
+                    ((PTMIHasModel) blockFence).registerModels();
                 }
             }
         } else {
@@ -94,6 +102,11 @@ public class PTMRegistryHandler
             for (BlockStairs blockStairs : PTMBlocks.BLOCK_STAIRS_LIST) {
                 if (blockStairs instanceof PTMIHasModel) {
                     ((PTMIHasModel) blockStairs).registerModels();
+                }
+            }
+            for (BlockFence blockFence : PTMBlocks.BLOCK_FENCE_LIST) {
+                if (blockFence instanceof PTMIHasModel) {
+                    ((PTMIHasModel) blockFence).registerModels();
                 }
             }
 

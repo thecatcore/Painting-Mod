@@ -4,6 +4,7 @@ import arthurbambou.paintingmod.api.*;
 import arthurbambou.paintingmod.blocks.ColoredBlockMetaSlime;
 import arthurbambou.paintingmod.init.PTMItems;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockFence;
 import net.minecraft.block.BlockStairs;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
@@ -39,7 +40,37 @@ public class PTMHeatGun extends PTMItemBase {
 		for (ColoredStairs coloredStairs : AddPaintbrush.getColoredStairsMetaList()) {
 			heatgunstairs(player,worldIn,pos,coloredStairs);
 		}
+		for (ColoredFence coloredFence : AddPaintbrush.getColoredFenceList()) {
+			heatgunfence(player,worldIn,pos,coloredFence);
+		}
 		return EnumActionResult.SUCCESS;
+	}
+
+	private void heatgunfence(EntityPlayer player, World world, BlockPos pos, ColoredFence coloredStairs) {
+		if (world.getBlockState(pos).getBlock() == coloredStairs.black ||
+				world.getBlockState(pos).getBlock() == coloredStairs.blue ||
+				world.getBlockState(pos).getBlock() == coloredStairs.brown ||
+				world.getBlockState(pos).getBlock() == coloredStairs.cyan ||
+				world.getBlockState(pos).getBlock() == coloredStairs.gray ||
+				world.getBlockState(pos).getBlock() == coloredStairs.green ||
+				world.getBlockState(pos).getBlock() == coloredStairs.lightblue ||
+				world.getBlockState(pos).getBlock() == coloredStairs.lightgray ||
+				world.getBlockState(pos).getBlock() == coloredStairs.lime ||
+				world.getBlockState(pos).getBlock() == coloredStairs.magenta ||
+				world.getBlockState(pos).getBlock() == coloredStairs.orange ||
+				world.getBlockState(pos).getBlock() == coloredStairs.pink ||
+				world.getBlockState(pos).getBlock() == coloredStairs.purple ||
+				world.getBlockState(pos).getBlock() == coloredStairs.red ||
+				world.getBlockState(pos).getBlock() == coloredStairs.white ||
+				world.getBlockState(pos).getBlock() == coloredStairs.yellow) {
+
+			IBlockState blockState = world.getBlockState(pos);
+			world.setBlockState(pos, coloredStairs.replace.getBlockState().getBaseState()
+					.withProperty(BlockFence.NORTH, blockState.getValue(BlockFence.NORTH))
+					.withProperty(BlockFence.EAST, blockState.getValue(BlockFence.EAST))
+					.withProperty(BlockFence.SOUTH, blockState.getValue(BlockFence.SOUTH))
+					.withProperty(BlockFence.WEST, blockState.getValue(BlockFence.WEST)));
+		}
 	}
 
 	private void heatgunstairs(EntityPlayer player, World world, BlockPos pos, ColoredStairs coloredStairs) {
