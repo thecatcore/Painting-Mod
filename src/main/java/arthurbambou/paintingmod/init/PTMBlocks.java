@@ -26,6 +26,7 @@ public class PTMBlocks {
 	public static final List<BlockFence> BLOCK_FENCE_LIST = new ArrayList<BlockFence>();
 	public static final List<ColoredWall> COLORED_WALL_LIST = new ArrayList<ColoredWall>();
 	public static final List<BlockWall> BLOCK_WALL_LIST = new ArrayList<BlockWall>();
+	public static final List<ColoredSlab> COLORED_SLAB_LIST = new ArrayList<ColoredSlab>();
 	
 	public static final Block SOGGY_CLAY = new PTMSoggyClay("soggy_clay", Material.IRON, PTMMain.PAINTING_MOD_BLOCKS);
 
