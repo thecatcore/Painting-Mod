@@ -17,6 +17,7 @@ public class AddPaintbrush {
 	private static final List<ColoredBlockMetaSlime> COLORED_BLOCK_META_SLIMES = new ArrayList<ColoredBlockMetaSlime>();
 	private static final List<ColoredStairs> COLORED_STAIRS_META_LIST = new ArrayList<ColoredStairs>();
 	private static final List<ColoredFence> COLORED_FENCE_LIST = new ArrayList<ColoredFence>();
+	private static final List<ColoredWall> COLORED_WALL_LIST = new ArrayList<ColoredWall>();
 
 	public static void registerSimpleBlock(ColoredBlock coloredblock) {
 		PTMMain.logger.info("[API]: Add paintable simple block => " + coloredblock.name);
@@ -86,7 +87,16 @@ public class AddPaintbrush {
 	}
 
 	public static void registerColoredFence(ColoredFence coloredFence) {
-		PTMMain.logger.info("[API]: Add paintable stairs => " + coloredFence.name);
+		PTMMain.logger.info("[API]: Add paintable fence => " + coloredFence.name);
 		COLORED_FENCE_LIST.add(coloredFence);
+	}
+
+	public static List<ColoredWall> getColoredWallList() {
+		return COLORED_WALL_LIST;
+	}
+
+	public static void registerColoredWall(ColoredWall coloredWall) {
+		PTMMain.logger.info("[API]: Add paintable wall => " + coloredWall.name);
+		COLORED_WALL_LIST.add(coloredWall);
 	}
 }
