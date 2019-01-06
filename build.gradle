@@ -126,6 +126,9 @@ curseforge {
 		changelog = file('CHANGELOG.html')
 		changelogType = 'html'
 		releaseType = rtype
+        mainArtifact(jar) {
+            displayName = "[Forge ${minecraft_version}] ${version}"
+        }
         addArtifact file("build/libs/${archivesBaseName}-${version}-sources.jar")
 	}
 }
