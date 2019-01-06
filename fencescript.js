@@ -80,7 +80,7 @@ for (var i = 0; blocks.length > i ; i++) {
             }
         })
         var itemmodel = {
-            parent: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_inventory.json"
+            parent: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_inventory"
         }
         fs.writeFile(path.join(itemmodelpath, colors[a] + "_" + blocks[i] + "_fence.json"), JSON.stringify(itemmodel), (err) => {
             if (err) {
