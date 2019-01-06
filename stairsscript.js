@@ -23,46 +23,46 @@ for (var i = 0; blocks.length > i; i++) {
         var blockstate = {
             variants: {}
         }
-        blockstate.variants["facing=east,half=bottom,shape=straight"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs"}
-        blockstate.variants["facing=west,half=bottom,shape=straight"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs", y: 180, uvlock: true}
-        blockstate.variants["facing=south,half=bottom,shape=straight"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs", y: 90, uvlock: true}
-        blockstate.variants["facing=north,half=bottom,shape=straight"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs", y: 270, uvlock: true}
-        blockstate.variants["facing=east,half=bottom,shape=outer_right"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_outer"}
-        blockstate.variants["facing=west,half=bottom,shape=outer_right"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_outer", y: 180, uvlock: true}
-        blockstate.variants["facing=south,half=bottom,shape=outer_right"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_outer", y: 90, uvlock: true}
-        blockstate.variants["facing=north,half=bottom,shape=outer_right"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_outer", y: 270, uvlock: true}
-        blockstate.variants["facing=east,half=bottom,shape=outer_left"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_outer", y: 270, uvlock: true}
-        blockstate.variants["facing=west,half=bottom,shape=outer_left"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_outer", y: 90, uvlock: true}
-        blockstate.variants["facing=south,half=bottom,shape=outer_left"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_outer"}
-        blockstate.variants["facing=north,half=bottom,shape=outer_left"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_outer", y: 180, uvlock: true}
-        blockstate.variants["facing=east,half=bottom,shape=inner_right"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_inner"}
-        blockstate.variants["facing=west,half=bottom,shape=inner_right"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_inner", y: 180, uvlock: true}
-        blockstate.variants["facing=south,half=bottom,shape=inner_right"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_inner", y: 90, uvlock: true}
-        blockstate.variants["facing=north,half=bottom,shape=inner_right"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_inner", y: 270, uvlock: true}
-        blockstate.variants["facing=east,half=bottom,shape=inner_left"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_inner", y: 270, uvlock: true}
-        blockstate.variants["facing=west,half=bottom,shape=inner_left"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_inner", y: 90, uvlock: true}
-        blockstate.variants["facing=south,half=bottom,shape=inner_left"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_inner"}
-        blockstate.variants["facing=north,half=bottom,shape=inner_left"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_inner", y: 180, uvlock: true}
-        blockstate.variants["facing=east,half=top,shape=straight"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs", x: 180, uvlock: true}
-        blockstate.variants["facing=west,half=top,shape=straight"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs", x: 180, y: 180, uvlock: true}
-        blockstate.variants["facing=south,half=top,shape=straight"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs", x: 180, y: 90, uvlock: true}
-        blockstate.variants["facing=north,half=top,shape=straight"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs", x: 180, y: 270, uvlock: true}
-        blockstate.variants["facing=east,half=top,shape=outer_right"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_outer", x: 180, y: 90, uvlock: true}
-        blockstate.variants["facing=west,half=top,shape=outer_right"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_outer", x: 180, y: 270, uvlock: true}
-        blockstate.variants["facing=south,half=top,shape=outer_right"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_outer", x: 180, y: 180, uvlock: true}
-        blockstate.variants["facing=north,half=top,shape=outer_right"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_outer", x: 180, uvlock: true}
-        blockstate.variants["facing=east,half=top,shape=outer_left"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_outer", x: 180, uvlock: true}
-        blockstate.variants["facing=west,half=top,shape=outer_left"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_outer", x: 180, y: 180, uvlock: true}
-        blockstate.variants["facing=south,half=top,shape=outer_left"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_outer", x: 180, y: 90, uvlock: true}
-        blockstate.variants["facing=north,half=top,shape=outer_left"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_outer", x: 180, y: 270, uvlock: true}
-        blockstate.variants["facing=east,half=top,shape=inner_right"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_inner", x: 180, y: 90, uvlock: true}
-        blockstate.variants["facing=west,half=top,shape=inner_right"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_inner", x: 180, y: 270, uvlock: true}
-        blockstate.variants["facing=south,half=top,shape=inner_right"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_inner", x: 180, y: 180, uvlock: true}
-        blockstate.variants["facing=north,half=top,shape=inner_right"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_inner", x: 180, uvlock: true}
-        blockstate.variants["facing=east,half=top,shape=inner_left"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_inner", x: 180, uvlock: true}
-        blockstate.variants["facing=west,half=top,shape=inner_left"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_inner", x: 180, y: 180, uvlock: true}
-        blockstate.variants["facing=south,half=top,shape=inner_left"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_inner", x: 180, y: 90, uvlock: true}
-        blockstate.variants["facing=north,half=top,shape=inner_left"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_stairs_inner", x: 180, y: 270, uvlock: true}
+        blockstate.variants["facing=east,half=bottom,shape=straight"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs"}
+        blockstate.variants["facing=west,half=bottom,shape=straight"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs", y: 180, uvlock: true}
+        blockstate.variants["facing=south,half=bottom,shape=straight"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs", y: 90, uvlock: true}
+        blockstate.variants["facing=north,half=bottom,shape=straight"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs", y: 270, uvlock: true}
+        blockstate.variants["facing=east,half=bottom,shape=outer_right"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_outer"}
+        blockstate.variants["facing=west,half=bottom,shape=outer_right"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_outer", y: 180, uvlock: true}
+        blockstate.variants["facing=south,half=bottom,shape=outer_right"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_outer", y: 90, uvlock: true}
+        blockstate.variants["facing=north,half=bottom,shape=outer_right"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_outer", y: 270, uvlock: true}
+        blockstate.variants["facing=east,half=bottom,shape=outer_left"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_outer", y: 270, uvlock: true}
+        blockstate.variants["facing=west,half=bottom,shape=outer_left"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_outer", y: 90, uvlock: true}
+        blockstate.variants["facing=south,half=bottom,shape=outer_left"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_outer"}
+        blockstate.variants["facing=north,half=bottom,shape=outer_left"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_outer", y: 180, uvlock: true}
+        blockstate.variants["facing=east,half=bottom,shape=inner_right"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_inner"}
+        blockstate.variants["facing=west,half=bottom,shape=inner_right"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_inner", y: 180, uvlock: true}
+        blockstate.variants["facing=south,half=bottom,shape=inner_right"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_inner", y: 90, uvlock: true}
+        blockstate.variants["facing=north,half=bottom,shape=inner_right"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_inner", y: 270, uvlock: true}
+        blockstate.variants["facing=east,half=bottom,shape=inner_left"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_inner", y: 270, uvlock: true}
+        blockstate.variants["facing=west,half=bottom,shape=inner_left"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_inner", y: 90, uvlock: true}
+        blockstate.variants["facing=south,half=bottom,shape=inner_left"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_inner"}
+        blockstate.variants["facing=north,half=bottom,shape=inner_left"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_inner", y: 180, uvlock: true}
+        blockstate.variants["facing=east,half=top,shape=straight"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs", x: 180, uvlock: true}
+        blockstate.variants["facing=west,half=top,shape=straight"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs", x: 180, y: 180, uvlock: true}
+        blockstate.variants["facing=south,half=top,shape=straight"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs", x: 180, y: 90, uvlock: true}
+        blockstate.variants["facing=north,half=top,shape=straight"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs", x: 180, y: 270, uvlock: true}
+        blockstate.variants["facing=east,half=top,shape=outer_right"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_outer", x: 180, y: 90, uvlock: true}
+        blockstate.variants["facing=west,half=top,shape=outer_right"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_outer", x: 180, y: 270, uvlock: true}
+        blockstate.variants["facing=south,half=top,shape=outer_right"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_outer", x: 180, y: 180, uvlock: true}
+        blockstate.variants["facing=north,half=top,shape=outer_right"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_outer", x: 180, uvlock: true}
+        blockstate.variants["facing=east,half=top,shape=outer_left"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_outer", x: 180, uvlock: true}
+        blockstate.variants["facing=west,half=top,shape=outer_left"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_outer", x: 180, y: 180, uvlock: true}
+        blockstate.variants["facing=south,half=top,shape=outer_left"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_outer", x: 180, y: 90, uvlock: true}
+        blockstate.variants["facing=north,half=top,shape=outer_left"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_outer", x: 180, y: 270, uvlock: true}
+        blockstate.variants["facing=east,half=top,shape=inner_right"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_inner", x: 180, y: 90, uvlock: true}
+        blockstate.variants["facing=west,half=top,shape=inner_right"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_inner", x: 180, y: 270, uvlock: true}
+        blockstate.variants["facing=south,half=top,shape=inner_right"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_inner", x: 180, y: 180, uvlock: true}
+        blockstate.variants["facing=north,half=top,shape=inner_right"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_inner", x: 180, uvlock: true}
+        blockstate.variants["facing=east,half=top,shape=inner_left"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_inner", x: 180, uvlock: true}
+        blockstate.variants["facing=west,half=top,shape=inner_left"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_inner", x: 180, y: 180, uvlock: true}
+        blockstate.variants["facing=south,half=top,shape=inner_left"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_inner", x: 180, y: 90, uvlock: true}
+        blockstate.variants["facing=north,half=top,shape=inner_left"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_stairs_inner", x: 180, y: 270, uvlock: true}
         fs.writeFile(path.join(blockstatepath, colors[a] + "_" + blocks[i] + "_stairs.json"), JSON.stringify(blockstate), (err) => {
             if (err) {
                 console.log(err)
@@ -88,6 +88,7 @@ for (var i = 0; blocks.length > i; i++) {
                 .replace("jungle_","")
                 .replace("acacia_","")
                 .replace("dark_oak_","")
+                .replace("dark_", "")
                 .replace("purpur","purpur_block"),
                 top: "paintingmod:blocks/" + colors[a] + "_" + blocks[i]
                 .replace("oak_","")
@@ -96,6 +97,7 @@ for (var i = 0; blocks.length > i; i++) {
                 .replace("jungle_","")
                 .replace("acacia_","")
                 .replace("dark_oak_","")
+                .replace("dark_", "")
                 .replace("purpur","purpur_block"),
                 side: "paintingmod:blocks/" + colors[a] + "_" + blocks[i]
                 .replace("oak_","")
@@ -104,6 +106,7 @@ for (var i = 0; blocks.length > i; i++) {
                 .replace("jungle_","")
                 .replace("acacia_","")
                 .replace("dark_oak_","")
+                .replace("dark_", "")
                 .replace("purpur","purpur_block")
             }
         }
