@@ -1459,3 +1459,39 @@ tile.paintingmod.light_blue_nether_brick_fence.name=Light Blue Nether Brick Fenc
 tile.paintingmod.magenta_nether_brick_fence.name=Magenta Nether Brick Fences
 tile.paintingmod.orange_nether_brick_fence.name=Orange Nether Brick Fences
 tile.paintingmod.white_nether_brick_fence.name=White Nether Brick Fences
+
+##Cobblestone Walls
+tile.paintingmod.black_cobblestone_wall.name=Black Cobblestone Wall
+tile.paintingmod.red_cobblestone_wall.name=Red Cobblestone Wall
+tile.paintingmod.green_cobblestone_wall.name=Green Cobblestone Wall
+tile.paintingmod.brown_cobblestone_wall.name=Brown Cobblestone Wall
+tile.paintingmod.blue_cobblestone_wall.name=Blue Cobblestone Wall
+tile.paintingmod.purple_cobblestone_wall.name=Purple Cobblestone Wall
+tile.paintingmod.cyan_cobblestone_wall.name=Cyan Cobblestone Wall
+tile.paintingmod.light_gray_cobblestone_wall.name=Light Gray Cobblestone Wall
+tile.paintingmod.gray_cobblestone_wall.name=Gray Cobblestone Wall
+tile.paintingmod.pink_cobblestone_wall.name=Pink Cobblestone Wall
+tile.paintingmod.lime_cobblestone_wall.name=Lime Cobblestone Wall
+tile.paintingmod.yellow_cobblestone_wall.name=Yellow Cobblestone Wall
+tile.paintingmod.light_blue_cobblestone_wall.name=Light Blue Cobblestone Wall
+tile.paintingmod.magenta_cobblestone_wall.name=Magenta Cobblestone Wall
+tile.paintingmod.orange_cobblestone_wall.name=Orange Cobblestone Wall
+tile.paintingmod.white_cobblestone_wall.name=White Cobblestone Wall
+ 
+##Mossy Cobblestone Walls
+tile.paintingmod.black_mossy_cobblestone_wall.name=Black Mossy Cobblestone Wall
+tile.paintingmod.red_mossy_cobblestone_wall.name=Red Mossy Cobblestone Wall
+tile.paintingmod.green_mossy_cobblestone_wall.name=Green Mossy Cobblestone Wall
+tile.paintingmod.brown_mossy_cobblestone_wall.name=Brown Mossy Cobblestone Wall
+tile.paintingmod.blue_mossy_cobblestone_wall.name=Blue Mossy Cobblestone Wall
+tile.paintingmod.purple_mossy_cobblestone_wall.name=Purple Mossy Cobblestone Wall
+tile.paintingmod.cyan_mossy_cobblestone_wall.name=Cyan Mossy Cobblestone Wall
+tile.paintingmod.light_gray_mossy_cobblestone_wall.name=Light Gray Mossy Cobblestone Wall
+tile.paintingmod.gray_mossy_cobblestone_wall.name=Gray Mossy Cobblestone Wall
+tile.paintingmod.pink_mossy_cobblestone_wall.name=Pink Mossy Cobblestone Wall
+tile.paintingmod.lime_mossy_cobblestone_wall.name=Lime Mossy Cobblestone Wall
+tile.paintingmod.yellow_mossy_cobblestone_wall.name=Yellow Mossy Cobblestone Wall
+tile.paintingmod.light_blue_mossy_cobblestone_wall.name=Light Blue Mossy Cobblestone Wall
+tile.paintingmod.magenta_mossy_cobblestone_wall.name=Magenta Mossy Cobblestone Wall
+tile.paintingmod.orange_mossy_cobblestone_wall.name=Orange Mossy Cobblestone Wall
+tile.paintingmod.white_mossy_cobblestone_wall.name=White Mossy Cobblestone Wall
