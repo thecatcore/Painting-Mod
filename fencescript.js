@@ -70,6 +70,23 @@ for (var i = 0; blocks.length > i ; i++) {
                 console.log(err)
             }
         })
+        var blockmodelinventory = {
+            parent: "block/fence_inventory",
+            textures: blockmodelpost.textures
+        }
+        fs.writeFile(path.join(blockmodelpath, colors[a] + "_" + blocks[i] + "_fence_inventory.json"), JSON.stringify(blockmodelinventory), (err) => {
+            if (err) {
+                console.log(err)
+            }
+        })
+        var itemmodel = {
+            parent: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_inventory.json"
+        }
+        fs.writeFile(path.join(itemmodelpath, colors[a] + "_" + blocks[i] + "_fence.json"), JSON.stringify(itemmodel), (err) => {
+            if (err) {
+                console.log(err)
+            }
+        })
     }
 }
 var langfile = langfile + test;
