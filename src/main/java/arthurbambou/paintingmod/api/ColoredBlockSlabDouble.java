@@ -13,13 +13,12 @@ import net.minecraft.world.World;
 
 import java.util.function.Supplier;
 
-public class ColoredBlockSlabDouble extends ColoredBlockSlab implements PTMIHasModel {
+public class ColoredBlockSlabDouble extends ColoredBlockSlab {
     private final Supplier<Block> singleSlabSupplier;
 
     public ColoredBlockSlabDouble(Supplier<Block> singleSlabSupplier) {
         super(() -> singleSlabSupplier.get().getDefaultState());
         this.singleSlabSupplier = singleSlabSupplier;
-        this.setCreativeTab(null);
     }
 
     @Override

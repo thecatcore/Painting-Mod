@@ -25,13 +25,12 @@ import javax.annotation.Nullable;
 import java.util.Random;
 import java.util.function.Supplier;
 
-public class ColoredBlockSlab extends BlockSlab implements PTMIHasModel {
+public class ColoredBlockSlab extends BlockSlab {
     private final Supplier<IBlockState> parentSupplier;
 
     public ColoredBlockSlab(Supplier<IBlockState> parentSupplier) {
         super(Material.ROCK);
         this.parentSupplier = parentSupplier;
-        this.setCreativeTab(PTMMain.PAINTING_MOD_BLOCKS);
         this.setDefaultState(this.buildDefaultState(this.blockState.getBaseState()));
     }
 
@@ -143,10 +142,5 @@ public class ColoredBlockSlab extends BlockSlab implements PTMIHasModel {
     @Override
     public int getFlammability(IBlockAccess world, BlockPos pos, EnumFacing face) {
         return parentSupplier.get().getBlock().getFlammability(world, pos, face);
-    }
-
-    @Override
-    public void registerModels() {
-        PTMMain.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
     }
 }

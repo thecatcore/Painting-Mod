@@ -27,6 +27,8 @@ public class PTMBlocks {
 	public static final List<ColoredWall> COLORED_WALL_LIST = new ArrayList<ColoredWall>();
 	public static final List<BlockWall> BLOCK_WALL_LIST = new ArrayList<BlockWall>();
 	public static final List<ColoredSlab> COLORED_SLAB_LIST = new ArrayList<ColoredSlab>();
+	public static final List<ColoredBlockSlab> COLORED_BLOCK_SLABS = new ArrayList<ColoredBlockSlab>();
+	public static final List<ColoredBlockSlabDouble> COLORED_BLOCK_SLAB_DOUBLES = new ArrayList<ColoredBlockSlabDouble>();
 	
 	public static final Block SOGGY_CLAY = new PTMSoggyClay("soggy_clay", Material.IRON, PTMMain.PAINTING_MOD_BLOCKS);
 
@@ -112,6 +114,7 @@ public class PTMBlocks {
 	public static final ColoredWall COBBLESTONE_WALL = new BaseWall("cobblestone_wall", Blocks.COBBLESTONE_WALL, 0);
 	public static final ColoredWall MOSSY_COBBLESTONE_WALL = new BaseWall("mossy_cobblestone_wall", Blocks.COBBLESTONE_WALL, 1);
 
+	public static final ColoredSlab COBBLESTONE_SLAB = new BaseSlab("cobblestone", Blocks.STONE_SLAB, Blocks.DOUBLE_STONE_SLAB);
 
 
 	public static final ColoredBlock STONE = new BaseMeta("stone", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONE, true, 0);

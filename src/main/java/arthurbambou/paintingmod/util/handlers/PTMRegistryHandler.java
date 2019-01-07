@@ -13,11 +13,14 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockFence;
 import net.minecraft.block.BlockStairs;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.registries.IForgeRegistry;
+
+import java.util.function.Function;
 
 @EventBusSubscriber
 public class PTMRegistryHandler
@@ -40,6 +43,8 @@ public class PTMRegistryHandler
 			event.getRegistry().registerAll(PTMBlocks.BLOCK_STAIRS_LIST.toArray(new Block[0]));
 			event.getRegistry().registerAll(PTMBlocks.BLOCK_FENCE_LIST.toArray(new Block[0]));
             event.getRegistry().registerAll(PTMBlocks.BLOCK_WALL_LIST.toArray(new Block[0]));
+            event.getRegistry().registerAll(PTMBlocks.COLORED_BLOCK_SLABS.toArray(new Block[0]));
+            event.getRegistry().registerAll(PTMBlocks.COLORED_BLOCK_SLAB_DOUBLES.toArray(new Block[0]));
 		} else {
             event.getRegistry().registerAll(PTMBlocks.BLOCKS_META.toArray(new Block[0]));
 
@@ -51,6 +56,8 @@ public class PTMRegistryHandler
             event.getRegistry().registerAll(PTMBlocks.BLOCK_STAIRS_LIST.toArray(new Block[0]));
             event.getRegistry().registerAll(PTMBlocks.BLOCK_FENCE_LIST.toArray(new Block[0]));
             event.getRegistry().registerAll(PTMBlocks.BLOCK_WALL_LIST.toArray(new Block[0]));
+            event.getRegistry().registerAll(PTMBlocks.COLORED_BLOCK_SLABS.toArray(new Block[0]));
+            event.getRegistry().registerAll(PTMBlocks.COLORED_BLOCK_SLAB_DOUBLES.toArray(new Block[0]));
 		}
 	}
 	
