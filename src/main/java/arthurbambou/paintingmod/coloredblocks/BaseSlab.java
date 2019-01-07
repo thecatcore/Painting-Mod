@@ -76,7 +76,12 @@ public class BaseSlab extends ColoredSlab {
     }
 
     public static Item itemBlock(Block block, Function<Block, ItemBlock> supplier) {
-        return iBRegister(ColoredSlab.itemBlock(block, supplier));
+        ItemBlock item = supplier.apply(block);
+        if (block.getRegistryName() == null) {
+            throw new IllegalArgumentException("Cannot create ItemBlock for Block without registry name");
+        }
+        item.setRegistryName(block.getRegistryName());
+        return iBRegister(item);
     }
 
     private static Item iBRegister(Item item) {

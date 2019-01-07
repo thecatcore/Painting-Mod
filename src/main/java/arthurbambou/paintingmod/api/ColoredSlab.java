@@ -99,12 +99,12 @@ public class ColoredSlab {
         }
     }
 
-    public static Item itemBlock(Block block, Function<Block, ItemBlock> supplier) {
-        ItemBlock item = supplier.apply(block);
-        if (block.getRegistryName() == null) {
-            throw new IllegalArgumentException("Cannot create ItemBlock for Block without registry name");
-        }
-        item.setRegistryName(block.getRegistryName());
-        return item;
-    }
+//    public static Item itemBlock(Block block, Function<Block, ItemBlock> supplier) {
+//        ItemBlock item = supplier.apply(block);
+//        if (block.getRegistryName() == null) {
+//            throw new IllegalArgumentException("Cannot create ItemBlock for Block without registry name");
+//        }
+//        item.setRegistryName(block.getRegistryName());
+//        return item;
+//    }
 }
