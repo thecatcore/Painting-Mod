@@ -12,7 +12,6 @@ buildscript {
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
         classpath 'co.riiid:gradle-github-plugin:+'
-        classpath "gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.32"
     }
 }
 
@@ -22,7 +21,6 @@ id "com.matthewprenger.cursegradle" version "1.1.0"
 
 apply plugin: 'net.minecraftforge.gradle.forge'
 apply plugin: 'co.riiid.gradle'
-apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin"
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 def gittoken = System.getenv('GH_TOKEN')
 def buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
@@ -103,13 +101,6 @@ processResources {
         exclude 'mcmod.info'
     }
 }
-task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-	filePath = "CHANGELOG.html"
-	untaggedName = "Current release MC${minecraft_version}-${project.version}"
-	fromCommit = "afcd7bf2af88e997e7367de1825ca1720785fd15"
-	toRef =  "HEAD"
-	templateContent = file('changelog.mustache').getText('UTF-8')
-}
 def rtype = ""
 def prelease = true
 if (buildbranch == 'release/1.12') {
@@ -123,17 +114,12 @@ curseforge {
 	apiKey = System.getenv('CURSEKEY') ?: "a key"
 	project {
 		id = "299755"
-		changelog = file('CHANGELOG.html')
-		changelogType = 'html'
 		releaseType = rtype
         mainArtifact(jar) {
             displayName = "[Forge ${minecraft_version}] ${version}"
         }
         addArtifact file("build/libs/${archivesBaseName}-${version}-sources.jar")
 	}
-}
-afterEvaluate {
-	tasks.curseforge299755.dependsOn.add(makeChangelog)
 }
 github {
     owner = 'arthurbambou'
@@ -144,7 +130,6 @@ github {
     targetCommitish = buildbranch
     prerelease = prelease
     assets = [
-        "CHANGELOG.html",
         "build/libs/${archivesBaseName}-${version}-sources.jar",
         "build/libs/${archivesBaseName}-${version}.jar"
     ]
