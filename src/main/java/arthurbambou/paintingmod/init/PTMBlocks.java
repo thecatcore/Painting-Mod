@@ -5,6 +5,7 @@ import java.util.List;
 
 import arthurbambou.paintingmod.PTMMain;
 import arthurbambou.paintingmod.api.*;
+import arthurbambou.paintingmod.api.BlockFenceGate;
 import arthurbambou.paintingmod.api.BlockWall;
 import arthurbambou.paintingmod.blocks.*;
 import arthurbambou.paintingmod.blocks.PTMSoggyClay;
@@ -26,9 +27,8 @@ public class PTMBlocks {
 	public static final List<BlockFence> BLOCK_FENCE_LIST = new ArrayList<BlockFence>();
 	public static final List<ColoredWall> COLORED_WALL_LIST = new ArrayList<ColoredWall>();
 	public static final List<BlockWall> BLOCK_WALL_LIST = new ArrayList<BlockWall>();
-	public static final List<ColoredSlab> COLORED_SLAB_LIST = new ArrayList<ColoredSlab>();
-	public static final List<ColoredBlockSlab> COLORED_BLOCK_SLABS = new ArrayList<ColoredBlockSlab>();
-	public static final List<ColoredBlockSlabDouble> COLORED_BLOCK_SLAB_DOUBLES = new ArrayList<ColoredBlockSlabDouble>();
+	public static final List<ColoredFenceGate> COLORED_FENCE_GATE_LIST = new ArrayList<ColoredFenceGate>();
+	public static final List<BlockFenceGate> BLOCK_FENCE_GATE_LIST = new ArrayList<BlockFenceGate>();
 	
 	public static final Block SOGGY_CLAY = new PTMSoggyClay("soggy_clay", Material.IRON, PTMMain.PAINTING_MOD_BLOCKS);
 
@@ -114,8 +114,12 @@ public class PTMBlocks {
 	public static final ColoredWall COBBLESTONE_WALL = new BaseWall("cobblestone_wall", Blocks.COBBLESTONE_WALL, 0);
 	public static final ColoredWall MOSSY_COBBLESTONE_WALL = new BaseWall("mossy_cobblestone_wall", Blocks.COBBLESTONE_WALL, 1);
 
-	public static final ColoredSlab COBBLESTONE_SLAB = new BaseSlab("cobblestone", Blocks.STONE_SLAB, Blocks.DOUBLE_STONE_SLAB);
-
+	public static final ColoredFenceGate OAK_PLANK_FENCE_GATE = new BaseFenceGate("oak_plank_fence_gate", Blocks.OAK_FENCE_GATE);
+	public static final ColoredFenceGate SPRUCE_PLANK_FENCE_GATE = new BaseFenceGate("spruce_plank_fence_gate", Blocks.SPRUCE_FENCE_GATE);
+	public static final ColoredFenceGate BIRCH_PLANK_FENCE_GATE = new BaseFenceGate("birch_plank_fence_gate", Blocks.BIRCH_FENCE_GATE);
+	public static final ColoredFenceGate JUNGLE_PLANK_FENCE_GATE = new BaseFenceGate("jungle_plank_fence_gate", Blocks.JUNGLE_FENCE_GATE);
+	public static final ColoredFenceGate ACACIA_PLANK_FENCE_GATE = new BaseFenceGate("acacia_plank_fence_gate", Blocks.ACACIA_FENCE_GATE);
+	public static final ColoredFenceGate DARK_OAK_PLANK_FENCE_GATE = new BaseFenceGate("dark_oak_plank_fence_gate", Blocks.DARK_OAK_FENCE_GATE);
 
 	public static final ColoredBlock STONE = new BaseMeta("stone", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1, Blocks.STONE, true, 0);
 	public static final ColoredBlock GRANITE = new BaseMeta("granite", Material.ROCK, SoundType.STONE, 1.5F, 30.0F, "pickaxe", 1,Blocks.STONE, true, 1);

@@ -1495,3 +1495,111 @@ tile.paintingmod.light_blue_mossy_cobblestone_wall.name=Light Blue Mossy Cobbles
 tile.paintingmod.magenta_mossy_cobblestone_wall.name=Magenta Mossy Cobblestone Wall
 tile.paintingmod.orange_mossy_cobblestone_wall.name=Orange Mossy Cobblestone Wall
 tile.paintingmod.white_mossy_cobblestone_wall.name=White Mossy Cobblestone Wall
+
+##Oak Plank Fence Gates
+tile.paintingmod.black_oak_plank_fence_gate.name=Black Oak Plank Fence Gate
+tile.paintingmod.red_oak_plank_fence_gate.name=Red Oak Plank Fence Gate
+tile.paintingmod.green_oak_plank_fence_gate.name=Green Oak Plank Fence Gate
+tile.paintingmod.brown_oak_plank_fence_gate.name=Brown Oak Plank Fence Gate
+tile.paintingmod.blue_oak_plank_fence_gate.name=Blue Oak Plank Fence Gate
+tile.paintingmod.purple_oak_plank_fence_gate.name=Purple Oak Plank Fence Gate
+tile.paintingmod.cyan_oak_plank_fence_gate.name=Cyan Oak Plank Fence Gate
+tile.paintingmod.light_gray_oak_plank_fence_gate.name=Light Gray Oak Plank Fence Gate
+tile.paintingmod.gray_oak_plank_fence_gate.name=Gray Oak Plank Fence Gate
+tile.paintingmod.pink_oak_plank_fence_gate.name=Pink Oak Plank Fence Gate
+tile.paintingmod.lime_oak_plank_fence_gate.name=Lime Oak Plank Fence Gate
+tile.paintingmod.yellow_oak_plank_fence_gate.name=Yellow Oak Plank Fence Gate
+tile.paintingmod.light_blue_oak_plank_fence_gate.name=Light Blue Oak Plank Fence Gate
+tile.paintingmod.magenta_oak_plank_fence_gate.name=Magenta Oak Plank Fence Gate
+tile.paintingmod.orange_oak_plank_fence_gate.name=Orange Oak Plank Fence Gate
+tile.paintingmod.white_oak_plank_fence_gate.name=White Oak Plank Fence Gate
+ 
+##Spruce Plank Fence Gates
+tile.paintingmod.black_spruce_plank_fence_gate.name=Black Spruce Plank Fence Gate
+tile.paintingmod.red_spruce_plank_fence_gate.name=Red Spruce Plank Fence Gate
+tile.paintingmod.green_spruce_plank_fence_gate.name=Green Spruce Plank Fence Gate
+tile.paintingmod.brown_spruce_plank_fence_gate.name=Brown Spruce Plank Fence Gate
+tile.paintingmod.blue_spruce_plank_fence_gate.name=Blue Spruce Plank Fence Gate
+tile.paintingmod.purple_spruce_plank_fence_gate.name=Purple Spruce Plank Fence Gate
+tile.paintingmod.cyan_spruce_plank_fence_gate.name=Cyan Spruce Plank Fence Gate
+tile.paintingmod.light_gray_spruce_plank_fence_gate.name=Light Gray Spruce Plank Fence Gate
+tile.paintingmod.gray_spruce_plank_fence_gate.name=Gray Spruce Plank Fence Gate
+tile.paintingmod.pink_spruce_plank_fence_gate.name=Pink Spruce Plank Fence Gate
+tile.paintingmod.lime_spruce_plank_fence_gate.name=Lime Spruce Plank Fence Gate
+tile.paintingmod.yellow_spruce_plank_fence_gate.name=Yellow Spruce Plank Fence Gate
+tile.paintingmod.light_blue_spruce_plank_fence_gate.name=Light Blue Spruce Plank Fence Gate
+tile.paintingmod.magenta_spruce_plank_fence_gate.name=Magenta Spruce Plank Fence Gate
+tile.paintingmod.orange_spruce_plank_fence_gate.name=Orange Spruce Plank Fence Gate
+tile.paintingmod.white_spruce_plank_fence_gate.name=White Spruce Plank Fence Gate
+ 
+##Birch Plank Fence Gates
+tile.paintingmod.black_birch_plank_fence_gate.name=Black Birch Plank Fence Gate
+tile.paintingmod.red_birch_plank_fence_gate.name=Red Birch Plank Fence Gate
+tile.paintingmod.green_birch_plank_fence_gate.name=Green Birch Plank Fence Gate
+tile.paintingmod.brown_birch_plank_fence_gate.name=Brown Birch Plank Fence Gate
+tile.paintingmod.blue_birch_plank_fence_gate.name=Blue Birch Plank Fence Gate
+tile.paintingmod.purple_birch_plank_fence_gate.name=Purple Birch Plank Fence Gate
+tile.paintingmod.cyan_birch_plank_fence_gate.name=Cyan Birch Plank Fence Gate
+tile.paintingmod.light_gray_birch_plank_fence_gate.name=Light Gray Birch Plank Fence Gate
+tile.paintingmod.gray_birch_plank_fence_gate.name=Gray Birch Plank Fence Gate
+tile.paintingmod.pink_birch_plank_fence_gate.name=Pink Birch Plank Fence Gate
+tile.paintingmod.lime_birch_plank_fence_gate.name=Lime Birch Plank Fence Gate
+tile.paintingmod.yellow_birch_plank_fence_gate.name=Yellow Birch Plank Fence Gate
+tile.paintingmod.light_blue_birch_plank_fence_gate.name=Light Blue Birch Plank Fence Gate
+tile.paintingmod.magenta_birch_plank_fence_gate.name=Magenta Birch Plank Fence Gate
+tile.paintingmod.orange_birch_plank_fence_gate.name=Orange Birch Plank Fence Gate
+tile.paintingmod.white_birch_plank_fence_gate.name=White Birch Plank Fence Gate
+ 
+##Jungle Plank Fence Gates
+tile.paintingmod.black_jungle_plank_fence_gate.name=Black Jungle Plank Fence Gate
+tile.paintingmod.red_jungle_plank_fence_gate.name=Red Jungle Plank Fence Gate
+tile.paintingmod.green_jungle_plank_fence_gate.name=Green Jungle Plank Fence Gate
+tile.paintingmod.brown_jungle_plank_fence_gate.name=Brown Jungle Plank Fence Gate
+tile.paintingmod.blue_jungle_plank_fence_gate.name=Blue Jungle Plank Fence Gate
+tile.paintingmod.purple_jungle_plank_fence_gate.name=Purple Jungle Plank Fence Gate
+tile.paintingmod.cyan_jungle_plank_fence_gate.name=Cyan Jungle Plank Fence Gate
+tile.paintingmod.light_gray_jungle_plank_fence_gate.name=Light Gray Jungle Plank Fence Gate
+tile.paintingmod.gray_jungle_plank_fence_gate.name=Gray Jungle Plank Fence Gate
+tile.paintingmod.pink_jungle_plank_fence_gate.name=Pink Jungle Plank Fence Gate
+tile.paintingmod.lime_jungle_plank_fence_gate.name=Lime Jungle Plank Fence Gate
+tile.paintingmod.yellow_jungle_plank_fence_gate.name=Yellow Jungle Plank Fence Gate
+tile.paintingmod.light_blue_jungle_plank_fence_gate.name=Light Blue Jungle Plank Fence Gate
+tile.paintingmod.magenta_jungle_plank_fence_gate.name=Magenta Jungle Plank Fence Gate
+tile.paintingmod.orange_jungle_plank_fence_gate.name=Orange Jungle Plank Fence Gate
+tile.paintingmod.white_jungle_plank_fence_gate.name=White Jungle Plank Fence Gate
+ 
+##Acacia Plank Fence Gates
+tile.paintingmod.black_acacia_plank_fence_gate.name=Black Acacia Plank Fence Gate
+tile.paintingmod.red_acacia_plank_fence_gate.name=Red Acacia Plank Fence Gate
+tile.paintingmod.green_acacia_plank_fence_gate.name=Green Acacia Plank Fence Gate
+tile.paintingmod.brown_acacia_plank_fence_gate.name=Brown Acacia Plank Fence Gate
+tile.paintingmod.blue_acacia_plank_fence_gate.name=Blue Acacia Plank Fence Gate
+tile.paintingmod.purple_acacia_plank_fence_gate.name=Purple Acacia Plank Fence Gate
+tile.paintingmod.cyan_acacia_plank_fence_gate.name=Cyan Acacia Plank Fence Gate
+tile.paintingmod.light_gray_acacia_plank_fence_gate.name=Light Gray Acacia Plank Fence Gate
+tile.paintingmod.gray_acacia_plank_fence_gate.name=Gray Acacia Plank Fence Gate
+tile.paintingmod.pink_acacia_plank_fence_gate.name=Pink Acacia Plank Fence Gate
+tile.paintingmod.lime_acacia_plank_fence_gate.name=Lime Acacia Plank Fence Gate
+tile.paintingmod.yellow_acacia_plank_fence_gate.name=Yellow Acacia Plank Fence Gate
+tile.paintingmod.light_blue_acacia_plank_fence_gate.name=Light Blue Acacia Plank Fence Gate
+tile.paintingmod.magenta_acacia_plank_fence_gate.name=Magenta Acacia Plank Fence Gate
+tile.paintingmod.orange_acacia_plank_fence_gate.name=Orange Acacia Plank Fence Gate
+tile.paintingmod.white_acacia_plank_fence_gate.name=White Acacia Plank Fence Gate
+ 
+##Dark Oak Plank Fence Gates
+tile.paintingmod.black_dark_oak_plank_fence_gate.name=Black Dark Oak Plank Fence Gate
+tile.paintingmod.red_dark_oak_plank_fence_gate.name=Red Dark Oak Plank Fence Gate
+tile.paintingmod.green_dark_oak_plank_fence_gate.name=Green Dark Oak Plank Fence Gate
+tile.paintingmod.brown_dark_oak_plank_fence_gate.name=Brown Dark Oak Plank Fence Gate
+tile.paintingmod.blue_dark_oak_plank_fence_gate.name=Blue Dark Oak Plank Fence Gate
+tile.paintingmod.purple_dark_oak_plank_fence_gate.name=Purple Dark Oak Plank Fence Gate
+tile.paintingmod.cyan_dark_oak_plank_fence_gate.name=Cyan Dark Oak Plank Fence Gate
+tile.paintingmod.light_gray_dark_oak_plank_fence_gate.name=Light Gray Dark Oak Plank Fence Gate
+tile.paintingmod.gray_dark_oak_plank_fence_gate.name=Gray Dark Oak Plank Fence Gate
+tile.paintingmod.pink_dark_oak_plank_fence_gate.name=Pink Dark Oak Plank Fence Gate
+tile.paintingmod.lime_dark_oak_plank_fence_gate.name=Lime Dark Oak Plank Fence Gate
+tile.paintingmod.yellow_dark_oak_plank_fence_gate.name=Yellow Dark Oak Plank Fence Gate
+tile.paintingmod.light_blue_dark_oak_plank_fence_gate.name=Light Blue Dark Oak Plank Fence Gate
+tile.paintingmod.magenta_dark_oak_plank_fence_gate.name=Magenta Dark Oak Plank Fence Gate
+tile.paintingmod.orange_dark_oak_plank_fence_gate.name=Orange Dark Oak Plank Fence Gate
+tile.paintingmod.white_dark_oak_plank_fence_gate.name=White Dark Oak Plank Fence Gate

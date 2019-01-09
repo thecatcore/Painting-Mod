@@ -10,6 +10,7 @@ import arthurbambou.paintingmod.util.PTMIHasModel;
 import arthurbambou.paintingmod.util.PTMIMetaName;
 import arthurbambou.paintingmod.util.PTMReference;
 import net.minecraft.block.BlockFence;
+import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.BlockStairs;
 import net.minecraft.block.BlockWall;
 import net.minecraft.block.state.IBlockState;
@@ -62,7 +63,132 @@ public class PTMPaintbrushVariant extends PTMItemVariantTemplate2 implements PTM
         for (ColoredWall coloredWall : AddPaintbrush.getColoredWallList()) {
             newwalltopaint(player,worldIn,pos,coloredWall);
         }
+        for (ColoredFenceGate coloredFenceGate : AddPaintbrush.getColoredFenceGateList()) {
+            newfencegatetopaint(player,worldIn,pos,coloredFenceGate);
+        }
         return super.onItemUse(player, worldIn, pos, hand, facing, hitX, hitY, hitZ);
+    }
+
+    private void newfencegatetopaint(EntityPlayer player, World world, BlockPos pos, ColoredFenceGate coloredStairs) {
+        if (player.getHeldItemMainhand().getMetadata() == 0) {
+
+        } else {
+            if (world.getBlockState(pos).getBlock() == coloredStairs.replace) {
+                IBlockState blockState = world.getBlockState(pos);
+                if (player.getHeldItemMainhand().getMetadata() == 1) {
+                    world.setBlockState(pos, coloredStairs.black.getBlockState().getBaseState()
+                            .withProperty(BlockFenceGate.OPEN, blockState.getValue(BlockFenceGate.OPEN))
+                            .withProperty(BlockFenceGate.IN_WALL, blockState.getValue(BlockFenceGate.IN_WALL))
+                            .withProperty(BlockFenceGate.POWERED, blockState.getValue(BlockFenceGate.POWERED))
+                            .withProperty(BlockHorizontal.FACING, blockState.getValue(BlockHorizontal.FACING)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 2) {
+                    world.setBlockState(pos, coloredStairs.red.getBlockState().getBaseState()
+                            .withProperty(BlockFenceGate.OPEN, blockState.getValue(BlockFenceGate.OPEN))
+                            .withProperty(BlockFenceGate.IN_WALL, blockState.getValue(BlockFenceGate.IN_WALL))
+                            .withProperty(BlockFenceGate.POWERED, blockState.getValue(BlockFenceGate.POWERED))
+                            .withProperty(BlockHorizontal.FACING, blockState.getValue(BlockHorizontal.FACING)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 3) {
+                    world.setBlockState(pos, coloredStairs.green.getBlockState().getBaseState()
+                            .withProperty(BlockFenceGate.OPEN, blockState.getValue(BlockFenceGate.OPEN))
+                            .withProperty(BlockFenceGate.IN_WALL, blockState.getValue(BlockFenceGate.IN_WALL))
+                            .withProperty(BlockFenceGate.POWERED, blockState.getValue(BlockFenceGate.POWERED))
+                            .withProperty(BlockHorizontal.FACING, blockState.getValue(BlockHorizontal.FACING)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 4) {
+                    world.setBlockState(pos, coloredStairs.brown.getBlockState().getBaseState()
+                            .withProperty(BlockFenceGate.OPEN, blockState.getValue(BlockFenceGate.OPEN))
+                            .withProperty(BlockFenceGate.IN_WALL, blockState.getValue(BlockFenceGate.IN_WALL))
+                            .withProperty(BlockFenceGate.POWERED, blockState.getValue(BlockFenceGate.POWERED))
+                            .withProperty(BlockHorizontal.FACING, blockState.getValue(BlockHorizontal.FACING)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 5) {
+                    world.setBlockState(pos, coloredStairs.blue.getBlockState().getBaseState()
+                            .withProperty(BlockFenceGate.OPEN, blockState.getValue(BlockFenceGate.OPEN))
+                            .withProperty(BlockFenceGate.IN_WALL, blockState.getValue(BlockFenceGate.IN_WALL))
+                            .withProperty(BlockFenceGate.POWERED, blockState.getValue(BlockFenceGate.POWERED))
+                            .withProperty(BlockHorizontal.FACING, blockState.getValue(BlockHorizontal.FACING)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 6) {
+                    world.setBlockState(pos, coloredStairs.purple.getBlockState().getBaseState()
+                            .withProperty(BlockFenceGate.OPEN, blockState.getValue(BlockFenceGate.OPEN))
+                            .withProperty(BlockFenceGate.IN_WALL, blockState.getValue(BlockFenceGate.IN_WALL))
+                            .withProperty(BlockFenceGate.POWERED, blockState.getValue(BlockFenceGate.POWERED))
+                            .withProperty(BlockHorizontal.FACING, blockState.getValue(BlockHorizontal.FACING)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 7) {
+                    world.setBlockState(pos, coloredStairs.cyan.getBlockState().getBaseState()
+                            .withProperty(BlockFenceGate.OPEN, blockState.getValue(BlockFenceGate.OPEN))
+                            .withProperty(BlockFenceGate.IN_WALL, blockState.getValue(BlockFenceGate.IN_WALL))
+                            .withProperty(BlockFenceGate.POWERED, blockState.getValue(BlockFenceGate.POWERED))
+                            .withProperty(BlockHorizontal.FACING, blockState.getValue(BlockHorizontal.FACING)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 8) {
+                    world.setBlockState(pos, coloredStairs.lightgray.getBlockState().getBaseState()
+                            .withProperty(BlockFenceGate.OPEN, blockState.getValue(BlockFenceGate.OPEN))
+                            .withProperty(BlockFenceGate.IN_WALL, blockState.getValue(BlockFenceGate.IN_WALL))
+                            .withProperty(BlockFenceGate.POWERED, blockState.getValue(BlockFenceGate.POWERED))
+                            .withProperty(BlockHorizontal.FACING, blockState.getValue(BlockHorizontal.FACING)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 9) {
+                    world.setBlockState(pos, coloredStairs.gray.getBlockState().getBaseState()
+                            .withProperty(BlockFenceGate.OPEN, blockState.getValue(BlockFenceGate.OPEN))
+                            .withProperty(BlockFenceGate.IN_WALL, blockState.getValue(BlockFenceGate.IN_WALL))
+                            .withProperty(BlockFenceGate.POWERED, blockState.getValue(BlockFenceGate.POWERED))
+                            .withProperty(BlockHorizontal.FACING, blockState.getValue(BlockHorizontal.FACING)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 10) {
+                    world.setBlockState(pos, coloredStairs.pink.getBlockState().getBaseState()
+                            .withProperty(BlockFenceGate.OPEN, blockState.getValue(BlockFenceGate.OPEN))
+                            .withProperty(BlockFenceGate.IN_WALL, blockState.getValue(BlockFenceGate.IN_WALL))
+                            .withProperty(BlockFenceGate.POWERED, blockState.getValue(BlockFenceGate.POWERED))
+                            .withProperty(BlockHorizontal.FACING, blockState.getValue(BlockHorizontal.FACING)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 11) {
+                    world.setBlockState(pos, coloredStairs.lime.getBlockState().getBaseState()
+                            .withProperty(BlockFenceGate.OPEN, blockState.getValue(BlockFenceGate.OPEN))
+                            .withProperty(BlockFenceGate.IN_WALL, blockState.getValue(BlockFenceGate.IN_WALL))
+                            .withProperty(BlockFenceGate.POWERED, blockState.getValue(BlockFenceGate.POWERED))
+                            .withProperty(BlockHorizontal.FACING, blockState.getValue(BlockHorizontal.FACING)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 12) {
+                    world.setBlockState(pos, coloredStairs.yellow.getBlockState().getBaseState()
+                            .withProperty(BlockFenceGate.OPEN, blockState.getValue(BlockFenceGate.OPEN))
+                            .withProperty(BlockFenceGate.IN_WALL, blockState.getValue(BlockFenceGate.IN_WALL))
+                            .withProperty(BlockFenceGate.POWERED, blockState.getValue(BlockFenceGate.POWERED))
+                            .withProperty(BlockHorizontal.FACING, blockState.getValue(BlockHorizontal.FACING)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 13) {
+                    world.setBlockState(pos, coloredStairs.lightblue.getBlockState().getBaseState()
+                            .withProperty(BlockFenceGate.OPEN, blockState.getValue(BlockFenceGate.OPEN))
+                            .withProperty(BlockFenceGate.IN_WALL, blockState.getValue(BlockFenceGate.IN_WALL))
+                            .withProperty(BlockFenceGate.POWERED, blockState.getValue(BlockFenceGate.POWERED))
+                            .withProperty(BlockHorizontal.FACING, blockState.getValue(BlockHorizontal.FACING)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 14) {
+                    world.setBlockState(pos, coloredStairs.magenta.getBlockState().getBaseState()
+                            .withProperty(BlockFenceGate.OPEN, blockState.getValue(BlockFenceGate.OPEN))
+                            .withProperty(BlockFenceGate.IN_WALL, blockState.getValue(BlockFenceGate.IN_WALL))
+                            .withProperty(BlockFenceGate.POWERED, blockState.getValue(BlockFenceGate.POWERED))
+                            .withProperty(BlockHorizontal.FACING, blockState.getValue(BlockHorizontal.FACING)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 15) {
+                    world.setBlockState(pos, coloredStairs.orange.getBlockState().getBaseState()
+                            .withProperty(BlockFenceGate.OPEN, blockState.getValue(BlockFenceGate.OPEN))
+                            .withProperty(BlockFenceGate.IN_WALL, blockState.getValue(BlockFenceGate.IN_WALL))
+                            .withProperty(BlockFenceGate.POWERED, blockState.getValue(BlockFenceGate.POWERED))
+                            .withProperty(BlockHorizontal.FACING, blockState.getValue(BlockHorizontal.FACING)));
+                }
+                if (player.getHeldItemMainhand().getMetadata() == 16) {
+                    world.setBlockState(pos, coloredStairs.white.getBlockState().getBaseState()
+                            .withProperty(BlockFenceGate.OPEN, blockState.getValue(BlockFenceGate.OPEN))
+                            .withProperty(BlockFenceGate.IN_WALL, blockState.getValue(BlockFenceGate.IN_WALL))
+                            .withProperty(BlockFenceGate.POWERED, blockState.getValue(BlockFenceGate.POWERED))
+                            .withProperty(BlockHorizontal.FACING, blockState.getValue(BlockHorizontal.FACING)));
+                }
+            }
+        }
     }
 
     private void newwalltopaint(EntityPlayer player, World world, BlockPos pos, ColoredWall coloredStairs) {

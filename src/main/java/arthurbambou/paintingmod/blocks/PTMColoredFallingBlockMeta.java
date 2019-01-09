@@ -1,7 +1,6 @@
 package arthurbambou.paintingmod.blocks;
 
 import arthurbambou.paintingmod.PTMMain;
-import arthurbambou.paintingmod.api.ColoredBlockMeta;
 import arthurbambou.paintingmod.api.ColoredFallingBlockMeta;
 import arthurbambou.paintingmod.api.EnumPaintColor;
 import arthurbambou.paintingmod.init.PTMBlocks;
@@ -10,8 +9,6 @@ import arthurbambou.paintingmod.util.PTMIHasModel;
 import arthurbambou.paintingmod.util.PTMIMetaName;
 import arthurbambou.paintingmod.util.PTMItemBlockVariant;
 import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 

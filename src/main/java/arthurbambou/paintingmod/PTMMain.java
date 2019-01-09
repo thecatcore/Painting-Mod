@@ -139,6 +139,9 @@ public class PTMMain {
 			for (ColoredWall coloredWall : PTMBlocks.COLORED_WALL_LIST) {
 				AddPaintbrush.registerColoredWall(coloredWall);
 			}
+			for (ColoredFenceGate coloredFenceGate : PTMBlocks.COLORED_FENCE_GATE_LIST) {
+				AddPaintbrush.registerColoredFenceGate(coloredFenceGate);
+			}
         } else {
             PTMRegistryHandler.APIinit();
 			for (ColoredStairs coloredStairs : PTMBlocks.COLORED_STAIRS_META_LIST) {
@@ -149,6 +152,9 @@ public class PTMMain {
 			}
 			for (ColoredWall coloredWall : PTMBlocks.COLORED_WALL_LIST) {
 				AddPaintbrush.registerColoredWall(coloredWall);
+			}
+			for (ColoredFenceGate coloredFenceGate : PTMBlocks.COLORED_FENCE_GATE_LIST) {
+				AddPaintbrush.registerColoredFenceGate(coloredFenceGate);
 			}
         }
 	}
