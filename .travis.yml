@@ -10,13 +10,13 @@ script:
  - |
     if [ "$TRAVIS_PULL_REQUEST" == false ]; then
       if [ "$TRAVIS_BRANCH" == "release/1.12" ]; then
-        ./gradlew build makeChangelog curseforge299755 githubRelease
+        ./gradlew build curseforge299755 githubRelease
       else
         if [ "$TRAVIS_BRANCH" == "pre-release" ]; then
-          ./gradlew build makeChangelog curseforge299755 githubRelease
+          ./gradlew build curseforge299755 githubRelease
         else
           if [ "$TRAVIS_BRANCH" == "dev/1.12.2" ]; then
-            ./gradlew build makeChangelog githubRelease --stacktrace
+            ./gradlew build githubRelease --stacktrace
           else
             ./gradlew build
           fi

@@ -15,14 +15,20 @@ public class AddPaintbrush {
 	private static final List<ColoredBlockMeta> COMPLEXCOLOREDBLOCKMETA = new ArrayList<ColoredBlockMeta>();
 	private static final List<ColoredFallingBlockMeta> SIMPLECOLOREDFALLINGBLOCKMETA = new ArrayList<ColoredFallingBlockMeta>();
 	private static final List<ColoredBlockMetaSlime> COLORED_BLOCK_META_SLIMES = new ArrayList<ColoredBlockMetaSlime>();
+	private static final List<ColoredStairs> COLORED_STAIRS_META_LIST = new ArrayList<ColoredStairs>();
+	private static final List<ColoredFence> COLORED_FENCE_LIST = new ArrayList<ColoredFence>();
+	private static final List<ColoredWall> COLORED_WALL_LIST = new ArrayList<ColoredWall>();
+	private static final List<ColoredFenceGate> COLORED_FENCE_GATE_LIST = new ArrayList<ColoredFenceGate>();
 
 	public static void registerSimpleBlock(ColoredBlock coloredblock) {
-		PTMMain.logger.info("[API]: Add paintable simple block => " + coloredblock.name);
+		String modID = coloredblock.black.getRegistryName().getNamespace();
+		PTMMain.logger.info("[API]: Add paintable simple block => " + modID + ":" + coloredblock.name);
 		SIMPLECOLOREDBLOCKS.add(coloredblock);
 	}
 
 	public static void registerComplexBlock(ColoredBlock coloredblock) {
-		PTMMain.logger.info("[API]: Add paintable complex block => " + coloredblock.name);
+		String modID = coloredblock.black.getRegistryName().getNamespace();
+		PTMMain.logger.info("[API]: Add paintable complex block => " + modID + ":" + coloredblock.name);
 		COMPLEXCOLOREDBLOCKS.add(coloredblock);
 	}
 
@@ -69,4 +75,44 @@ public class AddPaintbrush {
         PTMMain.logger.info("[API]: Add paintable simple block => " + coloredFallingBlockMeta.getRegistryName());
         COLORED_BLOCK_META_SLIMES.add(coloredFallingBlockMeta);
     }
+
+	public static List<ColoredStairs> getColoredStairsMetaList() {
+		return COLORED_STAIRS_META_LIST;
+	}
+
+	public static void registerColoredStairsMeta(ColoredStairs coloredStairsMeta) {
+		String modID = coloredStairsMeta.black.getRegistryName().getNamespace();
+		PTMMain.logger.info("[API]: Add paintable stairs => " + modID + ":" + coloredStairsMeta.name);
+		COLORED_STAIRS_META_LIST.add(coloredStairsMeta);
+	}
+
+	public static List<ColoredFence> getColoredFenceList() {
+		return COLORED_FENCE_LIST;
+	}
+
+	public static void registerColoredFence(ColoredFence coloredFence) {
+		String modID = coloredFence.black.getRegistryName().getNamespace();
+		PTMMain.logger.info("[API]: Add paintable fence => " + modID + ":" + coloredFence.name);
+		COLORED_FENCE_LIST.add(coloredFence);
+	}
+
+	public static List<ColoredWall> getColoredWallList() {
+		return COLORED_WALL_LIST;
+	}
+
+	public static void registerColoredWall(ColoredWall coloredWall) {
+		String modID = coloredWall.black.getRegistryName().getNamespace();
+		PTMMain.logger.info("[API]: Add paintable wall => " + modID + ":" + coloredWall.name);
+		COLORED_WALL_LIST.add(coloredWall);
+	}
+
+	public static List<ColoredFenceGate> getColoredFenceGateList() {
+		return COLORED_FENCE_GATE_LIST;
+	}
+
+	public static void registerColoredFenceGate(ColoredFenceGate coloredFenceGate) {
+		String modID = coloredFenceGate.black.getRegistryName().getNamespace();
+		PTMMain.logger.info("[API]: Add paintable fence gate => " + modID + ":" + coloredFenceGate.name);
+		COLORED_FENCE_GATE_LIST.add(coloredFenceGate);
+	}
 }

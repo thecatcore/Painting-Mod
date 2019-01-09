@@ -12,7 +12,7 @@ public class SoulSand extends ColoredBlock {
 
 	public SoulSand(String name, Material material, SoundType soundtype, float hardness, float resistance,
 			String harvesttool, int harvestlevel, Block replace, boolean metab) {
-		super(name, material, soundtype, hardness, resistance, harvesttool, harvestlevel, replace, metab);
+		super(name,  hardness, resistance,  replace);
 		registerBlocks(name, material, soundtype, hardness, resistance, harvesttool, harvestlevel);
 		PTMBlocks.COLORED_BLOCKS.add(this);
 	}

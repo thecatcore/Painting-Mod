@@ -26,14 +26,14 @@ public class PTMColoredBlockMetaSoulSand extends ColoredBlockMeta implements PTM
 
     protected static final AxisAlignedBB SOUL_SAND_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.875D, 1.0D);
 
-    public PTMColoredBlockMetaSoulSand(String name, Material materialIn, SoundType sound, float hardness, float resistance, String harvestTool, int harvestLevel, Block replace) {
-        super(materialIn, replace);
+    public PTMColoredBlockMetaSoulSand(String name, float hardness, float resistance, Block replace) {
+        super(replace.getMaterial(replace.getDefaultState()), replace);
         setRegistryName(name);
         setTranslationKey(name);
-        setSoundType(sound);
+        setSoundType(replace.getSoundType());
         setHardness(hardness);
         setResistance(resistance);
-        setHarvestLevel(harvestTool,harvestLevel);
+        setHarvestLevel(replace.getHarvestTool(replace.getDefaultState()),replace.getHarvestLevel(replace.getDefaultState()));
         setCreativeTab(PTMMain.PAINTING_MOD_BLOCKS);
 //        for (EnumPaintColor color : EnumPaintColor.values()) {
 //            this.setTranslationKey(color.getTranslationKey() + "_" + name);
@@ -43,14 +43,14 @@ public class PTMColoredBlockMetaSoulSand extends ColoredBlockMeta implements PTM
         PTMItems.ITEMS_META.add(new PTMItemBlockVariant(this).setRegistryName(this.getRegistryName()));
     }
 
-    public PTMColoredBlockMetaSoulSand(String name, Material materialIn, SoundType sound, float hardness, float resistance, String harvestTool, int harvestLevel, Block replace, int replacemeta) {
-        super(materialIn, replace, replacemeta);
+    public PTMColoredBlockMetaSoulSand(String name, float hardness, float resistance, Block replace, int replacemeta) {
+        super(replace.getMaterial(replace.getDefaultState()), replace, replacemeta);
         setRegistryName(name);
         setTranslationKey(name);
-        setSoundType(sound);
+        setSoundType(replace.getSoundType());
         setHardness(hardness);
         setResistance(resistance);
-        setHarvestLevel(harvestTool,harvestLevel);
+        setHarvestLevel(replace.getHarvestTool(replace.getDefaultState()),replace.getHarvestLevel(replace.getDefaultState()));
         setCreativeTab(PTMMain.PAINTING_MOD_BLOCKS);
 //        for (EnumPaintColor color : EnumPaintColor.values()) {
 //            this.setTranslationKey(color.getTranslationKey() + "_" + name);

@@ -44,6 +44,9 @@ item.paintingmod.white_paintbrush.name=Paintbrush with white paint
 #GUI
 itemGroup.paintingmod.paintingmod_tab_items=PaintingMod Items
 itemGroup.paintingmod.paintingmod_tab_blocks=PaintingMod Blocks
+itemGroup.paintingmod.paintingmod_tab_stairs=PaintingMod Stairs
+itemGroup.paintingmod.paintingmod_tab_fences=PaintingMod Fences
+itemGroup.paintingmod.paintingmod_tab_walls=PaintingMod Walls
 
 #Tools
 item.paintingmod.hammer.name=Hammer
@@ -986,3 +989,617 @@ tile.paintingmod.light_blue_slime_block.name=Light Blue Slime Block
 tile.paintingmod.magenta_slime_block.name=Magenta Slime Block
 tile.paintingmod.orange_slime_block.name=Orange Slime Block
 tile.paintingmod.white_slime_block.name=White Slime Block
+
+ 
+##Oak Leaves
+tile.paintingmod.black_oak_leaves.name=Black Oak Leaves
+tile.paintingmod.red_oak_leaves.name=Red Oak Leaves
+tile.paintingmod.green_oak_leaves.name=Green Oak Leaves
+tile.paintingmod.brown_oak_leaves.name=Brown Oak Leaves
+tile.paintingmod.blue_oak_leaves.name=Blue Oak Leaves
+tile.paintingmod.purple_oak_leaves.name=Purple Oak Leaves
+tile.paintingmod.cyan_oak_leaves.name=Cyan Oak Leaves
+tile.paintingmod.light_gray_oak_leaves.name=Light Gray Oak Leaves
+tile.paintingmod.gray_oak_leaves.name=Gray Oak Leaves
+tile.paintingmod.pink_oak_leaves.name=Pink Oak Leaves
+tile.paintingmod.lime_oak_leaves.name=Lime Oak Leaves
+tile.paintingmod.yellow_oak_leaves.name=Yellow Oak Leaves
+tile.paintingmod.light_blue_oak_leaves.name=Light Blue Oak Leaves
+tile.paintingmod.magenta_oak_leaves.name=Magenta Oak Leaves
+tile.paintingmod.orange_oak_leaves.name=Orange Oak Leaves
+tile.paintingmod.white_oak_leaves.name=White Oak Leaves
+ 
+##Birch Leaves
+tile.paintingmod.black_birch_leaves.name=Black Birch Leaves
+tile.paintingmod.red_birch_leaves.name=Red Birch Leaves
+tile.paintingmod.green_birch_leaves.name=Green Birch Leaves
+tile.paintingmod.brown_birch_leaves.name=Brown Birch Leaves
+tile.paintingmod.blue_birch_leaves.name=Blue Birch Leaves
+tile.paintingmod.purple_birch_leaves.name=Purple Birch Leaves
+tile.paintingmod.cyan_birch_leaves.name=Cyan Birch Leaves
+tile.paintingmod.light_gray_birch_leaves.name=Light Gray Birch Leaves
+tile.paintingmod.gray_birch_leaves.name=Gray Birch Leaves
+tile.paintingmod.pink_birch_leaves.name=Pink Birch Leaves
+tile.paintingmod.lime_birch_leaves.name=Lime Birch Leaves
+tile.paintingmod.yellow_birch_leaves.name=Yellow Birch Leaves
+tile.paintingmod.light_blue_birch_leaves.name=Light Blue Birch Leaves
+tile.paintingmod.magenta_birch_leaves.name=Magenta Birch Leaves
+tile.paintingmod.orange_birch_leaves.name=Orange Birch Leaves
+tile.paintingmod.white_birch_leaves.name=White Birch Leaves
+ 
+##Acacia Leaves
+tile.paintingmod.black_acacia_leaves.name=Black Acacia Leaves
+tile.paintingmod.red_acacia_leaves.name=Red Acacia Leaves
+tile.paintingmod.green_acacia_leaves.name=Green Acacia Leaves
+tile.paintingmod.brown_acacia_leaves.name=Brown Acacia Leaves
+tile.paintingmod.blue_acacia_leaves.name=Blue Acacia Leaves
+tile.paintingmod.purple_acacia_leaves.name=Purple Acacia Leaves
+tile.paintingmod.cyan_acacia_leaves.name=Cyan Acacia Leaves
+tile.paintingmod.light_gray_acacia_leaves.name=Light Gray Acacia Leaves
+tile.paintingmod.gray_acacia_leaves.name=Gray Acacia Leaves
+tile.paintingmod.pink_acacia_leaves.name=Pink Acacia Leaves
+tile.paintingmod.lime_acacia_leaves.name=Lime Acacia Leaves
+tile.paintingmod.yellow_acacia_leaves.name=Yellow Acacia Leaves
+tile.paintingmod.light_blue_acacia_leaves.name=Light Blue Acacia Leaves
+tile.paintingmod.magenta_acacia_leaves.name=Magenta Acacia Leaves
+tile.paintingmod.orange_acacia_leaves.name=Orange Acacia Leaves
+tile.paintingmod.white_acacia_leaves.name=White Acacia Leaves
+ 
+##Dark Oak Leaves
+tile.paintingmod.black_dark_oak_leaves.name=Black Dark Oak Leaves
+tile.paintingmod.red_dark_oak_leaves.name=Red Dark Oak Leaves
+tile.paintingmod.green_dark_oak_leaves.name=Green Dark Oak Leaves
+tile.paintingmod.brown_dark_oak_leaves.name=Brown Dark Oak Leaves
+tile.paintingmod.blue_dark_oak_leaves.name=Blue Dark Oak Leaves
+tile.paintingmod.purple_dark_oak_leaves.name=Purple Dark Oak Leaves
+tile.paintingmod.cyan_dark_oak_leaves.name=Cyan Dark Oak Leaves
+tile.paintingmod.light_gray_dark_oak_leaves.name=Light Gray Dark Oak Leaves
+tile.paintingmod.gray_dark_oak_leaves.name=Gray Dark Oak Leaves
+tile.paintingmod.pink_dark_oak_leaves.name=Pink Dark Oak Leaves
+tile.paintingmod.lime_dark_oak_leaves.name=Lime Dark Oak Leaves
+tile.paintingmod.yellow_dark_oak_leaves.name=Yellow Dark Oak Leaves
+tile.paintingmod.light_blue_dark_oak_leaves.name=Light Blue Dark Oak Leaves
+tile.paintingmod.magenta_dark_oak_leaves.name=Magenta Dark Oak Leaves
+tile.paintingmod.orange_dark_oak_leaves.name=Orange Dark Oak Leaves
+tile.paintingmod.white_dark_oak_leaves.name=White Dark Oak Leaves
+
+ 
+##Oak Leaves
+tile.paintingmod.black_oak_leaves.name=Black Oak Leaves
+tile.paintingmod.red_oak_leaves.name=Red Oak Leaves
+tile.paintingmod.green_oak_leaves.name=Green Oak Leaves
+tile.paintingmod.brown_oak_leaves.name=Brown Oak Leaves
+tile.paintingmod.blue_oak_leaves.name=Blue Oak Leaves
+tile.paintingmod.purple_oak_leaves.name=Purple Oak Leaves
+tile.paintingmod.cyan_oak_leaves.name=Cyan Oak Leaves
+tile.paintingmod.light_gray_oak_leaves.name=Light Gray Oak Leaves
+tile.paintingmod.gray_oak_leaves.name=Gray Oak Leaves
+tile.paintingmod.pink_oak_leaves.name=Pink Oak Leaves
+tile.paintingmod.lime_oak_leaves.name=Lime Oak Leaves
+tile.paintingmod.yellow_oak_leaves.name=Yellow Oak Leaves
+tile.paintingmod.light_blue_oak_leaves.name=Light Blue Oak Leaves
+tile.paintingmod.magenta_oak_leaves.name=Magenta Oak Leaves
+tile.paintingmod.orange_oak_leaves.name=Orange Oak Leaves
+tile.paintingmod.white_oak_leaves.name=White Oak Leaves
+ 
+##Birch Leaves
+tile.paintingmod.black_birch_leaves.name=Black Birch Leaves
+tile.paintingmod.red_birch_leaves.name=Red Birch Leaves
+tile.paintingmod.green_birch_leaves.name=Green Birch Leaves
+tile.paintingmod.brown_birch_leaves.name=Brown Birch Leaves
+tile.paintingmod.blue_birch_leaves.name=Blue Birch Leaves
+tile.paintingmod.purple_birch_leaves.name=Purple Birch Leaves
+tile.paintingmod.cyan_birch_leaves.name=Cyan Birch Leaves
+tile.paintingmod.light_gray_birch_leaves.name=Light Gray Birch Leaves
+tile.paintingmod.gray_birch_leaves.name=Gray Birch Leaves
+tile.paintingmod.pink_birch_leaves.name=Pink Birch Leaves
+tile.paintingmod.lime_birch_leaves.name=Lime Birch Leaves
+tile.paintingmod.yellow_birch_leaves.name=Yellow Birch Leaves
+tile.paintingmod.light_blue_birch_leaves.name=Light Blue Birch Leaves
+tile.paintingmod.magenta_birch_leaves.name=Magenta Birch Leaves
+tile.paintingmod.orange_birch_leaves.name=Orange Birch Leaves
+tile.paintingmod.white_birch_leaves.name=White Birch Leaves
+ 
+##Acacia Leaves
+tile.paintingmod.black_acacia_leaves.name=Black Acacia Leaves
+tile.paintingmod.red_acacia_leaves.name=Red Acacia Leaves
+tile.paintingmod.green_acacia_leaves.name=Green Acacia Leaves
+tile.paintingmod.brown_acacia_leaves.name=Brown Acacia Leaves
+tile.paintingmod.blue_acacia_leaves.name=Blue Acacia Leaves
+tile.paintingmod.purple_acacia_leaves.name=Purple Acacia Leaves
+tile.paintingmod.cyan_acacia_leaves.name=Cyan Acacia Leaves
+tile.paintingmod.light_gray_acacia_leaves.name=Light Gray Acacia Leaves
+tile.paintingmod.gray_acacia_leaves.name=Gray Acacia Leaves
+tile.paintingmod.pink_acacia_leaves.name=Pink Acacia Leaves
+tile.paintingmod.lime_acacia_leaves.name=Lime Acacia Leaves
+tile.paintingmod.yellow_acacia_leaves.name=Yellow Acacia Leaves
+tile.paintingmod.light_blue_acacia_leaves.name=Light Blue Acacia Leaves
+tile.paintingmod.magenta_acacia_leaves.name=Magenta Acacia Leaves
+tile.paintingmod.orange_acacia_leaves.name=Orange Acacia Leaves
+tile.paintingmod.white_acacia_leaves.name=White Acacia Leaves
+ 
+##Dark Oak Leaves
+tile.paintingmod.black_dark_oak_leaves.name=Black Dark Oak Leaves
+tile.paintingmod.red_dark_oak_leaves.name=Red Dark Oak Leaves
+tile.paintingmod.green_dark_oak_leaves.name=Green Dark Oak Leaves
+tile.paintingmod.brown_dark_oak_leaves.name=Brown Dark Oak Leaves
+tile.paintingmod.blue_dark_oak_leaves.name=Blue Dark Oak Leaves
+tile.paintingmod.purple_dark_oak_leaves.name=Purple Dark Oak Leaves
+tile.paintingmod.cyan_dark_oak_leaves.name=Cyan Dark Oak Leaves
+tile.paintingmod.light_gray_dark_oak_leaves.name=Light Gray Dark Oak Leaves
+tile.paintingmod.gray_dark_oak_leaves.name=Gray Dark Oak Leaves
+tile.paintingmod.pink_dark_oak_leaves.name=Pink Dark Oak Leaves
+tile.paintingmod.lime_dark_oak_leaves.name=Lime Dark Oak Leaves
+tile.paintingmod.yellow_dark_oak_leaves.name=Yellow Dark Oak Leaves
+tile.paintingmod.light_blue_dark_oak_leaves.name=Light Blue Dark Oak Leaves
+tile.paintingmod.magenta_dark_oak_leaves.name=Magenta Dark Oak Leaves
+tile.paintingmod.orange_dark_oak_leaves.name=Orange Dark Oak Leaves
+tile.paintingmod.white_dark_oak_leaves.name=White Dark Oak Leaves
+
+##Oak Plank Stairs
+tile.paintingmod.black_oak_plank_stairs.name=Black Oak Plank Stairs
+tile.paintingmod.red_oak_plank_stairs.name=Red Oak Plank Stairs
+tile.paintingmod.green_oak_plank_stairs.name=Green Oak Plank Stairs
+tile.paintingmod.brown_oak_plank_stairs.name=Brown Oak Plank Stairs
+tile.paintingmod.blue_oak_plank_stairs.name=Blue Oak Plank Stairs
+tile.paintingmod.purple_oak_plank_stairs.name=Purple Oak Plank Stairs
+tile.paintingmod.cyan_oak_plank_stairs.name=Cyan Oak Plank Stairs
+tile.paintingmod.light_gray_oak_plank_stairs.name=Light Gray Oak Plank Stairs
+tile.paintingmod.gray_oak_plank_stairs.name=Gray Oak Plank Stairs
+tile.paintingmod.pink_oak_plank_stairs.name=Pink Oak Plank Stairs
+tile.paintingmod.lime_oak_plank_stairs.name=Lime Oak Plank Stairs
+tile.paintingmod.yellow_oak_plank_stairs.name=Yellow Oak Plank Stairs
+tile.paintingmod.light_blue_oak_plank_stairs.name=Light Blue Oak Plank Stairs
+tile.paintingmod.magenta_oak_plank_stairs.name=Magenta Oak Plank Stairs
+tile.paintingmod.orange_oak_plank_stairs.name=Orange Oak Plank Stairs
+tile.paintingmod.white_oak_plank_stairs.name=White Oak Plank Stairs
+ 
+##Spruce Plank Stairs
+tile.paintingmod.black_spruce_plank_stairs.name=Black Spruce Plank Stairs
+tile.paintingmod.red_spruce_plank_stairs.name=Red Spruce Plank Stairs
+tile.paintingmod.green_spruce_plank_stairs.name=Green Spruce Plank Stairs
+tile.paintingmod.brown_spruce_plank_stairs.name=Brown Spruce Plank Stairs
+tile.paintingmod.blue_spruce_plank_stairs.name=Blue Spruce Plank Stairs
+tile.paintingmod.purple_spruce_plank_stairs.name=Purple Spruce Plank Stairs
+tile.paintingmod.cyan_spruce_plank_stairs.name=Cyan Spruce Plank Stairs
+tile.paintingmod.light_gray_spruce_plank_stairs.name=Light Gray Spruce Plank Stairs
+tile.paintingmod.gray_spruce_plank_stairs.name=Gray Spruce Plank Stairs
+tile.paintingmod.pink_spruce_plank_stairs.name=Pink Spruce Plank Stairs
+tile.paintingmod.lime_spruce_plank_stairs.name=Lime Spruce Plank Stairs
+tile.paintingmod.yellow_spruce_plank_stairs.name=Yellow Spruce Plank Stairs
+tile.paintingmod.light_blue_spruce_plank_stairs.name=Light Blue Spruce Plank Stairs
+tile.paintingmod.magenta_spruce_plank_stairs.name=Magenta Spruce Plank Stairs
+tile.paintingmod.orange_spruce_plank_stairs.name=Orange Spruce Plank Stairs
+tile.paintingmod.white_spruce_plank_stairs.name=White Spruce Plank Stairs
+ 
+##Birch Plank Stairs
+tile.paintingmod.black_birch_plank_stairs.name=Black Birch Plank Stairs
+tile.paintingmod.red_birch_plank_stairs.name=Red Birch Plank Stairs
+tile.paintingmod.green_birch_plank_stairs.name=Green Birch Plank Stairs
+tile.paintingmod.brown_birch_plank_stairs.name=Brown Birch Plank Stairs
+tile.paintingmod.blue_birch_plank_stairs.name=Blue Birch Plank Stairs
+tile.paintingmod.purple_birch_plank_stairs.name=Purple Birch Plank Stairs
+tile.paintingmod.cyan_birch_plank_stairs.name=Cyan Birch Plank Stairs
+tile.paintingmod.light_gray_birch_plank_stairs.name=Light Gray Birch Plank Stairs
+tile.paintingmod.gray_birch_plank_stairs.name=Gray Birch Plank Stairs
+tile.paintingmod.pink_birch_plank_stairs.name=Pink Birch Plank Stairs
+tile.paintingmod.lime_birch_plank_stairs.name=Lime Birch Plank Stairs
+tile.paintingmod.yellow_birch_plank_stairs.name=Yellow Birch Plank Stairs
+tile.paintingmod.light_blue_birch_plank_stairs.name=Light Blue Birch Plank Stairs
+tile.paintingmod.magenta_birch_plank_stairs.name=Magenta Birch Plank Stairs
+tile.paintingmod.orange_birch_plank_stairs.name=Orange Birch Plank Stairs
+tile.paintingmod.white_birch_plank_stairs.name=White Birch Plank Stairs
+ 
+##Jungle Plank Stairs
+tile.paintingmod.black_jungle_plank_stairs.name=Black Jungle Plank Stairs
+tile.paintingmod.red_jungle_plank_stairs.name=Red Jungle Plank Stairs
+tile.paintingmod.green_jungle_plank_stairs.name=Green Jungle Plank Stairs
+tile.paintingmod.brown_jungle_plank_stairs.name=Brown Jungle Plank Stairs
+tile.paintingmod.blue_jungle_plank_stairs.name=Blue Jungle Plank Stairs
+tile.paintingmod.purple_jungle_plank_stairs.name=Purple Jungle Plank Stairs
+tile.paintingmod.cyan_jungle_plank_stairs.name=Cyan Jungle Plank Stairs
+tile.paintingmod.light_gray_jungle_plank_stairs.name=Light Gray Jungle Plank Stairs
+tile.paintingmod.gray_jungle_plank_stairs.name=Gray Jungle Plank Stairs
+tile.paintingmod.pink_jungle_plank_stairs.name=Pink Jungle Plank Stairs
+tile.paintingmod.lime_jungle_plank_stairs.name=Lime Jungle Plank Stairs
+tile.paintingmod.yellow_jungle_plank_stairs.name=Yellow Jungle Plank Stairs
+tile.paintingmod.light_blue_jungle_plank_stairs.name=Light Blue Jungle Plank Stairs
+tile.paintingmod.magenta_jungle_plank_stairs.name=Magenta Jungle Plank Stairs
+tile.paintingmod.orange_jungle_plank_stairs.name=Orange Jungle Plank Stairs
+tile.paintingmod.white_jungle_plank_stairs.name=White Jungle Plank Stairs
+ 
+##Acacia Plank Stairs
+tile.paintingmod.black_acacia_plank_stairs.name=Black Acacia Plank Stairs
+tile.paintingmod.red_acacia_plank_stairs.name=Red Acacia Plank Stairs
+tile.paintingmod.green_acacia_plank_stairs.name=Green Acacia Plank Stairs
+tile.paintingmod.brown_acacia_plank_stairs.name=Brown Acacia Plank Stairs
+tile.paintingmod.blue_acacia_plank_stairs.name=Blue Acacia Plank Stairs
+tile.paintingmod.purple_acacia_plank_stairs.name=Purple Acacia Plank Stairs
+tile.paintingmod.cyan_acacia_plank_stairs.name=Cyan Acacia Plank Stairs
+tile.paintingmod.light_gray_acacia_plank_stairs.name=Light Gray Acacia Plank Stairs
+tile.paintingmod.gray_acacia_plank_stairs.name=Gray Acacia Plank Stairs
+tile.paintingmod.pink_acacia_plank_stairs.name=Pink Acacia Plank Stairs
+tile.paintingmod.lime_acacia_plank_stairs.name=Lime Acacia Plank Stairs
+tile.paintingmod.yellow_acacia_plank_stairs.name=Yellow Acacia Plank Stairs
+tile.paintingmod.light_blue_acacia_plank_stairs.name=Light Blue Acacia Plank Stairs
+tile.paintingmod.magenta_acacia_plank_stairs.name=Magenta Acacia Plank Stairs
+tile.paintingmod.orange_acacia_plank_stairs.name=Orange Acacia Plank Stairs
+tile.paintingmod.white_acacia_plank_stairs.name=White Acacia Plank Stairs
+ 
+##Dark Oak Plank Stairs
+tile.paintingmod.black_dark_oak_plank_stairs.name=Black Dark Oak Plank Stairs
+tile.paintingmod.red_dark_oak_plank_stairs.name=Red Dark Oak Plank Stairs
+tile.paintingmod.green_dark_oak_plank_stairs.name=Green Dark Oak Plank Stairs
+tile.paintingmod.brown_dark_oak_plank_stairs.name=Brown Dark Oak Plank Stairs
+tile.paintingmod.blue_dark_oak_plank_stairs.name=Blue Dark Oak Plank Stairs
+tile.paintingmod.purple_dark_oak_plank_stairs.name=Purple Dark Oak Plank Stairs
+tile.paintingmod.cyan_dark_oak_plank_stairs.name=Cyan Dark Oak Plank Stairs
+tile.paintingmod.light_gray_dark_oak_plank_stairs.name=Light Gray Dark Oak Plank Stairs
+tile.paintingmod.gray_dark_oak_plank_stairs.name=Gray Dark Oak Plank Stairs
+tile.paintingmod.pink_dark_oak_plank_stairs.name=Pink Dark Oak Plank Stairs
+tile.paintingmod.lime_dark_oak_plank_stairs.name=Lime Dark Oak Plank Stairs
+tile.paintingmod.yellow_dark_oak_plank_stairs.name=Yellow Dark Oak Plank Stairs
+tile.paintingmod.light_blue_dark_oak_plank_stairs.name=Light Blue Dark Oak Plank Stairs
+tile.paintingmod.magenta_dark_oak_plank_stairs.name=Magenta Dark Oak Plank Stairs
+tile.paintingmod.orange_dark_oak_plank_stairs.name=Orange Dark Oak Plank Stairs
+tile.paintingmod.white_dark_oak_plank_stairs.name=White Dark Oak Plank Stairs
+ 
+##Cobblestone Stairs
+tile.paintingmod.black_cobblestone_stairs.name=Black Cobblestone Stairs
+tile.paintingmod.red_cobblestone_stairs.name=Red Cobblestone Stairs
+tile.paintingmod.green_cobblestone_stairs.name=Green Cobblestone Stairs
+tile.paintingmod.brown_cobblestone_stairs.name=Brown Cobblestone Stairs
+tile.paintingmod.blue_cobblestone_stairs.name=Blue Cobblestone Stairs
+tile.paintingmod.purple_cobblestone_stairs.name=Purple Cobblestone Stairs
+tile.paintingmod.cyan_cobblestone_stairs.name=Cyan Cobblestone Stairs
+tile.paintingmod.light_gray_cobblestone_stairs.name=Light Gray Cobblestone Stairs
+tile.paintingmod.gray_cobblestone_stairs.name=Gray Cobblestone Stairs
+tile.paintingmod.pink_cobblestone_stairs.name=Pink Cobblestone Stairs
+tile.paintingmod.lime_cobblestone_stairs.name=Lime Cobblestone Stairs
+tile.paintingmod.yellow_cobblestone_stairs.name=Yellow Cobblestone Stairs
+tile.paintingmod.light_blue_cobblestone_stairs.name=Light Blue Cobblestone Stairs
+tile.paintingmod.magenta_cobblestone_stairs.name=Magenta Cobblestone Stairs
+tile.paintingmod.orange_cobblestone_stairs.name=Orange Cobblestone Stairs
+tile.paintingmod.white_cobblestone_stairs.name=White Cobblestone Stairs
+ 
+##Brick Stairs
+tile.paintingmod.black_brick_stairs.name=Black Brick Stairs
+tile.paintingmod.red_brick_stairs.name=Red Brick Stairs
+tile.paintingmod.green_brick_stairs.name=Green Brick Stairs
+tile.paintingmod.brown_brick_stairs.name=Brown Brick Stairs
+tile.paintingmod.blue_brick_stairs.name=Blue Brick Stairs
+tile.paintingmod.purple_brick_stairs.name=Purple Brick Stairs
+tile.paintingmod.cyan_brick_stairs.name=Cyan Brick Stairs
+tile.paintingmod.light_gray_brick_stairs.name=Light Gray Brick Stairs
+tile.paintingmod.gray_brick_stairs.name=Gray Brick Stairs
+tile.paintingmod.pink_brick_stairs.name=Pink Brick Stairs
+tile.paintingmod.lime_brick_stairs.name=Lime Brick Stairs
+tile.paintingmod.yellow_brick_stairs.name=Yellow Brick Stairs
+tile.paintingmod.light_blue_brick_stairs.name=Light Blue Brick Stairs
+tile.paintingmod.magenta_brick_stairs.name=Magenta Brick Stairs
+tile.paintingmod.orange_brick_stairs.name=Orange Brick Stairs
+tile.paintingmod.white_brick_stairs.name=White Brick Stairs
+ 
+##Stone Brick Stairs
+tile.paintingmod.black_stone_brick_stairs.name=Black Stone Brick Stairs
+tile.paintingmod.red_stone_brick_stairs.name=Red Stone Brick Stairs
+tile.paintingmod.green_stone_brick_stairs.name=Green Stone Brick Stairs
+tile.paintingmod.brown_stone_brick_stairs.name=Brown Stone Brick Stairs
+tile.paintingmod.blue_stone_brick_stairs.name=Blue Stone Brick Stairs
+tile.paintingmod.purple_stone_brick_stairs.name=Purple Stone Brick Stairs
+tile.paintingmod.cyan_stone_brick_stairs.name=Cyan Stone Brick Stairs
+tile.paintingmod.light_gray_stone_brick_stairs.name=Light Gray Stone Brick Stairs
+tile.paintingmod.gray_stone_brick_stairs.name=Gray Stone Brick Stairs
+tile.paintingmod.pink_stone_brick_stairs.name=Pink Stone Brick Stairs
+tile.paintingmod.lime_stone_brick_stairs.name=Lime Stone Brick Stairs
+tile.paintingmod.yellow_stone_brick_stairs.name=Yellow Stone Brick Stairs
+tile.paintingmod.light_blue_stone_brick_stairs.name=Light Blue Stone Brick Stairs
+tile.paintingmod.magenta_stone_brick_stairs.name=Magenta Stone Brick Stairs
+tile.paintingmod.orange_stone_brick_stairs.name=Orange Stone Brick Stairs
+tile.paintingmod.white_stone_brick_stairs.name=White Stone Brick Stairs
+ 
+##Nether Brick Stairs
+tile.paintingmod.black_nether_brick_stairs.name=Black Nether Brick Stairs
+tile.paintingmod.red_nether_brick_stairs.name=Red Nether Brick Stairs
+tile.paintingmod.green_nether_brick_stairs.name=Green Nether Brick Stairs
+tile.paintingmod.brown_nether_brick_stairs.name=Brown Nether Brick Stairs
+tile.paintingmod.blue_nether_brick_stairs.name=Blue Nether Brick Stairs
+tile.paintingmod.purple_nether_brick_stairs.name=Purple Nether Brick Stairs
+tile.paintingmod.cyan_nether_brick_stairs.name=Cyan Nether Brick Stairs
+tile.paintingmod.light_gray_nether_brick_stairs.name=Light Gray Nether Brick Stairs
+tile.paintingmod.gray_nether_brick_stairs.name=Gray Nether Brick Stairs
+tile.paintingmod.pink_nether_brick_stairs.name=Pink Nether Brick Stairs
+tile.paintingmod.lime_nether_brick_stairs.name=Lime Nether Brick Stairs
+tile.paintingmod.yellow_nether_brick_stairs.name=Yellow Nether Brick Stairs
+tile.paintingmod.light_blue_nether_brick_stairs.name=Light Blue Nether Brick Stairs
+tile.paintingmod.magenta_nether_brick_stairs.name=Magenta Nether Brick Stairs
+tile.paintingmod.orange_nether_brick_stairs.name=Orange Nether Brick Stairs
+tile.paintingmod.white_nether_brick_stairs.name=White Nether Brick Stairs
+ 
+##Purpur Stairs
+tile.paintingmod.black_purpur_stairs.name=Black Purpur Stairs
+tile.paintingmod.red_purpur_stairs.name=Red Purpur Stairs
+tile.paintingmod.green_purpur_stairs.name=Green Purpur Stairs
+tile.paintingmod.brown_purpur_stairs.name=Brown Purpur Stairs
+tile.paintingmod.blue_purpur_stairs.name=Blue Purpur Stairs
+tile.paintingmod.purple_purpur_stairs.name=Purple Purpur Stairs
+tile.paintingmod.cyan_purpur_stairs.name=Cyan Purpur Stairs
+tile.paintingmod.light_gray_purpur_stairs.name=Light Gray Purpur Stairs
+tile.paintingmod.gray_purpur_stairs.name=Gray Purpur Stairs
+tile.paintingmod.pink_purpur_stairs.name=Pink Purpur Stairs
+tile.paintingmod.lime_purpur_stairs.name=Lime Purpur Stairs
+tile.paintingmod.yellow_purpur_stairs.name=Yellow Purpur Stairs
+tile.paintingmod.light_blue_purpur_stairs.name=Light Blue Purpur Stairs
+tile.paintingmod.magenta_purpur_stairs.name=Magenta Purpur Stairs
+tile.paintingmod.orange_purpur_stairs.name=Orange Purpur Stairs
+tile.paintingmod.white_purpur_stairs.name=White Purpur Stairs
+
+##Oak Plank Fences
+tile.paintingmod.black_oak_plank_fence.name=Black Oak Plank Fences
+tile.paintingmod.red_oak_plank_fence.name=Red Oak Plank Fences
+tile.paintingmod.green_oak_plank_fence.name=Green Oak Plank Fences
+tile.paintingmod.brown_oak_plank_fence.name=Brown Oak Plank Fences
+tile.paintingmod.blue_oak_plank_fence.name=Blue Oak Plank Fences
+tile.paintingmod.purple_oak_plank_fence.name=Purple Oak Plank Fences
+tile.paintingmod.cyan_oak_plank_fence.name=Cyan Oak Plank Fences
+tile.paintingmod.light_gray_oak_plank_fence.name=Light Gray Oak Plank Fences
+tile.paintingmod.gray_oak_plank_fence.name=Gray Oak Plank Fences
+tile.paintingmod.pink_oak_plank_fence.name=Pink Oak Plank Fences
+tile.paintingmod.lime_oak_plank_fence.name=Lime Oak Plank Fences
+tile.paintingmod.yellow_oak_plank_fence.name=Yellow Oak Plank Fences
+tile.paintingmod.light_blue_oak_plank_fence.name=Light Blue Oak Plank Fences
+tile.paintingmod.magenta_oak_plank_fence.name=Magenta Oak Plank Fences
+tile.paintingmod.orange_oak_plank_fence.name=Orange Oak Plank Fences
+tile.paintingmod.white_oak_plank_fence.name=White Oak Plank Fences
+ 
+##Spruce Plank Fences
+tile.paintingmod.black_spruce_plank_fence.name=Black Spruce Plank Fences
+tile.paintingmod.red_spruce_plank_fence.name=Red Spruce Plank Fences
+tile.paintingmod.green_spruce_plank_fence.name=Green Spruce Plank Fences
+tile.paintingmod.brown_spruce_plank_fence.name=Brown Spruce Plank Fences
+tile.paintingmod.blue_spruce_plank_fence.name=Blue Spruce Plank Fences
+tile.paintingmod.purple_spruce_plank_fence.name=Purple Spruce Plank Fences
+tile.paintingmod.cyan_spruce_plank_fence.name=Cyan Spruce Plank Fences
+tile.paintingmod.light_gray_spruce_plank_fence.name=Light Gray Spruce Plank Fences
+tile.paintingmod.gray_spruce_plank_fence.name=Gray Spruce Plank Fences
+tile.paintingmod.pink_spruce_plank_fence.name=Pink Spruce Plank Fences
+tile.paintingmod.lime_spruce_plank_fence.name=Lime Spruce Plank Fences
+tile.paintingmod.yellow_spruce_plank_fence.name=Yellow Spruce Plank Fences
+tile.paintingmod.light_blue_spruce_plank_fence.name=Light Blue Spruce Plank Fences
+tile.paintingmod.magenta_spruce_plank_fence.name=Magenta Spruce Plank Fences
+tile.paintingmod.orange_spruce_plank_fence.name=Orange Spruce Plank Fences
+tile.paintingmod.white_spruce_plank_fence.name=White Spruce Plank Fences
+ 
+##Birch Plank Fences
+tile.paintingmod.black_birch_plank_fence.name=Black Birch Plank Fences
+tile.paintingmod.red_birch_plank_fence.name=Red Birch Plank Fences
+tile.paintingmod.green_birch_plank_fence.name=Green Birch Plank Fences
+tile.paintingmod.brown_birch_plank_fence.name=Brown Birch Plank Fences
+tile.paintingmod.blue_birch_plank_fence.name=Blue Birch Plank Fences
+tile.paintingmod.purple_birch_plank_fence.name=Purple Birch Plank Fences
+tile.paintingmod.cyan_birch_plank_fence.name=Cyan Birch Plank Fences
+tile.paintingmod.light_gray_birch_plank_fence.name=Light Gray Birch Plank Fences
+tile.paintingmod.gray_birch_plank_fence.name=Gray Birch Plank Fences
+tile.paintingmod.pink_birch_plank_fence.name=Pink Birch Plank Fences
+tile.paintingmod.lime_birch_plank_fence.name=Lime Birch Plank Fences
+tile.paintingmod.yellow_birch_plank_fence.name=Yellow Birch Plank Fences
+tile.paintingmod.light_blue_birch_plank_fence.name=Light Blue Birch Plank Fences
+tile.paintingmod.magenta_birch_plank_fence.name=Magenta Birch Plank Fences
+tile.paintingmod.orange_birch_plank_fence.name=Orange Birch Plank Fences
+tile.paintingmod.white_birch_plank_fence.name=White Birch Plank Fences
+ 
+##Jungle Plank Fences
+tile.paintingmod.black_jungle_plank_fence.name=Black Jungle Plank Fences
+tile.paintingmod.red_jungle_plank_fence.name=Red Jungle Plank Fences
+tile.paintingmod.green_jungle_plank_fence.name=Green Jungle Plank Fences
+tile.paintingmod.brown_jungle_plank_fence.name=Brown Jungle Plank Fences
+tile.paintingmod.blue_jungle_plank_fence.name=Blue Jungle Plank Fences
+tile.paintingmod.purple_jungle_plank_fence.name=Purple Jungle Plank Fences
+tile.paintingmod.cyan_jungle_plank_fence.name=Cyan Jungle Plank Fences
+tile.paintingmod.light_gray_jungle_plank_fence.name=Light Gray Jungle Plank Fences
+tile.paintingmod.gray_jungle_plank_fence.name=Gray Jungle Plank Fences
+tile.paintingmod.pink_jungle_plank_fence.name=Pink Jungle Plank Fences
+tile.paintingmod.lime_jungle_plank_fence.name=Lime Jungle Plank Fences
+tile.paintingmod.yellow_jungle_plank_fence.name=Yellow Jungle Plank Fences
+tile.paintingmod.light_blue_jungle_plank_fence.name=Light Blue Jungle Plank Fences
+tile.paintingmod.magenta_jungle_plank_fence.name=Magenta Jungle Plank Fences
+tile.paintingmod.orange_jungle_plank_fence.name=Orange Jungle Plank Fences
+tile.paintingmod.white_jungle_plank_fence.name=White Jungle Plank Fences
+ 
+##Acacia Plank Fences
+tile.paintingmod.black_acacia_plank_fence.name=Black Acacia Plank Fences
+tile.paintingmod.red_acacia_plank_fence.name=Red Acacia Plank Fences
+tile.paintingmod.green_acacia_plank_fence.name=Green Acacia Plank Fences
+tile.paintingmod.brown_acacia_plank_fence.name=Brown Acacia Plank Fences
+tile.paintingmod.blue_acacia_plank_fence.name=Blue Acacia Plank Fences
+tile.paintingmod.purple_acacia_plank_fence.name=Purple Acacia Plank Fences
+tile.paintingmod.cyan_acacia_plank_fence.name=Cyan Acacia Plank Fences
+tile.paintingmod.light_gray_acacia_plank_fence.name=Light Gray Acacia Plank Fences
+tile.paintingmod.gray_acacia_plank_fence.name=Gray Acacia Plank Fences
+tile.paintingmod.pink_acacia_plank_fence.name=Pink Acacia Plank Fences
+tile.paintingmod.lime_acacia_plank_fence.name=Lime Acacia Plank Fences
+tile.paintingmod.yellow_acacia_plank_fence.name=Yellow Acacia Plank Fences
+tile.paintingmod.light_blue_acacia_plank_fence.name=Light Blue Acacia Plank Fences
+tile.paintingmod.magenta_acacia_plank_fence.name=Magenta Acacia Plank Fences
+tile.paintingmod.orange_acacia_plank_fence.name=Orange Acacia Plank Fences
+tile.paintingmod.white_acacia_plank_fence.name=White Acacia Plank Fences
+ 
+##Dark Oak Plank Fences
+tile.paintingmod.black_dark_oak_plank_fence.name=Black Dark Oak Plank Fences
+tile.paintingmod.red_dark_oak_plank_fence.name=Red Dark Oak Plank Fences
+tile.paintingmod.green_dark_oak_plank_fence.name=Green Dark Oak Plank Fences
+tile.paintingmod.brown_dark_oak_plank_fence.name=Brown Dark Oak Plank Fences
+tile.paintingmod.blue_dark_oak_plank_fence.name=Blue Dark Oak Plank Fences
+tile.paintingmod.purple_dark_oak_plank_fence.name=Purple Dark Oak Plank Fences
+tile.paintingmod.cyan_dark_oak_plank_fence.name=Cyan Dark Oak Plank Fences
+tile.paintingmod.light_gray_dark_oak_plank_fence.name=Light Gray Dark Oak Plank Fences
+tile.paintingmod.gray_dark_oak_plank_fence.name=Gray Dark Oak Plank Fences
+tile.paintingmod.pink_dark_oak_plank_fence.name=Pink Dark Oak Plank Fences
+tile.paintingmod.lime_dark_oak_plank_fence.name=Lime Dark Oak Plank Fences
+tile.paintingmod.yellow_dark_oak_plank_fence.name=Yellow Dark Oak Plank Fences
+tile.paintingmod.light_blue_dark_oak_plank_fence.name=Light Blue Dark Oak Plank Fences
+tile.paintingmod.magenta_dark_oak_plank_fence.name=Magenta Dark Oak Plank Fences
+tile.paintingmod.orange_dark_oak_plank_fence.name=Orange Dark Oak Plank Fences
+tile.paintingmod.white_dark_oak_plank_fence.name=White Dark Oak Plank Fences
+ 
+##Nether Brick Fences
+tile.paintingmod.black_nether_brick_fence.name=Black Nether Brick Fences
+tile.paintingmod.red_nether_brick_fence.name=Red Nether Brick Fences
+tile.paintingmod.green_nether_brick_fence.name=Green Nether Brick Fences
+tile.paintingmod.brown_nether_brick_fence.name=Brown Nether Brick Fences
+tile.paintingmod.blue_nether_brick_fence.name=Blue Nether Brick Fences
+tile.paintingmod.purple_nether_brick_fence.name=Purple Nether Brick Fences
+tile.paintingmod.cyan_nether_brick_fence.name=Cyan Nether Brick Fences
+tile.paintingmod.light_gray_nether_brick_fence.name=Light Gray Nether Brick Fences
+tile.paintingmod.gray_nether_brick_fence.name=Gray Nether Brick Fences
+tile.paintingmod.pink_nether_brick_fence.name=Pink Nether Brick Fences
+tile.paintingmod.lime_nether_brick_fence.name=Lime Nether Brick Fences
+tile.paintingmod.yellow_nether_brick_fence.name=Yellow Nether Brick Fences
+tile.paintingmod.light_blue_nether_brick_fence.name=Light Blue Nether Brick Fences
+tile.paintingmod.magenta_nether_brick_fence.name=Magenta Nether Brick Fences
+tile.paintingmod.orange_nether_brick_fence.name=Orange Nether Brick Fences
+tile.paintingmod.white_nether_brick_fence.name=White Nether Brick Fences
+
+##Cobblestone Walls
+tile.paintingmod.black_cobblestone_wall.name=Black Cobblestone Wall
+tile.paintingmod.red_cobblestone_wall.name=Red Cobblestone Wall
+tile.paintingmod.green_cobblestone_wall.name=Green Cobblestone Wall
+tile.paintingmod.brown_cobblestone_wall.name=Brown Cobblestone Wall
+tile.paintingmod.blue_cobblestone_wall.name=Blue Cobblestone Wall
+tile.paintingmod.purple_cobblestone_wall.name=Purple Cobblestone Wall
+tile.paintingmod.cyan_cobblestone_wall.name=Cyan Cobblestone Wall
+tile.paintingmod.light_gray_cobblestone_wall.name=Light Gray Cobblestone Wall
+tile.paintingmod.gray_cobblestone_wall.name=Gray Cobblestone Wall
+tile.paintingmod.pink_cobblestone_wall.name=Pink Cobblestone Wall
+tile.paintingmod.lime_cobblestone_wall.name=Lime Cobblestone Wall
+tile.paintingmod.yellow_cobblestone_wall.name=Yellow Cobblestone Wall
+tile.paintingmod.light_blue_cobblestone_wall.name=Light Blue Cobblestone Wall
+tile.paintingmod.magenta_cobblestone_wall.name=Magenta Cobblestone Wall
+tile.paintingmod.orange_cobblestone_wall.name=Orange Cobblestone Wall
+tile.paintingmod.white_cobblestone_wall.name=White Cobblestone Wall
+ 
+##Mossy Cobblestone Walls
+tile.paintingmod.black_mossy_cobblestone_wall.name=Black Mossy Cobblestone Wall
+tile.paintingmod.red_mossy_cobblestone_wall.name=Red Mossy Cobblestone Wall
+tile.paintingmod.green_mossy_cobblestone_wall.name=Green Mossy Cobblestone Wall
+tile.paintingmod.brown_mossy_cobblestone_wall.name=Brown Mossy Cobblestone Wall
+tile.paintingmod.blue_mossy_cobblestone_wall.name=Blue Mossy Cobblestone Wall
+tile.paintingmod.purple_mossy_cobblestone_wall.name=Purple Mossy Cobblestone Wall
+tile.paintingmod.cyan_mossy_cobblestone_wall.name=Cyan Mossy Cobblestone Wall
+tile.paintingmod.light_gray_mossy_cobblestone_wall.name=Light Gray Mossy Cobblestone Wall
+tile.paintingmod.gray_mossy_cobblestone_wall.name=Gray Mossy Cobblestone Wall
+tile.paintingmod.pink_mossy_cobblestone_wall.name=Pink Mossy Cobblestone Wall
+tile.paintingmod.lime_mossy_cobblestone_wall.name=Lime Mossy Cobblestone Wall
+tile.paintingmod.yellow_mossy_cobblestone_wall.name=Yellow Mossy Cobblestone Wall
+tile.paintingmod.light_blue_mossy_cobblestone_wall.name=Light Blue Mossy Cobblestone Wall
+tile.paintingmod.magenta_mossy_cobblestone_wall.name=Magenta Mossy Cobblestone Wall
+tile.paintingmod.orange_mossy_cobblestone_wall.name=Orange Mossy Cobblestone Wall
+tile.paintingmod.white_mossy_cobblestone_wall.name=White Mossy Cobblestone Wall
+
+##Oak Plank Fence Gates
+tile.paintingmod.black_oak_plank_fence_gate.name=Black Oak Plank Fence Gate
+tile.paintingmod.red_oak_plank_fence_gate.name=Red Oak Plank Fence Gate
+tile.paintingmod.green_oak_plank_fence_gate.name=Green Oak Plank Fence Gate
+tile.paintingmod.brown_oak_plank_fence_gate.name=Brown Oak Plank Fence Gate
+tile.paintingmod.blue_oak_plank_fence_gate.name=Blue Oak Plank Fence Gate
+tile.paintingmod.purple_oak_plank_fence_gate.name=Purple Oak Plank Fence Gate
+tile.paintingmod.cyan_oak_plank_fence_gate.name=Cyan Oak Plank Fence Gate
+tile.paintingmod.light_gray_oak_plank_fence_gate.name=Light Gray Oak Plank Fence Gate
+tile.paintingmod.gray_oak_plank_fence_gate.name=Gray Oak Plank Fence Gate
+tile.paintingmod.pink_oak_plank_fence_gate.name=Pink Oak Plank Fence Gate
+tile.paintingmod.lime_oak_plank_fence_gate.name=Lime Oak Plank Fence Gate
+tile.paintingmod.yellow_oak_plank_fence_gate.name=Yellow Oak Plank Fence Gate
+tile.paintingmod.light_blue_oak_plank_fence_gate.name=Light Blue Oak Plank Fence Gate
+tile.paintingmod.magenta_oak_plank_fence_gate.name=Magenta Oak Plank Fence Gate
+tile.paintingmod.orange_oak_plank_fence_gate.name=Orange Oak Plank Fence Gate
+tile.paintingmod.white_oak_plank_fence_gate.name=White Oak Plank Fence Gate
+ 
+##Spruce Plank Fence Gates
+tile.paintingmod.black_spruce_plank_fence_gate.name=Black Spruce Plank Fence Gate
+tile.paintingmod.red_spruce_plank_fence_gate.name=Red Spruce Plank Fence Gate
+tile.paintingmod.green_spruce_plank_fence_gate.name=Green Spruce Plank Fence Gate
+tile.paintingmod.brown_spruce_plank_fence_gate.name=Brown Spruce Plank Fence Gate
+tile.paintingmod.blue_spruce_plank_fence_gate.name=Blue Spruce Plank Fence Gate
+tile.paintingmod.purple_spruce_plank_fence_gate.name=Purple Spruce Plank Fence Gate
+tile.paintingmod.cyan_spruce_plank_fence_gate.name=Cyan Spruce Plank Fence Gate
+tile.paintingmod.light_gray_spruce_plank_fence_gate.name=Light Gray Spruce Plank Fence Gate
+tile.paintingmod.gray_spruce_plank_fence_gate.name=Gray Spruce Plank Fence Gate
+tile.paintingmod.pink_spruce_plank_fence_gate.name=Pink Spruce Plank Fence Gate
+tile.paintingmod.lime_spruce_plank_fence_gate.name=Lime Spruce Plank Fence Gate
+tile.paintingmod.yellow_spruce_plank_fence_gate.name=Yellow Spruce Plank Fence Gate
+tile.paintingmod.light_blue_spruce_plank_fence_gate.name=Light Blue Spruce Plank Fence Gate
+tile.paintingmod.magenta_spruce_plank_fence_gate.name=Magenta Spruce Plank Fence Gate
+tile.paintingmod.orange_spruce_plank_fence_gate.name=Orange Spruce Plank Fence Gate
+tile.paintingmod.white_spruce_plank_fence_gate.name=White Spruce Plank Fence Gate
+ 
+##Birch Plank Fence Gates
+tile.paintingmod.black_birch_plank_fence_gate.name=Black Birch Plank Fence Gate
+tile.paintingmod.red_birch_plank_fence_gate.name=Red Birch Plank Fence Gate
+tile.paintingmod.green_birch_plank_fence_gate.name=Green Birch Plank Fence Gate
+tile.paintingmod.brown_birch_plank_fence_gate.name=Brown Birch Plank Fence Gate
+tile.paintingmod.blue_birch_plank_fence_gate.name=Blue Birch Plank Fence Gate
+tile.paintingmod.purple_birch_plank_fence_gate.name=Purple Birch Plank Fence Gate
+tile.paintingmod.cyan_birch_plank_fence_gate.name=Cyan Birch Plank Fence Gate
+tile.paintingmod.light_gray_birch_plank_fence_gate.name=Light Gray Birch Plank Fence Gate
+tile.paintingmod.gray_birch_plank_fence_gate.name=Gray Birch Plank Fence Gate
+tile.paintingmod.pink_birch_plank_fence_gate.name=Pink Birch Plank Fence Gate
+tile.paintingmod.lime_birch_plank_fence_gate.name=Lime Birch Plank Fence Gate
+tile.paintingmod.yellow_birch_plank_fence_gate.name=Yellow Birch Plank Fence Gate
+tile.paintingmod.light_blue_birch_plank_fence_gate.name=Light Blue Birch Plank Fence Gate
+tile.paintingmod.magenta_birch_plank_fence_gate.name=Magenta Birch Plank Fence Gate
+tile.paintingmod.orange_birch_plank_fence_gate.name=Orange Birch Plank Fence Gate
+tile.paintingmod.white_birch_plank_fence_gate.name=White Birch Plank Fence Gate
+ 
+##Jungle Plank Fence Gates
+tile.paintingmod.black_jungle_plank_fence_gate.name=Black Jungle Plank Fence Gate
+tile.paintingmod.red_jungle_plank_fence_gate.name=Red Jungle Plank Fence Gate
+tile.paintingmod.green_jungle_plank_fence_gate.name=Green Jungle Plank Fence Gate
+tile.paintingmod.brown_jungle_plank_fence_gate.name=Brown Jungle Plank Fence Gate
+tile.paintingmod.blue_jungle_plank_fence_gate.name=Blue Jungle Plank Fence Gate
+tile.paintingmod.purple_jungle_plank_fence_gate.name=Purple Jungle Plank Fence Gate
+tile.paintingmod.cyan_jungle_plank_fence_gate.name=Cyan Jungle Plank Fence Gate
+tile.paintingmod.light_gray_jungle_plank_fence_gate.name=Light Gray Jungle Plank Fence Gate
+tile.paintingmod.gray_jungle_plank_fence_gate.name=Gray Jungle Plank Fence Gate
+tile.paintingmod.pink_jungle_plank_fence_gate.name=Pink Jungle Plank Fence Gate
+tile.paintingmod.lime_jungle_plank_fence_gate.name=Lime Jungle Plank Fence Gate
+tile.paintingmod.yellow_jungle_plank_fence_gate.name=Yellow Jungle Plank Fence Gate
+tile.paintingmod.light_blue_jungle_plank_fence_gate.name=Light Blue Jungle Plank Fence Gate
+tile.paintingmod.magenta_jungle_plank_fence_gate.name=Magenta Jungle Plank Fence Gate
+tile.paintingmod.orange_jungle_plank_fence_gate.name=Orange Jungle Plank Fence Gate
+tile.paintingmod.white_jungle_plank_fence_gate.name=White Jungle Plank Fence Gate
+ 
+##Acacia Plank Fence Gates
+tile.paintingmod.black_acacia_plank_fence_gate.name=Black Acacia Plank Fence Gate
+tile.paintingmod.red_acacia_plank_fence_gate.name=Red Acacia Plank Fence Gate
+tile.paintingmod.green_acacia_plank_fence_gate.name=Green Acacia Plank Fence Gate
+tile.paintingmod.brown_acacia_plank_fence_gate.name=Brown Acacia Plank Fence Gate
+tile.paintingmod.blue_acacia_plank_fence_gate.name=Blue Acacia Plank Fence Gate
+tile.paintingmod.purple_acacia_plank_fence_gate.name=Purple Acacia Plank Fence Gate
+tile.paintingmod.cyan_acacia_plank_fence_gate.name=Cyan Acacia Plank Fence Gate
+tile.paintingmod.light_gray_acacia_plank_fence_gate.name=Light Gray Acacia Plank Fence Gate
+tile.paintingmod.gray_acacia_plank_fence_gate.name=Gray Acacia Plank Fence Gate
+tile.paintingmod.pink_acacia_plank_fence_gate.name=Pink Acacia Plank Fence Gate
+tile.paintingmod.lime_acacia_plank_fence_gate.name=Lime Acacia Plank Fence Gate
+tile.paintingmod.yellow_acacia_plank_fence_gate.name=Yellow Acacia Plank Fence Gate
+tile.paintingmod.light_blue_acacia_plank_fence_gate.name=Light Blue Acacia Plank Fence Gate
+tile.paintingmod.magenta_acacia_plank_fence_gate.name=Magenta Acacia Plank Fence Gate
+tile.paintingmod.orange_acacia_plank_fence_gate.name=Orange Acacia Plank Fence Gate
+tile.paintingmod.white_acacia_plank_fence_gate.name=White Acacia Plank Fence Gate
+ 
+##Dark Oak Plank Fence Gates
+tile.paintingmod.black_dark_oak_plank_fence_gate.name=Black Dark Oak Plank Fence Gate
+tile.paintingmod.red_dark_oak_plank_fence_gate.name=Red Dark Oak Plank Fence Gate
+tile.paintingmod.green_dark_oak_plank_fence_gate.name=Green Dark Oak Plank Fence Gate
+tile.paintingmod.brown_dark_oak_plank_fence_gate.name=Brown Dark Oak Plank Fence Gate
+tile.paintingmod.blue_dark_oak_plank_fence_gate.name=Blue Dark Oak Plank Fence Gate
+tile.paintingmod.purple_dark_oak_plank_fence_gate.name=Purple Dark Oak Plank Fence Gate
+tile.paintingmod.cyan_dark_oak_plank_fence_gate.name=Cyan Dark Oak Plank Fence Gate
+tile.paintingmod.light_gray_dark_oak_plank_fence_gate.name=Light Gray Dark Oak Plank Fence Gate
+tile.paintingmod.gray_dark_oak_plank_fence_gate.name=Gray Dark Oak Plank Fence Gate
+tile.paintingmod.pink_dark_oak_plank_fence_gate.name=Pink Dark Oak Plank Fence Gate
+tile.paintingmod.lime_dark_oak_plank_fence_gate.name=Lime Dark Oak Plank Fence Gate
+tile.paintingmod.yellow_dark_oak_plank_fence_gate.name=Yellow Dark Oak Plank Fence Gate
+tile.paintingmod.light_blue_dark_oak_plank_fence_gate.name=Light Blue Dark Oak Plank Fence Gate
+tile.paintingmod.magenta_dark_oak_plank_fence_gate.name=Magenta Dark Oak Plank Fence Gate
+tile.paintingmod.orange_dark_oak_plank_fence_gate.name=Orange Dark Oak Plank Fence Gate
+tile.paintingmod.white_dark_oak_plank_fence_gate.name=White Dark Oak Plank Fence Gate

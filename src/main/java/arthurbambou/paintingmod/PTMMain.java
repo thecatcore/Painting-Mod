@@ -1,13 +1,13 @@
 package arthurbambou.paintingmod;
 
-import arthurbambou.paintingmod.api.AddPaintbrush;
+import arthurbambou.paintingmod.api.*;
 import arthurbambou.paintingmod.init.PTMItems;
+import arthurbambou.paintingmod.util.PTMIHasModel;
 import arthurbambou.paintingmod.util.handlers.PTMRegistryHandler;
 import net.minecraft.item.ItemStack;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import arthurbambou.paintingmod.api.ColoredBlock;
 import arthurbambou.paintingmod.init.PTMBlocks;
 import arthurbambou.paintingmod.proxy.PTMCommonProxy;
 import arthurbambou.paintingmod.util.PTMReference;
@@ -61,6 +61,27 @@ public class PTMMain {
         }
     };
 
+    public static final CreativeTabs PAINTING_MOD_STAIRS = new CreativeTabs(PTMReference.MOD_ID + "." + "paintingmod_tab_stairs") {
+		@Override
+		public ItemStack createIcon() {
+			return new ItemStack(PTMBlocks.OAK_PLANK_STAIRS.blue);
+		}
+	};
+
+    public static final CreativeTabs PAINTING_MOD_FENCES = new CreativeTabs(PTMReference.MOD_ID + "." + "paintingmod_tab_fences") {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(PTMBlocks.OAK_PLANK_FENCE.blue);
+        }
+    };
+
+    public static final CreativeTabs PAINTING_MOD_WALLS = new CreativeTabs(PTMReference.MOD_ID + "." + "paintingmod_tab_walls") {
+		@Override
+		public ItemStack createIcon() {
+			return new ItemStack(PTMBlocks.COBBLESTONE_WALL.blue);
+		}
+	};
+
 	
 	public static final Logger logger = LogManager.getLogger(PTMReference.MOD_ID);
 	
@@ -109,8 +130,32 @@ public class PTMMain {
             for (ColoredBlock coloredBlock : PTMBlocks.COLORED_BLOCKS) {
                 AddPaintbrush.registerSimpleBlock(coloredBlock);
             }
+            for (ColoredStairs coloredStairs : PTMBlocks.COLORED_STAIRS_META_LIST) {
+            	AddPaintbrush.registerColoredStairsMeta(coloredStairs);
+			}
+			for (ColoredFence coloredFence : PTMBlocks.COLORED_FENCE_LIST) {
+				AddPaintbrush.registerColoredFence(coloredFence);
+			}
+			for (ColoredWall coloredWall : PTMBlocks.COLORED_WALL_LIST) {
+				AddPaintbrush.registerColoredWall(coloredWall);
+			}
+			for (ColoredFenceGate coloredFenceGate : PTMBlocks.COLORED_FENCE_GATE_LIST) {
+				AddPaintbrush.registerColoredFenceGate(coloredFenceGate);
+			}
         } else {
             PTMRegistryHandler.APIinit();
+			for (ColoredStairs coloredStairs : PTMBlocks.COLORED_STAIRS_META_LIST) {
+				AddPaintbrush.registerColoredStairsMeta(coloredStairs);
+			}
+			for (ColoredFence coloredFence : PTMBlocks.COLORED_FENCE_LIST) {
+				AddPaintbrush.registerColoredFence(coloredFence);
+			}
+			for (ColoredWall coloredWall : PTMBlocks.COLORED_WALL_LIST) {
+				AddPaintbrush.registerColoredWall(coloredWall);
+			}
+			for (ColoredFenceGate coloredFenceGate : PTMBlocks.COLORED_FENCE_GATE_LIST) {
+				AddPaintbrush.registerColoredFenceGate(coloredFenceGate);
+			}
         }
 	}
 }

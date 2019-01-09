@@ -1,7 +1,6 @@
 package arthurbambou.paintingmod.blocks;
 
 import arthurbambou.paintingmod.PTMMain;
-import arthurbambou.paintingmod.api.ColoredBlockMeta;
 import arthurbambou.paintingmod.api.ColoredFallingBlockMeta;
 import arthurbambou.paintingmod.api.EnumPaintColor;
 import arthurbambou.paintingmod.init.PTMBlocks;
@@ -10,21 +9,19 @@ import arthurbambou.paintingmod.util.PTMIHasModel;
 import arthurbambou.paintingmod.util.PTMIMetaName;
 import arthurbambou.paintingmod.util.PTMItemBlockVariant;
 import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 public class PTMColoredFallingBlockMeta extends ColoredFallingBlockMeta implements PTMIHasModel, PTMIMetaName {
 
-    public PTMColoredFallingBlockMeta(String name, Material materialIn, SoundType sound, float hardness, float resistance, String harvestTool, int harvestLevel, Block replace) {
-        super(materialIn, replace);
+    public PTMColoredFallingBlockMeta(String name, float hardness, float resistance, Block replace) {
+        super(replace.getMaterial(replace.getDefaultState()), replace);
         setRegistryName(name);
         setTranslationKey(name);
-        setSoundType(sound);
+        setSoundType(replace.getSoundType());
         setHardness(hardness);
         setResistance(resistance);
-        setHarvestLevel(harvestTool,harvestLevel);
+        setHarvestLevel(replace.getHarvestTool(replace.getDefaultState()),replace.getHarvestLevel(replace.getDefaultState()));
         setCreativeTab(PTMMain.PAINTING_MOD_BLOCKS);
 //        for (EnumPaintColor color : EnumPaintColor.values()) {
 //            this.setTranslationKey(color.getTranslationKey() + "_" + name);
@@ -34,14 +31,14 @@ public class PTMColoredFallingBlockMeta extends ColoredFallingBlockMeta implemen
         PTMItems.ITEMS_META.add(new PTMItemBlockVariant(this).setRegistryName(this.getRegistryName()));
     }
 
-    public PTMColoredFallingBlockMeta(String name, Material materialIn, SoundType sound, float hardness, float resistance, String harvestTool, int harvestLevel, Block replace, int replacemeta) {
-        super(materialIn, replace, replacemeta);
+    public PTMColoredFallingBlockMeta(String name, float hardness, float resistance, Block replace, int replacemeta) {
+        super(replace.getMaterial(replace.getDefaultState()), replace, replacemeta);
         setRegistryName(name);
         setTranslationKey(name);
-        setSoundType(sound);
+        setSoundType(replace.getSoundType());
         setHardness(hardness);
         setResistance(resistance);
-        setHarvestLevel(harvestTool,harvestLevel);
+        setHarvestLevel(replace.getHarvestTool(replace.getDefaultState()),replace.getHarvestLevel(replace.getDefaultState()));
         setCreativeTab(PTMMain.PAINTING_MOD_BLOCKS);
 //        for (EnumPaintColor color : EnumPaintColor.values()) {
 //            this.setTranslationKey(color.getTranslationKey() + "_" + name);
