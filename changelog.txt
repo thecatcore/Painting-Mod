@@ -1,4 +1,13 @@
-Version 0.2.0 Fabric 15w50a
+Version 0.1.0.0 Fabric 19w02a
+
+Port to the latest snapshot (19w02a) and change versioning.
+New Versioning definition :
+-First number : will be upgrade when snapshot of a new minecraft version will release (exemple: when first snapshot of 1.15 will be release)
+-Second number : will be upgrade when a new snapshot is released.
+-Third number : When I add new functionnality for the mod
+-Fourth number : fixes
+
+Version 0.2.0 Fabric 18w50a
 
 The most of Vanilla Stairs are now paintable, they are in a new Creative Tab called "PaintingMod Stairs"
 There is a secret new feature...
