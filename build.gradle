@@ -7,7 +7,7 @@ plugins {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-def baseversion = "0.2.0"
+def baseversion = "1.0.0"
 def buildbranch = System.getenv('TRAVIS_BRANCH')
 def buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
 def gittoken = System.getenv('GH_TOKEN')
@@ -30,7 +30,7 @@ if (buildbranch == "dev/fabric") {
 	version = baseversion
     gitversion = version + "." + buildnumber
 	prelease = false
-	changelogbody = file("CHANGELOG.txt")
+	changelogbody = file("changelog.txt")
 }
 
 archivesBaseName = "PaintingMod-${minecraft_version}"
