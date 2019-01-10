@@ -7,7 +7,7 @@ New Versioning definition :
 -Third number : When I add new functionnality for the mod
 -Fourth number : fixes
 
-Version 0.2.0 Fabric 18w50a
+Version 0.0.2.0 Fabric 18w50a
 
 The most of Vanilla Stairs are now paintable, they are in a new Creative Tab called "PaintingMod Stairs"
 There is a secret new feature...
