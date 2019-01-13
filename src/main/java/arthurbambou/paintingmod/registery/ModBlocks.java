@@ -138,7 +138,7 @@ public class ModBlocks {
 
     public static ColoredSlab OAK_PLANK_SLAB;
     public static ColoredSlab SPRUCE_PLANK_SLAB;
-    public static ColoredSlab BRIRCH_PLANK_SLAB;
+    public static ColoredSlab BIRCH_PLANK_SLAB;
     public static ColoredSlab JUNGLE_PLANK_SLAB;
     public static ColoredSlab ACACIA_PLANK_SLAB;
     public static ColoredSlab DARK_OAK_PLANK_SLAB;
@@ -264,7 +264,7 @@ public class ModBlocks {
         BRICK_STAIRS = new ColoredStairs("brick_stairs", Blocks.BRICK_STAIRS);
         STONE_BRICK_STAIRS = new ColoredStairs("stone_brick_stairs", Blocks.STONE_BRICK_STAIRS);
         NETHER_BRICK_STAIRS = new ColoredStairs("nether_brick_stairs", Blocks.NETHER_BRICK_STAIRS);
-        // SANDSTONE_STAIRS = new ColoredStairs("sandstone_stairs", Blocks.SANDSTONE_STAIRS);
+//        SANDSTONE_STAIRS = new ColoredStairs("sandstone_stairs", Blocks.SANDSTONE_STAIRS);
 //        SPRUCE_PLANKS_STAIRS = new ColoredStairs("spruce_planks_stairs", Blocks.SPRUCE_STAIRS);
 //        BIRCH_PLANKS_STAIRS = new ColoredStairs("birch_planks_stairs", Blocks.BIRCH_STAIRS);
 //        JUNGLE_PLANKS_STAIRS = new ColoredStairs("jungle_planks_stairs", Blocks.JUNGLE_STAIRS);
@@ -290,23 +290,37 @@ public class ModBlocks {
         POLISHED_ANDESITE_STAIRS = new ColoredStairs("polished_andesite_stairs", Blocks.POLISHED_ANDESITE_STAIRS);
         DIORITE_STAIRS = new ColoredStairs("diorite_stairs", Blocks.DIORITE_STAIRS);
 
+        OAK_PLANK_SLAB = new ColoredSlab("oak_plank_slab", Blocks.OAK_SLAB);
+        SPRUCE_PLANK_SLAB = new ColoredSlab("spruce_plank_slab", Blocks.SPRUCE_SLAB);
+        BIRCH_PLANK_SLAB = new ColoredSlab("birch_plank_slab", Blocks.BIRCH_SLAB);
+        JUNGLE_PLANK_SLAB = new ColoredSlab("jungle_plank_slab", Blocks.JUNGLE_SLAB);
+        ACACIA_PLANK_SLAB = new ColoredSlab("acacia_plank_slab", Blocks.ACACIA_SLAB);
+        DARK_OAK_PLANK_SLAB = new ColoredSlab("dark_oak_plank_slab", Blocks.DARK_OAK_SLAB);
         STONE_SLAB = new ColoredSlab("stone_slab", Blocks.STONE_SLAB);
 //        SMOOTH_STONE_SLAB = new ColoredSlab("smooth_stone_slab", Blocks.SMOOTH_STONE_SLAB);
+//        SANDSTONE_SLAB = new ColoredSlab("sandstone_slab", Blocks.STONE_SLAB);
+//        PETRIFIED_OAK_PLANK_SLAB = new ColoredSlab("petrified_oak_plank_slab", Blocks.STONE_SLAB);
         COBBLESTONE_SLAB = new ColoredSlab("cobblestone_slab", Blocks.COBBLESTONE_SLAB);
         BRICK_SLAB = new ColoredSlab("brick_slab", Blocks.BRICK_SLAB);
         STONE_BRICK_SLAB = new ColoredSlab("stone_brick_slab", Blocks.STONE_BRICK_SLAB);
         NETHER_BRICK_SLAB = new ColoredSlab("nether_brick_slab", Blocks.NETHER_BRICK_SLAB);
+//        QUARTZ_SLAB = new ColoredSlab("quartz_slab", Blocks.STONE_SLAB);
+//        RED_SANDSTONE_SLAB = new ColoredSlab("red_sandstone_slab", Blocks.STONE_SLAB);
         PURPUR_SLAB = new ColoredSlab("purpur_slab", Blocks.PURPUR_SLAB);
         PRISMARINE_SLAB = new ColoredSlab("prismarine_slab", Blocks.PRISMARINE_SLAB);
         PRISMARINE_BRICK_SLAB = new ColoredSlab("prismarine_brick_slab", Blocks.PRISMARINE_BRICK_SLAB);
         DARK_PRISMARINE_SLAB = new ColoredSlab("dark_prismarine_slab", Blocks.DARK_PRISMARINE_SLAB);
         POLISHED_GRANITE_SLAB = new ColoredSlab("polished_granite_slab", Blocks.POLISHED_GRANITE_SLAB);
+//        SMOOTH_RED_SANDSTONE_SLAB = new ColoredSlab("smooth_red_sandstone_slab", Blocks.STONE_SLAB);
         MOSSY_STONE_BRICK_SLAB = new ColoredSlab("mossy_stone_brick_slab", Blocks.MOSSY_STONE_BRICK_SLAB);
         POLISHED_DIORITE_SLAB = new ColoredSlab("polished_diorite_slab", Blocks.POLISHED_DIORITE_SLAB);
         MOSSY_COBBLESTONE_SLAB = new ColoredSlab("mossy_cobblestone_slab", Blocks.MOSSY_COBBLESTONE_SLAB);
         END_STONE_BRICK_SLAB = new ColoredSlab("end_stone_brick_slab", Blocks.END_STONE_BRICK_SLAB);
+//        SMOOTH_SANDSTONE_SLAB = new ColoredSlab("smooth_sandstone_slab", Blocks.STONE_SLAB);
+//        SMOOTH_QUARTZ_SLAB = new ColoredSlab("smooth_quartz_slab", Blocks.STONE_SLAB);
         GRANITE_SLAB = new ColoredSlab("granite_slab", Blocks.GRANITE_SLAB);
         ANDESITE_SLAB = new ColoredSlab("andesite_slab", Blocks.ANDESITE_SLAB);
+        RED_NETHER_BRICK_SLAB = new ColoredSlab("red_nether_brick_slab", Blocks.RED_NETHER_BRICK_SLAB);
         POLISHED_ANDESITE_SLAB = new ColoredSlab("polished_andesite_slab", Blocks.POLISHED_ANDESITE_SLAB);
         DIORITE_SLAB = new ColoredSlab("diorite_slab", Blocks.DIORITE_SLAB);
 

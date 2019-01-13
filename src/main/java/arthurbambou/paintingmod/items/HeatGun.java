@@ -1,6 +1,7 @@
 package arthurbambou.paintingmod.items;
 
 import arthurbambou.paintingmod.api.ColoredBlock;
+import arthurbambou.paintingmod.api.ColoredSlab;
 import arthurbambou.paintingmod.api.ColoredStairs;
 import arthurbambou.paintingmod.api.Registry;
 import arthurbambou.paintingmod.utils.UnPaintFunctions;
@@ -19,6 +20,9 @@ public class HeatGun extends ItemBase {
         }
         for (ColoredStairs coloredStairs : Registry.getColoredStairsList()) {
             UnPaintFunctions.unpaintstairs(var1.getWorld(), var1.getPos(), coloredStairs, var1.getItemStack());
+        }
+        for (ColoredSlab coloredSlab : Registry.getColoredSlabList()) {
+            UnPaintFunctions.unpaintslab(var1.getWorld(), var1.getPos(), coloredSlab, var1.getItemStack());
         }
         return super.useOnBlock(var1);
     }
