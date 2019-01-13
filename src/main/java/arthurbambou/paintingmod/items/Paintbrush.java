@@ -1,9 +1,6 @@
 package arthurbambou.paintingmod.items;
 
-import arthurbambou.paintingmod.api.ColoredBlock;
-import arthurbambou.paintingmod.api.ColoredSlab;
-import arthurbambou.paintingmod.api.ColoredStairs;
-import arthurbambou.paintingmod.api.Registry;
+import arthurbambou.paintingmod.api.*;
 import arthurbambou.paintingmod.registery.ModItems;
 import arthurbambou.paintingmod.utils.PaintFunctions;
 import net.minecraft.block.Block;
@@ -35,6 +32,9 @@ public class Paintbrush extends ItemBase {
         }
         for (ColoredSlab coloredSlab : Registry.getColoredSlabList()) {
             PaintFunctions.newslabtopaint(playerEntity,world,blockPos,coloredSlab);
+        }
+        for (ColoredWall coloredWall : Registry.getColoredWallList()) {
+            PaintFunctions.newwalltopaint(playerEntity,world,blockPos,coloredWall);
         }
         return super.useOnBlock(var1);
     }

@@ -3,10 +3,9 @@ package arthurbambou.paintingmod.utils;
 import arthurbambou.paintingmod.api.ColoredBlock;
 import arthurbambou.paintingmod.api.ColoredSlab;
 import arthurbambou.paintingmod.api.ColoredStairs;
+import arthurbambou.paintingmod.api.ColoredWall;
 import arthurbambou.paintingmod.registery.ModItems;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.SlabBlock;
-import net.minecraft.block.StairsBlock;
+import net.minecraft.block.*;
 import net.minecraft.block.enums.BlockHalf;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -235,7 +234,7 @@ public class PaintFunctions {
     }
 
     public static void newslabtopaint(PlayerEntity player, World worldIn, BlockPos pos,
-                                        ColoredSlab coloredStairs) {
+                                      ColoredSlab coloredStairs) {
         if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.NORMAL_PAINTBRUSH) {
 
         } else {
@@ -335,6 +334,177 @@ public class PaintFunctions {
                     worldIn.setBlockState(pos, coloredStairs.white.getStateFactory().getDefaultState()
                             .with(SlabBlock.field_11501, blockState.get(SlabBlock.field_11501))
                             .with(SlabBlock.field_11502, blockState.get(SlabBlock.field_11502)));
+                    usedpaintbrush(player);
+                }
+            }
+        }
+    }
+
+    public static void newwalltopaint(PlayerEntity player, World worldIn, BlockPos pos,
+                                      ColoredWall coloredStairs) {
+        if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.NORMAL_PAINTBRUSH) {
+
+        } else {
+            if (worldIn.getBlockState(pos).getBlock() == coloredStairs.replace) {
+                BlockState blockState = worldIn.getBlockState(pos);
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.BLACK_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                            .with(WallBlock.field_11717, blockState.get(WallBlock.field_11717))
+                            .with(HorizontalConnectedBlock.EAST, blockState.get(HorizontalConnectedBlock.EAST))
+                            .with(HorizontalConnectedBlock.NORTH, blockState.get(HorizontalConnectedBlock.NORTH))
+                            .with(HorizontalConnectedBlock.SOUTH, blockState.get(HorizontalConnectedBlock.SOUTH))
+                            .with(HorizontalConnectedBlock.WATERLOGGED, blockState.get(HorizontalConnectedBlock.WATERLOGGED))
+                            .with(HorizontalConnectedBlock.WEST, blockState.get(HorizontalConnectedBlock.WEST)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.RED_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.red.getStateFactory().getDefaultState()
+                            .with(WallBlock.field_11717, blockState.get(WallBlock.field_11717))
+                            .with(HorizontalConnectedBlock.EAST, blockState.get(HorizontalConnectedBlock.EAST))
+                            .with(HorizontalConnectedBlock.NORTH, blockState.get(HorizontalConnectedBlock.NORTH))
+                            .with(HorizontalConnectedBlock.SOUTH, blockState.get(HorizontalConnectedBlock.SOUTH))
+                            .with(HorizontalConnectedBlock.WATERLOGGED, blockState.get(HorizontalConnectedBlock.WATERLOGGED))
+                            .with(HorizontalConnectedBlock.WEST, blockState.get(HorizontalConnectedBlock.WEST)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.GREEN_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.green.getStateFactory().getDefaultState()
+                            .with(WallBlock.field_11717, blockState.get(WallBlock.field_11717))
+                            .with(HorizontalConnectedBlock.EAST, blockState.get(HorizontalConnectedBlock.EAST))
+                            .with(HorizontalConnectedBlock.NORTH, blockState.get(HorizontalConnectedBlock.NORTH))
+                            .with(HorizontalConnectedBlock.SOUTH, blockState.get(HorizontalConnectedBlock.SOUTH))
+                            .with(HorizontalConnectedBlock.WATERLOGGED, blockState.get(HorizontalConnectedBlock.WATERLOGGED))
+                            .with(HorizontalConnectedBlock.WEST, blockState.get(HorizontalConnectedBlock.WEST)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.BROWN_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.brown.getStateFactory().getDefaultState()
+                            .with(WallBlock.field_11717, blockState.get(WallBlock.field_11717))
+                            .with(HorizontalConnectedBlock.EAST, blockState.get(HorizontalConnectedBlock.EAST))
+                            .with(HorizontalConnectedBlock.NORTH, blockState.get(HorizontalConnectedBlock.NORTH))
+                            .with(HorizontalConnectedBlock.SOUTH, blockState.get(HorizontalConnectedBlock.SOUTH))
+                            .with(HorizontalConnectedBlock.WATERLOGGED, blockState.get(HorizontalConnectedBlock.WATERLOGGED))
+                            .with(HorizontalConnectedBlock.WEST, blockState.get(HorizontalConnectedBlock.WEST)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.BLUE_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.blue.getStateFactory().getDefaultState()
+                            .with(WallBlock.field_11717, blockState.get(WallBlock.field_11717))
+                            .with(HorizontalConnectedBlock.EAST, blockState.get(HorizontalConnectedBlock.EAST))
+                            .with(HorizontalConnectedBlock.NORTH, blockState.get(HorizontalConnectedBlock.NORTH))
+                            .with(HorizontalConnectedBlock.SOUTH, blockState.get(HorizontalConnectedBlock.SOUTH))
+                            .with(HorizontalConnectedBlock.WATERLOGGED, blockState.get(HorizontalConnectedBlock.WATERLOGGED))
+                            .with(HorizontalConnectedBlock.WEST, blockState.get(HorizontalConnectedBlock.WEST)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.PURPLE_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.purple.getStateFactory().getDefaultState()
+                            .with(WallBlock.field_11717, blockState.get(WallBlock.field_11717))
+                            .with(HorizontalConnectedBlock.EAST, blockState.get(HorizontalConnectedBlock.EAST))
+                            .with(HorizontalConnectedBlock.NORTH, blockState.get(HorizontalConnectedBlock.NORTH))
+                            .with(HorizontalConnectedBlock.SOUTH, blockState.get(HorizontalConnectedBlock.SOUTH))
+                            .with(HorizontalConnectedBlock.WATERLOGGED, blockState.get(HorizontalConnectedBlock.WATERLOGGED))
+                            .with(HorizontalConnectedBlock.WEST, blockState.get(HorizontalConnectedBlock.WEST)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.CYAN_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.cyan.getStateFactory().getDefaultState()
+                            .with(WallBlock.field_11717, blockState.get(WallBlock.field_11717))
+                            .with(HorizontalConnectedBlock.EAST, blockState.get(HorizontalConnectedBlock.EAST))
+                            .with(HorizontalConnectedBlock.NORTH, blockState.get(HorizontalConnectedBlock.NORTH))
+                            .with(HorizontalConnectedBlock.SOUTH, blockState.get(HorizontalConnectedBlock.SOUTH))
+                            .with(HorizontalConnectedBlock.WATERLOGGED, blockState.get(HorizontalConnectedBlock.WATERLOGGED))
+                            .with(HorizontalConnectedBlock.WEST, blockState.get(HorizontalConnectedBlock.WEST)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.LIGHT_GRAY_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.lightgray.getStateFactory().getDefaultState()
+                            .with(WallBlock.field_11717, blockState.get(WallBlock.field_11717))
+                            .with(HorizontalConnectedBlock.EAST, blockState.get(HorizontalConnectedBlock.EAST))
+                            .with(HorizontalConnectedBlock.NORTH, blockState.get(HorizontalConnectedBlock.NORTH))
+                            .with(HorizontalConnectedBlock.SOUTH, blockState.get(HorizontalConnectedBlock.SOUTH))
+                            .with(HorizontalConnectedBlock.WATERLOGGED, blockState.get(HorizontalConnectedBlock.WATERLOGGED))
+                            .with(HorizontalConnectedBlock.WEST, blockState.get(HorizontalConnectedBlock.WEST)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.GRAY_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.gray.getStateFactory().getDefaultState()
+                            .with(WallBlock.field_11717, blockState.get(WallBlock.field_11717))
+                            .with(HorizontalConnectedBlock.EAST, blockState.get(HorizontalConnectedBlock.EAST))
+                            .with(HorizontalConnectedBlock.NORTH, blockState.get(HorizontalConnectedBlock.NORTH))
+                            .with(HorizontalConnectedBlock.SOUTH, blockState.get(HorizontalConnectedBlock.SOUTH))
+                            .with(HorizontalConnectedBlock.WATERLOGGED, blockState.get(HorizontalConnectedBlock.WATERLOGGED))
+                            .with(HorizontalConnectedBlock.WEST, blockState.get(HorizontalConnectedBlock.WEST)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.PINK_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.pink.getStateFactory().getDefaultState()
+                            .with(WallBlock.field_11717, blockState.get(WallBlock.field_11717))
+                            .with(HorizontalConnectedBlock.EAST, blockState.get(HorizontalConnectedBlock.EAST))
+                            .with(HorizontalConnectedBlock.NORTH, blockState.get(HorizontalConnectedBlock.NORTH))
+                            .with(HorizontalConnectedBlock.SOUTH, blockState.get(HorizontalConnectedBlock.SOUTH))
+                            .with(HorizontalConnectedBlock.WATERLOGGED, blockState.get(HorizontalConnectedBlock.WATERLOGGED))
+                            .with(HorizontalConnectedBlock.WEST, blockState.get(HorizontalConnectedBlock.WEST)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.LIME_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.lime.getStateFactory().getDefaultState()
+                            .with(WallBlock.field_11717, blockState.get(WallBlock.field_11717))
+                            .with(HorizontalConnectedBlock.EAST, blockState.get(HorizontalConnectedBlock.EAST))
+                            .with(HorizontalConnectedBlock.NORTH, blockState.get(HorizontalConnectedBlock.NORTH))
+                            .with(HorizontalConnectedBlock.SOUTH, blockState.get(HorizontalConnectedBlock.SOUTH))
+                            .with(HorizontalConnectedBlock.WATERLOGGED, blockState.get(HorizontalConnectedBlock.WATERLOGGED))
+                            .with(HorizontalConnectedBlock.WEST, blockState.get(HorizontalConnectedBlock.WEST)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.YELLOW_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.yellow.getStateFactory().getDefaultState()
+                            .with(WallBlock.field_11717, blockState.get(WallBlock.field_11717))
+                            .with(HorizontalConnectedBlock.EAST, blockState.get(HorizontalConnectedBlock.EAST))
+                            .with(HorizontalConnectedBlock.NORTH, blockState.get(HorizontalConnectedBlock.NORTH))
+                            .with(HorizontalConnectedBlock.SOUTH, blockState.get(HorizontalConnectedBlock.SOUTH))
+                            .with(HorizontalConnectedBlock.WATERLOGGED, blockState.get(HorizontalConnectedBlock.WATERLOGGED))
+                            .with(HorizontalConnectedBlock.WEST, blockState.get(HorizontalConnectedBlock.WEST)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.LIGHT_BLUE_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.lightblue.getStateFactory().getDefaultState()
+                            .with(WallBlock.field_11717, blockState.get(WallBlock.field_11717))
+                            .with(HorizontalConnectedBlock.EAST, blockState.get(HorizontalConnectedBlock.EAST))
+                            .with(HorizontalConnectedBlock.NORTH, blockState.get(HorizontalConnectedBlock.NORTH))
+                            .with(HorizontalConnectedBlock.SOUTH, blockState.get(HorizontalConnectedBlock.SOUTH))
+                            .with(HorizontalConnectedBlock.WATERLOGGED, blockState.get(HorizontalConnectedBlock.WATERLOGGED))
+                            .with(HorizontalConnectedBlock.WEST, blockState.get(HorizontalConnectedBlock.WEST)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.MAGENTA_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.magenta.getStateFactory().getDefaultState()
+                            .with(WallBlock.field_11717, blockState.get(WallBlock.field_11717))
+                            .with(HorizontalConnectedBlock.EAST, blockState.get(HorizontalConnectedBlock.EAST))
+                            .with(HorizontalConnectedBlock.NORTH, blockState.get(HorizontalConnectedBlock.NORTH))
+                            .with(HorizontalConnectedBlock.SOUTH, blockState.get(HorizontalConnectedBlock.SOUTH))
+                            .with(HorizontalConnectedBlock.WATERLOGGED, blockState.get(HorizontalConnectedBlock.WATERLOGGED))
+                            .with(HorizontalConnectedBlock.WEST, blockState.get(HorizontalConnectedBlock.WEST)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.ORANGE_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.orange.getStateFactory().getDefaultState()
+                            .with(WallBlock.field_11717, blockState.get(WallBlock.field_11717))
+                            .with(HorizontalConnectedBlock.EAST, blockState.get(HorizontalConnectedBlock.EAST))
+                            .with(HorizontalConnectedBlock.NORTH, blockState.get(HorizontalConnectedBlock.NORTH))
+                            .with(HorizontalConnectedBlock.SOUTH, blockState.get(HorizontalConnectedBlock.SOUTH))
+                            .with(HorizontalConnectedBlock.WATERLOGGED, blockState.get(HorizontalConnectedBlock.WATERLOGGED))
+                            .with(HorizontalConnectedBlock.WEST, blockState.get(HorizontalConnectedBlock.WEST)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.WHITE_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.white.getStateFactory().getDefaultState()
+                            .with(WallBlock.field_11717, blockState.get(WallBlock.field_11717))
+                            .with(HorizontalConnectedBlock.EAST, blockState.get(HorizontalConnectedBlock.EAST))
+                            .with(HorizontalConnectedBlock.NORTH, blockState.get(HorizontalConnectedBlock.NORTH))
+                            .with(HorizontalConnectedBlock.SOUTH, blockState.get(HorizontalConnectedBlock.SOUTH))
+                            .with(HorizontalConnectedBlock.WATERLOGGED, blockState.get(HorizontalConnectedBlock.WATERLOGGED))
+                            .with(HorizontalConnectedBlock.WEST, blockState.get(HorizontalConnectedBlock.WEST)));
                     usedpaintbrush(player);
                 }
             }

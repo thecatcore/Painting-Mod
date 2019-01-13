@@ -10,9 +10,13 @@ import net.minecraft.util.registry.Registry;
 
 public class ColoredBlockBlock extends Block {
 
-    public ColoredBlockBlock(String name, Settings block$Settings_1) {
+    public ColoredBlockBlock(String name, Settings block$Settings_1, String modID) {
         super(block$Settings_1);
-        Registry.BLOCK.register(new Identifier(PaintingMod.MODID, name), this);
-        Registry.ITEM.register(new Identifier(PaintingMod.MODID, name), new BlockItem(this, new Item.Settings().itemGroup(PaintingMod.MOD_BLOCKS)));
+        Registry.BLOCK.register(new Identifier(modID, name), this);
+        if (modID == PaintingMod.MODID) {
+            Registry.ITEM.register(new Identifier(modID, name), new BlockItem(this, new Item.Settings().itemGroup(PaintingMod.MOD_BLOCKS)));
+        } else {
+            Registry.ITEM.register(new Identifier(modID, name), new BlockItem(this, new Item.Settings().itemGroup(PaintingMod.ADDON_BLOCKS)));
+        }
     }
 }

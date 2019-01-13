@@ -3,6 +3,7 @@ package arthurbambou.paintingmod.registery;
 import arthurbambou.paintingmod.api.ColoredBlock;
 import arthurbambou.paintingmod.api.ColoredSlab;
 import arthurbambou.paintingmod.api.ColoredStairs;
+import arthurbambou.paintingmod.api.ColoredWall;
 import arthurbambou.paintingmod.blocks.SoggyClay;
 import net.fabricmc.fabric.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -17,6 +18,7 @@ public class ModBlocks {
     public static final List<ColoredBlock> COLORED_BLOCKS = new ArrayList<ColoredBlock>();
     public static final List<ColoredStairs> COLORED_STAIRS = new ArrayList<ColoredStairs>();
     public static final List<ColoredSlab> COLORED_SLABS = new ArrayList<ColoredSlab>();
+    public static final List<ColoredWall> COLORED_WALLS = new ArrayList<ColoredWall>();
 
     public static Block SOGGY_CLAY;
 
@@ -169,6 +171,21 @@ public class ModBlocks {
     public static ColoredSlab RED_NETHER_BRICK_SLAB;
     public static ColoredSlab POLISHED_ANDESITE_SLAB;
     public static ColoredSlab DIORITE_SLAB;
+
+    public static ColoredWall COBBLESTONE_WALL;
+    public static ColoredWall MOSSY_COBBLESTONE_WALL;
+    public static ColoredWall BRICK_WALL;
+    public static ColoredWall PRISMARINE_WALL;
+    public static ColoredWall RED_SANDSTONE_WALL;
+    public static ColoredWall MOSSY_STONE_BRICK_WALL;
+    public static ColoredWall GRANITE_WALL;
+    public static ColoredWall STONE_BRICK_WALL;
+    public static ColoredWall NETHER_BRICK_WALL;
+    public static ColoredWall ANDESITE_WALL;
+    public static ColoredWall RED_NETHER_BRICK_WALL;
+    public static ColoredWall SANDSTONE_WALL;
+    public static ColoredWall END_STONE_BRICK_WALL;
+    public static ColoredWall DIORITE_WALL;
 
     public static void init() {
         SOGGY_CLAY = new SoggyClay(FabricBlockSettings.of(Material.SAND).sounds(BlockSoundGroup.SAND).build(), "soggy_clay");
@@ -324,6 +341,21 @@ public class ModBlocks {
         POLISHED_ANDESITE_SLAB = new ColoredSlab("polished_andesite_slab", Blocks.POLISHED_ANDESITE_SLAB);
         DIORITE_SLAB = new ColoredSlab("diorite_slab", Blocks.DIORITE_SLAB);
 
+        COBBLESTONE_WALL = new ColoredWall("cobblestone_wall", Blocks.COBBLESTONE_WALL);
+        MOSSY_COBBLESTONE_WALL = new ColoredWall("mossy_cobblestone_wall", Blocks.MOSSY_COBBLESTONE_WALL);
+        BRICK_WALL = new ColoredWall("brick_wall", Blocks.BRICK_WALL);
+        PRISMARINE_WALL = new ColoredWall("prismarine_wall", Blocks.PRISMARINE_WALL);
+//        RED_SANDSTONE_WALL = new ColoredWall("red_sandstone_wall", Blocks.RED_SANDSTONE_WALL);
+        MOSSY_STONE_BRICK_WALL = new ColoredWall("mossy_stone_brick_wall", Blocks.MOSSY_STONE_BRICK_WALL);
+        GRANITE_WALL = new ColoredWall("granite_wall", Blocks.GRANITE_WALL);
+        STONE_BRICK_WALL = new ColoredWall("stone_brick_wall", Blocks.STONE_BRICK_WALL);
+        NETHER_BRICK_WALL = new ColoredWall("nether_brick_wall", Blocks.NETHER_BRICK_WALL);
+        ANDESITE_WALL = new ColoredWall("andesite_wall", Blocks.ANDESITE_WALL);
+        RED_NETHER_BRICK_WALL = new ColoredWall("red_nether_brick_wall", Blocks.RED_NETHER_BRICK_WALL);
+//        SANDSTONE_WALL = new ColoredWall("sandstone_wall", Blocks.SANDSTONE_WALL);
+        END_STONE_BRICK_WALL = new ColoredWall("end_stone_brick_wall", Blocks.END_STONE_BRICK_WALL);
+        DIORITE_WALL = new ColoredWall("diorite_wall", Blocks.DIORITE_WALL);
+
         for (ColoredBlock coloredBlock : COLORED_BLOCKS) {
             coloredBlock.createBlocks();
         }
@@ -334,6 +366,10 @@ public class ModBlocks {
 
         for (ColoredSlab coloredSlab : COLORED_SLABS) {
             coloredSlab.createBlocks();
+        }
+
+        for (ColoredWall coloredWall : COLORED_WALLS) {
+            coloredWall.createBlocks();
         }
     }
 }

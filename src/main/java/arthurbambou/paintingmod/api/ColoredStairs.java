@@ -48,22 +48,22 @@ public class ColoredStairs {
 
     public void createBlocks() {
         copySettings(this.replace);
-        this.black = new ColoredStairsBlock("black_" + this.name, this.settings, this.blockState);
-        this.red = new ColoredStairsBlock("red_" + this.name, this.settings, this.blockState);
-        this.green = new ColoredStairsBlock("green_" + this.name, this.settings, this.blockState);
-        this.brown = new ColoredStairsBlock("brown_" + this.name, this.settings, this.blockState);
-        this.blue = new ColoredStairsBlock("blue_" + this.name, this.settings, this.blockState);
-        this.purple = new ColoredStairsBlock("purple_" + this.name, this.settings, this.blockState);
-        this.cyan = new ColoredStairsBlock("cyan_" + this.name, this.settings, this.blockState);
-        this.lightgray = new ColoredStairsBlock("light_gray_" + this.name, this.settings, this.blockState);
-        this.gray = new ColoredStairsBlock("gray_" + this.name, this.settings, this.blockState);
-        this.pink = new ColoredStairsBlock("pink_" + this.name, this.settings, this.blockState);
-        this.lime = new ColoredStairsBlock("lime_" + this.name, this.settings, this.blockState);
-        this.yellow = new ColoredStairsBlock("yellow_" + this.name, this.settings, this.blockState);
-        this.lightblue = new ColoredStairsBlock("light_blue_" + this.name, this.settings, this.blockState);
-        this.magenta = new ColoredStairsBlock("magenta_" + this.name, this.settings, this.blockState);
-        this.orange = new ColoredStairsBlock("orange_" + this.name, this.settings, this.blockState);
-        this.white = new ColoredStairsBlock("white_" + this.name, this.settings, this.blockState);
+        this.black = new ColoredStairsBlock("black_" + this.name, this.settings, this.blockState, this.modid);
+        this.red = new ColoredStairsBlock("red_" + this.name, this.settings, this.blockState, this.modid);
+        this.green = new ColoredStairsBlock("green_" + this.name, this.settings, this.blockState, this.modid);
+        this.brown = new ColoredStairsBlock("brown_" + this.name, this.settings, this.blockState, this.modid);
+        this.blue = new ColoredStairsBlock("blue_" + this.name, this.settings, this.blockState, this.modid);
+        this.purple = new ColoredStairsBlock("purple_" + this.name, this.settings, this.blockState, this.modid);
+        this.cyan = new ColoredStairsBlock("cyan_" + this.name, this.settings, this.blockState, this.modid);
+        this.lightgray = new ColoredStairsBlock("light_gray_" + this.name, this.settings, this.blockState, this.modid);
+        this.gray = new ColoredStairsBlock("gray_" + this.name, this.settings, this.blockState, this.modid);
+        this.pink = new ColoredStairsBlock("pink_" + this.name, this.settings, this.blockState, this.modid);
+        this.lime = new ColoredStairsBlock("lime_" + this.name, this.settings, this.blockState, this.modid);
+        this.yellow = new ColoredStairsBlock("yellow_" + this.name, this.settings, this.blockState, this.modid);
+        this.lightblue = new ColoredStairsBlock("light_blue_" + this.name, this.settings, this.blockState, this.modid);
+        this.magenta = new ColoredStairsBlock("magenta_" + this.name, this.settings, this.blockState, this.modid);
+        this.orange = new ColoredStairsBlock("orange_" + this.name, this.settings, this.blockState, this.modid);
+        this.white = new ColoredStairsBlock("white_" + this.name, this.settings, this.blockState, this.modid);
         Registry.registerColoredStairs(this);
     }
 
