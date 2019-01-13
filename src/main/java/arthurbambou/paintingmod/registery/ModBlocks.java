@@ -341,20 +341,20 @@ public class ModBlocks {
         POLISHED_ANDESITE_SLAB = new ColoredSlab("polished_andesite_slab", Blocks.POLISHED_ANDESITE_SLAB);
         DIORITE_SLAB = new ColoredSlab("diorite_slab", Blocks.DIORITE_SLAB);
 
-        COBBLESTONE_WALL = new ColoredWall("cobblestone_wall", Blocks.COBBLESTONE_WALL);
-        MOSSY_COBBLESTONE_WALL = new ColoredWall("mossy_cobblestone_wall", Blocks.MOSSY_COBBLESTONE_WALL);
-        BRICK_WALL = new ColoredWall("brick_wall", Blocks.BRICK_WALL);
-        PRISMARINE_WALL = new ColoredWall("prismarine_wall", Blocks.PRISMARINE_WALL);
-//        RED_SANDSTONE_WALL = new ColoredWall("red_sandstone_wall", Blocks.RED_SANDSTONE_WALL);
-        MOSSY_STONE_BRICK_WALL = new ColoredWall("mossy_stone_brick_wall", Blocks.MOSSY_STONE_BRICK_WALL);
-        GRANITE_WALL = new ColoredWall("granite_wall", Blocks.GRANITE_WALL);
-        STONE_BRICK_WALL = new ColoredWall("stone_brick_wall", Blocks.STONE_BRICK_WALL);
-        NETHER_BRICK_WALL = new ColoredWall("nether_brick_wall", Blocks.NETHER_BRICK_WALL);
-        ANDESITE_WALL = new ColoredWall("andesite_wall", Blocks.ANDESITE_WALL);
-        RED_NETHER_BRICK_WALL = new ColoredWall("red_nether_brick_wall", Blocks.RED_NETHER_BRICK_WALL);
-//        SANDSTONE_WALL = new ColoredWall("sandstone_wall", Blocks.SANDSTONE_WALL);
-        END_STONE_BRICK_WALL = new ColoredWall("end_stone_brick_wall", Blocks.END_STONE_BRICK_WALL);
-        DIORITE_WALL = new ColoredWall("diorite_wall", Blocks.DIORITE_WALL);
+//        COBBLESTONE_WALL = new ColoredWall("cobblestone_wall", Blocks.COBBLESTONE_WALL);
+//        MOSSY_COBBLESTONE_WALL = new ColoredWall("mossy_cobblestone_wall", Blocks.MOSSY_COBBLESTONE_WALL);
+//        BRICK_WALL = new ColoredWall("brick_wall", Blocks.BRICK_WALL);
+//        PRISMARINE_WALL = new ColoredWall("prismarine_wall", Blocks.PRISMARINE_WALL);
+////        RED_SANDSTONE_WALL = new ColoredWall("red_sandstone_wall", Blocks.RED_SANDSTONE_WALL);
+//        MOSSY_STONE_BRICK_WALL = new ColoredWall("mossy_stone_brick_wall", Blocks.MOSSY_STONE_BRICK_WALL);
+//        GRANITE_WALL = new ColoredWall("granite_wall", Blocks.GRANITE_WALL);
+//        STONE_BRICK_WALL = new ColoredWall("stone_brick_wall", Blocks.STONE_BRICK_WALL);
+//        NETHER_BRICK_WALL = new ColoredWall("nether_brick_wall", Blocks.NETHER_BRICK_WALL);
+//        ANDESITE_WALL = new ColoredWall("andesite_wall", Blocks.ANDESITE_WALL);
+//        RED_NETHER_BRICK_WALL = new ColoredWall("red_nether_brick_wall", Blocks.RED_NETHER_BRICK_WALL);
+////        SANDSTONE_WALL = new ColoredWall("sandstone_wall", Blocks.SANDSTONE_WALL);
+//        END_STONE_BRICK_WALL = new ColoredWall("end_stone_brick_wall", Blocks.END_STONE_BRICK_WALL);
+//        DIORITE_WALL = new ColoredWall("diorite_wall", Blocks.DIORITE_WALL);
 
         for (ColoredBlock coloredBlock : COLORED_BLOCKS) {
             coloredBlock.createBlocks();
