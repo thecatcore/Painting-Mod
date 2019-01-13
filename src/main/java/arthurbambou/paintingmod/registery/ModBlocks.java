@@ -1,9 +1,6 @@
 package arthurbambou.paintingmod.registery;
 
-import arthurbambou.paintingmod.api.ColoredBlock;
-import arthurbambou.paintingmod.api.ColoredSlab;
-import arthurbambou.paintingmod.api.ColoredStairs;
-import arthurbambou.paintingmod.api.ColoredWall;
+import arthurbambou.paintingmod.api.*;
 import arthurbambou.paintingmod.blocks.SoggyClay;
 import net.fabricmc.fabric.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -19,6 +16,7 @@ public class ModBlocks {
     public static final List<ColoredStairs> COLORED_STAIRS = new ArrayList<ColoredStairs>();
     public static final List<ColoredSlab> COLORED_SLABS = new ArrayList<ColoredSlab>();
     public static final List<ColoredWall> COLORED_WALLS = new ArrayList<ColoredWall>();
+    public static final List<ColoredFenceGate> COLORED_FENCE_GATES = new ArrayList<ColoredFenceGate>();
 
     public static Block SOGGY_CLAY;
 
@@ -187,6 +185,13 @@ public class ModBlocks {
     public static ColoredWall END_STONE_BRICK_WALL;
     public static ColoredWall DIORITE_WALL;
 
+    public static ColoredFenceGate OAK_PLANK_FENCE_GATE;
+    public static ColoredFenceGate SPRUCE_PLANK_FENCE_GATE;
+    public static ColoredFenceGate BIRCH_PLANK_FENCE_GATE;
+    public static ColoredFenceGate JUNGLE_PLANK_FENCE_GATE;
+    public static ColoredFenceGate ACACIA_PLANK_FENCE_GATE;
+    public static ColoredFenceGate DARK_OAK_PLANK_FENCE_GATE;
+
     public static void init() {
         SOGGY_CLAY = new SoggyClay(FabricBlockSettings.of(Material.SAND).sounds(BlockSoundGroup.SAND).build(), "soggy_clay");
 
@@ -341,20 +346,27 @@ public class ModBlocks {
         POLISHED_ANDESITE_SLAB = new ColoredSlab("polished_andesite_slab", Blocks.POLISHED_ANDESITE_SLAB);
         DIORITE_SLAB = new ColoredSlab("diorite_slab", Blocks.DIORITE_SLAB);
 
-//        COBBLESTONE_WALL = new ColoredWall("cobblestone_wall", Blocks.COBBLESTONE_WALL);
-//        MOSSY_COBBLESTONE_WALL = new ColoredWall("mossy_cobblestone_wall", Blocks.MOSSY_COBBLESTONE_WALL);
-//        BRICK_WALL = new ColoredWall("brick_wall", Blocks.BRICK_WALL);
-//        PRISMARINE_WALL = new ColoredWall("prismarine_wall", Blocks.PRISMARINE_WALL);
-////        RED_SANDSTONE_WALL = new ColoredWall("red_sandstone_wall", Blocks.RED_SANDSTONE_WALL);
-//        MOSSY_STONE_BRICK_WALL = new ColoredWall("mossy_stone_brick_wall", Blocks.MOSSY_STONE_BRICK_WALL);
-//        GRANITE_WALL = new ColoredWall("granite_wall", Blocks.GRANITE_WALL);
-//        STONE_BRICK_WALL = new ColoredWall("stone_brick_wall", Blocks.STONE_BRICK_WALL);
-//        NETHER_BRICK_WALL = new ColoredWall("nether_brick_wall", Blocks.NETHER_BRICK_WALL);
-//        ANDESITE_WALL = new ColoredWall("andesite_wall", Blocks.ANDESITE_WALL);
-//        RED_NETHER_BRICK_WALL = new ColoredWall("red_nether_brick_wall", Blocks.RED_NETHER_BRICK_WALL);
-////        SANDSTONE_WALL = new ColoredWall("sandstone_wall", Blocks.SANDSTONE_WALL);
-//        END_STONE_BRICK_WALL = new ColoredWall("end_stone_brick_wall", Blocks.END_STONE_BRICK_WALL);
-//        DIORITE_WALL = new ColoredWall("diorite_wall", Blocks.DIORITE_WALL);
+        COBBLESTONE_WALL = new ColoredWall("cobblestone_wall", Blocks.COBBLESTONE_WALL);
+        MOSSY_COBBLESTONE_WALL = new ColoredWall("mossy_cobblestone_wall", Blocks.MOSSY_COBBLESTONE_WALL);
+        BRICK_WALL = new ColoredWall("brick_wall", Blocks.BRICK_WALL);
+        PRISMARINE_WALL = new ColoredWall("prismarine_wall", Blocks.PRISMARINE_WALL);
+//        RED_SANDSTONE_WALL = new ColoredWall("red_sandstone_wall", Blocks.RED_SANDSTONE_WALL);
+        MOSSY_STONE_BRICK_WALL = new ColoredWall("mossy_stone_brick_wall", Blocks.MOSSY_STONE_BRICK_WALL);
+        GRANITE_WALL = new ColoredWall("granite_wall", Blocks.GRANITE_WALL);
+        STONE_BRICK_WALL = new ColoredWall("stone_brick_wall", Blocks.STONE_BRICK_WALL);
+        NETHER_BRICK_WALL = new ColoredWall("nether_brick_wall", Blocks.NETHER_BRICK_WALL);
+        ANDESITE_WALL = new ColoredWall("andesite_wall", Blocks.ANDESITE_WALL);
+        RED_NETHER_BRICK_WALL = new ColoredWall("red_nether_brick_wall", Blocks.RED_NETHER_BRICK_WALL);
+//        SANDSTONE_WALL = new ColoredWall("sandstone_wall", Blocks.SANDSTONE_WALL);
+        END_STONE_BRICK_WALL = new ColoredWall("end_stone_brick_wall", Blocks.END_STONE_BRICK_WALL);
+        DIORITE_WALL = new ColoredWall("diorite_wall", Blocks.DIORITE_WALL);
+
+        OAK_PLANK_FENCE_GATE = new ColoredFenceGate("oak_plank_fence_gate", Blocks.OAK_FENCE_GATE);
+        SPRUCE_PLANK_FENCE_GATE = new ColoredFenceGate("spruce_plank_fence_gate", Blocks.SPRUCE_FENCE_GATE);
+        BIRCH_PLANK_FENCE_GATE = new ColoredFenceGate("birch_plank_fence_gate", Blocks.BIRCH_FENCE_GATE);
+        JUNGLE_PLANK_FENCE_GATE = new ColoredFenceGate("jungle_plank_fence_gate", Blocks.JUNGLE_FENCE_GATE);
+        ACACIA_PLANK_FENCE_GATE = new ColoredFenceGate("acacia_plank_fence_gate", Blocks.ACACIA_FENCE_GATE);
+        DARK_OAK_PLANK_FENCE_GATE = new ColoredFenceGate("dark_oak_plank_fence_gate", Blocks.DARK_OAK_FENCE_GATE);
 
         for (ColoredBlock coloredBlock : COLORED_BLOCKS) {
             coloredBlock.createBlocks();
@@ -370,6 +382,10 @@ public class ModBlocks {
 
         for (ColoredWall coloredWall : COLORED_WALLS) {
             coloredWall.createBlocks();
+        }
+
+        for (ColoredFenceGate coloredFenceGate : COLORED_FENCE_GATES) {
+            coloredFenceGate.createBlocks();
         }
     }
 }

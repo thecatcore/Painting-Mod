@@ -8,6 +8,7 @@ public class Registry {
     private static final List<ColoredStairs> COLORED_STAIRS_LIST = new ArrayList<ColoredStairs>();
     private static final List<ColoredSlab> COLORED_SLAB_LIST = new ArrayList<ColoredSlab>();
     private static final List<ColoredWall> COLORED_WALL_LIST = new ArrayList<ColoredWall>();
+    private static final List<ColoredFenceGate> COLORED_FENCE_GATE_LIST = new ArrayList<ColoredFenceGate>();
 
     public static List<ColoredBlock> getCommonBlocks() {
         return COMMON_BLOCKS;
@@ -23,6 +24,10 @@ public class Registry {
 
     public static List<ColoredWall> getColoredWallList() {
         return COLORED_WALL_LIST;
+    }
+
+    public static List<ColoredFenceGate> getColoredFenceGateList() {
+        return COLORED_FENCE_GATE_LIST;
     }
 
     public static void registerCommonBlocks(ColoredBlock coloredBlock) {
@@ -47,5 +52,11 @@ public class Registry {
         String modID = coloredWall.black.getDropTableId().getNamespace();
         COLORED_WALL_LIST.add(coloredWall);
         System.out.println("[PaintingMod API] registered colored wall : " + modID + ":" + coloredWall.getName());
+    }
+
+    public static void registerColoredFenceGate(ColoredFenceGate coloredWall) {
+        String modID = coloredWall.black.getDropTableId().getNamespace();
+        COLORED_FENCE_GATE_LIST.add(coloredWall);
+        System.out.println("[PaintingMod API] registered colored fence gate : " + modID + ":" + coloredWall.getName());
     }
 }

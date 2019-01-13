@@ -1,9 +1,6 @@
 package arthurbambou.paintingmod.utils;
 
-import arthurbambou.paintingmod.api.ColoredBlock;
-import arthurbambou.paintingmod.api.ColoredSlab;
-import arthurbambou.paintingmod.api.ColoredStairs;
-import arthurbambou.paintingmod.api.ColoredWall;
+import arthurbambou.paintingmod.api.*;
 import arthurbambou.paintingmod.registery.ModItems;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.BlockHalf;
@@ -505,6 +502,145 @@ public class PaintFunctions {
                             .with(HorizontalConnectedBlock.SOUTH, blockState.get(HorizontalConnectedBlock.SOUTH))
                             .with(HorizontalConnectedBlock.WATERLOGGED, blockState.get(HorizontalConnectedBlock.WATERLOGGED))
                             .with(HorizontalConnectedBlock.WEST, blockState.get(HorizontalConnectedBlock.WEST)));
+                    usedpaintbrush(player);
+                }
+            }
+        }
+    }
+
+    public static void newfencegatetopaint(PlayerEntity player, World worldIn, BlockPos pos,
+                                      ColoredFenceGate coloredStairs) {
+        if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.NORMAL_PAINTBRUSH) {
+
+        } else {
+            if (worldIn.getBlockState(pos).getBlock() == coloredStairs.replace) {
+                BlockState blockState = worldIn.getBlockState(pos);
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.BLACK_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                            .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
+                            .with(FenceGateBlock.field_11026, blockState.get(FenceGateBlock.field_11026))
+                            .with(FenceGateBlock.field_11021, blockState.get(FenceGateBlock.field_11021))
+                            .with(FenceGateBlock.field_11024, blockState.get(FenceGateBlock.field_11024)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.RED_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.red.getStateFactory().getDefaultState()
+                            .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
+                            .with(FenceGateBlock.field_11026, blockState.get(FenceGateBlock.field_11026))
+                            .with(FenceGateBlock.field_11021, blockState.get(FenceGateBlock.field_11021))
+                            .with(FenceGateBlock.field_11024, blockState.get(FenceGateBlock.field_11024)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.GREEN_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.green.getStateFactory().getDefaultState()
+                            .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
+                            .with(FenceGateBlock.field_11026, blockState.get(FenceGateBlock.field_11026))
+                            .with(FenceGateBlock.field_11021, blockState.get(FenceGateBlock.field_11021))
+                            .with(FenceGateBlock.field_11024, blockState.get(FenceGateBlock.field_11024)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.BROWN_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.brown.getStateFactory().getDefaultState()
+                            .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
+                            .with(FenceGateBlock.field_11026, blockState.get(FenceGateBlock.field_11026))
+                            .with(FenceGateBlock.field_11021, blockState.get(FenceGateBlock.field_11021))
+                            .with(FenceGateBlock.field_11024, blockState.get(FenceGateBlock.field_11024)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.BLUE_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.blue.getStateFactory().getDefaultState()
+                            .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
+                            .with(FenceGateBlock.field_11026, blockState.get(FenceGateBlock.field_11026))
+                            .with(FenceGateBlock.field_11021, blockState.get(FenceGateBlock.field_11021))
+                            .with(FenceGateBlock.field_11024, blockState.get(FenceGateBlock.field_11024)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.PURPLE_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.purple.getStateFactory().getDefaultState()
+                            .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
+                            .with(FenceGateBlock.field_11026, blockState.get(FenceGateBlock.field_11026))
+                            .with(FenceGateBlock.field_11021, blockState.get(FenceGateBlock.field_11021))
+                            .with(FenceGateBlock.field_11024, blockState.get(FenceGateBlock.field_11024)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.CYAN_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.cyan.getStateFactory().getDefaultState()
+                            .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
+                            .with(FenceGateBlock.field_11026, blockState.get(FenceGateBlock.field_11026))
+                            .with(FenceGateBlock.field_11021, blockState.get(FenceGateBlock.field_11021))
+                            .with(FenceGateBlock.field_11024, blockState.get(FenceGateBlock.field_11024)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.LIGHT_GRAY_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.lightgray.getStateFactory().getDefaultState()
+                            .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
+                            .with(FenceGateBlock.field_11026, blockState.get(FenceGateBlock.field_11026))
+                            .with(FenceGateBlock.field_11021, blockState.get(FenceGateBlock.field_11021))
+                            .with(FenceGateBlock.field_11024, blockState.get(FenceGateBlock.field_11024)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.GRAY_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.gray.getStateFactory().getDefaultState()
+                            .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
+                            .with(FenceGateBlock.field_11026, blockState.get(FenceGateBlock.field_11026))
+                            .with(FenceGateBlock.field_11021, blockState.get(FenceGateBlock.field_11021))
+                            .with(FenceGateBlock.field_11024, blockState.get(FenceGateBlock.field_11024)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.PINK_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.pink.getStateFactory().getDefaultState()
+                            .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
+                            .with(FenceGateBlock.field_11026, blockState.get(FenceGateBlock.field_11026))
+                            .with(FenceGateBlock.field_11021, blockState.get(FenceGateBlock.field_11021))
+                            .with(FenceGateBlock.field_11024, blockState.get(FenceGateBlock.field_11024)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.LIME_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.lime.getStateFactory().getDefaultState()
+                            .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
+                            .with(FenceGateBlock.field_11026, blockState.get(FenceGateBlock.field_11026))
+                            .with(FenceGateBlock.field_11021, blockState.get(FenceGateBlock.field_11021))
+                            .with(FenceGateBlock.field_11024, blockState.get(FenceGateBlock.field_11024)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.YELLOW_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.yellow.getStateFactory().getDefaultState()
+                            .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
+                            .with(FenceGateBlock.field_11026, blockState.get(FenceGateBlock.field_11026))
+                            .with(FenceGateBlock.field_11021, blockState.get(FenceGateBlock.field_11021))
+                            .with(FenceGateBlock.field_11024, blockState.get(FenceGateBlock.field_11024)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.LIGHT_BLUE_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.lightblue.getStateFactory().getDefaultState()
+                            .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
+                            .with(FenceGateBlock.field_11026, blockState.get(FenceGateBlock.field_11026))
+                            .with(FenceGateBlock.field_11021, blockState.get(FenceGateBlock.field_11021))
+                            .with(FenceGateBlock.field_11024, blockState.get(FenceGateBlock.field_11024)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.MAGENTA_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.magenta.getStateFactory().getDefaultState()
+                            .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
+                            .with(FenceGateBlock.field_11026, blockState.get(FenceGateBlock.field_11026))
+                            .with(FenceGateBlock.field_11021, blockState.get(FenceGateBlock.field_11021))
+                            .with(FenceGateBlock.field_11024, blockState.get(FenceGateBlock.field_11024)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.ORANGE_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.orange.getStateFactory().getDefaultState()
+                            .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
+                            .with(FenceGateBlock.field_11026, blockState.get(FenceGateBlock.field_11026))
+                            .with(FenceGateBlock.field_11021, blockState.get(FenceGateBlock.field_11021))
+                            .with(FenceGateBlock.field_11024, blockState.get(FenceGateBlock.field_11024)));
+                    usedpaintbrush(player);
+                }
+                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.WHITE_PAINTBRUSH) {
+                    worldIn.setBlockState(pos, coloredStairs.white.getStateFactory().getDefaultState()
+                            .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
+                            .with(FenceGateBlock.field_11026, blockState.get(FenceGateBlock.field_11026))
+                            .with(FenceGateBlock.field_11021, blockState.get(FenceGateBlock.field_11021))
+                            .with(FenceGateBlock.field_11024, blockState.get(FenceGateBlock.field_11024)));
                     usedpaintbrush(player);
                 }
             }

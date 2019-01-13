@@ -1,9 +1,6 @@
 package arthurbambou.paintingmod.utils;
 
-import arthurbambou.paintingmod.api.ColoredBlock;
-import arthurbambou.paintingmod.api.ColoredSlab;
-import arthurbambou.paintingmod.api.ColoredStairs;
-import arthurbambou.paintingmod.api.ColoredWall;
+import arthurbambou.paintingmod.api.*;
 import net.minecraft.block.*;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
@@ -114,6 +111,34 @@ public class UnPaintFunctions {
                     .with(HorizontalConnectedBlock.SOUTH, blockState.get(HorizontalConnectedBlock.SOUTH))
                     .with(HorizontalConnectedBlock.WATERLOGGED, blockState.get(HorizontalConnectedBlock.WATERLOGGED))
                     .with(HorizontalConnectedBlock.WEST, blockState.get(HorizontalConnectedBlock.WEST)));
+            itemStack.setDamage(itemStack.getDamage());
+        }
+    }
+
+    public static void unpaintfencegate(World worldIn, BlockPos pos, ColoredFenceGate coloredStairs, ItemStack itemStack) {
+        if (worldIn.getBlockState(pos).getBlock() == coloredStairs.black ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.blue ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.brown ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.cyan ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.gray ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.green ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.lightblue ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.lightgray ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.lime ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.magenta ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.orange ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.pink ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.purple ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.red ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.white ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.yellow) {
+
+            BlockState blockState = worldIn.getBlockState(pos);
+            worldIn.setBlockState(pos, coloredStairs.replace.getStateFactory().getDefaultState()
+                    .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
+                    .with(FenceGateBlock.field_11026, blockState.get(FenceGateBlock.field_11026))
+                    .with(FenceGateBlock.field_11021, blockState.get(FenceGateBlock.field_11021))
+                    .with(FenceGateBlock.field_11024, blockState.get(FenceGateBlock.field_11024)));
             itemStack.setDamage(itemStack.getDamage());
         }
     }
