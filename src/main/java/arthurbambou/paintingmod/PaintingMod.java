@@ -16,12 +16,12 @@ public class PaintingMod implements ModInitializer {
 	public static final ItemGroup MOD_ITEMS = FabricItemGroupBuilder.build(new Identifier("paintingmod:mod_items"), () -> new ItemStack(ModItems.NORMAL_PAINTBRUSH));
 	public static final ItemGroup MOD_STAIRS = FabricItemGroupBuilder.build(new Identifier("paintingmod:mod_stairs"), () -> new ItemStack(ModBlocks.PURPUR_STAIRS.cyan));
 	public static final ItemGroup MOD_SLABS = FabricItemGroupBuilder.build(new Identifier("paintingmod:mod_slabs"), () -> new ItemStack(ModBlocks.STONE_BRICK_SLAB.cyan));
-//	public static final ItemGroup MOD_WALLS = FabricItemGroupBuilder.build(new Identifier("paintingmod:mod_walls"), () -> new ItemStack(ModBlocks.END_STONE_BRICK_WALL.cyan));
+	public static final ItemGroup MOD_WALLS = FabricItemGroupBuilder.build(new Identifier("paintingmod:mod_walls"), () -> new ItemStack(ModBlocks.END_STONE_BRICK_WALL.cyan));
 
 	public static final ItemGroup ADDON_BLOCKS = FabricItemGroupBuilder.build(new Identifier("paintingmod:addon_blocks"), () -> new ItemStack(ModBlocks.STONE.red));
 	public static final ItemGroup ADDON_STAIRS = FabricItemGroupBuilder.build(new Identifier("paintingmod:addon_stairs"), () -> new ItemStack(ModBlocks.PURPUR_STAIRS.red));
 	public static final ItemGroup ADDON_SLABS = FabricItemGroupBuilder.build(new Identifier("paintingmod:addon_slabs"), () -> new ItemStack(ModBlocks.STONE_BRICK_SLAB.red));
-//	public static final ItemGroup ADDON_WALLS = FabricItemGroupBuilder.build(new Identifier("paintingmod:addon_walls"), () -> new ItemStack(ModBlocks.END_STONE_BRICK_WALL.red));
+	public static final ItemGroup ADDON_WALLS = FabricItemGroupBuilder.build(new Identifier("paintingmod:addon_walls"), () -> new ItemStack(ModBlocks.END_STONE_BRICK_WALL.red));
 
 	@Override
 	public void onInitialize() {
