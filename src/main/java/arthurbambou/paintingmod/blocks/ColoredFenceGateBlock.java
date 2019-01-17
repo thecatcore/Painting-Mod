@@ -12,9 +12,9 @@ public class ColoredFenceGateBlock extends FenceGateBlock {
         super(block$Settings_1);
         Registry.BLOCK.register(new Identifier(modID, name), this);
         if (modID == PaintingMod.MODID) {
-            Registry.ITEM.register(new Identifier(modID, name), new BlockItem(this, new Item.Settings().itemGroup(PaintingMod.MOD_SLABS)));
+//            Registry.ITEM.register(new Identifier(modID, name), new BlockItem(this, new Item.Settings().itemGroup(PaintingMod.MOD_SLABS)));
         } else {
-            Registry.ITEM.register(new Identifier(modID, name), new BlockItem(this, new Item.Settings().itemGroup(PaintingMod.ADDON_SLABS)));
+//            Registry.ITEM.register(new Identifier(modID, name), new BlockItem(this, new Item.Settings().itemGroup(PaintingMod.ADDON_SLABS)));
         }
     }
 }

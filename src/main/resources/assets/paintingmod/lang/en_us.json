@@ -44,15 +44,17 @@
     "item.paintingmod.orange_paintbrush": "Paintbrush with orange paint",
     "item.paintingmod.white_paintbrush": "Paintbrush with white paint",
 
-    "_comment": "GUI",
+    "_comment": "Item Groups",
     "itemGroup.paintingmod.mod_items": "PaintingMod Items",
     "itemGroup.paintingmod.mod_blocks": "PaintingMod Blocks",
     "itemGroup.paintingmod.mod_stairs": "PaintingMod Stairs",
     "itemGroup.paintingmod.mod_slabs": "PaintingMod Slabs",
+    "itemGroup.paintingmod.mod_walls": "PaintingMod Walls",
 
     "itemGroup.paintingmod.addon_blocks": "PaintingMod Addon Blocks",
     "itemGroup.paintingmod.addon_stairs": "PaintingMod Addon Stairs",
     "itemGroup.paintingmod.addon_slabs": "PaintingMod Addon Slabs",
+    "itemGroup.paintingmod.addon_walls": "PaintingMod Addon Walls",
 
     "_comment": "Tools",
     "item.paintingmod.hammer": "Hammer",
