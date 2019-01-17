@@ -2,7 +2,7 @@
   "id": "paintingmod",
   "name": "Painting Mod",
   "description": "A Minecraft mod that add the possiblity to paint any bloc in any Vanilla dye color !",
-  "version": "0.2.0",
+  "version": "0.3.0.0",
   "side": "universal",
   "initializer": "arthurbambou.paintingmod.PaintingMod",
   "requires": {
