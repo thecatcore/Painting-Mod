@@ -23,39 +23,39 @@ for (var i = 0; blocks.length > i; i++) {
         var blockstate = {
             variants: {}
         }
-        blockstate.variants["facing=south,in_wall=false,open=false,powered=true"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate", uvlock: true}
-        blockstate.variants["facing=west,in_wall=false,open=false,powered=true"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate", y: 90, uvlock: true}
-        blockstate.variants["facing=north,in_wall=false,open=false,powered=true"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate", y: 180, uvlock: true}
-        blockstate.variants["facing=east,in_wall=false,open=false,powered=true"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate", y: 270, uvlock: true}
-        blockstate.variants["facing=south,in_wall=false,open=true,powered=true"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate_open", uvlock: true}
-        blockstate.variants["facing=west,in_wall=false,open=true,powered=true"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate_open", y: 90, uvlock: true}
-        blockstate.variants["facing=north,in_wall=false,open=true,powered=true"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate_open", y: 180, uvlock: true}
-        blockstate.variants["facing=east,in_wall=false,open=true,powered=true"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate_open", y: 270, uvlock: true}
-        blockstate.variants["facing=south,in_wall=true,open=false,powered=true"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate_wall", uvlock: true}
-        blockstate.variants["facing=west,in_wall=true,open=false,powered=true"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate_wall", y: 90, uvlock: true}
-        blockstate.variants["facing=north,in_wall=true,open=false,powered=true"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate_wall", uvlock: true, y: 180}
-        blockstate.variants["facing=east,in_wall=true,open=false,powered=true"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate_wall", y: 270, uvlock: true}
-        blockstate.variants["facing=south,in_wall=true,open=true,powered=true"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate_wall_open", uvlock: true}
-        blockstate.variants["facing=west,in_wall=true,open=true,powered=true"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate_wall_open", y: 90, uvlock: true}
-        blockstate.variants["facing=north,in_wall=true,open=true,powered=true"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate_wall_open", y: 180, uvlock: true}
-        blockstate.variants["facing=east,in_wall=true,open=true,powered=true"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate_wall_open", y: 270, uvlock: true}
+        blockstate.variants["facing=south,in_wall=false,open=false,powered=true"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate", uvlock: true}
+        blockstate.variants["facing=west,in_wall=false,open=false,powered=true"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate", y: 90, uvlock: true}
+        blockstate.variants["facing=north,in_wall=false,open=false,powered=true"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate", y: 180, uvlock: true}
+        blockstate.variants["facing=east,in_wall=false,open=false,powered=true"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate", y: 270, uvlock: true}
+        blockstate.variants["facing=south,in_wall=false,open=true,powered=true"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate_open", uvlock: true}
+        blockstate.variants["facing=west,in_wall=false,open=true,powered=true"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate_open", y: 90, uvlock: true}
+        blockstate.variants["facing=north,in_wall=false,open=true,powered=true"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate_open", y: 180, uvlock: true}
+        blockstate.variants["facing=east,in_wall=false,open=true,powered=true"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate_open", y: 270, uvlock: true}
+        blockstate.variants["facing=south,in_wall=true,open=false,powered=true"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate_wall", uvlock: true}
+        blockstate.variants["facing=west,in_wall=true,open=false,powered=true"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate_wall", y: 90, uvlock: true}
+        blockstate.variants["facing=north,in_wall=true,open=false,powered=true"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate_wall", uvlock: true, y: 180}
+        blockstate.variants["facing=east,in_wall=true,open=false,powered=true"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate_wall", y: 270, uvlock: true}
+        blockstate.variants["facing=south,in_wall=true,open=true,powered=true"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate_wall_open", uvlock: true}
+        blockstate.variants["facing=west,in_wall=true,open=true,powered=true"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate_wall_open", y: 90, uvlock: true}
+        blockstate.variants["facing=north,in_wall=true,open=true,powered=true"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate_wall_open", y: 180, uvlock: true}
+        blockstate.variants["facing=east,in_wall=true,open=true,powered=true"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate_wall_open", y: 270, uvlock: true}
 
-        blockstate.variants["facing=south,in_wall=false,open=false,powered=false"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate", uvlock: true}
-        blockstate.variants["facing=west,in_wall=false,open=false,powered=false"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate", y: 90, uvlock: true}
-        blockstate.variants["facing=north,in_wall=false,open=false,powered=false"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate", y: 180, uvlock: true}
-        blockstate.variants["facing=east,in_wall=false,open=false,powered=false"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate", y: 270, uvlock: true}
-        blockstate.variants["facing=south,in_wall=false,open=true,powered=false"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate_open", uvlock: true}
-        blockstate.variants["facing=west,in_wall=false,open=true,powered=false"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate_open", y: 90, uvlock: true}
-        blockstate.variants["facing=north,in_wall=false,open=true,powered=false"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate_open", y: 180, uvlock: true}
-        blockstate.variants["facing=east,in_wall=false,open=true,powered=false"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate_open", y: 270, uvlock: true}
-        blockstate.variants["facing=south,in_wall=true,open=false,powered=false"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate_wall", uvlock: true}
-        blockstate.variants["facing=west,in_wall=true,open=false,powered=false"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate_wall", y: 90, uvlock: true}
-        blockstate.variants["facing=north,in_wall=true,open=false,powered=false"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate_wall", uvlock: true, y: 180}
-        blockstate.variants["facing=east,in_wall=true,open=false,powered=false"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate_wall", y: 270, uvlock: true}
-        blockstate.variants["facing=south,in_wall=true,open=true,powered=false"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate_wall_open", uvlock: true}
-        blockstate.variants["facing=west,in_wall=true,open=true,powered=false"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate_wall_open", y: 90, uvlock: true}
-        blockstate.variants["facing=north,in_wall=true,open=true,powered=false"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate_wall_open", y: 180, uvlock: true}
-        blockstate.variants["facing=east,in_wall=true,open=true,powered=false"] = {model: "paintingmod:" + colors[a] + "_" + blocks[i] + "_fence_gate_wall_open", y: 270, uvlock: true}
+        blockstate.variants["facing=south,in_wall=false,open=false,powered=false"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate", uvlock: true}
+        blockstate.variants["facing=west,in_wall=false,open=false,powered=false"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate", y: 90, uvlock: true}
+        blockstate.variants["facing=north,in_wall=false,open=false,powered=false"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate", y: 180, uvlock: true}
+        blockstate.variants["facing=east,in_wall=false,open=false,powered=false"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate", y: 270, uvlock: true}
+        blockstate.variants["facing=south,in_wall=false,open=true,powered=false"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate_open", uvlock: true}
+        blockstate.variants["facing=west,in_wall=false,open=true,powered=false"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate_open", y: 90, uvlock: true}
+        blockstate.variants["facing=north,in_wall=false,open=true,powered=false"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate_open", y: 180, uvlock: true}
+        blockstate.variants["facing=east,in_wall=false,open=true,powered=false"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate_open", y: 270, uvlock: true}
+        blockstate.variants["facing=south,in_wall=true,open=false,powered=false"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate_wall", uvlock: true}
+        blockstate.variants["facing=west,in_wall=true,open=false,powered=false"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate_wall", y: 90, uvlock: true}
+        blockstate.variants["facing=north,in_wall=true,open=false,powered=false"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate_wall", uvlock: true, y: 180}
+        blockstate.variants["facing=east,in_wall=true,open=false,powered=false"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate_wall", y: 270, uvlock: true}
+        blockstate.variants["facing=south,in_wall=true,open=true,powered=false"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate_wall_open", uvlock: true}
+        blockstate.variants["facing=west,in_wall=true,open=true,powered=false"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate_wall_open", y: 90, uvlock: true}
+        blockstate.variants["facing=north,in_wall=true,open=true,powered=false"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate_wall_open", y: 180, uvlock: true}
+        blockstate.variants["facing=east,in_wall=true,open=true,powered=false"] = {model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_fence_gate_wall_open", y: 270, uvlock: true}
 
 
         fs.writeFile(path.join(blockstatepath, colors[a] + "_" + blocks[i] + "_fence_gate.json"), JSON.stringify(blockstate), (err) => {
