@@ -1,4 +1,9 @@
-Version 0.1.0.0 Fabric 19w02a
+Version 0.2.0.0 Fabric 15w50a-19w02a-19w03a
+
+Port to the latest snapshot (19w03a).
+Add Colored Slabs and Walls
+
+Version 0.1.0.0 Fabric 18w50a-19w02a
 
 Port to the latest snapshot (19w02a) and change versioning.
 New Versioning definition :
