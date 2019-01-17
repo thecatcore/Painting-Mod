@@ -28,7 +28,7 @@ public class ColoredWallBlock extends WallBlock {
 
     private boolean method_16704(BlockState blockState_1, boolean boolean_1, Direction direction_1) {
         Block block_1 = blockState_1.getBlock();
-        boolean boolean_2 = block_1 instanceof WallBlock || block_1 instanceof FenceGateBlock && FenceGateBlock.method_16703(blockState_1, direction_1);
+        boolean boolean_2 = block_1 instanceof ColoredWallBlock || block_1 instanceof FenceGateBlock && FenceGateBlock.method_16703(blockState_1, direction_1);
         return !method_10837(block_1) && boolean_1 || boolean_2;
     }
 
