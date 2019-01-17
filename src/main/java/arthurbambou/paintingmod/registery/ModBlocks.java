@@ -361,12 +361,12 @@ public class ModBlocks {
         END_STONE_BRICK_WALL = new ColoredWall("end_stone_brick_wall", Blocks.END_STONE_BRICK_WALL);
         DIORITE_WALL = new ColoredWall("diorite_wall", Blocks.DIORITE_WALL);
 
-//        OAK_PLANK_FENCE_GATE = new ColoredFenceGate("oak_plank_fence_gate", Blocks.OAK_FENCE_GATE);
-//        SPRUCE_PLANK_FENCE_GATE = new ColoredFenceGate("spruce_plank_fence_gate", Blocks.SPRUCE_FENCE_GATE);
-//        BIRCH_PLANK_FENCE_GATE = new ColoredFenceGate("birch_plank_fence_gate", Blocks.BIRCH_FENCE_GATE);
-//        JUNGLE_PLANK_FENCE_GATE = new ColoredFenceGate("jungle_plank_fence_gate", Blocks.JUNGLE_FENCE_GATE);
-//        ACACIA_PLANK_FENCE_GATE = new ColoredFenceGate("acacia_plank_fence_gate", Blocks.ACACIA_FENCE_GATE);
-//        DARK_OAK_PLANK_FENCE_GATE = new ColoredFenceGate("dark_oak_plank_fence_gate", Blocks.DARK_OAK_FENCE_GATE);
+        OAK_PLANK_FENCE_GATE = new ColoredFenceGate("oak_plank_fence_gate", Blocks.OAK_FENCE_GATE);
+        SPRUCE_PLANK_FENCE_GATE = new ColoredFenceGate("spruce_plank_fence_gate", Blocks.SPRUCE_FENCE_GATE);
+        BIRCH_PLANK_FENCE_GATE = new ColoredFenceGate("birch_plank_fence_gate", Blocks.BIRCH_FENCE_GATE);
+        JUNGLE_PLANK_FENCE_GATE = new ColoredFenceGate("jungle_plank_fence_gate", Blocks.JUNGLE_FENCE_GATE);
+        ACACIA_PLANK_FENCE_GATE = new ColoredFenceGate("acacia_plank_fence_gate", Blocks.ACACIA_FENCE_GATE);
+        DARK_OAK_PLANK_FENCE_GATE = new ColoredFenceGate("dark_oak_plank_fence_gate", Blocks.DARK_OAK_FENCE_GATE);
 
         for (ColoredBlock coloredBlock : COLORED_BLOCKS) {
             coloredBlock.createBlocks();

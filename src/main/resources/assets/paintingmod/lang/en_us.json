@@ -50,11 +50,13 @@
     "itemGroup.paintingmod.mod_stairs": "PaintingMod Stairs",
     "itemGroup.paintingmod.mod_slabs": "PaintingMod Slabs",
     "itemGroup.paintingmod.mod_walls": "PaintingMod Walls",
+    "itemGroup.paintingmod.mod_fence_gates": "PaintingMod Fence Gates",
 
     "itemGroup.paintingmod.addon_blocks": "PaintingMod Addon Blocks",
     "itemGroup.paintingmod.addon_stairs": "PaintingMod Addon Stairs",
     "itemGroup.paintingmod.addon_slabs": "PaintingMod Addon Slabs",
     "itemGroup.paintingmod.addon_walls": "PaintingMod Addon Walls",
+    "itemGroup.paintingmod.addon_fence_gates": "PaintingMod Addon Fence Gates",
 
     "_comment": "Tools",
     "item.paintingmod.hammer": "Hammer",
