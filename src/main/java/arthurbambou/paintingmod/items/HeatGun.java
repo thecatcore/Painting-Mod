@@ -27,6 +27,9 @@ public class HeatGun extends ItemBase {
         for (ColoredFenceGate coloredFenceGate : Registry.getColoredFenceGateList()) {
             UnPaintFunctions.unpaintfencegate(var1.getWorld(), var1.getPos(), coloredFenceGate, var1.getItemStack());
         }
+        for (ColoredFence coloredFence : Registry.getColoredFenceList()) {
+            UnPaintFunctions.unpaintfence(var1.getWorld(), var1.getPos(), coloredFence, var1.getItemStack());
+        }
         return super.useOnBlock(var1);
     }
 }

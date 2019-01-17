@@ -17,6 +17,7 @@ public class ModBlocks {
     public static final List<ColoredSlab> COLORED_SLABS = new ArrayList<ColoredSlab>();
     public static final List<ColoredWall> COLORED_WALLS = new ArrayList<ColoredWall>();
     public static final List<ColoredFenceGate> COLORED_FENCE_GATES = new ArrayList<ColoredFenceGate>();
+    public static final List<ColoredFence> COLORED_FENCES = new ArrayList<ColoredFence>();
 
     public static Block SOGGY_CLAY;
 
@@ -191,6 +192,14 @@ public class ModBlocks {
     public static ColoredFenceGate JUNGLE_PLANK_FENCE_GATE;
     public static ColoredFenceGate ACACIA_PLANK_FENCE_GATE;
     public static ColoredFenceGate DARK_OAK_PLANK_FENCE_GATE;
+
+    public static ColoredFence OAK_PLANK_FENCE;
+    public static ColoredFence SPRUCE_PLANK_FENCE;
+    public static ColoredFence BIRCH_PLANK_FENCE;
+    public static ColoredFence JUNGLE_PLANK_FENCE;
+    public static ColoredFence ACACIA_PLANK_FENCE;
+    public static ColoredFence DARK_OAK_PLANK_FENCE;
+    public static ColoredFence NETHER_BRICK_FENCE;
 
     public static void init() {
         SOGGY_CLAY = new SoggyClay(FabricBlockSettings.of(Material.SAND).sounds(BlockSoundGroup.SAND).build(), "soggy_clay");
@@ -368,6 +377,14 @@ public class ModBlocks {
         ACACIA_PLANK_FENCE_GATE = new ColoredFenceGate("acacia_plank_fence_gate", Blocks.ACACIA_FENCE_GATE);
         DARK_OAK_PLANK_FENCE_GATE = new ColoredFenceGate("dark_oak_plank_fence_gate", Blocks.DARK_OAK_FENCE_GATE);
 
+        OAK_PLANK_FENCE = new ColoredFence("oak_plank_fence", Blocks.OAK_FENCE);
+        SPRUCE_PLANK_FENCE = new ColoredFence("spruce_plank_fence", Blocks.SPRUCE_FENCE);
+        BIRCH_PLANK_FENCE = new ColoredFence("birch_plank_fence", Blocks.BIRCH_FENCE);
+        JUNGLE_PLANK_FENCE = new ColoredFence("jungle_plank_fence", Blocks.JUNGLE_FENCE);
+        ACACIA_PLANK_FENCE = new ColoredFence("acacia_plank_fence", Blocks.ACACIA_FENCE);
+        DARK_OAK_PLANK_FENCE = new ColoredFence("dark_oak_plank_fence", Blocks.DARK_OAK_FENCE);
+        NETHER_BRICK_FENCE = new ColoredFence("nether_brick_fence", Blocks.NETHER_BRICK_FENCE);
+
         for (ColoredBlock coloredBlock : COLORED_BLOCKS) {
             coloredBlock.createBlocks();
         }
@@ -386,6 +403,10 @@ public class ModBlocks {
 
         for (ColoredFenceGate coloredFenceGate : COLORED_FENCE_GATES) {
             coloredFenceGate.createBlocks();
+        }
+
+        for (ColoredFence coloredFence : COLORED_FENCES) {
+            coloredFence.createBlocks();
         }
     }
 }
