@@ -6,6 +6,6 @@
   "side": "universal",
   "initializer": "arthurbambou.paintingmod.PaintingMod",
   "requires": {
-    "fabric": "*"
+    "fabric": "0.1.4+"
   }
 }
