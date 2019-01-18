@@ -821,150 +821,150 @@ public class PaintFunctions {
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.RED_PAINTBRUSH) {
                     if (worldIn.getBlockState(pos).getBlock() instanceof PressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.red.getStateFactory().getDefaultState()
                                 .with(PressurePlateBlock.POWERED, blockState.get(PressurePlateBlock.POWERED)));
                     } else if (worldIn.getBlockState(pos).getBlock() instanceof WeightedPressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.red.getStateFactory().getDefaultState()
                                 .with(WeightedPressurePlateBlock.POWER, blockState.get(WeightedPressurePlateBlock.POWER)));
                     }
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.GREEN_PAINTBRUSH) {
                     if (worldIn.getBlockState(pos).getBlock() instanceof PressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.green.getStateFactory().getDefaultState()
                                 .with(PressurePlateBlock.POWERED, blockState.get(PressurePlateBlock.POWERED)));
                     } else if (worldIn.getBlockState(pos).getBlock() instanceof WeightedPressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.green.getStateFactory().getDefaultState()
                                 .with(WeightedPressurePlateBlock.POWER, blockState.get(WeightedPressurePlateBlock.POWER)));
                     }
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.BROWN_PAINTBRUSH) {
                     if (worldIn.getBlockState(pos).getBlock() instanceof PressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.brown.getStateFactory().getDefaultState()
                                 .with(PressurePlateBlock.POWERED, blockState.get(PressurePlateBlock.POWERED)));
                     } else if (worldIn.getBlockState(pos).getBlock() instanceof WeightedPressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.brown.getStateFactory().getDefaultState()
                                 .with(WeightedPressurePlateBlock.POWER, blockState.get(WeightedPressurePlateBlock.POWER)));
                     }
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.BLUE_PAINTBRUSH) {
                     if (worldIn.getBlockState(pos).getBlock() instanceof PressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.blue.getStateFactory().getDefaultState()
                                 .with(PressurePlateBlock.POWERED, blockState.get(PressurePlateBlock.POWERED)));
                     } else if (worldIn.getBlockState(pos).getBlock() instanceof WeightedPressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.blue.getStateFactory().getDefaultState()
                                 .with(WeightedPressurePlateBlock.POWER, blockState.get(WeightedPressurePlateBlock.POWER)));
                     }
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.PURPLE_PAINTBRUSH) {
                     if (worldIn.getBlockState(pos).getBlock() instanceof PressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.purple.getStateFactory().getDefaultState()
                                 .with(PressurePlateBlock.POWERED, blockState.get(PressurePlateBlock.POWERED)));
                     } else if (worldIn.getBlockState(pos).getBlock() instanceof WeightedPressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.purple.getStateFactory().getDefaultState()
                                 .with(WeightedPressurePlateBlock.POWER, blockState.get(WeightedPressurePlateBlock.POWER)));
                     }
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.CYAN_PAINTBRUSH) {
                     if (worldIn.getBlockState(pos).getBlock() instanceof PressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.cyan.getStateFactory().getDefaultState()
                                 .with(PressurePlateBlock.POWERED, blockState.get(PressurePlateBlock.POWERED)));
                     } else if (worldIn.getBlockState(pos).getBlock() instanceof WeightedPressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.cyan.getStateFactory().getDefaultState()
                                 .with(WeightedPressurePlateBlock.POWER, blockState.get(WeightedPressurePlateBlock.POWER)));
                     }
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.LIGHT_GRAY_PAINTBRUSH) {
                     if (worldIn.getBlockState(pos).getBlock() instanceof PressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.lightgray.getStateFactory().getDefaultState()
                                 .with(PressurePlateBlock.POWERED, blockState.get(PressurePlateBlock.POWERED)));
                     } else if (worldIn.getBlockState(pos).getBlock() instanceof WeightedPressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.lightgray.getStateFactory().getDefaultState()
                                 .with(WeightedPressurePlateBlock.POWER, blockState.get(WeightedPressurePlateBlock.POWER)));
                     }
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.GRAY_PAINTBRUSH) {
                     if (worldIn.getBlockState(pos).getBlock() instanceof PressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.gray.getStateFactory().getDefaultState()
                                 .with(PressurePlateBlock.POWERED, blockState.get(PressurePlateBlock.POWERED)));
                     } else if (worldIn.getBlockState(pos).getBlock() instanceof WeightedPressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.gray.getStateFactory().getDefaultState()
                                 .with(WeightedPressurePlateBlock.POWER, blockState.get(WeightedPressurePlateBlock.POWER)));
                     }
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.PINK_PAINTBRUSH) {
                     if (worldIn.getBlockState(pos).getBlock() instanceof PressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.pink.getStateFactory().getDefaultState()
                                 .with(PressurePlateBlock.POWERED, blockState.get(PressurePlateBlock.POWERED)));
                     } else if (worldIn.getBlockState(pos).getBlock() instanceof WeightedPressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.pink.getStateFactory().getDefaultState()
                                 .with(WeightedPressurePlateBlock.POWER, blockState.get(WeightedPressurePlateBlock.POWER)));
                     }
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.LIME_PAINTBRUSH) {
                     if (worldIn.getBlockState(pos).getBlock() instanceof PressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.lime.getStateFactory().getDefaultState()
                                 .with(PressurePlateBlock.POWERED, blockState.get(PressurePlateBlock.POWERED)));
                     } else if (worldIn.getBlockState(pos).getBlock() instanceof WeightedPressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.lime.getStateFactory().getDefaultState()
                                 .with(WeightedPressurePlateBlock.POWER, blockState.get(WeightedPressurePlateBlock.POWER)));
                     }
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.YELLOW_PAINTBRUSH) {
                     if (worldIn.getBlockState(pos).getBlock() instanceof PressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.yellow.getStateFactory().getDefaultState()
                                 .with(PressurePlateBlock.POWERED, blockState.get(PressurePlateBlock.POWERED)));
                     } else if (worldIn.getBlockState(pos).getBlock() instanceof WeightedPressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.yellow.getStateFactory().getDefaultState()
                                 .with(WeightedPressurePlateBlock.POWER, blockState.get(WeightedPressurePlateBlock.POWER)));
                     }
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.LIGHT_BLUE_PAINTBRUSH) {
                     if (worldIn.getBlockState(pos).getBlock() instanceof PressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.lightblue.getStateFactory().getDefaultState()
                                 .with(PressurePlateBlock.POWERED, blockState.get(PressurePlateBlock.POWERED)));
                     } else if (worldIn.getBlockState(pos).getBlock() instanceof WeightedPressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.lightblue.getStateFactory().getDefaultState()
                                 .with(WeightedPressurePlateBlock.POWER, blockState.get(WeightedPressurePlateBlock.POWER)));
                     }
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.MAGENTA_PAINTBRUSH) {
                     if (worldIn.getBlockState(pos).getBlock() instanceof PressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.magenta.getStateFactory().getDefaultState()
                                 .with(PressurePlateBlock.POWERED, blockState.get(PressurePlateBlock.POWERED)));
                     } else if (worldIn.getBlockState(pos).getBlock() instanceof WeightedPressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.magenta.getStateFactory().getDefaultState()
                                 .with(WeightedPressurePlateBlock.POWER, blockState.get(WeightedPressurePlateBlock.POWER)));
                     }
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.ORANGE_PAINTBRUSH) {
                     if (worldIn.getBlockState(pos).getBlock() instanceof PressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.orange.getStateFactory().getDefaultState()
                                 .with(PressurePlateBlock.POWERED, blockState.get(PressurePlateBlock.POWERED)));
                     } else if (worldIn.getBlockState(pos).getBlock() instanceof WeightedPressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.orange.getStateFactory().getDefaultState()
                                 .with(WeightedPressurePlateBlock.POWER, blockState.get(WeightedPressurePlateBlock.POWER)));
                     }
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.WHITE_PAINTBRUSH) {
                     if (worldIn.getBlockState(pos).getBlock() instanceof PressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.white.getStateFactory().getDefaultState()
                                 .with(PressurePlateBlock.POWERED, blockState.get(PressurePlateBlock.POWERED)));
                     } else if (worldIn.getBlockState(pos).getBlock() instanceof WeightedPressurePlateBlock) {
-                        worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        worldIn.setBlockState(pos, coloredStairs.white.getStateFactory().getDefaultState()
                                 .with(WeightedPressurePlateBlock.POWER, blockState.get(WeightedPressurePlateBlock.POWER)));
                     }
                     usedpaintbrush(player);

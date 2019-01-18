@@ -192,10 +192,10 @@ public class UnPaintFunctions {
 
             BlockState blockState = worldIn.getBlockState(pos);
             if (worldIn.getBlockState(pos).getBlock() instanceof PressurePlateBlock) {
-                worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                worldIn.setBlockState(pos, coloredStairs.replace.getStateFactory().getDefaultState()
                         .with(PressurePlateBlock.POWERED, blockState.get(PressurePlateBlock.POWERED)));
             } else if (worldIn.getBlockState(pos).getBlock() instanceof WeightedPressurePlateBlock) {
-                worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                worldIn.setBlockState(pos, coloredStairs.replace.getStateFactory().getDefaultState()
                         .with(WeightedPressurePlateBlock.POWER, blockState.get(WeightedPressurePlateBlock.POWER)));
             }
             itemStack.setDamage(itemStack.getDamage());
