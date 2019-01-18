@@ -171,4 +171,34 @@ public class UnPaintFunctions {
             itemStack.setDamage(itemStack.getDamage());
         }
     }
+
+    public static void unpaintpressureplate(World worldIn, BlockPos pos, ColoredPressurePlate coloredStairs, ItemStack itemStack) {
+        if (worldIn.getBlockState(pos).getBlock() == coloredStairs.black ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.blue ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.brown ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.cyan ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.gray ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.green ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.lightblue ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.lightgray ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.lime ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.magenta ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.orange ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.pink ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.purple ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.red ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.white ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.yellow) {
+
+            BlockState blockState = worldIn.getBlockState(pos);
+            if (worldIn.getBlockState(pos).getBlock() instanceof PressurePlateBlock) {
+                worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        .with(PressurePlateBlock.POWERED, blockState.get(PressurePlateBlock.POWERED)));
+            } else if (worldIn.getBlockState(pos).getBlock() instanceof WeightedPressurePlateBlock) {
+                worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
+                        .with(WeightedPressurePlateBlock.POWER, blockState.get(WeightedPressurePlateBlock.POWER)));
+            }
+            itemStack.setDamage(itemStack.getDamage());
+        }
+    }
 }

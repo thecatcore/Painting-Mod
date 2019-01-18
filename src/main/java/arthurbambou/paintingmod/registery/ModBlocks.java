@@ -6,18 +6,14 @@ import net.fabricmc.fabric.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
+import net.minecraft.block.PressurePlateBlock;
 import net.minecraft.sound.BlockSoundGroup;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ModBlocks {
-    public static final List<ColoredBlock> COLORED_BLOCKS = new ArrayList<ColoredBlock>();
-    public static final List<ColoredStairs> COLORED_STAIRS = new ArrayList<ColoredStairs>();
-    public static final List<ColoredSlab> COLORED_SLABS = new ArrayList<ColoredSlab>();
-    public static final List<ColoredWall> COLORED_WALLS = new ArrayList<ColoredWall>();
-    public static final List<ColoredFenceGate> COLORED_FENCE_GATES = new ArrayList<ColoredFenceGate>();
-    public static final List<ColoredFence> COLORED_FENCES = new ArrayList<ColoredFence>();
+    public static final List<ColoredObject> COLORED_BLOCKS = new ArrayList<ColoredObject>();
 
     public static Block SOGGY_CLAY;
 
@@ -200,6 +196,14 @@ public class ModBlocks {
     public static ColoredFence ACACIA_PLANK_FENCE;
     public static ColoredFence DARK_OAK_PLANK_FENCE;
     public static ColoredFence NETHER_BRICK_FENCE;
+
+    public static ColoredPressurePlate STONE_PRESSURE_PLATE;
+    public static ColoredPressurePlate OAK_PLANK_PRESSURE_PLATE;
+    public static ColoredPressurePlate SPRUCE_PLANK_PRESSURE_PLATE;
+    public static ColoredPressurePlate BIRCH_PLANK_PRESSURE_PLATE;
+    public static ColoredPressurePlate JUNGLE_PLANK_PRESSURE_PLATE;
+    public static ColoredPressurePlate ACACIA_PLANK_PRESSURE_PLATE;
+    public static ColoredPressurePlate DARK_OAK_PLANK_PRESSURE_PLATE;
 
     public static void init() {
         SOGGY_CLAY = new SoggyClay(FabricBlockSettings.of(Material.SAND).sounds(BlockSoundGroup.SAND).build(), "soggy_clay");
@@ -385,28 +389,16 @@ public class ModBlocks {
         DARK_OAK_PLANK_FENCE = new ColoredFence("dark_oak_plank_fence", Blocks.DARK_OAK_FENCE);
         NETHER_BRICK_FENCE = new ColoredFence("nether_brick_fence", Blocks.NETHER_BRICK_FENCE);
 
-        for (ColoredBlock coloredBlock : COLORED_BLOCKS) {
+        STONE_PRESSURE_PLATE = new ColoredPressurePlate("stone_pressure_plate", Blocks.STONE_PRESSURE_PLATE, PressurePlateBlock.Type.STONE);
+        OAK_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("oak_plank_pressure_plate", Blocks.OAK_PRESSURE_PLATE, PressurePlateBlock.Type.WOOD);
+        SPRUCE_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("spruce_plank_pressure_plate", Blocks.SPRUCE_PRESSURE_PLATE, PressurePlateBlock.Type.WOOD);
+        BIRCH_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("birch_plank_pressure_plate", Blocks.BIRCH_PRESSURE_PLATE, PressurePlateBlock.Type.WOOD);
+        JUNGLE_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("jungle_plank_pressure_plate", Blocks.JUNGLE_PRESSURE_PLATE, PressurePlateBlock.Type.WOOD);
+        ACACIA_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("acacia_plank_pressure_plate", Blocks.ACACIA_PRESSURE_PLATE, PressurePlateBlock.Type.WOOD);
+        DARK_OAK_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("dark_oak_plank_pressure_plate", Blocks.DARK_OAK_PRESSURE_PLATE, PressurePlateBlock.Type.WOOD);
+
+        for (ColoredObject coloredBlock : COLORED_BLOCKS) {
             coloredBlock.createBlocks();
-        }
-
-        for (ColoredStairs coloredStairs : COLORED_STAIRS) {
-            coloredStairs.createBlocks();
-        }
-
-        for (ColoredSlab coloredSlab : COLORED_SLABS) {
-            coloredSlab.createBlocks();
-        }
-
-        for (ColoredWall coloredWall : COLORED_WALLS) {
-            coloredWall.createBlocks();
-        }
-
-        for (ColoredFenceGate coloredFenceGate : COLORED_FENCE_GATES) {
-            coloredFenceGate.createBlocks();
-        }
-
-        for (ColoredFence coloredFence : COLORED_FENCES) {
-            coloredFence.createBlocks();
         }
     }
 }

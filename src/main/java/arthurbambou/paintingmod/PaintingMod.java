@@ -1,5 +1,6 @@
 package arthurbambou.paintingmod;
 
+import arthurbambou.paintingmod.api.Registry;
 import arthurbambou.paintingmod.registery.ModBlocks;
 import arthurbambou.paintingmod.registery.ModItems;
 import arthurbambou.paintingmod.registery.ModVillagers;
@@ -17,20 +18,23 @@ public class PaintingMod implements ModInitializer {
 	public static final ItemGroup MOD_STAIRS = FabricItemGroupBuilder.build(new Identifier("paintingmod:mod_stairs"), () -> new ItemStack(ModBlocks.PURPUR_STAIRS.cyan));
 	public static final ItemGroup MOD_SLABS = FabricItemGroupBuilder.build(new Identifier("paintingmod:mod_slabs"), () -> new ItemStack(ModBlocks.STONE_BRICK_SLAB.cyan));
 	public static final ItemGroup MOD_WALLS = FabricItemGroupBuilder.build(new Identifier("paintingmod:mod_walls"), () -> new ItemStack(ModBlocks.END_STONE_BRICK_WALL.cyan));
-	public static final ItemGroup MOD_FENCE_GATES = FabricItemGroupBuilder.build(new Identifier("painting:mod_fence_gates"), () -> new ItemStack(ModBlocks.OAK_PLANK_FENCE_GATE.cyan));
-	public static final ItemGroup MOD_FENCE = FabricItemGroupBuilder.build(new Identifier("painting:mod_fence"), () -> new ItemStack(ModBlocks.OAK_PLANK_FENCE.cyan));
+	public static final ItemGroup MOD_FENCE_GATES = FabricItemGroupBuilder.build(new Identifier("paintingmod:mod_fence_gates"), () -> new ItemStack(ModBlocks.OAK_PLANK_FENCE_GATE.cyan));
+    public static final ItemGroup MOD_FENCE = FabricItemGroupBuilder.build(new Identifier("paintingmod:mod_fence"), () -> new ItemStack(ModBlocks.OAK_PLANK_FENCE.cyan));
+    public static final ItemGroup MOD_PRESSURE_PLATES = FabricItemGroupBuilder.build(new Identifier("paintingmod:mod_pressure_plates"), () -> new ItemStack(ModBlocks.OAK_PLANK_PRESSURE_PLATE.cyan));
 
 	public static final ItemGroup ADDON_BLOCKS = FabricItemGroupBuilder.build(new Identifier("paintingmod:addon_blocks"), () -> new ItemStack(ModBlocks.STONE.red));
 	public static final ItemGroup ADDON_STAIRS = FabricItemGroupBuilder.build(new Identifier("paintingmod:addon_stairs"), () -> new ItemStack(ModBlocks.PURPUR_STAIRS.red));
 	public static final ItemGroup ADDON_SLABS = FabricItemGroupBuilder.build(new Identifier("paintingmod:addon_slabs"), () -> new ItemStack(ModBlocks.STONE_BRICK_SLAB.red));
 	public static final ItemGroup ADDON_WALLS = FabricItemGroupBuilder.build(new Identifier("paintingmod:addon_walls"), () -> new ItemStack(ModBlocks.END_STONE_BRICK_WALL.red));
-	public static final ItemGroup ADDON_FENCE_GATES = FabricItemGroupBuilder.build(new Identifier("painting:addon_fence_gates"), () -> new ItemStack(ModBlocks.OAK_PLANK_FENCE_GATE.red));
-	public static final ItemGroup ADDON_FENCE = FabricItemGroupBuilder.build(new Identifier("painting:addon_fence"), () -> new ItemStack(ModBlocks.OAK_PLANK_FENCE.red));
+	public static final ItemGroup ADDON_FENCE_GATES = FabricItemGroupBuilder.build(new Identifier("paintingmod:addon_fence_gates"), () -> new ItemStack(ModBlocks.OAK_PLANK_FENCE_GATE.red));
+    public static final ItemGroup ADDON_FENCE = FabricItemGroupBuilder.build(new Identifier("paintingmod:addon_fence"), () -> new ItemStack(ModBlocks.OAK_PLANK_FENCE.red));
+    public static final ItemGroup ADDON_PRESSURE_PLATES = FabricItemGroupBuilder.build(new Identifier("paintingmod:addon_pressure_plates"), () -> new ItemStack(ModBlocks.OAK_PLANK_PRESSURE_PLATE.red));
 
 	@Override
 	public void onInitialize() {
 		ModBlocks.init();
 		ModItems.init();
 		ModVillagers.init();
+        Registry.finishRegister();
 	}
 }
