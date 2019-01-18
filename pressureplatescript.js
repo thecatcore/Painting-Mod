@@ -23,8 +23,44 @@ for (var i = 0; blocks.length > i ; i++) {
 
         var blockstate = {}
         blockstate.variants = {}
+        if (blocks[i] === "light_weighted") {
+            blockstate.variants["power=0"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate" }
+            blockstate.variants["power=1"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=2"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=3"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=4"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=5"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=6"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=7"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=8"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=9"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=10"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=11"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=12"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=13"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=14"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=15"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+        } else if (blocks[i] === "heavy_weighted") {
+            blockstate.variants["power=0"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate" }
+            blockstate.variants["power=1"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=2"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=3"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=4"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=5"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=6"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=7"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=8"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=9"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=10"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=11"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=12"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=13"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=14"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+            blockstate.variants["power=15"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+        } else {
         blockstate.variants["powered=false"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate" }
         blockstate.variants["powered=true"] = { model: "paintingmod:block/" + colors[a] + "_" + blocks[i] + "_pressure_plate_down" }
+        }
         fs.writeFile(path.join(blockstatepath, colors[a] + "_" + blocks[i] + "_pressure_plate.json"), JSON.stringify(blockstate), (err) => {
             if (err) {
                 console.log(err)
@@ -41,6 +77,8 @@ for (var i = 0; blocks.length > i ; i++) {
                 .replace("jungle_","")
                 .replace("acacia_","")
                 .replace("dark_", "")
+                .replace("light_weighted","gold_block")
+                .replace("heavy_weighted","iron_block")
             }
         }
         fs.writeFile(path.join(blockmodelpath, colors[a] + "_" + blocks[i] + "_pressure_plate.json"), JSON.stringify(blockmodel), (err) => {

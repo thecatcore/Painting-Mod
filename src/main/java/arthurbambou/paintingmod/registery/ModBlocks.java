@@ -204,6 +204,8 @@ public class ModBlocks {
     public static ColoredPressurePlate JUNGLE_PLANK_PRESSURE_PLATE;
     public static ColoredPressurePlate ACACIA_PLANK_PRESSURE_PLATE;
     public static ColoredPressurePlate DARK_OAK_PLANK_PRESSURE_PLATE;
+    public static ColoredWeightedPressurePlate LIGHT_WEIGHTED_PRESSURE_PLATE;
+    public static ColoredWeightedPressurePlate HEAVY_WEIGHTED_PRESSURE_PLATE;
 
     public static void init() {
         SOGGY_CLAY = new SoggyClay(FabricBlockSettings.of(Material.SAND).sounds(BlockSoundGroup.SAND).build(), "soggy_clay");
@@ -396,6 +398,8 @@ public class ModBlocks {
         JUNGLE_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("jungle_plank_pressure_plate", Blocks.JUNGLE_PRESSURE_PLATE, PressurePlateBlock.Type.WOOD);
         ACACIA_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("acacia_plank_pressure_plate", Blocks.ACACIA_PRESSURE_PLATE, PressurePlateBlock.Type.WOOD);
         DARK_OAK_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("dark_oak_plank_pressure_plate", Blocks.DARK_OAK_PRESSURE_PLATE, PressurePlateBlock.Type.WOOD);
+        LIGHT_WEIGHTED_PRESSURE_PLATE = new ColoredWeightedPressurePlate("light_weighted_pressure_plate", Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE, 15);
+        HEAVY_WEIGHTED_PRESSURE_PLATE = new ColoredWeightedPressurePlate("heavy_weighted_pressure_plate", Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE, 150);
 
         for (ColoredObject coloredBlock : COLORED_BLOCKS) {
             coloredBlock.createBlocks();
