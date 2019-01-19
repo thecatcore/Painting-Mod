@@ -46,6 +46,8 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modCompile "net.fabricmc:fabric:${fabric_api}.+"
+
+	modCompile(files("libs/FabriBlocks-1.0.1.jar"))
 }
 
 github {

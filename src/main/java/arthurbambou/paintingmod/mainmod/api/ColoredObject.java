@@ -1,4 +1,4 @@
-package arthurbambou.paintingmod.api;
+package arthurbambou.paintingmod.mainmod.api;
 
 import net.fabricmc.fabric.block.FabricBlockSettings;
 import net.minecraft.block.Block;

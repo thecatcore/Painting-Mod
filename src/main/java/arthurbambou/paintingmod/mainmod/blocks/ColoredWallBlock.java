@@ -1,13 +1,12 @@
-package arthurbambou.paintingmod.blocks;
+package arthurbambou.paintingmod.mainmod.blocks;
 
-import arthurbambou.paintingmod.PaintingMod;
+import arthurbambou.paintingmod.mainmod.PaintingMod;
 import net.minecraft.block.*;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.block.BlockItem;
-import net.minecraft.tag.BlockTags;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;

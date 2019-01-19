@@ -1,14 +1,10 @@
-package arthurbambou.paintingmod.items;
+package arthurbambou.paintingmod.mainmod.items;
 
-import arthurbambou.paintingmod.api.*;
-import arthurbambou.paintingmod.registery.ModItems;
-import arthurbambou.paintingmod.utils.PaintFunctions;
-import net.minecraft.block.Block;
+import arthurbambou.paintingmod.mainmod.api.*;
+import arthurbambou.paintingmod.mainmod.utils.PaintFunctions;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.util.ActionResult;
-import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 

@@ -1,12 +1,10 @@
-package arthurbambou.paintingmod.api;
+package arthurbambou.paintingmod.mainmod.api;
 
-import arthurbambou.paintingmod.PaintingMod;
-import arthurbambou.paintingmod.blocks.ColoredStairsBlock;
-import arthurbambou.paintingmod.registery.ModBlocks;
-import net.fabricmc.fabric.block.FabricBlockSettings;
+import arthurbambou.paintingmod.mainmod.PaintingMod;
+import arthurbambou.paintingmod.mainmod.blocks.ColoredStairsBlock;
+import arthurbambou.paintingmod.mainmod.registery.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.StairsBlock;
 
 public class ColoredStairs extends ColoredObject {
     private BlockState blockState;

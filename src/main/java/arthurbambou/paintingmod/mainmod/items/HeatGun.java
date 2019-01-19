@@ -1,7 +1,7 @@
-package arthurbambou.paintingmod.items;
+package arthurbambou.paintingmod.mainmod.items;
 
-import arthurbambou.paintingmod.api.*;
-import arthurbambou.paintingmod.utils.UnPaintFunctions;
+import arthurbambou.paintingmod.mainmod.api.*;
+import arthurbambou.paintingmod.mainmod.utils.UnPaintFunctions;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.util.ActionResult;
 
