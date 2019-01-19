@@ -12,9 +12,9 @@ public class ColoredStoneButtonBlock extends StoneButtonBlock {
         super(block$Settings_1);
         Registry.BLOCK.register(new Identifier(modID, name), this);
         if (modID == PaintingMod.MODID) {
-            Registry.ITEM.register(new Identifier(modID, name), new BlockItem(this, new Item.Settings().itemGroup(PaintingMod.MOD_PRESSURE_PLATES)));
+            Registry.ITEM.register(new Identifier(modID, name), new BlockItem(this, new Item.Settings().itemGroup(PaintingMod.MOD_BUTTONS)));
         } else {
-            Registry.ITEM.register(new Identifier(modID, name), new BlockItem(this, new Item.Settings().itemGroup(PaintingMod.ADDON_PRESSURE_PLATES)));
+            Registry.ITEM.register(new Identifier(modID, name), new BlockItem(this, new Item.Settings().itemGroup(PaintingMod.ADDON_BUTTONS)));
         }
     }
 }

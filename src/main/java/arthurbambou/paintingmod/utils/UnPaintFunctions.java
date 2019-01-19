@@ -223,8 +223,7 @@ public class UnPaintFunctions {
             BlockState blockState = worldIn.getBlockState(pos);
             worldIn.setBlockState(pos, coloredStairs.replace.getStateFactory().getDefaultState()
                     .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
-                    .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007))
-                    .with(AbstractButtonBlock.field_10729, blockState.get(AbstractButtonBlock.field_10729)));
+                    .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007)));
             itemStack.setDamage(itemStack.getDamage());
         }
     }

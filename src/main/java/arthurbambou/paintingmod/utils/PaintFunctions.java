@@ -983,113 +983,97 @@ public class PaintFunctions {
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.BLACK_PAINTBRUSH) {
                     worldIn.setBlockState(pos, coloredStairs.black.getStateFactory().getDefaultState()
                             .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
-                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007))
-                            .with(AbstractButtonBlock.field_10729, blockState.get(AbstractButtonBlock.field_10729)));
+                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007)));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.RED_PAINTBRUSH) {
                     worldIn.setBlockState(pos, coloredStairs.red.getStateFactory().getDefaultState()
                             .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
-                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007))
-                            .with(AbstractButtonBlock.field_10729, blockState.get(AbstractButtonBlock.field_10729)));
+                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007)));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.GREEN_PAINTBRUSH) {
                     worldIn.setBlockState(pos, coloredStairs.green.getStateFactory().getDefaultState()
                             .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
-                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007))
-                            .with(AbstractButtonBlock.field_10729, blockState.get(AbstractButtonBlock.field_10729)));
+                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007)));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.BROWN_PAINTBRUSH) {
                     worldIn.setBlockState(pos, coloredStairs.brown.getStateFactory().getDefaultState()
                             .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
-                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007))
-                            .with(AbstractButtonBlock.field_10729, blockState.get(AbstractButtonBlock.field_10729)));
+                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007)));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.BLUE_PAINTBRUSH) {
                     worldIn.setBlockState(pos, coloredStairs.blue.getStateFactory().getDefaultState()
                             .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
-                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007))
-                            .with(AbstractButtonBlock.field_10729, blockState.get(AbstractButtonBlock.field_10729)));
+                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007)));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.PURPLE_PAINTBRUSH) {
                     worldIn.setBlockState(pos, coloredStairs.purple.getStateFactory().getDefaultState()
                             .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
-                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007))
-                            .with(AbstractButtonBlock.field_10729, blockState.get(AbstractButtonBlock.field_10729)));
+                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007)));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.CYAN_PAINTBRUSH) {
                     worldIn.setBlockState(pos, coloredStairs.cyan.getStateFactory().getDefaultState()
                             .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
-                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007))
-                            .with(AbstractButtonBlock.field_10729, blockState.get(AbstractButtonBlock.field_10729)));
+                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007)));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.LIGHT_GRAY_PAINTBRUSH) {
                     worldIn.setBlockState(pos, coloredStairs.lightgray.getStateFactory().getDefaultState()
                             .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
-                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007))
-                            .with(AbstractButtonBlock.field_10729, blockState.get(AbstractButtonBlock.field_10729)));
+                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007)));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.GRAY_PAINTBRUSH) {
                     worldIn.setBlockState(pos, coloredStairs.gray.getStateFactory().getDefaultState()
                             .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
-                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007))
-                            .with(AbstractButtonBlock.field_10729, blockState.get(AbstractButtonBlock.field_10729)));
+                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007)));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.PINK_PAINTBRUSH) {
                     worldIn.setBlockState(pos, coloredStairs.pink.getStateFactory().getDefaultState()
                             .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
-                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007))
-                            .with(AbstractButtonBlock.field_10729, blockState.get(AbstractButtonBlock.field_10729)));
+                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007)));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.LIME_PAINTBRUSH) {
                     worldIn.setBlockState(pos, coloredStairs.lime.getStateFactory().getDefaultState()
                             .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
-                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007))
-                            .with(AbstractButtonBlock.field_10729, blockState.get(AbstractButtonBlock.field_10729)));
+                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007)));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.YELLOW_PAINTBRUSH) {
                     worldIn.setBlockState(pos, coloredStairs.yellow.getStateFactory().getDefaultState()
                             .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
-                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007))
-                            .with(AbstractButtonBlock.field_10729, blockState.get(AbstractButtonBlock.field_10729)));
+                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007)));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.LIGHT_BLUE_PAINTBRUSH) {
                     worldIn.setBlockState(pos, coloredStairs.lightblue.getStateFactory().getDefaultState()
                             .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
-                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007))
-                            .with(AbstractButtonBlock.field_10729, blockState.get(AbstractButtonBlock.field_10729)));
+                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007)));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.MAGENTA_PAINTBRUSH) {
                     worldIn.setBlockState(pos, coloredStairs.magenta.getStateFactory().getDefaultState()
                             .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
-                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007))
-                            .with(AbstractButtonBlock.field_10729, blockState.get(AbstractButtonBlock.field_10729)));
+                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007)));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.ORANGE_PAINTBRUSH) {
                     worldIn.setBlockState(pos, coloredStairs.orange.getStateFactory().getDefaultState()
                             .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
-                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007))
-                            .with(AbstractButtonBlock.field_10729, blockState.get(AbstractButtonBlock.field_10729)));
+                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007)));
                     usedpaintbrush(player);
                 }
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.WHITE_PAINTBRUSH) {
                     worldIn.setBlockState(pos, coloredStairs.white.getStateFactory().getDefaultState()
                             .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
-                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007))
-                            .with(AbstractButtonBlock.field_10729, blockState.get(AbstractButtonBlock.field_10729)));
+                            .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007)));
                     usedpaintbrush(player);
                 }
             }
