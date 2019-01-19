@@ -1,7 +1,7 @@
-package arthurbambou.paintingmod.registery;
+package arthurbambou.paintingmod.mainmod.registery;
 
-import arthurbambou.paintingmod.api.*;
-import arthurbambou.paintingmod.blocks.SoggyClay;
+import arthurbambou.paintingmod.mainmod.api.*;
+import arthurbambou.paintingmod.mainmod.blocks.SoggyClay;
 import net.fabricmc.fabric.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;

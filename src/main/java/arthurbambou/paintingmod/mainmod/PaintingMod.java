@@ -1,9 +1,9 @@
-package arthurbambou.paintingmod;
+package arthurbambou.paintingmod.mainmod;
 
-import arthurbambou.paintingmod.api.Registry;
-import arthurbambou.paintingmod.registery.ModBlocks;
-import arthurbambou.paintingmod.registery.ModItems;
-import arthurbambou.paintingmod.registery.ModVillagers;
+import arthurbambou.paintingmod.mainmod.api.Registry;
+import arthurbambou.paintingmod.mainmod.registery.ModBlocks;
+import arthurbambou.paintingmod.mainmod.registery.ModItems;
+import arthurbambou.paintingmod.mainmod.registery.ModVillagers;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;

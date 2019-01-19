@@ -1,6 +1,6 @@
-package arthurbambou.paintingmod.utils;
+package arthurbambou.paintingmod.mainmod.utils;
 
-import arthurbambou.paintingmod.api.*;
+import arthurbambou.paintingmod.mainmod.api.*;
 import net.minecraft.block.*;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;

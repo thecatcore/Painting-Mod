@@ -1,6 +1,6 @@
-package arthurbambou.paintingmod.villagers;
+package arthurbambou.paintingmod.mainmod.villagers;
 
-import arthurbambou.paintingmod.registery.ModItems;
+import arthurbambou.paintingmod.mainmod.registery.ModItems;
 import com.google.common.collect.ImmutableMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
@@ -13,7 +13,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.Random;
 
-import static arthurbambou.paintingmod.registery.ModVillagers.PAINTER;
+import static arthurbambou.paintingmod.mainmod.registery.ModVillagers.PAINTER;
 
 public class TradeBuilder {
     private static final Logger LOGGER = LogManager.getLogger();

@@ -1,18 +1,13 @@
-package arthurbambou.paintingmod.utils;
+package arthurbambou.paintingmod.mainmod.utils;
 
-import arthurbambou.paintingmod.api.*;
-import arthurbambou.paintingmod.registery.ModItems;
+import arthurbambou.paintingmod.mainmod.api.*;
+import arthurbambou.paintingmod.mainmod.registery.ModItems;
 import net.minecraft.block.*;
-import net.minecraft.block.enums.BlockHalf;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.state.property.Property;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
-
-import java.util.Collection;
 
 public class PaintFunctions {
 

@@ -1,13 +1,11 @@
-package arthurbambou.paintingmod.registery;
+package arthurbambou.paintingmod.mainmod.registery;
 
-import arthurbambou.paintingmod.PaintingMod;
-import arthurbambou.paintingmod.items.Hammer;
-import arthurbambou.paintingmod.items.HeatGun;
-import arthurbambou.paintingmod.items.ItemBase;
-import arthurbambou.paintingmod.items.Paintbrush;
+import arthurbambou.paintingmod.mainmod.PaintingMod;
+import arthurbambou.paintingmod.mainmod.items.Hammer;
+import arthurbambou.paintingmod.mainmod.items.HeatGun;
+import arthurbambou.paintingmod.mainmod.items.ItemBase;
+import arthurbambou.paintingmod.mainmod.items.Paintbrush;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.util.registry.Registry;
 
 public class ModItems {
     public static Item EARTH_MORTAR;

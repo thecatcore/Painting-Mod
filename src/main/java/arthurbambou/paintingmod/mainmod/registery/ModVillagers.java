@@ -1,13 +1,13 @@
-package arthurbambou.paintingmod.registery;
+package arthurbambou.paintingmod.mainmod.registery;
 
-import arthurbambou.paintingmod.villagers.TradeBuilder;
+import arthurbambou.paintingmod.mainmod.villagers.TradeBuilder;
 import net.minecraft.village.*;
 
 public class ModVillagers implements VillagerProfession {
     public static VillagerProfession PAINTER;
 
     public static void init() {
-       PAINTER = arthurbambou.paintingmod.villagers.VillagerProfession.register("painter");
+       PAINTER = arthurbambou.paintingmod.mainmod.villagers.VillagerProfession.register("painter");
        TradeBuilder.createRecipes();
     }
 }

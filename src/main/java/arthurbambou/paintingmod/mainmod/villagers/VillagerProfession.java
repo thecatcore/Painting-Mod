@@ -1,6 +1,6 @@
-package arthurbambou.paintingmod.villagers;
+package arthurbambou.paintingmod.mainmod.villagers;
 
-import arthurbambou.paintingmod.PaintingMod;
+import arthurbambou.paintingmod.mainmod.PaintingMod;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
