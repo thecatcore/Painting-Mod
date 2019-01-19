@@ -6,17 +6,14 @@ import net.fabricmc.fabric.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
+import net.minecraft.block.PressurePlateBlock;
 import net.minecraft.sound.BlockSoundGroup;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ModBlocks {
-    public static final List<ColoredBlock> COLORED_BLOCKS = new ArrayList<ColoredBlock>();
-    public static final List<ColoredStairs> COLORED_STAIRS = new ArrayList<ColoredStairs>();
-    public static final List<ColoredSlab> COLORED_SLABS = new ArrayList<ColoredSlab>();
-    public static final List<ColoredWall> COLORED_WALLS = new ArrayList<ColoredWall>();
-    public static final List<ColoredFenceGate> COLORED_FENCE_GATES = new ArrayList<ColoredFenceGate>();
+    public static final List<ColoredObject> COLORED_BLOCKS = new ArrayList<ColoredObject>();
 
     public static Block SOGGY_CLAY;
 
@@ -192,6 +189,32 @@ public class ModBlocks {
     public static ColoredFenceGate ACACIA_PLANK_FENCE_GATE;
     public static ColoredFenceGate DARK_OAK_PLANK_FENCE_GATE;
 
+    public static ColoredFence OAK_PLANK_FENCE;
+    public static ColoredFence SPRUCE_PLANK_FENCE;
+    public static ColoredFence BIRCH_PLANK_FENCE;
+    public static ColoredFence JUNGLE_PLANK_FENCE;
+    public static ColoredFence ACACIA_PLANK_FENCE;
+    public static ColoredFence DARK_OAK_PLANK_FENCE;
+    public static ColoredFence NETHER_BRICK_FENCE;
+
+    public static ColoredPressurePlate STONE_PRESSURE_PLATE;
+    public static ColoredPressurePlate OAK_PLANK_PRESSURE_PLATE;
+    public static ColoredPressurePlate SPRUCE_PLANK_PRESSURE_PLATE;
+    public static ColoredPressurePlate BIRCH_PLANK_PRESSURE_PLATE;
+    public static ColoredPressurePlate JUNGLE_PLANK_PRESSURE_PLATE;
+    public static ColoredPressurePlate ACACIA_PLANK_PRESSURE_PLATE;
+    public static ColoredPressurePlate DARK_OAK_PLANK_PRESSURE_PLATE;
+    public static ColoredWeightedPressurePlate LIGHT_WEIGHTED_PRESSURE_PLATE;
+    public static ColoredWeightedPressurePlate HEAVY_WEIGHTED_PRESSURE_PLATE;
+
+    public static ColoredStoneButton STONE_BUTTON;
+    public static ColoredWoodButton OAK_PLANK_BUTTON;
+    public static ColoredWoodButton SPRUCE_PLANK_BUTTON;
+    public static ColoredWoodButton BIRCH_PLANK_BUTTON;
+    public static ColoredWoodButton JUNGLE_PLANK_BUTTON;
+    public static ColoredWoodButton ACACIA_PLANK_BUTTON;
+    public static ColoredWoodButton DARK_OAK_PLANK_BUTTON;
+
     public static void init() {
         SOGGY_CLAY = new SoggyClay(FabricBlockSettings.of(Material.SAND).sounds(BlockSoundGroup.SAND).build(), "soggy_clay");
 
@@ -205,14 +228,14 @@ public class ModBlocks {
         DIRT = new ColoredBlock("dirt", Blocks.DIRT);
         COARSE_DIRT = new ColoredBlock("coarse_dirt", Blocks.COARSE_DIRT);
         COBBLESTONE = new ColoredBlock("cobblestone", Blocks.COBBLESTONE);
-//        OAK_PLANK = new ColoredBlock("oak_plank", Blocks.OAK_PLANKS);
-//        SPRUCE_PLANK = new ColoredBlock("spruce_plank", Blocks.SPRUCE_PLANKS);
-//        BIRCH_PLANK = new ColoredBlock("birch_plank", Blocks.BIRCH_PLANKS);
-//        JUNGLE_PLANK = new ColoredBlock("jungle_plank", Blocks.JUNGLE_PLANKS);
-//        ACACIA_PLANK = new ColoredBlock("acacia_plank", Blocks.ACACIA_PLANKS);
-//        DARK_OAK_PLANK = new ColoredBlock("dark_oak_plank", Blocks.DARK_OAK_PLANKS);
+        OAK_PLANK = new ColoredBlock("oak_plank", Blocks.OAK_PLANKS);
+        SPRUCE_PLANK = new ColoredBlock("spruce_plank", Blocks.SPRUCE_PLANKS);
+        BIRCH_PLANK = new ColoredBlock("birch_plank", Blocks.BIRCH_PLANKS);
+        JUNGLE_PLANK = new ColoredBlock("jungle_plank", Blocks.JUNGLE_PLANKS);
+        ACACIA_PLANK = new ColoredBlock("acacia_plank", Blocks.ACACIA_PLANKS);
+        DARK_OAK_PLANK = new ColoredBlock("dark_oak_plank", Blocks.DARK_OAK_PLANKS);
         SAND = new ColoredBlock("sand", Blocks.SAND);
-//        RED_SAND = new ColoredBlock("red_sand", Blocks.RED_SAND);
+        RED_SAND = new ColoredBlock("red_sand", Blocks.RED_SAND);
         GRAVEL = new ColoredBlock("gravel", Blocks.GRAVEL);
 //        STRIPPED_OAK_WOOD = new ColoredBlock("stripped_oak_wood", Blocks.STRIPPED_OAK_WOOD);
 //        STRIPPED_SPRUCE_WOOD = new ColoredBlock("stripped_spruce_wood", Blocks.STRIPPED_SPRUCE_WOOD);
@@ -265,7 +288,7 @@ public class ModBlocks {
         END_STONE_BRICK = new ColoredBlock("end_stone_brick", Blocks.END_STONE_BRICKS);
         MAGMA_BLOCK = new ColoredBlock("magma_block", Blocks.MAGMA_BLOCK);
         NETHER_WART_BLOCK = new ColoredBlock("nether_wart_block", Blocks.NETHER_WART_BLOCK);
-//        RED_NETHER_BRICK = new ColoredBlock("red_nether_brick", Blocks.RED_NETHER_BRICKS);
+        RED_NETHER_BRICK = new ColoredBlock("red_nether_brick", Blocks.RED_NETHER_BRICKS);
 //        OAK_LEAVES = new ColoredBlock("oak_leaves", Blocks.OAK_LEAVES);
         SPRUCE_LEAVES = new ColoredBlock("spruce_leaves", Blocks.SPRUCE_LEAVES);
 //        BIRCH_LEAVES = new ColoredBlock("birch_leaves", Blocks.BIRCH_LEAVES);
@@ -281,18 +304,18 @@ public class ModBlocks {
 
 
         PURPUR_STAIRS = new ColoredStairs("purpur_stairs", Blocks.PURPUR_STAIRS);
-//        OAK_PLANKS_STAIRS = new ColoredStairs("oak_planks_stairs", Blocks.OAK_STAIRS);
+        OAK_PLANKS_STAIRS = new ColoredStairs("oak_plank_stairs", Blocks.OAK_STAIRS);
         COBBLESTONE_STAIRS = new ColoredStairs("cobblestone_stairs", Blocks.COBBLESTONE_STAIRS);
         BRICK_STAIRS = new ColoredStairs("brick_stairs", Blocks.BRICK_STAIRS);
         STONE_BRICK_STAIRS = new ColoredStairs("stone_brick_stairs", Blocks.STONE_BRICK_STAIRS);
         NETHER_BRICK_STAIRS = new ColoredStairs("nether_brick_stairs", Blocks.NETHER_BRICK_STAIRS);
 //        SANDSTONE_STAIRS = new ColoredStairs("sandstone_stairs", Blocks.SANDSTONE_STAIRS);
-//        SPRUCE_PLANKS_STAIRS = new ColoredStairs("spruce_planks_stairs", Blocks.SPRUCE_STAIRS);
-//        BIRCH_PLANKS_STAIRS = new ColoredStairs("birch_planks_stairs", Blocks.BIRCH_STAIRS);
-//        JUNGLE_PLANKS_STAIRS = new ColoredStairs("jungle_planks_stairs", Blocks.JUNGLE_STAIRS);
+        SPRUCE_PLANKS_STAIRS = new ColoredStairs("spruce_plank_stairs", Blocks.SPRUCE_STAIRS);
+        BIRCH_PLANKS_STAIRS = new ColoredStairs("birch_plank_stairs", Blocks.BIRCH_STAIRS);
+        JUNGLE_PLANKS_STAIRS = new ColoredStairs("jungle_plank_stairs", Blocks.JUNGLE_STAIRS);
 //        QUARTZ_STAIRS = new ColoredStairs("quartz_stairs", Blocks.QUARTZ_STAIRS);
-//        ACACIA_PLANKS_STAIRS = new ColoredStairs("acacia_planks_stairs", Blocks.ACACIA_STAIRS);
-//        DARK_OAK_PLANKS_STAIRS = new ColoredStairs("dark_oak_planks_stairs", Blocks.DARK_OAK_STAIRS);
+        ACACIA_PLANKS_STAIRS = new ColoredStairs("acacia_plank_stairs", Blocks.ACACIA_STAIRS);
+        DARK_OAK_PLANKS_STAIRS = new ColoredStairs("dark_oak_plank_stairs", Blocks.DARK_OAK_STAIRS);
         PRISMARINE_STAIRS = new ColoredStairs("prismarine_stairs", Blocks.PRISMARINE_STAIRS);
         PRISMARINE_BRICK_STAIRS = new ColoredStairs("prismarine_brick_stairs", Blocks.PRISMARINE_BRICK_STAIRS);
         DARK_PRISMARINE_STAIRS = new ColoredStairs("dark_prismarine_stairs", Blocks.DARK_PRISMARINE_STAIRS);
@@ -308,7 +331,7 @@ public class ModBlocks {
 //        SMOOTH_QUARTZ_STAIRS = new ColoredStairs("smooth_quartz_stairs", Blocks.SMOOTH_QUARTZ_STAIRS);
         GRANITE_STAIRS = new ColoredStairs("granite_stairs", Blocks.GRANITE_STAIRS);
         ANDESITE_STAIRS = new ColoredStairs("andesite_stairs", Blocks.ANDESITE_STAIRS);
-//        RED_NETHER_BRICK_STAIRS = new ColoredStairs("red_nether_brick_stairs", Blocks.RED_NETHER_BRICK_STAIRS);
+        RED_NETHER_BRICK_STAIRS = new ColoredStairs("red_nether_brick_stairs", Blocks.RED_NETHER_BRICK_STAIRS);
         POLISHED_ANDESITE_STAIRS = new ColoredStairs("polished_andesite_stairs", Blocks.POLISHED_ANDESITE_STAIRS);
         DIORITE_STAIRS = new ColoredStairs("diorite_stairs", Blocks.DIORITE_STAIRS);
 
@@ -361,31 +384,41 @@ public class ModBlocks {
         END_STONE_BRICK_WALL = new ColoredWall("end_stone_brick_wall", Blocks.END_STONE_BRICK_WALL);
         DIORITE_WALL = new ColoredWall("diorite_wall", Blocks.DIORITE_WALL);
 
-//        OAK_PLANK_FENCE_GATE = new ColoredFenceGate("oak_plank_fence_gate", Blocks.OAK_FENCE_GATE);
-//        SPRUCE_PLANK_FENCE_GATE = new ColoredFenceGate("spruce_plank_fence_gate", Blocks.SPRUCE_FENCE_GATE);
-//        BIRCH_PLANK_FENCE_GATE = new ColoredFenceGate("birch_plank_fence_gate", Blocks.BIRCH_FENCE_GATE);
-//        JUNGLE_PLANK_FENCE_GATE = new ColoredFenceGate("jungle_plank_fence_gate", Blocks.JUNGLE_FENCE_GATE);
-//        ACACIA_PLANK_FENCE_GATE = new ColoredFenceGate("acacia_plank_fence_gate", Blocks.ACACIA_FENCE_GATE);
-//        DARK_OAK_PLANK_FENCE_GATE = new ColoredFenceGate("dark_oak_plank_fence_gate", Blocks.DARK_OAK_FENCE_GATE);
+        OAK_PLANK_FENCE_GATE = new ColoredFenceGate("oak_plank_fence_gate", Blocks.OAK_FENCE_GATE);
+        SPRUCE_PLANK_FENCE_GATE = new ColoredFenceGate("spruce_plank_fence_gate", Blocks.SPRUCE_FENCE_GATE);
+        BIRCH_PLANK_FENCE_GATE = new ColoredFenceGate("birch_plank_fence_gate", Blocks.BIRCH_FENCE_GATE);
+        JUNGLE_PLANK_FENCE_GATE = new ColoredFenceGate("jungle_plank_fence_gate", Blocks.JUNGLE_FENCE_GATE);
+        ACACIA_PLANK_FENCE_GATE = new ColoredFenceGate("acacia_plank_fence_gate", Blocks.ACACIA_FENCE_GATE);
+        DARK_OAK_PLANK_FENCE_GATE = new ColoredFenceGate("dark_oak_plank_fence_gate", Blocks.DARK_OAK_FENCE_GATE);
 
-        for (ColoredBlock coloredBlock : COLORED_BLOCKS) {
+        OAK_PLANK_FENCE = new ColoredFence("oak_plank_fence", Blocks.OAK_FENCE);
+        SPRUCE_PLANK_FENCE = new ColoredFence("spruce_plank_fence", Blocks.SPRUCE_FENCE);
+        BIRCH_PLANK_FENCE = new ColoredFence("birch_plank_fence", Blocks.BIRCH_FENCE);
+        JUNGLE_PLANK_FENCE = new ColoredFence("jungle_plank_fence", Blocks.JUNGLE_FENCE);
+        ACACIA_PLANK_FENCE = new ColoredFence("acacia_plank_fence", Blocks.ACACIA_FENCE);
+        DARK_OAK_PLANK_FENCE = new ColoredFence("dark_oak_plank_fence", Blocks.DARK_OAK_FENCE);
+        NETHER_BRICK_FENCE = new ColoredFence("nether_brick_fence", Blocks.NETHER_BRICK_FENCE);
+
+        STONE_PRESSURE_PLATE = new ColoredPressurePlate("stone_pressure_plate", Blocks.STONE_PRESSURE_PLATE, PressurePlateBlock.Type.STONE);
+        OAK_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("oak_plank_pressure_plate", Blocks.OAK_PRESSURE_PLATE, PressurePlateBlock.Type.WOOD);
+        SPRUCE_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("spruce_plank_pressure_plate", Blocks.SPRUCE_PRESSURE_PLATE, PressurePlateBlock.Type.WOOD);
+        BIRCH_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("birch_plank_pressure_plate", Blocks.BIRCH_PRESSURE_PLATE, PressurePlateBlock.Type.WOOD);
+        JUNGLE_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("jungle_plank_pressure_plate", Blocks.JUNGLE_PRESSURE_PLATE, PressurePlateBlock.Type.WOOD);
+        ACACIA_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("acacia_plank_pressure_plate", Blocks.ACACIA_PRESSURE_PLATE, PressurePlateBlock.Type.WOOD);
+        DARK_OAK_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("dark_oak_plank_pressure_plate", Blocks.DARK_OAK_PRESSURE_PLATE, PressurePlateBlock.Type.WOOD);
+        LIGHT_WEIGHTED_PRESSURE_PLATE = new ColoredWeightedPressurePlate("light_weighted_pressure_plate", Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE, 15);
+        HEAVY_WEIGHTED_PRESSURE_PLATE = new ColoredWeightedPressurePlate("heavy_weighted_pressure_plate", Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE, 150);
+
+        STONE_BUTTON = new ColoredStoneButton("stone_button", Blocks.STONE_BUTTON);
+        OAK_PLANK_BUTTON = new ColoredWoodButton("oak_plank_button", Blocks.OAK_BUTTON);
+        SPRUCE_PLANK_BUTTON = new ColoredWoodButton("spruce_plank_button", Blocks.SPRUCE_BUTTON);
+        BIRCH_PLANK_BUTTON = new ColoredWoodButton("birch_plank_button", Blocks.BIRCH_BUTTON);
+        JUNGLE_PLANK_BUTTON = new ColoredWoodButton("jungle_plank_button", Blocks.JUNGLE_BUTTON);
+        ACACIA_PLANK_BUTTON = new ColoredWoodButton("acacia_plank_button", Blocks.ACACIA_BUTTON);
+        DARK_OAK_PLANK_BUTTON = new ColoredWoodButton("dark_oak_plank_button", Blocks.DARK_OAK_BUTTON);
+
+        for (ColoredObject coloredBlock : COLORED_BLOCKS) {
             coloredBlock.createBlocks();
-        }
-
-        for (ColoredStairs coloredStairs : COLORED_STAIRS) {
-            coloredStairs.createBlocks();
-        }
-
-        for (ColoredSlab coloredSlab : COLORED_SLABS) {
-            coloredSlab.createBlocks();
-        }
-
-        for (ColoredWall coloredWall : COLORED_WALLS) {
-            coloredWall.createBlocks();
-        }
-
-        for (ColoredFenceGate coloredFenceGate : COLORED_FENCE_GATES) {
-            coloredFenceGate.createBlocks();
         }
     }
 }

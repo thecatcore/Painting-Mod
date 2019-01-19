@@ -8,46 +8,22 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.StairsBlock;
 
-public class ColoredStairs {
-    public StairsBlock black;
-    public StairsBlock red;
-    public StairsBlock green;
-    public StairsBlock brown;
-    public StairsBlock blue;
-    public StairsBlock purple;
-    public StairsBlock cyan;
-    public StairsBlock lightgray;
-    public StairsBlock gray;
-    public StairsBlock pink;
-    public StairsBlock lime;
-    public StairsBlock yellow;
-    public StairsBlock lightblue;
-    public StairsBlock magenta;
-    public StairsBlock orange;
-    public StairsBlock white;
-    private Block.Settings settings;
-    private String modid;
+public class ColoredStairs extends ColoredObject {
     private BlockState blockState;
-    public Block replace;
-    private String name;
 
     public ColoredStairs(String name, Block replace) {
-        this.name = name;
-        this.replace = replace;
+        super(name,replace,PaintingMod.MODID);
         this.blockState = replace.getDefaultState();
-        this.modid = PaintingMod.MODID;
-        ModBlocks.COLORED_STAIRS.add(this);
+        ModBlocks.COLORED_BLOCKS.add(this);
     }
 
     public ColoredStairs(String name, Block replace, String modid) {
-        this.name = name;
-        this.replace = replace;
-        this.modid = modid;
+        super(name,replace,modid);
         this.blockState = replace.getDefaultState();
     }
 
+    @Override
     public void createBlocks() {
-        copySettings(this.replace);
         this.black = new ColoredStairsBlock("black_" + this.name, this.settings, this.blockState, this.modid);
         this.red = new ColoredStairsBlock("red_" + this.name, this.settings, this.blockState, this.modid);
         this.green = new ColoredStairsBlock("green_" + this.name, this.settings, this.blockState, this.modid);
@@ -65,17 +41,5 @@ public class ColoredStairs {
         this.orange = new ColoredStairsBlock("orange_" + this.name, this.settings, this.blockState, this.modid);
         this.white = new ColoredStairsBlock("white_" + this.name, this.settings, this.blockState, this.modid);
         Registry.registerColoredStairs(this);
-    }
-
-    public String getModid() {
-        return modid;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void copySettings(Block block) {
-        this.settings = FabricBlockSettings.copy(block).build();
     }
 }

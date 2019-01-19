@@ -39,6 +39,15 @@ public class Paintbrush extends ItemBase {
         for (ColoredFenceGate coloredFenceGate : Registry.getColoredFenceGateList()) {
             PaintFunctions.newfencegatetopaint(playerEntity,world,blockPos,coloredFenceGate);
         }
+        for (ColoredFence coloredFence : Registry.getColoredFenceList()) {
+            PaintFunctions.newfencetopaint(playerEntity, world, blockPos, coloredFence);
+        }
+        for (ColoredPressurePlate coloredPressurePlate : Registry.getColoredPressurePlateList()) {
+            PaintFunctions.newpressureplatetopaint(playerEntity, world, blockPos, coloredPressurePlate);
+        }
+        for (ColoredButton coloredButton : Registry.getColoredButtonList()) {
+            PaintFunctions.newbuttontopaint(playerEntity,world,blockPos,coloredButton);
+        }
         return super.useOnBlock(var1);
     }
 }

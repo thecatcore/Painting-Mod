@@ -9,11 +9,11 @@ var blocks = require("./walls.json")
 var colors = ["black","red","green","brown","blue","purple","cyan","light_gray","gray","pink","lime","yellow","light_blue","magenta","orange","white"]
 var test = "\n"
 for (var i = 0; blocks.length > i ; i++) {
-    console.log("\n##" + btouppercase(blocks[i]) + " Walls");
+    console.log("\n#" + btouppercase(blocks[i]) + " Walls");
     if(!test == "\n") {
-        test = test + "\n \n##" + btouppercase(blocks[i]) + " Walls";
+        test = test + "\n \n#" + btouppercase(blocks[i]) + " Walls";
     } else {
-        test = test + " \n##" + btouppercase(blocks[i]) + " Walls";
+        test = test + " \n#" + btouppercase(blocks[i]) + " Walls";
     }
     for (var a = 0; colors.length > a ; a++) {
         var upcolor = ctouppcase(colors[a])
