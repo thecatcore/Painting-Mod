@@ -201,4 +201,31 @@ public class UnPaintFunctions {
             itemStack.setDamage(itemStack.getDamage());
         }
     }
+
+    public static void unpaintbutton(World worldIn, BlockPos pos, ColoredButton coloredStairs, ItemStack itemStack) {
+        if (worldIn.getBlockState(pos).getBlock() == coloredStairs.black ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.blue ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.brown ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.cyan ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.gray ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.green ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.lightblue ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.lightgray ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.lime ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.magenta ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.orange ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.pink ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.purple ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.red ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.white ||
+                worldIn.getBlockState(pos).getBlock() == coloredStairs.yellow) {
+
+            BlockState blockState = worldIn.getBlockState(pos);
+            worldIn.setBlockState(pos, coloredStairs.replace.getStateFactory().getDefaultState()
+                    .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
+                    .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007))
+                    .with(AbstractButtonBlock.field_10729, blockState.get(AbstractButtonBlock.field_10729)));
+            itemStack.setDamage(itemStack.getDamage());
+        }
+    }
 }

@@ -12,6 +12,7 @@ public class Registry {
     private static final List<ColoredFenceGate> COLORED_FENCE_GATE_LIST = new ArrayList<ColoredFenceGate>();
     private static final List<ColoredFence> COLORED_FENCE_LIST = new ArrayList<ColoredFence>();
     private static final List<ColoredPressurePlate> COLORED_PRESSURE_PLATE_LIST = new ArrayList<ColoredPressurePlate>();
+    private static final List<ColoredButton> COLORED_BUTTON_LIST = new ArrayList<ColoredButton>();
 
     public static List<ColoredObject> getColoredObjectList() {
         return COLORED_OBJECTS;
@@ -43,6 +44,10 @@ public class Registry {
 
     public static List<ColoredPressurePlate> getColoredPressurePlateList() {
         return COLORED_PRESSURE_PLATE_LIST;
+    }
+
+    public static List<ColoredButton> getColoredButtonList() {
+        return COLORED_BUTTON_LIST;
     }
 
     public static void registerCommonBlocks(ColoredBlock coloredBlock) {
@@ -86,6 +91,11 @@ public class Registry {
 //        System.out.println("[PaintingMod API] registered colored pressure plate : " + coloredFence.getRegisteryName());
     }
 
+    public static void registerColoredButton(ColoredButton coloredFence) {
+        COLORED_BUTTON_LIST.add(coloredFence);
+//        System.out.println("[PaintingMod API] registered colored pressure plate : " + coloredFence.getRegisteryName());
+    }
+
     public static void finishRegister() {
         COLORED_OBJECTS.addAll(COMMON_BLOCKS);
         COLORED_OBJECTS.addAll(COLORED_STAIRS_LIST);
@@ -94,6 +104,7 @@ public class Registry {
         COLORED_OBJECTS.addAll(COLORED_FENCE_GATE_LIST);
         COLORED_OBJECTS.addAll(COLORED_FENCE_LIST);
         COLORED_OBJECTS.addAll(COLORED_PRESSURE_PLATE_LIST);
+        COLORED_OBJECTS.addAll(COLORED_BUTTON_LIST);
 
         System.out.println("[PaintingMod API] \n        " + COLORED_OBJECTS.size() + " Colored Objects Registered : \n        "
                 + COMMON_BLOCKS.size() + " Colored Blocks \n        "
@@ -102,6 +113,7 @@ public class Registry {
                 + COLORED_WALL_LIST.size() + " Colored Walls \n        "
                 + COLORED_FENCE_GATE_LIST.size() + " Colored Fence Gates \n        "
                 + COLORED_FENCE_LIST.size() + " Colored Fences \n        "
-                + COLORED_PRESSURE_PLATE_LIST.size() + " Colored Pressure Plates");
+                + COLORED_PRESSURE_PLATE_LIST.size() + " Colored Pressure Plates \n        "
+                + COLORED_BUTTON_LIST.size() + " Colored Buttons");
     }
 }

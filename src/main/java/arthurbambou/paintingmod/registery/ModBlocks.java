@@ -207,6 +207,14 @@ public class ModBlocks {
     public static ColoredWeightedPressurePlate LIGHT_WEIGHTED_PRESSURE_PLATE;
     public static ColoredWeightedPressurePlate HEAVY_WEIGHTED_PRESSURE_PLATE;
 
+    public static ColoredStoneButton STONE_BUTTON;
+    public static ColoredWoodButton OAK_PLANK_BUTTON;
+    public static ColoredWoodButton SPRUCE_PLANK_BUTTON;
+    public static ColoredWoodButton BIRCH_PLANK_BUTTON;
+    public static ColoredWoodButton JUNGLE_PLANK_BUTTON;
+    public static ColoredWoodButton ACACIA_PLANK_BUTTON;
+    public static ColoredWoodButton DARK_OAK_PLANK_BUTTON;
+
     public static void init() {
         SOGGY_CLAY = new SoggyClay(FabricBlockSettings.of(Material.SAND).sounds(BlockSoundGroup.SAND).build(), "soggy_clay");
 
@@ -400,6 +408,14 @@ public class ModBlocks {
         DARK_OAK_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("dark_oak_plank_pressure_plate", Blocks.DARK_OAK_PRESSURE_PLATE, PressurePlateBlock.Type.WOOD);
         LIGHT_WEIGHTED_PRESSURE_PLATE = new ColoredWeightedPressurePlate("light_weighted_pressure_plate", Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE, 15);
         HEAVY_WEIGHTED_PRESSURE_PLATE = new ColoredWeightedPressurePlate("heavy_weighted_pressure_plate", Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE, 150);
+
+        STONE_BUTTON = new ColoredStoneButton("stone_button", Blocks.STONE_BUTTON);
+        OAK_PLANK_BUTTON = new ColoredWoodButton("oak_plank_button", Blocks.OAK_BUTTON);
+        SPRUCE_PLANK_BUTTON = new ColoredWoodButton("spruce_plank_button", Blocks.SPRUCE_BUTTON);
+        BIRCH_PLANK_BUTTON = new ColoredWoodButton("birch_plank_button", Blocks.BIRCH_BUTTON);
+        JUNGLE_PLANK_BUTTON = new ColoredWoodButton("jungle_plank_button", Blocks.JUNGLE_BUTTON);
+        ACACIA_PLANK_BUTTON = new ColoredWoodButton("acacia_plank_button", Blocks.ACACIA_BUTTON);
+        DARK_OAK_PLANK_BUTTON = new ColoredWoodButton("dark_oak_plank_button", Blocks.DARK_OAK_BUTTON);
 
         for (ColoredObject coloredBlock : COLORED_BLOCKS) {
             coloredBlock.createBlocks();
