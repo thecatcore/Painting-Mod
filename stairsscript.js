@@ -81,9 +81,33 @@ for (var i = 0; blocks.length > i; i++) {
         var blockmodel = {
             parent: "minecraft:block/stairs",
             textures: {
-                bottom: "paintingmod:blocks/" + colors[a] + "_" + blocks[i],
-                top: "paintingmod:blocks/" + colors[a] + "_" + blocks[i],
-                side: "paintingmod:blocks/" + colors[a] + "_" + blocks[i]
+                bottom: "paintingmod:blocks/" + colors[a] + "_" + blocks[i].replace("dark_oak_", "")
+                .replace("oak_", "")
+                .replace("spruce_", "")
+                .replace("birch_","")
+                .replace("jungle_","")
+                .replace("acacia_","")
+                .replace("purpur","purpur_block")
+                .replace("mossy_cobblestone","moss_stone")
+                .replace("red_nether_brick","nether_brick"),
+                top: "paintingmod:blocks/" + colors[a] + "_" + blocks[i].replace("dark_oak_", "")
+                .replace("oak_", "")
+                .replace("spruce_", "")
+                .replace("birch_","")
+                .replace("jungle_","")
+                .replace("acacia_","")
+                .replace("purpur","purpur_block")
+                .replace("mossy_cobblestone","moss_stone")
+                .replace("red_nether_brick","nether_brick"),
+                side: "paintingmod:blocks/" + colors[a] + "_" + blocks[i].replace("dark_oak_", "")
+                .replace("oak_", "")
+                .replace("spruce_", "")
+                .replace("birch_","")
+                .replace("jungle_","")
+                .replace("acacia_","")
+                .replace("purpur","purpur_block")
+                .replace("mossy_cobblestone","moss_stone")
+                .replace("red_nether_brick","nether_brick")
             }
         }
         fs.writeFile(path.join(blockmodelpath, colors[a] + "_" + blocks[i] + "_stairs.json"), JSON.stringify(blockmodel), (err) => {
