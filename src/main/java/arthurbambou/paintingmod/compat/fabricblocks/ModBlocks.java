@@ -5,6 +5,9 @@ import arthurbambou.paintingmod.mainmod.api.ColoredSlab;
 import arthurbambou.paintingmod.mainmod.api.ColoredStairs;
 import arthurbambou.paintingmod.mainmod.api.ColoredWall;
 import com.yanis48.fabriblocks.FabriBlocks;
+import net.fabricmc.fabric.block.FabricBlockSettings;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 
 public class ModBlocks {
     public static ColoredBlock SCUTE_BLOCK;
@@ -49,6 +52,14 @@ public class ModBlocks {
         PRISMARINE_BRICK_WALL = new ColoredWall("prismarine_brick_wall", com.yanis48.fabriblocks.ModBlocks.PRISMARINE_BRICK_WALL, FabriBlocks.MOD_ID);
         DARK_PRISMARINE_WALL = new ColoredWall("dark_prismarine_wall", com.yanis48.fabriblocks.ModBlocks.DARK_PRISMARINE_WALL, FabriBlocks.MOD_ID);
         PURPUR_WALL = new ColoredWall("purpur_wall", com.yanis48.fabriblocks.ModBlocks.PURPUR_WALL, FabriBlocks.MOD_ID);
+
+        STONE_WALL.settings = Block.Settings.copy(Blocks.STONE);
+        POLISHED_GRANITE_WALL.settings = Block.Settings.copy(Blocks.POLISHED_GRANITE);
+        POLISHED_DIORITE_WALL.settings = Block.Settings.copy(Blocks.POLISHED_DIORITE);
+        POLISHED_ANDESITE_WALL.settings = Block.Settings.copy(Blocks.POLISHED_ANDESITE);
+        PRISMARINE_BRICK_WALL.settings = Block.Settings.copy(Blocks.PRISMARINE_BRICKS);
+        DARK_PRISMARINE_WALL.settings = Block.Settings.copy(Blocks.DARK_PRISMARINE);
+        PURPUR_WALL.settings = Block.Settings.copy(Blocks.PURPUR_BLOCK);
 
 //        SCUTE_BLOCK.createBlocks();
 //        BAMBOO_BLOCK.createBlocks();
