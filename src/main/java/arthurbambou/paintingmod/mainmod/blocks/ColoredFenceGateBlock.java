@@ -1,6 +1,6 @@
-package arthurbambou.paintingmod.blocks;
+package arthurbambou.paintingmod.mainmod.blocks;
 
-import arthurbambou.paintingmod.PaintingMod;
+import arthurbambou.paintingmod.mainmod.PaintingMod;
 import net.minecraft.block.FenceGateBlock;
 import net.minecraft.item.Item;
 import net.minecraft.item.block.BlockItem;

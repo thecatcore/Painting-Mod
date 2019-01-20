@@ -1,6 +1,6 @@
-package arthurbambou.paintingmod.blocks;
+package arthurbambou.paintingmod.mainmod.blocks;
 
-import arthurbambou.paintingmod.PaintingMod;
+import arthurbambou.paintingmod.mainmod.PaintingMod;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.StairsBlock;
 import net.minecraft.item.Item;

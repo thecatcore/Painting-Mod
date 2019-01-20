@@ -1,13 +1,9 @@
-package arthurbambou.paintingmod.api;
+package arthurbambou.paintingmod.mainmod.api;
 
-import arthurbambou.paintingmod.PaintingMod;
-import arthurbambou.paintingmod.blocks.ColoredFenceGateBlock;
-import arthurbambou.paintingmod.blocks.ColoredSlabBlock;
-import arthurbambou.paintingmod.registery.ModBlocks;
-import net.fabricmc.fabric.block.FabricBlockSettings;
+import arthurbambou.paintingmod.mainmod.PaintingMod;
+import arthurbambou.paintingmod.mainmod.blocks.ColoredFenceGateBlock;
+import arthurbambou.paintingmod.mainmod.registery.ModBlocks;
 import net.minecraft.block.Block;
-import net.minecraft.block.FenceGateBlock;
-import net.minecraft.block.SlabBlock;
 
 public class ColoredFenceGate extends ColoredObject {
 

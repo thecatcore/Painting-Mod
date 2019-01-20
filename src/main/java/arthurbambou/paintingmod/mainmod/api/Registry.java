@@ -1,4 +1,4 @@
-package arthurbambou.paintingmod.api;
+package arthurbambou.paintingmod.mainmod.api;
 
 import java.util.ArrayList;
 import java.util.List;

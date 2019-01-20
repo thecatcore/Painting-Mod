@@ -135,7 +135,7 @@ public class UnPaintFunctions {
 
             BlockState blockState = worldIn.getBlockState(pos);
             worldIn.setBlockState(pos, coloredStairs.replace.getStateFactory().getDefaultState()
-                    .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
+                    .with(HorizontalFacingBlock.FACING, blockState.get(HorizontalFacingBlock.FACING))
                     .with(FenceGateBlock.field_11026, blockState.get(FenceGateBlock.field_11026))
                     .with(FenceGateBlock.field_11021, blockState.get(FenceGateBlock.field_11021))
                     .with(FenceGateBlock.field_11024, blockState.get(FenceGateBlock.field_11024)));
@@ -222,8 +222,9 @@ public class UnPaintFunctions {
 
             BlockState blockState = worldIn.getBlockState(pos);
             worldIn.setBlockState(pos, coloredStairs.replace.getStateFactory().getDefaultState()
-                    .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
-                    .with(WallMountedBlock.field_11007, blockState.get(WallMountedBlock.field_11007)));
+                    .with(HorizontalFacingBlock.FACING, blockState.get(HorizontalFacingBlock.FACING))
+                    .with(WallMountedBlock.FACE, blockState.get(WallMountedBlock.FACE))
+                    .with(AbstractButtonBlock.POWERED, false));
             itemStack.setDamage(itemStack.getDamage());
         }
     }

@@ -1,6 +1,6 @@
-package arthurbambou.paintingmod.items;
+package arthurbambou.paintingmod.mainmod.items;
 
-import arthurbambou.paintingmod.PaintingMod;
+import arthurbambou.paintingmod.mainmod.PaintingMod;
 import net.minecraft.item.Item;
 import net.minecraft.util.registry.Registry;
 

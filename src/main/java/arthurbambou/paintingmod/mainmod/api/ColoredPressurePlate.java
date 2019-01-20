@@ -1,9 +1,8 @@
-package arthurbambou.paintingmod.api;
+package arthurbambou.paintingmod.mainmod.api;
 
-import arthurbambou.paintingmod.PaintingMod;
-import arthurbambou.paintingmod.blocks.ColoredFenceGateBlock;
-import arthurbambou.paintingmod.blocks.ColoredPressurePlateBlock;
-import arthurbambou.paintingmod.registery.ModBlocks;
+import arthurbambou.paintingmod.mainmod.PaintingMod;
+import arthurbambou.paintingmod.mainmod.blocks.ColoredPressurePlateBlock;
+import arthurbambou.paintingmod.mainmod.registery.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.PressurePlateBlock;
 

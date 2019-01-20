@@ -1,11 +1,12 @@
 var fs = require("fs")
 var path = require("path")
-
-var blockstatepath = "./src/main/resources/assets/paintingmod/blockstates"
-var itemmodelpath = "./src/main/resources/assets/paintingmod/models/item"
+var walls = require("./walls.json")
+var blockstatepath = "./src/main/resources/assets/paintingmod/blockstates".replace("paintingmod", walls.modid)
+var itemmodelpath = "./src/main/resources/assets/paintingmod/models/item".replace("paintingmod", walls.modid)
 var blockmodelpath = "./src/main/resources/assets/paintingmod/models/block"
 
-var blocks = require("./walls.json")
+
+var blocks = walls.blocks
 var colors = ["black","red","green","brown","blue","purple","cyan","light_gray","gray","pink","lime","yellow","light_blue","magenta","orange","white"]
 var test = "\n"
 for (var i = 0; blocks.length > i ; i++) {
@@ -18,8 +19,8 @@ for (var i = 0; blocks.length > i ; i++) {
     for (var a = 0; colors.length > a ; a++) {
         var upcolor = ctouppcase(colors[a])
         var upblock = btouppercase(blocks[i])
-        test = test + "\ntile.paintingmod." + colors[a] + "_" + blocks[i] + "_wall.name=" + upcolor + " " + upblock + " Wall";
-        console.log("The line : " + "\ntile.paintingmod." + colors[a] + "_" + blocks[i] + "_wall.name=" + upcolor + " " + upblock + " Wall" + "\nhas been added to the localization file");
+        test = test + "\ntile.paintingmod.".replace("paintingmod", walls.modid) + colors[a] + "_" + blocks[i] + "_wall.name=" + upcolor + " " + upblock + " Wall";
+        console.log("The line : " + "\ntile.paintingmod.".replace("paintingmod", walls.modid) + colors[a] + "_" + blocks[i] + "_wall.name=" + upcolor + " " + upblock + " Wall" + "\nhas been added to the localization file");
 
         var blockstate = {
             multipart: [
@@ -51,6 +52,7 @@ for (var i = 0; blocks.length > i ; i++) {
                 wall: "paintingmod:blocks/" + colors[a] + "_" + blocks[i]
                 .replace("mossy_cobblestone","moss_stone")
                 .replace("red_","")
+                .replace("purpur", "purpur_block")
             }
         }
         fs.writeFile(path.join(blockmodelpath, colors[a] + "_" + blocks[i] + "_wall_post.json"), JSON.stringify(blockmodelpost), (err) => {

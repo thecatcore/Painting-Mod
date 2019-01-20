@@ -4,6 +4,10 @@ plugins {
 	id "com.matthewprenger.cursegradle" version "1.1.2"
 }
 
+repositories {
+	maven { url 'https://jitpack.io' }
+}
+
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
@@ -41,11 +45,13 @@ minecraft {
 
 dependencies {
 	minecraft "com.mojang:minecraft:${minecraft_version}"
-	mappings "net.fabricmc:yarn:${minecraft_version}.+"
-	modCompile "net.fabricmc:fabric-loader:${fabric_loader}.+"
+	mappings "net.fabricmc:yarn:${minecraft_version}.${snapshot_build}"
+	modCompile "net.fabricmc:fabric-loader:${fabric_loader}"
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
-	modCompile "net.fabricmc:fabric:${fabric_api}.+"
+	modCompile "net.fabricmc:fabric:${fabric_api}"
+
+	modCompile "com.github.Yanis48:FabriBlocks:fc63266920"
 }
 
 github {
@@ -76,6 +82,7 @@ curseforge {
 			relations {
 				requiredDependency "fabric"
 				optionalDependency "modmenu"
+				optionalDependency "fabriblocks"
 			}
         }
         addArtifact file("build/libs/${archivesBaseName}-${version}-dev.jar")

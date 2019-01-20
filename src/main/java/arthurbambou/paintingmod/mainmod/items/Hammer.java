@@ -1,7 +1,7 @@
-package arthurbambou.paintingmod.items;
+package arthurbambou.paintingmod.mainmod.items;
 
-import arthurbambou.paintingmod.registery.ModBlocks;
-import arthurbambou.paintingmod.registery.ModItems;
+import arthurbambou.paintingmod.mainmod.registery.ModBlocks;
+import arthurbambou.paintingmod.mainmod.registery.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.ItemEntity;

@@ -1,14 +1,9 @@
-package arthurbambou.paintingmod.api;
+package arthurbambou.paintingmod.mainmod.api;
 
-import arthurbambou.paintingmod.PaintingMod;
-import arthurbambou.paintingmod.blocks.ColoredBlockBlock;
-import arthurbambou.paintingmod.registery.ModBlocks;
-import net.fabricmc.fabric.block.FabricBlockSettings;
+import arthurbambou.paintingmod.mainmod.PaintingMod;
+import arthurbambou.paintingmod.mainmod.blocks.ColoredBlockBlock;
+import arthurbambou.paintingmod.mainmod.registery.ModBlocks;
 import net.minecraft.block.Block;
-import net.minecraft.block.Material;
-import net.minecraft.item.Item;
-import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.tag.Tag;
 
 public class ColoredBlock extends ColoredObject {
 
