@@ -11,7 +11,7 @@ public class PaintingModCompat {
 
     public static void init() {
         if (Loader.getInstance().isModLoaded("fabriblocks")) {
-            LOGGER.info("FabriBlocks detected, loading compat");
+            LOGGER.info("[PaintingMod/Compat] FabriBlocks detected, loading compat");
             ModBlocks.init();
         }
     }

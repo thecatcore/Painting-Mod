@@ -55,22 +55,6 @@ public class ModBlocks {
         DARK_PRISMARINE_WALL = new ColoredWall("dark_prismarine_wall", com.yanis48.fabriblocks.ModBlocks.DARK_PRISMARINE_WALL, FabriBlocks.MOD_ID);
         PURPUR_WALL = new ColoredWall("purpur_wall", com.yanis48.fabriblocks.ModBlocks.PURPUR_WALL, FabriBlocks.MOD_ID);
 
-        STONE_WALL.settings = Block.Settings.copy(Blocks.STONE);
-        POLISHED_GRANITE_WALL.settings = Block.Settings.copy(Blocks.POLISHED_GRANITE);
-        POLISHED_DIORITE_WALL.settings = Block.Settings.copy(Blocks.POLISHED_DIORITE);
-        POLISHED_ANDESITE_WALL.settings = Block.Settings.copy(Blocks.POLISHED_ANDESITE);
-        PRISMARINE_BRICK_WALL.settings = Block.Settings.copy(Blocks.PRISMARINE_BRICKS);
-        DARK_PRISMARINE_WALL.settings = Block.Settings.copy(Blocks.DARK_PRISMARINE);
-        PURPUR_WALL.settings = Block.Settings.copy(Blocks.PURPUR_BLOCK);
-
-        STONE_WALL.replace = getID("stone_wall");
-        POLISHED_GRANITE_WALL.replace = getID("polished_granite_wall");
-        POLISHED_DIORITE_WALL.replace = getID("polished_diorite_wall");
-        POLISHED_ANDESITE_WALL.replace = getID("polished_andesite_wall");
-        PRISMARINE_BRICK_WALL.replace = getID("prismarine_brick_wall");
-        DARK_PRISMARINE_WALL.replace = getID("dark_prismarine_wall");
-        PURPUR_WALL.replace = getID("purpur_wall");
-
 //        SCUTE_BLOCK.createBlocks();
 //        BAMBOO_BLOCK.createBlocks();
 //        SNOW_BRICKS.createBlocks();

@@ -82,6 +82,7 @@ curseforge {
 			relations {
 				requiredDependency "fabric"
 				optionalDependency "modmenu"
+				optionalDependency "fabriblocks"
 			}
         }
         addArtifact file("build/libs/${archivesBaseName}-${version}-dev.jar")
