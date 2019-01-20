@@ -8,6 +8,8 @@ import com.yanis48.fabriblocks.FabriBlocks;
 import net.fabricmc.fabric.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
     public static ColoredBlock SCUTE_BLOCK;
@@ -61,6 +63,14 @@ public class ModBlocks {
         DARK_PRISMARINE_WALL.settings = Block.Settings.copy(Blocks.DARK_PRISMARINE);
         PURPUR_WALL.settings = Block.Settings.copy(Blocks.PURPUR_BLOCK);
 
+        STONE_WALL.replace = getID("stone_wall");
+        POLISHED_GRANITE_WALL.replace = getID("polished_granite_wall");
+        POLISHED_DIORITE_WALL.replace = getID("polished_diorite_wall");
+        POLISHED_ANDESITE_WALL.replace = getID("polished_andesite_wall");
+        PRISMARINE_BRICK_WALL.replace = getID("prismarine_brick_wall");
+        DARK_PRISMARINE_WALL.replace = getID("dark_prismarine_wall");
+        PURPUR_WALL.replace = getID("purpur_wall");
+
 //        SCUTE_BLOCK.createBlocks();
 //        BAMBOO_BLOCK.createBlocks();
 //        SNOW_BRICKS.createBlocks();
@@ -78,5 +88,9 @@ public class ModBlocks {
         PRISMARINE_BRICK_WALL.createBlocks();
         DARK_PRISMARINE_WALL.createBlocks();
         PURPUR_WALL.createBlocks();
+    }
+
+    private static Block getID(String id) {
+        return Registry.BLOCK.get(new Identifier(FabriBlocks.MOD_ID,id));
     }
 }
