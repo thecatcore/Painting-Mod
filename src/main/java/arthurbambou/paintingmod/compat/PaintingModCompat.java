@@ -6,10 +6,10 @@ import net.fabricmc.api.loader.Loader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class PaintingModCompat implements ModInitializer {
+public class PaintingModCompat {
     protected static Logger LOGGER = LogManager.getLogger("PaintingMod/Compat");
-    @Override
-    public void onInitialize() {
+
+    public static void init() {
         if (Loader.getInstance().isModLoaded("fabriblocks")) {
             LOGGER.info("FabriBlocks detected, loading compat");
             ModBlocks.init();
