@@ -1,7 +1,12 @@
+Version 0.2.2.0 Fabric 19w03c
+
+Add Compat with FabriBlocks.
+Add a small config file to enable/disable compat with FabriBlocks.
+
 Version 0.2.1.0 Fabric 19w03a-19w03c
 
 Add Colored Fence, Fence Gate, Pressure Plate and Button.
-
+API enhancement.
 
 Version 0.2.0.0 Fabric 15w50a-19w02a-19w03a
 
