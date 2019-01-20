@@ -58,7 +58,9 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modCompile "net.fabricmc:fabric:${fabric_api}"
 
+	// Compat with other mods
 	modCompile "com.github.Yanis48:FabriBlocks:fc63266920"
+	modCompile 'com.github.shedaniel:RoughlyEnoughItems:2.1.0.41'
 }
 
 github {
