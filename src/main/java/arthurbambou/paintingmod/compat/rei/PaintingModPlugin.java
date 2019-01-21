@@ -30,27 +30,6 @@ public class PaintingModPlugin implements IRecipePlugin {
 
     @Override
     public void registerSpeedCraft() {
-        RecipeHelper.registerSpeedCraftFunctional(HAMMER, new SpeedCraftFunctional<DefaultCraftingDisplay>() {
-            @Override
-            public Class[] getFunctioningFor() {
-                return new Class[]{PlayerInventoryGui.class, CraftingTableGui.class};
-            }
-
-            @Override
-            public boolean performAutoCraft(Gui gui, DefaultCraftingDisplay recipe) {
-                if (gui.getClass().isAssignableFrom(CraftingTableGui.class))
-                    ((IMixinRecipeBookGui) (((CraftingTableGui) gui).getRecipeBookGui())).getGhostSlots().reset();
-                else if (gui.getClass().isAssignableFrom(PlayerInventoryGui.class))
-                    ((IMixinRecipeBookGui) (((PlayerInventoryGui) gui).getRecipeBookGui())).getGhostSlots().reset();
-                else return false;
-                MinecraftClient.getInstance().interactionManager.clickRecipe(MinecraftClient.getInstance().player.container.syncId, recipe.getRecipe(), Gui.isShiftPressed());
-                return true;
-            }
-
-            @Override
-            public boolean acceptRecipe(Gui gui, DefaultCraftingDisplay recipe) {
-                return gui instanceof CraftingTableGui || (gui instanceof PlayerInventoryGui && recipe.getHeight() < 3 && recipe.getWidth() < 3);
-            }
-        });
+        RecipeHelper.registerSpeedCraftFunctional(HAMMER, null);
     }
 }

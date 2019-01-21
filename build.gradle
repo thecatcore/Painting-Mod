@@ -60,7 +60,7 @@ dependencies {
 
 	// Compat with other mods
 	modCompile "com.github.Yanis48:FabriBlocks:fc63266920"
-	modCompile 'com.github.shedaniel:RoughlyEnoughItems:2.1.0.41'
+	modCompile "com.github.shedaniel:RoughlyEnoughItems:${rei_version}"
 }
 
 github {
