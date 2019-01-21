@@ -11,48 +11,60 @@ import me.shedaniel.rei.listeners.IMixinContainerGui;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.GuiLighting;
 import net.minecraft.client.resource.language.I18n;
+import net.minecraft.item.ItemProvider;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.MathHelper;
 
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
-public class CategoryHammer implements IRecipeCategory<DisplayHammer> {
-
+public class CategoryHeatGun implements IRecipeCategory<DisplayHeatGun> {
     private static final Identifier DISPLAY_TEXTURE = new Identifier("paintingmod", "textures/gui/display.png");
+
     @Override
     public Identifier getIdentifier() {
-        return PaintingModPlugin.HAMMER;
+        return PaintingModPlugin.HEATGUN;
     }
 
     @Override
     public ItemStack getCategoryIcon() {
-        return new ItemStack(ModItems.HAMMER);
+        return new ItemStack(ModItems.HEAT_GUN);
     }
 
     @Override
     public String getCategoryName() {
-        return I18n.translate("category.paintingmod.hammer");
+        return I18n.translate("category.paintingmod.heatgun");
     }
 
     @Override
-    public List<IWidget> setupDisplay(IMixinContainerGui containerGui, DisplayHammer recipeDisplay, Rectangle bounds) {
+    public boolean usesFullPage() {
+        return true;
+    }
+
+    @Override
+    public List<IWidget> setupDisplay(IMixinContainerGui containerGui, DisplayHeatGun recipeDisplay, Rectangle bounds) {
         List<IWidget> widgets = Lists.newArrayList();
-        Point startPoint = new Point((int) bounds.getCenterX() - 64, (int) bounds.getCenterY() - 32);
+        Point startingPoint = new Point(bounds.x + bounds.width - 55, bounds.y + 110);
         widgets.add(new RecipeBaseWidget(bounds) {
             @Override
             public void draw(int mouseX, int mouseY, float partialTicks) {
-                super.draw(mouseX, mouseY, partialTicks);
                 GlStateManager.color4f(1.0F, 1.0F, 1.0F, 1.0F);
                 GuiLighting.disable();
                 MinecraftClient.getInstance().getTextureManager().bindTexture(DISPLAY_TEXTURE);
-                drawTexturedRect(startPoint.x, startPoint.y, 0, 64, 128, 64);
+                this.drawTexturedRect(startingPoint.x, startingPoint.y, 0, 0, 55, 26);
             }
         });
-        List<List<ItemStack>> input = recipeDisplay.getInput();
-        widgets.add(new ItemSlotWidget(startPoint.x + 1, startPoint.y + 1, input.get(0), true, true, containerGui, true));
-        widgets.add(new ItemSlotWidget(startPoint.x + 1, startPoint.y + 37, recipeDisplay.getFuel(), true, true, containerGui, true));
-        widgets.add(new ItemSlotWidget(startPoint.x + 61, startPoint.y + 19, recipeDisplay.getOutput(), false, true, containerGui, true));
+        for(int y = 0; y < 2; y++)
+            for(int x = 0; x < 8; x++) {
+                widgets.add(new ItemSlotWidget((int) bounds.getCenterX() - 72 + x * 18, bounds.y + y * 18,
+                        recipeDisplay.getInput().get(0).get(y + x),
+                        true, true, containerGui));
+            }
+        widgets.add(new ItemSlotWidget((int) startingPoint.x + 34, startingPoint.y + 5, recipeDisplay.getOutput(), false, true, containerGui));
         return widgets;
     }
 }
