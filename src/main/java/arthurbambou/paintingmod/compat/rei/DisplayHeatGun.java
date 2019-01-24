@@ -1,18 +1,22 @@
 package arthurbambou.paintingmod.compat.rei;
 
 import arthurbambou.paintingmod.mainmod.api.ColoredObject;
+import arthurbambou.paintingmod.mainmod.registery.ModItems;
+import com.google.common.collect.Lists;
 import me.shedaniel.rei.api.IRecipeDisplay;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Recipe;
 import net.minecraft.util.Identifier;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class DisplayHeatGun implements IRecipeDisplay {
     private List<Block> order = new ArrayList<Block>();
     private ItemStack output;
-
+    
     public DisplayHeatGun(ColoredObject coloredObject) {
         this.order.add(coloredObject.black);
         this.order.add(coloredObject.red);
@@ -32,28 +36,33 @@ public class DisplayHeatGun implements IRecipeDisplay {
         this.order.add(coloredObject.white);
         this.output = new ItemStack(coloredObject.replace);
     }
-
+    
     @Override
     public Recipe getRecipe() {
         return null;
     }
-
+    
     @Override
     public List<List<ItemStack>> getInput() {
-        List<List<ItemStack>> lists = new ArrayList<>();
-        order.stream().forEachOrdered(itemProvider -> {
-            lists.add(Arrays.asList(new ItemStack(itemProvider.getItem())));
-        });
+        List<List<ItemStack>> lists = getRequiredItems();
+        lists.add(Arrays.asList(new ItemStack(ModItems.HEAT_GUN)));
         return lists;
     }
-
+    
     @Override
     public List<ItemStack> getOutput() {
-        List<ItemStack> list = new ArrayList<ItemStack>();
-        list.add(output);
-        return list;
+        return Arrays.asList(output);
     }
-
+    
+    @Override
+    public List<List<ItemStack>> getRequiredItems() {
+        List<List<ItemStack>> lists = Lists.newArrayList();
+        List<ItemStack> list = Lists.newArrayList();
+        order.stream().map(block -> new ItemStack(block)).forEach(list::add);
+        lists.add(list);
+        return lists;
+    }
+    
     @Override
     public Identifier getRecipeCategory() {
         return PaintingModPlugin.HEATGUN;

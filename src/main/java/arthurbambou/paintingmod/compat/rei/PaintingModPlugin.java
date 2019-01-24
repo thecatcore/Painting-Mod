@@ -29,14 +29,13 @@ public class PaintingModPlugin implements IRecipePlugin {
     @Override
     public void registerRecipes() {
         RecipeHelper.registerRecipe(HAMMER, new DisplayHammer());
-        for (ColoredObject coloredObject : Registry.getColoredObjectList()) {
+        for (ColoredObject coloredObject : Registry.getColoredObjectList())
             RecipeHelper.registerRecipe(HEATGUN, new DisplayHeatGun(coloredObject));
-        }
     }
 
     @Override
     public void registerSpeedCraft() {
-        RecipeHelper.registerSpeedCraftFunctional(HAMMER, null);
-        RecipeHelper.registerSpeedCraftFunctional(HEATGUN, null);
+        RecipeHelper.registerSpeedCraftButtonArea(HAMMER, null);
+        RecipeHelper.registerSpeedCraftButtonArea(HEATGUN, null);
     }
 }

@@ -1,5 +1,7 @@
 {
     "entity.minecraft.villager.painter": "Painter",
+    "category.paintingmod.hammer": "Hammer",
+    "category.paintingmod.heatgun": "Heat Gun",
 
     "_comment": "Items",
     "item.paintingmod.normal_paintbrush": "Paintbrush",

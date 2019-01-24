@@ -59,11 +59,10 @@ public class CategoryHeatGun implements IRecipeCategory<DisplayHeatGun> {
             }
         });
         for(int y = 0; y < 2; y++)
-            for(int x = 0; x < 8; x++) {
+            for(int x = 0; x < 8; x++)
                 widgets.add(new ItemSlotWidget((int) bounds.getCenterX() - 72 + x * 18, bounds.y + y * 18,
-                        recipeDisplay.getInput().get(0).get(y + x),
-                        true, true, containerGui));
-            }
+                        Arrays.asList(recipeDisplay.getInput().get(0).get(y * 8 + x)),
+                        true, true, containerGui, true));
         widgets.add(new ItemSlotWidget((int) startingPoint.x + 34, startingPoint.y + 5, recipeDisplay.getOutput(), false, true, containerGui));
         return widgets;
     }
