@@ -11,7 +11,7 @@ repositories {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-def baseversion = "0.2.2.0"
+def baseversion = "0.2.2.1"
 def buildbranch = System.getenv('TRAVIS_BRANCH')
 def buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
 def gittoken = System.getenv('GH_TOKEN')
@@ -39,6 +39,13 @@ if (buildbranch == "dev/fabric") {
 
 archivesBaseName = "PaintingMod-${minecraft_version}"
 
+processResources {
+	filesMatching('fabric.mod.json') {
+		expand 'version': project.version
+	}
+	inputs.property "version", project.version
+}
+
 minecraft {
 
 }
@@ -51,7 +58,7 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modCompile "net.fabricmc:fabric:${fabric_api}"
 
-	modCompile "com.github.Yanis48:FabriBlocks:fc63266920"
+	modCompile "com.github.Yanis48:FabriBlocks:${fabriblocks_commit}"
 }
 
 github {
