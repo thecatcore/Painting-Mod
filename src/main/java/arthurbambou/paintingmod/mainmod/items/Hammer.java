@@ -17,10 +17,10 @@ public class Hammer extends ItemBase {
     @Override
     public ActionResult useOnBlock(ItemUsageContext itemUsageContext_1) {
         if (!itemUsageContext_1.getWorld().isClient) {
-            Block block = itemUsageContext_1.getWorld().getBlockState(itemUsageContext_1.getPos()).getBlock();
+            Block block = itemUsageContext_1.getWorld().getBlockState(itemUsageContext_1.getBlockPos()).getBlock();
             if (block == ModBlocks.SOGGY_CLAY) {
-                itemUsageContext_1.getWorld().setBlockState(itemUsageContext_1.getPos(), Blocks.AIR.getDefaultState());
-                ItemEntity itemEntity = new ItemEntity(itemUsageContext_1.getWorld(), itemUsageContext_1.getPos().getX(), itemUsageContext_1.getPos().getY(), itemUsageContext_1.getPos().getZ(), new ItemStack(ModItems.EARTH_MORTAR, 4));
+                itemUsageContext_1.getWorld().setBlockState(itemUsageContext_1.getBlockPos(), Blocks.AIR.getDefaultState());
+                ItemEntity itemEntity = new ItemEntity(itemUsageContext_1.getWorld(), itemUsageContext_1.getBlockPos().getX(), itemUsageContext_1.getBlockPos().getY(), itemUsageContext_1.getBlockPos().getZ(), new ItemStack(ModItems.EARTH_MORTAR, 4));
                 itemUsageContext_1.getWorld().spawnEntity(itemEntity);
             }
         }

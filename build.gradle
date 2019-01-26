@@ -11,7 +11,7 @@ repositories {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-def baseversion = "0.2.2.1"
+def baseversion = "0.3.0.0"
 def buildbranch = System.getenv('TRAVIS_BRANCH')
 def buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
 def gittoken = System.getenv('GH_TOKEN')

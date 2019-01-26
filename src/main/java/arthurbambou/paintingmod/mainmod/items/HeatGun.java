@@ -13,28 +13,28 @@ public class HeatGun extends ItemBase {
     @Override
     public ActionResult useOnBlock(ItemUsageContext var1) {
         for (ColoredBlock coloredBlock : Registry.getCommonBlocks()) {
-            UnPaintFunctions.unpaintblock(var1.getWorld(), var1.getPos(), coloredBlock, var1.getItemStack());
+            UnPaintFunctions.unpaintblock(var1.getWorld(), var1.getBlockPos(), coloredBlock, var1.getItemStack());
         }
         for (ColoredStairs coloredStairs : Registry.getColoredStairsList()) {
-            UnPaintFunctions.unpaintstairs(var1.getWorld(), var1.getPos(), coloredStairs, var1.getItemStack());
+            UnPaintFunctions.unpaintstairs(var1.getWorld(), var1.getBlockPos(), coloredStairs, var1.getItemStack());
         }
         for (ColoredSlab coloredSlab : Registry.getColoredSlabList()) {
-            UnPaintFunctions.unpaintslab(var1.getWorld(), var1.getPos(), coloredSlab, var1.getItemStack());
+            UnPaintFunctions.unpaintslab(var1.getWorld(), var1.getBlockPos(), coloredSlab, var1.getItemStack());
         }
         for (ColoredWall coloredWall : Registry.getColoredWallList()) {
-            UnPaintFunctions.unpaintwall(var1.getWorld(), var1.getPos(), coloredWall, var1.getItemStack());
+            UnPaintFunctions.unpaintwall(var1.getWorld(), var1.getBlockPos(), coloredWall, var1.getItemStack());
         }
         for (ColoredFenceGate coloredFenceGate : Registry.getColoredFenceGateList()) {
-            UnPaintFunctions.unpaintfencegate(var1.getWorld(), var1.getPos(), coloredFenceGate, var1.getItemStack());
+            UnPaintFunctions.unpaintfencegate(var1.getWorld(), var1.getBlockPos(), coloredFenceGate, var1.getItemStack());
         }
         for (ColoredFence coloredFence : Registry.getColoredFenceList()) {
-            UnPaintFunctions.unpaintfence(var1.getWorld(), var1.getPos(), coloredFence, var1.getItemStack());
+            UnPaintFunctions.unpaintfence(var1.getWorld(), var1.getBlockPos(), coloredFence, var1.getItemStack());
         }
         for (ColoredPressurePlate coloredPressurePlate : Registry.getColoredPressurePlateList()) {
-            UnPaintFunctions.unpaintpressureplate(var1.getWorld(), var1.getPos(), coloredPressurePlate, var1.getItemStack());
+            UnPaintFunctions.unpaintpressureplate(var1.getWorld(), var1.getBlockPos(), coloredPressurePlate, var1.getItemStack());
         }
         for (ColoredButton coloredButton : Registry.getColoredButtonList()) {
-            UnPaintFunctions.unpaintbutton(var1.getWorld(), var1.getPos(), coloredButton, var1.getItemStack());
+            UnPaintFunctions.unpaintbutton(var1.getWorld(), var1.getBlockPos(), coloredButton, var1.getItemStack());
         }
         return super.useOnBlock(var1);
     }

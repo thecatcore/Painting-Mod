@@ -1,3 +1,6 @@
+Version 0.3.0.0 Fabric 19w04b
+Port to the latest snapshot (19w04b).
+
 Version 0.2.2.1 Fabric 19w03c
 Fix crash with FabriBlocks 1.0.3
 
@@ -11,7 +14,7 @@ Version 0.2.1.0 Fabric 19w03a-19w03c
 Add Colored Fence, Fence Gate, Pressure Plate and Button.
 API enhancement.
 
-Version 0.2.0.0 Fabric 15w50a-19w02a-19w03a
+Version 0.2.0.0 Fabric 18w50a-19w02a-19w03a
 
 Port to the latest snapshot (19w03a).
 Add Colored Slabs and Walls
