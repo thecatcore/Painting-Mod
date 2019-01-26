@@ -1,3 +1,6 @@
+Version 0.2.2.1 Fabric 19w03c
+Fix crash with FabriBlocks 1.0.3
+
 Version 0.2.2.0 Fabric 19w03c
 
 Add Compat with FabriBlocks.
