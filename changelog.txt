@@ -1,3 +1,8 @@
+Version 0.4.0.0 Fabric 19w06a
+Port to the latest snapshot (19w06a).
+Upgrade Fabric API to 0.2.0.
+Fix connection between vanilla and modded fences and walls.
+
 Version 0.3.0.0 Fabric 19w04b
 Port to the latest snapshot (19w04b).
 

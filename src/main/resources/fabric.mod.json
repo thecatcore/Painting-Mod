@@ -8,7 +8,9 @@
     "arthurbambou.paintingmod.mainmod.PaintingMod"
   ],
   "requires": {
-    "fabric": "0.1.4+",
-    "fabriblocks": "1.0.3"
+    "fabric": "0.1.4+"
+  },
+  "mixins": {
+    "common": "mixins.paintingmod.json"
   }
 }
