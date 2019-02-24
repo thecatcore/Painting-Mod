@@ -1,3 +1,7 @@
+Version 0.5.0.0 Fabric 19w08b
+Port to the latest snapshot (19w08b).
+Fix missing recipes.
+
 Version 0.4.0.0 Fabric 19w06a
 Port to the latest snapshot (19w06a).
 Upgrade Fabric API to 0.2.0.

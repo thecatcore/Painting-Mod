@@ -5,9 +5,9 @@ import com.google.common.collect.ImmutableMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
 import net.minecraft.item.*;
-import net.minecraft.village.Villager;
-import net.minecraft.village.VillagerRecipe;
-import net.minecraft.village.VillagerTrades;
+import net.minecraft.village.Trader;
+import net.minecraft.village.TraderRecipe;
+import net.minecraft.village.Trades;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -18,12 +18,12 @@ import static arthurbambou.paintingmod.mainmod.registery.ModVillagers.PAINTER;
 public class TradeBuilder {
     private static final Logger LOGGER = LogManager.getLogger();
     public static void createRecipes() {
-        VillagerTrades.PROFESSION_TO_LEVELED_TRADE.put(PAINTER, copyToFastUtilMap(ImmutableMap.of(1, new VillagerTrades.Factory[] {
+        Trades.PROFESSION_TO_LEVELED_TRADE.put(PAINTER, copyToFastUtilMap(ImmutableMap.of(1, new Trades.Factory[] {
                 new BuyItemFactory(ModItems.HEAT_GUN, new PriceRange(6, 8))
         })));
     }
 
-    private static Int2ObjectMap<VillagerTrades.Factory[]> copyToFastUtilMap(ImmutableMap<Integer, VillagerTrades.Factory[]> immutableMap_1) {
+    private static Int2ObjectMap<Trades.Factory[]> copyToFastUtilMap(ImmutableMap<Integer, Trades.Factory[]> immutableMap_1) {
         return new Int2ObjectOpenHashMap(immutableMap_1);
     }
 
@@ -45,7 +45,7 @@ public class TradeBuilder {
         }
     }
 
-    static class BuyItemFactory implements VillagerTrades.Factory {
+    static class BuyItemFactory implements Trades.Factory {
         public Item bought;
         public PriceRange range;
 
@@ -54,8 +54,8 @@ public class TradeBuilder {
             this.range = villagerTrades$PriceRange_1;
         }
 
-        public VillagerRecipe create(Villager villager_1, Random random_1) {
-            return new VillagerRecipe(new ItemStack(Items.EMERALD, this.range == null ? 1 : this.range.getPrice(random_1)), new ItemStack(this.bought));
+        public TraderRecipe create(Trader villager_1, Random random_1) {
+            return new TraderRecipe(new ItemStack(Items.EMERALD, this.range == null ? 1 : this.range.getPrice(random_1)), new ItemStack(this.bought));
         }
     }
 }

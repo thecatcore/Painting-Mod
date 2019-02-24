@@ -27,7 +27,6 @@ public class ColoredObject {
     public ColoredObject(String name, Block replace, String modid) {
         this.name = name;
         this.replace = replace;
-//        this.settings = FabricBlockSettings.copy(this.replace).build();
         if (this.replace != null) {
             this.settings = Block.Settings.copy(this.replace);
         }
