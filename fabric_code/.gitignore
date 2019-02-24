@@ -1,0 +1,47 @@
+# gradle
+
+.gradle/
+build/
+out/
+
+# idea
+
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# fabric
+
+run/
+bin/
+
+\.settings/
+
+\.classpath
+
+\.project
+
+package-lock\.json
+
+node_modules/
+
+blocks\.json
+
+dev\.lang
+
+slabs\.json
+
+walls\.json
+
+fencegates\.json
+
+pressureplates\.json
+
+fences\.json
+
+Painting-Mod-Fabric\.iws___jb_tmp___
+
+buttons\.json
+
+stairs\.json

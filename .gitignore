@@ -1,47 +1,24 @@
-# gradle
-
-.gradle/
-build/
-out/
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
 
 # idea
-
-.idea/
-*.iml
+out
 *.ipr
 *.iws
+*.iml
+.idea
 
-# fabric
+# gradle
+build
+.gradle
 
-run/
-bin/
+# other
+eclipse
+run
 
-\.settings/
-
-\.classpath
-
-\.project
-
-package-lock\.json
-
-node_modules/
-
-blocks\.json
-
-dev\.lang
-
-slabs\.json
-
-walls\.json
-
-fencegates\.json
-
-pressureplates\.json
-
-fences\.json
-
-Painting-Mod-Fabric\.iws___jb_tmp___
-
-buttons\.json
-
-stairs\.json
+fabric_code/\.vscode/

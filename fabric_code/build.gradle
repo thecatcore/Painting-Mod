@@ -1,0 +1,100 @@
+plugins {
+	id 'fabric-loom' version '0.2.0-SNAPSHOT'
+	id "co.riiid.gradle" version "0.4.2"
+	id "com.matthewprenger.cursegradle" version "1.1.2"
+}
+
+repositories {
+	maven { url 'https://jitpack.io' }
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+def baseversion = "0.5.0.0"
+def buildbranch = System.getenv('TRAVIS_BRANCH')
+def buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
+def gittoken = System.getenv('GH_TOKEN')
+def prelease
+def gitversion
+def commitname = System.getenv('TRAVIS_COMMIT')
+def commitlist = System.getenv('TRAVIS_COMMIT_RANGE')
+def commitbody = System.getenv('TRAVIS_COMMIT_MESSAGE')
+def changelogbody
+if (buildbranch == "dev/fabric") {
+	version = baseversion + "." + buildnumber
+    gitversion = version
+	prelease = true
+	changelogbody = """Version ${commitname} (${gitversion})
+	${commitlist}
+
+	${commitbody}
+ """
+} else {
+	version = baseversion
+    gitversion = version + "." + buildnumber
+	prelease = false
+	changelogbody = file("changelog.txt")
+}
+
+archivesBaseName = "PaintingMod-${minecraft_version}"
+
+processResources {
+	filesMatching('fabric.mod.json') {
+		expand 'version': project.version
+	}
+	inputs.property "version", project.version
+}
+
+minecraft {
+
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${minecraft_version}"
+	mappings "net.fabricmc:yarn:${minecraft_version}.${snapshot_build}"
+	modCompile "net.fabricmc:fabric-loader:${fabric_loader}"
+
+	// Fabric API. This is technically optional, but you probably want it anyway.
+	modCompile "net.fabricmc:fabric:${fabric_api}"
+
+//	modCompile "com.github.Yanis48:FabriBlocks:${fabriblocks_commit}"
+}
+
+github {
+ owner = 'arthurbambou'
+ repo = 'PaintingMod-Builds-Fabric'
+ token = gittoken ?: "a key"
+ tagName = gitversion + "-" + minecraft_version
+ name = gitversion + "-" + "MC" + minecraft_version
+ targetCommitish = "master"
+ prerelease = prelease
+ body = changelogbody
+ assets = [
+	 "build/libs/${archivesBaseName}-${version}-dev.jar",
+	 "build/libs/${archivesBaseName}-${version}.jar"
+ ]
+}
+
+curseforge {
+ 	apiKey = System.getenv('CURSEKEY') ?: "a key"
+ 	project {
+ 		id = "299755"
+ 		releaseType = "release"
+		changelog = file("changelog.txt")
+        gameVersionStrings.clear()
+        gameVersionStrings.add("1.14-Snapshot")
+        mainArtifact(jar) {
+            displayName = "[Fabric " + minecraft_version + "] " + version
+			relations {
+				requiredDependency "fabric"
+				optionalDependency "modmenu"
+				optionalDependency "fabriblocks"
+			}
+        }
+        addArtifact file("build/libs/${archivesBaseName}-${version}-dev.jar")
+ 	}
+	options{
+		forgeGradleIntegration = false
+	}
+ }

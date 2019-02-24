@@ -1,100 +1,108 @@
-plugins {
-	id 'fabric-loom' version '0.2.0-SNAPSHOT'
-	id "co.riiid.gradle" version "0.4.2"
-	id "com.matthewprenger.cursegradle" version "1.1.2"
+buildscript {
+    repositories {
+        maven { url = 'https://files.minecraftforge.net/maven' }
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
+    }
 }
+apply plugin: 'net.minecraftforge.gradle'
+// Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
+apply plugin: 'eclipse'
 
-repositories {
-	maven { url 'https://jitpack.io' }
-}
+version = project.mod_version
+group = 'fr.arthurbambou.paintingmod' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "PaintingMod-" + project.minecraft_version
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
-
-def baseversion = "0.5.0.0"
-def buildbranch = System.getenv('TRAVIS_BRANCH')
-def buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
-def gittoken = System.getenv('GH_TOKEN')
-def prelease
-def gitversion
-def commitname = System.getenv('TRAVIS_COMMIT')
-def commitlist = System.getenv('TRAVIS_COMMIT_RANGE')
-def commitbody = System.getenv('TRAVIS_COMMIT_MESSAGE')
-def changelogbody
-if (buildbranch == "dev/fabric") {
-	version = baseversion + "." + buildnumber
-    gitversion = version
-	prelease = true
-	changelogbody = """Version ${commitname} (${gitversion})
-	${commitlist}
-
-	${commitbody}
- """
-} else {
-	version = baseversion
-    gitversion = version + "." + buildnumber
-	prelease = false
-	changelogbody = file("changelog.txt")
-}
-
-archivesBaseName = "PaintingMod-${minecraft_version}"
-
-processResources {
-	filesMatching('fabric.mod.json') {
-		expand 'version': project.version
-	}
-	inputs.property "version", project.version
-}
+sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 
 minecraft {
+    // The mappings can be changed at any time, and must be in the following format.
+    // snapshot_YYYYMMDD   Snapshot are built nightly.
+    // stable_#            Stables are built at the discretion of the MCP team.
+    // Use non-default mappings at your own risk. they may not always work.
+    // Simply re-run your setup task after changing the mappings to update your workspace.
+    mappings channel: 'snapshot', version: project.forge_mapping
+    // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
+    
+    // accessTransformer = file('build/resources/main/META-INF/accesstransformer.cfg')
 
+    // Default run configurations.
+    // These can be tweaked, removed, or duplicated as needed.
+    runs {
+        client {
+            workingDirectory project.file('run')
+
+            // Recommended logging data for a userdev environment
+            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+
+            // Recommended logging level for the console
+            property 'forge.logging.console.level', 'debug'
+
+            mods {
+                examplemod {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        server {
+            workingDirectory project.file('run')
+
+            // Recommended logging data for a userdev environment
+            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+
+            // Recommended logging level for the console
+            property 'forge.logging.console.level', 'debug'
+
+            mods {
+                examplemod {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
 }
 
 dependencies {
-	minecraft "com.mojang:minecraft:${minecraft_version}"
-	mappings "net.fabricmc:yarn:${minecraft_version}.${snapshot_build}"
-	modCompile "net.fabricmc:fabric-loader:${fabric_loader}"
+    // Specify the version of Minecraft to use, If this is any group other then 'net.minecraft' it is assumed
+    // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
+    // The userdev artifact is a special name and will get all sorts of transformations applied to it.
+    minecraft "net.minecraftforge:forge:${project.minecraft_version}-${project.forge_version}"
 
-	// Fabric API. This is technically optional, but you probably want it anyway.
-	modCompile "net.fabricmc:fabric:${fabric_api}"
+    // You may put jars on which you depend on in ./libs or you may define them like so..
+    // compile "some.group:artifact:version:classifier"
+    // compile "some.group:artifact:version"
 
-//	modCompile "com.github.Yanis48:FabriBlocks:${fabriblocks_commit}"
+    // Real examples
+    // compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env
+    // compile 'com.googlecode.efficient-java-matrix-library:ejml:0.24' // adds ejml to the dev env
+
+    // The 'provided' configuration is for optional dependencies that exist at compile-time but might not at runtime.
+    // provided 'com.mod-buildcraft:buildcraft:6.0.8:dev'
+
+    // These dependencies get remapped to your current MCP mappings
+    // deobf 'com.mod-buildcraft:buildcraft:6.0.8:dev'
+
+    // For more info...
+    // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
+    // http://www.gradle.org/docs/current/userguide/dependency_management.html
+
 }
 
-github {
- owner = 'arthurbambou'
- repo = 'PaintingMod-Builds-Fabric'
- token = gittoken ?: "a key"
- tagName = gitversion + "-" + minecraft_version
- name = gitversion + "-" + "MC" + minecraft_version
- targetCommitish = "master"
- prerelease = prelease
- body = changelogbody
- assets = [
-	 "build/libs/${archivesBaseName}-${version}-dev.jar",
-	 "build/libs/${archivesBaseName}-${version}.jar"
- ]
+// Example for how to get properties into the manifest for reading by the runtime..
+jar {
+    manifest {
+        attributes([
+            "Specification-Title": "paintingmod",
+            "Specification-Vendor": "arthurbambou",
+            "Specification-Version": "1", // We are version 1 of ourselves
+            "Implementation-Title": project.name,
+            "Implementation-Version": "${version}",
+            "Implementation-Vendor" :"arthurbambou",
+            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
 }
-
-curseforge {
- 	apiKey = System.getenv('CURSEKEY') ?: "a key"
- 	project {
- 		id = "299755"
- 		releaseType = "release"
-		changelog = file("changelog.txt")
-        gameVersionStrings.clear()
-        gameVersionStrings.add("1.14-Snapshot")
-        mainArtifact(jar) {
-            displayName = "[Fabric " + minecraft_version + "] " + version
-			relations {
-				requiredDependency "fabric"
-				optionalDependency "modmenu"
-				optionalDependency "fabriblocks"
-			}
-        }
-        addArtifact file("build/libs/${archivesBaseName}-${version}-dev.jar")
- 	}
-	options{
-		forgeGradleIntegration = false
-	}
- }
