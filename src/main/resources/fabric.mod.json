@@ -9,5 +9,8 @@
   ],
   "requires": {
     "fabric": "0.1.4+"
+  },
+  "mixins": {
+    "common": "mixins.paintingmod.json"
   }
 }

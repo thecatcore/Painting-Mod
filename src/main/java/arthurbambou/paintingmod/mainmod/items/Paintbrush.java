@@ -19,7 +19,7 @@ public class Paintbrush extends ItemBase {
     public ActionResult useOnBlock(ItemUsageContext var1) {
         World world = var1.getWorld();
         PlayerEntity playerEntity = var1.getPlayer();
-        BlockPos blockPos = var1.getPos();
+        BlockPos blockPos = var1.getBlockPos();
         for (ColoredBlock coloredBlock : Registry.getCommonBlocks()) {
             PaintFunctions.newbloctopaint(playerEntity, world, blockPos, coloredBlock);
         }

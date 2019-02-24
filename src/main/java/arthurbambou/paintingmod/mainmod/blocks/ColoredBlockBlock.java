@@ -11,11 +11,11 @@ public class ColoredBlockBlock extends Block {
 
     public ColoredBlockBlock(String name, Settings block$Settings_1, String modID) {
         super(block$Settings_1);
-        Registry.BLOCK.register(new Identifier(modID, name), this);
+        Registry.register(Registry.BLOCK, new Identifier(modID, name), this);
         if (modID == PaintingMod.MODID) {
-            Registry.ITEM.register(new Identifier(modID, name), new BlockItem(this, new Item.Settings().itemGroup(PaintingMod.MOD_BLOCKS)));
+            Registry.register(Registry.ITEM, new Identifier(modID, name), new BlockItem(this, new Item.Settings().itemGroup(PaintingMod.MOD_BLOCKS)));
         } else {
-            Registry.ITEM.register(new Identifier(modID, name), new BlockItem(this, new Item.Settings().itemGroup(PaintingMod.ADDON_BLOCKS)));
+            Registry.register(Registry.ITEM, new Identifier(modID, name), new BlockItem(this, new Item.Settings().itemGroup(PaintingMod.ADDON_BLOCKS)));
         }
     }
 }
