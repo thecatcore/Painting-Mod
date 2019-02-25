@@ -55,15 +55,6 @@
     "itemGroup.paintingmod.mod_pressure_plates": "PaintingMod Pressure Plates",
     "itemGroup.paintingmod.mod_buttons": "PaintingMod Buttons",
 
-    "itemGroup.paintingmod.addon_blocks": "PaintingMod Addon Blocks",
-    "itemGroup.paintingmod.addon_stairs": "PaintingMod Addon Stairs",
-    "itemGroup.paintingmod.addon_slabs": "PaintingMod Addon Slabs",
-    "itemGroup.paintingmod.addon_walls": "PaintingMod Addon Walls",
-    "itemGroup.paintingmod.addon_fence_gates": "PaintingMod Addon Fence Gates",
-    "itemGroup.paintingmod.addon_fence": "PaintingMod Addon Fences",
-    "itemGroup.paintingmod.addon_pressure_plates": "PaintingMod Addon Pressure Plates",
-    "itemGroup.paintingmod.addon_buttons": "PaintingMod Addon Buttons",
-
     "_comment": "Tools",
     "item.paintingmod.hammer": "Hammer",
 
