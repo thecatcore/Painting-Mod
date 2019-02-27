@@ -1,17 +1,16 @@
 package fr.arthurbambou.paintingmod.coloredblocks;
 
 import fr.arthurbambou.paintingmod.PaintingMod;
-import fr.arthurbambou.paintingmod.api.ColoredObject;
+import fr.arthurbambou.paintingmod.api.coloredblocks.ColoredBlock;
 import fr.arthurbambou.paintingmod.blocks.coloreds.NormalBlock;
-import fr.arthurbambou.paintingmod.registry.ModBlocks;
 import net.minecraft.block.Block;
 
-public class ColoredBlock extends ColoredObject {
-    public ColoredBlock(Block replace) {
+public class PMColoredBlock extends ColoredBlock {
+    public PMColoredBlock(Block replace) {
         super(replace, PaintingMod.MODID);
     }
 
-    public ColoredBlock(Block replace, String name) {
+    public PMColoredBlock(Block replace, String name) {
         super(replace, PaintingMod.MODID, name);
     }
 

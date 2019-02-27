@@ -22,7 +22,6 @@ public class ColoredObjectRegistry {
                 .setName(new ResourceLocation(PaintingMod.MODID, "colored_objects"))
                 .setIDRange(0, 1000)
                 .create();
-        PaintingMod.LOGGER.info("Colored Object Registry Created");
     }
 //    private static final List<ColoredObject> COLORED_OBJECTS = new ArrayList<>();
 //    private static final List<Class<? extends ColoredObject>> COLORED_TYPE = new ArrayList<>();

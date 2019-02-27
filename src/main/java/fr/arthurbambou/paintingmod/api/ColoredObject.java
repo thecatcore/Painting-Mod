@@ -1,11 +1,12 @@
 package fr.arthurbambou.paintingmod.api;
 
 import fr.arthurbambou.paintingmod.PaintingMod;
+import fr.arthurbambou.paintingmod.api.interfaces.IColoredObject;
 import net.minecraft.block.Block;
 import net.minecraft.util.IStringSerializable;
 import net.minecraftforge.registries.ForgeRegistryEntry;
 
-public class ColoredObject extends ForgeRegistryEntry<ColoredObject> implements Comparable<ColoredObject>, IStringSerializable {
+public abstract class ColoredObject extends ForgeRegistryEntry<ColoredObject> implements Comparable<ColoredObject>, IStringSerializable, IColoredObject {
     private String name;
     public Block black;
     public Block red;
@@ -47,8 +48,6 @@ public class ColoredObject extends ForgeRegistryEntry<ColoredObject> implements 
     public Block[] getBlockArray() {
         return new Block[] {black,red,green,brown,blue,purple,cyan,lightgray,gray,pink,lime,yellow,lightblue,magenta,orange,white};
     }
-
-    public void createBlocks() {}
 
     @Override
     public int compareTo(ColoredObject o) {

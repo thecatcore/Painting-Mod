@@ -40,6 +40,18 @@ public class PaintingMod
         }
     }).setBackgroundImageName("item_search.png").setNoTitle();
 
+    public static ItemGroup MOD_STAIRS = (new ItemGroup("paintingmod.mod_stairs") {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(ModBlocks.OAK_STAIRS.cyan);
+        }
+
+        @Override
+        public boolean hasSearchBar() {
+            return true;
+        }
+    }).setBackgroundImageName("item_search.png").setNoTitle();
+
     public PaintingMod() {
         ModBlocks modBlocks = new ModBlocks();
         ModItems modItems = new ModItems();

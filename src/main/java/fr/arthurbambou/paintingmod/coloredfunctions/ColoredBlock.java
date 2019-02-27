@@ -6,7 +6,6 @@ import fr.arthurbambou.paintingmod.api.ColoredObject;
 import fr.arthurbambou.paintingmod.items.Paintbrush;
 import fr.arthurbambou.paintingmod.registry.ModItems;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -15,14 +14,14 @@ import java.util.ArrayList;
 
 public class ColoredBlock extends ColoredFunction {
     public ColoredBlock() {
-        super(new ResourceLocation(PaintingMod.MODID, "colored_blocks"));
+        super(new ResourceLocation(PaintingMod.MODID, "blocks"));
     }
 
     @Override
     public void paint(ColoredObject coloredObject, World worldIn, BlockPos pos, EntityPlayer player, Paintbrush paintbrush) {
         ArrayList<Paintbrush> paintbrushes = ModItems.PAINTBRUSHES;
         if (paintbrush == paintbrushes.get(0)) return;
-        if (coloredObject instanceof fr.arthurbambou.paintingmod.coloredblocks.ColoredBlock) {
+        if (coloredObject instanceof fr.arthurbambou.paintingmod.api.coloredblocks.ColoredBlock) {
             if (worldIn.getBlockState(pos).getBlock() == coloredObject.replace) {
                 if (player.getHeldItemMainhand().getItem() == paintbrushes.get(1)) {
                     worldIn.setBlockState(pos, coloredObject.black.getDefaultState());
@@ -96,25 +95,27 @@ public class ColoredBlock extends ColoredFunction {
 
     @Override
     public void unPaint(ColoredObject coloredObject, World worldIn, BlockPos pos, EntityPlayer player) {
-        if (worldIn.getBlockState(pos).getBlock() == coloredObject.black ||
-                worldIn.getBlockState(pos).getBlock() == coloredObject.blue ||
-                worldIn.getBlockState(pos).getBlock() == coloredObject.brown ||
-                worldIn.getBlockState(pos).getBlock() == coloredObject.cyan ||
-                worldIn.getBlockState(pos).getBlock() == coloredObject.gray ||
-                worldIn.getBlockState(pos).getBlock() == coloredObject.green ||
-                worldIn.getBlockState(pos).getBlock() == coloredObject.lightblue ||
-                worldIn.getBlockState(pos).getBlock() == coloredObject.lightgray ||
-                worldIn.getBlockState(pos).getBlock() == coloredObject.lime ||
-                worldIn.getBlockState(pos).getBlock() == coloredObject.magenta ||
-                worldIn.getBlockState(pos).getBlock() == coloredObject.orange ||
-                worldIn.getBlockState(pos).getBlock() == coloredObject.pink ||
-                worldIn.getBlockState(pos).getBlock() == coloredObject.purple ||
-                worldIn.getBlockState(pos).getBlock() == coloredObject.red ||
-                worldIn.getBlockState(pos).getBlock() == coloredObject.white ||
-                worldIn.getBlockState(pos).getBlock() == coloredObject.yellow) {
+        if (coloredObject instanceof fr.arthurbambou.paintingmod.api.coloredblocks.ColoredBlock) {
+            if (worldIn.getBlockState(pos).getBlock() == coloredObject.black ||
+                    worldIn.getBlockState(pos).getBlock() == coloredObject.blue ||
+                    worldIn.getBlockState(pos).getBlock() == coloredObject.brown ||
+                    worldIn.getBlockState(pos).getBlock() == coloredObject.cyan ||
+                    worldIn.getBlockState(pos).getBlock() == coloredObject.gray ||
+                    worldIn.getBlockState(pos).getBlock() == coloredObject.green ||
+                    worldIn.getBlockState(pos).getBlock() == coloredObject.lightblue ||
+                    worldIn.getBlockState(pos).getBlock() == coloredObject.lightgray ||
+                    worldIn.getBlockState(pos).getBlock() == coloredObject.lime ||
+                    worldIn.getBlockState(pos).getBlock() == coloredObject.magenta ||
+                    worldIn.getBlockState(pos).getBlock() == coloredObject.orange ||
+                    worldIn.getBlockState(pos).getBlock() == coloredObject.pink ||
+                    worldIn.getBlockState(pos).getBlock() == coloredObject.purple ||
+                    worldIn.getBlockState(pos).getBlock() == coloredObject.red ||
+                    worldIn.getBlockState(pos).getBlock() == coloredObject.white ||
+                    worldIn.getBlockState(pos).getBlock() == coloredObject.yellow) {
 
-            worldIn.setBlockState(pos, coloredObject.replace.getDefaultState());
-            usedHeatGun(player);
+                worldIn.setBlockState(pos, coloredObject.replace.getDefaultState());
+                usedHeatGun(player);
+            }
         }
     }
 }
