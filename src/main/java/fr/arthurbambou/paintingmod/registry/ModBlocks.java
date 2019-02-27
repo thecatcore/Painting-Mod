@@ -3,11 +3,14 @@ package fr.arthurbambou.paintingmod.registry;
 import fr.arthurbambou.paintingmod.PaintingMod;
 import fr.arthurbambou.paintingmod.api.ColoredObject;
 import fr.arthurbambou.paintingmod.api.coloredblocks.ColoredBlock;
+import fr.arthurbambou.paintingmod.api.coloredblocks.ColoredSlab;
 import fr.arthurbambou.paintingmod.api.coloredblocks.ColoredStairs;
 import fr.arthurbambou.paintingmod.blocks.SoggyClay;
 import fr.arthurbambou.paintingmod.blocks.coloreds.NormalBlock;
+import fr.arthurbambou.paintingmod.blocks.coloreds.NormalSlab;
 import fr.arthurbambou.paintingmod.blocks.coloreds.NormalStairs;
 import fr.arthurbambou.paintingmod.coloredblocks.PMColoredBlock;
+import fr.arthurbambou.paintingmod.coloredblocks.PMColoredSlab;
 import fr.arthurbambou.paintingmod.coloredblocks.PMColoredStairs;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
@@ -127,6 +130,9 @@ public class ModBlocks {
     public static ColoredStairs PRISMARINE_STAIRS;
     public static ColoredStairs PRISMARINE_BRICK_STAIRS;
     public static ColoredStairs DARK_PRISMARINE_STAIRS;
+    public static ColoredSlab PRISMARINE_SLAB;
+    public static ColoredSlab PRISMARINE_BRICK_SLAB;
+    public static ColoredSlab DARK_PRISMARINE_SLAB;
     public static ColoredBlock SEA_LANTERN;
     public static ColoredObject HAY_BLOCK;
     public static ColoredBlock COAL_BLOCK;
@@ -135,6 +141,22 @@ public class ModBlocks {
     public static ColoredBlock RED_CHISELED_SANDSTONE;
     public static ColoredBlock RED_CUT_SANDSTONE;
     public static ColoredStairs RED_SANDSTONE_STAIRS;
+    public static ColoredSlab OAK_SLAB;
+    public static ColoredSlab SPRUCE_SLAB;
+    public static ColoredSlab BIRCH_SLAB;
+    public static ColoredSlab JUNGLE_SLAB;
+    public static ColoredSlab ACACIA_SLAB;
+    public static ColoredSlab DARK_OAK_SLAB;
+    public static ColoredSlab STONE_SLAB;
+    public static ColoredSlab SANDSTONE_SLAB;
+    public static ColoredSlab PETRIFIED_OAK_SLAB;
+    public static ColoredSlab COBBLESTONE_SLAB;
+    public static ColoredSlab BRICK_SLAB;
+    public static ColoredSlab STONE_BRICK_SLAB;
+    public static ColoredSlab NETHER_BRICK_SLAB;
+    public static ColoredSlab QUARTZ_SLAB;
+    public static ColoredSlab RED_SANDSTONE_SLAB;
+    public static ColoredSlab PURPUR_SLAB;
     public static ColoredBlock SMOOTH_QUARTZ;
     public static ColoredBlock SMOOTH_RED_SANDSTONE;
     public static ColoredBlock SMOOTH_SANDSTONE;
@@ -245,7 +267,7 @@ public class ModBlocks {
 //        QUARTZ_PILLAR = new PMColoredBlock(Blocks.QUARTZ_PILLAR);
 //        QUARTZ_STAIRS = new PMColoredStairs(Blocks.QUARTZ_STAIRS);
         ACACIA_STAIRS = new PMColoredStairs(Blocks.ACACIA_STAIRS, "acacia_plank_stairs");
-        DARK_OAK_STAIRS = new PMColoredStairs(Blocks.DARK_OAK_STAIRS, "dark_oak_stairs");
+        DARK_OAK_STAIRS = new PMColoredStairs(Blocks.DARK_OAK_STAIRS, "dark_oak_plank_stairs");
         SLIME_BLOCK = new PMColoredBlock(Blocks.SLIME_BLOCK);
         PRISMARINE = new PMColoredBlock(Blocks.PRISMARINE);
         PRISMARINE_BRICK = new PMColoredBlock(Blocks.PRISMARINE_BRICKS,"prismarine_brick");
@@ -253,6 +275,9 @@ public class ModBlocks {
         PRISMARINE_STAIRS = new PMColoredStairs(Blocks.PRISMARINE_STAIRS);
         PRISMARINE_BRICK_STAIRS = new PMColoredStairs(Blocks.PRISMARINE_BRICK_STAIRS);
         DARK_PRISMARINE_STAIRS = new PMColoredStairs(Blocks.DARK_PRISMARINE_STAIRS);
+        PRISMARINE_SLAB = new PMColoredSlab(Blocks.PRISMARINE_SLAB);
+        PRISMARINE_BRICK_SLAB = new PMColoredSlab(Blocks.PRISMARINE_BRICK_SLAB);
+        DARK_PRISMARINE_SLAB = new PMColoredSlab(Blocks.DARK_PRISMARINE_SLAB);
         SEA_LANTERN = new PMColoredBlock(Blocks.SEA_LANTERN);
 //        HAY_BLOCK = new PMColoredBlock(Blocks.HAY_BLOCK);
         COAL_BLOCK = new PMColoredBlock(Blocks.COAL_BLOCK);
@@ -261,6 +286,22 @@ public class ModBlocks {
 //        RED_CHISELED_SANDSTONE = new PMColoredBlock(Blocks.CHISELED_RED_SANDSTONE);
 //        RED_CUT_SANDSTONE = new PMColoredBlock(Blocks.CUT_RED_SANDSTONE);
 //        RED_SANDSTONE_STAIRS = new PMColoredStairs(Blocks.RED_SANDSTONE_STAIRS);
+        OAK_SLAB = new PMColoredSlab(Blocks.OAK_SLAB, "oak_plank_slab");
+        SPRUCE_SLAB = new PMColoredSlab(Blocks.SPRUCE_SLAB, "spruce_plank_slab");
+        BIRCH_SLAB = new PMColoredSlab(Blocks.BIRCH_SLAB, "birch_plank_slab");
+        JUNGLE_SLAB = new PMColoredSlab(Blocks.JUNGLE_SLAB, "jungle_plank_slab");
+        ACACIA_SLAB = new PMColoredSlab(Blocks.ACACIA_SLAB, "acacia_plank_slab");
+        DARK_OAK_SLAB = new PMColoredSlab(Blocks.DARK_OAK_SLAB, "dark_oak_plank_slab");
+//        STONE_SLAB = new PMColoredSlab(Blocks.STONE_SLAB);
+//        SANDSTONE_SLAB = new PMColoredSlab(Blocks.SANDSTONE_SLAB);
+//        PETRIFIED_OAK_SLAB = new PMColoredSlab(Blocks.PETRIFIED_OAK_SLAB);
+        COBBLESTONE_SLAB = new PMColoredSlab(Blocks.COBBLESTONE_SLAB);
+        BRICK_SLAB = new PMColoredSlab(Blocks.BRICK_SLAB);
+        STONE_BRICK_SLAB = new PMColoredSlab(Blocks.STONE_BRICK_SLAB);
+        NETHER_BRICK_SLAB = new PMColoredSlab(Blocks.NETHER_BRICK_SLAB);
+//        QUARTZ_SLAB = new PMColoredSlab(Blocks.QUARTZ_SLAB);
+//        RED_SANDSTONE_SLAB = new PMColoredSlab(Blocks.RED_SANDSTONE_SLAB);
+        PURPUR_SLAB = new PMColoredSlab(Blocks.PURPUR_SLAB);
 //        SMOOTH_QUARTZ = new PMColoredBlock(Blocks.SMOOTH_QUARTZ);
 //        SMOOTH_RED_SANDSTONE = new PMColoredBlock(Blocks.SMOOTH_RED_SANDSTONE);
 //        SMOOTH_SANDSTONE = new PMColoredBlock(Blocks.SMOOTH_SANDSTONE);
@@ -307,10 +348,17 @@ public class ModBlocks {
 //                QUARTZ_BLOCK, CHISELED_QUARTZ_BLOCK, QUARTZ_PILLAR, QUARTZ_STAIRS,
                 ACACIA_STAIRS, DARK_OAK_STAIRS, SLIME_BLOCK,
                 PRISMARINE, PRISMARINE_BRICK,DARK_PRISMARINE,
-                PRISMARINE_STAIRS, PRISMARINE_BRICK_STAIRS, DARK_PRISMARINE_STAIRS, SEA_LANTERN,
+                PRISMARINE_STAIRS, PRISMARINE_BRICK_STAIRS, DARK_PRISMARINE_STAIRS,
+                PRISMARINE_SLAB, PRISMARINE_BRICK_SLAB, DARK_PRISMARINE_SLAB,
+                SEA_LANTERN,
 //                HAY_BLOCK,
                 COAL_BLOCK, PACKET_ICE,
 //                RED_SANDSTONE, RED_CHISELED_SANDSTONE, RED_CUT_SANDSTONE, RED_SANDSTONE_STAIRS,
+                OAK_SLAB, SPRUCE_SLAB, BIRCH_SLAB, JUNGLE_SLAB, ACACIA_SLAB, DARK_OAK_SLAB,
+//                STONE_SLAB, SANDSTONE_SLAB, PETRIFIED_OAK_SLAB,
+                COBBLESTONE_SLAB, BRICK_SLAB, STONE_BRICK_SLAB, NETHER_BRICK_SLAB,
+//                QUARTZ_SLAB, RED_SANDSTONE_SLAB,
+                PURPUR_SLAB,
 //                SMOOTH_QUARTZ, SMOOTH_RED_SANDSTONE, SMOOTH_SANDSTONE, SMOOTH_STONE,
 //                END_ROD,
                 PURPUR_BLOCK,
@@ -348,6 +396,8 @@ public class ModBlocks {
                     event.getRegistry().register(new ItemBlock(block, new Item.Properties().group(PaintingMod.MOD_BLOCKS)).setRegistryName(block.getRegistryName()));
                 } else if (block instanceof NormalStairs) {
                     event.getRegistry().register(new ItemBlock(block, new Item.Properties().group(PaintingMod.MOD_STAIRS)).setRegistryName(block.getRegistryName()));
+                } else if (block instanceof NormalSlab) {
+                    event.getRegistry().register(new ItemBlock(block, new Item.Properties().group(PaintingMod.MOD_SLABS)).setRegistryName(block.getRegistryName()));
                 }
             }
         }
