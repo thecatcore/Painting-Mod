@@ -1,6 +1,7 @@
 package fr.arthurbambou.paintingmod;
 
 import fr.arthurbambou.paintingmod.registry.ModBlocks;
+import fr.arthurbambou.paintingmod.registry.ModFunctions;
 import fr.arthurbambou.paintingmod.registry.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -27,16 +28,22 @@ public class PaintingMod
         }
     };
 
-    public static ItemGroup MOD_BLOCKS = new ItemGroup("paintingmod.mod_blocks") {
+    public static ItemGroup MOD_BLOCKS = (new ItemGroup("paintingmod.mod_blocks") {
         @Override
         public ItemStack createIcon() {
             return new ItemStack(ModBlocks.soggy_clay);
         }
-    };
+
+        @Override
+        public boolean hasSearchBar() {
+            return true;
+        }
+    }).setBackgroundImageName("item_search.png").setNoTitle();
 
     public PaintingMod() {
         ModBlocks modBlocks = new ModBlocks();
         ModItems modItems = new ModItems();
+        ModFunctions modFunctions = new ModFunctions();
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addGenericListener(Block.class, modBlocks::onBlockRegister);
