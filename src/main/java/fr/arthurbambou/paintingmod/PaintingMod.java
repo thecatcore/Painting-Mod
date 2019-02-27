@@ -20,7 +20,14 @@ public class PaintingMod
     // Directly reference a log4j logger.
     public static final String MODID = "paintingmod";
     public static final Logger LOGGER = LogManager.getLogger(MODID);
-    public static ItemGroup MOD_ITEMS = new ItemGroup("mod_items") {
+    public static ItemGroup MOD_ITEMS = new ItemGroup("paintingmod.mod_items") {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(ModItems.PAINTBRUSHES.get(0));
+        }
+    };
+
+    public static ItemGroup MOD_BLOCKS = new ItemGroup("paintingmod.mod_blocks") {
         @Override
         public ItemStack createIcon() {
             return new ItemStack(ModBlocks.soggy_clay);

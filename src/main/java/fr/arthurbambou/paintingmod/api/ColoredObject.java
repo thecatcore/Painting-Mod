@@ -2,9 +2,11 @@ package fr.arthurbambou.paintingmod.api;
 
 import fr.arthurbambou.paintingmod.PaintingMod;
 import net.minecraft.block.Block;
+import net.minecraft.util.IStringSerializable;
+import net.minecraftforge.registries.ForgeRegistryEntry;
 
-public class ColoredObject {
-    public String name;
+public class ColoredObject extends ForgeRegistryEntry<ColoredObject> implements Comparable<ColoredObject>, IStringSerializable {
+    private String name;
     public Block black;
     public Block red;
     public Block green;
@@ -23,7 +25,6 @@ public class ColoredObject {
     public Block white;
     public Block replace;
     public Block.Properties settings;
-    public String modID;
 
     public ColoredObject(Block replace, String modID) {
         this.name = replace.getRegistryName().getPath();
@@ -31,15 +32,16 @@ public class ColoredObject {
         if (this.replace != null) {
             this.settings = Block.Properties.from(this.replace);
         }
-        this.modID = modID;
+        this.setRegistryName(modID, this.name);
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getRegisteryName() {
-        return modID + ":" + name;
+    public ColoredObject(Block replace, String modID, String name) {
+        this.name = name;
+        this.replace = replace;
+        if (this.replace != null) {
+            this.settings = Block.Properties.from(this.replace);
+        }
+        this.setRegistryName(modID, this.name);
     }
 
     public Block[] getBlockArray() {
@@ -47,4 +49,14 @@ public class ColoredObject {
     }
 
     public void createBlocks() {}
+
+    @Override
+    public int compareTo(ColoredObject o) {
+        return 0;
+    }
+
+    @Override
+    public String getName() {
+        return getRegistryName().getPath();
+    }
 }
