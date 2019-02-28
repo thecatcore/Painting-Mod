@@ -64,6 +64,18 @@ public class PaintingMod
         }
     }).setBackgroundImageName("item_search.png").setNoTitle();
 
+    public static ItemGroup MOD_PRESSURE_PLATES = (new ItemGroup("paintingmod.mod_pressure_plates") {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(ModBlocks.OAK_PRESSURE_PLATE.cyan);
+        }
+
+        @Override
+        public boolean hasSearchBar() {
+            return true;
+        }
+    }).setBackgroundImageName("item_search.png").setNoTitle();
+
     public PaintingMod() {
         ModBlocks modBlocks = new ModBlocks();
         ModItems modItems = new ModItems();

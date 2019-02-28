@@ -3,16 +3,17 @@ package fr.arthurbambou.paintingmod.registry;
 import fr.arthurbambou.paintingmod.PaintingMod;
 import fr.arthurbambou.paintingmod.api.ColoredObject;
 import fr.arthurbambou.paintingmod.api.coloredblocks.ColoredBlock;
+import fr.arthurbambou.paintingmod.api.coloredblocks.ColoredPressurePlate;
 import fr.arthurbambou.paintingmod.api.coloredblocks.ColoredSlab;
 import fr.arthurbambou.paintingmod.api.coloredblocks.ColoredStairs;
 import fr.arthurbambou.paintingmod.blocks.SoggyClay;
-import fr.arthurbambou.paintingmod.blocks.coloreds.NormalBlock;
-import fr.arthurbambou.paintingmod.blocks.coloreds.NormalSlab;
-import fr.arthurbambou.paintingmod.blocks.coloreds.NormalStairs;
+import fr.arthurbambou.paintingmod.blocks.coloreds.*;
 import fr.arthurbambou.paintingmod.coloredblocks.PMColoredBlock;
+import fr.arthurbambou.paintingmod.coloredblocks.PMColoredPressurePlate;
 import fr.arthurbambou.paintingmod.coloredblocks.PMColoredSlab;
 import fr.arthurbambou.paintingmod.coloredblocks.PMColoredStairs;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockPressurePlate;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -97,6 +98,13 @@ public class ModBlocks {
     public static ColoredStairs OAK_STAIRS;
     public static ColoredBlock DIAMOND_BLOCK;
     public static ColoredStairs COBBLESTONE_STAIRS;
+    public static ColoredPressurePlate STONE_PRESSURE_PLATE;
+    public static ColoredPressurePlate OAK_PRESSURE_PLATE;
+    public static ColoredPressurePlate SPRUCE_PRESSURE_PLATE;
+    public static ColoredPressurePlate BIRCH_PRESSURE_PLATE;
+    public static ColoredPressurePlate JUNGLE_PRESSURE_PLATE;
+    public static ColoredPressurePlate ACACIA_PRESSURE_PLATE;
+    public static ColoredPressurePlate DARK_OAK_PRESSURE_PLATE;
     public static ColoredBlock ICE;
     public static ColoredBlock SNOW_BLOCK;
     public static ColoredBlock CLAY_BLOCK;
@@ -117,6 +125,8 @@ public class ModBlocks {
     public static ColoredStairs SPRUCE_STAIRS;
     public static ColoredStairs BIRCH_STAIRS;
     public static ColoredStairs JUNGLE_STAIRS;
+    public static ColoredPressurePlate LIGHT_WEIGHTED_PRESSURE_PLATE;
+    public static ColoredPressurePlate HEAVY_WEIGHTED_PRESSURE_PLATE;
     public static ColoredBlock QUARTZ_BLOCK;
     public static ColoredBlock CHISELED_QUARTZ_BLOCK;
     public static ColoredObject QUARTZ_PILLAR;
@@ -242,6 +252,13 @@ public class ModBlocks {
         OAK_STAIRS = new PMColoredStairs(Blocks.OAK_STAIRS, "oak_plank_stairs");
         DIAMOND_BLOCK = new PMColoredBlock(Blocks.DIAMOND_BLOCK);
         COBBLESTONE_STAIRS = new PMColoredStairs(Blocks.COBBLESTONE_STAIRS);
+        STONE_PRESSURE_PLATE = new PMColoredPressurePlate(Blocks.STONE_PRESSURE_PLATE, BlockPressurePlate.Sensitivity.MOBS);
+        OAK_PRESSURE_PLATE = new PMColoredPressurePlate(Blocks.OAK_PRESSURE_PLATE, BlockPressurePlate.Sensitivity.EVERYTHING, "oak_plank_pressure_plate");
+        SPRUCE_PRESSURE_PLATE = new PMColoredPressurePlate(Blocks.SPRUCE_PRESSURE_PLATE, BlockPressurePlate.Sensitivity.EVERYTHING, "spruce_plank_pressure_plate");
+        BIRCH_PRESSURE_PLATE = new PMColoredPressurePlate(Blocks.BIRCH_PRESSURE_PLATE, BlockPressurePlate.Sensitivity.EVERYTHING, "birch_plank_pressure_plate");
+        JUNGLE_PRESSURE_PLATE = new PMColoredPressurePlate(Blocks.JUNGLE_PRESSURE_PLATE, BlockPressurePlate.Sensitivity.EVERYTHING, "jungle_plank_pressure_plate");
+        ACACIA_PRESSURE_PLATE = new PMColoredPressurePlate(Blocks.ACACIA_PRESSURE_PLATE, BlockPressurePlate.Sensitivity.EVERYTHING, "acacia_plank_pressure_plate");
+        DARK_OAK_PRESSURE_PLATE = new PMColoredPressurePlate(Blocks.DARK_OAK_PRESSURE_PLATE, BlockPressurePlate.Sensitivity.EVERYTHING, "dark_oak_plank_pressure_plate");
         ICE = new PMColoredBlock(Blocks.ICE);
         SNOW_BLOCK = new PMColoredBlock(Blocks.SNOW_BLOCK);
         CLAY_BLOCK = new PMColoredBlock(Blocks.CLAY, "clay_block");
@@ -262,6 +279,8 @@ public class ModBlocks {
         SPRUCE_STAIRS = new PMColoredStairs(Blocks.SPRUCE_STAIRS, "spruce_plank_stairs");
         BIRCH_STAIRS = new PMColoredStairs(Blocks.BIRCH_STAIRS, "birch_plank_stairs");
         JUNGLE_STAIRS = new PMColoredStairs(Blocks.JUNGLE_STAIRS, "jungle_plank_stairs");
+        LIGHT_WEIGHTED_PRESSURE_PLATE = new PMColoredPressurePlate(Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE, 15);
+        HEAVY_WEIGHTED_PRESSURE_PLATE = new PMColoredPressurePlate(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE, 150);
 //        QUARTZ_BLOCK = new PMColoredBlock(Blocks.QUARTZ_BLOCK);
 //        CHISELED_QUARTZ_BLOCK = new PMColoredBlock(Blocks.CHISELED_QUARTZ_BLOCK);
 //        QUARTZ_PILLAR = new PMColoredBlock(Blocks.QUARTZ_PILLAR);
@@ -339,12 +358,15 @@ public class ModBlocks {
 //                SANDSTONE, CHISELED_SANDSTONE, CUT_SANDSTONE,
                 GOLD_BLOCK, IRON_BLOCK, BRICK,
 //                BOOKSHELF,
-                MOSS_STONE, OBSIDIAN, OAK_STAIRS, DIAMOND_BLOCK, COBBLESTONE_STAIRS, ICE,
+                MOSS_STONE, OBSIDIAN, OAK_STAIRS, DIAMOND_BLOCK, COBBLESTONE_STAIRS,
+                STONE_PRESSURE_PLATE, OAK_PRESSURE_PLATE, SPRUCE_PRESSURE_PLATE, BIRCH_PRESSURE_PLATE,
+                JUNGLE_PRESSURE_PLATE, ACACIA_PRESSURE_PLATE, DARK_OAK_PRESSURE_PLATE, ICE,
                 SNOW_BLOCK, CLAY_BLOCK, NETHERRACK, SOUL_SAND, GLOWSTONE,
                 STONE_BRICK, MOSSY_STONE_BRICK, CRACKED_STONE_BRICK, CHISELED_STONE_BRICK,
                 BRICK_STAIRS, STONE_BRICK_STAIRS, NETHER_BRICK, NETHER_BRICK_STAIRS, END_STONE,
 //                SANDSTONE_STAIRS,
                 EMERALD_BLOCK, SPRUCE_STAIRS, BIRCH_STAIRS, JUNGLE_STAIRS,
+                LIGHT_WEIGHTED_PRESSURE_PLATE, HEAVY_WEIGHTED_PRESSURE_PLATE,
 //                QUARTZ_BLOCK, CHISELED_QUARTZ_BLOCK, QUARTZ_PILLAR, QUARTZ_STAIRS,
                 ACACIA_STAIRS, DARK_OAK_STAIRS, SLIME_BLOCK,
                 PRISMARINE, PRISMARINE_BRICK,DARK_PRISMARINE,
@@ -398,6 +420,8 @@ public class ModBlocks {
                     event.getRegistry().register(new ItemBlock(block, new Item.Properties().group(PaintingMod.MOD_STAIRS)).setRegistryName(block.getRegistryName()));
                 } else if (block instanceof NormalSlab) {
                     event.getRegistry().register(new ItemBlock(block, new Item.Properties().group(PaintingMod.MOD_SLABS)).setRegistryName(block.getRegistryName()));
+                } else if (block instanceof PressurePlate || block instanceof PressurePlateWeighted) {
+                    event.getRegistry().register(new ItemBlock(block, new Item.Properties().group(PaintingMod.MOD_PRESSURE_PLATES)).setRegistryName(block.getRegistryName()));
                 }
             }
         }
