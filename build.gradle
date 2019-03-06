@@ -5,7 +5,9 @@ plugins {
 }
 
 repositories {
-	maven { url 'https://jitpack.io' }
+    maven { url "https://minecraft.curseforge.com/api/maven"}
+    maven { url "https://jitpack.io"}
+	maven { url "https://tehnut.info/maven/" }
 }
 
 sourceCompatibility = 1.8
@@ -58,7 +60,10 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modCompile "net.fabricmc:fabric:${fabric_api}"
 
+	// Compat with other mods
 //	modCompile "com.github.Yanis48:FabriBlocks:${fabriblocks_commit}"
+    modCompile "info.tehnut.pluginloader:plugin-loader:${pluginloader_version}"
+    modCompile "roughly-enough-items:RoughlyEnoughItems:${rei_version}"
 }
 
 github {
