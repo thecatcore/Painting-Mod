@@ -13,7 +13,7 @@ repositories {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-def baseversion = "0.5.0.0"
+def baseversion = "0.6.0"
 def buildbranch = System.getenv('TRAVIS_BRANCH')
 def buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
 def gittoken = System.getenv('GH_TOKEN')
@@ -33,7 +33,7 @@ if (buildbranch == "dev/fabric") {
 	${commitbody}
  """
 } else {
-	version = baseversion
+	version = baseversion + "." + buildnumber
     gitversion = version + "." + buildnumber
 	prelease = false
 	changelogbody = file("changelog.txt")
@@ -43,9 +43,9 @@ archivesBaseName = "PaintingMod-${minecraft_version}"
 
 processResources {
 	filesMatching('fabric.mod.json') {
-		expand 'version': project.version
+		expand 'version': baseversion
 	}
-	inputs.property "version", project.version
+	inputs.property "version", baseversion
 }
 
 minecraft {
@@ -95,6 +95,8 @@ curseforge {
 				requiredDependency "fabric"
 				optionalDependency "modmenu"
 				optionalDependency "fabriblocks"
+				optionalDependency "roughly-enough-items"
+				optionalDependency "pluginloader"
 			}
         }
         addArtifact file("build/libs/${archivesBaseName}-${version}-dev.jar")
