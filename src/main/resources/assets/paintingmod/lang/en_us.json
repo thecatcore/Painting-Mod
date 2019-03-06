@@ -2,6 +2,7 @@
     "entity.minecraft.villager.painter": "Painter",
     "category.paintingmod.hammer": "Hammer",
     "category.paintingmod.heatgun": "Heat Gun",
+    "category.paintingmod.paintbrush": "Paintbrush",
 
     "_comment": "Items",
     "item.paintingmod.normal_paintbrush": "Paintbrush",
