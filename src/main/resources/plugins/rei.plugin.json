@@ -1,8 +1,0 @@
-{
-  "plugins": [
-    {
-      "identifier": "paintingmod:rei_compat",
-      "class": "arthurbambou.paintingmod.compat.rei.PaintingModPlugin"
-    }
-  ]
-}
