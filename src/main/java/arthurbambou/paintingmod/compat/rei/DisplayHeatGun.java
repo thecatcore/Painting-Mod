@@ -3,7 +3,7 @@ package arthurbambou.paintingmod.compat.rei;
 import arthurbambou.paintingmod.mainmod.api.ColoredObject;
 import arthurbambou.paintingmod.mainmod.registery.ModItems;
 import com.google.common.collect.Lists;
-import me.shedaniel.rei.api.IRecipeDisplay;
+import me.shedaniel.rei.api.RecipeDisplay;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Recipe;
@@ -12,8 +12,9 @@ import net.minecraft.util.Identifier;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
-public class DisplayHeatGun implements IRecipeDisplay {
+public class DisplayHeatGun implements RecipeDisplay {
     private List<Block> order = new ArrayList<Block>();
     private ItemStack output;
     
@@ -38,8 +39,8 @@ public class DisplayHeatGun implements IRecipeDisplay {
     }
     
     @Override
-    public Recipe getRecipe() {
-        return null;
+    public Optional<Recipe> getRecipe() {
+        return Optional.empty();
     }
     
     @Override

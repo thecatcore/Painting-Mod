@@ -3,11 +3,10 @@ package arthurbambou.paintingmod.compat.rei;
 import arthurbambou.paintingmod.mainmod.registery.ModItems;
 import com.google.common.collect.Lists;
 import com.mojang.blaze3d.platform.GlStateManager;
-import me.shedaniel.rei.api.IRecipeCategory;
+import me.shedaniel.rei.api.RecipeCategory;
 import me.shedaniel.rei.gui.widget.IWidget;
 import me.shedaniel.rei.gui.widget.ItemSlotWidget;
 import me.shedaniel.rei.gui.widget.RecipeBaseWidget;
-import me.shedaniel.rei.listeners.IMixinContainerGui;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.GuiLighting;
 import net.minecraft.client.resource.language.I18n;
@@ -17,8 +16,9 @@ import net.minecraft.util.Identifier;
 import java.awt.*;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Supplier;
 
-public class CategoryHammer implements IRecipeCategory<DisplayHammer> {
+public class CategoryHammer implements RecipeCategory<DisplayHammer> {
     
     private static final Identifier DISPLAY_TEXTURE = new Identifier("paintingmod", "textures/gui/display.png");
     
@@ -38,7 +38,7 @@ public class CategoryHammer implements IRecipeCategory<DisplayHammer> {
     }
     
     @Override
-    public List<IWidget> setupDisplay(IMixinContainerGui containerGui, DisplayHammer recipeDisplay, Rectangle bounds) {
+    public List<IWidget> setupDisplay(Supplier<DisplayHammer> recipeDisplaySupplier, Rectangle bounds) {
         List<IWidget> widgets = Lists.newArrayList();
         Point startPoint = new Point((int) bounds.getCenterX() - 50, (int) bounds.getCenterY() - 25 - 7);
         widgets.add(new RecipeBaseWidget(bounds) {
@@ -51,8 +51,8 @@ public class CategoryHammer implements IRecipeCategory<DisplayHammer> {
                 drawTexturedRect(startPoint.x, startPoint.y + 5, 0, 31, 99, 45);
             }
         });
-        final List<List<ItemStack>> input = recipeDisplay.getInput();
-        widgets.add(new ItemSlotWidget(startPoint.x + 14, startPoint.y + 25, input.get(0), true, true, containerGui, true) {
+        final List<List<ItemStack>> input = recipeDisplaySupplier.get().getInput();
+        widgets.add(new ItemSlotWidget(startPoint.x + 14, startPoint.y + 25, input.get(0), true, true, true) {
             @Override
             protected String getItemCountOverlay(ItemStack currentStack) {
                 if (currentStack.getAmount() == 1)
@@ -60,7 +60,7 @@ public class CategoryHammer implements IRecipeCategory<DisplayHammer> {
                 return currentStack.getAmount() < 1 ? "§c" + currentStack.getAmount() : currentStack.getAmount() + "";
             }
         });
-        widgets.add(new ItemSlotWidget(startPoint.x + 42, startPoint.y + 43, Arrays.asList(recipeDisplay.getHammer()), true, true, containerGui, true) {
+        widgets.add(new ItemSlotWidget(startPoint.x + 42, startPoint.y + 43, Arrays.asList(recipeDisplaySupplier.get().getHammer()), true, true, true) {
             @Override
             protected String getItemCountOverlay(ItemStack currentStack) {
                 if (currentStack.getAmount() == 1)
@@ -68,7 +68,7 @@ public class CategoryHammer implements IRecipeCategory<DisplayHammer> {
                 return currentStack.getAmount() < 1 ? "§c" + currentStack.getAmount() : currentStack.getAmount() + "";
             }
         });
-        widgets.add(new ItemSlotWidget(startPoint.x + 71, startPoint.y + 24, recipeDisplay.getOutput(), false, true, containerGui, true) {
+        widgets.add(new ItemSlotWidget(startPoint.x + 71, startPoint.y + 24, recipeDisplaySupplier.get().getOutput(), false, true, true) {
             @Override
             protected String getItemCountOverlay(ItemStack currentStack) {
                 if (currentStack.getAmount() == 1)
