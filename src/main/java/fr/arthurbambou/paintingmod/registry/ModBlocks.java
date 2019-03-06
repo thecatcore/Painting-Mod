@@ -2,16 +2,10 @@ package fr.arthurbambou.paintingmod.registry;
 
 import fr.arthurbambou.paintingmod.PaintingMod;
 import fr.arthurbambou.paintingmod.api.ColoredObject;
-import fr.arthurbambou.paintingmod.api.coloredblocks.ColoredBlock;
-import fr.arthurbambou.paintingmod.api.coloredblocks.ColoredPressurePlate;
-import fr.arthurbambou.paintingmod.api.coloredblocks.ColoredSlab;
-import fr.arthurbambou.paintingmod.api.coloredblocks.ColoredStairs;
+import fr.arthurbambou.paintingmod.api.coloredblocks.*;
 import fr.arthurbambou.paintingmod.blocks.SoggyClay;
 import fr.arthurbambou.paintingmod.blocks.coloreds.*;
-import fr.arthurbambou.paintingmod.coloredblocks.PMColoredBlock;
-import fr.arthurbambou.paintingmod.coloredblocks.PMColoredPressurePlate;
-import fr.arthurbambou.paintingmod.coloredblocks.PMColoredSlab;
-import fr.arthurbambou.paintingmod.coloredblocks.PMColoredStairs;
+import fr.arthurbambou.paintingmod.coloredblocks.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockPressurePlate;
 import net.minecraft.init.Blocks;
@@ -108,6 +102,7 @@ public class ModBlocks {
     public static ColoredBlock ICE;
     public static ColoredBlock SNOW_BLOCK;
     public static ColoredBlock CLAY_BLOCK;
+    public static ColoredFence OAK_FENCE;
     public static ColoredBlock NETHERRACK;
     public static ColoredBlock SOUL_SAND;
     public static ColoredBlock GLOWSTONE;
@@ -118,6 +113,7 @@ public class ModBlocks {
     public static ColoredStairs BRICK_STAIRS;
     public static ColoredStairs STONE_BRICK_STAIRS;
     public static ColoredBlock NETHER_BRICK;
+    public static ColoredFence NETHER_BRICK_FENCE;
     public static ColoredStairs NETHER_BRICK_STAIRS;
     public static ColoredBlock END_STONE;
     public static ColoredStairs SANDSTONE_STAIRS;
@@ -171,6 +167,11 @@ public class ModBlocks {
     public static ColoredBlock SMOOTH_RED_SANDSTONE;
     public static ColoredBlock SMOOTH_SANDSTONE;
     public static ColoredBlock SMOOTH_STONE;
+    public static ColoredFence SPRUCE_FENCE;
+    public static ColoredFence BIRCH_FENCE;
+    public static ColoredFence JUNGLE_FENCE;
+    public static ColoredFence ACACIA_FENCE;
+    public static ColoredFence DARK_OAK_FENCE;
     public static ColoredObject END_ROD;
     public static ColoredBlock PURPUR_BLOCK;
     public static ColoredObject PUPUR_PILLAR;
@@ -262,6 +263,7 @@ public class ModBlocks {
         ICE = new PMColoredBlock(Blocks.ICE);
         SNOW_BLOCK = new PMColoredBlock(Blocks.SNOW_BLOCK);
         CLAY_BLOCK = new PMColoredBlock(Blocks.CLAY, "clay_block");
+        OAK_FENCE = new PMColoredFence(Blocks.OAK_FENCE, "oak_plank_fence");
         NETHERRACK = new PMColoredBlock(Blocks.NETHERRACK);
         SOUL_SAND = new PMColoredBlock(Blocks.SOUL_SAND);
         GLOWSTONE = new PMColoredBlock(Blocks.GLOWSTONE);
@@ -272,6 +274,7 @@ public class ModBlocks {
         BRICK_STAIRS = new PMColoredStairs(Blocks.BRICK_STAIRS);
         STONE_BRICK_STAIRS = new PMColoredStairs(Blocks.STONE_BRICK_STAIRS);
         NETHER_BRICK = new PMColoredBlock(Blocks.NETHER_BRICKS,"nether_brick");
+        NETHER_BRICK_FENCE = new PMColoredFence(Blocks.NETHER_BRICK_FENCE);
         NETHER_BRICK_STAIRS = new PMColoredStairs(Blocks.NETHER_BRICK_STAIRS);
         END_STONE = new PMColoredBlock(Blocks.END_STONE);
 //        SANDSTONE_STAIRS = new PMColoredStairs(Blocks.SANDSTONE_STAIRS);
@@ -325,6 +328,11 @@ public class ModBlocks {
 //        SMOOTH_RED_SANDSTONE = new PMColoredBlock(Blocks.SMOOTH_RED_SANDSTONE);
 //        SMOOTH_SANDSTONE = new PMColoredBlock(Blocks.SMOOTH_SANDSTONE);
 //        SMOOTH_STONE = new PMColoredBlock(Blocks.SMOOTH_STONE);
+        SPRUCE_FENCE = new PMColoredFence(Blocks.SPRUCE_FENCE, "spruce_plank_fence");
+        BIRCH_FENCE = new PMColoredFence(Blocks.BIRCH_FENCE, "birch_plank_fence");
+        JUNGLE_FENCE = new PMColoredFence(Blocks.JUNGLE_FENCE, "jungle_plank_fence");
+        ACACIA_FENCE = new PMColoredFence(Blocks.ACACIA_FENCE, "acacia_plank_fence");
+        DARK_OAK_FENCE = new PMColoredFence(Blocks.DARK_OAK_FENCE, "dark_oak_plank_fence");
 //        END_ROD = new PMColoredBlock(Blocks.END_ROD);
         PURPUR_BLOCK = new PMColoredBlock(Blocks.PURPUR_BLOCK,"purpur_block");
 //        PUPUR_PILLAR = new PMColoredBlock(Blocks.PURPUR_PILLAR);
@@ -361,9 +369,10 @@ public class ModBlocks {
                 MOSS_STONE, OBSIDIAN, OAK_STAIRS, DIAMOND_BLOCK, COBBLESTONE_STAIRS,
                 STONE_PRESSURE_PLATE, OAK_PRESSURE_PLATE, SPRUCE_PRESSURE_PLATE, BIRCH_PRESSURE_PLATE,
                 JUNGLE_PRESSURE_PLATE, ACACIA_PRESSURE_PLATE, DARK_OAK_PRESSURE_PLATE, ICE,
-                SNOW_BLOCK, CLAY_BLOCK, NETHERRACK, SOUL_SAND, GLOWSTONE,
+                SNOW_BLOCK, CLAY_BLOCK, OAK_FENCE, NETHERRACK, SOUL_SAND, GLOWSTONE,
                 STONE_BRICK, MOSSY_STONE_BRICK, CRACKED_STONE_BRICK, CHISELED_STONE_BRICK,
-                BRICK_STAIRS, STONE_BRICK_STAIRS, NETHER_BRICK, NETHER_BRICK_STAIRS, END_STONE,
+                BRICK_STAIRS, STONE_BRICK_STAIRS, NETHER_BRICK, NETHER_BRICK_FENCE, NETHER_BRICK_STAIRS,
+                END_STONE,
 //                SANDSTONE_STAIRS,
                 EMERALD_BLOCK, SPRUCE_STAIRS, BIRCH_STAIRS, JUNGLE_STAIRS,
                 LIGHT_WEIGHTED_PRESSURE_PLATE, HEAVY_WEIGHTED_PRESSURE_PLATE,
@@ -382,6 +391,7 @@ public class ModBlocks {
 //                QUARTZ_SLAB, RED_SANDSTONE_SLAB,
                 PURPUR_SLAB,
 //                SMOOTH_QUARTZ, SMOOTH_RED_SANDSTONE, SMOOTH_SANDSTONE, SMOOTH_STONE,
+                SPRUCE_FENCE, BIRCH_FENCE, JUNGLE_FENCE, ACACIA_FENCE, DARK_OAK_FENCE,
 //                END_ROD,
                 PURPUR_BLOCK,
 //                PUPUR_PILLAR,
@@ -422,6 +432,8 @@ public class ModBlocks {
                     event.getRegistry().register(new ItemBlock(block, new Item.Properties().group(PaintingMod.MOD_SLABS)).setRegistryName(block.getRegistryName()));
                 } else if (block instanceof PressurePlate || block instanceof PressurePlateWeighted) {
                     event.getRegistry().register(new ItemBlock(block, new Item.Properties().group(PaintingMod.MOD_PRESSURE_PLATES)).setRegistryName(block.getRegistryName()));
+                } else if (block instanceof NormalFence) {
+                    event.getRegistry().register(new ItemBlock(block, new Item.Properties().group(PaintingMod.MOD_FENCES)).setRegistryName(block.getRegistryName()));
                 }
             }
         }

@@ -17,32 +17,29 @@ public class Paintbrush extends ItemBase {
 
     @Override
     public ActionResult useOnBlock(ItemUsageContext var1) {
-        World world = var1.getWorld();
-        PlayerEntity playerEntity = var1.getPlayer();
-        BlockPos blockPos = var1.getBlockPos();
         for (ColoredBlock coloredBlock : Registry.getCommonBlocks()) {
-            PaintFunctions.newbloctopaint(playerEntity, world, blockPos, coloredBlock);
+            PaintFunctions.newbloctopaint(var1);
         }
         for (ColoredStairs coloredStairs : Registry.getColoredStairsList()) {
-            PaintFunctions.newstairstopaint(playerEntity, world, blockPos, coloredStairs);
+            PaintFunctions.newstairstopaint(var1);
         }
         for (ColoredSlab coloredSlab : Registry.getColoredSlabList()) {
-            PaintFunctions.newslabtopaint(playerEntity,world,blockPos,coloredSlab);
+            PaintFunctions.newslabtopaint(var1);
         }
         for (ColoredWall coloredWall : Registry.getColoredWallList()) {
-            PaintFunctions.newwalltopaint(playerEntity,world,blockPos,coloredWall);
+            PaintFunctions.newwalltopaint(var1);
         }
         for (ColoredFenceGate coloredFenceGate : Registry.getColoredFenceGateList()) {
-            PaintFunctions.newfencegatetopaint(playerEntity,world,blockPos,coloredFenceGate);
+            PaintFunctions.newfencegatetopaint(var1);
         }
         for (ColoredFence coloredFence : Registry.getColoredFenceList()) {
-            PaintFunctions.newfencetopaint(playerEntity, world, blockPos, coloredFence);
+            PaintFunctions.newfencetopaint(var1);
         }
         for (ColoredPressurePlate coloredPressurePlate : Registry.getColoredPressurePlateList()) {
-            PaintFunctions.newpressureplatetopaint(playerEntity, world, blockPos, coloredPressurePlate);
+            PaintFunctions.newpressureplatetopaint(var1);
         }
         for (ColoredButton coloredButton : Registry.getColoredButtonList()) {
-            PaintFunctions.newbuttontopaint(playerEntity,world,blockPos,coloredButton);
+            PaintFunctions.newbuttontopaint(var1);
         }
         return super.useOnBlock(var1);
     }

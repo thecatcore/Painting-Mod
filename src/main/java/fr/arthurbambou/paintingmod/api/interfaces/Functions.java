@@ -2,12 +2,10 @@ package fr.arthurbambou.paintingmod.api.interfaces;
 
 import fr.arthurbambou.paintingmod.api.ColoredObject;
 import fr.arthurbambou.paintingmod.items.Paintbrush;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
+import net.minecraft.item.ItemUseContext;
 
 public interface Functions {
-    void paint(ColoredObject coloredObject, World world, BlockPos blockPos, EntityPlayer player, Paintbrush paintbrush);
+    void paint(ColoredObject coloredObject, ItemUseContext context, Paintbrush paintbrush);
 
-    void unPaint(ColoredObject coloredObject, World world, BlockPos blockPos, EntityPlayer player);
+    void unPaint(ColoredObject coloredObject, ItemUseContext context);
 }

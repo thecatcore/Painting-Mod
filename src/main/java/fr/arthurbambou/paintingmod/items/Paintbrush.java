@@ -17,7 +17,7 @@ public class Paintbrush extends ItemBase {
     public EnumActionResult onItemUse(ItemUseContext p_195939_1_) {
         ColoredObjectRegistry.registry.forEach(coloredObject -> {
             ColoredFunctionRegistry.registry.forEach(coloredFunction -> {
-                coloredFunction.paint(coloredObject, p_195939_1_.getWorld(), p_195939_1_.getPos(), p_195939_1_.getPlayer(), this);
+                coloredFunction.paint(coloredObject ,p_195939_1_, this);
             });
         });
         return super.onItemUse(p_195939_1_);

@@ -1,6 +1,5 @@
 package fr.arthurbambou.paintingmod.api;
 
-import fr.arthurbambou.paintingmod.PaintingMod;
 import fr.arthurbambou.paintingmod.api.interfaces.IColoredObject;
 import net.minecraft.block.Block;
 import net.minecraft.util.IStringSerializable;

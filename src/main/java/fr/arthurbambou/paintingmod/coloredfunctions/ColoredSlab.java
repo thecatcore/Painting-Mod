@@ -9,6 +9,7 @@ import net.minecraft.block.BlockSlab;
 import net.minecraft.block.BlockStairs;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemUseContext;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -21,7 +22,10 @@ public class ColoredSlab extends ColoredFunction {
     }
 
     @Override
-    public void paint(ColoredObject coloredObject, World worldIn, BlockPos pos, EntityPlayer player, Paintbrush paintbrush) {
+    public void paint(ColoredObject coloredObject, ItemUseContext context, Paintbrush paintbrush) {
+        World worldIn = context.getWorld();
+        BlockPos pos = context.getPos();
+        EntityPlayer player = context.getPlayer();
         ArrayList<Paintbrush> paintbrushes = ModItems.PAINTBRUSHES;
         if (paintbrush == paintbrushes.get(0)) return;
         if (coloredObject instanceof fr.arthurbambou.paintingmod.api.coloredblocks.ColoredSlab) {
@@ -130,7 +134,10 @@ public class ColoredSlab extends ColoredFunction {
     }
 
     @Override
-    public void unPaint(ColoredObject coloredObject, World worldIn, BlockPos pos, EntityPlayer player) {
+    public void unPaint(ColoredObject coloredObject, ItemUseContext context) {
+        World worldIn = context.getWorld();
+        BlockPos pos = context.getPos();
+        EntityPlayer player = context.getPlayer();
         if (coloredObject instanceof fr.arthurbambou.paintingmod.api.coloredblocks.ColoredSlab) {
             if (worldIn.getBlockState(pos).getBlock() == coloredObject.black ||
                     worldIn.getBlockState(pos).getBlock() == coloredObject.blue ||

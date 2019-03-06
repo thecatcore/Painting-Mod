@@ -17,7 +17,7 @@ public class HeatGun extends ItemBase {
     public EnumActionResult onItemUse(ItemUseContext p_195939_1_) {
         ColoredObjectRegistry.registry.forEach(coloredObject -> {
             ColoredFunctionRegistry.registry.forEach(coloredFunction -> {
-                coloredFunction.unPaint(coloredObject, p_195939_1_.getWorld(), p_195939_1_.getPos(), p_195939_1_.getPlayer());
+                coloredFunction.unPaint(coloredObject, p_195939_1_);
             });
         });
         return super.onItemUse(p_195939_1_);
