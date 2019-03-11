@@ -61,9 +61,9 @@ dependencies {
 	modCompile "net.fabricmc:fabric:${fabric_api}"
 
 	// Compat with other mods
-//	modCompile "com.github.Yanis48:FabriBlocks:${fabriblocks_commit}"
+	modCompile "com.github.Yanis48:FabriBlocks:${fabriblocks_commit}"
     modCompile "info.tehnut.pluginloader:plugin-loader:${pluginloader_version}"
-    modCompile "roughly-enough-items:RoughlyEnoughItems:${rei_version}:all"
+    modCompile "roughly-enough-items:RoughlyEnoughItems:${rei_version}"
 }
 
 github {
