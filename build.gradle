@@ -34,7 +34,7 @@ if (buildbranch == "dev/fabric") {
  """
 } else {
 	version = baseversion + "." + buildnumber
-    gitversion = version + "." + buildnumber
+    gitversion = version
 	prelease = false
 	changelogbody = file("changelog.txt")
 }
@@ -63,7 +63,7 @@ dependencies {
 	// Compat with other mods
 //	modCompile "com.github.Yanis48:FabriBlocks:${fabriblocks_commit}"
     modCompile "info.tehnut.pluginloader:plugin-loader:${pluginloader_version}"
-    modCompile "roughly-enough-items:RoughlyEnoughItems:${rei_version}"
+    modCompile "roughly-enough-items:RoughlyEnoughItems:${rei_version}:all"
 }
 
 github {
