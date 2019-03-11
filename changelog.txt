@@ -1,3 +1,7 @@
+Version 0.5.1 Fabric 19w09a
+get FabriBlocks compat back
+add REI integration
+
 Version 0.5.0.0 Fabric 19w08b
 Port to the latest snapshot (19w08b).
 Fix missing recipes.
