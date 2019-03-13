@@ -28,7 +28,7 @@ def changelogbody
 
 if (buildbranch == "dev/1.13.x") {
     prelease = true
-    changelogbody = """Version ${commitname} (${gitversion})
+    changelogbody = """Version ${commitname} (${project.version})
 	${commitlist}
 
 	${commitbody}
