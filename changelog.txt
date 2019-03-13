@@ -1,0 +1,4 @@
+Version 3.0.0
+
+Pre-release with most of the Fabric version's blocks
+A big rework of the api
