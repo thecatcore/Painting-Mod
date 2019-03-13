@@ -143,7 +143,6 @@ github {
     prerelease = prelease
     body = changelogbody
     assets = [
-            "build/libs/${archivesBaseName}-${version}-sources.jar",
             "build/libs/${archivesBaseName}-${version}.jar"
     ]
 }
@@ -157,6 +156,5 @@ curseforge {
         mainArtifact(jar) {
             displayName = "[Forge " + minecraft_version + "] " + version
         }
-        addArtifact file("build/libs/${archivesBaseName}-${version}-sources.jar")
     }
 }
