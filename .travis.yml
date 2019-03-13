@@ -1,0 +1,26 @@
+language: java
+jdk: oraclejdk8
+if: tag IS blank
+script:
+  - |
+    if [ "$TRAVIS_PULL_REQUEST" == false ]; then
+      if [ "$TRAVIS_BRANCH" == "release/1.13.x" ]; then
+        ./gradlew build curseforge299755 githubRelease
+      else
+        ./gradlew build
+      fi
+    else
+      ./gradlew build
+    fi
+cache:
+  directories:
+    -/home/travis/.gradle/
+
+after_success:
+  - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
+  - chmod +x send.sh
+  - ./send.sh success $WEBHOOK_URL
+after_failure:
+  - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
+  - chmod +x send.sh
+  - ./send.sh failure $WEBHOOK_URL

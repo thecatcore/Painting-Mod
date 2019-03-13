@@ -3,16 +3,42 @@ buildscript {
         maven { url = 'https://files.minecraftforge.net/maven' }
         jcenter()
         mavenCentral()
+        gradlePluginPortal()
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.0.105', changing: true
     }
 }
+plugins {
+    id "co.riiid.gradle" version "0.4.2"
+    id "com.matthewprenger.cursegradle" version "1.1.2"
+}
 apply plugin: 'net.minecraftforge.gradle'
 // Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 apply plugin: 'eclipse'
 
-version = project.mod_version
+def buildbranch = System.getenv('TRAVIS_BRANCH')
+def buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
+def gittoken = System.getenv('GH_TOKEN')
+def prelease
+def commitname = System.getenv('TRAVIS_COMMIT')
+def commitlist = System.getenv('TRAVIS_COMMIT_RANGE')
+def commitbody = System.getenv('TRAVIS_COMMIT_MESSAGE')
+def changelogbody
+
+if (buildbranch == "dev/1.13.x") {
+    prelease = true
+    changelogbody = """Version ${commitname} (${gitversion})
+	${commitlist}
+
+	${commitbody}
+ """
+} else {
+    prelease = false
+    changelogbody = file("changelog.txt")
+}
+
+version = project.mod_version + "." + buildnumber
 group = 'fr.arthurbambou.paintingmod' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "PaintingMod-" + project.minecraft_version
 
@@ -104,5 +130,33 @@ jar {
             "Implementation-Vendor" :"arthurbambou",
             "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
+    }
+}
+
+github {
+    owner = 'arthurbambou'
+    repo = 'PaintingMod'
+    token = gittoken ?: "a key"
+    tagName = minecraft_version + "-" + version
+    name = minecraft_version + "-" + version
+    targetCommitish = buildbranch
+    prerelease = prelease
+    body = changelogbody
+    assets = [
+            "build/libs/${archivesBaseName}-${version}-sources.jar",
+            "build/libs/${archivesBaseName}-${version}.jar"
+    ]
+}
+
+curseforge {
+    apiKey = System.getenv('CURSEKEY') ?: "a key"
+    project {
+        id = "299755"
+        releaseType = "beta"
+        changelog = file("changelog.txt")
+        mainArtifact(jar) {
+            displayName = "[Forge " + minecraft_version + "] " + version
+        }
+        addArtifact file("build/libs/${archivesBaseName}-${version}-sources.jar")
     }
 }

@@ -91,7 +91,7 @@ public class PaintingMod
     public PaintingMod() {
         ModBlocks modBlocks = new ModBlocks();
         ModItems modItems = new ModItems();
-        ModFunctions modFunctions = new ModFunctions();
+        new ModFunctions();
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addGenericListener(Block.class, modBlocks::onBlockRegister);
