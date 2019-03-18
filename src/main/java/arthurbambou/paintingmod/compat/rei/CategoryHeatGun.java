@@ -6,9 +6,9 @@ import com.mojang.blaze3d.platform.GlStateManager;
 import me.shedaniel.rei.api.DisplaySettings;
 import me.shedaniel.rei.api.RecipeCategory;
 import me.shedaniel.rei.api.RecipeDisplay;
-import me.shedaniel.rei.gui.widget.IWidget;
 import me.shedaniel.rei.gui.widget.ItemSlotWidget;
 import me.shedaniel.rei.gui.widget.RecipeBaseWidget;
+import me.shedaniel.rei.gui.widget.Widget;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.GuiLighting;
 import net.minecraft.client.resource.language.I18n;
@@ -64,8 +64,8 @@ public class CategoryHeatGun implements RecipeCategory<DisplayHeatGun> {
     }
     
     @Override
-    public List<IWidget> setupDisplay(Supplier<DisplayHeatGun> recipeDisplaySupplier, Rectangle bounds) {
-        List<IWidget> widgets = Lists.newArrayList();
+    public List<Widget> setupDisplay(Supplier<DisplayHeatGun> recipeDisplaySupplier, Rectangle bounds) {
+        List<Widget> widgets = Lists.newArrayList();
         Point startingPoint = new Point(bounds.x + bounds.width - 55, bounds.y + 110);
         widgets.add(new RecipeBaseWidget(bounds) {
             @Override

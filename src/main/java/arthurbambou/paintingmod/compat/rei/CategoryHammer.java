@@ -4,9 +4,9 @@ import arthurbambou.paintingmod.mainmod.registery.ModItems;
 import com.google.common.collect.Lists;
 import com.mojang.blaze3d.platform.GlStateManager;
 import me.shedaniel.rei.api.RecipeCategory;
-import me.shedaniel.rei.gui.widget.IWidget;
 import me.shedaniel.rei.gui.widget.ItemSlotWidget;
 import me.shedaniel.rei.gui.widget.RecipeBaseWidget;
+import me.shedaniel.rei.gui.widget.Widget;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.GuiLighting;
 import net.minecraft.client.resource.language.I18n;
@@ -36,10 +36,10 @@ public class CategoryHammer implements RecipeCategory<DisplayHammer> {
     public String getCategoryName() {
         return I18n.translate("category.paintingmod.hammer");
     }
-    
+
     @Override
-    public List<IWidget> setupDisplay(Supplier<DisplayHammer> recipeDisplaySupplier, Rectangle bounds) {
-        List<IWidget> widgets = Lists.newArrayList();
+    public List<Widget> setupDisplay(Supplier<DisplayHammer> recipeDisplaySupplier, Rectangle bounds) {
+        List<Widget> widgets = Lists.newArrayList();
         Point startPoint = new Point((int) bounds.getCenterX() - 50, (int) bounds.getCenterY() - 25 - 7);
         widgets.add(new RecipeBaseWidget(bounds) {
             @Override

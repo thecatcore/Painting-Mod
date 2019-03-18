@@ -64,6 +64,7 @@ dependencies {
 	modCompile "com.github.Yanis48:FabriBlocks:${fabriblocks_commit}"
     modCompile "info.tehnut.pluginloader:plugin-loader:${pluginloader_version}"
     modCompile "roughly-enough-items:RoughlyEnoughItems:${rei_version}"
+    modCompile "cloth:Cloth:${cloth_version}"
 }
 
 github {
@@ -96,7 +97,6 @@ curseforge {
 				optionalDependency "modmenu"
 				optionalDependency "fabriblocks"
 				optionalDependency "roughly-enough-items"
-				optionalDependency "pluginloader"
 			}
         }
         addArtifact file("build/libs/${archivesBaseName}-${version}-dev.jar")

@@ -4,9 +4,9 @@ import arthurbambou.paintingmod.mainmod.registery.ModItems;
 import com.google.common.collect.Lists;
 import com.mojang.blaze3d.platform.GlStateManager;
 import me.shedaniel.rei.api.RecipeCategory;
-import me.shedaniel.rei.gui.widget.IWidget;
 import me.shedaniel.rei.gui.widget.ItemSlotWidget;
 import me.shedaniel.rei.gui.widget.RecipeBaseWidget;
+import me.shedaniel.rei.gui.widget.Widget;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.GuiLighting;
 import net.minecraft.client.resource.language.I18n;
@@ -37,7 +37,7 @@ public class CategoryPaintBrush implements RecipeCategory<DisplayPaintBrush> {
     }
     
     @Override
-    public List<IWidget> setupDisplay(Supplier<DisplayPaintBrush> recipeDisplaySupplier, Rectangle bounds) {
+    public List<Widget> setupDisplay(Supplier<DisplayPaintBrush> recipeDisplaySupplier, Rectangle bounds) {
         Point startingPoint = new Point((int) bounds.getCenterX() - 55 / 2 + 25, (int) bounds.getCenterY() - 13);
         List list = Lists.newArrayList(new RecipeBaseWidget(bounds) {
             @Override
