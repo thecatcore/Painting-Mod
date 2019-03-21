@@ -41,8 +41,8 @@ public class CategoryPaintBrush implements RecipeCategory<DisplayPaintBrush> {
         Point startingPoint = new Point((int) bounds.getCenterX() - 55 / 2 + 25, (int) bounds.getCenterY() - 13);
         List list = Lists.newArrayList(new RecipeBaseWidget(bounds) {
             @Override
-            public void draw(int mouseX, int mouseY, float delta) {
-                super.draw(mouseX, mouseY, delta);
+            public void render(int mouseX, int mouseY, float delta) {
+                super.render(mouseX, mouseY, delta);
                 GlStateManager.color4f(1.0F, 1.0F, 1.0F, 1.0F);
                 GuiLighting.disable();
                 MinecraftClient.getInstance().getTextureManager().bindTexture(DISPLAY_TEXTURE);

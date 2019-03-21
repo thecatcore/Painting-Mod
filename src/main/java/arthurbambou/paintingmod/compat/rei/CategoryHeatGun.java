@@ -69,7 +69,7 @@ public class CategoryHeatGun implements RecipeCategory<DisplayHeatGun> {
         Point startingPoint = new Point(bounds.x + bounds.width - 55, bounds.y + 110);
         widgets.add(new RecipeBaseWidget(bounds) {
             @Override
-            public void draw(int mouseX, int mouseY, float partialTicks) {
+            public void render(int mouseX, int mouseY, float partialTicks) {
                 GlStateManager.color4f(1.0F, 1.0F, 1.0F, 1.0F);
                 GuiLighting.disable();
                 MinecraftClient.getInstance().getTextureManager().bindTexture(DISPLAY_TEXTURE);

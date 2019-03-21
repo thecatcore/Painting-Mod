@@ -13,7 +13,7 @@ repositories {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-def baseversion = "0.5.1"
+def baseversion = "0.6.0"
 def buildbranch = System.getenv('TRAVIS_BRANCH')
 def buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
 def gittoken = System.getenv('GH_TOKEN')
@@ -65,6 +65,7 @@ dependencies {
     modCompile "info.tehnut.pluginloader:plugin-loader:${pluginloader_version}"
     modCompile "roughly-enough-items:RoughlyEnoughItems:${rei_version}"
     modCompile "cloth:Cloth:${cloth_version}"
+	modCompile "modmenu:ModMenu:${modmenu_version}:${modmenu_build}"
 }
 
 github {

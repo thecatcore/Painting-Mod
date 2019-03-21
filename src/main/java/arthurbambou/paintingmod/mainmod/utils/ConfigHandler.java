@@ -1,5 +1,6 @@
 package arthurbambou.paintingmod.mainmod.utils;
 
+import arthurbambou.paintingmod.mainmod.PaintingMod;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import net.fabricmc.loader.FabricLoader;
@@ -14,25 +15,36 @@ public class ConfigHandler {
     private static File configFile;
     private static String configFilename = "paintingmod";
     private static Gson gson = DEFAULT_GSON;
-    private static Object DefaultConfig = new DefaultConfig();
+    private static InstanceConfig DefaultConfig = new DefaultConfig();
 
     public static InstanceConfig init() {
         configFile = new File(CONFIG_PATH, configFilename + (configFilename.endsWith(".json") ? "" : ".json"));
         if (!configFile.exists()) {
-            try (FileWriter fileWriter = new FileWriter(configFile)) {
-                fileWriter.write(gson.toJson(DefaultConfig));
-
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            saveConfig(DefaultConfig);
         }
+        return loadConfig();
+    }
+
+    public static InstanceConfig loadConfig() {
         try (FileReader fileReader = new FileReader(configFile)) {
             return gson.fromJson(fileReader, InstanceConfig.class);
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         return null;
+    }
+
+    public static void saveConfig(InstanceConfig instanceConfig) {
+        try (FileWriter fileWriter = new FileWriter(configFile)) {
+            fileWriter.write(gson.toJson(instanceConfig));
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void saveConfig() {
+        saveConfig(PaintingMod.config);
     }
 
     public static class DefaultConfig extends InstanceConfig {
