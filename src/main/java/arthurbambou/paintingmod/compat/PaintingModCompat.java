@@ -11,9 +11,9 @@ public class PaintingModCompat {
     protected static Logger LOGGER = LogManager.getLogger("PaintingMod/Compat");
 
     public static void init() {
-        if (FabricLoader.getInstance().isModLoaded("fabriblocks") && PaintingMod.config.fabriBlocksCompat) {
+        if (FabricLoader.getInstance().isModLoaded("fabriblocks") && PaintingMod.config.compat.fabriBlocksCompat) {
             LOGGER.info("[PaintingMod/Compat] FabriBlocks detected, loading compat");
-//            ModBlocks.init();
+            ModBlocks.init();
         }
 
         if (FabricLoader.getInstance().isModLoaded("cloth") && FabricLoader.getInstance().isModLoaded("modmenu")) {

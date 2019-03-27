@@ -73,7 +73,7 @@ public class CategoryHeatGun implements RecipeCategory<DisplayHeatGun> {
                 GlStateManager.color4f(1.0F, 1.0F, 1.0F, 1.0F);
                 GuiLighting.disable();
                 MinecraftClient.getInstance().getTextureManager().bindTexture(DISPLAY_TEXTURE);
-                this.drawTexturedRect(startingPoint.x, startingPoint.y, 0, 0, 55, 26);
+                this.blit(startingPoint.x, startingPoint.y, 0, 0, 55, 26);
             }
         });
         for(int y = 0; y < 2; y++)

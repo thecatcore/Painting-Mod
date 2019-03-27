@@ -1,9 +1,13 @@
 package arthurbambou.paintingmod.mainmod.api;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Registry {
+    protected static Logger LOGGER = LogManager.getLogger("PaintingMod/API");
     private static final List<ColoredObject> COLORED_OBJECTS = new ArrayList<ColoredObject>();
     private static final List<ColoredBlock> COMMON_BLOCKS = new ArrayList<ColoredBlock>() {};
     private static final List<ColoredStairs> COLORED_STAIRS_LIST = new ArrayList<ColoredStairs>();
@@ -106,7 +110,7 @@ public class Registry {
         COLORED_OBJECTS.addAll(COLORED_PRESSURE_PLATE_LIST);
         COLORED_OBJECTS.addAll(COLORED_BUTTON_LIST);
 
-        System.out.println("[PaintingMod API] \n        " + COLORED_OBJECTS.size() + " Colored Objects Registered : \n        "
+        LOGGER.info("\n        " + COLORED_OBJECTS.size() + " Colored Objects Registered : \n        "
                 + COMMON_BLOCKS.size() + " Colored Blocks \n        "
                 + COLORED_STAIRS_LIST.size() + " Colored Stairs \n        "
                 + COLORED_SLAB_LIST.size() + " Colored Slabs \n        "

@@ -91,6 +91,6 @@ public class ModItems {
         ORANGE_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "orange_paintbrush");
         WHITE_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "white_paintbrush");
 
-        HEAT_GUN = new HeatGun(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durabilityIfNotSet(100).durability(100));
+        HEAT_GUN = new HeatGun(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durability(PaintingMod.config.general.heatGunDurability));
     }
 }

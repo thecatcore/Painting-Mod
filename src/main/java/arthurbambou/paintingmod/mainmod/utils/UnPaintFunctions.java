@@ -8,6 +8,15 @@ import net.minecraft.world.World;
 
 public class UnPaintFunctions {
 
+    private static void heatgun(ItemStack itemStack) {
+        System.out.println(itemStack.getDamage() + "=" + itemStack.getDurability());
+        itemStack.setDamage(itemStack.getDamage() + 1);
+        System.out.println(itemStack.getDamage() + "=" + itemStack.getDurability());
+        if (itemStack.getDamage() >= itemStack.getDurability() + 1) {
+            itemStack.setAmount(0);
+        }
+    }
+
     public static void unpaintblock(World worldIn, BlockPos pos, ColoredBlock coloredblock, ItemStack itemStack) {
         if (worldIn.getBlockState(pos).getBlock() == coloredblock.black ||
                 worldIn.getBlockState(pos).getBlock() == coloredblock.blue ||
@@ -27,7 +36,7 @@ public class UnPaintFunctions {
                 worldIn.getBlockState(pos).getBlock() == coloredblock.yellow) {
 
             worldIn.setBlockState(pos, coloredblock.replace.getDefaultState());
-            itemStack.setDamage(itemStack.getDamage());
+            heatgun(itemStack);
         }
     }
 
@@ -55,7 +64,7 @@ public class UnPaintFunctions {
                     .with(StairsBlock.HALF, blockState.get(StairsBlock.HALF))
                     .with(StairsBlock.FACING, blockState.get(StairsBlock.FACING))
                     .with(StairsBlock.SHAPE, blockState.get(StairsBlock.SHAPE)));
-            itemStack.setDamage(itemStack.getDamage());
+            heatgun(itemStack);
         }
     }
 
@@ -81,7 +90,7 @@ public class UnPaintFunctions {
             worldIn.setBlockState(pos, coloredStairs.replace.getStateFactory().getDefaultState()
                     .with(SlabBlock.TYPE, blockState.get(SlabBlock.TYPE))
                     .with(SlabBlock.WATERLOGGED, blockState.get(SlabBlock.WATERLOGGED)));
-            itemStack.setDamage(itemStack.getDamage());
+            heatgun(itemStack);
         }
     }
 
@@ -111,7 +120,7 @@ public class UnPaintFunctions {
                     .with(HorizontalConnectedBlock.SOUTH, blockState.get(HorizontalConnectedBlock.SOUTH))
                     .with(HorizontalConnectedBlock.WATERLOGGED, blockState.get(HorizontalConnectedBlock.WATERLOGGED))
                     .with(HorizontalConnectedBlock.WEST, blockState.get(HorizontalConnectedBlock.WEST)));
-            itemStack.setDamage(itemStack.getDamage());
+            heatgun(itemStack);
         }
     }
 
@@ -139,7 +148,7 @@ public class UnPaintFunctions {
                     .with(FenceGateBlock.OPEN, blockState.get(FenceGateBlock.OPEN))
                     .with(FenceGateBlock.POWERED, blockState.get(FenceGateBlock.POWERED))
                     .with(FenceGateBlock.IN_WALL, blockState.get(FenceGateBlock.IN_WALL)));
-            itemStack.setDamage(itemStack.getDamage());
+            heatgun(itemStack);
         }
     }
 
@@ -168,7 +177,7 @@ public class UnPaintFunctions {
                     .with(HorizontalConnectedBlock.SOUTH, blockState.get(HorizontalConnectedBlock.SOUTH))
                     .with(HorizontalConnectedBlock.WATERLOGGED, blockState.get(HorizontalConnectedBlock.WATERLOGGED))
                     .with(HorizontalConnectedBlock.WEST, blockState.get(HorizontalConnectedBlock.WEST)));
-            itemStack.setDamage(itemStack.getDamage());
+            heatgun(itemStack);
         }
     }
 
@@ -198,7 +207,7 @@ public class UnPaintFunctions {
                 worldIn.setBlockState(pos, coloredStairs.replace.getStateFactory().getDefaultState()
                         .with(WeightedPressurePlateBlock.POWER, blockState.get(WeightedPressurePlateBlock.POWER)));
             }
-            itemStack.setDamage(itemStack.getDamage());
+            heatgun(itemStack);
         }
     }
 
@@ -225,7 +234,7 @@ public class UnPaintFunctions {
                     .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
                     .with(WallMountedBlock.FACE, blockState.get(WallMountedBlock.FACE))
                     .with(AbstractButtonBlock.POWERED, false));
-            itemStack.setDamage(itemStack.getDamage());
+            heatgun(itemStack);
         }
     }
 }

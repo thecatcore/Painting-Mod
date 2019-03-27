@@ -1,8 +1,5 @@
 {
     "entity.minecraft.villager.painter": "Painter",
-    "category.paintingmod.hammer": "Hammer",
-    "category.paintingmod.heatgun": "Heat Gun",
-    "category.paintingmod.paintbrush": "Paintbrush",
 
     "_comment": "Items",
     "item.paintingmod.normal_paintbrush": "Paintbrush",
@@ -72,6 +69,27 @@
 
     "_comment": "Blocks",
     "block.paintingmod.soggy_clay": "Soggy Clay",
+
+    "_comment": "Config",
+    "text.paintingmod.config.general": "General",
+    "text.paintingmod.config.general.heatgundurability": "Heat Gun Durability (Need Restart If Changed)",
+    "text.paintingmod.config.general.soggyclaydropnumber": "Number of Soggy Clay dropped",
+    "text.paintingmod.config.compat": "Compat",
+    "text.paintingmod.config.compat.fabriblocks": "Enable FabriBlocks Compat (Need Restart If Changed)",
+
+
+    "_comment": "REI Compat",
+    "category.paintingmod.hammer": "Hammer",
+    "category.paintingmod.heatgun": "Heat Gun",
+    "category.paintingmod.paintbrush": "Paintbrush",
+
+
+
+
+
+
+
+
 
     "_comment": "Stone",
     "block.paintingmod.black_stone": "Black Stone",

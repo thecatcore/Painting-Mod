@@ -46,7 +46,7 @@ public class CategoryPaintBrush implements RecipeCategory<DisplayPaintBrush> {
                 GlStateManager.color4f(1.0F, 1.0F, 1.0F, 1.0F);
                 GuiLighting.disable();
                 MinecraftClient.getInstance().getTextureManager().bindTexture(DISPLAY_TEXTURE);
-                drawTexturedRect(startingPoint.x, startingPoint.y, 0, 0, 55, 26);
+                this.blit(startingPoint.x, startingPoint.y, 0, 0, 55, 26);
             }
         });
         list.add(new ItemSlotWidget(startingPoint.x - 53, startingPoint.y + 5, recipeDisplaySupplier.get().getPaintbrush(), true, true));

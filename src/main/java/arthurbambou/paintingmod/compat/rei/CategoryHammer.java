@@ -48,7 +48,7 @@ public class CategoryHammer implements RecipeCategory<DisplayHammer> {
                 GlStateManager.color4f(1.0F, 1.0F, 1.0F, 1.0F);
                 GuiLighting.disable();
                 MinecraftClient.getInstance().getTextureManager().bindTexture(DISPLAY_TEXTURE);
-                drawTexturedRect(startPoint.x, startPoint.y + 5, 0, 31, 99, 45);
+                this.blit(startPoint.x, startPoint.y + 5, 0, 31, 99, 45);
             }
         });
         final List<List<ItemStack>> input = recipeDisplaySupplier.get().getInput();

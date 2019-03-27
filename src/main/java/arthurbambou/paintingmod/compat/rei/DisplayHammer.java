@@ -1,5 +1,6 @@
 package arthurbambou.paintingmod.compat.rei;
 
+import arthurbambou.paintingmod.mainmod.PaintingMod;
 import arthurbambou.paintingmod.mainmod.registery.ModBlocks;
 import arthurbambou.paintingmod.mainmod.registery.ModItems;
 import me.shedaniel.rei.api.RecipeDisplay;
@@ -28,7 +29,7 @@ public class DisplayHammer implements RecipeDisplay {
     
     @Override
     public List<ItemStack> getOutput() {
-        return Arrays.asList(new ItemStack(ModItems.EARTH_MORTAR, 4));
+        return Arrays.asList(new ItemStack(ModItems.EARTH_MORTAR, PaintingMod.config.general.soggyClayDropNumber));
     }
     
     @Override

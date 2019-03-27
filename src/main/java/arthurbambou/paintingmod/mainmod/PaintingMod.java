@@ -6,6 +6,7 @@ import arthurbambou.paintingmod.mainmod.registery.ModBlocks;
 import arthurbambou.paintingmod.mainmod.registery.ModItems;
 import arthurbambou.paintingmod.mainmod.registery.ModVillagers;
 import arthurbambou.paintingmod.mainmod.utils.ConfigHandler;
+import arthurbambou.paintingmod.mainmod.utils.config.Config;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
@@ -34,7 +35,7 @@ public class PaintingMod implements ModInitializer {
     public static final ItemGroup ADDON_PRESSURE_PLATES = FabricItemGroupBuilder.build(new Identifier("paintingmod:addon_pressure_plates"), () -> new ItemStack(ModBlocks.OAK_PLANK_PRESSURE_PLATE.red));
 	public static final ItemGroup ADDON_BUTTONS = FabricItemGroupBuilder.build(new Identifier("paintingmod:addon_buttons"), () -> new ItemStack(ModBlocks.OAK_PLANK_BUTTON.red));
 
-	public static ConfigHandler.InstanceConfig config;
+	public static Config config;
 
 	@Override
 	public void onInitialize() {

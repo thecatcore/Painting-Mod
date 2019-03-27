@@ -1,3 +1,8 @@
+Version 0.6.0 Fabric 19w12b
+Port to the latest snapshot (19w12b).
+You can now edit mod config ingame with cloth and modmenu.
+More config options.
+
 Version 0.5.1 Fabric 19w09a
 get FabriBlocks compat back
 add REI integration

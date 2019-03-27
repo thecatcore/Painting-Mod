@@ -65,6 +65,7 @@ dependencies {
     modCompile "info.tehnut.pluginloader:plugin-loader:${pluginloader_version}"
     modCompile "roughly-enough-items:RoughlyEnoughItems:${rei_version}"
     modCompile "cloth:Cloth:${cloth_version}"
+	modCompile "io.github.prospector.modmenu:ModMenu:${modmenu_version}"
 }
 
 github {
