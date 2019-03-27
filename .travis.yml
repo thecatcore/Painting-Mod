@@ -10,7 +10,7 @@ script:
  - ./buildscriptcmd.bash
 cache:
     directories:
-      -/home/travis/.gradle/
+      .gradle/
 
 after_success:
 - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
