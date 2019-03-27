@@ -96,6 +96,7 @@ curseforge {
 			relations {
 				requiredDependency "fabric"
 				optionalDependency "modmenu"
+				optionalDependency "cloth"
 				optionalDependency "fabriblocks"
 				optionalDependency "roughly-enough-items"
 			}
