@@ -1,3 +1,6 @@
+Version 0.6.1 Fabric 19w13a
+Port to the latest snapshot (19w13a).
+
 Version 0.6.0 Fabric 19w12b
 Port to the latest snapshot (19w12b).
 You can now edit mod config ingame with cloth and modmenu.
