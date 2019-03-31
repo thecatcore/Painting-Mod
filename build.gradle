@@ -13,7 +13,7 @@ repositories {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-def baseversion = "0.6.1"
+def baseversion = "0.6.2"
 def buildbranch = System.getenv('TRAVIS_BRANCH')
 def buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
 def gittoken = System.getenv('GH_TOKEN')
@@ -52,6 +52,15 @@ minecraft {
 
 }
 
+task sourcesJar(type: Jar, dependsOn: classes) {
+	classifier = "sources"
+	from sourceSets.main.allSource
+}
+
+jar {
+	from "LICENSE"
+}
+
 dependencies {
 	minecraft "com.mojang:minecraft:${minecraft_version}"
 	mappings "net.fabricmc:yarn:${minecraft_version}.${snapshot_build}"
@@ -79,7 +88,9 @@ github {
  body = changelogbody
  assets = [
 	 "build/libs/${archivesBaseName}-${version}-dev.jar",
-	 "build/libs/${archivesBaseName}-${version}.jar"
+	 "build/libs/${archivesBaseName}-${version}.jar",
+	 "build/libs/${archivesBaseName}-${version}-sources-dev.jar",
+	 "build/libs/${archivesBaseName}-${version}-sources.jar"
  ]
 }
 
@@ -102,6 +113,8 @@ curseforge {
 			}
         }
         addArtifact file("build/libs/${archivesBaseName}-${version}-dev.jar")
+		addArtifact file("build/libs/${archivesBaseName}-${version}-sources.jar")
+		addArtifact file("build/libs/${archivesBaseName}-${version}-sources-dev.jar")
  	}
 	options{
 		forgeGradleIntegration = false
