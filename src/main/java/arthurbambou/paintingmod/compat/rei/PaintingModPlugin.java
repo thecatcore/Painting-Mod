@@ -50,9 +50,9 @@ public class PaintingModPlugin implements REIPlugin {
             recipeHelper.registerDisplay(PAINTBRUSH, new DisplayPaintBrush(ModItems.WHITE_PAINTBRUSH.getDefaultStack(), coloredObject.replace.getItem().getDefaultStack(), coloredObject.white.getItem().getDefaultStack()));
         }
     }
-    
+
     @Override
-    public void registerSpeedCraft(RecipeHelper recipeHelper) {
+    public void registerOthers(RecipeHelper recipeHelper) {
         recipeHelper.registerSpeedCraftButtonArea(HAMMER, null);
         recipeHelper.registerSpeedCraftButtonArea(HEATGUN, null);
         recipeHelper.registerSpeedCraftButtonArea(PAINTBRUSH, null);
