@@ -1,6 +1,7 @@
-package arthurbambou.paintingmod.mainmod.api;
+package arthurbambou.paintingmod.mainmod.coloredblocks;
 
 import arthurbambou.paintingmod.mainmod.PaintingMod;
+import arthurbambou.paintingmod.mainmod.api.PaintingModRegistry;
 import arthurbambou.paintingmod.mainmod.blocks.ColoredWoodButtonBlock;
 import arthurbambou.paintingmod.mainmod.registery.ModBlocks;
 import net.minecraft.block.Block;
@@ -33,6 +34,6 @@ public class ColoredWoodButton extends ColoredButton {
         this.magenta = new ColoredWoodButtonBlock("magenta_" + this.name, this.settings, this.modid);
         this.orange = new ColoredWoodButtonBlock("orange_" + this.name, this.settings, this.modid);
         this.white = new ColoredWoodButtonBlock("white_" + this.name, this.settings, this.modid);
-        Registry.registerColoredButton(this);
+        PaintingModRegistry.registerColoredObject(this);
     }
 }

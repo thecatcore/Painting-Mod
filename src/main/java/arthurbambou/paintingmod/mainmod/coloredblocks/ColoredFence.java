@@ -1,11 +1,13 @@
-package arthurbambou.paintingmod.mainmod.api;
+package arthurbambou.paintingmod.mainmod.coloredblocks;
 
 import arthurbambou.paintingmod.mainmod.PaintingMod;
+import arthurbambou.paintingmod.mainmod.api.ColoredObject;
+import arthurbambou.paintingmod.mainmod.api.PaintingModRegistry;
 import arthurbambou.paintingmod.mainmod.blocks.ColoredFenceBlock;
 import arthurbambou.paintingmod.mainmod.registery.ModBlocks;
 import net.minecraft.block.Block;
 
-public class ColoredFence extends ColoredObject{
+public class ColoredFence extends ColoredObject {
 
     public ColoredFence(String name, Block replace) {
         super(name, replace, PaintingMod.MODID);
@@ -34,6 +36,6 @@ public class ColoredFence extends ColoredObject{
         this.magenta = new ColoredFenceBlock("magenta_" + this.name, this.settings, this.modid);
         this.orange = new ColoredFenceBlock("orange_" + this.name, this.settings, this.modid);
         this.white = new ColoredFenceBlock("white_" + this.name, this.settings, this.modid);
-        Registry.registerColoredFence(this);
+        PaintingModRegistry.registerColoredObject(this);
     }
 }

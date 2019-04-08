@@ -1,6 +1,8 @@
-package arthurbambou.paintingmod.mainmod.api;
+package arthurbambou.paintingmod.mainmod.coloredblocks;
 
 import arthurbambou.paintingmod.mainmod.PaintingMod;
+import arthurbambou.paintingmod.mainmod.api.ColoredObject;
+import arthurbambou.paintingmod.mainmod.api.PaintingModRegistry;
 import arthurbambou.paintingmod.mainmod.blocks.ColoredSlabBlock;
 import arthurbambou.paintingmod.mainmod.registery.ModBlocks;
 import net.minecraft.block.Block;
@@ -34,6 +36,6 @@ public class ColoredSlab extends ColoredObject {
         this.magenta = new ColoredSlabBlock("magenta_" + this.name, this.settings, this.modid);
         this.orange = new ColoredSlabBlock("orange_" + this.name, this.settings, this.modid);
         this.white = new ColoredSlabBlock("white_" + this.name, this.settings, this.modid);
-        Registry.registerColoredSlab(this);
+        PaintingModRegistry.registerColoredObject(this);
     }
 }

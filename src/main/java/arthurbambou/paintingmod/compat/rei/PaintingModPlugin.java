@@ -2,7 +2,7 @@
 //
 //import arthurbambou.paintingmod.mainmod.PaintingMod;
 //import arthurbambou.paintingmod.mainmod.api.ColoredObject;
-//import arthurbambou.paintingmod.mainmod.api.Registry;
+//import arthurbambou.paintingmod.mainmod.api.PaintingModRegistry;
 //import arthurbambou.paintingmod.mainmod.registery.ModItems;
 //import me.shedaniel.rei.api.ItemRegistry;
 //import me.shedaniel.rei.api.REIPlugin;
@@ -30,7 +30,7 @@
 //    @Override
 //    public void registerRecipeDisplays(RecipeHelper recipeHelper) {
 //        recipeHelper.registerDisplay(HAMMER, new DisplayHammer());
-//        for(ColoredObject coloredObject : Registry.getColoredObjectList()) {
+//        for(ColoredObject coloredObject : PaintingModRegistry.getColoredObjectList()) {
 //            recipeHelper.registerDisplay(HEATGUN, new DisplayHeatGun(coloredObject));
 //            recipeHelper.registerDisplay(PAINTBRUSH, new DisplayPaintBrush(ModItems.BLACK_PAINTBRUSH.getDefaultStack(), coloredObject.replace.getItem().getDefaultStack(), coloredObject.black.getItem().getDefaultStack()));
 //            recipeHelper.registerDisplay(PAINTBRUSH, new DisplayPaintBrush(ModItems.RED_PAINTBRUSH.getDefaultStack(), coloredObject.replace.getItem().getDefaultStack(), coloredObject.red.getItem().getDefaultStack()));

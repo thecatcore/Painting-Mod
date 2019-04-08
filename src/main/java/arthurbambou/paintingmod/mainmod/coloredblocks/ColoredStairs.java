@@ -1,6 +1,8 @@
-package arthurbambou.paintingmod.mainmod.api;
+package arthurbambou.paintingmod.mainmod.coloredblocks;
 
 import arthurbambou.paintingmod.mainmod.PaintingMod;
+import arthurbambou.paintingmod.mainmod.api.ColoredObject;
+import arthurbambou.paintingmod.mainmod.api.PaintingModRegistry;
 import arthurbambou.paintingmod.mainmod.blocks.ColoredStairsBlock;
 import arthurbambou.paintingmod.mainmod.registery.ModBlocks;
 import net.minecraft.block.Block;
@@ -38,6 +40,6 @@ public class ColoredStairs extends ColoredObject {
         this.magenta = new ColoredStairsBlock("magenta_" + this.name, this.settings, this.blockState, this.modid);
         this.orange = new ColoredStairsBlock("orange_" + this.name, this.settings, this.blockState, this.modid);
         this.white = new ColoredStairsBlock("white_" + this.name, this.settings, this.blockState, this.modid);
-        Registry.registerColoredStairs(this);
+        PaintingModRegistry.registerColoredObject(this);
     }
 }

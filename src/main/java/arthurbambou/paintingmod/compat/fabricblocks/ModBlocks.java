@@ -1,13 +1,13 @@
 //package arthurbambou.paintingmod.compat.fabricblocks;
 //
-//import arthurbambou.paintingmod.mainmod.api.ColoredBlock;
-//import arthurbambou.paintingmod.mainmod.api.ColoredSlab;
-//import arthurbambou.paintingmod.mainmod.api.ColoredStairs;
-//import arthurbambou.paintingmod.mainmod.api.ColoredWall;
+//import arthurbambou.paintingmod.mainmod.coloredblocks.ColoredBlock;
+//import arthurbambou.paintingmod.mainmod.coloredblocks.ColoredSlab;
+//import arthurbambou.paintingmod.mainmod.coloredblocks.ColoredStairs;
+//import arthurbambou.paintingmod.mainmod.coloredblocks.ColoredWall;
 //import com.yanis48.fabriblocks.FabriBlocks;
 //import net.minecraft.block.Block;
 //import net.minecraft.util.Identifier;
-//import net.minecraft.util.registry.Registry;
+//import net.minecraft.util.registry.PaintingModRegistry;
 //
 //public class ModBlocks {
 //    public static ColoredBlock SCUTE_BLOCK;
@@ -73,6 +73,6 @@
 //    }
 //
 //    private static Block getID(String id) {
-//        return Registry.BLOCK.get(new Identifier(FabriBlocks.MOD_ID,id));
+//        return PaintingModRegistry.BLOCK.get(new Identifier(FabriBlocks.MOD_ID,id));
 //    }
 //}

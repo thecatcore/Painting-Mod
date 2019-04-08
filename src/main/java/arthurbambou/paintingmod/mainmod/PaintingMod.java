@@ -1,8 +1,9 @@
 package arthurbambou.paintingmod.mainmod;
 
 import arthurbambou.paintingmod.compat.PaintingModCompat;
-import arthurbambou.paintingmod.mainmod.api.Registry;
+import arthurbambou.paintingmod.mainmod.api.PaintingModRegistry;
 import arthurbambou.paintingmod.mainmod.registery.ModBlocks;
+import arthurbambou.paintingmod.mainmod.registery.ModColoredFunctions;
 import arthurbambou.paintingmod.mainmod.registery.ModItems;
 import arthurbambou.paintingmod.mainmod.registery.ModVillagers;
 import arthurbambou.paintingmod.mainmod.utils.ConfigHandler;
@@ -43,7 +44,8 @@ public class PaintingMod implements ModInitializer {
 		ModBlocks.init();
 		ModItems.init();
 		ModVillagers.init();
+		ModColoredFunctions.init();
 		PaintingModCompat.init();
-        Registry.finishRegister();
+        PaintingModRegistry.finishRegister();
 	}
 }

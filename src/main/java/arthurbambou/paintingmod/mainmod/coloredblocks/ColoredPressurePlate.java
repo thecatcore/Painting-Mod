@@ -1,6 +1,8 @@
-package arthurbambou.paintingmod.mainmod.api;
+package arthurbambou.paintingmod.mainmod.coloredblocks;
 
 import arthurbambou.paintingmod.mainmod.PaintingMod;
+import arthurbambou.paintingmod.mainmod.api.ColoredObject;
+import arthurbambou.paintingmod.mainmod.api.PaintingModRegistry;
 import arthurbambou.paintingmod.mainmod.blocks.ColoredPressurePlateBlock;
 import arthurbambou.paintingmod.mainmod.registery.ModBlocks;
 import net.minecraft.block.Block;
@@ -38,6 +40,6 @@ public class ColoredPressurePlate extends ColoredObject {
         this.magenta = new ColoredPressurePlateBlock("magenta_" + this.name, this.type,this.settings, this.modid);
         this.orange = new ColoredPressurePlateBlock("orange_" + this.name, this.type,this.settings, this.modid);
         this.white = new ColoredPressurePlateBlock("white_" + this.name, this.type,this.settings, this.modid);
-        Registry.registerColoredPressurePlate(this);
+        PaintingModRegistry.registerColoredObject(this);
     }
 }

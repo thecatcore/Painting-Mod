@@ -1,6 +1,8 @@
-package arthurbambou.paintingmod.mainmod.api;
+package arthurbambou.paintingmod.mainmod.coloredblocks;
 
 import arthurbambou.paintingmod.mainmod.PaintingMod;
+import arthurbambou.paintingmod.mainmod.api.ColoredObject;
+import arthurbambou.paintingmod.mainmod.api.PaintingModRegistry;
 import arthurbambou.paintingmod.mainmod.blocks.ColoredWallBlock;
 import arthurbambou.paintingmod.mainmod.registery.ModBlocks;
 import net.minecraft.block.Block;
@@ -34,6 +36,6 @@ public class ColoredWall extends ColoredObject {
         this.magenta = new ColoredWallBlock("magenta_" + this.name, this.settings, this.modid);
         this.orange = new ColoredWallBlock("orange_" + this.name, this.settings, this.modid);
         this.white = new ColoredWallBlock("white_" + this.name, this.settings, this.modid);
-        Registry.registerColoredWall(this);
+        PaintingModRegistry.registerColoredObject(this);
     }
 }

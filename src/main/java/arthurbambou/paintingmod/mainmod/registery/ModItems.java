@@ -7,6 +7,8 @@ import arthurbambou.paintingmod.mainmod.items.ItemBase;
 import arthurbambou.paintingmod.mainmod.items.Paintbrush;
 import net.minecraft.item.Item;
 
+import java.util.ArrayList;
+
 public class ModItems {
     public static Item EARTH_MORTAR;
     public static Item BLACK_PAINT_POT;
@@ -45,6 +47,7 @@ public class ModItems {
     public static Item MAGENTA_PAINTBRUSH;
     public static Item ORANGE_PAINTBRUSH;
     public static Item WHITE_PAINTBRUSH;
+    public static ArrayList<Paintbrush> PAINTBRUSHES = new ArrayList<>();
     public static Item HEAT_GUN;
 
     public static void init() {
