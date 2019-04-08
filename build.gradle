@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '0.2.0-SNAPSHOT'
+	id 'fabric-loom' version '0.2.1-SNAPSHOT'
 	id "co.riiid.gradle" version "0.4.2"
 	id "com.matthewprenger.cursegradle" version "1.1.2"
 }
@@ -70,10 +70,10 @@ dependencies {
 	modCompile "net.fabricmc:fabric:${fabric_api}"
 
 	// Compat with other mods
-	modCompile "com.github.Yanis48:FabriBlocks:${fabriblocks_commit}"
-    modCompile "info.tehnut.pluginloader:plugin-loader:${pluginloader_version}"
-    modCompile "roughly-enough-items:RoughlyEnoughItems:${rei_version}"
-    modCompile "cloth:Cloth:${cloth_version}"
+	// modCompile "com.github.Yanis48:FabriBlocks:${fabriblocks_commit}"
+    // modCompile "info.tehnut.pluginloader:plugin-loader:${pluginloader_version}"
+    // modCompile "roughly-enough-items:RoughlyEnoughItems:${rei_version}"
+    // modCompile "cloth:Cloth:${cloth_version}"
 	modCompile "io.github.prospector.modmenu:ModMenu:${modmenu_version}"
 }
 
