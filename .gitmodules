@@ -1,0 +1,3 @@
+[submodule "src/main/resources/assets/paintingmod"]
+	path = src/main/resources/assets/paintingmod
+	url = https://github.com/arthurbambou/PaintingMod-Assets-Global
