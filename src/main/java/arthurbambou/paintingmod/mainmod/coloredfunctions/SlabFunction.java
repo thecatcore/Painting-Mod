@@ -56,4 +56,15 @@ public class SlabFunction extends ColoredFunction {
             }
         }
     }
+
+    @Override
+    public boolean isFromType(ColoredObject coloredObject) {
+        if (coloredObject instanceof ColoredSlab) return true;
+        return false;
+    }
+
+    @Override
+    public Class getColoredObjectType() {
+        return ColoredSlab.class;
+    }
 }

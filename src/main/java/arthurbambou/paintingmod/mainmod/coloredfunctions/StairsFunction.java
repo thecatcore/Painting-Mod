@@ -59,4 +59,15 @@ public class StairsFunction extends ColoredFunction {
             }
         }
     }
+
+    @Override
+    public boolean isFromType(ColoredObject coloredObject) {
+        if (coloredObject instanceof ColoredStairs) return true;
+        return false;
+    }
+
+    @Override
+    public Class getColoredObjectType() {
+        return ColoredStairs.class;
+    }
 }

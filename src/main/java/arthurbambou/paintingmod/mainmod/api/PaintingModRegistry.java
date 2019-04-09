@@ -31,23 +31,20 @@ public class PaintingModRegistry {
     }
 
     public static void finishRegister() {
-//        COLORED_OBJECTS.addAll(COMMON_BLOCKS);
-//        COLORED_OBJECTS.addAll(COLORED_STAIRS_LIST);
-//        COLORED_OBJECTS.addAll(COLORED_SLAB_LIST);
-//        COLORED_OBJECTS.addAll(COLORED_WALL_LIST);
-//        COLORED_OBJECTS.addAll(COLORED_FENCE_GATE_LIST);
-//        COLORED_OBJECTS.addAll(COLORED_FENCE_LIST);
-//        COLORED_OBJECTS.addAll(COLORED_PRESSURE_PLATE_LIST);
-//        COLORED_OBJECTS.addAll(COLORED_BUTTON_LIST);
-//
-//        LOGGER.info("\n        " + COLORED_OBJECTS.size() + " Colored Objects Registered : \n        "
-//                + COMMON_BLOCKS.size() + " Colored Blocks \n        "
-//                + COLORED_STAIRS_LIST.size() + " Colored Stairs \n        "
-//                + COLORED_SLAB_LIST.size() + " Colored Slabs \n        "
-//                + COLORED_WALL_LIST.size() + " Colored Walls \n        "
-//                + COLORED_FENCE_GATE_LIST.size() + " Colored Fence Gates \n        "
-//                + COLORED_FENCE_LIST.size() + " Colored Fences \n        "
-//                + COLORED_PRESSURE_PLATE_LIST.size() + " Colored Pressure Plates \n        "
-//                + COLORED_BUTTON_LIST.size() + " Colored Buttons");
+        LOGGER.info("PaintingMod Registered " + COLORED_OBJECTS.size() + " Colored Objects");
+        for (ColoredFunction coloredFunction : COLORED_FUNCTIONS.values()) {
+            List<ColoredObject> list = new ArrayList<>();
+            String className = coloredFunction.getColoredObjectType().getName();
+            for (ColoredObject coloredObject : COLORED_OBJECTS.values()) {
+                if (coloredFunction.isFromType(coloredObject)) {
+                    list.add(coloredObject);
+                }
+            }
+            if (list.isEmpty()) {
+                LOGGER.info("PaintingMod Registered " + 0 + " " + className);
+            } else {
+                LOGGER.info("PaintingMod Registered " + list.size() + " " + className);
+            }
+        }
     }
 }

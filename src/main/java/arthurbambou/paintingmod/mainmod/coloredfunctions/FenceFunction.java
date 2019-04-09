@@ -63,4 +63,15 @@ public class FenceFunction extends ColoredFunction {
             }
         }
     }
+
+    @Override
+    public boolean isFromType(ColoredObject coloredObject) {
+        if (coloredObject instanceof ColoredFence) return true;
+        return false;
+    }
+
+    @Override
+    public Class getColoredObjectType() {
+        return ColoredFence.class;
+    }
 }

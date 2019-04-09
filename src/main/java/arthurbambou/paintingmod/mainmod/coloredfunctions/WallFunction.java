@@ -65,4 +65,15 @@ public class WallFunction extends ColoredFunction {
             }
         }
     }
+
+    @Override
+    public boolean isFromType(ColoredObject coloredObject) {
+        if (coloredObject instanceof ColoredWall) return true;
+        return false;
+    }
+
+    @Override
+    public Class getColoredObjectType() {
+        return ColoredWall.class;
+    }
 }

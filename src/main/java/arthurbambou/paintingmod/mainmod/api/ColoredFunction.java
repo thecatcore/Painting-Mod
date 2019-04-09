@@ -44,4 +44,6 @@ public abstract class ColoredFunction {
 
     public abstract void paint(ItemUsageContext var1, ColoredObject coloredObject);
     public abstract void unPaint(ItemUsageContext var1, ColoredObject coloredObject);
+    public abstract boolean isFromType(ColoredObject coloredObject);
+    public abstract Class getColoredObjectType();
 }
