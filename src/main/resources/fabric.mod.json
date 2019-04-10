@@ -25,5 +25,8 @@
   },
   "contributors": [
 	  "oamroo", "Daniel She", "Dulcinea Marie C"
+  ],
+  "mixins": [
+    "paintingmod.mixins.json"
   ]
 }

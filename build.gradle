@@ -13,7 +13,7 @@ repositories {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-def baseversion = "0.7.0"
+def baseversion = "1.0.0"
 def buildbranch = System.getenv('TRAVIS_BRANCH')
 def buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
 def gittoken = System.getenv('GH_TOKEN')
@@ -72,9 +72,9 @@ dependencies {
 
 	// Compat with other mods
 	// modCompile "com.github.Yanis48:FabriBlocks:${fabriblocks_commit}"
-    // modCompile "info.tehnut.pluginloader:plugin-loader:${pluginloader_version}"
     // modCompile "roughly-enough-items:RoughlyEnoughItems:${rei_version}"
-//     modCompile "cloth:Cloth:${cloth_version}"
+	modCompile "cloth-config:ClothConfig:${cloth_version}"
+	include "cloth-config:ClothConfig:${cloth_version}"
 	modCompile "io.github.prospector.modmenu:ModMenu:${modmenu_version}"
 }
 
