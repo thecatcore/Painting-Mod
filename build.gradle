@@ -72,9 +72,11 @@ dependencies {
 
 	// Compat with other mods
 	// modCompile "com.github.Yanis48:FabriBlocks:${fabriblocks_commit}"
-    // modCompile "roughly-enough-items:RoughlyEnoughItems:${rei_version}"
-	modCompile "cloth-config:ClothConfig:${cloth_version}"
-	include "cloth-config:ClothConfig:${cloth_version}"
+	modCompile "roughly-enough-items:RoughlyEnoughItems:${rei_version}"
+	modCompile "cloth:ClothEvents:${cloth_events_version}"
+
+	modCompile "cloth-config:ClothConfig:${cloth_config_version}"
+	include "cloth-config:ClothConfig:${cloth_config_version}"
 	modCompile "io.github.prospector.modmenu:ModMenu:${modmenu_version}"
 }
 

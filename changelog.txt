@@ -1,3 +1,13 @@
+Version 1.0.0 Fabric 19w14b
+Port to the latest snapshot (19w14b).
+Upgrade Fabric Loader to 0.4.
+Big Change in api about painting/unpainting functions.
+Added Colored Sandstones Block, Stairs, Slabs and Walls.
+Added Colored Smooth Sandstones Block, Stairs and Slabs.
+Added Colored Grass Block and Podzol.
+Thanks to Dulcinea Marie C for making the textures of the new colored blocks !
+Now include Fabric API and Cloth-Config.
+
 Version 0.6.1 Fabric 19w13a
 Port to the latest snapshot (19w13a).
 

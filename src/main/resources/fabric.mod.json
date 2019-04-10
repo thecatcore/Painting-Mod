@@ -12,11 +12,12 @@
   ],
   "contact": {
     "homepage": "https://minecraft.curseforge.com/projects/painting-mod",
-    "sources": "https://github.com/arthurbambou/Painting-Mod"
+    "sources": "https://github.com/arthurbambou/Painting-Mod",
+    "issues": "https://github.com/arthurbambou/Painting-Mod/issues"
   },
   "entrypoints": {
     "main": [
-      "arthurbambou.paintingmod.mainmod.PaintingMod"
+      "fr.arthurbambou.paintingmod.mainmod.PaintingMod"
     ]
   },
   "depends": {
@@ -28,5 +29,13 @@
   ],
   "mixins": [
     "paintingmod.mixins.json"
-  ]
+  ],
+  "custom": {
+    "roughlyenoughitems:plugins": [
+      {
+        "id": "paintingmod_plugin",
+        "class": "fr.arthurbambou.paintingmod.compat.rei.PaintingModPlugin"
+      }
+    ]
+  }
 }
