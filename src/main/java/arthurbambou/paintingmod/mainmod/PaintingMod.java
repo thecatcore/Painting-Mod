@@ -8,6 +8,7 @@ import arthurbambou.paintingmod.mainmod.registery.ModItems;
 import arthurbambou.paintingmod.mainmod.registery.ModVillagers;
 import arthurbambou.paintingmod.mainmod.utils.ConfigHandler;
 import arthurbambou.paintingmod.mainmod.utils.config.Config;
+import arthurbambou.paintingmod.mainmod.utils.config.ConfigScreen;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
@@ -41,6 +42,7 @@ public class PaintingMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		config = ConfigHandler.init();
+		ConfigScreen.init();
 		ModBlocks.init();
 		ModItems.init();
 		ModVillagers.init();
