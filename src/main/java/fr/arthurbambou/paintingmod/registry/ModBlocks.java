@@ -194,10 +194,10 @@ public class ModBlocks {
         POLISHED_DIORITE = new PMColoredBlock(Blocks.POLISHED_DIORITE);
         ANDESITE = new PMColoredBlock(Blocks.ANDESITE);
         POLISHED_ANDESITE = new PMColoredBlock(Blocks.POLISHED_ANDESITE);
-//        GRASS_BLOCK = new PMColoredBlock(Blocks.GRASS_BLOCK);
+        GRASS_BLOCK = new PMColoredBlock(Blocks.GRASS_BLOCK);
         DIRT = new PMColoredBlock(Blocks.DIRT);
         COARSE_DIRT = new PMColoredBlock(Blocks.COARSE_DIRT);
-//        PODZOL = new PMColoredBlock(Blocks.PODZOL);
+        PODZOL = new PMColoredBlock(Blocks.PODZOL);
         COBBLESTONE = new PMColoredBlock(Blocks.COBBLESTONE);
         OAK_PLANK = new PMColoredBlock(Blocks.OAK_PLANKS,"oak_plank");
         SPRUCE_PLANK = new PMColoredBlock(Blocks.SPRUCE_PLANKS,"spruce_plank");
@@ -241,9 +241,9 @@ public class ModBlocks {
         SPONGE = new PMColoredBlock(Blocks.SPONGE);
         WET_SPONGE = new PMColoredBlock(Blocks.WET_SPONGE);
         LAPIS_LAZULI_BLOCK = new PMColoredBlock(Blocks.LAPIS_BLOCK,"lapis_lazuli_block");
-//        SANDSTONE = new PMColoredBlock(Blocks.SANDSTONE);
+        SANDSTONE = new PMColoredBlock(Blocks.SANDSTONE);
 //        CHISELED_SANDSTONE = new PMColoredBlock(Blocks.CHISELED_SANDSTONE);
-//        CUT_SANDSTONE = new PMColoredBlock(Blocks.CUT_SANDSTONE);
+        CUT_SANDSTONE = new PMColoredBlock(Blocks.CUT_SANDSTONE);
         GOLD_BLOCK = new PMColoredBlock(Blocks.GOLD_BLOCK);
         IRON_BLOCK = new PMColoredBlock(Blocks.IRON_BLOCK);
         BRICK = new PMColoredBlock(Blocks.BRICKS,"brick");
@@ -277,7 +277,7 @@ public class ModBlocks {
         NETHER_BRICK_FENCE = new PMColoredFence(Blocks.NETHER_BRICK_FENCE);
         NETHER_BRICK_STAIRS = new PMColoredStairs(Blocks.NETHER_BRICK_STAIRS);
         END_STONE = new PMColoredBlock(Blocks.END_STONE);
-//        SANDSTONE_STAIRS = new PMColoredStairs(Blocks.SANDSTONE_STAIRS);
+        SANDSTONE_STAIRS = new PMColoredStairs(Blocks.SANDSTONE_STAIRS);
         EMERALD_BLOCK = new PMColoredBlock(Blocks.EMERALD_BLOCK);
         SPRUCE_STAIRS = new PMColoredStairs(Blocks.SPRUCE_STAIRS, "spruce_plank_stairs");
         BIRCH_STAIRS = new PMColoredStairs(Blocks.BIRCH_STAIRS, "birch_plank_stairs");
@@ -304,10 +304,10 @@ public class ModBlocks {
 //        HAY_BLOCK = new PMColoredBlock(Blocks.HAY_BLOCK);
         COAL_BLOCK = new PMColoredBlock(Blocks.COAL_BLOCK);
         PACKET_ICE = new PMColoredBlock(Blocks.PACKED_ICE, "packet_ice");
-//        RED_SANDSTONE = new PMColoredBlock(Blocks.RED_SANDSTONE);
+        RED_SANDSTONE = new PMColoredBlock(Blocks.RED_SANDSTONE);
 //        RED_CHISELED_SANDSTONE = new PMColoredBlock(Blocks.CHISELED_RED_SANDSTONE);
-//        RED_CUT_SANDSTONE = new PMColoredBlock(Blocks.CUT_RED_SANDSTONE);
-//        RED_SANDSTONE_STAIRS = new PMColoredStairs(Blocks.RED_SANDSTONE_STAIRS);
+        RED_CUT_SANDSTONE = new PMColoredBlock(Blocks.CUT_RED_SANDSTONE);
+        RED_SANDSTONE_STAIRS = new PMColoredStairs(Blocks.RED_SANDSTONE_STAIRS);
         OAK_SLAB = new PMColoredSlab(Blocks.OAK_SLAB, "oak_plank_slab");
         SPRUCE_SLAB = new PMColoredSlab(Blocks.SPRUCE_SLAB, "spruce_plank_slab");
         BIRCH_SLAB = new PMColoredSlab(Blocks.BIRCH_SLAB, "birch_plank_slab");
@@ -315,18 +315,18 @@ public class ModBlocks {
         ACACIA_SLAB = new PMColoredSlab(Blocks.ACACIA_SLAB, "acacia_plank_slab");
         DARK_OAK_SLAB = new PMColoredSlab(Blocks.DARK_OAK_SLAB, "dark_oak_plank_slab");
 //        STONE_SLAB = new PMColoredSlab(Blocks.STONE_SLAB);
-//        SANDSTONE_SLAB = new PMColoredSlab(Blocks.SANDSTONE_SLAB);
+        SANDSTONE_SLAB = new PMColoredSlab(Blocks.SANDSTONE_SLAB);
 //        PETRIFIED_OAK_SLAB = new PMColoredSlab(Blocks.PETRIFIED_OAK_SLAB);
         COBBLESTONE_SLAB = new PMColoredSlab(Blocks.COBBLESTONE_SLAB);
         BRICK_SLAB = new PMColoredSlab(Blocks.BRICK_SLAB);
         STONE_BRICK_SLAB = new PMColoredSlab(Blocks.STONE_BRICK_SLAB);
         NETHER_BRICK_SLAB = new PMColoredSlab(Blocks.NETHER_BRICK_SLAB);
 //        QUARTZ_SLAB = new PMColoredSlab(Blocks.QUARTZ_SLAB);
-//        RED_SANDSTONE_SLAB = new PMColoredSlab(Blocks.RED_SANDSTONE_SLAB);
+        RED_SANDSTONE_SLAB = new PMColoredSlab(Blocks.RED_SANDSTONE_SLAB);
         PURPUR_SLAB = new PMColoredSlab(Blocks.PURPUR_SLAB);
 //        SMOOTH_QUARTZ = new PMColoredBlock(Blocks.SMOOTH_QUARTZ);
-//        SMOOTH_RED_SANDSTONE = new PMColoredBlock(Blocks.SMOOTH_RED_SANDSTONE);
-//        SMOOTH_SANDSTONE = new PMColoredBlock(Blocks.SMOOTH_SANDSTONE);
+        SMOOTH_RED_SANDSTONE = new PMColoredBlock(Blocks.SMOOTH_RED_SANDSTONE);
+        SMOOTH_SANDSTONE = new PMColoredBlock(Blocks.SMOOTH_SANDSTONE);
 //        SMOOTH_STONE = new PMColoredBlock(Blocks.SMOOTH_STONE);
         SPRUCE_FENCE = new PMColoredFence(Blocks.SPRUCE_FENCE, "spruce_plank_fence");
         BIRCH_FENCE = new PMColoredFence(Blocks.BIRCH_FENCE, "birch_plank_fence");
@@ -347,9 +347,9 @@ public class ModBlocks {
 
         ColoredObject[] array = new ColoredObject[] {
                 STONE, GRANITE, POLISHED_GRANITE, DIORITE, POLISHED_DIORITE, ANDESITE, POLISHED_ANDESITE,
-//                GRASS_BLOCK,
+                GRASS_BLOCK,
                 DIRT, COARSE_DIRT,
-//                PODZOL,
+                PODZOL,
                 COBBLESTONE,
                 OAK_PLANK, SPRUCE_PLANK, BIRCH_PLANK, JUNGLE_PLANK, ACACIA_PLANK, DARK_OAK_PLANK,
                 SAND, RED_SAND, GRAVEL,
@@ -362,9 +362,9 @@ public class ModBlocks {
 //                BIRCH_LEAVES,
                 JUNGLE_LEAVES,
 //                ACACIA_LEAVES, DARK_OAK_LEAVES,
-                SPONGE, WET_SPONGE, LAPIS_LAZULI_BLOCK,
-//                SANDSTONE, CHISELED_SANDSTONE, CUT_SANDSTONE,
-                GOLD_BLOCK, IRON_BLOCK, BRICK,
+                SPONGE, WET_SPONGE, LAPIS_LAZULI_BLOCK, SANDSTONE,
+//                 CHISELED_SANDSTONE, 
+                CUT_SANDSTONE, GOLD_BLOCK, IRON_BLOCK, BRICK,
 //                BOOKSHELF,
                 MOSS_STONE, OBSIDIAN, OAK_STAIRS, DIAMOND_BLOCK, COBBLESTONE_STAIRS,
                 STONE_PRESSURE_PLATE, OAK_PRESSURE_PLATE, SPRUCE_PRESSURE_PLATE, BIRCH_PRESSURE_PLATE,
@@ -372,8 +372,7 @@ public class ModBlocks {
                 SNOW_BLOCK, CLAY_BLOCK, OAK_FENCE, NETHERRACK, SOUL_SAND, GLOWSTONE,
                 STONE_BRICK, MOSSY_STONE_BRICK, CRACKED_STONE_BRICK, CHISELED_STONE_BRICK,
                 BRICK_STAIRS, STONE_BRICK_STAIRS, NETHER_BRICK, NETHER_BRICK_FENCE, NETHER_BRICK_STAIRS,
-                END_STONE,
-//                SANDSTONE_STAIRS,
+                END_STONE, SANDSTONE_STAIRS,
                 EMERALD_BLOCK, SPRUCE_STAIRS, BIRCH_STAIRS, JUNGLE_STAIRS,
                 LIGHT_WEIGHTED_PRESSURE_PLATE, HEAVY_WEIGHTED_PRESSURE_PLATE,
 //                QUARTZ_BLOCK, CHISELED_QUARTZ_BLOCK, QUARTZ_PILLAR, QUARTZ_STAIRS,
@@ -383,14 +382,20 @@ public class ModBlocks {
                 PRISMARINE_SLAB, PRISMARINE_BRICK_SLAB, DARK_PRISMARINE_SLAB,
                 SEA_LANTERN,
 //                HAY_BLOCK,
-                COAL_BLOCK, PACKET_ICE,
-//                RED_SANDSTONE, RED_CHISELED_SANDSTONE, RED_CUT_SANDSTONE, RED_SANDSTONE_STAIRS,
+                COAL_BLOCK, PACKET_ICE, RED_SANDSTONE,
+//                 RED_CHISELED_SANDSTONE, 
+                RED_CUT_SANDSTONE, RED_SANDSTONE_STAIRS,
                 OAK_SLAB, SPRUCE_SLAB, BIRCH_SLAB, JUNGLE_SLAB, ACACIA_SLAB, DARK_OAK_SLAB,
-//                STONE_SLAB, SANDSTONE_SLAB, PETRIFIED_OAK_SLAB,
+//                STONE_SLAB, 
+                SANDSTONE_SLAB, 
+//                PETRIFIED_OAK_SLAB,
                 COBBLESTONE_SLAB, BRICK_SLAB, STONE_BRICK_SLAB, NETHER_BRICK_SLAB,
-//                QUARTZ_SLAB, RED_SANDSTONE_SLAB,
+//                QUARTZ_SLAB, 
+                RED_SANDSTONE_SLAB,
                 PURPUR_SLAB,
-//                SMOOTH_QUARTZ, SMOOTH_RED_SANDSTONE, SMOOTH_SANDSTONE, SMOOTH_STONE,
+//                SMOOTH_QUARTZ, 
+                SMOOTH_RED_SANDSTONE, SMOOTH_SANDSTONE, 
+//                SMOOTH_STONE,
                 SPRUCE_FENCE, BIRCH_FENCE, JUNGLE_FENCE, ACACIA_FENCE, DARK_OAK_FENCE,
 //                END_ROD,
                 PURPUR_BLOCK,
