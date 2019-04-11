@@ -33,7 +33,7 @@
   "custom": {
     "roughlyenoughitems:plugins": [
       {
-        "id": "paintingmod_plugin",
+        "id": "rei_plugin",
         "class": "fr.arthurbambou.paintingmod.compat.rei.PaintingModPlugin"
       }
     ]
