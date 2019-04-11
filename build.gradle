@@ -13,7 +13,7 @@ repositories {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-def baseversion = "1.0.0"
+def baseversion = "1.0.1"
 def buildbranch = System.getenv('TRAVIS_BRANCH')
 def buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
 def gittoken = System.getenv('GH_TOKEN')
@@ -77,6 +77,7 @@ dependencies {
 
 	modCompile "cloth-config:ClothConfig:${cloth_config_version}"
 	include "cloth-config:ClothConfig:${cloth_config_version}"
+
 	modCompile "io.github.prospector.modmenu:ModMenu:${modmenu_version}"
 }
 
@@ -84,8 +85,8 @@ github {
  owner = 'arthurbambou'
  repo = 'PaintingMod-Builds-Fabric'
  token = gittoken ?: "a key"
- tagName = gitversion + "-" + minecraft_version
- name = gitversion + "-" + "MC" + minecraft_version
+ tagName = gitversion + "-" + minecraft_version.replace(" ", "-")
+ name = gitversion + "-" + "MC" + minecraft_version.replace(" ", "-")
  targetCommitish = "master"
  prerelease = prelease
  body = changelogbody
