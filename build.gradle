@@ -109,9 +109,10 @@ curseforge {
         mainArtifact(jar) {
             displayName = "[Fabric " + minecraft_version + "] " + version
 			relations {
-				requiredDependency "fabric"
+				embeddedLibrary "fabric"
+				embeddedLibrary "cloth-config"
+				
 				optionalDependency "modmenu"
-				optionalDependency "cloth-config"
 //				optionalDependency "fabriblocks"
 				optionalDependency "roughly-enough-items"
 			}
