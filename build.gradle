@@ -39,7 +39,7 @@ if (buildbranch == "dev/fabric") {
 	changelogbody = file("changelog.txt")
 }
 
-archivesBaseName = "PaintingMod-${minecraft_version}"
+archivesBaseName = "PaintingMod"
 
 processResources {
 	filesMatching('fabric.mod.json') {
@@ -117,8 +117,8 @@ curseforge {
 			}
         }
         addArtifact file("build/libs/${archivesBaseName}-${version}-dev.jar")
-		addArtifact file("build/libs/${archivesBaseName}-${version}-sources.jar")
-		addArtifact file("build/libs/${archivesBaseName}-${version}-sources-dev.jar")
+	addArtifact file("build/libs/${archivesBaseName}-${version}-sources.jar")
+	addArtifact file("build/libs/${archivesBaseName}-${version}-sources-dev.jar")
  	}
 	options{
 		forgeGradleIntegration = false
