@@ -1,3 +1,6 @@
+Version 1.0.2 Fabric 1.14 Pre-Release 2
+Fix crash on Fabric 1.14 Pre-Release 2.
+
 Version 1.0.1 Fabric 1.14 Pre-Release 1
 Port to 1.14 Pre-Release 1.
 Upgrade Fabric API and Cloth-Config.

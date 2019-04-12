@@ -20,6 +20,6 @@ public class MixinFenceBlock extends Block {
         Block block_1 = blockState_1.getBlock();
         boolean boolean_2 = block_1 instanceof FenceBlock && blockState_1.getMaterial() == this.material;
         boolean boolean_3 = block_1 instanceof FenceGateBlock && FenceGateBlock.canWallConnect(blockState_1, direction_1);
-        return !method_9581(block_1) && boolean_1 || boolean_2 || boolean_3;
+        return !canConnect(block_1) && boolean_1 || boolean_2 || boolean_3;
     }
 }
