@@ -28,7 +28,7 @@ public class FenceGateFunction extends ColoredFunction {
             for (int a = 0; a < coloredObject.getArrayList().size(); a++) {
                 if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.PAINTBRUSHES.get(a + 1)) {
                     worldIn.setBlockState(pos, coloredObject.getArrayList().get(a).getStateFactory().getDefaultState()
-                            .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
+                            .with(HorizontalFacingBlock.FACING, blockState.get(HorizontalFacingBlock.FACING))
                             .with(FenceGateBlock.OPEN, blockState.get(FenceGateBlock.OPEN))
                             .with(FenceGateBlock.POWERED, blockState.get(FenceGateBlock.POWERED))
                             .with(FenceGateBlock.IN_WALL, blockState.get(FenceGateBlock.IN_WALL)));
@@ -48,7 +48,7 @@ public class FenceGateFunction extends ColoredFunction {
             for (int b = 0; b < coloredObject.getArrayList().size(); b++) {
                 if (worldIn.getBlockState(pos).getBlock() == coloredObject.getArrayList().get(b)) {
                     worldIn.setBlockState(pos, coloredObject.replace.getStateFactory().getDefaultState()
-                            .with(HorizontalFacingBlock.field_11177, blockState.get(HorizontalFacingBlock.field_11177))
+                            .with(HorizontalFacingBlock.FACING, blockState.get(HorizontalFacingBlock.FACING))
                             .with(FenceGateBlock.OPEN, blockState.get(FenceGateBlock.OPEN))
                             .with(FenceGateBlock.POWERED, blockState.get(FenceGateBlock.POWERED))
                             .with(FenceGateBlock.IN_WALL, blockState.get(FenceGateBlock.IN_WALL)));

@@ -71,7 +71,7 @@ dependencies {
 	include "net.fabricmc:fabric:${fabric_api}"
 
 	// Compat with other mods
-	// modCompile "com.github.Yanis48:FabriBlocks:${fabriblocks_commit}"
+	modCompile "fabriblocks:fabriblocks:${fabriblocks_version}"
 	modCompile "roughly-enough-items:RoughlyEnoughItems:${rei_version}"
 	modCompile "cloth:ClothEvents:${cloth_events_version}"
 
@@ -113,13 +113,13 @@ curseforge {
 				embeddedLibrary "cloth-config"
 				
 				optionalDependency "modmenu"
-//				optionalDependency "fabriblocks"
+				optionalDependency "fabriblocks"
 				optionalDependency "roughly-enough-items"
 			}
         }
         addArtifact file("build/libs/${archivesBaseName}-${version}-dev.jar")
-	addArtifact file("build/libs/${archivesBaseName}-${version}-sources.jar")
-	addArtifact file("build/libs/${archivesBaseName}-${version}-sources-dev.jar")
+		addArtifact file("build/libs/${archivesBaseName}-${version}-sources.jar")
+		addArtifact file("build/libs/${archivesBaseName}-${version}-sources-dev.jar")
  	}
 	options{
 		forgeGradleIntegration = false
