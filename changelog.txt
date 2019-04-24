@@ -1,3 +1,9 @@
+Version 1.0.3 Fabric 1.14.
+First release on 1.14 whoo-hoo!
+Upgrade Cloth-Config.
+Upgrade REI Plugin to the latest standard.
+PaintingMod is no more including Fabric API.
+
 Version 1.0.2 Fabric 1.14 Pre-Release 2
 Fix crash on Fabric 1.14 Pre-Release 2.
 

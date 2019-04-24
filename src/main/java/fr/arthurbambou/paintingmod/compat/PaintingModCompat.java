@@ -1,6 +1,6 @@
 package fr.arthurbambou.paintingmod.compat;
 
-//import arthurbambou.paintingmod.compat.fabricblocks.ModBlocks;
+import fr.arthurbambou.paintingmod.compat.fabricblocks.ModBlocks;
 import fr.arthurbambou.paintingmod.mainmod.PaintingMod;
 import net.fabricmc.loader.api.FabricLoader;
 import org.apache.logging.log4j.LogManager;

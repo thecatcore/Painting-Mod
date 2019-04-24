@@ -17,6 +17,9 @@ public class ColoredFenceGate extends ColoredObject {
     public ColoredFenceGate(String name, Block replace, String modid) {
         super(name,replace,modid);
     }
+    public ColoredFenceGate(String name,Block.Settings settings , String replaceName, String modid) {
+        super(name, settings, replaceName, modid);
+    }
 
     @Override
     public void createBlocks() {

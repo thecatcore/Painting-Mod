@@ -16,6 +16,10 @@ public class ColoredStoneButton extends ColoredButton {
         super(name, replace, modid);
     }
 
+    public ColoredStoneButton(String name,Block.Settings settings , String replaceName, String modid) {
+        super(name, settings, replaceName, modid);
+    }
+
     @Override
     public void createBlocks() {
         this.black = new ColoredStoneButtonBlock("black_" + this.name, this.settings, this.modid);

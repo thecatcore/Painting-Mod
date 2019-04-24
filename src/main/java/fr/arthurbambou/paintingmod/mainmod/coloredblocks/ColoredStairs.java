@@ -22,6 +22,10 @@ public class ColoredStairs extends ColoredObject {
         this.blockState = replace.getDefaultState();
     }
 
+    public ColoredStairs(String name,Block.Settings settings , String replaceName, String modid) {
+        super(name, settings, replaceName, modid);
+    }
+
     @Override
     public void createBlocks() {
         this.black = new ColoredStairsBlock("black_" + this.name, this.settings, this.blockState, this.modid);

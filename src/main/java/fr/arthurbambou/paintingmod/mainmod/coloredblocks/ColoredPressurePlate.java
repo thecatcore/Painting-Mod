@@ -18,8 +18,20 @@ public class ColoredPressurePlate extends ColoredObject {
         ModBlocks.COLORED_BLOCKS.add(this);
     }
 
+    public ColoredPressurePlate(String name, Block replace, String modid, PressurePlateBlock.Type type) {
+        super(name,replace,modid);
+        this.type = type;
+    }
+    public ColoredPressurePlate(String name,Block.Settings settings , String replaceName, String modid, PressurePlateBlock.Type type) {
+        super(name, settings, replaceName, modid);
+        this.type = type;
+    }
+
     public ColoredPressurePlate(String name, Block replace, String modid) {
         super(name,replace,modid);
+    }
+    public ColoredPressurePlate(String name,Block.Settings settings , String replaceName, String modid) {
+        super(name, settings, replaceName, modid);
     }
 
     @Override

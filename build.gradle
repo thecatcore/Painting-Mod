@@ -68,7 +68,6 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modCompile "net.fabricmc:fabric:${fabric_api}"
-	include "net.fabricmc:fabric:${fabric_api}"
 
 	// Compat with other mods
 	modCompile "fabriblocks:fabriblocks:${fabriblocks_version}"

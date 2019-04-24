@@ -18,6 +18,9 @@
   "entrypoints": {
     "main": [
       "fr.arthurbambou.paintingmod.mainmod.PaintingMod"
+    ],
+    "rei_plugins": [
+      "fr.arthurbambou.paintingmod.compat.rei.PaintingModPlugin"
     ]
   },
   "depends": {
@@ -29,13 +32,5 @@
   ],
   "mixins": [
     "paintingmod.mixins.json"
-  ],
-  "custom": {
-    "roughlyenoughitems:plugins": [
-      {
-        "id": "rei_plugin",
-        "class": "fr.arthurbambou.paintingmod.compat.rei.PaintingModPlugin"
-      }
-    ]
-  }
+  ]
 }

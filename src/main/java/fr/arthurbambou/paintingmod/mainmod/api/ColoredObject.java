@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 public abstract class ColoredObject {
     public String name;
+
     public Block black;
     public Block red;
     public Block green;
@@ -23,7 +24,10 @@ public abstract class ColoredObject {
     public Block magenta;
     public Block orange;
     public Block white;
+
     public Block replace;
+    public String replaceName;
+
     public Block.Settings settings;
     public String modid;
 
@@ -33,6 +37,13 @@ public abstract class ColoredObject {
         if (this.replace != null) {
             this.settings = Block.Settings.copy(this.replace);
         }
+        this.modid = modid;
+    }
+
+    public ColoredObject(String name,Block.Settings settings , String replaceName, String modid) {
+        this.name = name;
+        this.replaceName = replaceName;
+        this.settings = settings;
         this.modid = modid;
     }
 
