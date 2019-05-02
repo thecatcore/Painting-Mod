@@ -26,7 +26,7 @@ public class FenceGateFunction extends ColoredFunction {
         if (coloredObject instanceof ColoredFenceGate
                 && worldIn.getBlockState(pos).getBlock() == coloredObject.replace) {
             for (int a = 0; a < coloredObject.getArrayList().size(); a++) {
-                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.PAINTBRUSHES.get(a + 1)) {
+                if (player.getStackInHand(Hand.MAIN_HAND).getItem() == ModItems.PAINTBRUSHES.get(a + 1)) {
                     worldIn.setBlockState(pos, coloredObject.getArrayList().get(a).getStateFactory().getDefaultState()
                             .with(HorizontalFacingBlock.FACING, blockState.get(HorizontalFacingBlock.FACING))
                             .with(FenceGateBlock.OPEN, blockState.get(FenceGateBlock.OPEN))
@@ -52,7 +52,7 @@ public class FenceGateFunction extends ColoredFunction {
                             .with(FenceGateBlock.OPEN, blockState.get(FenceGateBlock.OPEN))
                             .with(FenceGateBlock.POWERED, blockState.get(FenceGateBlock.POWERED))
                             .with(FenceGateBlock.IN_WALL, blockState.get(FenceGateBlock.IN_WALL)));
-                    heatgun(player.getStackInHand(Hand.MAIN));
+                    heatgun(player.getStackInHand(Hand.MAIN_HAND));
                 }
             }
         }

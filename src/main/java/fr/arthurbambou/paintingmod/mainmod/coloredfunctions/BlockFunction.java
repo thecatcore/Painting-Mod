@@ -24,7 +24,7 @@ public class BlockFunction extends ColoredFunction {
         if (coloredObject instanceof ColoredBlock
                 && worldIn.getBlockState(pos).getBlock() == coloredObject.replace) {
             for (int a = 0; a < coloredObject.getArrayList().size(); a++) {
-                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.PAINTBRUSHES.get(a + 1)) {
+                if (player.getStackInHand(Hand.MAIN_HAND).getItem() == ModItems.PAINTBRUSHES.get(a + 1)) {
                     worldIn.setBlockState(pos, coloredObject.getArrayList().get(a).getDefaultState());
                     usedpaintbrush(player);
                 }
@@ -41,7 +41,7 @@ public class BlockFunction extends ColoredFunction {
             for (int b = 0; b < coloredObject.getArrayList().size(); b++) {
                 if (worldIn.getBlockState(pos).getBlock() == coloredObject.getArrayList().get(b)) {
                     worldIn.setBlockState(pos, coloredObject.replace.getDefaultState());
-                    heatgun(player.getStackInHand(Hand.MAIN));
+                    heatgun(player.getStackInHand(Hand.MAIN_HAND));
                 }
             }
         }

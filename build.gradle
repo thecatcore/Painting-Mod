@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '0.2.1-SNAPSHOT'
+	id 'fabric-loom' version '0.2.2-SNAPSHOT'
 	id "co.riiid.gradle" version "0.4.2"
 	id "com.matthewprenger.cursegradle" version "1.2.0"
 }
@@ -70,7 +70,6 @@ dependencies {
 	modCompile "net.fabricmc:fabric:${fabric_api}"
 
 	// Compat with other mods
-	modCompile "fabriblocks:fabriblocks:${fabriblocks_version}"
 	modCompile "roughly-enough-items:RoughlyEnoughItems:${rei_version}"
 	modCompile "cloth:ClothEvents:${cloth_events_version}"
 
@@ -104,15 +103,14 @@ curseforge {
  		releaseType = "release"
 		changelog = file("changelog.txt")
         gameVersionStrings.clear()
-        gameVersionStrings.add("1.14-Snapshot")
+        gameVersionStrings.add("1.14")
         mainArtifact(jar) {
             displayName = "[Fabric " + minecraft_version + "] " + version
 			relations {
-				embeddedLibrary "fabric"
+				requiredDependency "fabric"
 				embeddedLibrary "cloth-config"
 				
 				optionalDependency "modmenu"
-				optionalDependency "fabriblocks"
 				optionalDependency "roughly-enough-items"
 			}
         }

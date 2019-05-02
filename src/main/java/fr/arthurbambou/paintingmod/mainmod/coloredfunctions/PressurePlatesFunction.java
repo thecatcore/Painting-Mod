@@ -28,7 +28,7 @@ public class PressurePlatesFunction extends ColoredFunction {
         if (coloredObject instanceof ColoredPressurePlate
                 && worldIn.getBlockState(pos).getBlock() == coloredObject.replace) {
             for (int a = 0; a < coloredObject.getArrayList().size(); a++) {
-                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.PAINTBRUSHES.get(a + 1)) {
+                if (player.getStackInHand(Hand.MAIN_HAND).getItem() == ModItems.PAINTBRUSHES.get(a + 1)) {
                     if (worldIn.getBlockState(pos).getBlock() instanceof PressurePlateBlock) {
                         worldIn.setBlockState(pos, coloredObject.getArrayList().get(a).getStateFactory().getDefaultState()
                                 .with(PressurePlateBlock.POWERED, blockState.get(PressurePlateBlock.POWERED)));
@@ -58,7 +58,7 @@ public class PressurePlatesFunction extends ColoredFunction {
                         worldIn.setBlockState(pos, coloredObject.replace.getStateFactory().getDefaultState()
                                 .with(WeightedPressurePlateBlock.POWER, blockState.get(WeightedPressurePlateBlock.POWER)));
                     }
-                    heatgun(player.getStackInHand(Hand.MAIN));
+                    heatgun(player.getStackInHand(Hand.MAIN_HAND));
                 }
             }
         }

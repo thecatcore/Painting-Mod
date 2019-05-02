@@ -27,7 +27,7 @@ public class SlabFunction extends ColoredFunction {
         if (coloredObject instanceof ColoredSlab
                 && worldIn.getBlockState(pos).getBlock() == coloredObject.replace) {
             for (int a = 0; a < coloredObject.getArrayList().size(); a++) {
-                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.PAINTBRUSHES.get(a + 1)) {
+                if (player.getStackInHand(Hand.MAIN_HAND).getItem() == ModItems.PAINTBRUSHES.get(a + 1)) {
                     worldIn.setBlockState(pos, coloredObject.getArrayList().get(a).getStateFactory().getDefaultState()
                             .with(SlabBlock.TYPE, blockState.get(SlabBlock.TYPE))
                             .with(SlabBlock.WATERLOGGED, blockState.get(SlabBlock.WATERLOGGED)));
@@ -49,7 +49,7 @@ public class SlabFunction extends ColoredFunction {
                     worldIn.setBlockState(pos, coloredObject.replace.getStateFactory().getDefaultState()
                             .with(SlabBlock.TYPE, blockState.get(SlabBlock.TYPE))
                             .with(SlabBlock.WATERLOGGED, blockState.get(SlabBlock.WATERLOGGED)));
-                    heatgun(player.getStackInHand(Hand.MAIN));
+                    heatgun(player.getStackInHand(Hand.MAIN_HAND));
                 }
             }
         }
