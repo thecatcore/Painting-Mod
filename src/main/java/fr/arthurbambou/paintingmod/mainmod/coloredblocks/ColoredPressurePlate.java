@@ -10,19 +10,19 @@ import net.minecraft.block.PressurePlateBlock;
 
 public class ColoredPressurePlate extends ColoredObject {
 
-    private PressurePlateBlock.Type type;
+    private PressurePlateBlock.ActivationRule type;
 
-    public ColoredPressurePlate(String name, Block replace, PressurePlateBlock.Type type) {
+    public ColoredPressurePlate(String name, Block replace, PressurePlateBlock.ActivationRule type) {
         super(name,replace,PaintingMod.MODID);
         this.type = type;
         ModBlocks.COLORED_BLOCKS.add(this);
     }
 
-    public ColoredPressurePlate(String name, Block replace, String modid, PressurePlateBlock.Type type) {
+    public ColoredPressurePlate(String name, Block replace, String modid, PressurePlateBlock.ActivationRule type) {
         super(name,replace,modid);
         this.type = type;
     }
-    public ColoredPressurePlate(String name,Block.Settings settings , String replaceName, String modid, PressurePlateBlock.Type type) {
+    public ColoredPressurePlate(String name,Block.Settings settings , String replaceName, String modid, PressurePlateBlock.ActivationRule type) {
         super(name, settings, replaceName, modid);
         this.type = type;
     }

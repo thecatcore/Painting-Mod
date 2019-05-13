@@ -8,7 +8,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ColoredPressurePlateBlock extends PressurePlateBlock {
-    public ColoredPressurePlateBlock(String name, Type pressurePlateBlock$Type_1, Settings block$Settings_1, String modID) {
+    public ColoredPressurePlateBlock(String name, ActivationRule pressurePlateBlock$Type_1, Settings block$Settings_1, String modID) {
         super(pressurePlateBlock$Type_1, block$Settings_1);
         Registry.register(Registry.BLOCK, new Identifier(modID, name), this);
         if (modID == PaintingMod.MODID) {

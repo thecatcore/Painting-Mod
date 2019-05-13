@@ -39,8 +39,8 @@ public class PaintingModPlugin implements REIPluginEntry {
             for (int a = 0; a < coloredObject.getArrayList().size(); a++) {
                 recipeHelper.registerDisplay(PAINTBRUSH, new DisplayPaintBrush(
                         ModItems.PAINTBRUSHES.get(a + 1).getDefaultStack(),
-                        coloredObject.replace.getItem().getDefaultStack(),
-                        coloredObject.getArrayList().get(a).getItem().getDefaultStack()
+                        coloredObject.replace.asItem().getDefaultStack(),
+                        coloredObject.getArrayList().get(a).asItem().getDefaultStack()
                 ));
             }
         }
