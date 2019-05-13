@@ -28,7 +28,7 @@ public abstract class ColoredFunction {
 
     public void usedpaintbrush (PlayerEntity player) {
         if (!player.isCreative()) {
-            player.getStackInHand(Hand.MAIN).setAmount(0);
+            player.getStackInHand(Hand.MAIN_HAND).setAmount(0);
             player.inventory.insertStack(new ItemStack(ModItems.NORMAL_PAINTBRUSH));
         }
     }

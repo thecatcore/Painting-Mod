@@ -404,13 +404,13 @@ public class ModBlocks {
         DARK_OAK_PLANK_FENCE = new ColoredFence("dark_oak_plank_fence", Blocks.DARK_OAK_FENCE);
         NETHER_BRICK_FENCE = new ColoredFence("nether_brick_fence", Blocks.NETHER_BRICK_FENCE);
 
-        STONE_PRESSURE_PLATE = new ColoredPressurePlate("stone_pressure_plate", Blocks.STONE_PRESSURE_PLATE, PressurePlateBlock.Type.STONE);
-        OAK_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("oak_plank_pressure_plate", Blocks.OAK_PRESSURE_PLATE, PressurePlateBlock.Type.WOOD);
-        SPRUCE_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("spruce_plank_pressure_plate", Blocks.SPRUCE_PRESSURE_PLATE, PressurePlateBlock.Type.WOOD);
-        BIRCH_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("birch_plank_pressure_plate", Blocks.BIRCH_PRESSURE_PLATE, PressurePlateBlock.Type.WOOD);
-        JUNGLE_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("jungle_plank_pressure_plate", Blocks.JUNGLE_PRESSURE_PLATE, PressurePlateBlock.Type.WOOD);
-        ACACIA_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("acacia_plank_pressure_plate", Blocks.ACACIA_PRESSURE_PLATE, PressurePlateBlock.Type.WOOD);
-        DARK_OAK_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("dark_oak_plank_pressure_plate", Blocks.DARK_OAK_PRESSURE_PLATE, PressurePlateBlock.Type.WOOD);
+        STONE_PRESSURE_PLATE = new ColoredPressurePlate("stone_pressure_plate", Blocks.STONE_PRESSURE_PLATE, PressurePlateBlock.ActivationRule.MOBS);
+        OAK_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("oak_plank_pressure_plate", Blocks.OAK_PRESSURE_PLATE, PressurePlateBlock.ActivationRule.EVERYTHING);
+        SPRUCE_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("spruce_plank_pressure_plate", Blocks.SPRUCE_PRESSURE_PLATE, PressurePlateBlock.ActivationRule.EVERYTHING);
+        BIRCH_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("birch_plank_pressure_plate", Blocks.BIRCH_PRESSURE_PLATE, PressurePlateBlock.ActivationRule.EVERYTHING);
+        JUNGLE_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("jungle_plank_pressure_plate", Blocks.JUNGLE_PRESSURE_PLATE, PressurePlateBlock.ActivationRule.EVERYTHING);
+        ACACIA_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("acacia_plank_pressure_plate", Blocks.ACACIA_PRESSURE_PLATE, PressurePlateBlock.ActivationRule.EVERYTHING);
+        DARK_OAK_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("dark_oak_plank_pressure_plate", Blocks.DARK_OAK_PRESSURE_PLATE, PressurePlateBlock.ActivationRule.EVERYTHING);
         LIGHT_WEIGHTED_PRESSURE_PLATE = new ColoredWeightedPressurePlate("light_weighted_pressure_plate", Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE, 15);
         HEAVY_WEIGHTED_PRESSURE_PLATE = new ColoredWeightedPressurePlate("heavy_weighted_pressure_plate", Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE, 150);
 

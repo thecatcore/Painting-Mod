@@ -26,7 +26,7 @@ public class ButtonFunction extends ColoredFunction {
         if (coloredObject instanceof ColoredButton
                 && worldIn.getBlockState(pos).getBlock() == coloredObject.replace) {
             for (int a = 0; a < coloredObject.getArrayList().size(); a++) {
-                if (player.getStackInHand(Hand.MAIN).getItem() == ModItems.PAINTBRUSHES.get(a + 1)) {
+                if (player.getStackInHand(Hand.MAIN_HAND).getItem() == ModItems.PAINTBRUSHES.get(a + 1)) {
                     worldIn.setBlockState(pos, coloredObject.getArrayList().get(a).getStateFactory().getDefaultState()
                             .with(HorizontalFacingBlock.FACING, blockState.get(HorizontalFacingBlock.FACING))
                             .with(WallMountedBlock.FACE, blockState.get(WallMountedBlock.FACE))
@@ -50,7 +50,7 @@ public class ButtonFunction extends ColoredFunction {
                             .with(HorizontalFacingBlock.FACING, blockState.get(HorizontalFacingBlock.FACING))
                             .with(WallMountedBlock.FACE, blockState.get(WallMountedBlock.FACE))
                             .with(AbstractButtonBlock.POWERED, false));
-                    heatgun(player.getStackInHand(Hand.MAIN));
+                    heatgun(player.getStackInHand(Hand.MAIN_HAND));
                 }
             }
         }
