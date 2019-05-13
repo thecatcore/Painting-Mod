@@ -67,7 +67,7 @@ dependencies {
 	modCompile "net.fabricmc:fabric-loader:${fabric_loader}"
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
-	modCompile "net.fabricmc:fabric:${fabric_api}"
+	modCompile "net.fabricmc.fabric-api:fabric-api:${fabric_api}"
 
 	// Compat with other mods
 	modCompile "roughly-enough-items:RoughlyEnoughItems:${rei_version}"
