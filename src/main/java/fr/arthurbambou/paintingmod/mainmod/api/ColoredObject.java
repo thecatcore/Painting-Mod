@@ -1,12 +1,16 @@
 package fr.arthurbambou.paintingmod.mainmod.api;
 
+import com.google.common.collect.HashBasedTable;
+import fr.arthurbambou.paintingmod.mainmod.PaintingMod;
 import net.minecraft.block.Block;
 import net.minecraft.util.Identifier;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public abstract class ColoredObject {
-    public String name;
+    public Identifier name;
 
     public Block black;
     public Block red;
@@ -28,38 +32,38 @@ public abstract class ColoredObject {
     public Block replace;
     public String replaceName;
 
-    public Block.Settings settings;
-    public String modid;
+    public Block.Settings blockSettings;
+    private Settings settings;
 
-    public ColoredObject(String name, Block replace, String modid) {
-        this.name = name;
-        this.replace = replace;
-        if (this.replace != null) {
-            this.settings = Block.Settings.copy(this.replace);
-        }
-        this.modid = modid;
+    public ColoredObject(String name, Settings settings) {
+        this.name = new Identifier(PaintingMod.MODID, name);
+        this.settings = settings;
     }
 
-    public ColoredObject(String name,Block.Settings settings , String replaceName, String modid) {
+    public ColoredObject(Identifier name,Settings settings) {
         this.name = name;
-        this.replaceName = replaceName;
         this.settings = settings;
-        this.modid = modid;
     }
 
     public String getName() {
-        return name;
-    }
-
-    public String getModid() {
-        return modid;
+        return this.name.getPath();
     }
 
     public Identifier getRegisteryName() {
-        return new Identifier(modid, name);
+        return this.name;
     }
 
     public abstract void createBlocks();
+
+    public void registerBlocks() {
+        for (int z = 0; z < this.settings.map.size(); z++) {
+            switch ((BlockType) this.settings.map.columnMap().keySet().toArray()[z]) {
+                case REPLACE:
+                    Map<Block, String> map = (Map<Block, String>)this.settings.map.columnMap().values().toArray()[z];
+                    this.replace = (Block) map.keySet().toArray()[0];
+            }
+        }
+    }
 
     public ArrayList<Block> getArrayList() {
         ArrayList<Block> list = new ArrayList<>();
@@ -81,5 +85,54 @@ public abstract class ColoredObject {
         list.add(this.white);
 
         return list;
+    }
+
+    public static class Settings {
+        private Block.Settings blockSettings;
+        private HashBasedTable<Block, BlockType, String> map;
+
+        private Settings(HashBasedTable<Block, BlockType, String> map) {
+            this.map = map;
+            for (int i = 0; i < map.size(); i++) {
+                if (map.row((Block) map.rowKeySet().toArray()[i]).keySet().toArray()[0].equals(BlockType.REPLACE)) {
+                    this.blockSettings = Block.Settings.copy((Block) map.rowKeySet().toArray()[i]);
+                    break;
+                }
+            }
+        }
+
+        private Settings(HashBasedTable<Block, BlockType, String> map, Block.Settings settings) {
+            this.map = map;
+            this.blockSettings = settings;
+        }
+
+        public static Settings createSettings(HashBasedTable<Block, BlockType, String> map) {
+            return new Settings(map);
+        }
+
+        public static Settings createSettings(HashBasedTable<Block, BlockType, String> map, Block.Settings settings) {
+            return new Settings(map, settings);
+        }
+
+    }
+
+    public enum BlockType {
+        REPLACE,
+        BLACK,
+        RED,
+        GREEN,
+        BROWN,
+        BLUE,
+        PURPLE,
+        CYAN,
+        LIGHT_GRAY,
+        GRAY,
+        PINK,
+        LIME,
+        YELLOW,
+        LIGHT_BLUE,
+        MAGENTA,
+        ORANGE,
+        WHITE
     }
 }
