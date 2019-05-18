@@ -21,11 +21,15 @@
     ],
     "rei_plugins": [
       "fr.arthurbambou.paintingmod.compat.rei.PaintingModPlugin"
+    ],
+    "modmenu": [
+      "fr.arthurbambou.paintingmod.mainmod.utils.config.ConfigScreen"
     ]
   },
   "depends": {
     "fabricloader": ">=0.4.0",
-    "fabric": ">=0.3.0-pre"
+    "fabric-item-groups-v0": ">=0.1.0",
+    "fabric-object-builders-v0": ">=0.1.1"
   },
   "contributors": [
 	  "oamroo", "Daniel She", "Dulcinea Marie C"
