@@ -13,7 +13,7 @@ repositories {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-def baseversion = "1.0.3"
+def baseversion = "1.0.4"
 def buildbranch = System.getenv('TRAVIS_BRANCH')
 def buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
 def gittoken = System.getenv('GH_TOKEN')
@@ -103,7 +103,7 @@ curseforge {
  		releaseType = "release"
 		changelog = file("changelog.txt")
         gameVersionStrings.clear()
-        gameVersionStrings.add("1.14")
+        gameVersionStrings.add("1.14.1")
         mainArtifact(jar) {
             displayName = "[Fabric " + minecraft_version + "] " + version
 			relations {

@@ -8,9 +8,11 @@ import fr.arthurbambou.paintingmod.mainmod.registery.ModItems;
 import fr.arthurbambou.paintingmod.mainmod.registery.ModVillagers;
 import fr.arthurbambou.paintingmod.mainmod.utils.ConfigHandler;
 import fr.arthurbambou.paintingmod.mainmod.utils.config.Config;
-import fr.arthurbambou.paintingmod.mainmod.utils.config.ConfigScreen;
+
 import net.fabricmc.api.ModInitializer;
+
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
@@ -42,7 +44,6 @@ public class PaintingMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		config = ConfigHandler.init();
-		ConfigScreen.init();
 		ModBlocks.init();
 		ModItems.init();
 		ModVillagers.init();

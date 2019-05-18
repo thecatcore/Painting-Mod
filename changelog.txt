@@ -1,3 +1,7 @@
+Version 1.0.4 Fabric 1.14.1
+Minecraft 1.14.1.
+Sorry I haven't tested the mod on a server now but you can use it again with you friend without any problems :-).
+
 Version 1.0.3 Fabric 1.14.
 First release on 1.14 whoo-hoo!
 Upgrade Cloth-Config.
