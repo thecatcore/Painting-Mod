@@ -61,6 +61,10 @@ jar {
 	from "LICENSE"
 }
 
+afterEvaluate {
+    tasks.curseforge299755.dependsOn remapJar
+}
+
 dependencies {
 	minecraft "com.mojang:minecraft:${minecraft_version}"
 	mappings "net.fabricmc:yarn:${minecraft_version}+build.${snapshot_build}"
@@ -105,7 +109,7 @@ curseforge {
 		changelog = file("changelog.txt")
         gameVersionStrings.clear()
         gameVersionStrings.add("1.14-Snapshot")
-        mainArtifact(jar) {
+        mainArtifact(remapJar.jar) {
             displayName = "[Fabric " + minecraft_version + "] " + version
 			relations {
 				requiredDependency "fabric"
