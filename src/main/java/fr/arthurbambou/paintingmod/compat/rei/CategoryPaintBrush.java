@@ -4,6 +4,7 @@ import fr.arthurbambou.paintingmod.mainmod.registery.ModItems;
 import com.google.common.collect.Lists;
 import com.mojang.blaze3d.platform.GlStateManager;
 import me.shedaniel.rei.api.RecipeCategory;
+import me.shedaniel.rei.api.Renderer;
 import me.shedaniel.rei.gui.widget.ItemSlotWidget;
 import me.shedaniel.rei.gui.widget.RecipeBaseWidget;
 import me.shedaniel.rei.gui.widget.Widget;
@@ -28,7 +29,7 @@ public class CategoryPaintBrush implements RecipeCategory<DisplayPaintBrush> {
 
     @Override
     public ItemStack getCategoryIcon() {
-        return ModItems.NORMAL_PAINTBRUSH.getDefaultStack();
+        return ModItems.NORMAL_PAINTBRUSH.getStackForRender();
     }
 
     @Override

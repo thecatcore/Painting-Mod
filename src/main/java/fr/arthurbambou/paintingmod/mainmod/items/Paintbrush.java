@@ -17,7 +17,7 @@ public class Paintbrush extends ItemBase {
 
     @Override
     public ActionResult useOnBlock(ItemUsageContext var1) {
-        if (var1.getItemStack().getItem() != ModItems.PAINTBRUSHES.get(0)) {
+        if (var1.getStack().getItem() != ModItems.PAINTBRUSHES.get(0)) {
             for (ColoredObject coloredObject : PaintingModRegistry.getColoredObjectList().values()) {
                 for (ColoredFunction coloredFunction : PaintingModRegistry.getColoredFunctionsList().values()) {
                     coloredFunction.paint(var1, coloredObject);

@@ -30,15 +30,6 @@ public class PaintingMod implements ModInitializer {
 	public static final ItemGroup MOD_PRESSURE_PLATES = FabricItemGroupBuilder.build(new Identifier("paintingmod:mod_pressure_plates"), () -> new ItemStack(ModBlocks.OAK_PLANK_PRESSURE_PLATE.cyan));
 	public static final ItemGroup MOD_BUTTONS = FabricItemGroupBuilder.build(new Identifier("paintingmod:mod_buttons"), () -> new ItemStack(ModBlocks.OAK_PLANK_BUTTON.cyan));
 
-	public static final ItemGroup ADDON_BLOCKS = FabricItemGroupBuilder.build(new Identifier("paintingmod:addon_blocks"), () -> new ItemStack(ModBlocks.STONE.red));
-	public static final ItemGroup ADDON_STAIRS = FabricItemGroupBuilder.build(new Identifier("paintingmod:addon_stairs"), () -> new ItemStack(ModBlocks.PURPUR_STAIRS.red));
-	public static final ItemGroup ADDON_SLABS = FabricItemGroupBuilder.build(new Identifier("paintingmod:addon_slabs"), () -> new ItemStack(ModBlocks.STONE_BRICK_SLAB.red));
-	public static final ItemGroup ADDON_WALLS = FabricItemGroupBuilder.build(new Identifier("paintingmod:addon_walls"), () -> new ItemStack(ModBlocks.END_STONE_BRICK_WALL.red));
-	public static final ItemGroup ADDON_FENCE_GATES = FabricItemGroupBuilder.build(new Identifier("paintingmod:addon_fence_gates"), () -> new ItemStack(ModBlocks.OAK_PLANK_FENCE_GATE.red));
-    public static final ItemGroup ADDON_FENCE = FabricItemGroupBuilder.build(new Identifier("paintingmod:addon_fence"), () -> new ItemStack(ModBlocks.OAK_PLANK_FENCE.red));
-    public static final ItemGroup ADDON_PRESSURE_PLATES = FabricItemGroupBuilder.build(new Identifier("paintingmod:addon_pressure_plates"), () -> new ItemStack(ModBlocks.OAK_PLANK_PRESSURE_PLATE.red));
-	public static final ItemGroup ADDON_BUTTONS = FabricItemGroupBuilder.build(new Identifier("paintingmod:addon_buttons"), () -> new ItemStack(ModBlocks.OAK_PLANK_BUTTON.red));
-
 	public static Config config;
 
 	@Override

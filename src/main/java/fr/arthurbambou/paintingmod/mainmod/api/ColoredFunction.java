@@ -28,17 +28,17 @@ public abstract class ColoredFunction {
 
     public void usedpaintbrush (PlayerEntity player) {
         if (!player.isCreative()) {
-            player.getStackInHand(Hand.MAIN_HAND).setAmount(0);
+            player.getStackInHand(Hand.MAIN_HAND).setCount(0);
             player.inventory.insertStack(new ItemStack(ModItems.NORMAL_PAINTBRUSH));
         }
     }
 
     public void heatgun(ItemStack itemStack) {
-        System.out.println(itemStack.getDamage() + "=" + itemStack.getDurability());
+        System.out.println(itemStack.getDamage() + "=" + itemStack.getDamage());
         itemStack.setDamage(itemStack.getDamage() + 1);
-        System.out.println(itemStack.getDamage() + "=" + itemStack.getDurability());
-        if (itemStack.getDamage() >= itemStack.getDurability() + 1) {
-            itemStack.setAmount(0);
+        System.out.println(itemStack.getDamage() + "=" + itemStack.getDamage());
+        if (itemStack.getDamage() >= itemStack.getDamage() + 1) {
+            itemStack.setCount(0);
         }
     }
 

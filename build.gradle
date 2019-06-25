@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '0.2.2-SNAPSHOT'
+	id 'fabric-loom' version '0.2.4-SNAPSHOT'
 	id "co.riiid.gradle" version "0.4.2"
 	id "com.matthewprenger.cursegradle" version "1.2.0"
 }
@@ -13,7 +13,7 @@ repositories {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-def baseversion = "1.0.4"
+def baseversion = "1.0.5"
 def buildbranch = System.getenv('TRAVIS_BRANCH')
 def buildnumber = System.getenv('TRAVIS_BUILD_NUMBER')
 def gittoken = System.getenv('GH_TOKEN')
@@ -24,7 +24,7 @@ def commitlist = System.getenv('TRAVIS_COMMIT_RANGE')
 def commitbody = System.getenv('TRAVIS_COMMIT_MESSAGE')
 def changelogbody
 if (buildbranch == "dev/fabric") {
-	version = baseversion + "." + buildnumber
+	version = baseversion + "+build." + buildnumber
     gitversion = version
 	prelease = true
 	changelogbody = """Version ${commitname} (${gitversion})
@@ -33,7 +33,7 @@ if (buildbranch == "dev/fabric") {
 	${commitbody}
  """
 } else {
-	version = baseversion + "." + buildnumber
+	version = baseversion + "+build." + buildnumber
     gitversion = version
 	prelease = false
 	changelogbody = file("changelog.txt")
@@ -71,10 +71,11 @@ dependencies {
 
 	// Compat with other mods
 	modCompile "roughly-enough-items:RoughlyEnoughItems:${rei_version}"
+	compile "blue.endless:jankson:1.1.0"
 	modCompile "cloth:ClothEvents:${cloth_events_version}"
 
-	modCompile "cloth-config:ClothConfig:${cloth_config_version}"
-	include "cloth-config:ClothConfig:${cloth_config_version}"
+	modCompile "cloth-config:ClothConfig2:${cloth_config2_version}"
+	include "cloth-config:ClothConfig2:${cloth_config2_version}"
 
 	modCompile "io.github.prospector.modmenu:ModMenu:${modmenu_version}"
 }
@@ -103,7 +104,7 @@ curseforge {
  		releaseType = "release"
 		changelog = file("changelog.txt")
         gameVersionStrings.clear()
-        gameVersionStrings.add("1.14.1")
+        gameVersionStrings.add("1.14-Snapshot")
         mainArtifact(jar) {
             displayName = "[Fabric " + minecraft_version + "] " + version
 			relations {
