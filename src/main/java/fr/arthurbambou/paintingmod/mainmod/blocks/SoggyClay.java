@@ -11,6 +11,6 @@ public class SoggyClay extends Block {
     public SoggyClay(Settings var1, String name) {
         super(var1);
         Registry.register(Registry.BLOCK, new Identifier(PaintingMod.MODID, name), this);
-        Registry.register(Registry.ITEM, new Identifier(PaintingMod.MODID, name), new BlockItem(this, new Item.Settings().itemGroup(PaintingMod.MOD_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier(PaintingMod.MODID, name), new BlockItem(this, new Item.Settings().group(PaintingMod.MOD_BLOCKS)));
     }
 }

@@ -51,49 +51,53 @@ public class ModItems {
     public static Item HEAT_GUN;
 
     public static void init() {
-        EARTH_MORTAR = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS), "earth_mortar");
+        EARTH_MORTAR = new ItemBase(new Item.Settings().group(PaintingMod.MOD_ITEMS), "earth_mortar");
 
-        BLACK_PAINT_POT = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durabilityIfNotSet(5).durability(5), "black_paint_pot");
-        RED_PAINT_POT = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durabilityIfNotSet(5).durability(5), "red_paint_pot");
-        GREEN_PAINT_POT = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durabilityIfNotSet(5).durability(5), "green_paint_pot");
-        BROWN_PAINT_POT = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durabilityIfNotSet(5).durability(5), "brown_paint_pot");
-        BLUE_PAINT_POT = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durabilityIfNotSet(5).durability(5), "blue_paint_pot");
-        PURPLE_PAINT_POT = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durabilityIfNotSet(5).durability(5), "purple_paint_pot");
-        CYAN_PAINT_POT = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durabilityIfNotSet(5).durability(5), "cyan_paint_pot");
-        LIGHT_GRAY_PAINT_POT = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durabilityIfNotSet(5).durability(5), "light_gray_paint_pot");
-        GRAY_PAINT_POT = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durabilityIfNotSet(5).durability(5), "gray_paint_pot");
-        PINK_PAINT_POT = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durabilityIfNotSet(5).durability(5), "pink_paint_pot");
-        LIME_PAINT_POT = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durabilityIfNotSet(5).durability(5), "lime_paint_pot");
-        YELLOW_PAINT_POT = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durabilityIfNotSet(5).durability(5), "yellow_paint_pot");
-        LIGHT_BLUE_PAINT_POT = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durabilityIfNotSet(5).durability(5), "light_blue_paint_pot");
-        MAGENTA_PAINT_POT = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durabilityIfNotSet(5).durability(5), "magenta_paint_pot");
-        ORANGE_PAINT_POT = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durabilityIfNotSet(5).durability(5), "orange_paint_pot");
-        WHITE_PAINT_POT = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durabilityIfNotSet(5).durability(5), "white_paint_pot");
+        Item.Settings settings = new Item.Settings().group(PaintingMod.MOD_ITEMS).maxCount(1).maxDamage(5);
 
-        HAMMER = new Hammer(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durabilityIfNotSet(100).durability(100), "hammer");
+        BLACK_PAINT_POT = new ItemBase(settings, "black_paint_pot");
+        RED_PAINT_POT = new ItemBase(settings, "red_paint_pot");
+        GREEN_PAINT_POT = new ItemBase(settings, "green_paint_pot");
+        BROWN_PAINT_POT = new ItemBase(settings, "brown_paint_pot");
+        BLUE_PAINT_POT = new ItemBase(settings, "blue_paint_pot");
+        PURPLE_PAINT_POT = new ItemBase(settings, "purple_paint_pot");
+        CYAN_PAINT_POT = new ItemBase(settings, "cyan_paint_pot");
+        LIGHT_GRAY_PAINT_POT = new ItemBase(settings, "light_gray_paint_pot");
+        GRAY_PAINT_POT = new ItemBase(settings, "gray_paint_pot");
+        PINK_PAINT_POT = new ItemBase(settings, "pink_paint_pot");
+        LIME_PAINT_POT = new ItemBase(settings, "lime_paint_pot");
+        YELLOW_PAINT_POT = new ItemBase(settings, "yellow_paint_pot");
+        LIGHT_BLUE_PAINT_POT = new ItemBase(settings, "light_blue_paint_pot");
+        MAGENTA_PAINT_POT = new ItemBase(settings, "magenta_paint_pot");
+        ORANGE_PAINT_POT = new ItemBase(settings, "orange_paint_pot");
+        WHITE_PAINT_POT = new ItemBase(settings, "white_paint_pot");
 
-        WATER_VIALS = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(64).durability(12).durabilityIfNotSet(12), "water_vial");
-        DOUBLE_WATER_VIALS = new ItemBase(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(32).durability(24).durabilityIfNotSet(24), "double_water_vial");
+        HAMMER = new Hammer(new Item.Settings().group(PaintingMod.MOD_ITEMS).maxCount(1).maxDamage(100), "hammer");
 
-        NORMAL_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "normal_paintbrush");
+        WATER_VIALS = new ItemBase(new Item.Settings().group(PaintingMod.MOD_ITEMS).maxCount(64).maxDamage(12), "water_vial");
+        DOUBLE_WATER_VIALS = new ItemBase(new Item.Settings().group(PaintingMod.MOD_ITEMS).maxCount(32).maxDamage(24), "double_water_vial");
 
-        BLACK_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "black_paintbrush");
-        RED_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "red_paintbrush");
-        GREEN_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "green_paintbrush");
-        BROWN_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "brown_paintbrush");
-        BLUE_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "blue_paintbrush");
-        PURPLE_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "purple_paintbrush");
-        CYAN_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "cyan_paintbrush");
-        LIGHT_GRAY_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "light_gray_paintbrush");
-        GRAY_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "gray_paintbrush");
-        PINK_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "pink_paintbrush");
-        LIME_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "lime_paintbrush");
-        YELLOW_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "yellow_paintbrush");
-        LIGHT_BLUE_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "light_blue_paintbrush");
-        MAGENTA_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "magenta_paintbrush");
-        ORANGE_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "orange_paintbrush");
-        WHITE_PAINTBRUSH = new Paintbrush(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1), "white_paintbrush");
+        Item.Settings brush_settings = new Item.Settings().group(PaintingMod.MOD_ITEMS).maxCount(1);
 
-        HEAT_GUN = new HeatGun(new Item.Settings().itemGroup(PaintingMod.MOD_ITEMS).stackSize(1).durability(PaintingMod.config.general.heatGunDurability));
+        NORMAL_PAINTBRUSH = new Paintbrush(brush_settings, "normal_paintbrush");
+
+        BLACK_PAINTBRUSH = new Paintbrush(brush_settings, "black_paintbrush");
+        RED_PAINTBRUSH = new Paintbrush(brush_settings, "red_paintbrush");
+        GREEN_PAINTBRUSH = new Paintbrush(brush_settings, "green_paintbrush");
+        BROWN_PAINTBRUSH = new Paintbrush(brush_settings, "brown_paintbrush");
+        BLUE_PAINTBRUSH = new Paintbrush(brush_settings, "blue_paintbrush");
+        PURPLE_PAINTBRUSH = new Paintbrush(brush_settings, "purple_paintbrush");
+        CYAN_PAINTBRUSH = new Paintbrush(brush_settings, "cyan_paintbrush");
+        LIGHT_GRAY_PAINTBRUSH = new Paintbrush(brush_settings, "light_gray_paintbrush");
+        GRAY_PAINTBRUSH = new Paintbrush(brush_settings, "gray_paintbrush");
+        PINK_PAINTBRUSH = new Paintbrush(brush_settings, "pink_paintbrush");
+        LIME_PAINTBRUSH = new Paintbrush(brush_settings, "lime_paintbrush");
+        YELLOW_PAINTBRUSH = new Paintbrush(brush_settings, "yellow_paintbrush");
+        LIGHT_BLUE_PAINTBRUSH = new Paintbrush(brush_settings, "light_blue_paintbrush");
+        MAGENTA_PAINTBRUSH = new Paintbrush(brush_settings, "magenta_paintbrush");
+        ORANGE_PAINTBRUSH = new Paintbrush(brush_settings, "orange_paintbrush");
+        WHITE_PAINTBRUSH = new Paintbrush(brush_settings, "white_paintbrush");
+
+        HEAT_GUN = new HeatGun(new Item.Settings().group(PaintingMod.MOD_ITEMS).maxCount(1).maxDamage(PaintingMod.config.general.heatGunDurability));
     }
 }

@@ -55,25 +55,25 @@ public class CategoryHammer implements RecipeCategory<DisplayHammer> {
         widgets.add(new ItemSlotWidget(startPoint.x + 14, startPoint.y + 25, input.get(0), true, true, true) {
             @Override
             protected String getItemCountOverlay(ItemStack currentStack) {
-                if (currentStack.getAmount() == 1)
+                if (currentStack.getCount() == 1)
                     return "";
-                return currentStack.getAmount() < 1 ? "§c" + currentStack.getAmount() : currentStack.getAmount() + "";
+                return currentStack.getCount() < 1 ? "§c" + currentStack.getCount() : currentStack.getCount() + "";
             }
         });
         widgets.add(new ItemSlotWidget(startPoint.x + 42, startPoint.y + 43, Arrays.asList(recipeDisplaySupplier.get().getHammer()), true, true, true) {
             @Override
             protected String getItemCountOverlay(ItemStack currentStack) {
-                if (currentStack.getAmount() == 1)
+                if (currentStack.getCount() == 1)
                     return "";
-                return currentStack.getAmount() < 1 ? "§c" + currentStack.getAmount() : currentStack.getAmount() + "";
+                return currentStack.getCount() < 1 ? "§c" + currentStack.getCount() : currentStack.getCount() + "";
             }
         });
         widgets.add(new ItemSlotWidget(startPoint.x + 71, startPoint.y + 24, recipeDisplaySupplier.get().getOutput(), false, true, true) {
             @Override
             protected String getItemCountOverlay(ItemStack currentStack) {
-                if (currentStack.getAmount() == 1)
+                if (currentStack.getCount() == 1)
                     return "";
-                return currentStack.getAmount() < 1 ? "§c" + currentStack.getAmount() : currentStack.getAmount() + "";
+                return currentStack.getCount() < 1 ? "§c" + currentStack.getCount() : currentStack.getCount() + "";
             }
         });
         return widgets;
