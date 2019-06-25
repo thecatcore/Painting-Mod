@@ -109,7 +109,7 @@ curseforge {
 		changelog = file("changelog.txt")
         gameVersionStrings.clear()
         gameVersionStrings.add("1.14-Snapshot")
-        mainArtifact(remapJar.jar) {
+        mainArtifact(remapJar) {
             displayName = "[Fabric " + minecraft_version + "] " + version
 			relations {
 				requiredDependency "fabric"
