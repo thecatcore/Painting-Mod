@@ -243,7 +243,7 @@ public class ModBlocks {
         LAPIS_LAZULI_BLOCK = new PMColoredBlock(Blocks.LAPIS_BLOCK,"lapis_lazuli_block");
         SANDSTONE = new PMColoredBlock(Blocks.SANDSTONE);
 //        CHISELED_SANDSTONE = new PMColoredBlock(Blocks.CHISELED_SANDSTONE);
-        CUT_SANDSTONE = new PMColoredBlock(Blocks.CUT_SANDSTONE);
+//        CUT_SANDSTONE = new PMColoredBlock(Blocks.CUT_SANDSTONE);
         GOLD_BLOCK = new PMColoredBlock(Blocks.GOLD_BLOCK);
         IRON_BLOCK = new PMColoredBlock(Blocks.IRON_BLOCK);
         BRICK = new PMColoredBlock(Blocks.BRICKS,"brick");
@@ -306,7 +306,7 @@ public class ModBlocks {
         PACKET_ICE = new PMColoredBlock(Blocks.PACKED_ICE, "packet_ice");
         RED_SANDSTONE = new PMColoredBlock(Blocks.RED_SANDSTONE);
 //        RED_CHISELED_SANDSTONE = new PMColoredBlock(Blocks.CHISELED_RED_SANDSTONE);
-        RED_CUT_SANDSTONE = new PMColoredBlock(Blocks.CUT_RED_SANDSTONE);
+//        RED_CUT_SANDSTONE = new PMColoredBlock(Blocks.CUT_RED_SANDSTONE);
         RED_SANDSTONE_STAIRS = new PMColoredStairs(Blocks.RED_SANDSTONE_STAIRS);
         OAK_SLAB = new PMColoredSlab(Blocks.OAK_SLAB, "oak_plank_slab");
         SPRUCE_SLAB = new PMColoredSlab(Blocks.SPRUCE_SLAB, "spruce_plank_slab");
@@ -363,8 +363,8 @@ public class ModBlocks {
                 JUNGLE_LEAVES,
 //                ACACIA_LEAVES, DARK_OAK_LEAVES,
                 SPONGE, WET_SPONGE, LAPIS_LAZULI_BLOCK, SANDSTONE,
-//                 CHISELED_SANDSTONE, 
-                CUT_SANDSTONE, GOLD_BLOCK, IRON_BLOCK, BRICK,
+//                 CHISELED_SANDSTONE,CUT_SANDSTONE,
+                GOLD_BLOCK, IRON_BLOCK, BRICK,
 //                BOOKSHELF,
                 MOSS_STONE, OBSIDIAN, OAK_STAIRS, DIAMOND_BLOCK, COBBLESTONE_STAIRS,
                 STONE_PRESSURE_PLATE, OAK_PRESSURE_PLATE, SPRUCE_PRESSURE_PLATE, BIRCH_PRESSURE_PLATE,
@@ -383,9 +383,9 @@ public class ModBlocks {
                 SEA_LANTERN,
 //                HAY_BLOCK,
                 COAL_BLOCK, PACKET_ICE, RED_SANDSTONE,
-//                 RED_CHISELED_SANDSTONE, 
-                RED_CUT_SANDSTONE, RED_SANDSTONE_STAIRS,
-                OAK_SLAB, SPRUCE_SLAB, BIRCH_SLAB, JUNGLE_SLAB, ACACIA_SLAB, DARK_OAK_SLAB,
+//                 RED_CHISELED_SANDSTONE,RED_CUT_SANDSTONE,
+                RED_SANDSTONE_STAIRS, OAK_SLAB, SPRUCE_SLAB, BIRCH_SLAB,
+                JUNGLE_SLAB, ACACIA_SLAB, DARK_OAK_SLAB,
 //                STONE_SLAB, 
                 SANDSTONE_SLAB, 
 //                PETRIFIED_OAK_SLAB,
