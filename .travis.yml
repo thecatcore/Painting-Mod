@@ -4,7 +4,7 @@ if: tag IS blank
 script:
   - |
     if [ "$TRAVIS_PULL_REQUEST" == false ]; then
-      if [ "$TRAVIS_BRANCH" == "release/1.14.x" ]; then
+      if [ "$TRAVIS_BRANCH" == "release/forge/1.14.x" ]; then
         ./gradlew build curseforge299755 githubRelease
       else
         ./gradlew build
