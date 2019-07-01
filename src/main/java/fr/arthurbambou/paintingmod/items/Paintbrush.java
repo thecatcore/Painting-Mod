@@ -3,8 +3,9 @@ package fr.arthurbambou.paintingmod.items;
 import fr.arthurbambou.paintingmod.api.ColoredFunctionRegistry;
 import fr.arthurbambou.paintingmod.api.ColoredObjectRegistry;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUseContext;
-import net.minecraft.util.EnumActionResult;
+import net.minecraft.util.ActionResultType;
 
 public class Paintbrush extends ItemBase {
 
@@ -14,13 +15,13 @@ public class Paintbrush extends ItemBase {
     }
 
     @Override
-    public EnumActionResult onItemUse(ItemUseContext p_195939_1_) {
+    public ActionResultType onItemUseFirst(ItemStack stack, ItemUseContext context) {
         ColoredObjectRegistry.registry.forEach(coloredObject -> {
             ColoredFunctionRegistry.registry.forEach(coloredFunction -> {
-                coloredFunction.paint(coloredObject ,p_195939_1_, this);
+                coloredFunction.paint(coloredObject ,context, this);
             });
         });
-        return super.onItemUse(p_195939_1_);
+        return super.onItemUse(context);
     }
 
     public enum Type {

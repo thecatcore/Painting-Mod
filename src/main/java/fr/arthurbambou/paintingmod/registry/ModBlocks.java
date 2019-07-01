@@ -7,10 +7,10 @@ import fr.arthurbambou.paintingmod.blocks.SoggyClay;
 import fr.arthurbambou.paintingmod.blocks.coloreds.*;
 import fr.arthurbambou.paintingmod.coloredblocks.*;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockPressurePlate;
-import net.minecraft.init.Blocks;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.PressurePlateBlock;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -253,13 +253,13 @@ public class ModBlocks {
         OAK_STAIRS = new PMColoredStairs(Blocks.OAK_STAIRS, "oak_plank_stairs");
         DIAMOND_BLOCK = new PMColoredBlock(Blocks.DIAMOND_BLOCK);
         COBBLESTONE_STAIRS = new PMColoredStairs(Blocks.COBBLESTONE_STAIRS);
-        STONE_PRESSURE_PLATE = new PMColoredPressurePlate(Blocks.STONE_PRESSURE_PLATE, BlockPressurePlate.Sensitivity.MOBS);
-        OAK_PRESSURE_PLATE = new PMColoredPressurePlate(Blocks.OAK_PRESSURE_PLATE, BlockPressurePlate.Sensitivity.EVERYTHING, "oak_plank_pressure_plate");
-        SPRUCE_PRESSURE_PLATE = new PMColoredPressurePlate(Blocks.SPRUCE_PRESSURE_PLATE, BlockPressurePlate.Sensitivity.EVERYTHING, "spruce_plank_pressure_plate");
-        BIRCH_PRESSURE_PLATE = new PMColoredPressurePlate(Blocks.BIRCH_PRESSURE_PLATE, BlockPressurePlate.Sensitivity.EVERYTHING, "birch_plank_pressure_plate");
-        JUNGLE_PRESSURE_PLATE = new PMColoredPressurePlate(Blocks.JUNGLE_PRESSURE_PLATE, BlockPressurePlate.Sensitivity.EVERYTHING, "jungle_plank_pressure_plate");
-        ACACIA_PRESSURE_PLATE = new PMColoredPressurePlate(Blocks.ACACIA_PRESSURE_PLATE, BlockPressurePlate.Sensitivity.EVERYTHING, "acacia_plank_pressure_plate");
-        DARK_OAK_PRESSURE_PLATE = new PMColoredPressurePlate(Blocks.DARK_OAK_PRESSURE_PLATE, BlockPressurePlate.Sensitivity.EVERYTHING, "dark_oak_plank_pressure_plate");
+        STONE_PRESSURE_PLATE = new PMColoredPressurePlate(Blocks.STONE_PRESSURE_PLATE, PressurePlateBlock.Sensitivity.MOBS);
+        OAK_PRESSURE_PLATE = new PMColoredPressurePlate(Blocks.OAK_PRESSURE_PLATE, PressurePlateBlock.Sensitivity.EVERYTHING, "oak_plank_pressure_plate");
+        SPRUCE_PRESSURE_PLATE = new PMColoredPressurePlate(Blocks.SPRUCE_PRESSURE_PLATE, PressurePlateBlock.Sensitivity.EVERYTHING, "spruce_plank_pressure_plate");
+        BIRCH_PRESSURE_PLATE = new PMColoredPressurePlate(Blocks.BIRCH_PRESSURE_PLATE, PressurePlateBlock.Sensitivity.EVERYTHING, "birch_plank_pressure_plate");
+        JUNGLE_PRESSURE_PLATE = new PMColoredPressurePlate(Blocks.JUNGLE_PRESSURE_PLATE, PressurePlateBlock.Sensitivity.EVERYTHING, "jungle_plank_pressure_plate");
+        ACACIA_PRESSURE_PLATE = new PMColoredPressurePlate(Blocks.ACACIA_PRESSURE_PLATE, PressurePlateBlock.Sensitivity.EVERYTHING, "acacia_plank_pressure_plate");
+        DARK_OAK_PRESSURE_PLATE = new PMColoredPressurePlate(Blocks.DARK_OAK_PRESSURE_PLATE, PressurePlateBlock.Sensitivity.EVERYTHING, "dark_oak_plank_pressure_plate");
         ICE = new PMColoredBlock(Blocks.ICE);
         SNOW_BLOCK = new PMColoredBlock(Blocks.SNOW_BLOCK);
         CLAY_BLOCK = new PMColoredBlock(Blocks.CLAY, "clay_block");
@@ -426,19 +426,19 @@ public class ModBlocks {
     }
 
     public void onItemRegister(final RegistryEvent.Register<Item> event) {
-        event.getRegistry().register(new ItemBlock(soggy_clay, new Item.Properties().group(PaintingMod.MOD_BLOCKS)).setRegistryName(soggy_clay.getRegistryName()));
+        event.getRegistry().register(new BlockItem(soggy_clay, new Item.Properties().group(PaintingMod.MOD_BLOCKS)).setRegistryName(soggy_clay.getRegistryName()));
         for (ColoredObject coloredObject : COLORED_OBJECTS) {
             for (Block block : coloredObject.getBlockArray()) {
                 if (block instanceof NormalBlock) {
-                    event.getRegistry().register(new ItemBlock(block, new Item.Properties().group(PaintingMod.MOD_BLOCKS)).setRegistryName(block.getRegistryName()));
+                    event.getRegistry().register(new BlockItem(block, new Item.Properties().group(PaintingMod.MOD_BLOCKS)).setRegistryName(block.getRegistryName()));
                 } else if (block instanceof NormalStairs) {
-                    event.getRegistry().register(new ItemBlock(block, new Item.Properties().group(PaintingMod.MOD_STAIRS)).setRegistryName(block.getRegistryName()));
+                    event.getRegistry().register(new BlockItem(block, new Item.Properties().group(PaintingMod.MOD_STAIRS)).setRegistryName(block.getRegistryName()));
                 } else if (block instanceof NormalSlab) {
-                    event.getRegistry().register(new ItemBlock(block, new Item.Properties().group(PaintingMod.MOD_SLABS)).setRegistryName(block.getRegistryName()));
+                    event.getRegistry().register(new BlockItem(block, new Item.Properties().group(PaintingMod.MOD_SLABS)).setRegistryName(block.getRegistryName()));
                 } else if (block instanceof PressurePlate || block instanceof PressurePlateWeighted) {
-                    event.getRegistry().register(new ItemBlock(block, new Item.Properties().group(PaintingMod.MOD_PRESSURE_PLATES)).setRegistryName(block.getRegistryName()));
+                    event.getRegistry().register(new BlockItem(block, new Item.Properties().group(PaintingMod.MOD_PRESSURE_PLATES)).setRegistryName(block.getRegistryName()));
                 } else if (block instanceof NormalFence) {
-                    event.getRegistry().register(new ItemBlock(block, new Item.Properties().group(PaintingMod.MOD_FENCES)).setRegistryName(block.getRegistryName()));
+                    event.getRegistry().register(new BlockItem(block, new Item.Properties().group(PaintingMod.MOD_FENCES)).setRegistryName(block.getRegistryName()));
                 }
             }
         }

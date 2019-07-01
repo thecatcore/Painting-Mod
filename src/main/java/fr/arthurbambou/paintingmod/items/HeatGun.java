@@ -4,8 +4,7 @@ import fr.arthurbambou.paintingmod.api.ColoredFunctionRegistry;
 import fr.arthurbambou.paintingmod.api.ColoredObjectRegistry;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUseContext;
-import net.minecraft.util.EnumActionResult;
-import net.minecraftforge.common.ToolType;
+import net.minecraft.util.ActionResultType;
 
 public class HeatGun extends ItemBase {
     public HeatGun(Properties p_i48487_1_) {
@@ -14,12 +13,12 @@ public class HeatGun extends ItemBase {
     }
 
     @Override
-    public EnumActionResult onItemUse(ItemUseContext p_195939_1_) {
+    public ActionResultType onItemUseFirst(ItemStack stack, ItemUseContext context) {
         ColoredObjectRegistry.registry.forEach(coloredObject -> {
             ColoredFunctionRegistry.registry.forEach(coloredFunction -> {
-                coloredFunction.unPaint(coloredObject, p_195939_1_);
+                coloredFunction.unPaint(coloredObject, context);
             });
         });
-        return super.onItemUse(p_195939_1_);
+        return super.onItemUseFirst(stack, context);
     }
 }

@@ -5,14 +5,14 @@ import fr.arthurbambou.paintingmod.api.coloredblocks.ColoredPressurePlate;
 import fr.arthurbambou.paintingmod.blocks.coloreds.PressurePlate;
 import fr.arthurbambou.paintingmod.blocks.coloreds.PressurePlateWeighted;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockPressurePlate;
+import net.minecraft.block.PressurePlateBlock;
 
 public class PMColoredPressurePlate extends ColoredPressurePlate {
-    public PMColoredPressurePlate(Block replace, BlockPressurePlate.Sensitivity sensitivity) {
+    public PMColoredPressurePlate(Block replace, PressurePlateBlock.Sensitivity sensitivity) {
         super(replace, sensitivity, PaintingMod.MODID);
     }
 
-    public PMColoredPressurePlate(Block replace, BlockPressurePlate.Sensitivity sensitivity, String name) {
+    public PMColoredPressurePlate(Block replace, PressurePlateBlock.Sensitivity sensitivity, String name) {
         super(replace, sensitivity, PaintingMod.MODID, name);
     }
 
