@@ -1,6 +1,5 @@
 package fr.arthurbambou.paintingmod.mainmod;
 
-import fr.arthurbambou.paintingmod.compat.PaintingModCompat;
 import fr.arthurbambou.paintingmod.mainmod.api.PaintingModRegistry;
 import fr.arthurbambou.paintingmod.mainmod.registery.ModBlocks;
 import fr.arthurbambou.paintingmod.mainmod.registery.ModColoredFunctions;
@@ -39,7 +38,6 @@ public class PaintingMod implements ModInitializer {
 		ModItems.init();
 		ModVillagers.init();
 		ModColoredFunctions.init();
-		PaintingModCompat.init();
         PaintingModRegistry.finishRegister();
 	}
 }

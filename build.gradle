@@ -69,15 +69,18 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modCompile "net.fabricmc.fabric-api:fabric-api:${fabric_api}"
 
+	modImplementation "com.github.swordglowsblue:artifice:0.3.4"
+	include "com.github.swordglowsblue:artifice:0.3.4"
+
 	// Compat with other mods
-	modCompile "roughly-enough-items:RoughlyEnoughItems:${rei_version}"
+	// modCompile "roughly-enough-items:RoughlyEnoughItems:${rei_version}"
 	compile "blue.endless:jankson:1.1.0"
-	modCompile "cloth:ClothEvents:${cloth_events_version}"
+	// modCompile "cloth:ClothEvents:${cloth_events_version}"
 
-	modCompile "cloth-config:ClothConfig2:${cloth_config2_version}"
-	include "cloth-config:ClothConfig2:${cloth_config2_version}"
+	// modCompile "cloth-config:ClothConfig2:${cloth_config2_version}"
+	// include "cloth-config:ClothConfig2:${cloth_config2_version}"
 
-	modCompile "io.github.prospector.modmenu:ModMenu:${modmenu_version}"
+	// modCompile "io.github.prospector.modmenu:ModMenu:${modmenu_version}"
 }
 
 github {
