@@ -201,48 +201,48 @@ public class PaintingModClient implements ClientModInitializer {
                                     variant.rotationX(180);
                                 });
 
-                                blockStateBuilder.variant("facing=north,half=top,shape=inner_left", variant -> {
+                                blockStateBuilder.variant("facing=north,half=top,shape=inner_right", variant -> {
                                     variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_inner"));
                                     variant.rotationX(180);
                                     variant.uvlock(true);
                                 });
-                                blockStateBuilder.variant("facing=south,half=top,shape=inner_left", variant -> {
+                                blockStateBuilder.variant("facing=south,half=top,shape=inner_right", variant -> {
                                     variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_inner"));
                                     variant.rotationY(180);
                                     variant.uvlock(true);
                                     variant.rotationX(180);
                                 });
-                                blockStateBuilder.variant("facing=east,half=top,shape=inner_left", variant -> {
+                                blockStateBuilder.variant("facing=east,half=top,shape=inner_right", variant -> {
                                     variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_inner"));
                                     variant.rotationY(90);
                                     variant.uvlock(true);
                                     variant.rotationX(180);
                                 });
-                                blockStateBuilder.variant("facing=west,half=top,shape=inner_left", variant -> {
+                                blockStateBuilder.variant("facing=west,half=top,shape=inner_right", variant -> {
                                     variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_inner"));
                                     variant.rotationY(270);
                                     variant.uvlock(true);
                                     variant.rotationX(180);
                                 });
 
-                                blockStateBuilder.variant("facing=east,half=top,shape=inner_right", variant -> {
+                                blockStateBuilder.variant("facing=east,half=top,shape=inner_left", variant -> {
                                     variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_inner"));
                                     variant.rotationX(180);
                                     variant.uvlock(true);
                                 });
-                                blockStateBuilder.variant("facing=west,half=top,shape=inner_right", variant -> {
+                                blockStateBuilder.variant("facing=west,half=top,shape=inner_left", variant -> {
                                     variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_inner"));
                                     variant.rotationY(180);
                                     variant.uvlock(true);
                                     variant.rotationX(180);
                                 });
-                                blockStateBuilder.variant("facing=south,half=top,shape=inner_right", variant -> {
+                                blockStateBuilder.variant("facing=south,half=top,shape=inner_left", variant -> {
                                     variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_inner"));
                                     variant.rotationY(90);
                                     variant.uvlock(true);
                                     variant.rotationX(180);
                                 });
-                                blockStateBuilder.variant("facing=north,half=top,shape=inner_right", variant -> {
+                                blockStateBuilder.variant("facing=north,half=top,shape=inner_left", variant -> {
                                     variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_inner"));
                                     variant.rotationY(270);
                                     variant.uvlock(true);
