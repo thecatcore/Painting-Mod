@@ -24,12 +24,13 @@
     ],
     "modmenu": [
       "fr.arthurbambou.paintingmod.mainmod.utils.config.ConfigScreen"
+    ],
+    "client": [
+      "fr.arthurbambou.paintingmod.mainmod.PaintingModClient"
     ]
   },
   "depends": {
-    "fabricloader": ">=0.4.0",
-    "fabric-item-groups-v0": ">=0.1.0",
-    "fabric-object-builders-v0": ">=0.1.1"
+    "fabricloader": ">=0.4.0"
   },
   "contributors": [
 	  "oamroo", "Daniel She", "Dulcinea Marie C"
