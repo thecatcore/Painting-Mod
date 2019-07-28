@@ -240,7 +240,7 @@ public class ModBlocks {
         ACACIA_PLANK = new ColoredBlock("acacia_plank", Blocks.ACACIA_PLANKS);
         DARK_OAK_PLANK = new ColoredBlock("dark_oak_plank", Blocks.DARK_OAK_PLANKS);
         SAND = new ColoredBlock("sand", Blocks.SAND);
-        RED_SAND = new ColoredBlock("red_sand", Blocks.RED_SAND);
+//        RED_SAND = new ColoredBlock("red_sand", Blocks.RED_SAND);
         GRAVEL = new ColoredBlock("gravel", Blocks.GRAVEL);
 //        STRIPPED_OAK_WOOD = new ColoredBlock("stripped_oak_wood", Blocks.STRIPPED_OAK_WOOD);
 //        STRIPPED_SPRUCE_WOOD = new ColoredBlock("stripped_spruce_wood", Blocks.STRIPPED_SPRUCE_WOOD);
@@ -258,11 +258,11 @@ public class ModBlocks {
         WET_SPONGE = new ColoredBlock("wet_sponge", Blocks.SPONGE);
         LAPIS_LAZULI_BLOCK = new ColoredBlock("lapis_lazuli_block", Blocks.LAPIS_BLOCK);
         SANDSTONE = new ColoredBlock("sandstone", Blocks.SANDSTONE);
-        RED_SANDSTONE = new ColoredBlock("red_sandstone", Blocks.RED_SANDSTONE);
+//        RED_SANDSTONE = new ColoredBlock("red_sandstone", Blocks.RED_SANDSTONE);
         GOLD_BLOCK = new ColoredBlock("gold_block", Blocks.GOLD_BLOCK);
         IRON_BLOCK = new ColoredBlock("iron_block", Blocks.IRON_BLOCK);
 //        SMOOTH_QUARTZ = new ColoredBlock("smooth_quartz", Blocks.SMOOTH_QUARTZ);
-        SMOOTH_RED_SANDSTONE = new ColoredBlock("smooth_red_sandstone", Blocks.SMOOTH_RED_SANDSTONE);
+//        SMOOTH_RED_SANDSTONE = new ColoredBlock("smooth_red_sandstone", Blocks.SMOOTH_RED_SANDSTONE);
         SMOOTH_SANDSTONE = new ColoredBlock("smooth_sandstone", Blocks.SMOOTH_SANDSTONE);
 //        SMOOTH_STONE = new ColoredBlock("smooth_stone", Blocks.SMOOTH_STONE);
         BRICK = new ColoredBlock("brick", Blocks.BRICKS);
@@ -293,7 +293,7 @@ public class ModBlocks {
         END_STONE_BRICK = new ColoredBlock("end_stone_brick", Blocks.END_STONE_BRICKS);
         MAGMA_BLOCK = new ColoredBlock("magma_block", Blocks.MAGMA_BLOCK);
         NETHER_WART_BLOCK = new ColoredBlock("nether_wart_block", Blocks.NETHER_WART_BLOCK);
-        RED_NETHER_BRICK = new ColoredBlock("red_nether_brick", Blocks.RED_NETHER_BRICKS);
+//        RED_NETHER_BRICK = new ColoredBlock("red_nether_brick", Blocks.RED_NETHER_BRICKS);
 //        OAK_LEAVES = new ColoredBlock("oak_leaves", Blocks.OAK_LEAVES);
         SPRUCE_LEAVES = new ColoredBlock("spruce_leaves", Blocks.SPRUCE_LEAVES);
 //        BIRCH_LEAVES = new ColoredBlock("birch_leaves", Blocks.BIRCH_LEAVES);
@@ -324,9 +324,9 @@ public class ModBlocks {
         PRISMARINE_STAIRS = new ColoredStairs("prismarine_stairs", Blocks.PRISMARINE_STAIRS);
         PRISMARINE_BRICK_STAIRS = new ColoredStairs("prismarine_brick_stairs", Blocks.PRISMARINE_BRICK_STAIRS);
         DARK_PRISMARINE_STAIRS = new ColoredStairs("dark_prismarine_stairs", Blocks.DARK_PRISMARINE_STAIRS);
-        RED_SANDSTONE_STAIRS = new ColoredStairs("red_sandstone_stairs", Blocks.RED_SANDSTONE_STAIRS);
+//        RED_SANDSTONE_STAIRS = new ColoredStairs("red_sandstone_stairs", Blocks.RED_SANDSTONE_STAIRS);
         POLISHED_GRANITE_STAIRS = new ColoredStairs("polished_granite_stairs", Blocks.POLISHED_GRANITE_STAIRS);
-        SMOOTH_RED_SANDSTONE_STAIRS = new ColoredStairs("smooth_red_sandstone_stairs", Blocks.SMOOTH_RED_SANDSTONE_STAIRS);
+//        SMOOTH_RED_SANDSTONE_STAIRS = new ColoredStairs("smooth_red_sandstone_stairs", Blocks.SMOOTH_RED_SANDSTONE_STAIRS);
         MOSSY_STONE_BRICK_STAIRS = new ColoredStairs("mossy_stone_brick_stairs", Blocks.MOSSY_STONE_BRICK_STAIRS);
         POLISHED_DIORITE_STAIRS = new ColoredStairs("polished_diorite_stairs", Blocks.POLISHED_DIORITE_STAIRS);
         MOSSY_COBBLESTONE_STAIRS = new ColoredStairs("mossy_cobblestone_stairs", Blocks.MOSSY_COBBLESTONE_STAIRS);
@@ -336,7 +336,7 @@ public class ModBlocks {
 //        SMOOTH_QUARTZ_STAIRS = new ColoredStairs("smooth_quartz_stairs", Blocks.SMOOTH_QUARTZ_STAIRS);
         GRANITE_STAIRS = new ColoredStairs("granite_stairs", Blocks.GRANITE_STAIRS);
         ANDESITE_STAIRS = new ColoredStairs("andesite_stairs", Blocks.ANDESITE_STAIRS);
-        RED_NETHER_BRICK_STAIRS = new ColoredStairs("red_nether_brick_stairs", Blocks.RED_NETHER_BRICK_STAIRS);
+//        RED_NETHER_BRICK_STAIRS = new ColoredStairs("red_nether_brick_stairs", Blocks.RED_NETHER_BRICK_STAIRS);
         POLISHED_ANDESITE_STAIRS = new ColoredStairs("polished_andesite_stairs", Blocks.POLISHED_ANDESITE_STAIRS);
         DIORITE_STAIRS = new ColoredStairs("diorite_stairs", Blocks.DIORITE_STAIRS);
 
@@ -355,13 +355,13 @@ public class ModBlocks {
         STONE_BRICK_SLAB = new ColoredSlab("stone_brick_slab", Blocks.STONE_BRICK_SLAB);
         NETHER_BRICK_SLAB = new ColoredSlab("nether_brick_slab", Blocks.NETHER_BRICK_SLAB);
 //        QUARTZ_SLAB = new ColoredSlab("quartz_slab", Blocks.STONE_SLAB);
-        RED_SANDSTONE_SLAB = new ColoredSlab("red_sandstone_slab", Blocks.STONE_SLAB);
+//        RED_SANDSTONE_SLAB = new ColoredSlab("red_sandstone_slab", Blocks.STONE_SLAB);
         PURPUR_SLAB = new ColoredSlab("purpur_slab", Blocks.PURPUR_SLAB);
         PRISMARINE_SLAB = new ColoredSlab("prismarine_slab", Blocks.PRISMARINE_SLAB);
         PRISMARINE_BRICK_SLAB = new ColoredSlab("prismarine_brick_slab", Blocks.PRISMARINE_BRICK_SLAB);
         DARK_PRISMARINE_SLAB = new ColoredSlab("dark_prismarine_slab", Blocks.DARK_PRISMARINE_SLAB);
         POLISHED_GRANITE_SLAB = new ColoredSlab("polished_granite_slab", Blocks.POLISHED_GRANITE_SLAB);
-        SMOOTH_RED_SANDSTONE_SLAB = new ColoredSlab("smooth_red_sandstone_slab", Blocks.STONE_SLAB);
+//        SMOOTH_RED_SANDSTONE_SLAB = new ColoredSlab("smooth_red_sandstone_slab", Blocks.STONE_SLAB);
         MOSSY_STONE_BRICK_SLAB = new ColoredSlab("mossy_stone_brick_slab", Blocks.MOSSY_STONE_BRICK_SLAB);
         POLISHED_DIORITE_SLAB = new ColoredSlab("polished_diorite_slab", Blocks.POLISHED_DIORITE_SLAB);
         MOSSY_COBBLESTONE_SLAB = new ColoredSlab("mossy_cobblestone_slab", Blocks.MOSSY_COBBLESTONE_SLAB);
@@ -370,7 +370,7 @@ public class ModBlocks {
 //        SMOOTH_QUARTZ_SLAB = new ColoredSlab("smooth_quartz_slab", Blocks.STONE_SLAB);
         GRANITE_SLAB = new ColoredSlab("granite_slab", Blocks.GRANITE_SLAB);
         ANDESITE_SLAB = new ColoredSlab("andesite_slab", Blocks.ANDESITE_SLAB);
-        RED_NETHER_BRICK_SLAB = new ColoredSlab("red_nether_brick_slab", Blocks.RED_NETHER_BRICK_SLAB);
+//        RED_NETHER_BRICK_SLAB = new ColoredSlab("red_nether_brick_slab", Blocks.RED_NETHER_BRICK_SLAB);
         POLISHED_ANDESITE_SLAB = new ColoredSlab("polished_andesite_slab", Blocks.POLISHED_ANDESITE_SLAB);
         DIORITE_SLAB = new ColoredSlab("diorite_slab", Blocks.DIORITE_SLAB);
 
@@ -378,13 +378,13 @@ public class ModBlocks {
         MOSSY_COBBLESTONE_WALL = new ColoredWall("mossy_cobblestone_wall", Blocks.MOSSY_COBBLESTONE_WALL);
         BRICK_WALL = new ColoredWall("brick_wall", Blocks.BRICK_WALL);
         PRISMARINE_WALL = new ColoredWall("prismarine_wall", Blocks.PRISMARINE_WALL);
-        RED_SANDSTONE_WALL = new ColoredWall("red_sandstone_wall", Blocks.RED_SANDSTONE_WALL);
+//        RED_SANDSTONE_WALL = new ColoredWall("red_sandstone_wall", Blocks.RED_SANDSTONE_WALL);
         MOSSY_STONE_BRICK_WALL = new ColoredWall("mossy_stone_brick_wall", Blocks.MOSSY_STONE_BRICK_WALL);
         GRANITE_WALL = new ColoredWall("granite_wall", Blocks.GRANITE_WALL);
         STONE_BRICK_WALL = new ColoredWall("stone_brick_wall", Blocks.STONE_BRICK_WALL);
         NETHER_BRICK_WALL = new ColoredWall("nether_brick_wall", Blocks.NETHER_BRICK_WALL);
         ANDESITE_WALL = new ColoredWall("andesite_wall", Blocks.ANDESITE_WALL);
-        RED_NETHER_BRICK_WALL = new ColoredWall("red_nether_brick_wall", Blocks.RED_NETHER_BRICK_WALL);
+//        RED_NETHER_BRICK_WALL = new ColoredWall("red_nether_brick_wall", Blocks.RED_NETHER_BRICK_WALL);
         SANDSTONE_WALL = new ColoredWall("sandstone_wall", Blocks.SANDSTONE_WALL);
         END_STONE_BRICK_WALL = new ColoredWall("end_stone_brick_wall", Blocks.END_STONE_BRICK_WALL);
         DIORITE_WALL = new ColoredWall("diorite_wall", Blocks.DIORITE_WALL);
