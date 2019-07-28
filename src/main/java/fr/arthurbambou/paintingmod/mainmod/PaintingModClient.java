@@ -544,49 +544,49 @@ public class PaintingModClient implements ClientModInitializer {
                                                             variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath()));
                                                         });
                                                         blockStateBuilder.variant("power=1", variant -> {
-                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "down"));
+                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_down"));
                                                         });
                                                         blockStateBuilder.variant("power=2", variant -> {
-                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "down"));
+                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_down"));
                                                         });
                                                         blockStateBuilder.variant("power=3", variant -> {
-                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "down"));
+                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_down"));
                                                         });
                                                         blockStateBuilder.variant("power=4", variant -> {
-                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "down"));
+                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_down"));
                                                         });
                                                         blockStateBuilder.variant("power=5", variant -> {
-                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "down"));
+                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_down"));
                                                         });
                                                         blockStateBuilder.variant("power=6", variant -> {
-                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "down"));
+                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_down"));
                                                         });
                                                         blockStateBuilder.variant("power=7", variant -> {
-                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "down"));
+                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_down"));
                                                         });
                                                         blockStateBuilder.variant("power=8", variant -> {
-                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "down"));
+                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_down"));
                                                         });
                                                         blockStateBuilder.variant("power=9", variant -> {
-                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "down"));
+                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_down"));
                                                         });
                                                         blockStateBuilder.variant("power=10", variant -> {
-                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "down"));
+                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_down"));
                                                         });
                                                         blockStateBuilder.variant("power=11", variant -> {
-                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "down"));
+                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_down"));
                                                         });
                                                         blockStateBuilder.variant("power=12", variant -> {
-                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "down"));
+                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_down"));
                                                         });
                                                         blockStateBuilder.variant("power=13", variant -> {
-                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "down"));
+                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_down"));
                                                         });
                                                         blockStateBuilder.variant("power=14", variant -> {
-                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "down"));
+                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_down"));
                                                         });
                                                         blockStateBuilder.variant("power=15", variant -> {
-                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "down"));
+                                                            variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_down"));
                                                         });
                                                     });
                                                 } else {
