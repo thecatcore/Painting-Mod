@@ -4,6 +4,9 @@ import com.swordglowsblue.artifice.api.Artifice;
 import fr.arthurbambou.paintingmod.mainmod.api.ColoredObject;
 import net.fabricmc.api.ClientModInitializer;
 import net.minecraft.block.*;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.resource.language.I18n;
+import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
 
 import static fr.arthurbambou.paintingmod.mainmod.registery.ModBlocks.COLORED_BLOCKS;
@@ -13,9 +16,10 @@ public class PaintingModClient implements ClientModInitializer {
     public void onInitializeClient() {
         Artifice.registerAssets(new Identifier(PaintingMod.MODID, "default_pack"), pack -> {
             for (ColoredObject coloredBlock : COLORED_BLOCKS) {
-                for (Block block : coloredBlock.getArrayList()) {
-                    Identifier id = new Identifier(PaintingMod.MODID, block.getTranslationKey().replace("block.paintingmod.", ""));
-                    if (block instanceof SlabBlock) {
+                Block[] block = (Block[]) coloredBlock.getArrayList().toArray(new Block[15]);
+                for (int a = 0;coloredBlock.getArrayList().size() > a; a++) {
+                    Identifier id = new Identifier(PaintingMod.MODID, block[a].getTranslationKey().replace("block.paintingmod.", ""));
+                    if (block[a] instanceof SlabBlock) {
                         pack.addBlockState(id, blockStateBuilder -> {
                             blockStateBuilder.variant("type=bottom", variant -> {
                                 variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath()));
@@ -43,7 +47,7 @@ public class PaintingModClient implements ClientModInitializer {
                             modelBuilder.parent(new Identifier(id.getNamespace(), "block/" + id.getPath()));
                         });
                     } else {
-                        if (block instanceof StairsBlock) {
+                        if (block[a] instanceof StairsBlock) {
                             pack.addBlockState(id, blockStateBuilder -> {
                                 blockStateBuilder.variant("facing=east,half=bottom,shape=straight", variant -> {
                                     variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath()));
@@ -284,7 +288,7 @@ public class PaintingModClient implements ClientModInitializer {
                                 modelBuilder.parent(new Identifier(id.getNamespace(), "block/" + id.getPath()));
                             });
                         } else {
-                            if (block instanceof FenceBlock) {
+                            if (block[a] instanceof FenceBlock) {
                                 pack.addBlockState(id, blockStateBuilder -> {
                                     blockStateBuilder.multipartCase(aCase -> {
                                         aCase.apply(variant -> {
@@ -335,7 +339,7 @@ public class PaintingModClient implements ClientModInitializer {
                                     modelBuilder.parent(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_inventory"));
                                 });
                             } else {
-                                if (block instanceof WallBlock) {
+                                if (block[a] instanceof WallBlock) {
                                     pack.addBlockState(id, blockStateBuilder -> {
                                         blockStateBuilder.multipartCase(aCase -> {
                                             aCase.when("up","true").apply(variant -> {
@@ -387,7 +391,7 @@ public class PaintingModClient implements ClientModInitializer {
                                         modelBuilder.parent(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_inventory"));
                                     });
                                 } else {
-                                    if (block instanceof FenceGateBlock) {
+                                    if (block[a] instanceof FenceGateBlock) {
                                         pack.addBlockState(id, blockStateBuilder -> {
                                             blockStateBuilder.variant("facing=south,in_wall=false,open=false", variant -> {
                                                 variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath()));
@@ -491,7 +495,7 @@ public class PaintingModClient implements ClientModInitializer {
                                             modelBuilder.parent(new Identifier(id.getNamespace(), "block/" + id.getPath()));
                                         });
                                     } else {
-                                        if (block instanceof AbstractButtonBlock) {
+                                        if (block[a] instanceof AbstractButtonBlock) {
                                             pack.addBlockState(id, blockStateBuilder -> {
                                                 blockStateBuilder.variant("face=floor,facing=east,powered=false", variant -> {
                                                     variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath()));
@@ -631,7 +635,7 @@ public class PaintingModClient implements ClientModInitializer {
                                                 modelBuilder.parent(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_inventory"));
                                             });
                                         } else {
-                                            if (block instanceof PressurePlateBlock) {
+                                            if (block[a] instanceof PressurePlateBlock) {
                                                 pack.addBlockState(id, blockStateBuilder -> {
                                                     blockStateBuilder.variant("powered=false", variant -> {
                                                         variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath()));
@@ -653,7 +657,7 @@ public class PaintingModClient implements ClientModInitializer {
                                                     modelBuilder.parent(new Identifier(id.getNamespace(), "block/" + id.getPath()));
                                                 });
                                             } else {
-                                                if (block instanceof WeightedPressurePlateBlock) {
+                                                if (block[a] instanceof WeightedPressurePlateBlock) {
                                                     pack.addBlockState(id, blockStateBuilder -> {
                                                         blockStateBuilder.variant("power=0", variant -> {
                                                             variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath()));
