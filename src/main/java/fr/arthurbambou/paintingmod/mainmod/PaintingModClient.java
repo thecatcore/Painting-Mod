@@ -1,9 +1,12 @@
 package fr.arthurbambou.paintingmod.mainmod;
 
 import com.swordglowsblue.artifice.api.Artifice;
+import com.swordglowsblue.artifice.api.util.IdUtils;
+import com.swordglowsblue.artifice.impl.ArtificeResourcePackImpl;
 import fr.arthurbambou.paintingmod.mainmod.api.ColoredObject;
 import net.fabricmc.api.ClientModInitializer;
 import net.minecraft.block.*;
+import net.minecraft.resource.ResourceType;
 import net.minecraft.util.Identifier;
 
 import static fr.arthurbambou.paintingmod.mainmod.registery.ModBlocks.COLORED_BLOCKS;
@@ -26,6 +29,18 @@ public class PaintingModClient implements ClientModInitializer {
                             blockStateBuilder.variant("type=double", variant -> {
                                 variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath().replace("_slab", "")));
                             });
+                        });
+                        pack.addBlockModel(id, modelBuilder -> {
+                            modelBuilder.parent(new Identifier("block/slab"));
+                            modelBuilder.texture("bottom", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_slab", "")));
+                            modelBuilder.texture("top", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_slab", "")));
+                            modelBuilder.texture("side", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_slab", "")));
+                        });
+                        pack.addBlockModel(new Identifier(id.getNamespace(), id.getPath() + "_top"), modelBuilder -> {
+                            modelBuilder.parent(new Identifier("block/slab_top"));
+                            modelBuilder.texture("bottom", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_slab", "")));
+                            modelBuilder.texture("top", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_slab", "")));
+                            modelBuilder.texture("side", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_slab", "")));
                         });
                     } else {
                         if (block instanceof StairsBlock) {
@@ -247,6 +262,24 @@ public class PaintingModClient implements ClientModInitializer {
                                     variant.rotationX(180);
                                 });
                             });
+                            pack.addBlockModel(new Identifier(id.getNamespace(), id.getPath()), modelBuilder -> {
+                                modelBuilder.parent(new Identifier("block/stairs"));
+                                modelBuilder.texture("bottom", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_stairs", "")));
+                                modelBuilder.texture("top", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_stairs", "")));
+                                modelBuilder.texture("side", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_stairs", "")));
+                            });
+                            pack.addBlockModel(new Identifier(id.getNamespace(), id.getPath() + "_inner"), modelBuilder -> {
+                                modelBuilder.parent(new Identifier("block/inner_stairs"));
+                                modelBuilder.texture("bottom", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_stairs", "")));
+                                modelBuilder.texture("top", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_stairs", "")));
+                                modelBuilder.texture("side", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_stairs", "")));
+                            });
+                            pack.addBlockModel(new Identifier(id.getNamespace(), id.getPath() + "_outer"), modelBuilder -> {
+                                modelBuilder.parent(new Identifier("block/outer_stairs"));
+                                modelBuilder.texture("bottom", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_stairs", "")));
+                                modelBuilder.texture("top", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_stairs", "")));
+                                modelBuilder.texture("side", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_stairs", "")));
+                            });
                         } else {
                             if (block instanceof FenceBlock) {
                                 pack.addBlockState(id, blockStateBuilder -> {
@@ -283,6 +316,18 @@ public class PaintingModClient implements ClientModInitializer {
                                         });
                                     });
                                 });
+                                pack.addBlockModel(new Identifier(id.getNamespace(), id.getPath() + "_post"), modelBuilder -> {
+                                    modelBuilder.parent(new Identifier("block/fence_post"));
+                                    modelBuilder.texture("texture", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_fence", "")));
+                                });
+                                pack.addBlockModel(new Identifier(id.getNamespace(), id.getPath() + "_side"), modelBuilder -> {
+                                    modelBuilder.parent(new Identifier("block/fence_side"));
+                                    modelBuilder.texture("texture", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_fence", "")));
+                                });
+                                pack.addBlockModel(new Identifier(id.getNamespace(), id.getPath() + "_inventory"), modelBuilder -> {
+                                    modelBuilder.parent(new Identifier("block/fence_inventory"));
+                                    modelBuilder.texture("texture", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_fence", "")));
+                                });
                             } else {
                                 if (block instanceof WallBlock) {
                                     pack.addBlockState(id, blockStateBuilder -> {
@@ -318,6 +363,19 @@ public class PaintingModClient implements ClientModInitializer {
                                                 variant.rotationY(270);
                                             });
                                         });
+                                    });
+
+                                    pack.addBlockModel(new Identifier(id.getNamespace(), id.getPath() + "_inventory"), modelBuilder -> {
+                                        modelBuilder.parent(new Identifier("block/wall_inventory"));
+                                        modelBuilder.texture("wall", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_wall", "")));
+                                    });
+                                    pack.addBlockModel(new Identifier(id.getNamespace(), id.getPath() + "_post"), modelBuilder -> {
+                                        modelBuilder.parent(new Identifier("block/template_wall_post"));
+                                        modelBuilder.texture("wall", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_wall", "")));
+                                    });
+                                    pack.addBlockModel(new Identifier(id.getNamespace(), id.getPath() + "_side"), modelBuilder -> {
+                                        modelBuilder.parent(new Identifier("block/template_wall_side"));
+                                        modelBuilder.texture("wall", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_wall", "")));
                                     });
                                 } else {
                                     if (block instanceof FenceGateBlock) {
@@ -402,6 +460,23 @@ public class PaintingModClient implements ClientModInitializer {
                                                 variant.uvlock(true);
                                                 variant.rotationY(270);
                                             });
+                                        });
+
+                                        pack.addBlockModel(new Identifier(id.getNamespace(), id.getPath()), modelBuilder -> {
+                                            modelBuilder.parent(new Identifier("block/template_fence_gate"));
+                                            modelBuilder.texture("texture", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_fence_gate", "")));
+                                        });
+                                        pack.addBlockModel(new Identifier(id.getNamespace(), id.getPath() + "_open"), modelBuilder -> {
+                                            modelBuilder.parent(new Identifier("block/template_fence_gate_open"));
+                                            modelBuilder.texture("texture", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_fence_gate", "")));
+                                        });
+                                        pack.addBlockModel(new Identifier(id.getNamespace(), id.getPath() + "_wall"), modelBuilder -> {
+                                            modelBuilder.parent(new Identifier("block/template_fence_gate_wall"));
+                                            modelBuilder.texture("texture", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_fence_gate", "")));
+                                        });
+                                        pack.addBlockModel(new Identifier(id.getNamespace(), id.getPath() + "_wall_open"), modelBuilder -> {
+                                            modelBuilder.parent(new Identifier("block/template_fence_gate_wall_open"));
+                                            modelBuilder.texture("texture", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_fence_gate", "")));
                                         });
                                     } else {
                                         if (block instanceof AbstractButtonBlock) {
@@ -527,6 +602,19 @@ public class PaintingModClient implements ClientModInitializer {
                                                     variant.rotationY(180);
                                                 });
                                             });
+
+                                            pack.addBlockModel(new Identifier(id.getNamespace(), id.getPath()), modelBuilder -> {
+                                                modelBuilder.parent(new Identifier("block/button"));
+                                                modelBuilder.texture("texture", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_button", "")));
+                                            });
+                                            pack.addBlockModel(new Identifier(id.getNamespace(), id.getPath() + "_inventory"), modelBuilder -> {
+                                                modelBuilder.parent(new Identifier("block/button_inventory"));
+                                                modelBuilder.texture("texture", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_button", "")));
+                                            });
+                                            pack.addBlockModel(new Identifier(id.getNamespace(), id.getPath() + "_pressed"), modelBuilder -> {
+                                                modelBuilder.parent(new Identifier("block/button_pressed"));
+                                                modelBuilder.texture("texture", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_button", "")));
+                                            });
                                         } else {
                                             if (block instanceof PressurePlateBlock) {
                                                 pack.addBlockState(id, blockStateBuilder -> {
@@ -536,6 +624,15 @@ public class PaintingModClient implements ClientModInitializer {
                                                     blockStateBuilder.variant("powered=true", variant -> {
                                                         variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_down"));
                                                     });
+                                                });
+
+                                                pack.addBlockModel(new Identifier(id.getNamespace(), id.getPath()), modelBuilder -> {
+                                                    modelBuilder.parent(new Identifier("block/pressure_plate_up"));
+                                                    modelBuilder.texture("texture", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_pressure_plate", "")));
+                                                });
+                                                pack.addBlockModel(new Identifier(id.getNamespace(), id.getPath() + "_down"), modelBuilder -> {
+                                                    modelBuilder.parent(new Identifier("block/pressure_plate_down"));
+                                                    modelBuilder.texture("texture", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_pressure_plate", "")));
                                                 });
                                             } else {
                                                 if (block instanceof WeightedPressurePlateBlock) {
@@ -589,12 +686,26 @@ public class PaintingModClient implements ClientModInitializer {
                                                             variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath() + "_down"));
                                                         });
                                                     });
+
+                                                    pack.addBlockModel(new Identifier(id.getNamespace(), id.getPath()), modelBuilder -> {
+                                                        modelBuilder.parent(new Identifier("block/pressure_plate_up"));
+                                                        modelBuilder.texture("texture", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_pressure_plate", "")));
+                                                    });
+                                                    pack.addBlockModel(new Identifier(id.getNamespace(), id.getPath() + "_down"), modelBuilder -> {
+                                                        modelBuilder.parent(new Identifier("block/pressure_plate_down"));
+                                                        modelBuilder.texture("texture", new Identifier(id.getNamespace(), "blocks/" + id.getPath().replace("_pressure_plate", "")));
+                                                    });
                                                 } else {
                                                     pack.addBlockState(id, blockStateBuilder -> {
                                                         blockStateBuilder.variant("", variant -> {
                                                             variant.model(new Identifier(id.getNamespace(), "block/" + id.getPath()));
                                                         });
                                                     });
+                                                    pack.addBlockModel(id, modelBuilder -> {
+                                                        modelBuilder.parent(new Identifier("block/cube_all"));
+                                                        modelBuilder.texture("all", new Identifier(id.getNamespace(), "blocks/" + id.getPath()));
+                                                    });
+
                                                 }
                                             }
                                         }
