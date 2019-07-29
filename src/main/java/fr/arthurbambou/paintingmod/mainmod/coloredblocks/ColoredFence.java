@@ -6,6 +6,7 @@ import fr.arthurbambou.paintingmod.mainmod.api.PaintingModRegistry;
 import fr.arthurbambou.paintingmod.mainmod.blocks.ColoredFenceBlock;
 import fr.arthurbambou.paintingmod.mainmod.registery.ModBlocks;
 import net.minecraft.block.Block;
+import net.minecraft.util.Identifier;
 
 public class ColoredFence extends ColoredObject {
 
@@ -40,5 +41,10 @@ public class ColoredFence extends ColoredObject {
         this.orange = new ColoredFenceBlock(this, Color.ORANGE);
         this.white = new ColoredFenceBlock(this, Color.WHITE);
         PaintingModRegistry.registerColoredObject(this);
+    }
+
+    @Override
+    public Identifier[] getTextureIds() {
+        return new Identifier[0];
     }
 }

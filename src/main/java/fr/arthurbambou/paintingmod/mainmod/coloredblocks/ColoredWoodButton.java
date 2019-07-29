@@ -5,6 +5,7 @@ import fr.arthurbambou.paintingmod.mainmod.api.PaintingModRegistry;
 import fr.arthurbambou.paintingmod.mainmod.blocks.ColoredWoodButtonBlock;
 import fr.arthurbambou.paintingmod.mainmod.registery.ModBlocks;
 import net.minecraft.block.Block;
+import net.minecraft.util.Identifier;
 
 public class ColoredWoodButton extends ColoredButton {
     public ColoredWoodButton(String name, Block replace) {
@@ -38,5 +39,10 @@ public class ColoredWoodButton extends ColoredButton {
         this.orange = new ColoredWoodButtonBlock(this, Color.ORANGE);
         this.white = new ColoredWoodButtonBlock(this, Color.WHITE);
         PaintingModRegistry.registerColoredObject(this);
+    }
+
+    @Override
+    public Identifier[] getTextureIds() {
+        return new Identifier[0];
     }
 }

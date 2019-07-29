@@ -5,6 +5,7 @@ import fr.arthurbambou.paintingmod.mainmod.api.PaintingModRegistry;
 import fr.arthurbambou.paintingmod.mainmod.blocks.ColoredStoneButtonBlock;
 import fr.arthurbambou.paintingmod.mainmod.registery.ModBlocks;
 import net.minecraft.block.Block;
+import net.minecraft.util.Identifier;
 
 public class ColoredStoneButton extends ColoredButton {
     public ColoredStoneButton(String name, Block replace) {
@@ -39,5 +40,10 @@ public class ColoredStoneButton extends ColoredButton {
         this.orange = new ColoredStoneButtonBlock(this, Color.ORANGE);
         this.white = new ColoredStoneButtonBlock(this, Color.WHITE);
         PaintingModRegistry.registerColoredObject(this);
+    }
+
+    @Override
+    public Identifier[] getTextureIds() {
+        return new Identifier[0];
     }
 }

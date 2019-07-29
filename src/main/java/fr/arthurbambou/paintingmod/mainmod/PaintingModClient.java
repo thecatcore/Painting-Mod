@@ -1,15 +1,79 @@
 package fr.arthurbambou.paintingmod.mainmod;
 
 import com.swordglowsblue.artifice.api.Artifice;
+import fr.arthurbambou.paintingmod.mainmod.api.ColoredObject;
+import fr.arthurbambou.paintingmod.mainmod.blocks.ColoredBlockBlock;
+import fr.arthurbambou.paintingmod.mainmod.client.render.ColoredBlockRenderer;
+import fr.arthurbambou.paintingmod.mainmod.coloredblocks.ColoredBlock;
 import fr.arthurbambou.paintingmod.mainmod.utils.artifice.ResourcePackUtils;
 import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.fabric.api.client.model.ModelLoadingRegistry;
+import net.fabricmc.fabric.api.client.model.ModelProviderContext;
+import net.fabricmc.fabric.api.event.client.ClientSpriteRegistryCallback;
+import net.minecraft.block.Block;
+import net.minecraft.client.render.model.BakedModel;
+import net.minecraft.client.render.model.ModelBakeSettings;
+import net.minecraft.client.render.model.ModelLoader;
+import net.minecraft.client.render.model.UnbakedModel;
+import net.minecraft.client.texture.Sprite;
+import net.minecraft.client.texture.SpriteAtlasTexture;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
+
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Set;
+import java.util.function.Function;
+
+import static fr.arthurbambou.paintingmod.mainmod.registery.ModBlocks.COLORED_BLOCKS;
 
 public class PaintingModClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         Artifice.registerAssets(new Identifier(PaintingMod.MODID, "default_pack"), pack -> {
             ResourcePackUtils.createPack(pack);
+        });
+        ClientSpriteRegistryCallback.event(SpriteAtlasTexture.BLOCK_ATLAS_TEX)
+                .register((spriteAtlasTexture, registry) -> {
+                    for (ColoredObject coloredObject : COLORED_BLOCKS) {
+                        if (coloredObject instanceof ColoredBlock) {
+                            for (Identifier identifier : coloredObject.getTextureIds()) {
+                                registry.register(identifier);
+                            }
+                        }
+                    }
+//                    registry.register(new Identifier("block/spruce_planks"));
+                });
+
+
+
+        ModelLoadingRegistry.INSTANCE.registerVariantProvider(resourceManager -> (modelIdentifier, modelProviderContext) -> {
+            ModelProviderContext modelPrCon = modelProviderContext;
+            if(!modelIdentifier.getNamespace().equals("paintingmod")){
+                return null;
+            }
+            if(!modelIdentifier.getPath().contains("spruce_plank")){
+                return null;
+            }
+            System.out.println(modelIdentifier.toString());
+            Identifier textureID = new Identifier("block/spruce_planks");
+            return new UnbakedModel() {
+                @Override
+                public Collection<Identifier> getModelDependencies() {
+                    return Collections.emptyList();
+                }
+
+                @Override
+                public Collection<Identifier> getTextureDependencies(Function<Identifier, UnbakedModel> var1, Set<String> var2) {
+                    return Collections.emptyList();
+                }
+
+                @Override
+                public BakedModel bake(ModelLoader var1, Function<Identifier, Sprite> var2, ModelBakeSettings var3) {
+                    return new ColoredBlockRenderer(modelIdentifier);
+                }
+            };
+
         });
     }
 }

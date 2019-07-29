@@ -3,6 +3,7 @@ package fr.arthurbambou.paintingmod.mainmod.api;
 import net.minecraft.block.Block;
 import net.minecraft.util.Identifier;
 
+import java.awt.*;
 import java.util.ArrayList;
 
 public abstract class ColoredObject {
@@ -60,6 +61,8 @@ public abstract class ColoredObject {
     }
 
     public abstract void createBlocks();
+
+    public abstract Identifier[] getTextureIds();
 
     public ArrayList<Block> getArrayList() {
         ArrayList<Block> list = new ArrayList<>();
@@ -124,21 +127,30 @@ public abstract class ColoredObject {
 
 
     public enum Color {
-        BLACK,
-        BLUE,
-        BROWN,
-        CYAN,
-        GRAY,
-        GREEN,
-        LIGHT_BLUE,
-        LIGHT_GRAY,
-        LIME,
-        MAGENTA,
-        ORANGE,
-        PINK,
-        PURPLE,
-        RED,
-        WHITE,
-        YELLOW;
+        BLACK(0,0,0),
+        BLUE(0,51,121),
+        BROWN(153,67,0),
+        CYAN(51,153,204),
+        GRAY(40,40,40),
+        GREEN(72,91,0),
+        LIGHT_BLUE(0,153,255),
+        LIGHT_GRAY(152,152,152),
+        LIME(0,255,0),
+        MAGENTA(204,51,204),
+        ORANGE(255, 153, 51),
+        PINK(255,0,255),
+        PURPLE(102,0,153),
+        RED(153,0,0),
+        WHITE(255,255,255),
+        YELLOW(255,255,0);
+
+        private java.awt.Color color;
+        Color(int r, int g, int b) {
+            this.color = new java.awt.Color(r,g,b);
+        }
+
+        public java.awt.Color getColor() {
+            return this.color;
+        }
     }
 }

@@ -6,6 +6,7 @@ import fr.arthurbambou.paintingmod.mainmod.api.PaintingModRegistry;
 import fr.arthurbambou.paintingmod.mainmod.blocks.ColoredSlabBlock;
 import fr.arthurbambou.paintingmod.mainmod.registery.ModBlocks;
 import net.minecraft.block.Block;
+import net.minecraft.util.Identifier;
 
 public class ColoredSlab extends ColoredObject {
 
@@ -40,5 +41,10 @@ public class ColoredSlab extends ColoredObject {
         this.orange = new ColoredSlabBlock(this, Color.ORANGE);
         this.white = new ColoredSlabBlock(this, Color.WHITE);
         PaintingModRegistry.registerColoredObject(this);
+    }
+
+    @Override
+    public Identifier[] getTextureIds() {
+        return new Identifier[0];
     }
 }

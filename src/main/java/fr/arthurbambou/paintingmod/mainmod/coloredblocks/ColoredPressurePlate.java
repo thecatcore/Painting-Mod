@@ -7,6 +7,7 @@ import fr.arthurbambou.paintingmod.mainmod.blocks.ColoredPressurePlateBlock;
 import fr.arthurbambou.paintingmod.mainmod.registery.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.PressurePlateBlock;
+import net.minecraft.util.Identifier;
 
 public class ColoredPressurePlate extends ColoredObject {
 
@@ -53,5 +54,10 @@ public class ColoredPressurePlate extends ColoredObject {
         this.orange = new ColoredPressurePlateBlock(this, Color.ORANGE, this.type);
         this.white = new ColoredPressurePlateBlock(this, Color.WHITE, this.type);
         PaintingModRegistry.registerColoredObject(this);
+    }
+
+    @Override
+    public Identifier[] getTextureIds() {
+        return new Identifier[0];
     }
 }

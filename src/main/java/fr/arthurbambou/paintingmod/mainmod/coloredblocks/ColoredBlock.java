@@ -6,6 +6,8 @@ import fr.arthurbambou.paintingmod.mainmod.api.PaintingModRegistry;
 import fr.arthurbambou.paintingmod.mainmod.blocks.ColoredBlockBlock;
 import fr.arthurbambou.paintingmod.mainmod.registery.ModBlocks;
 import net.minecraft.block.Block;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 public class ColoredBlock extends ColoredObject {
 
@@ -41,5 +43,12 @@ public class ColoredBlock extends ColoredObject {
         this.orange = new ColoredBlockBlock(this, Color.ORANGE);
         this.white = new ColoredBlockBlock(this, Color.WHITE);
         PaintingModRegistry.registerColoredObject(this);
+    }
+
+    @Override
+    public Identifier[] getTextureIds() {
+        Identifier replaceId = Registry.BLOCK.getId(this.replace);
+        Identifier[] identifiers = new Identifier[]{new Identifier(replaceId.getNamespace(), "block/" + replaceId.getPath())};
+        return identifiers;
     }
 }

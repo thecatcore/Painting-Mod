@@ -7,6 +7,7 @@ import fr.arthurbambou.paintingmod.mainmod.blocks.ColoredStairsBlock;
 import fr.arthurbambou.paintingmod.mainmod.registery.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.util.Identifier;
 
 public class ColoredStairs extends ColoredObject {
     private BlockState blockState;
@@ -45,5 +46,10 @@ public class ColoredStairs extends ColoredObject {
         this.orange = new ColoredStairsBlock(this, Color.ORANGE);
         this.white = new ColoredStairsBlock(this, Color.WHITE);
         PaintingModRegistry.registerColoredObject(this);
+    }
+
+    @Override
+    public Identifier[] getTextureIds() {
+        return new Identifier[0];
     }
 }

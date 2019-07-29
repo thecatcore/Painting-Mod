@@ -21,6 +21,7 @@ public class ColoredBlockBlock extends Block implements ColoredBlock {
 
     private ColoredObject coloredObject;
     private ColoredObject.Color color;
+    private Identifier identifier;
 
     public ColoredBlockBlock(ColoredObject coloredObject, ColoredObject.Color color) {
         super(coloredObject.settings);
@@ -28,6 +29,7 @@ public class ColoredBlockBlock extends Block implements ColoredBlock {
         this.coloredObject = coloredObject;
         Registry.register(Registry.BLOCK, new Identifier(coloredObject.modid, color.name().toLowerCase() + "_" + coloredObject.name), this);
         Registry.register(Registry.ITEM, new Identifier(coloredObject.modid, color.name().toLowerCase() + "_" + coloredObject.name), new ColoredItemBlock(this, new Item.Settings().group(PaintingMod.MOD_BLOCKS)));
+        this.identifier = new Identifier(coloredObject.modid, color.name().toLowerCase() + "_" + coloredObject.name);
     }
 
     @Override
@@ -35,6 +37,10 @@ public class ColoredBlockBlock extends Block implements ColoredBlock {
         List<ItemStack> list = new ArrayList<ItemStack>();
         list.add(new ItemStack(this));
         return list;
+    }
+
+    public Identifier getIdentifier() {
+        return this.identifier;
     }
 
     @Override
