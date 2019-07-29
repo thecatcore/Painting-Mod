@@ -1,6 +1,10 @@
 package fr.arthurbambou.paintingmod.mainmod;
 
+import com.swordglowsblue.artifice.api.Artifice;
+import fr.arthurbambou.paintingmod.mainmod.api.ColoredObject;
 import fr.arthurbambou.paintingmod.mainmod.api.PaintingModRegistry;
+import fr.arthurbambou.paintingmod.mainmod.coloredblocks.ColoredFence;
+import fr.arthurbambou.paintingmod.mainmod.coloredblocks.ColoredWall;
 import fr.arthurbambou.paintingmod.mainmod.registery.ModBlocks;
 import fr.arthurbambou.paintingmod.mainmod.registery.ModColoredFunctions;
 import fr.arthurbambou.paintingmod.mainmod.registery.ModItems;
@@ -12,9 +16,13 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 
+import net.minecraft.block.Block;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
+
+import static fr.arthurbambou.paintingmod.mainmod.registery.ModBlocks.COLORED_BLOCKS;
 
 public class PaintingMod implements ModInitializer {
 	public static final String MODID = "paintingmod";
@@ -39,5 +47,27 @@ public class PaintingMod implements ModInitializer {
 		ModVillagers.init();
 		ModColoredFunctions.init();
         PaintingModRegistry.finishRegister();
+		Artifice.registerData(new Identifier(MODID, "datapack"), serverResourcePackBuilder -> {
+			serverResourcePackBuilder.addBlockTag(new Identifier("fences"), tagBuilder -> {
+				tagBuilder.replace(false);
+				for (ColoredObject coloredObject : COLORED_BLOCKS) {
+					if (coloredObject instanceof ColoredFence) {
+						for (Block block : coloredObject.getArrayList()) {
+							tagBuilder.value(Registry.BLOCK.getId(block));
+						}
+					}
+				}
+			});
+			serverResourcePackBuilder.addBlockTag(new Identifier("walls"), tagBuilder -> {
+				tagBuilder.replace(false);
+				for (ColoredObject coloredObject : COLORED_BLOCKS) {
+					if (coloredObject instanceof ColoredWall) {
+						for (Block block : coloredObject.getArrayList()) {
+							tagBuilder.value(Registry.BLOCK.getId(block));
+						}
+					}
+				}
+			});
+		});
 	}
 }

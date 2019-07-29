@@ -82,4 +82,63 @@ public abstract class ColoredObject {
 
         return list;
     }
+
+    public Block getBlockbyColor(Color color) {
+        switch (color) {
+            case BLACK:
+                return this.black;
+            case BLUE:
+                return this.blue;
+            case BROWN:
+                return this.brown;
+            case CYAN:
+                return this.cyan;
+            case GRAY:
+                return this.gray;
+            case GREEN:
+                return this.green;
+            case LIGHT_BLUE:
+                return this.lightblue;
+            case LIGHT_GRAY:
+                return this.lightgray;
+            case LIME:
+                return this.lime;
+            case MAGENTA:
+                return this.magenta;
+            case ORANGE:
+                return this.orange;
+            case PINK:
+                return this.pink;
+            case PURPLE:
+                return this.purple;
+            case RED:
+                return this.red;
+            case WHITE:
+                return this.white;
+            case YELLOW:
+                return this.yellow;
+            default:
+                return null;
+        }
+    }
+
+
+    public enum Color {
+        BLACK,
+        BLUE,
+        BROWN,
+        CYAN,
+        GRAY,
+        GREEN,
+        LIGHT_BLUE,
+        LIGHT_GRAY,
+        LIME,
+        MAGENTA,
+        ORANGE,
+        PINK,
+        PURPLE,
+        RED,
+        WHITE,
+        YELLOW;
+    }
 }

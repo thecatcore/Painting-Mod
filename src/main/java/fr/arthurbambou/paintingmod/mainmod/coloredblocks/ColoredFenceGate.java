@@ -23,22 +23,22 @@ public class ColoredFenceGate extends ColoredObject {
 
     @Override
     public void createBlocks() {
-        this.black = new ColoredFenceGateBlock("black_" + this.name, this.settings, this.modid);
-        this.red = new ColoredFenceGateBlock("red_" + this.name, this.settings, this.modid);
-        this.green = new ColoredFenceGateBlock("green_" + this.name, this.settings, this.modid);
-        this.brown = new ColoredFenceGateBlock("brown_" + this.name, this.settings, this.modid);
-        this.blue = new ColoredFenceGateBlock("blue_" + this.name, this.settings, this.modid);
-        this.purple = new ColoredFenceGateBlock("purple_" + this.name, this.settings, this.modid);
-        this.cyan = new ColoredFenceGateBlock("cyan_" + this.name, this.settings, this.modid);
-        this.lightgray = new ColoredFenceGateBlock("light_gray_" + this.name, this.settings, this.modid);
-        this.gray = new ColoredFenceGateBlock("gray_" + this.name, this.settings, this.modid);
-        this.pink = new ColoredFenceGateBlock("pink_" + this.name, this.settings, this.modid);
-        this.lime = new ColoredFenceGateBlock("lime_" + this.name, this.settings, this.modid);
-        this.yellow = new ColoredFenceGateBlock("yellow_" + this.name, this.settings, this.modid);
-        this.lightblue = new ColoredFenceGateBlock("light_blue_" + this.name, this.settings, this.modid);
-        this.magenta = new ColoredFenceGateBlock("magenta_" + this.name, this.settings, this.modid);
-        this.orange = new ColoredFenceGateBlock("orange_" + this.name, this.settings, this.modid);
-        this.white = new ColoredFenceGateBlock("white_" + this.name, this.settings, this.modid);
+        this.black = new ColoredFenceGateBlock(this, Color.BLACK);
+        this.red = new ColoredFenceGateBlock(this, Color.RED);
+        this.green = new ColoredFenceGateBlock(this, Color.GREEN);
+        this.brown = new ColoredFenceGateBlock(this, Color.BROWN);
+        this.blue = new ColoredFenceGateBlock(this, Color.BLUE);
+        this.purple = new ColoredFenceGateBlock(this, Color.PURPLE);
+        this.cyan = new ColoredFenceGateBlock(this, Color.CYAN);
+        this.lightgray = new ColoredFenceGateBlock(this, Color.LIGHT_GRAY);
+        this.gray = new ColoredFenceGateBlock(this, Color.GRAY);
+        this.pink = new ColoredFenceGateBlock(this, Color.PINK);
+        this.lime = new ColoredFenceGateBlock(this, Color.LIME);
+        this.yellow = new ColoredFenceGateBlock(this, Color.YELLOW);
+        this.lightblue = new ColoredFenceGateBlock(this, Color.LIGHT_BLUE);
+        this.magenta = new ColoredFenceGateBlock(this, Color.MAGENTA);
+        this.orange = new ColoredFenceGateBlock(this, Color.ORANGE);
+        this.white = new ColoredFenceGateBlock(this, Color.WHITE);
         PaintingModRegistry.registerColoredObject(this);
     }
 }

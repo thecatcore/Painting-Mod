@@ -23,22 +23,22 @@ public class ColoredWall extends ColoredObject {
 
     @Override
     public void createBlocks() {
-        this.black = new ColoredWallBlock("black_" + this.name, this.settings, this.modid);
-        this.red = new ColoredWallBlock("red_" + this.name, this.settings, this.modid);
-        this.green = new ColoredWallBlock("green_" + this.name, this.settings, this.modid);
-        this.brown = new ColoredWallBlock("brown_" + this.name, this.settings, this.modid);
-        this.blue = new ColoredWallBlock("blue_" + this.name, this.settings, this.modid);
-        this.purple = new ColoredWallBlock("purple_" + this.name, this.settings, this.modid);
-        this.cyan = new ColoredWallBlock("cyan_" + this.name, this.settings, this.modid);
-        this.lightgray = new ColoredWallBlock("light_gray_" + this.name, this.settings, this.modid);
-        this.gray = new ColoredWallBlock("gray_" + this.name, this.settings, this.modid);
-        this.pink = new ColoredWallBlock("pink_" + this.name, this.settings, this.modid);
-        this.lime = new ColoredWallBlock("lime_" + this.name, this.settings, this.modid);
-        this.yellow = new ColoredWallBlock("yellow_" + this.name, this.settings, this.modid);
-        this.lightblue = new ColoredWallBlock("light_blue_" + this.name, this.settings, this.modid);
-        this.magenta = new ColoredWallBlock("magenta_" + this.name, this.settings, this.modid);
-        this.orange = new ColoredWallBlock("orange_" + this.name, this.settings, this.modid);
-        this.white = new ColoredWallBlock("white_" + this.name, this.settings, this.modid);
+        this.black = new ColoredWallBlock(this, Color.BLACK);
+        this.red = new ColoredWallBlock(this, Color.RED);
+        this.green = new ColoredWallBlock(this, Color.GREEN);
+        this.brown = new ColoredWallBlock(this, Color.BROWN);
+        this.blue = new ColoredWallBlock(this, Color.BLUE);
+        this.purple = new ColoredWallBlock(this, Color.PURPLE);
+        this.cyan = new ColoredWallBlock(this, Color.CYAN);
+        this.lightgray = new ColoredWallBlock(this, Color.LIGHT_GRAY);
+        this.gray = new ColoredWallBlock(this, Color.GRAY);
+        this.pink = new ColoredWallBlock(this, Color.PINK);
+        this.lime = new ColoredWallBlock(this, Color.LIME);
+        this.yellow = new ColoredWallBlock(this, Color.YELLOW);
+        this.lightblue = new ColoredWallBlock(this, Color.LIGHT_BLUE);
+        this.magenta = new ColoredWallBlock(this, Color.MAGENTA);
+        this.orange = new ColoredWallBlock(this, Color.ORANGE);
+        this.white = new ColoredWallBlock(this, Color.WHITE);
         PaintingModRegistry.registerColoredObject(this);
     }
 }

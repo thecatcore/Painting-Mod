@@ -1,6 +1,9 @@
 package fr.arthurbambou.paintingmod.mainmod.blocks;
 
 import fr.arthurbambou.paintingmod.mainmod.PaintingMod;
+import fr.arthurbambou.paintingmod.mainmod.api.ColoredBlock;
+import fr.arthurbambou.paintingmod.mainmod.api.ColoredObject;
+import fr.arthurbambou.paintingmod.mainmod.items.ColoredItemBlock;
 import net.minecraft.block.*;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
@@ -12,11 +15,17 @@ import net.minecraft.world.loot.context.LootContext;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ColoredWallBlock extends WallBlock {
-    public ColoredWallBlock(String name, Settings block$Settings_1, String modID) {
-        super(block$Settings_1);
-        Registry.register(Registry.BLOCK, new Identifier(modID, name), this);
-        Registry.register(Registry.ITEM, new Identifier(modID, name), new BlockItem(this, new Item.Settings().group(PaintingMod.MOD_WALLS)));
+public class ColoredWallBlock extends WallBlock implements ColoredBlock {
+
+    private ColoredObject coloredObject;
+    private ColoredObject.Color color;
+
+    public ColoredWallBlock(ColoredObject coloredObject, ColoredObject.Color color) {
+        super(coloredObject.settings);
+        this.color = color;
+        this.coloredObject = coloredObject;
+        Registry.register(Registry.BLOCK, new Identifier(coloredObject.modid, color.name().toLowerCase() + "_" + coloredObject.name), this);
+        Registry.register(Registry.ITEM, new Identifier(coloredObject.modid, color.name().toLowerCase() + "_" + coloredObject.name), new ColoredItemBlock(this, new Item.Settings().group(PaintingMod.MOD_WALLS)));
     }
 
     @Override
@@ -24,5 +33,15 @@ public class ColoredWallBlock extends WallBlock {
         List<ItemStack> list = new ArrayList<ItemStack>();
         list.add(new ItemStack(this));
         return list;
+    }
+
+    @Override
+    public ColoredObject getColoredObject() {
+        return this.coloredObject;
+    }
+
+    @Override
+    public ColoredObject.Color getColor() {
+        return this.color;
     }
 }

@@ -21,22 +21,22 @@ public class ColoredWoodButton extends ColoredButton {
 
     @Override
     public void createBlocks() {
-        this.black = new ColoredWoodButtonBlock("black_" + this.name, this.settings, this.modid);
-        this.red = new ColoredWoodButtonBlock("red_" + this.name, this.settings, this.modid);
-        this.green = new ColoredWoodButtonBlock("green_" + this.name, this.settings, this.modid);
-        this.brown = new ColoredWoodButtonBlock("brown_" + this.name, this.settings, this.modid);
-        this.blue = new ColoredWoodButtonBlock("blue_" + this.name, this.settings, this.modid);
-        this.purple = new ColoredWoodButtonBlock("purple_" + this.name, this.settings, this.modid);
-        this.cyan = new ColoredWoodButtonBlock("cyan_" + this.name, this.settings, this.modid);
-        this.lightgray = new ColoredWoodButtonBlock("light_gray_" + this.name, this.settings, this.modid);
-        this.gray = new ColoredWoodButtonBlock("gray_" + this.name, this.settings, this.modid);
-        this.pink = new ColoredWoodButtonBlock("pink_" + this.name, this.settings, this.modid);
-        this.lime = new ColoredWoodButtonBlock("lime_" + this.name, this.settings, this.modid);
-        this.yellow = new ColoredWoodButtonBlock("yellow_" + this.name, this.settings, this.modid);
-        this.lightblue = new ColoredWoodButtonBlock("light_blue_" + this.name, this.settings, this.modid);
-        this.magenta = new ColoredWoodButtonBlock("magenta_" + this.name, this.settings, this.modid);
-        this.orange = new ColoredWoodButtonBlock("orange_" + this.name, this.settings, this.modid);
-        this.white = new ColoredWoodButtonBlock("white_" + this.name, this.settings, this.modid);
+        this.black = new ColoredWoodButtonBlock(this, Color.BLACK);
+        this.red = new ColoredWoodButtonBlock(this, Color.RED);
+        this.green = new ColoredWoodButtonBlock(this, Color.GREEN);
+        this.brown = new ColoredWoodButtonBlock(this, Color.BROWN);
+        this.blue = new ColoredWoodButtonBlock(this, Color.BLUE);
+        this.purple = new ColoredWoodButtonBlock(this, Color.PURPLE);
+        this.cyan = new ColoredWoodButtonBlock(this, Color.CYAN);
+        this.lightgray = new ColoredWoodButtonBlock(this, Color.LIGHT_GRAY);
+        this.gray = new ColoredWoodButtonBlock(this, Color.GRAY);
+        this.pink = new ColoredWoodButtonBlock(this, Color.PINK);
+        this.lime = new ColoredWoodButtonBlock(this, Color.LIME);
+        this.yellow = new ColoredWoodButtonBlock(this, Color.YELLOW);
+        this.lightblue = new ColoredWoodButtonBlock(this, Color.LIGHT_BLUE);
+        this.magenta = new ColoredWoodButtonBlock(this, Color.MAGENTA);
+        this.orange = new ColoredWoodButtonBlock(this, Color.ORANGE);
+        this.white = new ColoredWoodButtonBlock(this, Color.WHITE);
         PaintingModRegistry.registerColoredObject(this);
     }
 }

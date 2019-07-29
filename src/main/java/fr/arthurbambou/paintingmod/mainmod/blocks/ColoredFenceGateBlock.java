@@ -1,6 +1,9 @@
 package fr.arthurbambou.paintingmod.mainmod.blocks;
 
 import fr.arthurbambou.paintingmod.mainmod.PaintingMod;
+import fr.arthurbambou.paintingmod.mainmod.api.ColoredBlock;
+import fr.arthurbambou.paintingmod.mainmod.api.ColoredObject;
+import fr.arthurbambou.paintingmod.mainmod.items.ColoredItemBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FenceGateBlock;
 import net.minecraft.item.Item;
@@ -13,11 +16,17 @@ import net.minecraft.world.loot.context.LootContext;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ColoredFenceGateBlock extends FenceGateBlock {
-    public ColoredFenceGateBlock(String name, Settings block$Settings_1, String modID) {
-        super(block$Settings_1);
-        Registry.register(Registry.BLOCK, new Identifier(modID, name), this);
-        Registry.register(Registry.ITEM, new Identifier(modID, name), new BlockItem(this, new Item.Settings().group(PaintingMod.MOD_FENCE_GATES)));
+public class ColoredFenceGateBlock extends FenceGateBlock implements ColoredBlock {
+
+    private ColoredObject coloredObject;
+    private ColoredObject.Color color;
+
+    public ColoredFenceGateBlock(ColoredObject coloredObject, ColoredObject.Color color) {
+        super(coloredObject.settings);
+        this.color = color;
+        this.coloredObject = coloredObject;
+        Registry.register(Registry.BLOCK, new Identifier(coloredObject.modid, color.name().toLowerCase() + "_" + coloredObject.name), this);
+        Registry.register(Registry.ITEM, new Identifier(coloredObject.modid, color.name().toLowerCase() + "_" + coloredObject.name), new ColoredItemBlock(this, new Item.Settings().group(PaintingMod.MOD_FENCE_GATES)));
     }
 
     @Override
@@ -25,5 +34,15 @@ public class ColoredFenceGateBlock extends FenceGateBlock {
         List<ItemStack> list = new ArrayList<ItemStack>();
         list.add(new ItemStack(this));
         return list;
+    }
+
+    @Override
+    public ColoredObject getColoredObject() {
+        return this.coloredObject;
+    }
+
+    @Override
+    public ColoredObject.Color getColor() {
+        return this.color;
     }
 }

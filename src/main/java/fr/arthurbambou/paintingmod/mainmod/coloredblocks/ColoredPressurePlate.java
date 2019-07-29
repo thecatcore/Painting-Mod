@@ -36,22 +36,22 @@ public class ColoredPressurePlate extends ColoredObject {
 
     @Override
     public void createBlocks() {
-        this.black = new ColoredPressurePlateBlock("black_" + this.name, this.type, this.settings, this.modid);
-        this.red = new ColoredPressurePlateBlock("red_" + this.name, this.type,this.settings, this.modid);
-        this.green = new ColoredPressurePlateBlock("green_" + this.name, this.type,this.settings, this.modid);
-        this.brown = new ColoredPressurePlateBlock("brown_" + this.name, this.type,this.settings, this.modid);
-        this.blue = new ColoredPressurePlateBlock("blue_" + this.name, this.type,this.settings, this.modid);
-        this.purple = new ColoredPressurePlateBlock("purple_" + this.name, this.type,this.settings, this.modid);
-        this.cyan = new ColoredPressurePlateBlock("cyan_" + this.name, this.type,this.settings, this.modid);
-        this.lightgray = new ColoredPressurePlateBlock("light_gray_" + this.name, this.type,this.settings, this.modid);
-        this.gray = new ColoredPressurePlateBlock("gray_" + this.name, this.type,this.settings, this.modid);
-        this.pink = new ColoredPressurePlateBlock("pink_" + this.name, this.type,this.settings, this.modid);
-        this.lime = new ColoredPressurePlateBlock("lime_" + this.name, this.type,this.settings, this.modid);
-        this.yellow = new ColoredPressurePlateBlock("yellow_" + this.name, this.type,this.settings, this.modid);
-        this.lightblue = new ColoredPressurePlateBlock("light_blue_" + this.name, this.type,this.settings, this.modid);
-        this.magenta = new ColoredPressurePlateBlock("magenta_" + this.name, this.type,this.settings, this.modid);
-        this.orange = new ColoredPressurePlateBlock("orange_" + this.name, this.type,this.settings, this.modid);
-        this.white = new ColoredPressurePlateBlock("white_" + this.name, this.type,this.settings, this.modid);
+        this.black = new ColoredPressurePlateBlock(this, Color.BLACK, this.type);
+        this.red = new ColoredPressurePlateBlock(this, Color.RED, this.type);
+        this.green = new ColoredPressurePlateBlock(this, Color.GREEN, this.type);
+        this.brown = new ColoredPressurePlateBlock(this, Color.BROWN, this.type);
+        this.blue = new ColoredPressurePlateBlock(this, Color.BLUE, this.type);
+        this.purple = new ColoredPressurePlateBlock(this, Color.PURPLE, this.type);
+        this.cyan = new ColoredPressurePlateBlock(this, Color.CYAN, this.type);
+        this.lightgray = new ColoredPressurePlateBlock(this, Color.LIGHT_GRAY, this.type);
+        this.gray = new ColoredPressurePlateBlock(this, Color.GRAY, this.type);
+        this.pink = new ColoredPressurePlateBlock(this, Color.PINK, this.type);
+        this.lime = new ColoredPressurePlateBlock(this, Color.LIME, this.type);
+        this.yellow = new ColoredPressurePlateBlock(this, Color.YELLOW, this.type);
+        this.lightblue = new ColoredPressurePlateBlock(this, Color.LIGHT_BLUE, this.type);
+        this.magenta = new ColoredPressurePlateBlock(this, Color.MAGENTA, this.type);
+        this.orange = new ColoredPressurePlateBlock(this, Color.ORANGE, this.type);
+        this.white = new ColoredPressurePlateBlock(this, Color.WHITE, this.type);
         PaintingModRegistry.registerColoredObject(this);
     }
 }

@@ -28,22 +28,22 @@ public class ColoredStairs extends ColoredObject {
 
     @Override
     public void createBlocks() {
-        this.black = new ColoredStairsBlock("black_" + this.name, this.settings, this.blockState, this.modid);
-        this.red = new ColoredStairsBlock("red_" + this.name, this.settings, this.blockState, this.modid);
-        this.green = new ColoredStairsBlock("green_" + this.name, this.settings, this.blockState, this.modid);
-        this.brown = new ColoredStairsBlock("brown_" + this.name, this.settings, this.blockState, this.modid);
-        this.blue = new ColoredStairsBlock("blue_" + this.name, this.settings, this.blockState, this.modid);
-        this.purple = new ColoredStairsBlock("purple_" + this.name, this.settings, this.blockState, this.modid);
-        this.cyan = new ColoredStairsBlock("cyan_" + this.name, this.settings, this.blockState, this.modid);
-        this.lightgray = new ColoredStairsBlock("light_gray_" + this.name, this.settings, this.blockState, this.modid);
-        this.gray = new ColoredStairsBlock("gray_" + this.name, this.settings, this.blockState, this.modid);
-        this.pink = new ColoredStairsBlock("pink_" + this.name, this.settings, this.blockState, this.modid);
-        this.lime = new ColoredStairsBlock("lime_" + this.name, this.settings, this.blockState, this.modid);
-        this.yellow = new ColoredStairsBlock("yellow_" + this.name, this.settings, this.blockState, this.modid);
-        this.lightblue = new ColoredStairsBlock("light_blue_" + this.name, this.settings, this.blockState, this.modid);
-        this.magenta = new ColoredStairsBlock("magenta_" + this.name, this.settings, this.blockState, this.modid);
-        this.orange = new ColoredStairsBlock("orange_" + this.name, this.settings, this.blockState, this.modid);
-        this.white = new ColoredStairsBlock("white_" + this.name, this.settings, this.blockState, this.modid);
+        this.black = new ColoredStairsBlock(this, Color.BLACK);
+        this.red = new ColoredStairsBlock(this, Color.RED);
+        this.green = new ColoredStairsBlock(this, Color.GREEN);
+        this.brown = new ColoredStairsBlock(this, Color.BROWN);
+        this.blue = new ColoredStairsBlock(this, Color.BLUE);
+        this.purple = new ColoredStairsBlock(this, Color.PURPLE);
+        this.cyan = new ColoredStairsBlock(this, Color.CYAN);
+        this.lightgray = new ColoredStairsBlock(this, Color.LIGHT_GRAY);
+        this.gray = new ColoredStairsBlock(this, Color.GRAY);
+        this.pink = new ColoredStairsBlock(this, Color.PINK);
+        this.lime = new ColoredStairsBlock(this, Color.LIME);
+        this.yellow = new ColoredStairsBlock(this, Color.YELLOW);
+        this.lightblue = new ColoredStairsBlock(this, Color.LIGHT_BLUE);
+        this.magenta = new ColoredStairsBlock(this, Color.MAGENTA);
+        this.orange = new ColoredStairsBlock(this, Color.ORANGE);
+        this.white = new ColoredStairsBlock(this, Color.WHITE);
         PaintingModRegistry.registerColoredObject(this);
     }
 }

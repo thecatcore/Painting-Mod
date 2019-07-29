@@ -22,22 +22,22 @@ public class ColoredStoneButton extends ColoredButton {
 
     @Override
     public void createBlocks() {
-        this.black = new ColoredStoneButtonBlock("black_" + this.name, this.settings, this.modid);
-        this.red = new ColoredStoneButtonBlock("red_" + this.name, this.settings, this.modid);
-        this.green = new ColoredStoneButtonBlock("green_" + this.name, this.settings, this.modid);
-        this.brown = new ColoredStoneButtonBlock("brown_" + this.name, this.settings, this.modid);
-        this.blue = new ColoredStoneButtonBlock("blue_" + this.name, this.settings, this.modid);
-        this.purple = new ColoredStoneButtonBlock("purple_" + this.name, this.settings, this.modid);
-        this.cyan = new ColoredStoneButtonBlock("cyan_" + this.name, this.settings, this.modid);
-        this.lightgray = new ColoredStoneButtonBlock("light_gray_" + this.name, this.settings, this.modid);
-        this.gray = new ColoredStoneButtonBlock("gray_" + this.name, this.settings, this.modid);
-        this.pink = new ColoredStoneButtonBlock("pink_" + this.name, this.settings, this.modid);
-        this.lime = new ColoredStoneButtonBlock("lime_" + this.name, this.settings, this.modid);
-        this.yellow = new ColoredStoneButtonBlock("yellow_" + this.name, this.settings, this.modid);
-        this.lightblue = new ColoredStoneButtonBlock("light_blue_" + this.name, this.settings, this.modid);
-        this.magenta = new ColoredStoneButtonBlock("magenta_" + this.name, this.settings, this.modid);
-        this.orange = new ColoredStoneButtonBlock("orange_" + this.name, this.settings, this.modid);
-        this.white = new ColoredStoneButtonBlock("white_" + this.name, this.settings, this.modid);
+        this.black = new ColoredStoneButtonBlock(this, Color.BLACK);
+        this.red = new ColoredStoneButtonBlock(this, Color.RED);
+        this.green = new ColoredStoneButtonBlock(this, Color.GREEN);
+        this.brown = new ColoredStoneButtonBlock(this, Color.BROWN);
+        this.blue = new ColoredStoneButtonBlock(this, Color.BLUE);
+        this.purple = new ColoredStoneButtonBlock(this, Color.PURPLE);
+        this.cyan = new ColoredStoneButtonBlock(this, Color.CYAN);
+        this.lightgray = new ColoredStoneButtonBlock(this, Color.LIGHT_GRAY);
+        this.gray = new ColoredStoneButtonBlock(this, Color.GRAY);
+        this.pink = new ColoredStoneButtonBlock(this, Color.PINK);
+        this.lime = new ColoredStoneButtonBlock(this, Color.LIME);
+        this.yellow = new ColoredStoneButtonBlock(this, Color.YELLOW);
+        this.lightblue = new ColoredStoneButtonBlock(this, Color.LIGHT_BLUE);
+        this.magenta = new ColoredStoneButtonBlock(this, Color.MAGENTA);
+        this.orange = new ColoredStoneButtonBlock(this, Color.ORANGE);
+        this.white = new ColoredStoneButtonBlock(this, Color.WHITE);
         PaintingModRegistry.registerColoredObject(this);
     }
 }
