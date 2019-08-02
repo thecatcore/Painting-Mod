@@ -16,17 +16,22 @@ import net.minecraft.world.loot.context.LootContext;
 import java.util.ArrayList;
 import java.util.List;
 
+import static fr.arthurbambou.paintingmod.mainmod.registery.ModBlocks.BLOCK_MAP;
+
 public class ColoredStairsBlock extends StairsBlock implements ColoredBlock {
 
     private ColoredObject coloredObject;
     private ColoredObject.Color color;
+    private Identifier identifier;
 
     public ColoredStairsBlock(ColoredObject coloredObject, ColoredObject.Color color) {
         super(coloredObject.replace.getDefaultState(), coloredObject.settings);
         this.color = color;
         this.coloredObject = coloredObject;
+        this.identifier = new Identifier(coloredObject.modid, color.name().toLowerCase() + "_" + coloredObject.name);
         Registry.register(Registry.BLOCK, new Identifier(coloredObject.modid, color.name().toLowerCase() + "_" + coloredObject.name), this);
         Registry.register(Registry.ITEM, new Identifier(coloredObject.modid, color.name().toLowerCase() + "_" + coloredObject.name), new ColoredItemBlock(this, new Item.Settings().group(PaintingMod.MOD_STAIRS)));
+        BLOCK_MAP.put(this.identifier, this);
     }
 
     @Override
@@ -34,6 +39,11 @@ public class ColoredStairsBlock extends StairsBlock implements ColoredBlock {
         List<ItemStack> list = new ArrayList<ItemStack>();
         list.add(new ItemStack(this));
         return list;
+    }
+
+    @Override
+    public Identifier getIdentifier() {
+        return this.identifier;
     }
 
     @Override

@@ -43,14 +43,29 @@ public class ColoredBlockRenderer implements BakedModel, FabricBakedModel {
 
     Sprite base;
     ColoredObject.Color coloree;
+    Identifier id;
 
     public ColoredBlockRenderer(Identifier identifier) {
-        base = MinecraftClient.getInstance().getSpriteAtlas().getSprite(new Identifier("block/spruce_planks"));
         for (ColoredObject.Color colore : ColoredObject.Color.values()) {
-            if (identifier.getPath().startsWith(colore.name().toLowerCase())){
+            if (identifier.getPath().replace("block/", "").startsWith(colore.name().toLowerCase())){
                 coloree = colore;
+                id = new Identifier(identifier.getNamespace(), identifier.getPath().replace(colore.name().toLowerCase() + "_", ""));
+                base = MinecraftClient.getInstance().getSpriteAtlas()
+                        .getSprite(id);
+                break;
             }
         }
+        if (coloree == null) {
+            coloree = ColoredObject.Color.BLACK;
+        }
+        if (base == null) {
+            base = MinecraftClient.getInstance().getSpriteAtlas()
+                    .getSprite(identifier);
+        }
+        if (id == null) {
+            id = identifier;
+        }
+        System.out.println("I,    "+id.toString());
     }
 
     @Override
@@ -135,19 +150,19 @@ public class ColoredBlockRenderer implements BakedModel, FabricBakedModel {
         return ModelHelper.MODEL_TRANSFORM_BLOCK;
     }
 
-    protected class ItemProxy extends ModelItemPropertyOverrideList {
-        public ItemProxy() {
-            super(null, null, null, Collections.emptyList());
-        }
-
-        @Override
-        public BakedModel apply(BakedModel bakedModel, ItemStack itemStack, World world, LivingEntity livingEntity) {
-            return ColoredBlockRenderer.this;
-        }
-    }
+//    protected class ItemProxy extends ModelItemPropertyOverrideList {
+//        public ItemProxy() {
+//            super(null, null, null, Collections.emptyList());
+//        }
+//
+//        @Override
+//        public BakedModel apply(BakedModel bakedModel, ItemStack itemStack, World world, LivingEntity livingEntity) {
+//            return ColoredBlockRenderer.this;
+//        }
+//    }
 
     @Override
     public ModelItemPropertyOverrideList getItemPropertyOverrides() {
-        return new ItemProxy();
+        return ModelItemPropertyOverrideList.EMPTY;
     }
 }

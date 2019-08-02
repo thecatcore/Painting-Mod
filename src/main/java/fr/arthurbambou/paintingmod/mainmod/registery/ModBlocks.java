@@ -9,12 +9,16 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
 import net.minecraft.block.PressurePlateBlock;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.Identifier;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class ModBlocks {
     public static final List<ColoredObject> COLORED_BLOCKS = new ArrayList<ColoredObject>();
+    public static final Map<Identifier, Block> BLOCK_MAP = new HashMap<>();
 
     public static Block SOGGY_CLAY;
 
@@ -233,12 +237,12 @@ public class ModBlocks {
         COARSE_DIRT = new ColoredBlock("coarse_dirt", Blocks.COARSE_DIRT);
         PODZOL = new ColoredBlock("podzol", Blocks.PODZOL);
         COBBLESTONE = new ColoredBlock("cobblestone", Blocks.COBBLESTONE);
-        OAK_PLANK = new ColoredBlock("oak_plank", Blocks.OAK_PLANKS);
-        SPRUCE_PLANK = new ColoredBlock("spruce_plank", Blocks.SPRUCE_PLANKS);
-        BIRCH_PLANK = new ColoredBlock("birch_plank", Blocks.BIRCH_PLANKS);
-        JUNGLE_PLANK = new ColoredBlock("jungle_plank", Blocks.JUNGLE_PLANKS);
-        ACACIA_PLANK = new ColoredBlock("acacia_plank", Blocks.ACACIA_PLANKS);
-        DARK_OAK_PLANK = new ColoredBlock("dark_oak_plank", Blocks.DARK_OAK_PLANKS);
+        OAK_PLANK = new ColoredBlock("oak_planks", Blocks.OAK_PLANKS);
+        SPRUCE_PLANK = new ColoredBlock("spruce_planks", Blocks.SPRUCE_PLANKS);
+        BIRCH_PLANK = new ColoredBlock("birch_planks", Blocks.BIRCH_PLANKS);
+        JUNGLE_PLANK = new ColoredBlock("jungle_planks", Blocks.JUNGLE_PLANKS);
+        ACACIA_PLANK = new ColoredBlock("acacia_planks", Blocks.ACACIA_PLANKS);
+        DARK_OAK_PLANK = new ColoredBlock("dark_oak_planks", Blocks.DARK_OAK_PLANKS);
         SAND = new ColoredBlock("sand", Blocks.SAND);
 //        RED_SAND = new ColoredBlock("red_sand", Blocks.RED_SAND);
         GRAVEL = new ColoredBlock("gravel", Blocks.GRAVEL);

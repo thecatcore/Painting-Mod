@@ -25,6 +25,7 @@ import java.util.Collections;
 import java.util.Set;
 import java.util.function.Function;
 
+import static fr.arthurbambou.paintingmod.mainmod.registery.ModBlocks.BLOCK_MAP;
 import static fr.arthurbambou.paintingmod.mainmod.registery.ModBlocks.COLORED_BLOCKS;
 
 public class PaintingModClient implements ClientModInitializer {
@@ -42,7 +43,6 @@ public class PaintingModClient implements ClientModInitializer {
                             }
                         }
                     }
-//                    registry.register(new Identifier("block/spruce_planks"));
                 });
 
 
@@ -52,11 +52,11 @@ public class PaintingModClient implements ClientModInitializer {
             if(!modelIdentifier.getNamespace().equals("paintingmod")){
                 return null;
             }
-            if(!modelIdentifier.getPath().contains("spruce_plank")){
+            if (!(BLOCK_MAP.containsKey(new Identifier(modelIdentifier.getNamespace(), modelIdentifier.getPath())))) {
                 return null;
             }
-            System.out.println(modelIdentifier.toString());
-            Identifier textureID = new Identifier("block/spruce_planks");
+            System.out.println(modelIdentifier.getPath());
+            Identifier textureID = new Identifier("block/" + modelIdentifier.getPath());
             return new UnbakedModel() {
                 @Override
                 public Collection<Identifier> getModelDependencies() {
@@ -70,7 +70,7 @@ public class PaintingModClient implements ClientModInitializer {
 
                 @Override
                 public BakedModel bake(ModelLoader var1, Function<Identifier, Sprite> var2, ModelBakeSettings var3) {
-                    return new ColoredBlockRenderer(modelIdentifier);
+                    return new ColoredBlockRenderer(textureID);
                 }
             };
 

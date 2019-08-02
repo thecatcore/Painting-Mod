@@ -17,6 +17,8 @@ import net.minecraft.world.loot.context.LootContext;
 import java.util.ArrayList;
 import java.util.List;
 
+import static fr.arthurbambou.paintingmod.mainmod.registery.ModBlocks.BLOCK_MAP;
+
 public class ColoredBlockBlock extends Block implements ColoredBlock {
 
     private ColoredObject coloredObject;
@@ -30,6 +32,7 @@ public class ColoredBlockBlock extends Block implements ColoredBlock {
         Registry.register(Registry.BLOCK, new Identifier(coloredObject.modid, color.name().toLowerCase() + "_" + coloredObject.name), this);
         Registry.register(Registry.ITEM, new Identifier(coloredObject.modid, color.name().toLowerCase() + "_" + coloredObject.name), new ColoredItemBlock(this, new Item.Settings().group(PaintingMod.MOD_BLOCKS)));
         this.identifier = new Identifier(coloredObject.modid, color.name().toLowerCase() + "_" + coloredObject.name);
+        BLOCK_MAP.put(this.identifier, this);
     }
 
     @Override
@@ -39,6 +42,7 @@ public class ColoredBlockBlock extends Block implements ColoredBlock {
         return list;
     }
 
+    @Override
     public Identifier getIdentifier() {
         return this.identifier;
     }
