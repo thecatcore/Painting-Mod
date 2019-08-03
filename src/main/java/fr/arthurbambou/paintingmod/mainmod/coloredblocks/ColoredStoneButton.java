@@ -41,9 +41,4 @@ public class ColoredStoneButton extends ColoredButton {
         this.white = new ColoredStoneButtonBlock(this, Color.WHITE);
         PaintingModRegistry.registerColoredObject(this);
     }
-
-    @Override
-    public Identifier[] getTextureIds() {
-        return new Identifier[0];
-    }
 }

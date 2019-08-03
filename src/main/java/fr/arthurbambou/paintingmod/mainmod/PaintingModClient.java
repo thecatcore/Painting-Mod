@@ -37,10 +37,8 @@ public class PaintingModClient implements ClientModInitializer {
         ClientSpriteRegistryCallback.event(SpriteAtlasTexture.BLOCK_ATLAS_TEX)
                 .register((spriteAtlasTexture, registry) -> {
                     for (ColoredObject coloredObject : COLORED_BLOCKS) {
-                        if (coloredObject instanceof ColoredBlock) {
-                            for (Identifier identifier : coloredObject.getTextureIds()) {
-                                registry.register(identifier);
-                            }
+                        for (Identifier identifier : coloredObject.getTextureMap().values()) {
+                            registry.register(identifier);
                         }
                     }
                 });
@@ -55,8 +53,6 @@ public class PaintingModClient implements ClientModInitializer {
             if (!(BLOCK_MAP.containsKey(new Identifier(modelIdentifier.getNamespace(), modelIdentifier.getPath())))) {
                 return null;
             }
-            System.out.println(modelIdentifier.getPath());
-            Identifier textureID = new Identifier("block/" + modelIdentifier.getPath());
             return new UnbakedModel() {
                 @Override
                 public Collection<Identifier> getModelDependencies() {
@@ -70,7 +66,7 @@ public class PaintingModClient implements ClientModInitializer {
 
                 @Override
                 public BakedModel bake(ModelLoader var1, Function<Identifier, Sprite> var2, ModelBakeSettings var3) {
-                    return new ColoredBlockRenderer(textureID);
+                    return new ColoredBlockRenderer((fr.arthurbambou.paintingmod.mainmod.api.ColoredBlock) BLOCK_MAP.get(new Identifier(modelIdentifier.getNamespace(), modelIdentifier.getPath())));
                 }
             };
 

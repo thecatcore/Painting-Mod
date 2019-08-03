@@ -55,9 +55,4 @@ public class ColoredPressurePlate extends ColoredObject {
         this.white = new ColoredPressurePlateBlock(this, Color.WHITE, this.type);
         PaintingModRegistry.registerColoredObject(this);
     }
-
-    @Override
-    public Identifier[] getTextureIds() {
-        return new Identifier[0];
-    }
 }

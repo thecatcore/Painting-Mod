@@ -2,9 +2,12 @@ package fr.arthurbambou.paintingmod.mainmod.api;
 
 import net.minecraft.block.Block;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public abstract class ColoredObject {
     public String name;
@@ -31,6 +34,8 @@ public abstract class ColoredObject {
 
     public Block.Settings settings;
     public String modid;
+
+    private Map<TextureFace,Identifier> textureFaceIdentifierMap = new HashMap<>();
 
     public ColoredObject(String name, Block replace, String modid) {
         this.name = name;
@@ -62,7 +67,14 @@ public abstract class ColoredObject {
 
     public abstract void createBlocks();
 
-    public abstract Identifier[] getTextureIds();
+    public Map<TextureFace, Identifier> getTextureMap() {
+        return this.textureFaceIdentifierMap;
+    }
+
+    public ColoredObject setTextureMap(Map<TextureFace, Identifier> map) {
+        this.textureFaceIdentifierMap = map;
+        return this;
+    }
 
     public ArrayList<Block> getArrayList() {
         ArrayList<Block> list = new ArrayList<>();
@@ -152,5 +164,12 @@ public abstract class ColoredObject {
         public java.awt.Color getColor() {
             return this.color;
         }
+    }
+
+    public enum TextureFace {
+        ALL,
+        TOP,
+        BOTTOM,
+        FACE;
     }
 }

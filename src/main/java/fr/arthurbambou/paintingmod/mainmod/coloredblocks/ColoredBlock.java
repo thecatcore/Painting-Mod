@@ -9,10 +9,17 @@ import net.minecraft.block.Block;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class ColoredBlock extends ColoredObject {
 
     public ColoredBlock(String name, Block replace) {
         super(name, replace, PaintingMod.MODID);
+        Identifier replaceId = Registry.BLOCK.getId(replace);
+        Map<TextureFace, Identifier> map = new HashMap<>();
+        map.put(TextureFace.ALL, new Identifier(replaceId.getNamespace(), "block/" + replaceId.getPath()));
+        this.setTextureMap(map);
         ModBlocks.COLORED_BLOCKS.add(this);
     }
 
@@ -43,12 +50,5 @@ public class ColoredBlock extends ColoredObject {
         this.orange = new ColoredBlockBlock(this, Color.ORANGE);
         this.white = new ColoredBlockBlock(this, Color.WHITE);
         PaintingModRegistry.registerColoredObject(this);
-    }
-
-    @Override
-    public Identifier[] getTextureIds() {
-        Identifier replaceId = Registry.BLOCK.getId(this.replace);
-        Identifier[] identifiers = new Identifier[]{new Identifier(replaceId.getNamespace(), "block/" + replaceId.getPath())};
-        return identifiers;
     }
 }

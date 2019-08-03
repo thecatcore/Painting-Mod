@@ -42,9 +42,4 @@ public class ColoredSlab extends ColoredObject {
         this.white = new ColoredSlabBlock(this, Color.WHITE);
         PaintingModRegistry.registerColoredObject(this);
     }
-
-    @Override
-    public Identifier[] getTextureIds() {
-        return new Identifier[0];
-    }
 }

@@ -42,9 +42,4 @@ public class ColoredWall extends ColoredObject {
         this.white = new ColoredWallBlock(this, Color.WHITE);
         PaintingModRegistry.registerColoredObject(this);
     }
-
-    @Override
-    public Identifier[] getTextureIds() {
-        return new Identifier[0];
-    }
 }

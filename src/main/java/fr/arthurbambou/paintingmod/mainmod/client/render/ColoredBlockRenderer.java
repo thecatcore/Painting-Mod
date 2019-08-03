@@ -1,5 +1,6 @@
 package fr.arthurbambou.paintingmod.mainmod.client.render;
 
+import fr.arthurbambou.paintingmod.mainmod.api.ColoredBlock;
 import fr.arthurbambou.paintingmod.mainmod.api.ColoredObject;
 import fr.arthurbambou.paintingmod.mainmod.utils.PMSprite;
 import net.fabricmc.fabric.api.renderer.v1.Renderer;
@@ -41,31 +42,12 @@ import java.util.function.Supplier;
 
 public class ColoredBlockRenderer implements BakedModel, FabricBakedModel {
 
+    ColoredBlock coloredBlock;
     Sprite base;
-    ColoredObject.Color coloree;
-    Identifier id;
 
-    public ColoredBlockRenderer(Identifier identifier) {
-        for (ColoredObject.Color colore : ColoredObject.Color.values()) {
-            if (identifier.getPath().replace("block/", "").startsWith(colore.name().toLowerCase())){
-                coloree = colore;
-                id = new Identifier(identifier.getNamespace(), identifier.getPath().replace(colore.name().toLowerCase() + "_", ""));
-                base = MinecraftClient.getInstance().getSpriteAtlas()
-                        .getSprite(id);
-                break;
-            }
-        }
-        if (coloree == null) {
-            coloree = ColoredObject.Color.BLACK;
-        }
-        if (base == null) {
-            base = MinecraftClient.getInstance().getSpriteAtlas()
-                    .getSprite(identifier);
-        }
-        if (id == null) {
-            id = identifier;
-        }
-        System.out.println("I,    "+id.toString());
+    public ColoredBlockRenderer(ColoredBlock coloredblock) {
+        coloredBlock = coloredblock;
+        base = MinecraftClient.getInstance().getSpriteAtlas().getSprite(new Identifier("block/spruce_planks"));
     }
 
     @Override
@@ -84,33 +66,36 @@ public class ColoredBlockRenderer implements BakedModel, FabricBakedModel {
         QuadEmitter emitter = builder.getEmitter();
 
         RenderMaterial mat = renderer.materialFinder().disableDiffuse(0, true).find();
-        int color = coloree.getColor().getRGB();
+        int color = coloredBlock.getColor().getColor().getRGB();
 
+        if (coloredBlock.getColoredObject().getTextureMap().containsKey(ColoredObject.TextureFace.ALL)) {
+            Sprite sprite = MinecraftClient.getInstance().getSpriteAtlas().getSprite(coloredBlock.getColoredObject().getTextureMap().get(ColoredObject.TextureFace.ALL));
 
-        emitter.square(Direction.SOUTH, 0, 0, 1, 1, 0)
-                .material(mat)
-                .spriteColor(0, color, color, color, color)
-                .spriteBake(0, base, MutableQuadView.BAKE_LOCK_UV).emit();
-        emitter.square(Direction.EAST, 0, 0, 1, 1, 0)
-                .material(mat)
-                .spriteColor(0, color, color, color, color)
-                .spriteBake(0, base, MutableQuadView.BAKE_LOCK_UV).emit();
-        emitter.square(Direction.WEST, 0, 0, 1, 1, 0)
-                .material(mat)
-                .spriteColor(0, color, color, color, color)
-                .spriteBake(0, base, MutableQuadView.BAKE_LOCK_UV).emit();
-        emitter.square(Direction.NORTH, 0, 0, 1, 1, 0)
-                .material(mat)
-                .spriteColor(0, color, color, color, color)
-                .spriteBake(0, base, MutableQuadView.BAKE_LOCK_UV).emit();
-        emitter.square(Direction.DOWN, 0, 0, 1, 1, 0)
-                .material(mat)
-                .spriteColor(0, color, color, color, color)
-                .spriteBake(0, base, MutableQuadView.BAKE_LOCK_UV).emit();
-        emitter.square(Direction.UP, 0, 0, 1, 1, 0)
-                .material(mat)
-                .spriteColor(0, color, color, color, color)
-                .spriteBake(0, base, MutableQuadView.BAKE_LOCK_UV).emit();
+            emitter.square(Direction.SOUTH, 0, 0, 1, 1, 0)
+                    .material(mat)
+                    .spriteColor(0, color, color, color, color)
+                    .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
+            emitter.square(Direction.EAST, 0, 0, 1, 1, 0)
+                    .material(mat)
+                    .spriteColor(0, color, color, color, color)
+                    .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
+            emitter.square(Direction.WEST, 0, 0, 1, 1, 0)
+                    .material(mat)
+                    .spriteColor(0, color, color, color, color)
+                    .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
+            emitter.square(Direction.NORTH, 0, 0, 1, 1, 0)
+                    .material(mat)
+                    .spriteColor(0, color, color, color, color)
+                    .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
+            emitter.square(Direction.DOWN, 0, 0, 1, 1, 0)
+                    .material(mat)
+                    .spriteColor(0, color, color, color, color)
+                    .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
+            emitter.square(Direction.UP, 0, 0, 1, 1, 0)
+                    .material(mat)
+                    .spriteColor(0, color, color, color, color)
+                    .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
+        }
 
         return builder.build();
     }

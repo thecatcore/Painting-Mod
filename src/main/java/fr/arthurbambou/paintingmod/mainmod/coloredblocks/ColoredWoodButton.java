@@ -40,9 +40,4 @@ public class ColoredWoodButton extends ColoredButton {
         this.white = new ColoredWoodButtonBlock(this, Color.WHITE);
         PaintingModRegistry.registerColoredObject(this);
     }
-
-    @Override
-    public Identifier[] getTextureIds() {
-        return new Identifier[0];
-    }
 }

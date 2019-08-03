@@ -42,9 +42,4 @@ public class ColoredFence extends ColoredObject {
         this.white = new ColoredFenceBlock(this, Color.WHITE);
         PaintingModRegistry.registerColoredObject(this);
     }
-
-    @Override
-    public Identifier[] getTextureIds() {
-        return new Identifier[0];
-    }
 }

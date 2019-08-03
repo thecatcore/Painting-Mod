@@ -47,9 +47,4 @@ public class ColoredStairs extends ColoredObject {
         this.white = new ColoredStairsBlock(this, Color.WHITE);
         PaintingModRegistry.registerColoredObject(this);
     }
-
-    @Override
-    public Identifier[] getTextureIds() {
-        return new Identifier[0];
-    }
 }
