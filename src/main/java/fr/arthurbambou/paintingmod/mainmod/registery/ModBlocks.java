@@ -492,15 +492,25 @@ public class ModBlocks {
 //        DARK_OAK_PLANK_FENCE = new ColoredFence("dark_oak_plank_fence", Blocks.DARK_OAK_FENCE);
 //        NETHER_BRICK_FENCE = new ColoredFence("nether_brick_fence", Blocks.NETHER_BRICK_FENCE);
 //
-//        STONE_PRESSURE_PLATE = new ColoredPressurePlate("stone_pressure_plate", Blocks.STONE_PRESSURE_PLATE, PressurePlateBlock.ActivationRule.MOBS);
-//        OAK_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("oak_plank_pressure_plate", Blocks.OAK_PRESSURE_PLATE, PressurePlateBlock.ActivationRule.EVERYTHING);
-//        SPRUCE_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("spruce_plank_pressure_plate", Blocks.SPRUCE_PRESSURE_PLATE, PressurePlateBlock.ActivationRule.EVERYTHING);
-//        BIRCH_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("birch_plank_pressure_plate", Blocks.BIRCH_PRESSURE_PLATE, PressurePlateBlock.ActivationRule.EVERYTHING);
-//        JUNGLE_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("jungle_plank_pressure_plate", Blocks.JUNGLE_PRESSURE_PLATE, PressurePlateBlock.ActivationRule.EVERYTHING);
-//        ACACIA_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("acacia_plank_pressure_plate", Blocks.ACACIA_PRESSURE_PLATE, PressurePlateBlock.ActivationRule.EVERYTHING);
-//        DARK_OAK_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("dark_oak_plank_pressure_plate", Blocks.DARK_OAK_PRESSURE_PLATE, PressurePlateBlock.ActivationRule.EVERYTHING);
-//        LIGHT_WEIGHTED_PRESSURE_PLATE = new ColoredWeightedPressurePlate("light_weighted_pressure_plate", Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE, 15);
-//        HEAVY_WEIGHTED_PRESSURE_PLATE = new ColoredWeightedPressurePlate("heavy_weighted_pressure_plate", Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE, 150);
+        STONE_PRESSURE_PLATE = new ColoredPressurePlate("stone_pressure_plate", Blocks.STONE_PRESSURE_PLATE, PressurePlateBlock.ActivationRule.MOBS);
+        OAK_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("oak_plank_pressure_plate", Blocks.OAK_PRESSURE_PLATE, PressurePlateBlock.ActivationRule.EVERYTHING);
+        OAK_PLANK_PRESSURE_PLATE.getTextureMap().clear();
+        OAK_PLANK_PRESSURE_PLATE.getTextureMap().put(ColoredObject.TextureFace.ALL, new Identifier("block/oak_planks"));
+        SPRUCE_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("spruce_plank_pressure_plate", Blocks.SPRUCE_PRESSURE_PLATE, PressurePlateBlock.ActivationRule.EVERYTHING);
+        SPRUCE_PLANK_PRESSURE_PLATE.getTextureMap().clear();
+        SPRUCE_PLANK_PRESSURE_PLATE.getTextureMap().put(ColoredObject.TextureFace.ALL, new Identifier("block/spruce_planks"));
+        BIRCH_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("birch_plank_pressure_plate", Blocks.BIRCH_PRESSURE_PLATE, PressurePlateBlock.ActivationRule.EVERYTHING);
+        BIRCH_PLANK_PRESSURE_PLATE.getTextureMap().clear();
+        BIRCH_PLANK_PRESSURE_PLATE.getTextureMap().put(ColoredObject.TextureFace.ALL, new Identifier("block/birch_planks"));
+        JUNGLE_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("jungle_plank_pressure_plate", Blocks.JUNGLE_PRESSURE_PLATE, PressurePlateBlock.ActivationRule.EVERYTHING);
+        JUNGLE_PLANK_PRESSURE_PLATE.getTextureMap().clear();
+        JUNGLE_PLANK_PRESSURE_PLATE.getTextureMap().put(ColoredObject.TextureFace.ALL, new Identifier("block/jungle_planks"));
+        ACACIA_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("acacia_plank_pressure_plate", Blocks.ACACIA_PRESSURE_PLATE, PressurePlateBlock.ActivationRule.EVERYTHING);
+        ACACIA_PLANK_PRESSURE_PLATE.getTextureMap().clear();
+        ACACIA_PLANK_PRESSURE_PLATE.getTextureMap().put(ColoredObject.TextureFace.ALL, new Identifier("block/acacia_planks"));
+        DARK_OAK_PLANK_PRESSURE_PLATE = new ColoredPressurePlate("dark_oak_plank_pressure_plate", Blocks.DARK_OAK_PRESSURE_PLATE, PressurePlateBlock.ActivationRule.EVERYTHING);
+        DARK_OAK_PLANK_PRESSURE_PLATE.getTextureMap().clear();
+        DARK_OAK_PLANK_PRESSURE_PLATE.getTextureMap().put(ColoredObject.TextureFace.ALL, new Identifier("block/dark_oak_planks"));
 //
 //        STONE_BUTTON = new ColoredStoneButton("stone_button", Blocks.STONE_BUTTON);
 //        OAK_PLANK_BUTTON = new ColoredWoodButton("oak_plank_button", Blocks.OAK_BUTTON);

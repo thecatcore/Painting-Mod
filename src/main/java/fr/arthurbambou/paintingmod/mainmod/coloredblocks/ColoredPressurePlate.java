@@ -8,6 +8,7 @@ import fr.arthurbambou.paintingmod.mainmod.registery.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.PressurePlateBlock;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 public class ColoredPressurePlate extends ColoredObject {
 
@@ -16,6 +17,8 @@ public class ColoredPressurePlate extends ColoredObject {
     public ColoredPressurePlate(String name, Block replace, PressurePlateBlock.ActivationRule type) {
         super(name,replace,PaintingMod.MODID);
         this.type = type;
+        Identifier replaceId = Registry.BLOCK.getId(replace);
+        this.getTextureMap().put(TextureFace.ALL, new Identifier(replaceId.getNamespace(), "block/" + replaceId.getPath().replace("_pressure_plate", "")));
         ModBlocks.COLORED_BLOCKS.add(this);
     }
 
