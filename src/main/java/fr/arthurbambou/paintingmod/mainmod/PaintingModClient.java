@@ -4,6 +4,7 @@ import com.swordglowsblue.artifice.api.Artifice;
 import fr.arthurbambou.paintingmod.mainmod.api.ColoredObject;
 import fr.arthurbambou.paintingmod.mainmod.blocks.ColoredBlockBlock;
 import fr.arthurbambou.paintingmod.mainmod.client.render.ColoredBlockRenderer;
+import fr.arthurbambou.paintingmod.mainmod.client.render.ColoredSlabRenderer;
 import fr.arthurbambou.paintingmod.mainmod.coloredblocks.ColoredBlock;
 import fr.arthurbambou.paintingmod.mainmod.utils.artifice.ResourcePackUtils;
 import net.fabricmc.api.ClientModInitializer;
@@ -11,6 +12,7 @@ import net.fabricmc.fabric.api.client.model.ModelLoadingRegistry;
 import net.fabricmc.fabric.api.client.model.ModelProviderContext;
 import net.fabricmc.fabric.api.event.client.ClientSpriteRegistryCallback;
 import net.minecraft.block.Block;
+import net.minecraft.block.SlabBlock;
 import net.minecraft.client.render.model.BakedModel;
 import net.minecraft.client.render.model.ModelBakeSettings;
 import net.minecraft.client.render.model.ModelLoader;
@@ -50,7 +52,9 @@ public class PaintingModClient implements ClientModInitializer {
             if(!modelIdentifier.getNamespace().equals("paintingmod")){
                 return null;
             }
-            if (!(BLOCK_MAP.containsKey(new Identifier(modelIdentifier.getNamespace(), modelIdentifier.getPath())))) {
+            Identifier identifier = new Identifier(modelIdentifier.getNamespace(), modelIdentifier.getPath()
+                    .replace("_top", ""));
+            if (!(BLOCK_MAP.containsKey(identifier))) {
                 return null;
             }
             return new UnbakedModel() {
@@ -66,7 +70,12 @@ public class PaintingModClient implements ClientModInitializer {
 
                 @Override
                 public BakedModel bake(ModelLoader var1, Function<Identifier, Sprite> var2, ModelBakeSettings var3) {
-                    return new ColoredBlockRenderer((fr.arthurbambou.paintingmod.mainmod.api.ColoredBlock) BLOCK_MAP.get(new Identifier(modelIdentifier.getNamespace(), modelIdentifier.getPath())));
+                    if (BLOCK_MAP.get(identifier) instanceof SlabBlock) {
+                        return new ColoredSlabRenderer((fr.arthurbambou.paintingmod.mainmod.api.ColoredBlock) BLOCK_MAP.get(identifier));
+                    }
+                    return new ColoredBlockRenderer(
+                            (fr.arthurbambou.paintingmod.mainmod.api.ColoredBlock) BLOCK_MAP.get(
+                                    new Identifier(modelIdentifier.getNamespace(), modelIdentifier.getPath())));
                 }
             };
 

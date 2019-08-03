@@ -7,11 +7,17 @@ import fr.arthurbambou.paintingmod.mainmod.blocks.ColoredSlabBlock;
 import fr.arthurbambou.paintingmod.mainmod.registery.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 public class ColoredSlab extends ColoredObject {
 
     public ColoredSlab(String name, Block replace) {
         super(name,replace,PaintingMod.MODID);
+        Identifier replaceId = Registry.BLOCK.getId(replace);
+        Identifier id = new Identifier(replaceId.getNamespace(), "block/" + replaceId.getPath().replace("_slab", ""));
+        this.getTextureMap().put(TextureFace.SIDE, id);
+        this.getTextureMap().put(TextureFace.BOTTOM, id);
+        this.getTextureMap().put(TextureFace.TOP, id);
         ModBlocks.COLORED_BLOCKS.add(this);
     }
 

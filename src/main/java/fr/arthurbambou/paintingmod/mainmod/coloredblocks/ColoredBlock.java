@@ -17,9 +17,7 @@ public class ColoredBlock extends ColoredObject {
     public ColoredBlock(String name, Block replace) {
         super(name, replace, PaintingMod.MODID);
         Identifier replaceId = Registry.BLOCK.getId(replace);
-        Map<TextureFace, Identifier> map = new HashMap<>();
-        map.put(TextureFace.ALL, new Identifier(replaceId.getNamespace(), "block/" + replaceId.getPath()));
-        this.setTextureMap(map);
+        this.getTextureMap().put(TextureFace.ALL, new Identifier(replaceId.getNamespace(), "block/" + replaceId.getPath()));
         ModBlocks.COLORED_BLOCKS.add(this);
     }
 

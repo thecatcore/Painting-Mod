@@ -169,19 +169,19 @@ public class ColoredBlockRenderer implements BakedModel, FabricBakedModel {
         return ModelHelper.MODEL_TRANSFORM_BLOCK;
     }
 
-//    protected class ItemProxy extends ModelItemPropertyOverrideList {
-//        public ItemProxy() {
-//            super(null, null, null, Collections.emptyList());
-//        }
-//
-//        @Override
-//        public BakedModel apply(BakedModel bakedModel, ItemStack itemStack, World world, LivingEntity livingEntity) {
-//            return ColoredBlockRenderer.this;
-//        }
-//    }
+    protected class ItemProxy extends ModelItemPropertyOverrideList {
+        public ItemProxy() {
+            super(null, null, null, Collections.emptyList());
+        }
+
+        @Override
+        public BakedModel apply(BakedModel bakedModel_1, ItemStack itemStack_1, World world_1, LivingEntity livingEntity_1) {
+            return ColoredBlockRenderer.this;
+        }
+    }
 
     @Override
     public ModelItemPropertyOverrideList getItemPropertyOverrides() {
-        return ModelItemPropertyOverrideList.EMPTY;
+        return new ItemProxy();
     }
 }
