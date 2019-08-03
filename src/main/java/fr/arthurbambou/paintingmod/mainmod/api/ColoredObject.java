@@ -170,6 +170,6 @@ public abstract class ColoredObject {
         ALL,
         TOP,
         BOTTOM,
-        FACE;
+        SIDE;
     }
 }

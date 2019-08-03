@@ -47,7 +47,7 @@ public class ColoredBlockRenderer implements BakedModel, FabricBakedModel {
 
     public ColoredBlockRenderer(ColoredBlock coloredblock) {
         coloredBlock = coloredblock;
-        base = MinecraftClient.getInstance().getSpriteAtlas().getSprite(new Identifier("block/spruce_planks"));
+        base = MinecraftClient.getInstance().getSpriteAtlas().getSprite((Identifier) this.coloredBlock.getColoredObject().getTextureMap().values().toArray()[0]);
     }
 
     @Override
@@ -95,6 +95,40 @@ public class ColoredBlockRenderer implements BakedModel, FabricBakedModel {
                     .material(mat)
                     .spriteColor(0, color, color, color, color)
                     .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
+        } else {
+            if (coloredBlock.getColoredObject().getTextureMap().containsKey(ColoredObject.TextureFace.BOTTOM)) {
+                Sprite sprite = MinecraftClient.getInstance().getSpriteAtlas().getSprite(coloredBlock.getColoredObject().getTextureMap().get(ColoredObject.TextureFace.BOTTOM));
+                emitter.square(Direction.DOWN, 0, 0, 1, 1, 0)
+                        .material(mat)
+                        .spriteColor(0, color, color, color, color)
+                        .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
+            }
+            if (coloredBlock.getColoredObject().getTextureMap().containsKey(ColoredObject.TextureFace.TOP)) {
+                Sprite sprite = MinecraftClient.getInstance().getSpriteAtlas().getSprite(coloredBlock.getColoredObject().getTextureMap().get(ColoredObject.TextureFace.TOP));
+                emitter.square(Direction.UP, 0, 0, 1, 1, 0)
+                        .material(mat)
+                        .spriteColor(0, color, color, color, color)
+                        .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
+            }
+            if (coloredBlock.getColoredObject().getTextureMap().containsKey(ColoredObject.TextureFace.SIDE)) {
+                Sprite sprite = MinecraftClient.getInstance().getSpriteAtlas().getSprite(coloredBlock.getColoredObject().getTextureMap().get(ColoredObject.TextureFace.SIDE));
+                emitter.square(Direction.SOUTH, 0, 0, 1, 1, 0)
+                        .material(mat)
+                        .spriteColor(0, color, color, color, color)
+                        .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
+                emitter.square(Direction.EAST, 0, 0, 1, 1, 0)
+                        .material(mat)
+                        .spriteColor(0, color, color, color, color)
+                        .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
+                emitter.square(Direction.WEST, 0, 0, 1, 1, 0)
+                        .material(mat)
+                        .spriteColor(0, color, color, color, color)
+                        .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
+                emitter.square(Direction.NORTH, 0, 0, 1, 1, 0)
+                        .material(mat)
+                        .spriteColor(0, color, color, color, color)
+                        .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
+            }
         }
 
         return builder.build();

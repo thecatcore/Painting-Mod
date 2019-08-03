@@ -29,7 +29,6 @@ public class ModBlocks {
     public static ColoredObject POLISHED_DIORITE;
     public static ColoredObject ANDESITE;
     public static ColoredObject POLISHED_ANDESITE;
-    public static ColoredObject GRASS_BLOCK;
     public static ColoredObject DIRT;
     public static ColoredObject COARSE_DIRT;
     public static ColoredObject PODZOL;
@@ -228,10 +227,13 @@ public class ModBlocks {
         POLISHED_DIORITE = new ColoredBlock("polished_diorite", Blocks.POLISHED_DIORITE);
         ANDESITE = new ColoredBlock("andesite", Blocks.ANDESITE);
         POLISHED_ANDESITE = new ColoredBlock("polished_andesite", Blocks.POLISHED_ANDESITE);
-        GRASS_BLOCK = new ColoredBlock("grass_block", Blocks.GRASS_BLOCK);
         DIRT = new ColoredBlock("dirt", Blocks.DIRT);
         COARSE_DIRT = new ColoredBlock("coarse_dirt", Blocks.COARSE_DIRT);
         PODZOL = new ColoredBlock("podzol", Blocks.PODZOL);
+        PODZOL.getTextureMap().clear();
+        PODZOL.getTextureMap().put(ColoredObject.TextureFace.TOP, new Identifier("block/podzol_top"));
+        PODZOL.getTextureMap().put(ColoredObject.TextureFace.BOTTOM, new Identifier("block/dirt"));
+        PODZOL.getTextureMap().put(ColoredObject.TextureFace.SIDE, new Identifier("block/podzol_side"));
         COBBLESTONE = new ColoredBlock("cobblestone", Blocks.COBBLESTONE);
         OAK_PLANK = new ColoredBlock("oak_planks", Blocks.OAK_PLANKS);
         SPRUCE_PLANK = new ColoredBlock("spruce_planks", Blocks.SPRUCE_PLANKS);
@@ -295,6 +297,10 @@ public class ModBlocks {
         END_STONE = new ColoredBlock("end_stone", Blocks.END_STONE);
         EMERALD_BLOCK = new ColoredBlock("emerald_block", Blocks.EMERALD_BLOCK);
         QUARTZ_BLOCK = new ColoredBlock("quartz_block", Blocks.QUARTZ_BLOCK);
+        QUARTZ_BLOCK.getTextureMap().clear();
+        QUARTZ_BLOCK.getTextureMap().put(ColoredObject.TextureFace.TOP, new Identifier("block/quartz_block_top"));
+        QUARTZ_BLOCK.getTextureMap().put(ColoredObject.TextureFace.BOTTOM, new Identifier("block/quartz_block_top"));
+        QUARTZ_BLOCK.getTextureMap().put(ColoredObject.TextureFace.SIDE, new Identifier("block/quartz_block_side"));
         PRISMARINE = new ColoredBlock("prismarine", Blocks.PRISMARINE);
         PRISMARINE_BRICK = new ColoredBlock("prismarine_brick", Blocks.PRISMARINE_BRICKS);
         DARK_PRISMARINE = new ColoredBlock("dark_prismarine", Blocks.DARK_PRISMARINE);
