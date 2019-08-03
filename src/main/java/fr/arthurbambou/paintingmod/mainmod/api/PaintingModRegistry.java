@@ -31,7 +31,7 @@ public class PaintingModRegistry {
     }
 
     public static void finishRegister() {
-        LOGGER.info("PaintingMod Registered " + COLORED_OBJECTS.size() + " Colored Objects");
+        LOGGER.info("PaintingMod Registered " + COLORED_OBJECTS.size() + " Colored Objects either " + (COLORED_OBJECTS.size()*16) + " Blocks");
         for (ColoredFunction coloredFunction : COLORED_FUNCTIONS.values()) {
             List<ColoredObject> list = new ArrayList<>();
             String className = coloredFunction.getColoredObjectType().getName();

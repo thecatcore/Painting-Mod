@@ -34,19 +34,10 @@ import java.util.List;
 import java.util.Random;
 import java.util.function.Supplier;
 
-public class ColoredSlabRenderer implements BakedModel, FabricBakedModel {
-
-    ColoredBlock coloredBlock;
-    Sprite base;
+public class ColoredSlabRenderer extends AbstractColoredRenderer {
 
     public ColoredSlabRenderer(ColoredBlock coloredblock) {
-        coloredBlock = coloredblock;
-        base = MinecraftClient.getInstance().getSpriteAtlas().getSprite((Identifier) this.coloredBlock.getColoredObject().getTextureMap().values().toArray()[0]);
-    }
-
-    @Override
-    public boolean isVanillaAdapter() {
-        return false;
+        super(coloredblock);
     }
 
     @Override
@@ -126,36 +117,6 @@ public class ColoredSlabRenderer implements BakedModel, FabricBakedModel {
     @Override
     public void emitItemQuads(ItemStack stack, Supplier<Random> randomSupplier, RenderContext context) {
         context.meshConsumer().accept(mesh(SlabType.BOTTOM));
-    }
-
-    @Override
-    public List<BakedQuad> getQuads(BlockState var1, Direction var2, Random var3) {
-        return Collections.emptyList();
-    }
-
-    @Override
-    public boolean useAmbientOcclusion() {
-        return true;
-    }
-
-    @Override
-    public boolean hasDepthInGui() {
-        return true;
-    }
-
-    @Override
-    public boolean isBuiltin() {
-        return true;
-    }
-
-    @Override
-    public Sprite getSprite() {
-        return base;
-    }
-
-    @Override
-    public ModelTransformation getTransformation() {
-        return ModelHelper.MODEL_TRANSFORM_BLOCK;
     }
 
     protected class ItemProxy extends ModelItemPropertyOverrideList {
