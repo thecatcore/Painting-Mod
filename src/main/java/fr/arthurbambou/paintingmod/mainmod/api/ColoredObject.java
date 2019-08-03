@@ -139,11 +139,11 @@ public abstract class ColoredObject {
 
 
     public enum Color {
-        BLACK(0,0,0),
+        BLACK(40,40,40),
         BLUE(0,51,121),
         BROWN(153,67,0),
         CYAN(51,153,204),
-        GRAY(40,40,40),
+        GRAY(100,100,100),
         GREEN(72,91,0),
         LIGHT_BLUE(0,153,255),
         LIGHT_GRAY(152,152,152),
