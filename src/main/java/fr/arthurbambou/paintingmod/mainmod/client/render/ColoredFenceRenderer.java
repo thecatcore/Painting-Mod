@@ -51,8 +51,8 @@ public class ColoredFenceRenderer extends AbstractColoredRenderer {
         if (inventory) {
             inventoryModel(emitter, mat, color, sprite);
         } else {
-//            upModel(emitter, mat, color, sprite);
-//            if (south) southModel(emitter, mat, color, sprite);
+            postModel(emitter, mat, color, sprite);
+            if (south) southModel(emitter, mat, color, sprite);
 //            if (north) northModel(emitter, mat, color, sprite);
 //            if (east) eastModel(emitter, mat, color, sprite);
 //            if (west) westModel(emitter, mat, color, sprite);
@@ -168,55 +168,55 @@ public class ColoredFenceRenderer extends AbstractColoredRenderer {
                 .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
     }
 
-    private void upModel(QuadEmitter emitter, RenderMaterial mat, int color, Sprite sprite) {
-        emitter.square(Direction.SOUTH, 0.25F, 0, 0.75F, 1.0F, 0.25F)
+    private void postModel(QuadEmitter emitter, RenderMaterial mat, int color, Sprite sprite) {
+        emitter.square(Direction.SOUTH, 0.375F, 0, 0.625F, 1.0F, 0.375F)
                 .material(mat)
                 .spriteColor(0, color, color, color, color)
                 .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
-        emitter.square(Direction.EAST, 0.25F, 0, 0.75F, 1.0F, 0.25F)
+        emitter.square(Direction.EAST, 0.375F, 0, 0.625F, 1.0F, 0.375F)
                 .material(mat)
                 .spriteColor(0, color, color, color, color)
                 .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
-        emitter.square(Direction.WEST, (float) 0.25F, 0, 0.75F, 1.0F, 0.25F)
+        emitter.square(Direction.WEST, 0.375F, 0, 0.625F, 1.0F, 0.375F)
                 .material(mat)
                 .spriteColor(0, color, color, color, color)
                 .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
-        emitter.square(Direction.NORTH, (float) 0.25F, 0, 0.75F, 1.0F, 0.25F)
+        emitter.square(Direction.NORTH, 0.375F, 0, 0.625F, 1.0F, 0.375F)
                 .material(mat)
                 .spriteColor(0, color, color, color, color)
                 .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
-        emitter.square(Direction.DOWN, (float) 0.25F, 0.25F, 0.75F, 0.75F, 0)
+        emitter.square(Direction.DOWN, 0.375F, 0.375F, 0.625F, 0.625F, 0)
                 .material(mat)
                 .spriteColor(0, color, color, color, color)
                 .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
-        emitter.square(Direction.UP, (float) 0.25F, 0.25F, 0.75F, 0.75F, 0)
+        emitter.square(Direction.UP, 0.375F, 0.375F, 0.625F, 0.625F, 0)
                 .material(mat)
                 .spriteColor(0, color, color, color, color)
                 .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
     }
 
     private void southModel(QuadEmitter emitter, RenderMaterial mat, int color, Sprite sprite) {
-        emitter.square(Direction.SOUTH, 0.3125F, 0, 0.6875F, 0.875F, 0.0F)
+//        emitter.square(Direction.SOUTH, 0.3125F, 0, 0.6875F, 0.875F, 0.0F)
+//                .material(mat)
+//                .spriteColor(0, color, color, color, color)
+//                .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
+        emitter.square(Direction.EAST, 0F, 0.0625F, 0.5625F, 0.25F, 0)
                 .material(mat)
                 .spriteColor(0, color, color, color, color)
                 .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
-        emitter.square(Direction.EAST, 0F, 0, 0.6875F, 0.875F, 0.3125F)
+        emitter.square(Direction.WEST, 0, 0.0625F, 0.5625F, 0.25F, 0)
                 .material(mat)
                 .spriteColor(0, color, color, color, color)
                 .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
-        emitter.square(Direction.WEST, 1F-0.6875F, 0, 1F, 0.875F, 0.3125F)
+        emitter.square(Direction.NORTH, 0.4375F, 0.0625F, 0.5625F, 0.25F, 0)
                 .material(mat)
                 .spriteColor(0, color, color, color, color)
                 .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
-        emitter.square(Direction.NORTH, 0.3125F, 0, 0.6875F, 0.875F, 0.3125F)
+        emitter.square(Direction.DOWN, 0.4375F, 0, 0.5625F, 0.5625F, 0.0625F)
                 .material(mat)
                 .spriteColor(0, color, color, color, color)
                 .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
-        emitter.square(Direction.DOWN, 0.3125F, 0.3125F, 0.6875F, 1F, 0)
-                .material(mat)
-                .spriteColor(0, color, color, color, color)
-                .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
-        emitter.square(Direction.UP, 0.3125F, 0.0F, 0.6875F, 0.6875F, 1-0.875F)
+        emitter.square(Direction.UP, 0.4375F, 0, 0.5625F, 0.5625F, 0.0625F)
                 .material(mat)
                 .spriteColor(0, color, color, color, color)
                 .spriteBake(0, sprite, MutableQuadView.BAKE_LOCK_UV).emit();
