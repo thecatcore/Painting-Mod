@@ -107,7 +107,8 @@ curseforge {
  		releaseType = "release"
 		changelog = file("changelog.txt")
         gameVersionStrings.clear()
-        gameVersionStrings.add("1.14-Snapshot")
+		gameVersionStrings.add("1.14.4")
+		gameVersionStrings.add("Fabric")
         mainArtifact(file("build/libs/${archivesBaseName}-${version}.jar")) {
             displayName = "[Fabric " + minecraft_version + "] " + version
 			relations {
