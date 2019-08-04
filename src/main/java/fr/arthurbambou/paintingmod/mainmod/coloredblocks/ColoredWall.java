@@ -7,11 +7,14 @@ import fr.arthurbambou.paintingmod.mainmod.blocks.ColoredWallBlock;
 import fr.arthurbambou.paintingmod.mainmod.registery.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 public class ColoredWall extends ColoredObject {
 
     public ColoredWall(String name, Block replace) {
         super(name,replace,PaintingMod.MODID);
+        Identifier replaceId = Registry.BLOCK.getId(replace);
+        this.getTextureMap().put(TextureFace.ALL, new Identifier(replaceId.getNamespace(), "block/" + replaceId.getPath().replace("_wall", "")));
         ModBlocks.COLORED_BLOCKS.add(this);
     }
 

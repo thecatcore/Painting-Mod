@@ -461,22 +461,30 @@ public class ModBlocks {
         ANDESITE_SLAB = new ColoredSlab("andesite_slab", Blocks.ANDESITE_SLAB);
         POLISHED_ANDESITE_SLAB = new ColoredSlab("polished_andesite_slab", Blocks.POLISHED_ANDESITE_SLAB);
         DIORITE_SLAB = new ColoredSlab("diorite_slab", Blocks.DIORITE_SLAB);
-//
-//        COBBLESTONE_WALL = new ColoredWall("cobblestone_wall", Blocks.COBBLESTONE_WALL);
-//        MOSSY_COBBLESTONE_WALL = new ColoredWall("mossy_cobblestone_wall", Blocks.MOSSY_COBBLESTONE_WALL);
-//        BRICK_WALL = new ColoredWall("brick_wall", Blocks.BRICK_WALL);
-//        PRISMARINE_WALL = new ColoredWall("prismarine_wall", Blocks.PRISMARINE_WALL);
-////        RED_SANDSTONE_WALL = new ColoredWall("red_sandstone_wall", Blocks.RED_SANDSTONE_WALL);
-//        MOSSY_STONE_BRICK_WALL = new ColoredWall("mossy_stone_brick_wall", Blocks.MOSSY_STONE_BRICK_WALL);
-//        GRANITE_WALL = new ColoredWall("granite_wall", Blocks.GRANITE_WALL);
-//        STONE_BRICK_WALL = new ColoredWall("stone_brick_wall", Blocks.STONE_BRICK_WALL);
-//        NETHER_BRICK_WALL = new ColoredWall("nether_brick_wall", Blocks.NETHER_BRICK_WALL);
-//        ANDESITE_WALL = new ColoredWall("andesite_wall", Blocks.ANDESITE_WALL);
-////        RED_NETHER_BRICK_WALL = new ColoredWall("red_nether_brick_wall", Blocks.RED_NETHER_BRICK_WALL);
-//        SANDSTONE_WALL = new ColoredWall("sandstone_wall", Blocks.SANDSTONE_WALL);
-//        END_STONE_BRICK_WALL = new ColoredWall("end_stone_brick_wall", Blocks.END_STONE_BRICK_WALL);
-//        DIORITE_WALL = new ColoredWall("diorite_wall", Blocks.DIORITE_WALL);
-//
+
+        COBBLESTONE_WALL = new ColoredWall("cobblestone_wall", Blocks.COBBLESTONE_WALL);
+        MOSSY_COBBLESTONE_WALL = new ColoredWall("mossy_cobblestone_wall", Blocks.MOSSY_COBBLESTONE_WALL);
+        BRICK_WALL = new ColoredWall("brick_wall", Blocks.BRICK_WALL);
+        BRICK_WALL.getTextureMap().clear();
+        BRICK_WALL.getTextureMap().put(ColoredObject.TextureFace.ALL, new Identifier("block/bricks"));
+        PRISMARINE_WALL = new ColoredWall("prismarine_wall", Blocks.PRISMARINE_WALL);
+        MOSSY_STONE_BRICK_WALL = new ColoredWall("mossy_stone_brick_wall", Blocks.MOSSY_STONE_BRICK_WALL);
+        MOSSY_STONE_BRICK_WALL.getTextureMap().clear();
+        MOSSY_STONE_BRICK_WALL.getTextureMap().put(ColoredObject.TextureFace.ALL, new Identifier("block/mossy_stone_bricks"));
+        GRANITE_WALL = new ColoredWall("granite_wall", Blocks.GRANITE_WALL);
+        STONE_BRICK_WALL = new ColoredWall("stone_brick_wall", Blocks.STONE_BRICK_WALL);
+        STONE_BRICK_WALL.getTextureMap().clear();
+        STONE_BRICK_WALL.getTextureMap().put(ColoredObject.TextureFace.ALL, new Identifier("block/stone_bricks"));
+        NETHER_BRICK_WALL = new ColoredWall("nether_brick_wall", Blocks.NETHER_BRICK_WALL);
+        NETHER_BRICK_WALL.getTextureMap().clear();
+        NETHER_BRICK_WALL.getTextureMap().put(ColoredObject.TextureFace.ALL, new Identifier("block/nether_bricks"));
+        ANDESITE_WALL = new ColoredWall("andesite_wall", Blocks.ANDESITE_WALL);
+        SANDSTONE_WALL = new ColoredWall("sandstone_wall", Blocks.SANDSTONE_WALL);
+        END_STONE_BRICK_WALL = new ColoredWall("end_stone_brick_wall", Blocks.END_STONE_BRICK_WALL);
+        END_STONE_BRICK_WALL.getTextureMap().clear();
+        END_STONE_BRICK_WALL.getTextureMap().put(ColoredObject.TextureFace.ALL, new Identifier("block/end_stone_bricks"));
+        DIORITE_WALL = new ColoredWall("diorite_wall", Blocks.DIORITE_WALL);
+
 //        OAK_PLANK_FENCE_GATE = new ColoredFenceGate("oak_plank_fence_gate", Blocks.OAK_FENCE_GATE);
 //        SPRUCE_PLANK_FENCE_GATE = new ColoredFenceGate("spruce_plank_fence_gate", Blocks.SPRUCE_FENCE_GATE);
 //        BIRCH_PLANK_FENCE_GATE = new ColoredFenceGate("birch_plank_fence_gate", Blocks.BIRCH_FENCE_GATE);
