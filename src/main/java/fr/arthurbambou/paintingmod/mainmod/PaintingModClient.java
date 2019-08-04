@@ -3,20 +3,14 @@ package fr.arthurbambou.paintingmod.mainmod;
 import com.swordglowsblue.artifice.api.Artifice;
 import fr.arthurbambou.paintingmod.mainmod.api.ColoredObject;
 import fr.arthurbambou.paintingmod.mainmod.blocks.ColoredBlockBlock;
-import fr.arthurbambou.paintingmod.mainmod.client.render.ColoredBlockRenderer;
-import fr.arthurbambou.paintingmod.mainmod.client.render.ColoredPPRenderer;
-import fr.arthurbambou.paintingmod.mainmod.client.render.ColoredSlabRenderer;
-import fr.arthurbambou.paintingmod.mainmod.client.render.ColoredWallRenderer;
+import fr.arthurbambou.paintingmod.mainmod.client.render.*;
 import fr.arthurbambou.paintingmod.mainmod.coloredblocks.ColoredBlock;
 import fr.arthurbambou.paintingmod.mainmod.utils.artifice.ResourcePackUtils;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.model.ModelLoadingRegistry;
 import net.fabricmc.fabric.api.client.model.ModelProviderContext;
 import net.fabricmc.fabric.api.event.client.ClientSpriteRegistryCallback;
-import net.minecraft.block.Block;
-import net.minecraft.block.PressurePlateBlock;
-import net.minecraft.block.SlabBlock;
-import net.minecraft.block.WallBlock;
+import net.minecraft.block.*;
 import net.minecraft.client.render.model.BakedModel;
 import net.minecraft.client.render.model.ModelBakeSettings;
 import net.minecraft.client.render.model.ModelLoader;
@@ -83,6 +77,9 @@ public class PaintingModClient implements ClientModInitializer {
                     }
                     if (BLOCK_MAP.get(identifier) instanceof WallBlock) {
                         return new ColoredWallRenderer((fr.arthurbambou.paintingmod.mainmod.api.ColoredBlock) BLOCK_MAP.get(identifier));
+                    }
+                    if (BLOCK_MAP.get(identifier) instanceof FenceBlock) {
+                        return new ColoredFenceRenderer((fr.arthurbambou.paintingmod.mainmod.api.ColoredBlock) BLOCK_MAP.get(identifier));
                     }
                     return new ColoredBlockRenderer(
                             (fr.arthurbambou.paintingmod.mainmod.api.ColoredBlock) BLOCK_MAP.get(

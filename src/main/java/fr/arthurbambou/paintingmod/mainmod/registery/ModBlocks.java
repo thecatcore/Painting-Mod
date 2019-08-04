@@ -492,7 +492,8 @@ public class ModBlocks {
 //        ACACIA_PLANK_FENCE_GATE = new ColoredFenceGate("acacia_plank_fence_gate", Blocks.ACACIA_FENCE_GATE);
 //        DARK_OAK_PLANK_FENCE_GATE = new ColoredFenceGate("dark_oak_plank_fence_gate", Blocks.DARK_OAK_FENCE_GATE);
 //
-//        OAK_PLANK_FENCE = new ColoredFence("oak_plank_fence", Blocks.OAK_FENCE);
+        OAK_PLANK_FENCE = new ColoredFence("oak_plank_fence", Blocks.OAK_FENCE);
+        OAK_PLANK_FENCE.getTextureMap().put(ColoredObject.TextureFace.ALL, new Identifier("block/oak_planks"));
 //        SPRUCE_PLANK_FENCE = new ColoredFence("spruce_plank_fence", Blocks.SPRUCE_FENCE);
 //        BIRCH_PLANK_FENCE = new ColoredFence("birch_plank_fence", Blocks.BIRCH_FENCE);
 //        JUNGLE_PLANK_FENCE = new ColoredFence("jungle_plank_fence", Blocks.JUNGLE_FENCE);
