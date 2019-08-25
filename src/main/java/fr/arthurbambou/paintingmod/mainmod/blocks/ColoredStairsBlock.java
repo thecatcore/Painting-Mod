@@ -25,7 +25,7 @@ public class ColoredStairsBlock extends StairsBlock implements ColoredBlock {
     private Identifier identifier;
 
     public ColoredStairsBlock(ColoredObject coloredObject, ColoredObject.Color color) {
-        super(coloredObject.replace.getDefaultState(), coloredObject.settings);
+        super(coloredObject.getReplace().getDefaultState(), coloredObject.settings);
         this.color = color;
         this.coloredObject = coloredObject;
         this.identifier = new Identifier(coloredObject.modid, color.name().toLowerCase() + "_" + coloredObject.name);

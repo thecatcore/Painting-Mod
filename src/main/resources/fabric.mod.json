@@ -19,12 +19,6 @@
     "main": [
       "fr.arthurbambou.paintingmod.mainmod.PaintingMod"
     ],
-    "rei_plugins": [
-      "fr.arthurbambou.paintingmod.compat.rei.PaintingModPlugin"
-    ],
-    "modmenu": [
-      "fr.arthurbambou.paintingmod.mainmod.utils.config.ConfigScreen"
-    ],
     "client": [
       "fr.arthurbambou.paintingmod.mainmod.PaintingModClient"
     ]

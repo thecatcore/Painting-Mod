@@ -25,7 +25,7 @@ public class ColoredBlock extends ColoredObject {
         super(name, replace, modid);
     }
 
-    public ColoredBlock(String name,Block.Settings settings , String replaceName, String modid) {
+    public ColoredBlock(String name,Block.Settings settings , Identifier replaceName, String modid) {
         super(name, settings, replaceName, modid);
     }
 

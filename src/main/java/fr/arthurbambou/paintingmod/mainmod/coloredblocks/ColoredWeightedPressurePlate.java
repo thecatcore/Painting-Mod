@@ -5,6 +5,7 @@ import fr.arthurbambou.paintingmod.mainmod.api.PaintingModRegistry;
 import fr.arthurbambou.paintingmod.mainmod.blocks.ColoredWeightedPressurePlateBlock;
 import fr.arthurbambou.paintingmod.mainmod.registery.ModBlocks;
 import net.minecraft.block.Block;
+import net.minecraft.util.Identifier;
 
 public class ColoredWeightedPressurePlate extends ColoredPressurePlate {
     private int weight;
@@ -15,7 +16,7 @@ public class ColoredWeightedPressurePlate extends ColoredPressurePlate {
         ModBlocks.COLORED_BLOCKS.add(this);
     }
 
-    public ColoredWeightedPressurePlate(String name,Block.Settings settings , String replaceName, int weight, String modid) {
+    public ColoredWeightedPressurePlate(String name, Block.Settings settings , Identifier replaceName, int weight, String modid) {
         super(name, settings, replaceName, modid);
         this.weight = weight;
     }

@@ -18,6 +18,6 @@ public class ColoredItemBlock extends BlockItem {
     @Override
     public Text getName(ItemStack stack) {
         return new TranslatableText("text.paintingmod.color." + ((ColoredBlock)(this.getBlock())).getColor().name().toLowerCase(),
-                new TranslatableText(((ColoredBlock)(this.getBlock())).getColoredObject().replace.getTranslationKey()));
+                new TranslatableText(((ColoredBlock)(this.getBlock())).getColoredObject().getReplace().getTranslationKey()));
     }
 }

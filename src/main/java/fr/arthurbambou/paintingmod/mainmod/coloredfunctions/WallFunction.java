@@ -26,7 +26,7 @@ public class WallFunction extends ColoredFunction {
         PlayerEntity player = var1.getPlayer();
         BlockState blockState = worldIn.getBlockState(pos);
         if (coloredObject instanceof ColoredWall
-                && worldIn.getBlockState(pos).getBlock() == coloredObject.replace) {
+                && worldIn.getBlockState(pos).getBlock() == coloredObject.getReplace()) {
             for (int a = 0; a < coloredObject.getArrayList().size(); a++) {
                 if (player.getStackInHand(Hand.MAIN_HAND).getItem() == ModItems.PAINTBRUSHES.get(a + 1)) {
                     worldIn.setBlockState(pos, coloredObject.getArrayList().get(a).getStateFactory().getDefaultState()
@@ -51,7 +51,7 @@ public class WallFunction extends ColoredFunction {
         if (coloredObject instanceof ColoredWall) {
             for (int b = 0; b < coloredObject.getArrayList().size(); b++) {
                 if (worldIn.getBlockState(pos).getBlock() == coloredObject.getArrayList().get(b)) {
-                    worldIn.setBlockState(pos, coloredObject.replace.getStateFactory().getDefaultState()
+                    worldIn.setBlockState(pos, coloredObject.getReplace().getStateFactory().getDefaultState()
                             .with(WallBlock.UP, blockState.get(WallBlock.UP))
                             .with(HorizontalConnectedBlock.EAST, blockState.get(HorizontalConnectedBlock.EAST))
                             .with(HorizontalConnectedBlock.NORTH, blockState.get(HorizontalConnectedBlock.NORTH))

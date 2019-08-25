@@ -78,9 +78,9 @@ public class PaintingModClient implements ClientModInitializer {
                     if (BLOCK_MAP.get(identifier) instanceof WallBlock) {
                         return new ColoredWallRenderer((fr.arthurbambou.paintingmod.mainmod.api.ColoredBlock) BLOCK_MAP.get(identifier));
                     }
-                    if (BLOCK_MAP.get(identifier) instanceof FenceBlock) {
-                        return new ColoredFenceRenderer((fr.arthurbambou.paintingmod.mainmod.api.ColoredBlock) BLOCK_MAP.get(identifier));
-                    }
+//                    if (BLOCK_MAP.get(identifier) instanceof FenceBlock) {
+//                        return new ColoredFenceRenderer((fr.arthurbambou.paintingmod.mainmod.api.ColoredBlock) BLOCK_MAP.get(identifier));
+//                    }
                     return new ColoredBlockRenderer(
                             (fr.arthurbambou.paintingmod.mainmod.api.ColoredBlock) BLOCK_MAP.get(
                                     new Identifier(modelIdentifier.getNamespace(), modelIdentifier.getPath())));

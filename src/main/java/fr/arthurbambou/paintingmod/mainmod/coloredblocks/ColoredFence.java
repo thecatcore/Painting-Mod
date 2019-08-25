@@ -21,7 +21,7 @@ public class ColoredFence extends ColoredObject {
     public ColoredFence(String name, Block replace, String modID) {
         super(name,replace,modID);
     }
-    public ColoredFence(String name,Block.Settings settings , String replaceName, String modid) {
+    public ColoredFence(String name,Block.Settings settings , Identifier replaceName, String modid) {
         super(name, settings, replaceName, modid);
     }
 

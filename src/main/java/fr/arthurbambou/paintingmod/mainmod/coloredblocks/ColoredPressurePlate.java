@@ -5,7 +5,9 @@ import fr.arthurbambou.paintingmod.mainmod.api.ColoredObject;
 import fr.arthurbambou.paintingmod.mainmod.api.PaintingModRegistry;
 import fr.arthurbambou.paintingmod.mainmod.blocks.ColoredPressurePlateBlock;
 import fr.arthurbambou.paintingmod.mainmod.registery.ModBlocks;
+import net.fabricmc.fabric.api.block.FabricBlockSettings;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.PressurePlateBlock;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -14,9 +16,13 @@ public class ColoredPressurePlate extends ColoredObject {
 
     private PressurePlateBlock.ActivationRule type;
 
-    public ColoredPressurePlate(String name, Block replace, PressurePlateBlock.ActivationRule type) {
+    public ColoredPressurePlate(String name, Block replace) {
         super(name,replace,PaintingMod.MODID);
-        this.type = type;
+        if (replace == Blocks.STONE_PRESSURE_PLATE) {
+            this.type = PressurePlateBlock.ActivationRule.MOBS;
+        } else {
+            this.type = PressurePlateBlock.ActivationRule.EVERYTHING;
+        }
         Identifier replaceId = Registry.BLOCK.getId(replace);
         this.getTextureMap().put(TextureFace.ALL, new Identifier(replaceId.getNamespace(), "block/" + replaceId.getPath().replace("_pressure_plate", "")));
         ModBlocks.COLORED_BLOCKS.add(this);
@@ -26,7 +32,7 @@ public class ColoredPressurePlate extends ColoredObject {
         super(name,replace,modid);
         this.type = type;
     }
-    public ColoredPressurePlate(String name,Block.Settings settings , String replaceName, String modid, PressurePlateBlock.ActivationRule type) {
+    public ColoredPressurePlate(String name,Block.Settings settings , Identifier replaceName, String modid, PressurePlateBlock.ActivationRule type) {
         super(name, settings, replaceName, modid);
         this.type = type;
     }
@@ -34,7 +40,7 @@ public class ColoredPressurePlate extends ColoredObject {
     public ColoredPressurePlate(String name, Block replace, String modid) {
         super(name,replace,modid);
     }
-    public ColoredPressurePlate(String name,Block.Settings settings , String replaceName, String modid) {
+    public ColoredPressurePlate(String name,Block.Settings settings , Identifier replaceName, String modid) {
         super(name, settings, replaceName, modid);
     }
 

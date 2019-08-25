@@ -24,7 +24,7 @@ public class ColoredSlab extends ColoredObject {
     public ColoredSlab(String name, Block replace, String modid) {
         super(name,replace,modid);
     }
-    public ColoredSlab(String name,Block.Settings settings , String replaceName, String modid) {
+    public ColoredSlab(String name,Block.Settings settings , Identifier replaceName, String modid) {
         super(name, settings, replaceName, modid);
     }
 

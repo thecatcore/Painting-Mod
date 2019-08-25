@@ -24,7 +24,7 @@ public class FenceGateFunction extends ColoredFunction {
         PlayerEntity player = var1.getPlayer();
         BlockState blockState = worldIn.getBlockState(pos);
         if (coloredObject instanceof ColoredFenceGate
-                && worldIn.getBlockState(pos).getBlock() == coloredObject.replace) {
+                && worldIn.getBlockState(pos).getBlock() == coloredObject.getReplace()) {
             for (int a = 0; a < coloredObject.getArrayList().size(); a++) {
                 if (player.getStackInHand(Hand.MAIN_HAND).getItem() == ModItems.PAINTBRUSHES.get(a + 1)) {
                     worldIn.setBlockState(pos, coloredObject.getArrayList().get(a).getStateFactory().getDefaultState()
@@ -47,7 +47,7 @@ public class FenceGateFunction extends ColoredFunction {
         if (coloredObject instanceof ColoredFenceGate) {
             for (int b = 0; b < coloredObject.getArrayList().size(); b++) {
                 if (worldIn.getBlockState(pos).getBlock() == coloredObject.getArrayList().get(b)) {
-                    worldIn.setBlockState(pos, coloredObject.replace.getStateFactory().getDefaultState()
+                    worldIn.setBlockState(pos, coloredObject.getReplace().getStateFactory().getDefaultState()
                             .with(HorizontalFacingBlock.FACING, blockState.get(HorizontalFacingBlock.FACING))
                             .with(FenceGateBlock.OPEN, blockState.get(FenceGateBlock.OPEN))
                             .with(FenceGateBlock.POWERED, blockState.get(FenceGateBlock.POWERED))

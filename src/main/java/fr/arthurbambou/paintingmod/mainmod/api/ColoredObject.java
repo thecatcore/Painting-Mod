@@ -29,8 +29,8 @@ public abstract class ColoredObject {
     public Block orange;
     public Block white;
 
-    public Block replace;
-    public String replaceName;
+    private Block replace;
+    public Identifier replaceName;
 
     public Block.Settings settings;
     public String modid;
@@ -46,11 +46,19 @@ public abstract class ColoredObject {
         this.modid = modid;
     }
 
-    public ColoredObject(String name,Block.Settings settings , String replaceName, String modid) {
+    public ColoredObject(String name,Block.Settings settings , Identifier replaceName, String modid) {
         this.name = name;
         this.replaceName = replaceName;
         this.settings = settings;
         this.modid = modid;
+    }
+
+    public Block getReplace() {
+        if (this.replace == null) {
+            return Registry.BLOCK.get(this.replaceName);
+        } else {
+            return this.replace;
+        }
     }
 
     public String getName() {
@@ -69,11 +77,6 @@ public abstract class ColoredObject {
 
     public Map<TextureFace, Identifier> getTextureMap() {
         return this.textureFaceIdentifierMap;
-    }
-
-    public ColoredObject setTextureMap(Map<TextureFace, Identifier> map) {
-        this.textureFaceIdentifierMap = map;
-        return this;
     }
 
     public ArrayList<Block> getArrayList() {

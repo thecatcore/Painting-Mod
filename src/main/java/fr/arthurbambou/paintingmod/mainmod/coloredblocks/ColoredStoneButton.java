@@ -17,7 +17,7 @@ public class ColoredStoneButton extends ColoredButton {
         super(name, replace, modid);
     }
 
-    public ColoredStoneButton(String name,Block.Settings settings , String replaceName, String modid) {
+    public ColoredStoneButton(String name,Block.Settings settings , Identifier replaceName, String modid) {
         super(name, settings, replaceName, modid);
     }
 
