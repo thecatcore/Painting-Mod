@@ -1,5 +1,9 @@
 package fr.arthurbambou.paintingmod.mainmod.registery;
 
+import blue.endless.jankson.Jankson;
+import blue.endless.jankson.JsonElement;
+import blue.endless.jankson.JsonObject;
+import blue.endless.jankson.impl.SyntaxError;
 import com.google.gson.Gson;
 import fr.arthurbambou.paintingmod.mainmod.api.ColoredObject;
 import fr.arthurbambou.paintingmod.mainmod.registery.coloredpack.ColoredBlockEntry;
@@ -32,26 +36,46 @@ public class ColoredPackRegistry {
         if (!packPath.exists()) {
             packPath.mkdir();
         }
-        try (FileWriter fileWriter = new FileWriter(new File(packPath, "test.json"))) {
-            List<ColoredBlockEntry> list = new ArrayList<>();
-            Map<ColoredObject.TextureFace, Identifier> textureMap = new HashMap<>();
-            textureMap.put(ColoredObject.TextureFace.ALL, new Identifier("sgifqd"));
-            ColoredBlockEntry entry = new ColoredBlockEntry("testte", textureMap);
-            list.add(entry);
-            fileWriter.write(gson.toJson(new ColoredPack("myname", "0.0.1", list)));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try (FileWriter fileWriter = new FileWriter(new File(packPath, "test.json"))) {
+//            List<ColoredBlockEntry> list = new ArrayList<>();
+//            Map<ColoredObject.TextureFace, String> textureMap = new HashMap<>();
+//            textureMap.put(ColoredObject.TextureFace.ALL, new Identifier("sgifqd").toString());
+//            ColoredBlockEntry entry = new ColoredBlockEntry("testte", "stairs",textureMap);
+//            list.add(entry);
+//            fileWriter.write(gson.toJson(new ColoredPack("myname", "0.0.1", list)));
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
         if (packPath.listFiles() == null) {
             LOGGER.info("No ColoredPack found.");
+            return;
         }
         File[] files = packPath.listFiles();
         for (File file : files) {
-            try {
-                FileReader fileReader = new FileReader(file);
-                gson.fromJson(fileReader, ColoredPack.class);
-            } catch (FileNotFoundException e) {
+            try (FileReader fileReader = new FileReader(file)){
+                JsonObject element = Jankson.builder().build().load(file);
+                String name;
+                String version;
+
+                if (!element.containsKey("name")) {
+                    LOGGER.warn("Colored Pack " + file.getName() + " doesn't specify a name");
+                }
+                name = element.get(String.class, "name");
+                if (!element.containsKey("version")) {
+                    LOGGER.warn("Colored Pack " + file.getName() + " doesn't specify a version");
+                }
+                version = element.get(String.class, "version");
+                if (!element.containsKey("coloredBlocks")) {
+                    LOGGER.error("Colored Pack " + file.getName() + " is empty, it will not be load!");
+                    continue;
+                }
+                JsonObject blocks = element.getObject("coloredBlocks");
+
+//                COLORED_PACK_LIST.add(gson.fromJson(fileReader, ColoredPack.class));
+            } catch (IOException e) {
                 e.printStackTrace();
+            } catch (SyntaxError syntaxError) {
+                syntaxError.printStackTrace();
             }
 
         }

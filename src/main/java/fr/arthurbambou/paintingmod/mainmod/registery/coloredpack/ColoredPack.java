@@ -16,4 +16,16 @@ public class ColoredPack {
         this.version = version;
         this.coloredBlocks = list;
     }
+
+    public List<ColoredBlockEntry> getColoredBlocks() {
+        return coloredBlocks;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getVersion() {
+        return version;
+    }
 }
