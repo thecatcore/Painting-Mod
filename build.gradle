@@ -74,7 +74,7 @@ dependencies {
 
 	// Compat with other mods
 	// modCompile "roughly-enough-items:RoughlyEnoughItems:${rei_version}"
-	compile "blue.endless:jankson:1.1.0"
+	modCompile "blue.endless:jankson:1.1.0"
 	include "blue.endless:jankson:1.1.0"
 	// modCompile "cloth:ClothEvents:${cloth_events_version}"
 
