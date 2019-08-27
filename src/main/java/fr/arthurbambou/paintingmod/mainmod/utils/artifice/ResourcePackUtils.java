@@ -3,15 +3,14 @@ package fr.arthurbambou.paintingmod.mainmod.utils.artifice;
 import com.swordglowsblue.artifice.api.ArtificeResourcePack;
 import fr.arthurbambou.paintingmod.mainmod.PaintingMod;
 import fr.arthurbambou.paintingmod.mainmod.api.ColoredObject;
+import fr.arthurbambou.paintingmod.mainmod.api.PaintingModRegistry;
 import net.minecraft.block.*;
 import net.minecraft.util.Identifier;
-
-import static fr.arthurbambou.paintingmod.mainmod.registery.ModBlocks.COLORED_BLOCKS;
 
 public class ResourcePackUtils {
 
     public static void createPack(ArtificeResourcePack.ClientResourcePackBuilder pack) {
-        for (ColoredObject coloredBlock : COLORED_BLOCKS) {
+        for (ColoredObject coloredBlock : PaintingModRegistry.getColoredObjectList().values()) {
             Block[] block = (Block[]) coloredBlock.getArrayList().toArray(new Block[15]);
             for (int a = 0;coloredBlock.getArrayList().size() > a; a++) {
                 Identifier id = new Identifier(PaintingMod.MODID, block[a].getTranslationKey().replace("block.paintingmod.", ""));

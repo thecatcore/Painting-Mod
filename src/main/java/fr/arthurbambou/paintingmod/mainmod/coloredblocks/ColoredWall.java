@@ -21,8 +21,8 @@ public class ColoredWall extends ColoredObject {
     public ColoredWall(String name, Block replace, String modID) {
         super(name,replace,modID);
     }
-    public ColoredWall(String name,Block.Settings settings , Identifier replaceName, String modid) {
-        super(name, settings, replaceName, modid);
+    public ColoredWall(Identifier replaceName, String modid) {
+        super(replaceName, modid);
     }
 
     @Override

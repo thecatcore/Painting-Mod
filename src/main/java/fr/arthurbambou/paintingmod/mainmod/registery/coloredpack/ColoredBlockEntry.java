@@ -38,6 +38,10 @@ public class ColoredBlockEntry {
         return replace;
     }
 
+    public void setTextureMap(Map<ColoredObject.TextureFace, String> textureMap) {
+        this.textureMap = textureMap;
+    }
+
     public Identifier getReplaceI() {
         return new Identifier(replace);
     }

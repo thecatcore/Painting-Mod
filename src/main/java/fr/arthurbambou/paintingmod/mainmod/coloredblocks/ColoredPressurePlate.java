@@ -32,16 +32,16 @@ public class ColoredPressurePlate extends ColoredObject {
         super(name,replace,modid);
         this.type = type;
     }
-    public ColoredPressurePlate(String name,Block.Settings settings , Identifier replaceName, String modid, PressurePlateBlock.ActivationRule type) {
-        super(name, settings, replaceName, modid);
+    public ColoredPressurePlate(Identifier replaceName, String modid, PressurePlateBlock.ActivationRule type) {
+        super(replaceName, modid);
         this.type = type;
     }
 
     public ColoredPressurePlate(String name, Block replace, String modid) {
         super(name,replace,modid);
     }
-    public ColoredPressurePlate(String name,Block.Settings settings , Identifier replaceName, String modid) {
-        super(name, settings, replaceName, modid);
+    public ColoredPressurePlate(Identifier replaceName, String modid) {
+        super(replaceName, modid);
     }
 
     @Override

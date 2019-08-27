@@ -46,11 +46,9 @@ public abstract class ColoredObject {
         this.modid = modid;
     }
 
-    public ColoredObject(String name,Block.Settings settings , Identifier replaceName, String modid) {
-        this.name = name;
+    public ColoredObject(Identifier replaceName, String modid) {
+        this(replaceName.getPath(),Registry.BLOCK.get(replaceName), modid);
         this.replaceName = replaceName;
-        this.settings = settings;
-        this.modid = modid;
     }
 
     public Block getReplace() {

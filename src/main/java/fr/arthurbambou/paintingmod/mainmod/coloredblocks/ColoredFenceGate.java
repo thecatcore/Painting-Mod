@@ -18,8 +18,8 @@ public class ColoredFenceGate extends ColoredObject {
     public ColoredFenceGate(String name, Block replace, String modid) {
         super(name,replace,modid);
     }
-    public ColoredFenceGate(String name,Block.Settings settings , Identifier replaceName, String modid) {
-        super(name, settings, replaceName, modid);
+    public ColoredFenceGate(Identifier replaceName, String modid) {
+        super(replaceName, modid);
     }
 
     @Override

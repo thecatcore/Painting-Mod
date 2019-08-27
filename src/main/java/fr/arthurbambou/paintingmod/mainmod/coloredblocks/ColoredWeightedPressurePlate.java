@@ -16,8 +16,8 @@ public class ColoredWeightedPressurePlate extends ColoredPressurePlate {
         ModBlocks.COLORED_BLOCKS.add(this);
     }
 
-    public ColoredWeightedPressurePlate(String name, Block.Settings settings , Identifier replaceName, int weight, String modid) {
-        super(name, settings, replaceName, modid);
+    public ColoredWeightedPressurePlate(Identifier replaceName, int weight, String modid) {
+        super(replaceName, modid);
         this.weight = weight;
     }
 
