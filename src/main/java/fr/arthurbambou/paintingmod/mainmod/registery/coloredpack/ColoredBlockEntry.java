@@ -5,6 +5,7 @@ import net.minecraft.util.Identifier;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class ColoredBlockEntry {
     private String replace;
@@ -23,9 +24,9 @@ public class ColoredBlockEntry {
 
     public Map<ColoredObject.TextureFace, Identifier> getTextureMapI() {
         Map<ColoredObject.TextureFace, Identifier> textureMap1 = new HashMap<>();
-        Map.Entry<ColoredObject.TextureFace, String>[] entries = (Map.Entry<ColoredObject.TextureFace, String>[])textureMap.entrySet().toArray();
-        for (int i = 0; i < textureMap.size(); i++) {
-            textureMap1.put(entries[i].getKey(), new Identifier(entries[i].getValue()));
+        Set<Map.Entry<ColoredObject.TextureFace, String>> entries = textureMap.entrySet();
+        for (Map.Entry<ColoredObject.TextureFace, String> entry : entries) {
+            textureMap1.put(entry.getKey(), new Identifier(entry.getValue()));
         }
         return textureMap1;
     }
