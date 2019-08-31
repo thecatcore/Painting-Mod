@@ -49,29 +49,7 @@ public class PaintingMod implements ModInitializer {
 		ModItems.init();
 		ModVillagers.init();
 		ModColoredFunctions.init();
-		ServerStartCallback.EVENT.register(server -> {
-			if (!ColoredPackRegistry.COLORED_PACK_LIST.isEmpty()) {
-				for (ColoredPack coloredPack : ColoredPackRegistry.COLORED_PACK_LIST) {
-					for (ColoredBlockEntry coloredBlockEntry : coloredPack.getColoredBlocks()) {
-						Class object = PaintingModRegistry.getColoredObjectTypeList().get(coloredBlockEntry.getTypeI());
-						try {
-							ColoredObject coloredObject = (ColoredObject) object.getConstructor(Identifier.class, String.class).newInstance(coloredBlockEntry.getReplaceI(), PaintingMod.MODID);
-							coloredObject.getTextureMap().putAll(coloredBlockEntry.getTextureMapI());
-							coloredObject.createBlocks();
-						} catch (NoSuchMethodException e) {
-							e.printStackTrace();
-						} catch (IllegalAccessException e) {
-							e.printStackTrace();
-						} catch (InstantiationException e) {
-							e.printStackTrace();
-						} catch (InvocationTargetException e) {
-							e.printStackTrace();
-						}
-					}
-				}
-			}
-			PaintingModRegistry.finishRegister();
-		});
+		finishBlockRegistry();
 		Artifice.registerData(new Identifier(MODID, "datapack"), serverResourcePackBuilder -> {
 			serverResourcePackBuilder.addBlockTag(new Identifier("fences"), tagBuilder -> {
 				tagBuilder.replace(false);
@@ -94,6 +72,30 @@ public class PaintingMod implements ModInitializer {
 				}
 			});
 		});
+	}
+
+	private void finishBlockRegistry() {
+		if (!ColoredPackRegistry.COLORED_PACK_LIST.isEmpty()) {
+			for (ColoredPack coloredPack : ColoredPackRegistry.COLORED_PACK_LIST) {
+				for (ColoredBlockEntry coloredBlockEntry : coloredPack.getColoredBlocks()) {
+					Class object = PaintingModRegistry.getColoredObjectTypeList().get(coloredBlockEntry.getTypeI());
+					try {
+						ColoredObject coloredObject = (ColoredObject) object.getConstructor(Identifier.class, String.class).newInstance(coloredBlockEntry.getReplaceI(), PaintingMod.MODID);
+						coloredObject.getTextureMap().putAll(coloredBlockEntry.getTextureMapI());
+						coloredObject.createBlocks();
+					} catch (NoSuchMethodException e) {
+						e.printStackTrace();
+					} catch (IllegalAccessException e) {
+						e.printStackTrace();
+					} catch (InstantiationException e) {
+						e.printStackTrace();
+					} catch (InvocationTargetException e) {
+						e.printStackTrace();
+					}
+				}
+			}
+		}
+		PaintingModRegistry.finishRegister();
 	}
 
 	private void registerColoredObjectTypeIds() {
