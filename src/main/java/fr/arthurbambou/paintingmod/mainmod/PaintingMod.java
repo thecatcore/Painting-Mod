@@ -14,6 +14,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 
+import net.fabricmc.fabric.api.event.registry.RegistryEntryAddedCallback;
 import net.fabricmc.fabric.api.event.server.ServerStartCallback;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemGroup;
@@ -22,6 +23,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 import java.lang.reflect.InvocationTargetException;
+import java.util.function.BiConsumer;
 
 import static fr.arthurbambou.paintingmod.mainmod.registery.ModBlocks.COLORED_BLOCKS;
 
@@ -78,24 +80,33 @@ public class PaintingMod implements ModInitializer {
 		if (!ColoredPackRegistry.COLORED_PACK_LIST.isEmpty()) {
 			for (ColoredPack coloredPack : ColoredPackRegistry.COLORED_PACK_LIST) {
 				for (ColoredBlockEntry coloredBlockEntry : coloredPack.getColoredBlocks()) {
-					Class object = PaintingModRegistry.getColoredObjectTypeList().get(coloredBlockEntry.getTypeI());
-					try {
-						ColoredObject coloredObject = (ColoredObject) object.getConstructor(Identifier.class, String.class).newInstance(coloredBlockEntry.getReplaceI(), PaintingMod.MODID);
-						coloredObject.getTextureMap().putAll(coloredBlockEntry.getTextureMapI());
-						coloredObject.createBlocks();
-					} catch (NoSuchMethodException e) {
-						e.printStackTrace();
-					} catch (IllegalAccessException e) {
-						e.printStackTrace();
-					} catch (InstantiationException e) {
-						e.printStackTrace();
-					} catch (InvocationTargetException e) {
-						e.printStackTrace();
-					}
+					tryRegister((identifier, block) -> {
+						if (identifier == coloredBlockEntry.getReplaceI()) {
+							try {
+								Class object = PaintingModRegistry.getColoredObjectTypeList().get(coloredBlockEntry.getTypeI());
+								ColoredObject coloredObject = (ColoredObject) object.getConstructor(Identifier.class, String.class).newInstance(coloredBlockEntry.getReplaceI(), PaintingMod.MODID);
+								coloredObject.getTextureMap().putAll(coloredBlockEntry.getTextureMapI());
+								coloredObject.createBlocks();
+							} catch (NoSuchMethodException e) {
+								e.printStackTrace();
+							} catch (IllegalAccessException e) {
+								e.printStackTrace();
+							} catch (InstantiationException e) {
+								e.printStackTrace();
+							} catch (InvocationTargetException e) {
+								e.printStackTrace();
+							}
+						}
+					});
 				}
 			}
 		}
 		PaintingModRegistry.finishRegister();
+	}
+
+	private static void tryRegister(BiConsumer<Identifier, Block> visitor) {
+		Registry.BLOCK.getIds().forEach(id -> visitor.accept(id, Registry.BLOCK.get(id)));
+		RegistryEntryAddedCallback.event(Registry.BLOCK).register((index, identifier, entry) -> visitor.accept(identifier, entry));
 	}
 
 	private void registerColoredObjectTypeIds() {
