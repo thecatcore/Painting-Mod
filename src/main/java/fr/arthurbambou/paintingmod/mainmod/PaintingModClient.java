@@ -5,6 +5,9 @@ import fr.arthurbambou.paintingmod.mainmod.api.ColoredObject;
 import fr.arthurbambou.paintingmod.mainmod.blocks.ColoredBlockBlock;
 import fr.arthurbambou.paintingmod.mainmod.client.render.*;
 import fr.arthurbambou.paintingmod.mainmod.coloredblocks.ColoredBlock;
+import fr.arthurbambou.paintingmod.mainmod.registery.ColoredPackRegistry;
+import fr.arthurbambou.paintingmod.mainmod.registery.coloredpack.ColoredBlockEntry;
+import fr.arthurbambou.paintingmod.mainmod.registery.coloredpack.ColoredPack;
 import fr.arthurbambou.paintingmod.mainmod.utils.artifice.ResourcePackUtils;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.model.ModelLoadingRegistry;
@@ -39,6 +42,13 @@ public class PaintingModClient implements ClientModInitializer {
                     for (ColoredObject coloredObject : COLORED_BLOCKS) {
                         for (Identifier identifier : coloredObject.getTextureMap().values()) {
                             registry.register(identifier);
+                        }
+                    }
+                    for (ColoredPack coloredPack : ColoredPackRegistry.COLORED_PACK_LIST) {
+                        for (ColoredBlockEntry coloredBlockEntry : coloredPack.getColoredBlocks()) {
+                            for (Identifier identifier : coloredBlockEntry.getTextureMapI().values()) {
+                                registry.register(identifier);
+                            }
                         }
                     }
                 });

@@ -1,11 +1,10 @@
 package fr.arthurbambou.paintingmod.mainmod.registery.coloredpack;
 
+import fr.arthurbambou.paintingmod.mainmod.PaintingMod;
 import fr.arthurbambou.paintingmod.mainmod.api.ColoredObject;
 import net.minecraft.util.Identifier;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class ColoredBlockEntry {
     private String replace;
@@ -49,5 +48,13 @@ public class ColoredBlockEntry {
 
     public Identifier getTypeI() {
         return new Identifier(type);
+    }
+
+    public Identifier[] getColoredBlockIds() {
+        List<Identifier> list = new ArrayList<>();
+        for (ColoredObject.Color color : ColoredObject.Color.values()) {
+            list.add(new Identifier(PaintingMod.MODID, color.name().toLowerCase() + "_" + this.getReplaceI().getPath()));
+        }
+        return (Identifier[]) list.toArray();
     }
 }

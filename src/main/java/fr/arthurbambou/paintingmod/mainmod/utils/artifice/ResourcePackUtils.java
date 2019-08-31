@@ -4,13 +4,17 @@ import com.swordglowsblue.artifice.api.ArtificeResourcePack;
 import fr.arthurbambou.paintingmod.mainmod.PaintingMod;
 import fr.arthurbambou.paintingmod.mainmod.api.ColoredObject;
 import fr.arthurbambou.paintingmod.mainmod.api.PaintingModRegistry;
+import fr.arthurbambou.paintingmod.mainmod.registery.ColoredPackRegistry;
+import fr.arthurbambou.paintingmod.mainmod.registery.ModBlocks;
+import fr.arthurbambou.paintingmod.mainmod.registery.coloredpack.ColoredBlockEntry;
+import fr.arthurbambou.paintingmod.mainmod.registery.coloredpack.ColoredPack;
 import net.minecraft.block.*;
 import net.minecraft.util.Identifier;
 
 public class ResourcePackUtils {
 
     public static void createPack(ArtificeResourcePack.ClientResourcePackBuilder pack) {
-        for (ColoredObject coloredBlock : PaintingModRegistry.getColoredObjectList().values()) {
+        for (ColoredObject coloredBlock : ModBlocks.COLORED_BLOCKS) {
             Block[] block = (Block[]) coloredBlock.getArrayList().toArray(new Block[15]);
             for (int a = 0;coloredBlock.getArrayList().size() > a; a++) {
                 Identifier id = new Identifier(PaintingMod.MODID, block[a].getTranslationKey().replace("block.paintingmod.", ""));
@@ -37,6 +41,41 @@ public class ResourcePackUtils {
                                         } else {
                                             if (block[a] instanceof WeightedPressurePlateBlock) {
                                                 weightedPressurePlate(pack, id);
+                                            } else {
+                                                baseBlock(pack, id);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        for (ColoredPack coloredPack : ColoredPackRegistry.COLORED_PACK_LIST) {
+            for (ColoredBlockEntry coloredBlockEntry : coloredPack.getColoredBlocks()) {
+                for (Identifier id : coloredBlockEntry.getColoredBlockIds()) {
+                    if (coloredBlockEntry.getTypeI() == new Identifier("slab")) {
+                        slab(pack, id);
+                    } else {
+                        if (coloredBlockEntry.getTypeI() == new Identifier("stairs")) {
+                            stairs(pack, id);
+                        } else {
+                            if (coloredBlockEntry.getTypeI() == new Identifier("fence")) {
+                                fence(pack, id);
+                            } else {
+                                if (coloredBlockEntry.getTypeI() == new Identifier("wall")) {
+                                    wall(pack, id);
+                                } else {
+                                    if (coloredBlockEntry.getTypeI() == new Identifier("fence_gate")) {
+                                        fenceGate(pack, id);
+                                    } else {
+                                        if (coloredBlockEntry.getTypeI() == new Identifier("button")) {
+                                            button(pack, id);
+                                        } else {
+                                            if (coloredBlockEntry.getTypeI() == new Identifier("pressure_plate")) {
+                                                simplePressurePlate(pack, id);
                                             } else {
                                                 baseBlock(pack, id);
                                             }
