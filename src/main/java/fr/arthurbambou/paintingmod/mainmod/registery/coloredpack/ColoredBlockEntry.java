@@ -55,6 +55,6 @@ public class ColoredBlockEntry {
         for (ColoredObject.Color color : ColoredObject.Color.values()) {
             list.add(new Identifier(PaintingMod.MODID, color.name().toLowerCase() + "_" + this.getReplaceI().getPath()));
         }
-        return (Identifier[]) list.toArray();
+        return list.toArray(new Identifier[list.size()]);
     }
 }
