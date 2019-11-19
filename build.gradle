@@ -69,7 +69,7 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modCompile "net.fabricmc.fabric-api:fabric-api:${fabric_api}"
 
-	modImplementation "com.github.swordglowsblue:artifice:0.3.4"
+	modImplementation "com.github.swordglowsblue:artifice:0.3.5"
 	include "com.github.swordglowsblue:artifice:0.3.4"
 
 	// Compat with other mods
